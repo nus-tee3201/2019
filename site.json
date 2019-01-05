@@ -35,6 +35,12 @@
     },
     {"glob": "book/**/index.md",
       "searchable": "no"
+    },
+    {"glob": "programming/index.md",
+      "searchable": "yes"
+    },
+    {"glob": "programming/toc/*.md",
+      "searchable": "yes"
     }
   ],
   "enableSearch": true,

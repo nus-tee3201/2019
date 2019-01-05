@@ -6,7 +6,10 @@
 <li><a href="{{ baseUrl }}/schedule/week{{ week.num }}/index.html" class="dropdown-item"> <md>**Week {{ week.num }}** [{{ week.day }}] {% if current_weeks[0] == week.num %} {{ fas_arrow_circle_left }}{% endif %}</md></a></li>
 {% endfor %}
   </dropdown>
-  <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
+  <dropdown text="Textbook" class="nav-link">
+    <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+    <li><a href="{{baseUrl}}/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+  </dropdown>
   <li><a href="{{baseUrl}}/admin/te3201-admin.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <dropdown text="Links" class="nav-link">
     <li><a href="{{forum_link}}" target="_blank" class="dropdown-item">{{ fas_comment }} Forum</a></li>
