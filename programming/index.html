@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - Programming Basics (with Python)</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/2019/css/main.css">
+    <link rel="stylesheet" href="/2019/css/admin.css">
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+            <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+            <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+            <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+            <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+            <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+            <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+            <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+            <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+            <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          </dropdown>
+          <dropdown text="Textbook" class="nav-link">
+            <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+            <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+          </dropdown>
+          <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content" id="main">
+        <h1 id="programming-basics-(with-python)">Programming Basics (with Python)<a class="fa fa-anchor" href="#programming-basics-(with-python)"></a></h1>
+        <tip-box>
+          <p><strong>Target audience and scope</strong>: This learning resource targets students with minimal or no prior programming experience. As a result, it covers only a minimal set of concepts and at times present a simplified view (i.e., the reality may be more complex).</p>
+          <p><strong>Acknowledgements:</strong></p>
+          <ul>
+            <li>Some sections of this learning resource follow a similar path as, and at times borrows/adapts content from or refers to companion videos of, the excellent Python resource <a href="http://automatetheboringstuff.com/"><em>Automate the Boring Stuff with Python</em> by Al Sweigart</a>. Readers can refer to the same book for a more detailed version of those topics.</li>
+          </ul>
+          <p><strong>License: </strong> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a></p>
+        </tip-box>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 11:23:26 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\layouts\default\scripts.js"></script>
+</html>

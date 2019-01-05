@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/2019/css/main.css">
+    <link rel="stylesheet" href="/2019/css/admin.css">
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+            <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+            <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+            <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+            <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+            <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+            <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+            <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+            <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+            <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          </dropdown>
+          <dropdown text="Textbook" class="nav-link">
+            <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+            <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+          </dropdown>
+          <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content" id="main">
+        <div id="toc">
+          <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a></span></p>
+        </div>
+        <div id="main">
+          <div>
+            <h1 id="appendix-b%3A-unit-testing">Appendix B: Unit Testing<a class="fa fa-anchor" href="#appendix-b%3A-unit-testing"></a></h1>
+            <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
+            <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span>
+  <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span>
+  <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_same_person</span><span class="hljs-params">(person, keyword)</span>:</span>
+  <span class="hljs-string">"""Return True if the parameter 'person' (type: dictionary)
+  contains a key 'name' whose value contains the 
+  parameter 'keyword' (type: string)
+  e.g., 
+  * is_same_person({'name': 'jackie'}, 'jack') returns True
+  * is_same_person({'name': 'jackie'}, 'jackie-chan') returns False
+  """</span>
+  <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]
+</code></pre>
+            <p>This is how we can write some unit tests for the two functions.</p>
+            <pre><code class="hljs python"><span class="hljs-keyword">import</span> search, unittest
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_is_same_person</span><span class="hljs-params">(self)</span>:</span>
+    jack = {<span class="hljs-string">'name'</span>:<span class="hljs-string">'jack'</span>}
+    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'jack'</span>))
+    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ack'</span>))
+    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ac'</span>))
+    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'j'</span>))
+    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'k'</span>))
+    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'jackie'</span>))
+    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'blackjack'</span>))
+    self.assertFalse(search.is_same_person({<span class="hljs-string">'name'</span>: <span class="hljs-string">'x'</span>, <span class="hljs-string">'other'</span>: <span class="hljs-string">'jack'</span>}, <span class="hljs-string">'jack'</span>))
+    <span class="hljs-keyword">with</span> self.assertRaises(KeyError):
+      search.is_same_person({}, <span class="hljs-string">'jack'</span>)
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_first_name</span><span class="hljs-params">(self)</span>:</span>
+    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy'</span>), <span class="hljs-string">'Amy'</span>)
+    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Bernice'</span>), <span class="hljs-string">'Amy'</span>)
+    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)
+    <span class="hljs-keyword">with</span> self.assertRaises(IndexError):
+      search.get_first_name(<span class="hljs-string">''</span>)
+
+<span class="hljs-comment"># activate the test runner      </span>
+unittest.main()
+</code></pre>
+            <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
+            <pre class="hljs"><code>...
+----------------------------------------------------------------------
+Ran 2 tests in 0.019s
+
+OK
+</code></pre>
+            <p>Things to note:</p>
+            <ul>
+              <li>A class containing unit tests should inherit from <code>unittest.TestCase</code></li>
+              <li>Names of functions containing test code should start with <code>test</code> e.g., <code>test_is_same_person()</code></li>
+              <li>These methods (inherited from the parent class) can be used to compare actual with the expected value:
+                <ul>
+                  <li><code>assertTrue(actual)</code> : test passes if <code>actual == True</code></li>
+                  <li><code>assertFalse(actual)</code> : test passes if <code>actual == False</code></li>
+                  <li><code>assertEquals(actual, expected)</code> : test passes if <code>actual == expected</code></li>
+                  <li><code>with self.assertRaises(Exception):</code> passes if the code block it contains raises the specified exception.</li>
+                </ul>
+              </li>
+            </ul>
+            <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
+            <pre><code class="hljs python">self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)
+</code></pre>
+            <p>the output will be something like this:</p>
+            <pre class="hljs"><code>F.
+======================================================================
+FAIL: test_get_first_name (__main__.TestSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File &quot;main.py&quot;, line 19, in test_get_first_name
+    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')
+AssertionError: 'Amy' != 'Foo'
+- Amy
++ Foo
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (failures=1)
+</code></pre>
+            <p>📎 Resources:</p>
+            <ul>
+              <li>More on unit testing: <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
+              <li>Unit testing in the PyCharm IDE: <a href="https://www.youtube.com/watch?v=-VzJvNLooj4">https://www.youtube.com/watch?v=-VzJvNLooj4</a></li>
+            </ul>
+          </div>
+          <hr>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 11:23:26 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+<script src="..\..\markbind\layouts\default\scripts.js"></script>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - Admin Info</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
+    
+    <link rel="stylesheet" href="/2019/css/main.css">
+    <link rel="stylesheet" href="/2019/css/admin.css">
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="content-wrapper">
+  <div>
+    <navbar placement="top" type="inverse">
+      <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+      <dropdown text="Schedule" class="nav-link">
+        <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+        <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+        <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+        <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+        <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+        <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+        <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+        <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+        <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+        <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+        <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+        <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+      </dropdown>
+      <dropdown text="Textbook" class="nav-link">
+        <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+        <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+      </dropdown>
+      <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+      <dropdown text="Links" class="nav-link">
+        <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+        <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+      </dropdown>
+      <li slot="right" class="nav-link">
+        <form class="navbar-form">
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+        </form>
+      </li>
+    </navbar>
+  </div>
+  <div class="website-content" id="main">
+    <h1 id="te3201-software-engineering">TE3201 Software Engineering<a class="fa fa-anchor" href="#te3201-software-engineering"></a></h1>
+    <ul>
+      <li><a href="#lectures">Lectures</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#learning-materials">Learning Materials</a></li>
+      <li><a href="#exam">Exam</a></li>
+      <li><a href="#grading">Grading</a></li>
+    </ul>
+    <h2 id="lectures">Lectures<a class="fa fa-anchor" href="#lectures"></a></h2>
+    <p>TUE 1800-2130 in E3‐06‐15</p>
+    <ul>
+      <li>
+        <p>😟 No webcast (Reason: the lecture venue does not have the webcast facility)</p>
+      </li>
+      <li>
+        <p>The lecture will be broken into small segments (about 30 minutes) of fairly independent parts so that late comers can still follow the remainder of the lecture.</p>
+      </li>
+      <li>
+        <p>First 15 minutes will be a recap of previous lecture or free-flow discussion so that those slightly late will not miss the beginning of the lecture proper.</p>
+      </li>
+      <li>
+        <p>Python topics will be in the 2nd half of the lecture so that those not interested in learning Python can leave early.</p>
+      </li>
+    </ul>
+    <h2 id="learning-materials">Learning materials<a class="fa fa-anchor" href="#learning-materials"></a></h2>
+    <p>A customized <strong>online text book</strong> is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.</p>
+    <ul>
+      <li>Full version is <a href="/2019/book-adapted/index.html">here</a>: The relevant sections are embedded under the corresponding week in the <a href="/2019/schedule/index.html">schedule page</a>.</li>
+      <li>📜 Printable version (excludes exercises) is <a href="/2019/book-adapted/print.html">here</a>. PDF copies of the relevant sections will be uploaded to IVLE, by Monday of each week. You are encouraged to use the online full version when possible (instead of the printable version or the PDF version), as it has more content <span class="dimmed"> videos, exercises, etc.</span></li>
+    </ul>
+    <panel header="Helpful info about using the textbook" no-close="">
+      <div style="color: red">No such file: C:\repos\nus-te3201\te3201-2019-website\book-adapted\usage.md
+        Missing reference in C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md</div>
+    </panel>
+    <p></p>
+    <p><a href="/2019/programming/index.html">An additional <strong>guide on programming basics</strong></a> is provided for you to get started or programming. Contents in that guide are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.</p>
+    <p>📊 <strong>Slides</strong> will be uploaded to IVLE <em>after</em> the lecture. Note that lecture slides are to assist in lecture delivery only; they are <mark>not suitable for printing or as an exam reference</mark>.</p>
+    <h2 id="project">Project<a class="fa fa-anchor" href="#project"></a></h2>
+    <p>To be done in individually, or teams of 2-3 members.</p>
+    <p><strong>Programming language</strong>: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</p>
+    <h3 id="software-to-build">Software to build<a class="fa fa-anchor" href="#software-to-build"></a></h3>
+    <p>You will be building a personal assistant chat-bot software named <em>PAC</em> (<em>PAC</em> is a temporary name; you should give a different name to your own chat bot)</p>
+    <p><strong><em>Basic</em> Functionality</strong>:</p>
+    <ol>
+      <li>
+        <p>PAC interface can be text-based (i.e., no need for a graphical UI)</p>
+      </li>
+      <li>
+        <p>PAC helps with storing and retrieving at least <strong>one type of data</strong> that is useful to the user. Some examples of different types of data (you can pick one of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:</p>
+        <pre class="hljs"><code>&gt;&gt; Hi, I'm PAC. What can I do to help you with your TODOs?
+
+add Return library book
+&gt;&gt; TODO added: Return library book
+
+list
+&gt;&gt; Here are the list of TODOs you have:
+1. Return library book
+2. Do TE3201 exercises
+3. Call back Jina
+
+delete 2
+&gt;&gt; TODO deleted: Do TE3201 exercises
+
+are you single?
+&gt;&gt; Sorry. I did not understand your request.
+
+help
+&gt;&gt; Here are the requests I understand.
+add {TODO description} : adds a TODO to the list
+list : lists all TODOs
+...
+
+</code></pre>
+      </li>
+      <li>
+        <p>There is <strong>no need for PAC to be able to understand natural language</strong> sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.</p>
+      </li>
+      <li>
+        <p>PAC should support <strong>adding, deleting, listing, searching</strong> (by keyword) of data items.</p>
+      </li>
+      <li>
+        <p><em>Persistence</em>: The data should be <strong>stored in the hard disk</strong> so that restarting PAC should not cause a loss of data entered in a previous session.</p>
+        <ol>
+          <li>The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>, <code>json</code>, plain text, etc.</li>
+        </ol>
+      </li>
+    </ol>
+    <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
+    <div class="table-responsive">
+      <table class="markbind-table table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Team size</th>
+            <th>Total amount of functionality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1-person</td>
+            <td>3-4 units</td>
+          </tr>
+          <tr>
+            <td>2-persons</td>
+            <td>4-5 units</td>
+          </tr>
+          <tr>
+            <td>3-persons</td>
+            <td>5-6 units</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong><em>Additional</em> Functionality</strong>:</p>
+    <p>Some suggestions for <em>additional functionality</em>:</p>
+    <ul>
+      <li>More attributes for data items e.g., priorities, tags, birthdays</li>
+      <li>Multiple data item types e.g., support saving TODOs, appointments, and deadlines
+        <ul>
+          <li>Support connections between data items e.g., ability to assign a TODO to a contact</li>
+        </ul>
+      </li>
+      <li>Multi-user support e.g., assume the software is installed in a common computer in your office and allow multiple users to interact with it</li>
+      <li>More ways to query data e.g., find contacts that has a birthday in next 2 days, find all TODOs with high priority, etc.</li>
+      <li>Any other feature (get approval from prof before implementing)</li>
+    </ul>
+    <h3 id="constraints">Constraints<a class="fa fa-anchor" href="#constraints"></a></h3>
+    <ol>
+      <li>You should not use relational/SQL databases e.g., MySQL</li>
+      <li>The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
+        <ol>
+          <li>If your software need other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
+        </ol>
+      </li>
+    </ol>
+    <h3 id="deliverables">Deliverables<a class="fa fa-anchor" href="#deliverables"></a></h3>
+    <ul>
+      <li>
+        <p><strong>Week 8</strong> (mid-term submission): 10%</p>
+        <ul>
+          <li>Deadline: Week 8, Tuesday 6pm</li>
+          <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement)
+            <ul>
+              <li>Submission: demo during lecture in week 8.</li>
+            </ul>
+          </li>
+          <li>Documentation:
+            <ul>
+              <li>Sections to include:
+                <ul>
+                  <li>Cover page: Include product name, names of team members</li>
+                  <li>User stories: Give user stories to cover all current and future functionalities</li>
+                  <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
+                  <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
+                  <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.</li>
+                </ul>
+              </li>
+              <li>Submission: upload to IVLE as a <code>.docx</code> or <code>.pdf</code> file. File name should contain team member names. e.g., <code>John Doe, Sarah Tan, Viet Ngoc.docx</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Week 13</strong> (final submission): 30%</p>
+        <ul>
+          <li>Functionality: all functionality
+            <ul>
+              <li>Submission:
+                <ul>
+                  <li>Zip up all source files, upload to IVLE as a single <code>.zip</code> file (not <code>.rar</code>). File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+                  <li>Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced later.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Documentation:
+            <ul>
+              <li>Include all content included in mid-term submission. <mark>Refine as per feedback given. Update to match the final product.</mark></li>
+              <li>Add a <strong>class diagram</strong> to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you <em>propose</em> to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]</li>
+              <li>Add an <strong>object diagram</strong> to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]</li>
+              <li>Give a sample of <strong>test cases</strong> you would use to test the software.
+                <ul>
+                  <li>
+                    <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]
+                  </li>
+                  <li>Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]</li>
+                </ul>
+              </li>
+              <li>Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <modal large="" title="Class diagram example" id="modal:finalSubmission-classDiagram">
+      <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
+      <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
+    </modal>
+    <modal large="" title="Object diagram example" id="modal:finalSubmission-objectDiagram">
+      <img src="/2019/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></modal>
+    <modal large="" id="modal:finalSubmission-systemTests">
+      <h2 id="sample-system-tests">Sample System Tests<a class="fa fa-anchor" href="#sample-system-tests"></a></h2>
+      <p><strong>Test case 1: Launch without prior data</strong></p>
+      <ul>
+        <li>Feature being tested : launch of app, without any prior data</li>
+        <li>Set up:
+          <ol>
+            <li>Delete all files in the <code>/data/</code> folder.</li>
+          </ol>
+        </li>
+        <li>Steps:
+          <ol>
+            <li>Run the app using the command <code>python main.py</code></li>
+            <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br>
+              {screenshot here}</li>
+          </ol>
+        </li>
+      </ul>
+      <p><strong>Test case 2: Add first contact</strong></p>
+      <ul>
+        <li>Feature being tested : adding of a contact when there are no prior data</li>
+        <li>Set up:
+          <ol>
+            <li>Launch app without any prior data (similar to <code>Test case 1</code> above).</li>
+          </ol>
+        </li>
+        <li>Steps:<div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Input</th>
+                  <th>Expected</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Enter command <code>add</code></td>
+                  <td>app shows error message and show the correct format of the <code>add</code> command</td>
+                </tr>
+                <tr>
+                  <td>Enter command<br> <code>add John Doe</code></td>
+                  <td>app shows list of contacts containing only one person<br> {screenshot here}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </modal>
+    <modal large="" id="modal:finalSubmission-unitTests">
+      <h2 id="sample-unit-tests">Sample Unit Tests<a class="fa fa-anchor" href="#sample-unit-tests"></a></h2>
+      <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
+      <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
+      <div class="table-responsive">
+        <table class="markbind-table table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th><code>current_contacts</code></th>
+              <th><code>new_contact</code></th>
+              <th>Expected <code>current_contacts</code></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>[]</code></td>
+              <td><code>Person('John')</code></td>
+              <td><code>[Person('John')]</code></td>
+            </tr>
+            <tr>
+              <td><code>[Person('John')]</code></td>
+              <td><code>Person('John')</code></td>
+              <td><code>[Person('John')]</code></td>
+            </tr>
+            <tr>
+              <td><code>[Person('John')]</code></td>
+              <td><code>Person('Amy')</code></td>
+              <td><code>[Person('John'), Person('Amy')]</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </modal>
+    <h2 id="exam">Exam<a class="fa fa-anchor" href="#exam"></a></h2>
+    <ul>
+      <li>Total: 2 hours
+        <ul>
+          <li>Part 1: MCQ (1 hour)</li>
+          <li>Part 2: Essay (1 hour)</li>
+        </ul>
+      </li>
+      <li>Open book (any printed or written materials are allowed)</li>
+    </ul>
+    <h2 id="grading">Grading<a class="fa fa-anchor" href="#grading"></a></h2>
+    <ul>
+      <li>Project: 40%</li>
+      <li>Exam: 60%</li>
+    </ul>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 11:23:26 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\layouts\default\scripts.js"></script>
+</html>
