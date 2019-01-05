@@ -108,3 +108,5 @@
 <span id="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 
 <span id="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+
+<span id="home↑"><span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span></span>

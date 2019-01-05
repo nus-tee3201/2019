@@ -8,8 +8,6 @@ head: adminHead.md
 
 <div class="website-content" id="main">
 
-<div class="website-content">
-
 # TE3201 Software Engineering
 
 * [Lectures](#lectures)
