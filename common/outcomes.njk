@@ -1,0 +1,235 @@
+{% import "se-book-adapted/config.njk" as config with context %}
+{% from "common/macros.njk" import  show_stars, show_priority_style with context %}
+
+
+{% macro get_start_index_untrimmed(filter_property, filter_value, entries) -%}
+{% set start = "-1" %}
+{% for entry in entries %}
+{% if start == "-1" and entry[filter_property] == filter_value %}
+  {% set start = loop.index0 %}
+  {{ start }}
+{% endif %}
+{% endfor %}
+{%- endmacro %}
+
+
+{% macro get_start_index(filter_property, filter_value, entries) %}{{ get_start_index_untrimmed(filter_property, filter_value, entries) | trim }}{% endmacro %}
+
+
+{% macro get_end_index_untrimmed(filter_property, filter_value, start, entries) -%}
+{% set end = "-1" %}
+{% for entry in entries %}
+{% if loop.index0 < start %}
+  {# start index not reached, no action required #}
+{% elseif not entry[filter_property] %}
+  {# filter property not present, no action required #}
+{% else %}
+  {% if entry[filter_property] == filter_value %}
+    {# filter property matched, no action required #}
+  {% else %}
+    {# filter property value did not match #}
+    {% if end == "-1" %}
+      {# first time encountering mismatch; this is the target index #}
+      {% set end = loop.index0 %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% endfor %}
+{% if end == "-1" %}
+  {# no mismatch found until the end of the list #}
+  {% set end = entries | length %}
+{% endif %}
+{{ end }}
+{%- endmacro %}
+
+
+{% macro get_end_index(filter_property, filter_value, start, entries) %}{{get_end_index_untrimmed(filter_property, filter_value, start, entries) | trim }}{% endmacro %}
+
+
+{% macro apply_to(filter_property, filter_value, entries, op, params={})%}
+{% set start = get_start_index(filter_property, filter_value, entries) %}
+{% set end = get_end_index(filter_property, filter_value, start, entries) %}
+{{ op(entries.slice(start, end), params) }}
+{% endmacro %}
+
+
+{% macro show_evidence(evidence_location_full) %}
+{{ dashed_line | safe}}
+
+{{evidence}}
+
+<include src="{{ evidence_location_full }}" />
+
+{% endmacro %}
+
+{% macro show_default_evidence(chapter, unit_location, path_displacement) %}
+{% set evidence_location_full =  path_displacement + "../evidence/" + chapter + ".md#" + (unit_location | replace("/", "_")) %}
+{{ show_evidence(evidence_location_full)}}
+{% endmacro %}
+
+
+{% macro show_specific_evidence(evidence_location, path_displacement) %}
+{% set evidence_location_full =  path_displacement + "../evidence/" + evidence_location %}
+{{ show_evidence(evidence_location_full)}}
+{% endmacro %}
+
+
+{% macro show_unit(id_prefix, unit, path_displacement="", is_flat=true) %}
+{% set chapter = unit.location[0] %}
+{% set path_as_array = unit.location.slice(1,4) %}
+{% set path = path_as_array.join("/") %}
+{% set full_path = unit.location.join("/") %}
+{% if not unit.priority %}
+  {% set priority = config.get_priority(chapter, path_as_array) %}
+{% else %}
+  {% set priority = unit.priority %}
+{% endif %}
+{% set panel_decorations = "no-switch" if is_flat else "" %}
+{% set panel_expandable = "false" if is_flat else "true" %}
+<panel type="seamless" expanded>
+<span slot="header" class="card-title"><md><span class='badge badge-pill badge-light'>%%[{{ id_prefix }}]%%</span> %%**<include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />**%% **<big><big><include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /></big></big>**</md> {{ show_stars(priority) }}</span>
+  <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
+</panel>
+{% endmacro %}
+
+
+{% macro get_unit_priority(unit)%}
+{% if unit.priority %}
+  {{unit.priority}}
+{% elseif unit.location %}
+  {% set chapter = unit.location[0] %}
+  {% set path_as_array = unit.location.slice(1,4) %}
+  {{ config.get_priority(chapter, path_as_array) }}
+{% else %}
+  {{ 5 }}
+{% endif %}
+{% endmacro %}
+
+{% macro get_collective_priority(entries)%}
+{% set priority = 5 %}
+{% for entry in entries %}
+  {% set entry_priority = get_unit_priority(entry) | trim | int %}
+  {% if entry_priority != 0 and entry_priority < priority %}
+    {% set priority = entry_priority %}
+  {% endif %}
+{% endfor %}
+{% if priority == 5 %}
+  {# none of the entries have priorities 1-4 #}
+  {% set priority = 0 %}
+{% endif %}
+{{ priority }}
+{% endmacro %}
+
+
+{% macro show_subheading(subheading) %}
+<br/>
+
+%%**{{ subheading }}**%%
+{% endmacro %}
+
+
+{% macro show_outcome(entries, params={week_num: "n/a", starting_index: "n/a", outcome: "n/a", is_flat: false, is_toc: false}) %}
+{% if not params.outcome.priority %}
+  {% set priority = get_collective_priority(entries) | trim %}
+{% else %}
+  {% set priority = params.outcome.priority %}
+{% endif %}
+{% set  prefix = "W" + params.week_num + "." + params.starting_index%}
+{% set  anchor = prefix | trim | replace(".", "-") %}
+{% set letters = "abcdefghijklmnop" | list %}
+{% set letter_index = 0 %}
+{% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
+{% set panel_expandable = "false" if params.is_flat else "true" %}
+{% if params.is_toc %}
+* [[{{ prefix | trim }}] {{ params.outcome.heading }} {{ show_stars(priority) }}](#{{ anchor }})
+{% else %}
+<span id="{{ anchor }}" />
+
+<panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" expanded >
+<span slot="header" class="card-title"><markdown><big> %%[{{ prefix | trim }}]%% <big><big>**{{ params.outcome.heading }}**</big></big></big> {{ show_stars(priority) }}</markdown> </span>
+<div class="indented-level1">
+{% if params.outcome.file %}
+  <include src="{{ params.path_displacement }}../evidence/{{ params.outcome.file }}" />
+{% else %}
+  {% for entry in entries  %}
+    {% if entry.location %}
+{{ show_unit(prefix + letters[letter_index], entry, params.path_displacement, params.is_flat) }}
+      {% set letter_index = letter_index + 1 %}
+    {% elseif entry.subheading %}
+{{  show_subheading(entry.subheading) }}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+</div>
+</panel>
+{% endif %} {# if params.is_toc #}
+{% endmacro %}
+
+
+{% macro show_outcome_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false, is_toc: false}) %}
+{% set  outcome_number = params.starting_index | int %}
+{% for entry in entries  %}
+  {% if entry.heading %}
+{{ apply_to("heading", entry.heading, entries, show_outcome, {week_num: params.week_num, starting_index: outcome_number , outcome: entry, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
+{% set  outcome_number = outcome_number + 1 %}
+  {% endif %}
+{% endfor %}
+<p/>
+{% endmacro %}
+
+
+{% macro show_week(entries, params={week_num: "n/a", is_flat: false, is_toc: false}) %}
+{% set i = 1 %}
+{% for entry in entries  %}
+  {% if entry.name %}
+{{ apply_to("name", entry.name, entries, show_outcome_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
+  {% set i = i + apply_to("name", entry.name, entries, count_outcomes) | trim | int %}
+  {% endif %}
+{% endfor %}
+{% endmacro %}
+
+
+{% macro count_outcomes(entries, params={})%}
+{% set count = 0 %}
+{% for entry in entries %}
+  {% if entry.heading %}
+    {% set count = count + 1 %}
+  {% endif %}
+{% endfor %}
+{{ count }}
+{% endmacro %}
+
+
+{% macro show_week_schedule_main(week_num, entries, path_displacement, is_flat=false, is_toc=false) %}
+{{ apply_to("week", week_num, entries, show_week, {week_num: week_num, path_displacement: path_displacement, is_flat: is_flat, is_toc: is_toc}) }}
+{% endmacro %}
+
+
+{% macro show_week_schedule(week_num, entries, path_displacement="") %}
+<frontmatter>
+title: "Week {{ week_num }} - Outcomes"
+footer: footer.md
+head: scheduleHead.md
+</frontmatter>
+
+<div class="website-content">
+
+<div id="main">
+
+<div class="indented">
+
+{{ show_week_schedule_main(week_num, entries, path_displacement, is_toc=true) }}
+</div>
+
+<hr style="border: 1px dotted #cccccc;" />
+
+{{ show_week_schedule_main(week_num, entries, path_displacement) }}
+
+</div>
+</div>
+
+{% endmacro %}
+
+
+
+

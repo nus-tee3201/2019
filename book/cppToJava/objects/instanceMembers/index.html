@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - C++ to Java: Objects: Instance Members</title>
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\layouts\default\styles.css">
+    
+    
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="content-wrapper">
+  <div>
+    <navbar placement="top" type="inverse">
+      <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
+      <li slot="right">
+        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+      </li>
+    </navbar>
+  </div>
+  <div>
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
+    <div class="website-content">
+      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use instance members of objects</span></span></span></span></p>
+      <p></p>
+      <p></p>
+      <div>
+        <div></div>
+        <p></p>
+        <p><span class="dimmed"><strong><span>C++ to Java → Objects →
+              </span></strong></span></p>
+        <div id="title-and-body">
+          <div>
+            <h4 id="instance-members"><span>Instance Members</span><a class="fa fa-anchor" href="#instance-members"></a></h4>
+          </div>
+          <div id="main">
+            <div>
+              <p><strong>Variables that belong to an object are called <em>attributes</em> (or <em>fields</em>).</strong></p>
+              <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span></span> To access an attribute of an object, Java uses <em>dot notation</em>.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> The code below uses <code>spot.x</code> which means &quot;go to the object spot refers to, and get the value of the attribute <code>x</code>.&quot;</p>
+                <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+<span class="hljs-keyword">int</span> sum = spot.x * spot.x + spot.y * spot.y;
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y + <span class="hljs-string">", "</span> + sum);
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>3, 4, 25
+</code></pre>
+              </box>
+              <p><strong>You can <tooltip content="i.e., change/modify"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
+              <box>
+                <p><span class="fas fa-cube"></span> This example changes the x value of the <code>Point</code> object to <code>5</code>.</p>
+                <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+spot.x = <span class="hljs-number">5</span>;
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>5, 4
+</code></pre>
+              </box>
+              <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span></span> <strong>Java uses the dot notation to invoke methods on an object too.</strong></p>
+              <box>
+                <p><span class="fas fa-cube"></span> This example invokes the <code>translate</code> method on a <code>Point</code> object so that it moves to a different location.</p>
+                <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
+spot.translate(<span class="hljs-number">5</span>,<span class="hljs-number">5</span>);
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>3, 4
+8, 9
+</code></pre>
+              </box>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> use `Rectangle` objects">
+                        <question>
+                          <p>Update the code below as described in code comments, to produce the given output.</p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Rectangle;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Rectangle r = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>);
+        System.out.println(r);
+
+        <span class="hljs-keyword">int</span> area;
+        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add a line below to calculate the area using width and height properties of r</span>
+        <span class="hljs-comment">// and assign it to the variable area</span>
+
+        System.out.println(<span class="hljs-string">"Area: "</span> + area);
+
+        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add a line here to set the size of r to 8x10 (width x height)</span>
+        <span class="hljs-comment">//Recommended: use the setSize(int height, int width) method of the Rectangle object</span>
+
+        System.out.println(r);
+    }
+
+}
+</code></pre>
+                          <p><span class="fas fa-arrow-down"></span></p>
+                          <pre class="hljs"><code>java.awt.Rectangle[x=0,y=0,width=4,height=6]
+Area: 24
+java.awt.Rectangle[x=0,y=0,width=8,height=10]
+</code></pre>
+                          <div slot="hint">
+                            <ul>
+                              <li>Area can be calculated as <code>r.width * r.height</code></li>
+                              <li>Setting the size can be done as <code>r.setSize(8, 10)</code></li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 09:17:05 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\..\..\..\markbind\js\setup.js"></script>
+<script src="..\..\..\..\markbind\layouts\default\scripts.js"></script>
+</html>

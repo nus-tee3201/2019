@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - Design Approaches: Agile Design</title>
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\layouts\default\styles.css">
+    
+    
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="content-wrapper">
+  <div>
+    <navbar placement="top" type="inverse">
+      <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
+      <li slot="right">
+        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+      </li>
+    </navbar>
+  </div>
+  <div>
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
+    <div class="website-content">
+      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain agile design</span></span></span></span></p>
+      <p></p>
+      <p></p>
+      <div>
+        <div></div>
+        <p></p>
+        <p><span class="dimmed"><strong><span>Design Approaches → Agile Design →
+              </span></strong></span></p>
+        <div id="title-and-body">
+          <div>
+            <h4 id="agile-design"><span>Agile Design</span><a class="fa fa-anchor" href="#agile-design"></a></h4>
+          </div>
+          <div id="main">
+            <div>
+              <p><strong><em>Agile design</em> can be contrasted with <em>full upfront design</em> in the following way</strong>:</p>
+              <blockquote>
+                <p><strong>Agile designs are emergent, they’re not defined up front.</strong> Your overall system design will emerge over time, evolving to fulfill new requirements and take advantage of new technologies as appropriate. Although you will often do <strong>some initial architectural modeling at the very beginning</strong> of a project, this will be just enough to get your team going. This approach does not produce a fully documented set of models in place before you may begin coding. <sub>-- adapted from <a href="http://agilemodeling.com/essays/agileDesign.htm">agilemodeling.com</a></sub></p>
+              </blockquote>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about agile design">
+                      <question>
+                        <p>Agile design camp expects the design to change over the product’s lifetime.</p>
+                        <ul radio-group="07214" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> False</label></li>
+                        </ul>
+                        <div slot="answer">
+                          <p>True</p>
+                          <p>Explanation: Yes, that is why they do not believe in spending too much time creating a detailed and full design at the very beginning. However, the architecture is expected to remain relatively stable even in the agile design approach.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 09:17:05 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\..\..\..\markbind\js\setup.js"></script>
+<script src="..\..\..\..\markbind\layouts\default\scripts.js"></script>
+</html>

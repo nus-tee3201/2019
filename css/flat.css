@@ -1,0 +1,11 @@
+.embedding {
+    display: none;
+}
+
+.nested {
+    display: none;
+}
+
+.flat {
+    display: inline;
+}

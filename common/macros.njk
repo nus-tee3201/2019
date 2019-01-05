@@ -1,0 +1,112 @@
+{% import "se-book-adapted/config.njk" as config with context %}
+
+{% macro show_priority_style_untrimmed(level) %}
+{% set label_style = {"0": "default", "0:1": "default", "0:2": "default", "0:3": "default", "0:4": "default", "1": "danger", "2": "warning", "3": "info", "4": "success"} %}
+{{ label_style[level] }}
+{% endmacro %}
+
+
+{% macro show_priority_style(level) %}{{ show_priority_style_untrimmed(level) | trim }}{% endmacro %}
+
+{% macro show_stars_untrimmed(level) %}
+{% if level == "0" %}
+  {{ prereq_no_stars }}
+{% elseif level == "0:1" %}
+  {{ prereq_one_star }}
+{% elseif level == "0:2" %}
+  {{ prereq_two_stars }}
+{% elseif level == "0:3" %}
+  {{ prereq_three_stars }}
+{% elseif level == "0:4" %}
+  {{ prereq_four_stars }}
+{% elseif level == "1" %}
+  {{ one_star }}
+{% elseif level == "2" %}
+  {{ two_stars }}
+{% elseif level == "3" %}
+  {{ three_stars }}
+{% elseif level == "4" %}
+  {{ four_stars }}
+{% else %}
+  Unknown level !!! {{ level }}
+{% endif %}
+{% endmacro %}
+
+
+{% macro show_stars(level) %}{{ show_stars_untrimmed(level) | trim }}{% endmacro %}
+
+
+{% macro show_stars_in_nav(priority) -%}
+<span class="badge badge-pill badge-light"><span class="font-weight-bold text-{{ show_priority_style(priority) }}">{{ priority }}{{ fas_star }}</span></span>
+{%- endmacro %}
+
+
+{% macro show_admin_section_to_read(heading, priority, source, is_flat=false) %}
+{% set  panel_type = "dark" if is_flat else "default"%}
+{% set  panel_expandable = "false" if is_flat else "true"%}
+{% set  panel_decorations = "expanded no-switch" if is_flat else ""%}
+{% set panel_title %} Admin {{ icon_embedding | safe }} {{ heading }} {{ show_stars(priority) }}{% endset %}
+{% if is_flat %}
+  {% set panel_title %}<span class="text-white">{{ panel_title | safe }}</span> {% endset %}
+{% endif %}
+<panel  type="{{ panel_type }}" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" >
+<span slot="header" class="card-title">{{ panel_title | safe }}</span>
+<include src="{{ source }}" />
+</panel><p/>
+{% endmacro %}
+
+
+{% macro show_admin_topic(topics, id_of_topic_to_show, div_to_show="main", div_title="", is_flat=false) %}
+{% for topic in topics %}
+{% if topic.id == id_of_topic_to_show %}
+{% set panel_title =  topic.title + ((" [" + div_title + "]") if div_title != "") %}
+{{ show_admin_section_to_read(panel_title, topic.priority, "../../admin/" + topic.id + ".md#" + div_to_show, is_flat) }}
+{% endif %}
+{% endfor %}
+{% endmacro %}
+
+
+{% macro show_admin_faq(faqs, id_of_faq_to_show, is_flat=false) %}
+{% for faq in faqs %}
+{% if faq.id == id_of_faq_to_show %}
+{{ show_admin_section_to_read("Appendix C (FAQs) → " + faq.title, faq.priority, "../../admin/appendixC-faq.md/#" + faq.id, is_flat ) }}
+{% endif %}
+{% endfor %}
+{% endmacro %}
+
+
+{% macro show_admin_policy(policies, id_of_policy_to_show, is_flat=false) %}
+{% for policy in policies %}
+{% if policy.id == id_of_policy_to_show %}
+{{ show_admin_section_to_read("Appendix B (Policies) → " + policy.title, policy.priority, "../../admin/appendixB-policies.md/#" + policy.id, is_flat ) }}
+{% endif %}
+{% endfor %}
+{% endmacro %}
+
+
+{% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
+{% for section in sections_to_show %}
+{% if section.topic_id %}
+  {% set div_to_show = section.div if section.div else "main"  %}
+  {% set div_title = section.div_title if section.div_title else ""  %}
+  {{ show_admin_topic(topics, section.topic_id, div_to_show, div_title, is_flat) }}
+{% elif section.faq_id %}
+  {{ show_admin_faq(faqs, section.faq_id, is_flat) }}
+{% elif section.policy_id %}
+  {{ show_admin_policy(policies, section.policy_id, is_flat) }}
+{% endif %}
+{% endfor %}
+{% endmacro %}
+
+{% macro embed_topic(source, title, trigger_id, level="0") %}
+{% set stars = {"0": "", "1": s, "2": s+s, "3": s+s+s, "4": s+s+s+s} %}
+
+<div class="flat"><markdown>%%Relevant: [<trigger trigger="click" for="modal:{{ trigger_id }}">{{ title | safe }}</trigger> {{ stars[level] | safe }}]%%</markdown></div>
+
+<modal large title="{{ title | safe }}  {{ stars[level] | safe }}" id="modal:{{ trigger_id }}">
+  <include src="{{ source }}"/>
+</modal>
+
+<panel src="{{ source }}" header="{{ title | safe }}  {{ stars[level] | safe }}" class="embedding" minimized />
+
+{% endmacro %}

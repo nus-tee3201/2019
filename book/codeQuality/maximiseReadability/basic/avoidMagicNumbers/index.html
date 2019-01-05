@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - Coding Best Practices: [Practice] Avoid Magic Numbers</title>
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\layouts\default\styles.css">
+    
+    
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="content-wrapper">
+  <div>
+    <navbar placement="top" type="inverse">
+      <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
+      <li slot="right">
+        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+      </li>
+    </navbar>
+  </div>
+  <div>
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
+    <div class="website-content">
+      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span></span></span></span></p>
+      <p></p>
+      <p></p>
+      <div>
+        <div></div>
+        <p></p>
+        <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
+              </span></strong></span></p>
+        <div id="title-and-body">
+          <div>
+            <h4 id="avoid-magic-numbers"><span>Avoid Magic Numbers</span><a class="fa fa-anchor" href="#avoid-magic-numbers"></a></h4>
+          </div>
+          <div id="main">
+            <div>
+              <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+              <tip-box>
+                <p><span class="fas fa-cube"></span> Example:</p>
+                <div class="alt-java">
+                  <div>
+                    <table>
+                      <tr>
+                          <td valign="top">
+                          <p>
+                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                          </p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+...
+<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
+</code></pre>
+                          <p></p>
+                        </td>
+                          <td>  <br><br></td>
+                          <td valign="top">
+                          <p>
+                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                          </p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
+...
+<span class="hljs-keyword">return</span> PI;
+...
+<span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
+</code></pre>
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="alt-python">
+                  <div>
+                    <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                    <table>
+                      <tr>
+                          <td valign="top">
+                          <p>
+                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                          </p>
+                          <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+...
+<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
+</code></pre>
+                          <p></p>
+                        </td>
+                          <td>  <br><br></td>
+                          <td valign="top">
+                          <p>
+                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                          </p>
+                          <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+MAX_SIZE = <span class="hljs-number">10</span>
+...
+<span class="hljs-keyword">return</span> PI
+...
+<span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
+</code></pre>
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </tip-box>
+              <p>Similarly, we can have ‘magic’ values of other data types.</p>
+              <tip-box>
+                <p>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                </p>
+                <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+</code></pre>
+              </tip-box>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 09:17:05 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\..\..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\..\..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\..\..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\..\..\..\..\markbind\js\setup.js"></script>
+<script src="..\..\..\..\..\markbind\layouts\default\scripts.js"></script>
+</html>

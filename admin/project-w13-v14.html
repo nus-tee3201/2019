@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - Admin: Project: v1.4 [week 13]</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/2019/css/main.css">
+    <link rel="stylesheet" href="/2019/css/admin.css">
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="moduleOverview.html">TE3201 Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Module Structure
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><a href="instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Project
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="project-overview.html">Project: Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-product.html">Project: The product</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-scope.html">Project: Scope</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-constraints.html">Project: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-teams.html">Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-timeline.html">Project: Timeline</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w03-inception.html">Project: inception [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w04-mid-v10.html">Project: mid-v1.0 [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w05-v10.html">Project: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w06-mid-v11.html">Project: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w07-v11.html">Project: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w08-mid-v12.html">Project: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w09-v12.html">Project: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w10-mid-v13.html">Project: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w11-v13.html">Project: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w13-v14.html">Project: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-deliverables.html">Project: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-assessment.html">Project: Assessment</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-supervision.html">Project: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><a href="peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="exams.html">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Appendices
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="appendixA-principles.html">A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixB-policies.html">B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixC-faq.html">C: Frequently Asked Questions</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixD-help.html">D: Getting help in this module</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixE-gitHub.html">E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixF-teamworkIssues.html">F: Handling teamwork issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+            <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+            <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+            <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+            <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+            <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+            <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+            <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+            <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+            <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          </dropdown>
+          <li><a href="/2019/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+          <li><a href="/2019/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://github.com/nus-te3201/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://github.com/nus-te3201/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="/2019/admin/project-overview.html" class="dropdown-item"><span class="fas fa-drafting-compass"></span> Project Info</a></li>
+            <li><a href="/2019/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content">
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12]</a></span></span><span style="float:right"><span><a href="project-deliverables.html">Project: Deliverables <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span></p>
+        <br>
+        <p>
+          <div>
+            <h2 id="project%3A-v1.4-%5Bweek-13%5D">Project: v1.4 [week 13] <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span><a class="fa fa-anchor" href="#project%3A-v1.4-%5Bweek-13%5D"></a></h2>
+          </div>
+        </p>
+        <div id="main">
+          <div id="title"></div>
+          <div id="body">
+            <p class="lead" style="color: purple"><span><span class="far fa-calendar-check"></span> <span>Final tweaks to docs/product, release product, demo product, evaluate peer projects.</span></span></p>
+            <p><strong>Summary of submissions</strong>:</p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Team/Individual Item</th>
+                    <th>Name format</th>
+                    <th>Upload to</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Source code</td>
+                    <td>tag as <code>v1.4</code></td>
+                    <td>GitHub</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Jar file</td>
+                    <td><code>[team][product name].jar</code><br><span class="dimmed">e.g. [W09-1][ContactsPlus].jar</span></td>
+                    <td>IVLE</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> User Guide</td>
+                    <td><code>[TEAM_ID][product Name]UserGuide.pdf</code><br> <span class="dimmed">e.g.[W09-1][Contacts Plus]UserGuide.pdf</span></td>
+                    <td>IVLE</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Developer Guide</td>
+                    <td><code>[TEAM_ID][product Name]DeveloperGuide.pdf</code><br> <span class="dimmed">e.g. [W09-1][Contacts Plus]DeveloperGuide.pdf</span></td>
+                    <td>IVLE</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Product Website</td>
+                    <td><code>README</code> page, <code>Ui.png</code>, <code>AboutUs</code> page</td>
+                    <td><a href="http://github.io">github.io</a></td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Project Portfolio Page</td>
+                    <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br> <span class="dimmed">e.g.[W09-1][John Doe]Portfolio.pdf</span><br>html version of PPP page on the product website</td>
+                    <td>IVLE<br><br><a href="http://github.io">github.io</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li><strong>Deadline</strong> for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.<br></li>
+              <li>Submit to IVLE folder we have set up, not to your project space.<br>
+                te3201T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.</li>
+              <li>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Penalty for late submission:</strong><br>
+                <mark>-1 mark for missing the deadline (up to 2 hour of delay).</mark><br>
+                -2 for an <em>extended delay</em> (up to 24 hours late).<br>
+                Penalty for delays beyond 24 hours is determined on a case by case basis.
+                <ul>
+                  <li>Even a one-second delay is considered late, irrespective of the reason.</li>
+                  <li>For submissions done via IVLE, the submission time is the timestamp shown by IVLE.</li>
+                  <li>When determining the late submission penalty, <strong>we take the latest submission</strong> even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
+                </ul>
+              </li>
+              <li>The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.</li>
+              <li>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Please <strong>follow submission instructions closely</strong>. <mark>Any non-compliance will be penalized</mark>. e.g. wrong file name, team member photos not suitable, etc.
+              </li>
+              <li>For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too <span class="dimmed"> e.g. broken links, outdated diagrams/instructions etc.</span>.</li>
+              <li><strong>Do not update the repo during the 14 days after the deadline.</strong> Get our permission first if you need to update the repo during that <em>freeze</em> period. You can continue to evolve your repo after that.</li>
+            </ul>
+            <p><strong>Grading</strong>:</p>
+            <p><span class="flat">Described in [<a href="#admin-project-assessment-anchor">Admin: Project: Assessment</a>]</span></p>
+            <p>
+              <panel src="/2019\admin\project-assessment._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project: Assessment%%" class="embedding" fragment="main"></panel>
+            </p>
+            <h3 id="v1.4-product">v1.4 Product<a class="fa fa-anchor" href="#v1.4-product"></a></h3>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-executable">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → Executable</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Executable  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-executable">
+                <div>
+                <ul>
+                  <li>The product should be delivered as an executable jar file.</li>
+                  <li>Ideally, the product delivered at v1.4 should be a <tooltip content=" i.e., it can be used by end-users"><em>releasable</em></tooltip> product. However, in the interest of lowering your workload, we do not penalize if the product is <tooltip content="i.e., the product is not usable by end-users because some essential features are missing">not releasable</tooltip>, <mark>as long as the product is <tooltip content="i.e., the features it has can be tested from an end-user perspective"><em>acceptance testable</em></tooltip></mark>.</li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-executable" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Executable  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-executable"></panel>
+            </p>
+            <p></p>
+            <p><strong>Submission</strong>: See summary of submissions above</p>
+            <h3 id="v1.4-source-code">v1.4 Source Code<a class="fa fa-anchor" href="#v1.4-source-code"></a></h3>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-sourcecode">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → Source Code</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Source Code  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-sourcecode">
+                <div>
+                <ul>
+                  <li>The source code should match the executable, and should include the revision history of the source code, as a Git repo.</li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-sourcecode" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Source Code  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-sourcecode"></panel>
+            </p>
+            <p></p>
+            <p><strong>Submission</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>please ensure the code reported by RepoSense as yours is correct;</mark> any updates to RepoSense config files or <code>@@author</code> annotations after the deadline will be considered a later submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.</p>
+            <h3 id="v1.4-user-guide">v1.4 User Guide<a class="fa fa-anchor" href="#v1.4-user-guide"></a></h3>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-deliverableUg">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → User Guide</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → User Guide  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-deliverableUg">
+                <div>
+                <ul>
+                  <li>The User Guide (UG) of the product should match the proposed v2.0 of the product and in sync with the current version of the product.</li>
+                  <li>Features not implemented yet should be clearly marked as <code>Coming in v2.0</code></li>
+                  <li>Ensure the UG matches the product precisely, as it will be used by peer testers (and <mark>any inaccuracy in the content will be considered bugs</mark>).</li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-ug" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → User Guide  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-ug"></panel>
+            </p>
+            <p></p>
+            <p><strong>Submission</strong>: Convert the pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE. See <em>summary of submissions</em> above for the file name format.</p>
+            <h3 id="v1.4-developer-guide">v1.4 Developer Guide<a class="fa fa-anchor" href="#v1.4-developer-guide"></a></h3>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-deliverableDg">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → Developer Guide</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Developer Guide  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-deliverableDg">
+                <div>
+                <ul>
+                  <li>The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.</li>
+                  <li>
+                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>The appendix named <em>Instructions for Manual Testing</em></strong> of the Developer Guide should include testing instructions to <strong>cover the features of each team member</strong>. There is no need to add testing instructions for existing features if you did not touch them.<br>
+                    💡 What to include in the appendix <em>Instructions for Manual Testing</em>? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder <span class="dimmed"> i.e. annoys the tester</span>, the tester can report it as a bug <span class="dimmed"> (because flaws in developer docs are considered as bugs)</span>.
+                  </li>
+                  <li>Ensure the parted DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and <mark>any inaccuracy in the content will be considered bugs</mark>).</li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-dg" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Developer Guide  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-dg"></panel>
+            </p>
+            <p></p>
+            <p><strong>Submission</strong>: Similar to UG</p>
+            <h3 id="v1.4-project-portfolio-page-(ppp)">v1.4 Project Portfolio Page (PPP)<a class="fa fa-anchor" href="#v1.4-project-portfolio-page-(ppp)"></a></h3>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-deliverablePpp">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → Project Portfolio Page</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Project Portfolio Page  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-deliverablePpp">
+                <div>
+                <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
+                <ul>
+                  <li>
+                    <p><strong>Objective:</strong></p>
+                    <ul>
+                      <li>For you to use <span class="dimmed"> (e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
+                      <li>For us to use as a data point to evaluate your,
+                        <ul>
+                          <li>contributions to the project</li>
+                          <li>your documentation skills</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Sections to include:</strong></p>
+                    <ul>
+                      <li>
+                        <p><strong>Overview</strong>: A short overview of your product to provide some context to the reader.</p>
+                      </li>
+                      <li>
+                        <p><strong>Summary of Contributions</strong>:</p>
+                        <ul>
+                          <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-te3201-ay1819s2.github.io/te3201-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-te3201-ay1819s2.github.io/te3201-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/2019/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
+                          <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
+                          <li><strong>Other contributions:</strong>
+                            <ul>
+                              <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
+                              <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
+                              <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Contributions to the User Guide</strong>: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
+                          <span class="dimmed">The purpose of allowing you to include <em>proposed</em> features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></p>
+                      </li>
+                      <li>
+                        <p><strong>Contributions to the Developer Guide</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
+                      </li>
+                      <li>
+                        <p>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Format</strong>:</p>
+                    <ul>
+                      <li>
+                        <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
+                      </li>
+                      <li>
+                        <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-te3201-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
+                      </li>
+                      <li>
+                        <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-te3201-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
+                      </li>
+                      <li>
+                        <p><mark>
+                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
+                          </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Page limit</strong>:</p>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Content</th>
+                            <th>Limit</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Overview + Summary of contributions</td>
+                            <td>0.5-1 (soft limit)</td>
+                          </tr>
+                          <tr>
+                            <td>Contributions to the User Guide</td>
+                            <td>1-3 (soft limit)</td>
+                          </tr>
+                          <tr>
+                            <td>Contributions to the Developer Guide</td>
+                            <td>3-6 (soft limit)</td>
+                          </tr>
+                          <tr>
+                            <td>Total</td>
+                            <td>5-10 <mark>(strict)</mark></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <ul>
+                      <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                      <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                        If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                        <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-ppp" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Project Portfolio Page  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-ppp"></panel>
+            </p>
+            <p></p>
+            <p><strong>Submission</strong>: Similar to UG</p>
+            <h3 id="v1.4-product-website">v1.4 Product Website<a class="fa fa-anchor" href="#v1.4-product-website"></a></h3>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-deliverableWebsite">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → Product Website</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Product Website  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-deliverableWebsite">
+                <div>
+                <ul>
+                  <li>Include an updated version of the online UG and DG that match v1.4 executable</li>
+                  <li>README :
+                    <ul>
+                      <li><mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="indented-level3" id="tips-for-product-screenshot">
+                  <box>
+                    <p>💡 <strong>Some common sense tips for a good product screenshot</strong></p>
+                    <p><code>Ui.png</code> represents your product in its full glory.</p>
+                    <ul>
+                      <li>Before taking the screenshot, populate the product with data that makes the product look good. For example, if the product is supposed to show photos, use real photos instead of dummy placeholders.</li>
+                      <li>It should show a state in which the product is well-populated <span class="dimmed">i.e., don't leave data panels largely blank</span></li>
+                      <li>Choose a state that showcase the main features of the product <span class="dimmed">i.e., the login screen is not usually a good choice</span></li>
+                      <li>Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is being in use for real.</li>
+                    </ul>
+                    <panel type="seamless" header="Examples">
+                      <tabs>
+                          <tab header="Not Good">
+                          <img src="/2019/admin/images/Ui-notGood1.png" width="600"></tab>
+                          <tab header="Not Good">
+                          <img src="/2019/admin/images/Ui-notGood2.png" width="600"></tab>
+                        <tab header="Good">
+                          <img src="/2019/admin/images/Ui-good1.png" width="600"></tab>
+                          <tab header="Good">
+                          <img src="/2019/admin/images/Ui-good2.png" width="600"></tab>
+                      </tabs>
+                    </panel>
+                  </box>
+                </div>
+                <ul>
+                  <li>AboutUs : Ensure the following:
+                    <ul>
+                      <li>Use a suitable profile photo</li>
+                    </ul>
+                  </li>
+                </ul>
+                <div id="profile-photo" class="indented-level2">
+                  <ul>
+                    <li>
+                      <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
+                        <img src="/2019/admin/images/profilephotos.png" style="width: 365.33px"></p>
+                    </li>
+                    <li>
+                      <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you can request permission to omit your photo from the page by writing to prof.</p>
+                    </li>
+                  </ul>
+                </div>
+                <ul>
+                  <li>Contains a <mark>link to each person's Project Portfolio page</mark></li>
+                  <li>Team member <mark>names match full names used by IVLE</mark></li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-website" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Product Website  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-website"></panel>
+            </p>
+            <p></p>
+            <p><strong>Submission</strong>: Push the code to GitHub. Ensure the website is auto-published.</p>
+            <h3 id="v1.4-demo">v1.4 Demo<a class="fa fa-anchor" href="#v1.4-demo"></a></h3>
+            <p><img src="/2019/admin/images/v05demo.png" style="width: 250px"></p>
+            <p></p>
+            <p></p>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-deliverableDemo">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → Demo</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Demo  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-deliverableDemo">
+                <div>
+                <ul>
+                  <li>
+                    <p><strong>Duration:</strong> Strictly 18 minutes for a 5-person team and 15 minutes for a 4-person team. Exceeding this limit will be penalized. Any set up time will be taken out of your allocated time.</p>
+                  </li>
+                  <li>
+                    <p><strong>Target audience</strong>: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level4 (AB4) product. The actual audience are the evaluators (the team supervisor and another tutor).</p>
+                  </li>
+                  <li>
+                    <p><strong>Scope</strong>:</p>
+                    <ul>
+                      <li><strong>Each person should demo the enhancements they added</strong>. However, it's ok for one member to do all the typing.</li>
+                      <li>Subjected to the constraint mentioned in the previous point, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order. <span class="dimmed"> Remember to explain the profile of the target user profile and value proposition early in the demo.</span></li>
+                      <li>It is recommended you showcase how the feature improves the user’s life rather than simply describe each feature.</li>
+                      <li>No need to cover design/implementation details as the manager is not interested in those details.</li>
+                      <li>Mention features you inherited from AB4 only if they are needed to explain your new features. <span class="dimmed"> Reason: existing features will not earn you marks, and the audience is already familiar with AB4 features.</span></li>
+                      <li>Each person should demo their features.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Structure:</strong></p>
+                    <ul>
+                      <li>Demo the product using the same executable you submitted, on your own laptop, using the TV.</li>
+                      <li>It can be <strong>a <em>sitting down</em> demo</strong>: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.</li>
+                      <li>It will be an uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
+                      <li>The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data. <span class="dimmed"> e.g at least 20 contacts</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
+                      <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Optimizing the time:</strong></p>
+                    <ul>
+                      <li>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br>
+                        Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this] <code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code> [do this] <code>If Jim needs to postpone the meeting, he can type …</code>
+                        It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br>
+                        Note that CS2101 demo requirements may differ. Different context → Different requirements.</li>
+                      <li>Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.</li>
+                      <li>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</li>
+                      <li>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Special circumstances:</strong></p>
+                    <ul>
+                      <li>If a significant feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.</li>
+                      <li>If you have no user visible features to show, you can still contribute to the demo by giving an overview of the product (at the start) and/or giving a wrap of of the product (at the end).</li>
+                      <li>If you are unable to come to the demo due to a valid reason, you can ask a team member to demo your feature. Remember to submit the evidence of your excuse <span class="dimmed">e.g., MC</span> to prof. The demo is part of module assessment and <mark>absence without a valid reason</mark> will cause you to lose marks.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-demo" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Demo  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-demo"></panel>
+            </p>
+            <p></p>
+            <ul>
+              <li><strong>Venue:</strong> Same as the tutorial venue unless informed otherwise.</li>
+              <li><strong>Schedule:</strong> Your demo timing is same as your tutorial time in week 13.
+                <ul>
+                  <li>Please arrive on time and remain outside the venue until called in.</li>
+                  <li>There is an <mark>automatic penalty if you are not ready to start on time.</mark><br></li>
+                  <li>You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="v1.4-practical-exam">v1.4 Practical Exam<a class="fa fa-anchor" href="#v1.4-practical-exam"></a></h3>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v14-deliverablePe">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project → Deliverables → Practical Exam</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Practical Exam  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v14-deliverablePe">
+                <div>
+                <p><strong>Objectives:</strong></p>
+                <ul>
+                  <li>Evaluate your manual testing skills, product evaluation skills, effort estimation skills</li>
+                  <li>Peer-evaluate your product design <span class="dimmed"><span class="fas fa-users"></span></span>, implementation effort <span class="dimmed"><span class="fas fa-user"></span></span>, documentation quality <span class="dimmed"><span class="fas fa-user"></span></span></li>
+                </ul>
+                <p><strong>When, where</strong>: Week 13 lecture</p>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Grading</strong>:
+                </p>
+                <ul>
+                  <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
+                  <li>You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed">Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem to be based on a sincere effort to test/evaluate.</span></li>
+                  <li>The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.</li>
+                </ul>
+                <div>
+                  <p><strong>Preparation</strong>:</p>
+                  <ul>
+                    <li>
+                      <p>Ensure that <strong>you can access the relevant issue tracker</strong> given below:<br>
+                        -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-te3201/pe-dry-run/issues">nus-te3201-AY1819S2/<strong>pe-dry-run</strong></a><br>
+                        -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-te3201/pe/issues">nus-te3201-AY1819S2/<strong>pe</strong></a> (will open only near the actual PE)</p>
+                      <ul>
+                        <li><mark>These are private repos!</mark>. If you cannot access the relevant repo, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-te3201-AY1819S2/invitation">https://github.com/orgs/nus-te3201-AY1819S2/invitation</a> to accept the invitation.</li>
+                        <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-te3201/forum/issues">forum</a>.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
+                      <ul>
+                        <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Charge your computer</strong> before coming to the PE session. The testing venue may not have enough charging points.</p>
+                    </li>
+                  </ul>
+                </div>
+                <p><strong>During:</strong></p>
+                <ol>
+                  <li><strong>Take note of your team to test</strong>. It will be given to you by the teaching team (distributed via IVLE gradebook).</li>
+                  <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed">(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)</span> <mark>into an empty folder</mark>.</li>
+                  <li><strong>[60 minutes] Test the product and report bugs</strong> as described below:</li>
+                </ol>
+                <div class="indented-level2">
+                  <div>
+                    <box>
+                      <h5 id="testing-instructions-for-pe-and-pe-dry-run">Testing instructions for PE and PE Dry Run<a class="fa fa-anchor" href="#testing-instructions-for-pe-and-pe-dry-run"></a></h5>
+                      <ul>
+                        <li>
+                          <p><strong>What to test</strong>:</p>
+                          <ul>
+                            <li>PE Dry Run (at <strong>v1.3</strong>):
+                              <ul>
+                                <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
+                                <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
+                              </ul>
+                            </li>
+                            <li>PE (at <strong>v1.4</strong>):
+                              <ul>
+                                <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
+                                <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system testing bugs can earn you more credit.</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>These are considered <em>bugs</em></strong>:</p>
+                          <ul>
+                            <li>Behavior differs from the User Guide</li>
+                            <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
+                            <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
+                            <li>The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'</li>
+                            <li>Problems in the User Guide e.g., missing/incorrect info</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>Where to report bugs</strong>: Post bug in the following issue trackers (<mark>not in the team's repo</mark>):</p>
+                          <ul>
+                            <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-te3201/pe-dry-run/issues">nus-te3201-AY1819S2/<strong>pe-dry-run</strong></a>.</li>
+                            <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-te3201/pe/issues">nus-te3201-AY1819S2/<strong>pe</strong></a>.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>Bug report format</strong>:</p>
+                          <ul>
+                            <li>
+                              <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                            </li>
+                            <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
+                            <li>Each bug should be a separate issue.</li>
+                            <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
+                            <li>Use a descriptive title.</li>
+                            <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
+                            <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="indented-level4">
+                        <div>
+                          <tip-box>
+                            <p><strong>Bug Severity</strong> labels:</p>
+                            <ul>
+                              <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                              <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                              <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                            </ul>
+                          </tip-box>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          <p><strong>About posting <em>suggestions</em>:</strong></p>
+                          <ul>
+                            <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
+                            <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch</span>, you can test the <em>fallback</em> team allocated to you. But in this case <mark>you must inform us immediately after the session</mark> so that we can send your bug reports to the correct team.</p>
+                        </li>
+                      </ul>
+                    </box>
+                  </div>
+                </div>
+                <ol>
+                  <li>
+                    <p><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.</p>
+                    <ul>
+                      <li>
+                        <p><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]: Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>target user specified and appropriate</code>: The target user is clearly specified, <strong>prefers typing over other modes of input</strong>, and not too general (should be narrowed to a specific user group with certain characteristics).</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value specified and matching</code>: The value offered by the product is clearly specified and matches the target user.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: low</code>: The value to target user is low. App is not worth using.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: medium</code>: Some small group of target users might find the app worth using.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: high</code>: Most of the target users are likely to find the app worth using.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: low</code>: Features don't seem to fit together.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: medium</code>: Some features fit together but some don't.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: high</code>: All features fit together.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 1</code>: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 2</code>: Two types of diagrams used</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 3+</code>: Three or more types of diagrams used</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML diagrams suitable</code>: The diagrams used for the right purpose</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML notation correct</code>: No more than one minor error in the UML notation</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not repetitive</code>: No evidence of repeating the same diagram with minor differences</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not too complicated</code>: Diagrams don't cram too much information into them</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams integrates with text</code>: Diagrams are well integrated into the textual explanations</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]: Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: low</code>: <span class="dimmed">e.g. make the existing <em>find</em> command case insensitive</span>.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: medium</code>: <span class="dimmed">e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: high</code>: e.g., <span class="dimmed">undo/redo command</span></li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: low</code>: A partial implementation of the feature. Barely useful.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: medium</code>: The feature has enough functionality to be useful for some of the users.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: high</code>: The feature has all functionality to be useful to almost all users.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ not hard to test</code>: The feature was not too hard to test manually.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ polished: high</code>: The feature looks <em>polished</em> (as if done by a professional programmer).</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
+                        <ul>
+                          <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
+                          <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
+                          <li>
+                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+                <h4 id="processing-pe-bug-reports%3A">Processing PE Bug Reports:<a class="fa fa-anchor" href="#processing-pe-bug-reports%3A"></a></h4>
+                <p>There will be a review period for you to respond to the <a href="https://github.com/nus-te3201/pe-results/issues">bug reports</a> you received.</p>
+                <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Wednesday midnight</strong>. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.</p>
+                <p>Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.</p>
+                <tip-box>
+                  <p><strong>Instructions for Reviewing Bug Reports</strong></p>
+                  <ul>
+                    <li>
+                      <p><strong>First, don't freak out if there are lot of bug reports.</strong> Many can be duplicates and some can be <em>false positives</em>. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.</p>
+                    </li>
+                    <li>
+                      <p><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</p>
+                    </li>
+                    <li>
+                      <p>You may (but not required to) close the bug report after you are done processing it, as a convenient means of separating the 'processed' issues from 'not yet processed' issues.</p>
+                    </li>
+                    <li>
+                      <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, <mark>use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of</mark>. Duplicates can be omitted from processing steps given below.</p>
+                    </li>
+                    <li>
+                      <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
+                    </li>
+                    <li>
+                      <p><strong>Decide if it is a real bug and apply ONLY one of these labels</strong>.</p>
+                    </li>
+                  </ul>
+                  <div class="indented">
+                    <box>
+                      <p>Response Labels:</p>
+                      <ul>
+                        <li><code>response.Accepted</code>: You accept it as a bug.</li>
+                        <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.</li>
+                        <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.</li>
+                        <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
+                        <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.</li>
+                      </ul>
+                    </box>
+                  </div>
+                  <ul>
+                    <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type.*</code> are considered <code>type.FunctionalityBug</code> by default (which are liable to a heavier penalty).</li>
+                  </ul>
+                  <div class="indented">
+                    <box>
+                      <p>Bug Type Labels:</p>
+                      <ul>
+                        <li><code>type.FeatureFlaw</code>: some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                        <li><code>type.FunctionalityBug</code>: the bug is a flaw in how the product works.</li>
+                        <li><code>type.DocTypo</code>: A minor spelling/grammar error in the documentation. Does not affect the user.</li>
+                        <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction</span></li>
+                      </ul>
+                    </box>
+                  </div>
+                  <ul>
+                    <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
+                  </ul>
+                  <div class="indented">
+                    <div>
+                      <tip-box>
+                        <p><strong>Bug Severity</strong> labels:</p>
+                        <ul>
+                          <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                          <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                          <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                        </ul>
+                      </tip-box>
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
+                    </li>
+                    <li>
+                      <p>We recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, even if the bug was caused indirectly by someone else. Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.</p>
+                    </li>
+                    <li>
+                      <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
+                    </li>
+                    <li>
+                      <p>We recommend choosing <code>type.*</code>, <code>severity.*</code> and assignee even for bugs you are not accepting. Reason: your <em>non-acceptance</em> may be rejected by the tutor later, in which case we need to grade it as an accepted bug.</p>
+                    </li>
+                  </ul>
+                </tip-box>
+              </div>
+            </modal>
+            <p>
+              <panel src="/2019\admin\project-deliverables._include_.html#project-deliverables-practicalexam" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Practical Exam  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-practicalexam"></panel>
+            </p>
+            <p></p>
+            <p><strong>Time/venue:</strong> week 13 lecture slot</p>
+          </div>
+        </div>
+        <br>
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12]</a></span></span><span style="float:right"><span><a href="project-deliverables.html">Project: Deliverables <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 09:17:05 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\layouts\default\scripts.js"></script>
+</html>

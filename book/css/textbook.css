@@ -1,0 +1,51 @@
+.website-content {
+    margin: 12px auto 40px auto;
+    max-width: 900px;
+    overflow: hidden;
+    text-align:justify
+}
+
+.indented {
+    padding-left: 20px;
+}
+
+.indented-level2 {
+    padding-left: 40px;
+}
+
+.indented-less {
+    padding-left: 10px;
+}
+
+mark {
+    background-color: rgba(255, 231, 2, 0.15);
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.important {
+    color: #980000;
+}
+
+.alt-python {
+    display: none;
+}
+
+@media print {
+    .website-content {
+        max-width: 100%;
+    }
+
+    #content-wrapper {
+        max-width: 100%;
+    }
+    
+    .card-container > .morph {
+        display: none;
+    }
+
+    .non-printable{
+        display: none !important;
+    }
+}
