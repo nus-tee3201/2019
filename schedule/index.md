@@ -551,21 +551,14 @@ head: scheduleHead.md
 
 # Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small>
 
+<include src="{{ path }}notices-{{ module | lower }}.md" optional />
+
 <tabs>
-  <tab header="{{ icon_announcement }} Notices">
-    <include src="{{ path }}notices-{{ module | lower }}.md" optional />
-  </tab>
-  <tab header="{{ icon_outcome }} Topics">
+  <tab header="{{ fas_graduation_cap }} SE Topics">
     <include src="{{ path }}topics.md" />
   </tab>
-  <tab header="{{ icon_project }} Project">
-    <include src="{{ path }}project.md" optional />
-  </tab>
-  <tab header="{{ icon_tutorial }} Tutorial">
-    <include src="{{ path }}tutorial-{{ module | lower }}.md" optional />
-  </tab>
-  <tab header="{{ icon_info }} Admin Info">
-    <include src="{{ path }}admin.md" />
+  <tab header="{{ fas_laptop_code }} Programming Topics">
+    <include src="{{ path }}python.md" optional />
   </tab>
 </tabs>
 

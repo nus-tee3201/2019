@@ -1,3 +1,5 @@
-%%Topics allocated to the week will appear in this tab.%%
+%%Topics allocated to the week will appear here.%%
 
-No topics are allocated to week 1 as our lecture falls on the Friday.
+{% import "common/outcomes.njk" as outcomes with context %}
+{% from "schedule/index.md" import all_outcomes with context %}
+{{ outcomes.show_week_schedule("1", all_outcomes) }}
