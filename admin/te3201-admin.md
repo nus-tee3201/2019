@@ -2,21 +2,93 @@
 title: "Admin Info"
 footer: footer.md
 head: adminHead.md
+siteNav: adminSiteNav-te3201.md
 </frontmatter>
 
 <include src="../common/header.md" />
 
 <div class="website-content" id="main">
 
-# TE3201 Software Engineering
+# **TE3201 Software Engineering**
 
-* [Lectures](#lectures)
-* [Project](#project)
-* [Learning Materials](#learning-materials)
-* [Exam](#exam)
-* [Grading](#grading)
+{{ dotted_line }}
 
-## Lectures
+# Module overview
+<div class="indented">
+
+<img src="{{baseUrl}}/images/growingPlant.png" width="700">
+
+_TIC2002 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
+</div>
+
+{{ dotted_line }}
+
+# Using this module website
+
+<div class="indented">
+<include src="usingThisWebsite.md#main" />
+</div>
+
+{{ dotted_line }}
+
+# Instructors
+<div class="indented">
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+
+![Damith]({{ baseUrl }}/admin/images/damith.png)
+    </div>
+    <div class="col">
+
+**Damith Chatura RAJAPAKSE**<br>
+Associate Professor, NUS School of Computing<br>
+PhD, Software Engineering, NUS, 2002-2006<br>
+BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
+%%{{ fas_envelope }}%% `damith`[at]`comp`[dot]`nus`[dot]`edu`[dot]`sg`<br>
+%%{{ fas_map_marker_alt }}%% COM2-02-57<br>
+%%{{ fas_phone_square }}%% 651 64359<br>
+%%{{ fas_home }}%% https://www.comp.nus.edu.sg/~damithch
+    </div>
+  </div>
+</div>
+
+</div>
+
+{{ dotted_line }}
+
+# Lectures
+<div class="indented">
+
+%%{{ far_clock }}%% Tuesdays 1800-2130<br>
+%%{{ fas_map_marker_alt }}%% E3‐06‐15<br>
+
+{{ far_frown }} **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
+
+**Lecture handouts will be uploaded to IVLE _before_ the lecture**, usually by midnight of the Sunday before the lecture.
+
+**Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Slides will be uploaded to IVLE _after_ the lecture, usually by Wednesday.
+
+<box>
+
+ :bulb: If handouts/slides are not in IVLE by the expected times, please feel free to ping the lecturer.
+</box>
+
+</div>
+
+{{ dotted_line }}
+
+# Tutorials
+<div class="indented">
+
+%%{{ far_clock }}%% Tuesdays 6.30-7.30pm<br>
+%%{{ fas_map_marker_alt }}%% SR10 (COM1-0210)<br>
+</div>
+
+{{ dotted_line }}
+
+# Lectures
 
 TUE 1800-2130 in E3‐06‐15
 
@@ -28,7 +100,9 @@ TUE 1800-2130 in E3‐06‐15
 
 * Python topics will be in the 2nd half of the lecture so that those not interested in learning Python can leave early.
 
-## Learning materials
+{{ dotted_line }}
+
+# Textbook
 
 A customized **online text book** is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.
 * Full version is [here]({{baseUrl}}/book-adapted/index.html): The relevant sections are embedded under the corresponding week in the [schedule page]({{baseUrl}}/schedule/index.html).
@@ -42,7 +116,15 @@ A customized **online text book** is used for this module. Topic coverage may no
 
 :bar_chart: **Slides** will be uploaded to IVLE _after_ the lecture. Note that lecture slides are to assist in lecture delivery only; they are ==not suitable for printing or as an exam reference==.
 
-## Project
+{{ dotted_line }}
+
+# Programming language
+
+This module uses Python programming language to teach you programming basics. However, Python is not examinable.
+
+{{ dotted_line }}
+
+# Project
 
 To be done in individually, or teams of 2-3 members.
 
@@ -196,16 +278,23 @@ Description of the function: appends the `Person` object `new_contact` to the `c
 
 </modal>
 
-## Exam
+{{ dotted_line }}
 
-* Total: 2 hours
-  * Part 1: MCQ (1 hour)
-  * Part 2: Essay (1 hour)
-* Open book (any printed or written materials are allowed)
+# Assessment
+<div class="indented">
 
-## Grading
+* 40% : Project
+* 60% : Final Exam
 
-* Project: 40%
-* Exam: 60%
+</div>
+
+{{ dotted_line }}
+
+# Exam
+<div class="indented">
+
+<include src="exams.md#main" />
+
+</div>
 
 </div>
