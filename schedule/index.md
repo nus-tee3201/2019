@@ -558,7 +558,7 @@ head: scheduleHead.md
     <include src="{{ path }}topics.md" />
   </tab>
   <tab header="{{ fas_laptop_code }} Programming Topics">
-    <include src="{{ path }}python.md" optional />
+    <include src="{{ path }}../python-topics.md#week{{ week.num }}" />
   </tab>
 </tabs>
 
