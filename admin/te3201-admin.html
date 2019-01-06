@@ -20,102 +20,361 @@
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
-    
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/admin.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body>
 <div id="app">
-    <div id="content-wrapper">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-      <dropdown text="Schedule" class="nav-link">
-        <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-        <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-        <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-        <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-        <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
-        <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-        <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-        <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-        <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-        <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-        <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-        <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-      </dropdown>
-      <dropdown text="Textbook" class="nav-link">
-        <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-        <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-      </dropdown>
-      <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-      <dropdown text="Links" class="nav-link">
-        <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-        <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-      </dropdown>
-      <li slot="right" class="nav-link">
-        <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-        </form>
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="#module-overview">Module Overview</a></li>
+      <li style="margin-top: 10px"><a href="#using-this-module-website">Using this module website</a></li>
+      <li style="margin-top: 10px"><a href="#instructors">Instructors</a></li>
+      <li style="margin-top: 10px"><a href="#lectures">Lectures</a></li>
+      <li style="margin-top: 10px"><a href="#tutorials">Tutorials</a></li>
+      <li style="margin-top: 10px"><a href="#textbook">Textbook</a></li>
+      <li style="margin-top: 10px"><a href="#programming-language">Programming Language</a></li>
+      <li style="margin-top: 10px"><a href="#project">Project</a></li>
+      <li style="margin-top: 10px"><a href="#assessment">Assessment</a></li>
+      <li style="margin-top:10px"><a href="#exam">Exam</a>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px"><a href="#final-exam-part-1-mcq">Part 1</a></li>
+          <li style="margin-top: 10px"><a href="#final-exam-part-2-essay">Part 2</a></li>
+        </ul>
       </li>
-    </navbar>
+    </ul>
   </div>
-  <div class="website-content" id="main">
-    <h1 id="te3201-software-engineering">TE3201 Software Engineering<a class="fa fa-anchor" href="#te3201-software-engineering"></a></h1>
-    <ul>
-      <li><a href="#lectures">Lectures</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#learning-materials">Learning Materials</a></li>
-      <li><a href="#exam">Exam</a></li>
-      <li><a href="#grading">Grading</a></li>
-    </ul>
-    <h2 id="lectures">Lectures<a class="fa fa-anchor" href="#lectures"></a></h2>
-    <p>TUE 1800-2130 in E3‐06‐15</p>
-    <ul>
-      <li>
-        <p>😟 No webcast (Reason: the lecture venue does not have the webcast facility)</p>
-      </li>
-      <li>
-        <p>The lecture will be broken into small segments (about 30 minutes) of fairly independent parts so that late comers can still follow the remainder of the lecture.</p>
-      </li>
-      <li>
-        <p>First 15 minutes will be a recap of previous lecture or free-flow discussion so that those slightly late will not miss the beginning of the lecture proper.</p>
-      </li>
-      <li>
-        <p>Python topics will be in the 2nd half of the lecture so that those not interested in learning Python can leave early.</p>
-      </li>
-    </ul>
-    <h2 id="learning-materials">Learning materials<a class="fa fa-anchor" href="#learning-materials"></a></h2>
-    <p>A customized <strong>online text book</strong> is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.</p>
-    <ul>
-      <li>Full version is <a href="/2019/book-adapted/index.html">here</a>: The relevant sections are embedded under the corresponding week in the <a href="/2019/schedule/index.html">schedule page</a>.</li>
-      <li>📜 Printable version (excludes exercises) is <a href="/2019/book-adapted/print.html">here</a>. PDF copies of the relevant sections will be uploaded to IVLE, by Monday of each week. You are encouraged to use the online full version when possible (instead of the printable version or the PDF version), as it has more content <span class="dimmed"> videos, exercises, etc.</span></li>
-    </ul>
-    <panel header="Helpful info about using the textbook" no-close="">
-      <div style="color: red">No such file: C:\repos\nus-te3201\te3201-2019-website\book-adapted\usage.md
-        Missing reference in C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md</div>
-    </panel>
-    <p></p>
-    <p><a href="/2019/programming/index.html">An additional <strong>guide on programming basics</strong></a> is provided for you to get started or programming. Contents in that guide are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.</p>
-    <p>📊 <strong>Slides</strong> will be uploaded to IVLE <em>after</em> the lecture. Note that lecture slides are to assist in lecture delivery only; they are <mark>not suitable for printing or as an exam reference</mark>.</p>
-    <h2 id="project">Project<a class="fa fa-anchor" href="#project"></a></h2>
-    <p>To be done in individually, or teams of 2-3 members.</p>
-    <p><strong>Programming language</strong>: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</p>
-    <h3 id="software-to-build">Software to build<a class="fa fa-anchor" href="#software-to-build"></a></h3>
-    <p>You will be building a personal assistant chat-bot software named <em>PAC</em> (<em>PAC</em> is a temporary name; you should give a different name to your own chat bot)</p>
-    <p><strong><em>Basic</em> Functionality</strong>:</p>
-    <ol>
-      <li>
-        <p>PAC interface can be text-based (i.e., no need for a graphical UI)</p>
-      </li>
-      <li>
-        <p>PAC helps with storing and retrieving at least <strong>one type of data</strong> that is useful to the user. Some examples of different types of data (you can pick one of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:</p>
-        <pre class="hljs"><code>&gt;&gt; Hi, I'm PAC. What can I do to help you with your TODOs?
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+            <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+            <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+            <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+            <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+            <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+            <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+            <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+            <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+            <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          </dropdown>
+          <dropdown text="Textbook" class="nav-link">
+            <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+            <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+          </dropdown>
+          <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content" id="main">
+        <h1 id="te3201-software-engineering"><strong>TE3201 Software Engineering</strong><a class="fa fa-anchor" href="#te3201-software-engineering"></a></h1>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="module-overview">Module overview<a class="fa fa-anchor" href="#module-overview"></a></h1>
+        <div class="indented">
+          <img src="/2019/images/growingPlant.png" width="700">
+          <p><em>TIC2002 Software Engineering</em> contains roughly a <strong>50-50 balance of theory and practice</strong> of SE. It covers the knowledge/skills necessary to do small software projects.</p>
+        </div>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="using-this-module-website">Using this module website<a class="fa fa-anchor" href="#using-this-module-website"></a></h1>
+        <div class="indented">
+          <div>
+            <div id="essential">
+              <p>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The <span><a href="/2019/index.html">Schedule page</a></span> is your main source of information for TE3201. You will need to refer to it weekly.
+              </p>
+              <p><span class="fas fa-info-circle"></span> More details for the upcoming weeks will be added as the weeks progress. In general, <mark>information given for more than 1 week into the future should be treated as <em>tentative</em></mark>.</p>
+              <div>
+                <h3 id="browser-compatibility">Browser Compatibility<a class="fa fa-anchor" href="#browser-compatibility"></a></h3>
+                <p>Most of this will work on most mainstream Browsers, but <mark>embedded slides are best viewed using Chrome</mark>.</p>
+              </div>
+              <div>
+                <h3 id="information-layers">Information Layers<a class="fa fa-anchor" href="#information-layers"></a></h3>
+                <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
+                <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
+                <tip-box>
+                  <panel header="Some less important info in a minimized panel" minimized="">
+                    <p>Less important info</p>
+                    <p></p>
+                  </panel>
+                  <p></p>
+                  <panel header="%%Some less important info in a boarder-less panel%%" type="seamless">
+                    <p>Less important info</p>
+                    <p></p>
+                  </panel>
+                  <p></p>
+                  <panel header="%%Some less important info in a panel%%">
+                    <p>Less important info</p>
+                    <p></p>
+                  </panel>
+                  <p></p>
+                </tip-box>
+                <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
+                <tip-box>
+                  <tabs>
+                      <tab header="<span class='far fa-file-alt'></span>">
+                       
+                      Some textual description of X
+                      <p></p>
+                    </tab>
+                      <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
+                      <p>Video describing X</p>
+                      <p></p>
+                    </tab>
+                  </tabs>
+                </tip-box>
+                <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong> (activated by clicking) containing additional information.</p>
+                <popover id="pop:tooltip-example" title="Tooltip Example" placement="top">
+                  <div slot="content">
+                    Additional information
+                  </div>
+                </popover>
+                <modal title="Modal Example" id="modal:modal-example">
+                  Additional information
+                </modal>
+              </div>
+              <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
+              <div class="flat">
+                <div>
+                  <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:usingThisWebsite-starRatingSystem">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Module Expectations → Star Rating System</trigger> ]</span></p>
+                </div>
+              </div>
+              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations → Star Rating System  " id="modal:usingThisWebsite-starRatingSystem">
+                  <div>
+                  <h4 id="star-rating-system">Star rating system<a class="fa fa-anchor" href="#star-rating-system"></a></h4>
+                  <div class="indented">
+                    <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
+                    </p>
+                    <p><strong>Star ratings for Learning Outcomes</strong> (and textbook sections):</p>
+                    <ul>
+                      <li>
+                        <p><strong>One-star topics</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The topics you need to learn just to keep up with the module. We recommend you to <mark>learn these topics if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</p>
+                      </li>
+                      <li>
+                        <p><strong>Two-stars topics</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>: Can get you up to a <strong>B+</strong>.</p>
+                      </li>
+                      <li>
+                        <p><strong>Three-stars topics</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
+                      </li>
+                      <li>
+                        <p><strong>Four-stars topics</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive entry requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star topics are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
+                      </li>
+                      <li>
+                        <p>Topics marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are relevant topoics you are expected have learned in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.</p>
+                      </li>
+                    </ul>
+                    <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+                    <ul>
+                      <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark> without affecting your ability to follow the module.</li>
+                    </ul>
+                  </div>
+                </div>
+              </modal>
+              <p>
+                <panel src="/2019\admin\moduleExpectations._include_.html#starRatingSystem" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations → Star Rating System  " class="embedding" minimized="" fragment="starRatingSystem"></panel>
+              </p>
+            </div>
+            <div id="more">
+              <div name="Conventions Used">
+                <h3 id="conventions-used">Conventions Used<a class="fa fa-anchor" href="#conventions-used"></a></h3>
+                <h4 id="shorthand-headings">Shorthand Headings<a class="fa fa-anchor" href="#shorthand-headings"></a></h4>
+                <p>Meaning of some shortened headings:</p>
+                <ul>
+                  <li>
+                    <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
+                    <p>
+                      <panel header="%%Example%%" src="/2019\book\refactoring\what\unit-inElsewhere-asFlat._include_.html"></panel>
+                    </p>
+                  </li>
+                  <li>
+                    <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
+                    <p>
+                      <panel header="%%Example%%" src="/2019\book\documentation\guidelines\goTopDown\why\unit-inElsewhere-asFlat._include_.html"></panel>
+                    </p>
+                  </li>
+                  <li>
+                    <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
+                    <p>
+                      <panel header="%%Example%%" src="/2019\book\refactoring\how\unit-inElsewhere-asFlat._include_.html"></panel>
+                    </p>
+                  </li>
+                  <li>
+                    <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
+                    <p>
+                      <panel header="%%Example%%" src="/2019\book\refactoring\when\unit-inElsewhere-asFlat._include_.html"></panel>
+                    </p>
+                  </li>
+                </ul>
+                <h4 id="boxed-text-styles">Boxed-Text Styles<a class="fa fa-anchor" href="#boxed-text-styles"></a></h4>
+                <div class="indented">
+                  <tip-box type="info">
+                    additional info
+                  </tip-box>
+                  <tip-box type="warning">
+                    warning
+                  </tip-box>
+                  <tip-box type="success">
+                    positive message
+                  </tip-box>
+                  <tip-box type="important">
+                    important message
+                  </tip-box>
+                  <tip-box type="wrong">
+                    an error to avoid
+                  </tip-box>
+                  <tip-box type="tip">
+                    tip
+                  </tip-box>
+                  <tip-box type="definition">
+                    definition
+                  </tip-box>
+                </div>
+                <h4 id="meaning-of-icons">Meaning of Icons<a class="fa fa-anchor" href="#meaning-of-icons"></a></h4>
+                <div class="indented">
+                  <p><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested<br>
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> : direct link to the LO. <kbd>Ctrl</kbd>+<code>Click</code> to open the LO in new window/tab.<br>
+                    <span class="fas fa-trophy"></span> : learning outcomes<br>
+                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span> : prerequisite learning outcome<br>
+                    <span class="fas fa-cube"></span> : examples<br>
+                    <span class="fas fa-paperclip"></span> : resources<br>
+                    <span class="fas fa-dumbbell"></span> : exercises<br>
+                    <span class="glyphicon glyphicon-print" aria-hidden="true"></span> : printable version<br>
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> : preview/more info<br>
+                    <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> : video<br>
+                    <smal><span class="badge badge-secondary">&gt;_</span></smal> : a command to be run in a terminal<br>
+                    <span class="far fa-file-alt"></span> : textual description<br>
+                    <span class="far fa-images"></span> : slides<br>
+                    <span class="fas fa-arrow-down"></span> : output produced by running code<br>
+                    <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> question without answer<br>
+                    <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> question with answer<br>
+                  </p>
+                </div>
+              </div>
+              <div class="indented">
+                <p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> : tasks to do<br>
+                  <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> : lecture<br>
+                  <span class="fas fa-chalkboard-teacher"></span> : tutorial<br>
+                  <span class="fas fa-briefcase"></span> : evidence you can use to prove you have achieved a learning outcome<br>
+                  ⏰ : deadline<br></p>
+              </div>
+              <h3 id="searching-for-keywords">Searching for keywords<a class="fa fa-anchor" href="#searching-for-keywords"></a></h3>
+              <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a">in the forum</a> so that we can add the missing keyword to our search index.</p>
+              <div>
+                <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files"></a></h3>
+                <ol>
+                  <li>
+                    <p>Use Chrome to load the page you want to save as pdf.</p>
+                  </li>
+                  <li>
+                    <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                  </li>
+                  <li>
+                    <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                      <img src="/2019/book/about/images/chromeSaveAsPdf.png"></p>
+                  </li>
+                </ol>
+              </div>
+              <h3 id="printing-textbook-content">Printing Textbook Content<a class="fa fa-anchor" href="#printing-textbook-content"></a></h3>
+              <p>Printer-friendly version <span class="dimmed">(indicated by <span class="glyphicon glyphicon-print" aria-hidden="true"></span> icon)</span> have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.</p>
+              <h3 id="making-this-website-better">Making this Website Better<a class="fa fa-anchor" href="#making-this-website-better"></a></h3>
+              <p>This website was generated using the <a href="https://markbind.github.io/">MarkBind</a> software developed at NUS. <strong>We welcome bug reports, suggestions, and contributions</strong>, to be submitted <a href="https://github.com/nus-te3201/website/issues">at the website issue tracker</a>.</p>
+            </div>
+          </div>
+        </div>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="instructors">Instructors<a class="fa fa-anchor" href="#instructors"></a></h1>
+        <div class="indented">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <p><a href="/2019/admin/images/damith.png" target="_self"><img src="/2019/admin/images/damith.png" alt="" class="img-fluid"></a></p>
+              </div>
+              <div class="col">
+                <p><strong>Damith Chatura RAJAPAKSE</strong><br>
+                  Associate Professor, NUS School of Computing<br>
+                  PhD, Software Engineering, NUS, 2002-2006<br>
+                  BSc, Computer Science &amp; Engineering, University of Moratuwa, 1996-2001<br>
+                  <span class="dimmed"><span class="fas fa-envelope"></span></span> <code>damith</code>[at]<code>comp</code>[dot]<code>nus</code>[dot]<code>edu</code>[dot]<code>sg</code><br>
+                  <span class="dimmed"><span class="fas fa-map-marker-alt"></span></span> COM2-02-57<br>
+                  <span class="dimmed"><span class="fas fa-phone-square"></span></span> 651 64359<br>
+                  <span class="dimmed"><span class="fas fa-home"></span></span> <a href="https://www.comp.nus.edu.sg/~damithch">https://www.comp.nus.edu.sg/~damithch</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="lectures">Lectures<a class="fa fa-anchor" href="#lectures"></a></h1>
+        <div class="indented">
+          <p><span class="dimmed"><span class="far fa-clock"></span></span> Tuesdays 1800-2130<br>
+            <span class="dimmed"><span class="fas fa-map-marker-alt"></span></span> E3‐06‐15<br></p>
+          <p><span class="far fa-frown"></span> <strong>Lectures will not be webcast</strong> as the venue does not have a webcast facility. <mark>Please bring your laptop to the lecture</mark> as you will need to be using it for the most part of the lecture.</p>
+          <p>Rough break-down of a typical lecture:</p>
+          <ul>
+            <li>1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics.</li>
+            <li>1830-1900: Doing exercises related to previous week topics.</li>
+            <li>1900-2000: SE topics for the current week.</li>
+            <li>2000-2100: Programming topics for the current week. Those who are already familiar with programming and not interested in learning Python can leave early.</li>
+            <li>2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.</li>
+          </ul>
+          <p><strong><span class="far fa-images"></span> Lecture slides will be uploaded to IVLE after the lecture</strong>, usually by midnight of the same day. <strong>Lecture slides are not suitable to be used as reference materials</strong> as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.</p>
+          <p>💡 If slides are not in IVLE by the expected times, please feel free to ping the lecturer.</p>
+        </div>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="tutorials">Tutorials<a class="fa fa-anchor" href="#tutorials"></a></h1>
+        <p>There is no formal tutorial. Instead, tutorial-like activities are integrated into the lecture.</p>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="textbook">Textbook<a class="fa fa-anchor" href="#textbook"></a></h1>
+        <p><strong>Software Engineering Textbook</strong>:</p>
+        <p>A customized <strong>online text book</strong> is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.</p>
+        <ul>
+          <li>Full version is <a href="/2019/se-book-adapted/index.html">here</a>: The relevant sections are embedded under the corresponding week in the <a href="/2019/schedule/index.html">schedule page</a>.</li>
+          <li><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printable version is <a href="/2019/se-book-adapted/print.html">here</a>. PDF copies of the relevant sections will be uploaded to IVLE, by Monday of each week. <mark>You are encouraged to use the online full version when possible</mark> (instead of the printable version or the PDF version), as it has more content <span class="dimmed">videos, exercises, etc.</span></li>
+        </ul>
+        <p><strong>Programming Textbook</strong>:</p>
+        <p><a href="/2019/programming/index.html">An additional <strong>guide on programming basics</strong></a> is provided for you to get started or programming. Contents in that guide are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.</p>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="programming-language">Programming language<a class="fa fa-anchor" href="#programming-language"></a></h1>
+        <p>This module uses Python programming language to teach you programming basics required for software engineering. However, Python is not examinable.</p>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="project">Project<a class="fa fa-anchor" href="#project"></a></h1>
+        <p>To be done in individually, or teams of 2-3 members.</p>
+        <p><strong>Programming language</strong>: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</p>
+        <h3 id="software-to-build">Software to build<a class="fa fa-anchor" href="#software-to-build"></a></h3>
+        <p>You will be building a personal assistant chat-bot software named <em>PAC</em> (<em>PAC</em> is a temporary name; you should give a different name to your own chat bot)</p>
+        <p><strong><em>Basic</em> Functionality</strong>:</p>
+        <ol>
+          <li>
+            <p>PAC interface can be text-based (i.e., no need for a graphical UI)</p>
+          </li>
+          <li>
+            <p>PAC helps with storing and retrieving at least <strong>one type of data</strong> that is useful to the user. Some examples of different types of data (you can pick one of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:</p>
+            <pre class="hljs"><code>&gt;&gt; Hi, I'm PAC. What can I do to help you with your TODOs?
 
 add Return library book
 &gt;&gt; TODO added: Return library book
@@ -139,235 +398,294 @@ list : lists all TODOs
 ...
 
 </code></pre>
-      </li>
-      <li>
-        <p>There is <strong>no need for PAC to be able to understand natural language</strong> sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.</p>
-      </li>
-      <li>
-        <p>PAC should support <strong>adding, deleting, listing, searching</strong> (by keyword) of data items.</p>
-      </li>
-      <li>
-        <p><em>Persistence</em>: The data should be <strong>stored in the hard disk</strong> so that restarting PAC should not cause a loss of data entered in a previous session.</p>
-        <ol>
-          <li>The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>, <code>json</code>, plain text, etc.</li>
+          </li>
+          <li>
+            <p>There is <strong>no need for PAC to be able to understand natural language</strong> sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.</p>
+          </li>
+          <li>
+            <p>PAC should support <strong>adding, deleting, listing, searching</strong> (by keyword) of data items.</p>
+          </li>
+          <li>
+            <p><em>Persistence</em>: The data should be <strong>stored in the hard disk</strong> so that restarting PAC should not cause a loss of data entered in a previous session.</p>
+            <ol>
+              <li>The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>, <code>json</code>, plain text, etc.</li>
+            </ol>
+          </li>
         </ol>
-      </li>
-    </ol>
-    <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
-    <div class="table-responsive">
-      <table class="markbind-table table table-bordered table-striped">
-        <thead>
-          <tr>
-            <th>Team size</th>
-            <th>Total amount of functionality</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1-person</td>
-            <td>3-4 units</td>
-          </tr>
-          <tr>
-            <td>2-persons</td>
-            <td>4-5 units</td>
-          </tr>
-          <tr>
-            <td>3-persons</td>
-            <td>5-6 units</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p><strong><em>Additional</em> Functionality</strong>:</p>
-    <p>Some suggestions for <em>additional functionality</em>:</p>
-    <ul>
-      <li>More attributes for data items e.g., priorities, tags, birthdays</li>
-      <li>Multiple data item types e.g., support saving TODOs, appointments, and deadlines
+        <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
+        <div class="table-responsive">
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Team size</th>
+                <th>Total amount of functionality</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-person</td>
+                <td>3-4 units</td>
+              </tr>
+              <tr>
+                <td>2-persons</td>
+                <td>4-5 units</td>
+              </tr>
+              <tr>
+                <td>3-persons</td>
+                <td>5-6 units</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong><em>Additional</em> Functionality</strong>:</p>
+        <p>Some suggestions for <em>additional functionality</em>:</p>
         <ul>
-          <li>Support connections between data items e.g., ability to assign a TODO to a contact</li>
-        </ul>
-      </li>
-      <li>Multi-user support e.g., assume the software is installed in a common computer in your office and allow multiple users to interact with it</li>
-      <li>More ways to query data e.g., find contacts that has a birthday in next 2 days, find all TODOs with high priority, etc.</li>
-      <li>Any other feature (get approval from prof before implementing)</li>
-    </ul>
-    <h3 id="constraints">Constraints<a class="fa fa-anchor" href="#constraints"></a></h3>
-    <ol>
-      <li>You should not use relational/SQL databases e.g., MySQL</li>
-      <li>The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
-        <ol>
-          <li>If your software need other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
-        </ol>
-      </li>
-    </ol>
-    <h3 id="deliverables">Deliverables<a class="fa fa-anchor" href="#deliverables"></a></h3>
-    <ul>
-      <li>
-        <p><strong>Week 8</strong> (mid-term submission): 10%</p>
-        <ul>
-          <li>Deadline: Week 8, Tuesday 6pm</li>
-          <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement)
+          <li>More attributes for data items e.g., priorities, tags, birthdays</li>
+          <li>Multiple data item types e.g., support saving TODOs, appointments, and deadlines
             <ul>
-              <li>Submission: demo during lecture in week 8.</li>
+              <li>Support connections between data items e.g., ability to assign a TODO to a contact</li>
             </ul>
           </li>
-          <li>Documentation:
+          <li>Multi-user support e.g., assume the software is installed in a common computer in your office and allow multiple users to interact with it</li>
+          <li>More ways to query data e.g., find contacts that has a birthday in next 2 days, find all TODOs with high priority, etc.</li>
+          <li>Any other feature (get approval from prof before implementing)</li>
+        </ul>
+        <h3 id="constraints">Constraints<a class="fa fa-anchor" href="#constraints"></a></h3>
+        <ol>
+          <li>You should not use relational/SQL databases e.g., MySQL</li>
+          <li>The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
             <ul>
-              <li>Sections to include:
+              <li>If your software need other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
+            </ul>
+          </li>
+        </ol>
+        <h3 id="deliverables">Deliverables<a class="fa fa-anchor" href="#deliverables"></a></h3>
+        <ul>
+          <li>
+            <p><strong>Week 8</strong> (mid-term submission): 10%</p>
+            <ul>
+              <li>Deadline: Week 8, Tuesday 6pm</li>
+              <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement)
                 <ul>
-                  <li>Cover page: Include product name, names of team members</li>
-                  <li>User stories: Give user stories to cover all current and future functionalities</li>
-                  <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
-                  <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
-                  <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.</li>
+                  <li>Submission: demo during lecture in week 8.</li>
                 </ul>
               </li>
-              <li>Submission: upload to IVLE as a <code>.docx</code> or <code>.pdf</code> file. File name should contain team member names. e.g., <code>John Doe, Sarah Tan, Viet Ngoc.docx</code></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Week 13</strong> (final submission): 30%</p>
-        <ul>
-          <li>Functionality: all functionality
-            <ul>
-              <li>Submission:
+              <li>Documentation:
                 <ul>
-                  <li>Zip up all source files, upload to IVLE as a single <code>.zip</code> file (not <code>.rar</code>). File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
-                  <li>Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced later.</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>Documentation:
-            <ul>
-              <li>Include all content included in mid-term submission. <mark>Refine as per feedback given. Update to match the final product.</mark></li>
-              <li>Add a <strong>class diagram</strong> to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you <em>propose</em> to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]</li>
-              <li>Add an <strong>object diagram</strong> to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]</li>
-              <li>Give a sample of <strong>test cases</strong> you would use to test the software.
-                <ul>
-                  <li>
-                    <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]
+                  <li>Sections to include:
+                    <ul>
+                      <li>Cover page: Include product name, names of team members</li>
+                      <li>User stories: Give user stories to cover all current and future functionalities</li>
+                      <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
+                      <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
+                      <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.</li>
+                    </ul>
                   </li>
-                  <li>Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]</li>
+                  <li>Submission: upload to IVLE as a <code>.docx</code> or <code>.pdf</code> file. File name should contain team member names. e.g., <code>John Doe, Sarah Tan, Viet Ngoc.docx</code></li>
                 </ul>
               </li>
-              <li>Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Week 13</strong> (final submission): 30%</p>
+            <ul>
+              <li>Functionality: all functionality
+                <ul>
+                  <li>Submission:
+                    <ul>
+                      <li>Zip up all source files, upload to IVLE as a single <code>.zip</code> file (not <code>.rar</code>). File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+                      <li>Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced later.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Documentation:
+                <ul>
+                  <li>Include all content included in mid-term submission. <mark>Refine as per feedback given. Update to match the final product.</mark></li>
+                  <li>Add a <strong>class diagram</strong> to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you <em>propose</em> to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]</li>
+                  <li>Add an <strong>object diagram</strong> to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]</li>
+                  <li>Give a sample of <strong>test cases</strong> you would use to test the software.
+                    <ul>
+                      <li>
+                        <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]
+                      </li>
+                      <li>Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]</li>
+                    </ul>
+                  </li>
+                  <li>Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
-      </li>
-    </ul>
-    <modal large="" title="Class diagram example" id="modal:finalSubmission-classDiagram">
-      <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
-      <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
-    </modal>
-    <modal large="" title="Object diagram example" id="modal:finalSubmission-objectDiagram">
-      <img src="/2019/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></modal>
-    <modal large="" id="modal:finalSubmission-systemTests">
-      <h2 id="sample-system-tests">Sample System Tests<a class="fa fa-anchor" href="#sample-system-tests"></a></h2>
-      <p><strong>Test case 1: Launch without prior data</strong></p>
-      <ul>
-        <li>Feature being tested : launch of app, without any prior data</li>
-        <li>Set up:
-          <ol>
-            <li>Delete all files in the <code>/data/</code> folder.</li>
-          </ol>
-        </li>
-        <li>Steps:
-          <ol>
-            <li>Run the app using the command <code>python main.py</code></li>
-            <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br>
-              {screenshot here}</li>
-          </ol>
-        </li>
-      </ul>
-      <p><strong>Test case 2: Add first contact</strong></p>
-      <ul>
-        <li>Feature being tested : adding of a contact when there are no prior data</li>
-        <li>Set up:
-          <ol>
-            <li>Launch app without any prior data (similar to <code>Test case 1</code> above).</li>
-          </ol>
-        </li>
-        <li>Steps:<div class="table-responsive">
+        <modal large="" title="Class diagram example" id="modal:finalSubmission-classDiagram">
+          <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
+          <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
+        </modal>
+        <modal large="" title="Object diagram example" id="modal:finalSubmission-objectDiagram">
+          <img src="/2019/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></modal>
+        <modal large="" id="modal:finalSubmission-systemTests">
+          <h2 id="sample-system-tests">Sample System Tests<a class="fa fa-anchor" href="#sample-system-tests"></a></h2>
+          <p><strong>Test case 1: Launch without prior data</strong></p>
+          <ul>
+            <li>Feature being tested : launch of app, without any prior data</li>
+            <li>Set up:
+              <ol>
+                <li>Delete all files in the <code>/data/</code> folder.</li>
+              </ol>
+            </li>
+            <li>Steps:
+              <ol>
+                <li>Run the app using the command <code>python main.py</code></li>
+                <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br>
+                  {screenshot here}</li>
+              </ol>
+            </li>
+          </ul>
+          <p><strong>Test case 2: Add first contact</strong></p>
+          <ul>
+            <li>Feature being tested : adding of a contact when there are no prior data</li>
+            <li>Set up:
+              <ol>
+                <li>Launch app without any prior data (similar to <code>Test case 1</code> above).</li>
+              </ol>
+            </li>
+            <li>Steps:<div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Input</th>
+                      <th>Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Enter command <code>add</code></td>
+                      <td>app shows error message and show the correct format of the <code>add</code> command</td>
+                    </tr>
+                    <tr>
+                      <td>Enter command<br> <code>add John Doe</code></td>
+                      <td>app shows list of contacts containing only one person<br> {screenshot here}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </modal>
+        <modal large="" id="modal:finalSubmission-unitTests">
+          <h2 id="sample-unit-tests">Sample Unit Tests<a class="fa fa-anchor" href="#sample-unit-tests"></a></h2>
+          <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
+          <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
+          <div class="table-responsive">
             <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Input</th>
-                  <th>Expected</th>
+                  <th><code>current_contacts</code></th>
+                  <th><code>new_contact</code></th>
+                  <th>Expected <code>current_contacts</code></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Enter command <code>add</code></td>
-                  <td>app shows error message and show the correct format of the <code>add</code> command</td>
+                  <td><code>[]</code></td>
+                  <td><code>Person('John')</code></td>
+                  <td><code>[Person('John')]</code></td>
                 </tr>
                 <tr>
-                  <td>Enter command<br> <code>add John Doe</code></td>
-                  <td>app shows list of contacts containing only one person<br> {screenshot here}</td>
+                  <td><code>[Person('John')]</code></td>
+                  <td><code>Person('John')</code></td>
+                  <td><code>[Person('John')]</code></td>
+                </tr>
+                <tr>
+                  <td><code>[Person('John')]</code></td>
+                  <td><code>Person('Amy')</code></td>
+                  <td><code>[Person('John'), Person('Amy')]</code></td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </li>
-      </ul>
-    </modal>
-    <modal large="" id="modal:finalSubmission-unitTests">
-      <h2 id="sample-unit-tests">Sample Unit Tests<a class="fa fa-anchor" href="#sample-unit-tests"></a></h2>
-      <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
-      <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
-      <div class="table-responsive">
-        <table class="markbind-table table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th><code>current_contacts</code></th>
-              <th><code>new_contact</code></th>
-              <th>Expected <code>current_contacts</code></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>[]</code></td>
-              <td><code>Person('John')</code></td>
-              <td><code>[Person('John')]</code></td>
-            </tr>
-            <tr>
-              <td><code>[Person('John')]</code></td>
-              <td><code>Person('John')</code></td>
-              <td><code>[Person('John')]</code></td>
-            </tr>
-            <tr>
-              <td><code>[Person('John')]</code></td>
-              <td><code>Person('Amy')</code></td>
-              <td><code>[Person('John'), Person('Amy')]</code></td>
-            </tr>
-          </tbody>
-        </table>
+        </modal>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="assessment">Assessment<a class="fa fa-anchor" href="#assessment"></a></h1>
+        <div class="indented">
+          <ul>
+            <li>40% : Project</li>
+            <li>60% : Final Exam</li>
+          </ul>
+        </div>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="exam">Exam<a class="fa fa-anchor" href="#exam"></a></h1>
+        <div class="indented">
+          <div>
+            <p>There is no midterm.</p>
+            <p>The final exam has two parts:</p>
+            <ul>
+              <li>Part 1: MCQ questions (1 hour, 20 marks)</li>
+              <li>Part 2: Essay questions (1 hour, 20 marks)</li>
+            </ul>
+            <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.</p>
+            <h2 id="final-exam%3A-part-1-(mcq)">Final Exam: Part 1 (MCQ)<a class="fa fa-anchor" href="#final-exam%3A-part-1-(mcq)"></a></h2>
+            <p>Each MCQ question gives you a statement to evaluate.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> An example statement</p>
+              <blockquote>
+                <p>Testing is a Q&amp;A activity</p>
+              </blockquote>
+            </tip-box>
+            <p>Unless stated otherwise, the meaning of answer options are<br>
+              <strong><code>A</code></strong>: <code>Agree</code>. If the question has multiple statements, <ins>agree with all of them</ins>.<br>
+              <strong><code>B</code></strong>: <code>Disagree</code>. If the question has multiple statements, <ins>disagree with at least one of them</ins><br>
+              <strong><code>C</code></strong>, <strong><code>D</code></strong>, <strong><code>E</code></strong>: Not used</p>
+            <p>Number of questions: 50</p>
+            <div class="full-mode">
+              <p>Note that you have <strong>slightly more than ½ minute for each question</strong>, which means you need to go through the questions fairly quickly.</p>
+            </div>
+            <p>Given the fast pace required by the paper, to be fair to all students, <strong>you will not be allowed to clarify doubts about questions</strong> (in Part 1) by talking to invigilators.</p>
+            <ul>
+              <li>If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.</li>
+              <li>If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.</li>
+            </ul>
+            <p><strong>Questions in Part 1 are confidential.</strong> You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.</p>
+            <div class="full-mode">
+              <p>You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. <strong>Indicate your student number in both OCR forms</strong>.</p>
+            </div>
+            <p>Some questions will use <ins>underlines</ins> or <mark>highlighting</mark> to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Consider the statement below:</p>
+              <blockquote>
+                <p>Technique ABC <ins>can</ins> be used to generate more test cases.</p>
+              </blockquote>
+              <p>The word <ins>can</ins> is underlined because the decision you need to make is whether the ABC <em>can or cannot</em> be used to generate more test cases; the decision is not whether ABC can be used to generate <em>more or better</em> test cases.</p>
+            </tip-box>
+            <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the question is Java code.</p>
+            <p><img src="/2019/admin/images/contextTag.png"><br></p>
+            <p><strong>The paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format.
+              However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the exam.</p>
+            <p>💡 <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end. <span class="dimmed"> Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span></p>
+            <p>💡 <strong>Write the answer in the exam paper as well</strong> as marking it in the OCR form. <span class="dimmed"> Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
+            <p>💡 We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time to figure out, you are probably over-thinking it.</p>
+            <box type="success">
+              <p>You will be given a practice exam paper to familiarize yourself with this slightly unusual exam format.
+              </p>
+            </box>
+            <h2 id="final-exam%3A-part-2-(essay)">Final Exam: Part 2 (Essay)<a class="fa fa-anchor" href="#final-exam%3A-part-2-(essay)"></a></h2>
+            <p>Unlike in part 1, <strong>you can ask invigilators for clarifications</strong> if you found a question to be unclear in part 2.</p>
+            <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
+            <div class="full-mode">
+              <p>[<a href="http://www.comp.nus.edu.sg/~te3201/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202.pdf">Sample paper</a>]
+                [<a href="http://www.comp.nus.edu.sg/~te3201/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202%20(answers).pdf">Answers to the sample paper</a>]</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </modal>
-    <h2 id="exam">Exam<a class="fa fa-anchor" href="#exam"></a></h2>
-    <ul>
-      <li>Total: 2 hours
-        <ul>
-          <li>Part 1: MCQ (1 hour)</li>
-          <li>Part 2: Essay (1 hour)</li>
-        </ul>
-      </li>
-      <li>Open book (any printed or written materials are allowed)</li>
-    </ul>
-    <h2 id="grading">Grading<a class="fa fa-anchor" href="#grading"></a></h2>
-    <ul>
-      <li>Project: 40%</li>
-      <li>Exam: 60%</li>
-    </ul>
+    </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sat, 05 Jan 2019 11:23:26 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 07:27:35 GMT</small></div>
 </footer>
 </div>
 </body>

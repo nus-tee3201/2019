@@ -43,3 +43,7 @@ mark {
 .indented-level4 {
     padding-left: 80px;
 }
+
+.full-mode {
+    display: none;
+}
