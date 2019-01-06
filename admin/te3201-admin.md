@@ -66,61 +66,46 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 {{ far_frown }} **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
 
-**Lecture handouts will be uploaded to IVLE _before_ the lecture**, usually by midnight of the Sunday before the lecture.
+Rough break-down of a typical lecture:
+* 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics.
+* 1830-1900: Doing exercises related to previous week topics.
+* 1900-2000: SE topics for the current week.
+* 2000-2100: Programming topics for the current week. Those who are already familiar with programming and not interested in learning Python can leave early.
+* 2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.
 
-**Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Slides will be uploaded to IVLE _after_ the lecture, usually by Wednesday.
 
-<box>
+**{{ icon_slides }} Lecture slides will be uploaded to IVLE after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
 
- :bulb: If handouts/slides are not in IVLE by the expected times, please feel free to ping the lecturer.
-</box>
+:bulb: If slides are not in IVLE by the expected times, please feel free to ping the lecturer.
+
 
 </div>
 
 {{ dotted_line }}
 
 # Tutorials
-<div class="indented">
 
-%%{{ far_clock }}%% Tuesdays 6.30-7.30pm<br>
-%%{{ fas_map_marker_alt }}%% SR10 (COM1-0210)<br>
-</div>
-
-{{ dotted_line }}
-
-# Lectures
-
-TUE 1800-2130 in E3‐06‐15
-
-* :worried: No webcast (Reason: the lecture venue does not have the webcast facility)
-
-* The lecture will be broken into small segments (about 30 minutes) of fairly independent parts so that late comers can still follow the remainder of the lecture.
-
-* First 15 minutes will be a recap of previous lecture or free-flow discussion so that those slightly late will not miss the beginning of the lecture proper.
-
-* Python topics will be in the 2nd half of the lecture so that those not interested in learning Python can leave early.
+There is no formal tutorial. Instead, tutorial-like activities are integrated into the lecture.
 
 {{ dotted_line }}
 
 # Textbook
 
-A customized **online text book** is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.
-* Full version is [here]({{baseUrl}}/book-adapted/index.html): The relevant sections are embedded under the corresponding week in the [schedule page]({{baseUrl}}/schedule/index.html).
-* :scroll: Printable version (excludes exercises) is [here]({{baseUrl}}/book-adapted/print.html). PDF copies of the relevant sections will be uploaded to IVLE, by Monday of each week.  You are encouraged to use the online full version when possible (instead of the printable version or the PDF version), as it has more content %%&nbsp;videos, exercises, etc.%%
+**Software Engineering Textbook**:
 
-<panel header="Helpful info about using the textbook" no-close>
-  <include src="../book-adapted/usage.md#body" />
-</panel><p/>
+A customized **online text book** is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.
+* Full version is [here]({{baseUrl}}/se-book-adapted/index.html): The relevant sections are embedded under the corresponding week in the [schedule page]({{baseUrl}}/schedule/index.html).
+* {{ icon_print }} Printable version is [here]({{baseUrl}}/se-book-adapted/print.html). PDF copies of the relevant sections will be uploaded to IVLE, by Monday of each week. ==You are encouraged to use the online full version when possible== (instead of the printable version or the PDF version), as it has more content %%videos, exercises, etc.%%
+
+**Programming Textbook**:
 
 [An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. Contents in that guide are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
-
-:bar_chart: **Slides** will be uploaded to IVLE _after_ the lecture. Note that lecture slides are to assist in lecture delivery only; they are ==not suitable for printing or as an exam reference==.
 
 {{ dotted_line }}
 
 # Programming language
 
-This module uses Python programming language to teach you programming basics. However, Python is not examinable.
+This module uses Python programming language to teach you programming basics required for software engineering. However, Python is not examinable.
 
 {{ dotted_line }}
 
@@ -192,7 +177,7 @@ Some suggestions for _additional functionality_:
 
 1. You should not use relational/SQL databases e.g., MySQL
 1. The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
-   1. If your software need other software to be installed (e.g., third-party libraries), please get prof's permission first.
+   * If your software need other software to be installed (e.g., third-party libraries), please get prof's permission first.
 
 ### Deliverables
 
