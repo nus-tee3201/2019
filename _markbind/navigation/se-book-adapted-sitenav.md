@@ -9,7 +9,6 @@
 {% endfor %}
 {% endfor %}
 * Supplementary
-  * [C++ to Java]({{ baseUrl }}/se-book-adapted/chapters/cppToJava.html)
   * [Combined Exercises]({{ baseUrl }}/se-book-adapted/common/exercises.html)
   * [List of Definitions]({{ baseUrl }}/se-book-adapted/common/definitions.html)
 
