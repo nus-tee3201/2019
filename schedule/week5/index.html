@@ -689,449 +689,10 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.4b]</span></span> <span class="dimmed"><strong><span>C++ to Java → Inheritance →
-                            </span></strong></span> <strong><big><big><span>Polymorphism</span></big></big></strong></span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use polymorphism in Java</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Java is a <em>strongly-typed</em> language which means the code works with only the object types that it targets.</strong></p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> The following code <code>PetShelter</code> keeps a list of <code>Cat</code> objects and make them <code>speak</code>. The code will not work with any other type, for example, <code>Dog</code> objects.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PetShelter</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Cat[] cats = <span class="hljs-keyword">new</span> Cat[]{
-            <span class="hljs-keyword">new</span> Cat(<span class="hljs-string">"Mittens"</span>),
-            <span class="hljs-keyword">new</span> Cat(<span class="hljs-string">"Snowball"</span>)};
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-keyword">for</span> (Cat c: cats){
-            System.out.println(c.speak());
-        }
-    }
-}
-</code></pre>
-                            <p><span class="fas fa-arrow-down"></span></p>
-                            <pre class="hljs"><code>Mittens: Meow
-Snowball: Meow
-</code></pre>
-                            <panel type="seamless" header="%%The `Cat` class%%">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
-        <span class="hljs-keyword">super</span>(name);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> name + <span class="hljs-string">": Meow"</span>;
-    }
-}
-</code></pre>
-                            </panel>
-                          </box>
-                          <p>This <strong>strong-typing can lead to unnecessary verbosity</strong> caused by repetitive similar code that do similar things with different object types.</p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> If the <code>PetShelter</code> is to keep both cats and dogs, you'll need two arrays and two loops:</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PetShelter</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Cat[] cats = <span class="hljs-keyword">new</span> Cat[]{
-            <span class="hljs-keyword">new</span> Cat(<span class="hljs-string">"Mittens"</span>),
-            <span class="hljs-keyword">new</span> Cat(<span class="hljs-string">"Snowball"</span>)};
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Dog[] dogs = <span class="hljs-keyword">new</span> Dog[]{
-            <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">"Spot"</span>)};
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-keyword">for</span> (Cat c: cats){
-            System.out.println(c.speak());
-        }
-        <span class="hljs-keyword">for</span>(Dog d: dogs){
-            System.out.println(d.speak());
-        }
-    }
-}
-</code></pre>
-                            <p><span class="fas fa-arrow-down"></span></p>
-                            <pre class="hljs"><code>Mittens: Meow
-Snowball: Meow
-Spot: Woof
-</code></pre>
-                            <panel type="seamless" header="%%The `Dog` class%%">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
-        <span class="hljs-keyword">super</span>(name);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> name + <span class="hljs-string">": Woof"</span>;
-    }
-}
-</code></pre>
-                            </panel>
-                          </box>
-                          <p>A better way is to <strong>take advantage of polymorphism to write code that targets a superclass but works with any subclass objects.</strong></p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> The <code>PetShelter2</code> use one data structure to keep both types of animals and one loop to make them speak. The code targets the <code>Animal</code> superclass (assuming <code>Cat</code> and <code>Dog</code> inherits from the <code>Animal</code> class) instead of repeating the code for each animal type.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PetShelter2</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Animal[] animals = <span class="hljs-keyword">new</span> Animal[]{
-            <span class="hljs-keyword">new</span> Cat(<span class="hljs-string">"Mittens"</span>),
-            <span class="hljs-keyword">new</span> Cat(<span class="hljs-string">"Snowball"</span>),
-            <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">"Spot"</span>)};
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-keyword">for</span> (Animal a: animals){
-            System.out.println(a.speak());
-        }
-    }
-}
-</code></pre>
-                            <p><span class="fas fa-arrow-down"></span></p>
-                            <pre class="hljs"><code>Mittens: Meow
-Snowball: Meow
-Spot: Woof
-</code></pre>
-                            <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
-
-    <span class="hljs-keyword">protected</span> String name;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">(String name)</span></span>{
-        <span class="hljs-keyword">this</span>.name = name;
-    }
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-keyword">return</span> name;
-    }
-}
-</code></pre>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
-        <span class="hljs-keyword">super</span>(name);
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> name + <span class="hljs-string">": Meow"</span>;
-    }
-}
-</code></pre>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
-        <span class="hljs-keyword">super</span>(name);
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> name + <span class="hljs-string">": Woof"</span>;
-    }
-}
-</code></pre>
-                            </panel>
-                            <p><span class="dimmed">Explanation: Because Java supports polymorphism, you can store both <code>Cat</code> and <code>Dog</code> objects in an array of <code>Animal</code> objects. Similarly, you can call the <code>speak</code> method on any <code>Animal</code> object (as done in the loop) and yet get different behavior from <code>Cat</code> objects and <code>Dog</code> objects.</span></p>
-                            <p>💡 Suggestion: try to add an <code>Animal</code> object (e.g., <code>new Animal(&quot;Unnamed&quot;)</code>) to the <code>animals</code> array and see what happens.
-                            </p>
-                          </box>
-                          <p><strong>Polymorphic code is better</strong> in several ways:</p>
-                          <ul>
-                            <li>It is <strong>shorter</strong>.</li>
-                            <li>It is <strong>simpler</strong>.</li>
-                            <li>It is more <strong>flexible</strong> (in the above example, the <code>main</code> method will work even if we add more animal types).</li>
-                          </ul>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print shape area">
-                                    <question>
-                                      <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
-                                      <p>Add the missing variables/methods to the code below so that it produces the output given.</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-comment">//TODO add your methods here</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">5</span>));
-        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>));
-        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">10</span>));
-        printAreas();
-        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>));
-        printAreas();
-    }
-}
-</code></pre>
-                                      <p><span class="fas fa-arrow-down"></span></p>
-                                      <pre class="hljs"><code>78
-12
-314
-78
-12
-314
-16
-</code></pre>
-                                      <p><code>Circle</code> class and <code>Rectangle</code> class is given below but you'll need to add a parent class <code>Shape</code>:</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
-
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> radius)</span> </span>{
-        <span class="hljs-keyword">this</span>.radius = radius;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)(Math.PI * radius * radius);
-    }
-}
-</code></pre>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Rectangle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
-        <span class="hljs-keyword">this</span>.height = height;
-        <span class="hljs-keyword">this</span>.width = width;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> height * width;
-    }
-}
-</code></pre>
-                                      <p>💡 You may use an array of size 100 to store the shapes.</p>
-                                      <panel type="seamless" header="Partial solution">
-                                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addShape</span><span class="hljs-params">(Shape s)</span></span>{
-        shapes[shapeCount] = s;
-        shapeCount++;
-    }
-
-    <span class="hljs-comment">// ...</span>
-
-}
-</code></pre>
-                                      </panel>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 2 - **Use Inheritance**">
-                                    <div id="body">
-                                      <p>
-                                        <panel type="seamless" src="/2019\book\cppToJava\project\taskManager\q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized="" fragment="main"></panel>
-                                      </p>
-                                      <p><span class="dimmed">This exercise continues from the <code>TaskManager Level1</code> exercise quoted above.</span></p>
-                                      <div id="main">
-                                        <p>Enhance your TaskManager program in the following ways.</p>
-                                        <p><strong>A. Add support for two types of tasks:</strong></p>
-                                        <ul>
-                                          <li>ToDo : a task to do someday</li>
-                                          <li>Deadline: a task to be done by a specific deadline</li>
-                                        </ul>
-                                        <p>Both types keeps an internal flag to indicate if the task is done. The flag is initially set to <code>false</code>.</p>
-                                        <p>Here is an example output: <span class="fas fa-arrow-down"></span></p>
-                                        <box>
-                                          <div class="text-monospace">
-                                            <p>Welcome to TaskManager-Level2!
-                                              <br>Your task? <code>todo submit report</code>
-                                              <br>Tasks in the list: 1
-                                              <br>Your task? <code>deadline write report /by this Friday 4pm</code>
-                                              <br>Tasks in the list: 2
-                                              <br>Your task? <code>todo read textbook</code>
-                                              <br>Tasks in the list: 3
-                                              <br>Your task? <code>deadline return textbook /by Sunday</code>
-                                              <br>Tasks in the list: 4
-                                              <br>Your task? <code>print</code>
-                                              <br>Tasks:
-                                              <br>[1] description: submit report
-                                              <br>    is done? No
-                                              <br>[2] description: write report
-                                              <br>    is done? No
-                                              <br>do by: this Friday 4pm
-                                              <br>[3] description: read textbook
-                                              <br>    is done? No
-                                              <br>[4] description: return textbook
-                                              <br>    is done? No
-                                              <br>    do by: Sunday
-                                              <br>Your task? <code>exit</code>
-                                              <br>Bye!</p>
-                                          </div>
-                                        </box>
-                                        <p>Changes to the behavior:</p>
-                                        <ul>
-                                          <li><s><strong><code>add</code></strong> <code>task description</code>: adds the <code>task description</code> to the task list</s></li>
-                                          <li><strong><code>todo</code></strong> <code>task description</code>: adds to the task list a todo task with the given <code>task description</code></li>
-                                          <li><strong><code>deadline</code></strong> <code>task description /by deadline description</code>: adds to the task list a deadline task with the given <code>task description</code> and with the <code>deadline description</code></li>
-                                        </ul>
-                                        <p>Suggestion:</p>
-                                        <ul>
-                                          <li>Make the <code>Todo</code> class inherit from <code>Task</code> class, and make <code>Deadline</code> task inherit from <code>Todo</code> class.</li>
-                                          <li>Use polymorphism to store both types of tasks in an array of <code>Task</code> type and use one loop to print both types of tasks.</li>
-                                        </ul>
-                                        <p><strong>B. Add support for <trigger trigger="click" for="modal:taskManagerLevel2-testingClis">semi-automated regression testing using input/output redirection</trigger></strong>.</p>
-                                        <modal large="" title="Textbook »" id="modal:taskManagerLevel2-testingClis">
-                                            <div>
-                                            <div></div>
-                                            <p></p>
-                                            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
-                                                  </span></strong></span></p>
-                                            <div id="title-and-body">
-                                              <div>
-                                                <h4 id="automated-testing-of-cli-apps"><span>Automated Testing of CLI Apps</span><a class="fa fa-anchor" href="#automated-testing-of-cli-apps"></a></h4>
-                                              </div>
-                                              <div id="main">
-                                                <div>
-                                                  <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
-                                                  <ul>
-                                                    <li>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</li>
-                                                    <li>Next, we compare the actual output file with another file containing the expected output.</li>
-                                                  </ul>
-                                                  <p>Let us assume we are testing a CLI app called <code>AddressBook</code>. Here are the detailed steps:</p>
-                                                  <ol>
-                                                    <li>
-                                                      <p>Store the test input in the text file <code>input.txt</code>.</p>
-                                                      <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless">
-                                                        <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
-add Valid Name 12345 e/valid@email.butPhonePrefixMissing
-</code></pre>
-                                                      </panel>
-                                                    </li>
-                                                    <li>
-                                                      <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                                                      <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless">
-                                                        <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
-Invalid command format: add 
-
-Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
-Invalid command format: add 
-</code></pre>
-                                                      </panel>
-                                                    </li>
-                                                    <li>
-                                                      <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-                                                      <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
-</code></pre>
-                                                      <ul>
-                                                        <li>
-                                                          <p>💡 The way to run a CLI program differs based on the language.<br>
-                                                            e.g., In Python, assuming the code is in <code>AddressBook.py</code> file, use the command<br>
-                                                            <code>python AddressBook.py &lt; input.txt &gt; output.txt</code></p>
-                                                        </li>
-                                                        <li>
-                                                          <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
-                                                        </li>
-                                                      </ul>
-                                                      <panel header="" minimized="">
-                                                        <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span></span>
-                                                        <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                                                        <pre><code class="hljs sh">java AddressBook &gt; output.txt 
-</code></pre>
-                                                        <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
-                                                        <tip-box>
-                                                          <p><span class="fas fa-paperclip"></span> Resources:</p>
-                                                          <ul>
-                                                            <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
-                                                          </ul>
-                                                        </tip-box>
-                                                        <p></p>
-                                                      </panel>
-                                                      <p></p>
-                                                    </li>
-                                                    <li>
-                                                      <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as <em>WinMerge</em>.</p>
-                                                      <pre class="hljs"><code>FC output.txt expected.txt
-</code></pre>
-                                                    </li>
-                                                  </ol>
-                                                  <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
-                                                  <div>
-                                                    <popover id="pop:cli" placement="top">
-                                                      <div slot="content">
-                                                        <div>
-                                                          <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
-                                                        </div>
-                                                      </div>
-                                                    </popover>
-                                                  </div>
-                                                </div>
-                                                <div></div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </modal>
-                                        <panel type="seamless" header="Partial solution">
-                                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-keyword">static</span> Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);
-    <span class="hljs-keyword">static</span> Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
-    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> taskCount = <span class="hljs-number">0</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        printWelcome();
-        String line;
-
-        <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;
-        <span class="hljs-keyword">while</span> (!isExit) {
-            line = getInput();
-            String command = line.split(<span class="hljs-string">" "</span>)[<span class="hljs-number">0</span>];
-            <span class="hljs-keyword">switch</span> (command) {
-                <span class="hljs-keyword">case</span> <span class="hljs-string">"exit"</span>:
-                <span class="hljs-keyword">case</span> <span class="hljs-string">""</span>:
-                    isExit = <span class="hljs-keyword">true</span>;
-                    <span class="hljs-keyword">break</span>;
-                <span class="hljs-keyword">case</span> <span class="hljs-string">"todo"</span>:
-                    addTodo(line);
-                    <span class="hljs-keyword">break</span>;
-                <span class="hljs-keyword">case</span> <span class="hljs-string">"deadline"</span>:
-                    addDeadline(line);
-                    <span class="hljs-keyword">break</span>;
-                <span class="hljs-keyword">case</span> <span class="hljs-string">"print"</span>:
-                    printTasks();
-                    <span class="hljs-keyword">break</span>;
-                <span class="hljs-keyword">default</span>:
-                    printError();
-            }
-        }
-        exit();
-
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addTodo</span><span class="hljs-params">(String line)</span> </span>{
-        tasks[taskCount] = <span class="hljs-keyword">new</span> Todo(line.substring(<span class="hljs-string">"todo"</span>.length()).trim());
-        taskCount++;
-        System.out.println(<span class="hljs-string">"Tasks in the list: "</span> + taskCount);
-    }
-
-  <span class="hljs-comment">// ...</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTasks</span><span class="hljs-params">()</span> </span>{
-        System.out.println(<span class="hljs-string">"Tasks:"</span>);
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; taskCount; i++) {
-            System.out.println(<span class="hljs-string">"["</span> + (i + <span class="hljs-number">1</span>) + <span class="hljs-string">"] "</span> + tasks[i]);
-        }
-    }
-}
-</code></pre>
-                                        </panel>
-                                      </div>
-                                    </div>
-                                  </panel>
-                                </div>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
                   <br>
                   <p><span class="dimmed"><strong>Abstract Classes</strong></span></p>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.4c]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.4b]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
                             </span></strong></span> <strong><big><big><span>Abstract Classes and Methods</span></big></big></strong></span> Unknown level !!! -1</span>
                     <div>
                       <div class="indented">
@@ -1166,201 +727,10 @@ Invalid command format: add
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.4d]</span></span> <span class="dimmed"><strong><span>C++ to Java → Inheritance →
-                            </span></strong></span> <strong><big><big><span>Abstract Classes and Methods</span></big></big></strong></span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use abstract classes and methods</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>In Java, <strong>an <em>abstract method</em> is declared with the keyword <code>abstract</code> and given without an implementation</strong>. If a class includes abstract methods, then the class itself must be declared abstract.</p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> The <code>speak</code> method in this <code>Animal</code> class is <code>abstract</code>. Note how the method signature ends with a semicolon and there is no method body. This makes sense as the implementation of the <code>speak</code> method depends on the type of the animal and it is meaningless to provide a common implementation for all animal types.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
-
-    <span class="hljs-keyword">protected</span> String name;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">(String name)</span></span>{
-        <span class="hljs-keyword">this</span>.name = name;
-    }
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>;
-}
-</code></pre>
-                            <p>As one method of the class is <code>abstract</code>, the class itself is <code>abstract</code>.</p>
-                          </box>
-                          <p><strong>An <em>abstract class</em> is declared with the keyword <code>abstract</code>. Abstract classes can be used as reference type but cannot be instantiated.</strong></p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> This <code>Account</code> class has been declared as abstract although it does not have any abstract methods. Attempting to instantiate <code>Account</code> objects will result in a compile error.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
-
-    <span class="hljs-keyword">int</span> number;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">close</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
-                            <p><code>Account a;</code> <span class="fas fa-arrow-right"></span> <span style="color:green"><span class="fas fa-check"></span></span> OK to use as a type <br>
-                              <code>a = new Account();</code> <span class="fas fa-arrow-right"></span> <span style="color:red"><span class="fas fa-times"></span></span> Compile error!</p>
-                          </box>
-                          <p><strong>When an abstract class is subclassed, the subclass should provides implementations for all of the abstract methods in its superclass or else the subclass must also be declared abstract.</strong></p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> The <code>Feline</code> class below inherits from the abstract class <code>Animal</code> but it does not provide an implementation for the abstract method <code>speak</code>. As a result, the <code>Feline</code> class needs to be abstract too.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Feline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Feline</span><span class="hljs-params">(String name)</span> </span>{
-        <span class="hljs-keyword">super</span>(name);
-    }
-
-}
-</code></pre>
-                            <p>The <code>DomesticCat</code> class inherits the abstract <code>Feline</code> class and provides the implementation for the abstract method <code>speak</code>. As a result, it need not be declared abstract.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Feline</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DomesticCat</span><span class="hljs-params">(String name)</span> </span>{
-        <span class="hljs-keyword">super</span>(name);
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Meow"</span>;
-    }
-}
-</code></pre>
-                            <p><code>Animal a = new Feline(&quot;Mittens&quot;);</code> <span class="fas fa-arrow-right"></span> <span style="color:red"><span class="fas fa-times"></span></span> Compile error! <code>Feline</code> is abstract.</p>
-                            <p><code>Animal a = new DomesticCat(&quot;Mittens&quot;);</code> <span class="fas fa-arrow-right"></span> <span style="color:green"><span class="fas fa-check"></span></span> OK. <code>DomesticCat</code> can be instantiated and assigned to a variable of <code>Animal</code> type <span class="dimmed">(the assignment is allowed by polymorphism)</span>.</p>
-                          </box>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                              <div>
-                                <ul>
-                                  <li><a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle’s Java Tutorials: Abstract Methods and Classes</a></li>
-                                </ul>
-                              </div>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print area with abstract `Shape`">
-                                    <question>
-                                      <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addShape</span><span class="hljs-params">(Shape s)</span></span>{
-        shapes[shapeCount] = s;
-        shapeCount++;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printAreas</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; shapeCount; i++){
-            shapes[i].print();
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">5</span>));
-        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>));
-        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">10</span>));
-        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>));
-        printAreas();
-    }
-}
-</code></pre>
-                                      <p><span class="fas fa-arrow-down"></span></p>
-                                      <pre class="hljs"><code>Circle of area 78
-Rectangle of area 12
-Circle of area 314
-Rectangle of area 16
-</code></pre>
-                                      <p><code>Circle</code> class and <code>Rectangle</code> class is given below:</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
-
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> radius)</span> </span>{
-        <span class="hljs-keyword">this</span>.radius = radius;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)(Math.PI * radius * radius);
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
-        System.out.println(<span class="hljs-string">"Circle of area "</span> + area());
-    }
-}
-</code></pre>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Rectangle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
-        <span class="hljs-keyword">this</span>.height = height;
-        <span class="hljs-keyword">this</span>.width = width;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> height * width;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
-        System.out.println(<span class="hljs-string">"Rectangle of area "</span> + area());
-    }
-}
-</code></pre>
-                                      <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-                                      <panel type="seamless" header="Partial solution">
-                                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
-    <span class="hljs-comment">// ...</span>
-}
-</code></pre>
-                                      </panel>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about abstract classes">
-                                    <question>
-                                      <p>Choose the correct statements about Java abstract classes and <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
-                                      <ul class="task-list">
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A concrete class can contain an abstract method.</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An abstract class can contain concrete methods.</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An abstract class need not contain any concrete methods.</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An abstract class cannot be instantiated.</li>
-                                      </ul>
-                                      <div slot="answer">
-                                        <p>(b)(c)(d)</p>
-                                        <p>Explanation: A concrete class cannot contain even a single abstract method.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
                   <br>
                   <p><span class="dimmed"><strong>Interfaces</strong></span></p>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.4e]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.4c]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
                             </span></strong></span> <strong><big><big><span>Interfaces</span></big></big></strong></span> Unknown level !!! -1</span>
                     <div>
                       <div class="indented">
@@ -1385,218 +755,6 @@ Rectangle of area 16
                           <p></p>
                         </div>
                         <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.4f]</span></span> <span class="dimmed"><strong><span>C++ to Java → Inheritance →
-                            </span></strong></span> <strong><big><big><span>Interfaces</span></big></big></strong></span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use interfaces in Java</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>The text given in this section borrows some explanations and code examples from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>.</p>
-                          <p>In Java, <strong>an <em>interface</em> is a reference type, similar to a class, mainly containing method signatures.</strong> Defining an interface is similar to creating a new class except it uses the keyword <code>interface</code> in place of <code>class</code>.</p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> Here is an interface named <code>DrivableVehicle</code> that defines methods needed to drive a vehicle.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">changeLanes</span><span class="hljs-params">(Direction direction)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">signalTurn</span><span class="hljs-params">(Direction direction, <span class="hljs-keyword">boolean</span> signalOn)</span></span>;
-    <span class="hljs-comment">// more method signatures</span>
-}
-</code></pre>
-                            <p>Note that the method signatures have no braces and are terminated with a semicolon.
-                            </p>
-                          </box>
-                          <p><strong>Interfaces cannot be instantiated—they can only be implemented by classes</strong>. When an instantiable class implements an interface, indicated by the keyword <code>implements</code>, it provides a method body for each of the methods declared in the interface.</p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> Here is how a class <code>CarModelX</code> can implement the <code>DrivableVehicle</code> interface.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarModelX</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">DrivableVehicle</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span> </span>{
-       <span class="hljs-comment">// implementation</span>
-    }
-
-    <span class="hljs-comment">// implementation of other methods</span>
-}
-</code></pre>
-                          </box>
-                          <p><strong>An interface can be used as a type</strong> e.g., <code>DrivableVechile dv = new CarModelX();</code>.</p>
-                          <p><strong>Interfaces can inherit from other interfaces</strong> using the <code>extends</code> keyword, similar to a class inheriting another.</p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> Here is an interface named <code>SelfDrivableVehicle</code> that inherits the <code>DrivableVehicle</code> interface.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">SelfDrivableVehicle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DrivableVehicle</span> </span>{
-   <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">goToAutoPilotMode</span><span class="hljs-params">()</span></span>;
-}
-</code></pre>
-                            <p>Note that the method signatures have no braces and are terminated with a semicolon.
-                            </p>
-                          </box>
-                          <p>Furthermore, <strong>Java allows multiple inheritance among interfaces.</strong> A Java interface can inherit multiple other interfaces. <strong>A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
-                          <box>
-                            <p><span class="fas fa-cube"></span> The design below is allowed by Java. <span class="dimmed">In case you are not familiar with UML notation used: solid lines indicate normal inheritance; dashed lines indicate interface inheritance; the triangle points to the parent.</span></p>
-                            <img src="/2019/book/oop/inheritance/interfaces/images/studentStaff.png" height="250">
-                            <p></p>
-                            <ol>
-                              <li><code>Staff</code> interface inherits (note the solid lines) the interfaces <code>TaxPayer</code> and <code>Citizen</code>.</li>
-                              <li><code>TA</code> class implements both <code>Student</code> interface and the <code>Staff</code> interface.</li>
-                              <li>Because of point 1 above, <code>TA</code> class has to implement all methods in the interfaces <code>TaxPayer</code> and <code>Citizen</code>.</li>
-                              <li>Because of points 1,2,3, a <code>TA</code> <em>is a</em> <code>Staff</code>, <em>is a</em> <code>TaxPayer</code> and <em>is a</em> <code>Citizen</code>.</li>
-                            </ol>
-                          </box>
-                          <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-                          <modal large="" title="%%Textbook »%%" id="modal:javaInterfaces-constants">
-                              <div>
-                              <div></div>
-                              <p></p>
-                              <p><span class="dimmed"><strong><span>C++ to Java → Miscellaneous Topics →
-                                    </span></strong></span></p>
-                              <div id="title-and-body">
-                                <div>
-                                  <h4 id="constants"><span>Constants</span><a class="fa fa-anchor" href="#constants"></a></h4>
-                                </div>
-                                <div id="main">
-                                  <div>
-                                    <p>Java does not directly support constants. The convention is to use a <code>static</code> <code>final</code> variable where a constant is needed. The <code>static</code> modifier causes the variable to be available without instantiating an object. The <code>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
-                                    <box>
-                                      <p><span class="fas fa-cube"></span> Here is an example of a constant named <code>MAX_BALANCE</code> which can be accessed as <code>Account.MAX_BALANCE</code>.</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
-
-  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;
-
-}
-</code></pre>
-                                      <p><span class="fas fa-cube"></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code>Math.PI</code></a> is an example constant that comes with Java.</p>
-                                    </box>
-                                  </div>
-                                  <div></div>
-                                </div>
-                              </div>
-                            </div>
-                          </modal>
-                          <box>
-                            <p><span class="fas fa-cube"></span> This example adds a constant <code>MAX_SPEED</code> and a static method <code>isSpeedAllowed</code> to the interface <code>DrivableVehicle</code>.</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
-
-    <span class="hljs-keyword">int</span> MAX_SPEED = <span class="hljs-number">150</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isSpeedAllowed</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
-        <span class="hljs-keyword">return</span> speed &lt;= MAX_SPEED;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">changeLanes</span><span class="hljs-params">(Direction direction)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">signalTurn</span><span class="hljs-params">(Direction direction, <span class="hljs-keyword">boolean</span> signalOn)</span></span>;
-    <span class="hljs-comment">// more method signatures</span>
-}
-</code></pre>
-                          </box>
-                          <p><span class="fas fa-info-circle"></span> Interfaces can contain <a href="https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html"><em>default</em> method implementations</a> and <em>nested types</em>. They are not covered here.</p>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print `Printable` items">
-                                    <question>
-                                      <p>The <code>Main</code> class below passes a list of <code>Printable</code> objects (i.e., objects that implement the <code>Printable</code> interface) for another method to be printed.</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printObjects</span><span class="hljs-params">(Printable[] items)</span> </span>{
-        <span class="hljs-keyword">for</span> (Printable p : items) {
-            p.print();
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        Printable[] printableItems = <span class="hljs-keyword">new</span> Printable[]{
-                <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">5</span>),
-                <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>),
-                <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"James Cook"</span>)};
-
-        printObjects(printableItems);
-    }
-}
-</code></pre>
-                                      <p><span class="fas fa-arrow-down"></span></p>
-                                      <pre class="hljs"><code>Circle of area 78
-Rectangle of area 12
-Person of name James Cook
-</code></pre>
-                                      <p>Classes <code>Shape</code>, <code>Circle</code>, and <code>Rectangle</code> are given below:</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
-}
-</code></pre>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
-
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> radius)</span> </span>{
-        <span class="hljs-keyword">this</span>.radius = radius;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)(Math.PI * radius * radius);
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
-        System.out.println(<span class="hljs-string">"Circle of area "</span> + area());
-    }
-}
-</code></pre>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Rectangle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
-        <span class="hljs-keyword">this</span>.height = height;
-        <span class="hljs-keyword">this</span>.width = width;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> height * width;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
-        System.out.println(<span class="hljs-string">"Rectangle of area "</span> + area());
-    }
-}
-</code></pre>
-                                      <p>Add the missing <code>Printable</code> interface. Add the missing methods of the <code>Person</code> class given below.</p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
-
-    <span class="hljs-keyword">private</span> String name;
-
-    <span class="hljs-comment">// todo: add missing methods</span>
-}
-</code></pre>
-                                      <panel type="seamless" header="Partial solution">
-                                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
-    <span class="hljs-comment">//...</span>
-}
-</code></pre>
-                                      </panel>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </panel>
@@ -1988,7 +1146,608 @@ git pull origin master
         </div>
       </tab>
       <tab header=" Programming Topics">
-        <div></div>
+        <div>
+          <ul>
+            <li><a href="#lists"><strong>Error Handling</strong></a>
+              <ul>
+                <li><a href="#introdution-to-errors">Introduction to Errors</a></li>
+                <li><a href="#syntax-errors">Syntax Errors</a></li>
+                <li><a href="#handling-exceptions">Handling Exceptions</a></li>
+                <li><a href="#raising-exceptions">Raising Exceptions</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h1 id="error-handling">Error Handling<a class="fa fa-anchor" href="#error-handling"></a></h1>
+          <div>
+            <h3 id="introduction-to-errors">Introduction to Errors<a class="fa fa-anchor" href="#introduction-to-errors"></a></h3>
+            <p><strong>In Python, there are (at least) two kinds of errors: <em>syntax errors</em> and <em>exceptions</em>.</strong></p>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="syntax-errors">Syntax Errors<a class="fa fa-anchor" href="#syntax-errors"></a></h3>
+            <p><strong>A <em>syntax error</em>, also known as a <em>parsing error</em>, is when your code does not follow rules for writing Python code.</strong> Python interpreter shows an error message when it encounters a syntax error.</p>
+            <tip-box>
+              <p>📦 The code below has a syntax error because it breaks the Python rule that requires a <code>:</code> to follow the condition of an <code>if</code> statement.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">4</span>
+  print(<span class="hljs-string">'Greater'</span>)
+  
+  
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td> → </td>
+                    <td>
+                    <pre class="hljs"><code>Traceback (most recent call last):
+  File &quot;python&quot;, line 1
+    if 5 &gt; 4
+           ^
+SyntaxError: invalid syntax
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>Some Python editors (e.g., REPL) flag syntax errors even before you run the code.</p>
+            <tip-box>
+              <p>📦 Note how REPL Python editor points out the syntax error using a red ❌ in the <em>
+                  <tooltip content="the column on the extreme left of the editor">gutter</tooltip>
+                </em> of the editor.</p>
+              <p><a href="/2019/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2019/errors-syntax/images/syntaxErrorInRepl.png" alt="" class="img-fluid"></a></p>
+            </tip-box>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="handling-exceptions">Handling Exceptions<a class="fa fa-anchor" href="#handling-exceptions"></a></h3>
+            <p><strong>Errors detected during execution are called <em>exceptions</em>.</strong> Even if the code is syntactically correct, it may cause an error during execution. Python <em>
+                <tooltip content="_throw_ and _raise_  are two terms used to describe an exception being encountered">throws/raises</tooltip>
+              </em> different types of exceptions; the type of exception used depends on the tye nature of the error.</p>
+            <tip-box>
+              <p>📦 The code below raises an exception when it attempts to divide a number by <code>0</code>. The type of the exception raised is <code>ZeroDivisionError</code>, as mentioned in the last line of the error message.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Starting calculation'</span>)
+  result = number/divisor
+  print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide(<span class="hljs-number">50</span>, <span class="hljs-number">5</span>)
+divide(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td> → <br><br><br><br></td>
+                    <td>
+                    <pre class="hljs"><code>Starting calculation
+50 / 5 = 10.0
+Calculation over!........
+</code></pre>
+                    <pre class="hljs"><code>Starting calculation
+Traceback (most recent call last):
+  File &quot;python&quot;, line 9, in &lt;module&gt;
+  File &quot;python&quot;, line 4, in divide
+ZeroDivisionError: division by zero
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>It is not desirable for programs to 'crash' every time an exception occurs. You can <strong>use the <code>try-except</code> syntax to specify how to handle exceptions</strong>. The <code>try</code> clause contains the code that can possibly raise an exception while the <code>except</code> clause contains the code that handles the exception.</p>
+            <tip-box>
+              <p>📦 The code below specifies what to do if the <code>ZeroDivisionError</code> is raised, thereby avoiding a program crash in such an event.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide2</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Starting calculation'</span>)
+  <span class="hljs-keyword">try</span>:
+    result = number/divisor
+    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  <span class="hljs-keyword">except</span> ZeroDivisionError:
+    print(<span class="hljs-string">'Cannot divide by zero'</span>)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide2(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+divide2(<span class="hljs-number">3</span>, <span class="hljs-number">1.5</span>)
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td> → </td>
+                    <td><br><br>
+                    <p>[<a target="_blank" href="https://goo.gl/rc8X9h">visualize</a>]<br></p>
+                    <pre class="hljs"><code>Starting calculation
+Cannot divide by zero
+Calculation over!........
+
+</code></pre>
+                    <pre class="hljs"><code>Starting calculation
+3 / 1.5 = 2.0
+Calculation over!........
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>When the code in a <code>try</code> clause raises an error, the program execution immediately moves to the code in the <code>except</code> clause, provided the exception that happened matches the exception the <code>except</code> clause is supposed to <em>
+                <tooltip content="_Catch_ is term often used to describe a clause that respondes to a specific exception.">catch</tooltip>
+              </em>. After running the code in the <code>except</code> clause, the execution continues as normal.</p>
+            <p>If the exception does not match the <code>except</code> clause, the program crashes.</p>
+            <tip-box>
+              <p>📦 The code below crashes because the actual exception <span class="dimmed">(caused by passing a string when an foloating point number is expected)</span> does not match the specified exception <code>ZeroDivisionError</code>.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">divide2(<span class="hljs-number">5</span>, <span class="hljs-string">'abc'</span>)
+</code></pre>
+                    <p><br><br></p>
+                  </td>
+                    <td>&nbsp;→&nbsp;<br><br><br><br></td>
+                    <td>
+                    <pre class="hljs"><code>Starting calculation
+Traceback (most recent call last):
+  File &quot;python&quot;, line 24, in &lt;module&gt;
+  File &quot;python&quot;, line 16, in divide2
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p><strong>You can specify multiple <code>except</code> clauses</strong>, one for each type of exception expected.</p>
+            <tip-box>
+              <p>📦 The code below handles two types of exceptions: <code>ZeroDivisionError</code> and <code>ValueError</code>.</p>
+              <p>💡 The <code>ValueError</code> is raised when the string <code>abc</code> is being converted to a float using <code>float(divisor)</code>.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide3</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)
+  <span class="hljs-keyword">try</span>:
+    result = float(number)/float(divisor)
+    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  <span class="hljs-keyword">except</span> ZeroDivisionError:
+    print(<span class="hljs-string">'Cannot divide by zero'</span>)
+  <span class="hljs-keyword">except</span> ValueError:
+    print(<span class="hljs-string">'Cannot divide non-numbers'</span>)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide3(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+divide3(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td> → </td>
+                    <td><br><br><br><br><br><br>
+                    <pre class="hljs"><code>Calculating 3 / 0
+Cannot divide by zero
+Calculation over!........
+</code></pre>
+                    <pre class="hljs"><code>Calculating 3 / abc
+Cannot divide non-numbers
+Calculation over!........
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p><strong>It is possible to specify multiple exception types in one <code>except</code> clause.</strong></p>
+            <tip-box>
+              <p>📦 The code below handles both <code>ZeroDivisionError</code> and <code>ValueError</code> in the same <code>except</code> clause.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide4</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)
+  <span class="hljs-keyword">try</span>:
+    result = float(number)/float(divisor)
+    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  <span class="hljs-keyword">except</span> (ZeroDivisionError, ValueError):
+    print(<span class="hljs-string">'Incorrect inputs'</span>)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide4(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+divide4(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td> → </td>
+                    <td><br><br><br><br>
+                    <pre class="hljs"><code>Calculating 3 / 0
+Incorrect inputs
+Calculation over!........
+</code></pre>
+                    <pre class="hljs"><code>Calculating 3 / abc
+Incorrect inputs
+Calculation over!........
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p><a href="https://docs.python.org/3/library/exceptions.html#IndexError"><code>IndexError</code></a> is an exception thrown when you try to access an index (e.g., when reading values form a list) that does not exist.</p>
+            <tip-box>
+              <p>📦</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]
+  <span class="hljs-keyword">except</span> IndexError:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'List too short'</span>
+    
+print(get_head([]))
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td><br><br><br><br><br><br> → </td>
+                    <td><br><br><br><br><br><br>
+                    <pre class="hljs"><code>List too short
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>It is also possible to <strong>use <code>except Exception</code> to catch any kind of exception</strong>. However, that practice is discouraged.</p>
+            <tip-box>
+              <p>📦 The code below handles both <code>ZeroDivisionError</code> and <code>ValueError</code> in the same <code>except</code> clause.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head2</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]
+  <span class="hljs-keyword">except</span> Exception:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Something wrong'</span>
+    
+print(get_head2(<span class="hljs-number">2</span>))
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td><br><br><br><br><br><br> → </td>
+                    <td><br><br><br><br><br><br>
+                    <pre class="hljs"><code>Something wrong
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <panel type="seamless" header="%%:computer: Try your own%%">
+              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-handling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+            <p>📎 <strong>Resources</strong>:</p>
+            <ul>
+              <li><a href="https://www.tutorialspoint.com/python/standard_exceptions.htm">Python built-in exceptions</a></li>
+            </ul>
+            <panel type="danger" header=":muscle: Exercise: Enter Integer" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-%3A-enter-integer"></a></h4>
+                <p>The code below assumes the entered string will always represent an integer.</p>
+                <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
+print(<span class="hljs-string">'You entered'</span>, value)
+</code></pre>
+                <p>However, users may not follow that assumption. If the user were to enter a non-integer string, the program crashes. To avoid such crashes, programs need to do <em>input validation</em> i.e., perform checks on inputs to ensure their validity.</p>
+                <p>Update the above code so that it accepts integers only, and produces the behavior given below.</p>
+                <pre class="hljs"><code>Input an integer: x
+That is not an integer, try again
+Input an integer: 5.5
+That is not an integer, try again
+Input an integer: 6
+You entered 6
+</code></pre>
+                <panel type="seamless" header="%%:bulb: Hint%%">
+                  <ul>
+                    <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code>int(s)</code> function</a> raises a <code>ValueError</code> when the string <code>s</code> does not represent an integer.</li>
+                    <li>You can use a <code>while True</code> loop to repeatedly ask for an input until the user enters an integer.
+                    </li>
+                  </ul>
+                </panel>
+
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+  <span class="hljs-keyword">try</span>:
+    value = int(input(<span class="hljs-string">'Input an integer:'</span>))
+    <span class="hljs-comment"># YOUR CODE HERE! print? break? continue?</span>
+  <span class="hljs-keyword">except</span> ValueError:
+    <span class="hljs-comment"># YOUR CODE HERE!</span>
+    
+print(<span class="hljs-string">'You entered'</span>, value)
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="raising-exceptions">Raising Exceptions<a class="fa fa-anchor" href="#raising-exceptions"></a></h3>
+            <p><strong>You can <code>raise</code> an exception yourself to indicate an error</strong>.</p>
+            <tip-box>
+              <p>📦 The <code>get_body(items)</code> function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the <code>hide_ends(items)</code> function. <br>
+                💡 Also note how an <code>except</code> clause can assign a name to the exception using <code>as temporary_name</code> (as done by <code>except ValueError as e:</code>) so that the exception object can be referenced later (as done in <code>print('Cannot hide ends', str(e))</code>)</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">if</span> len(items) &lt; <span class="hljs-number">3</span>:
+    <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Not enough items'</span>)
+  
+  <span class="hljs-keyword">return</span> items[<span class="hljs-number">1</span>:<span class="hljs-number">-1</span>]
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    body = get_body(items)
+    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))
+
+hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])
+hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td><br><br><br><br><br><br><br><br><br><br><br><br> → </td>
+                    <td><br><br><br><br><br><br><br><br><br><br><br>
+                    <p>[<a target="_blank" href="https://goo.gl/tsteqe">visualize</a>]<br></p>
+                    <pre class="hljs"><code>Cannot hide ends: Not enough items
+['_', 1, 2, 3, '_']
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p><strong>It is also possible to catch an exception, do something, and then raise it again</strong> so that the exception propagates to the caller.</p>
+            <tip-box>
+              <p>📦 The code <code>hide_ends2(items)</code> function below catches the <code>ValueError</code> exception, prints an error message, and raises it again so that the code that called the function can catch the exception again. Also note how the line <code>hide_ends2([0, 1, 2, 3, 4])</code> is never executed due to the exception raised by the line just above it.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends2</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    body = get_body(items)
+    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))
+    <span class="hljs-keyword">raise</span>
+  
+<span class="hljs-keyword">try</span>:
+  hide_ends2([<span class="hljs-number">0</span>])
+  hide_ends2([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+<span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">'hide_ends2 failed:'</span>, str(e))
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td><br><br><br><br><br><br><br><br> → </td>
+                    <td><br><br><br><br><br><br><br><br><br>
+                    <p>[<a target="_blank" href="https://goo.gl/EGkxAW">visualize</a>]<br></p>
+                    <pre class="hljs"><code>Cannot hide ends: Not enough items
+hide_ends2 failed: Not enough items
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <panel type="seamless" header="%%:computer: Try your own%%">
+              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+            <panel type="danger" header=":muscle: Exercise: Is Even-Integer in Range" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-%3A-is-even-integer-in-range"></a></h4>
+                <tip-box>
+                  <p>❗️ This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
+                </tip-box>
+                <p>The function given below checks if a given input is an even integer in a given range.</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
+  print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))
+</code></pre>
+                <p>Some example inputs and outputs are given below:</p>
+                <pre><code class="hljs python">check(<span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>)
+check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span>
+check(<span class="hljs-number">2</span>, <span class="hljs-number">3.4</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [])
+check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>)
+check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>) <span class="hljs-comment"># False ( range 1 to 4 excludes 4)</span>
+check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+</code></pre>
+                <p>⤵️</p>
+                <pre class="hljs"><code>x is an int in range y - z ? Value error: x is not an integer
+3 is an int in range y - z ? No
+2 is an int in range 3.4 - 5 ? Value error: 3.4 is not an integer
+2 is an int in range 3 - [] ? Value error: [] is not an integer
+2 is an int in range 5 - 1 ? Value error: end is smaller than start
+2 is an int in range 5 - 5 ? No
+3 is an int in range 1 - 5 ? No
+4 is an int in range 1 - 4 ? No
+4 is an int in range 1 - 5 ? Yes
+</code></pre>
+                <p>Note how the <code>check</code> function uses an <code>is_even_int_in_range</code> functions whose code and the behavior are given below.</p>
+                <p><strong><code>is_even_int_in_range(number, start, end)</code></strong>:</p>
+                <ul>
+                  <li>Returns <code>'Yes'</code> if <code>number</code> is an even integer in the range <code>start</code> to <code>end</code>. Returns <code>'No'</code> otherwise.</li>
+                  <li>Returns an error message if any of the inputs are incorrect.</li>
+                  <li>Code:
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span>
+    <span class="hljs-keyword">else</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span>
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
+</code></pre>
+                  </li>
+                </ul>
+                <p>Note how the above function uses two other functions <code>is_even_int</code> and <code>is_in_range</code> given below:</p>
+                <p><strong><code>is_even_int(number)</code></strong>:</p>
+                <ul>
+                  <li>Returns <code>True</code> if the <code>number</code> is an even integer. <code>False</code> otherwise.</li>
+                  <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+                  <li>Code:
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span>
+  confirm_is_int(number)
+  <span class="hljs-keyword">return</span> int(number)%<span class="hljs-number">2</span> == <span class="hljs-number">0</span>
+</code></pre>
+                  </li>
+                </ul>
+                <p><strong><code>is_in_range(number, start, end)</code></strong>:</p>
+                <ul>
+                  <li>Returns <code>True</code> if the <code>number</code> is in the range <code>start</code> to <code>end</code> (<mark>including <code>start</code> but excluding <code>end</code></mark>, as per how Python define <em>ranges</em>). <code>False</code> otherwise.</li>
+                  <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer or <code>start</code> and <code>end</code> do not specify a range correctly.</li>
+                  <li>Code:
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+  confirm_is_int(number)
+  confirm_range_correct(start, end)
+  <span class="hljs-keyword">return</span> number &gt;= start <span class="hljs-keyword">and</span> number &lt; end
+</code></pre>
+                  </li>
+                </ul>
+                <p>Note how the above two functions use two other functions <code>confirm_is_int</code> and <code>confirm_range_correct</code>. Their expected behavior and partial code is given below. <strong>Your job is to complete those two functions</strong>.</p>
+                <p><strong><code>confirm_is_int(number)</code></strong>:</p>
+                <ul>
+                  <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+                  <li>Partial code:
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
+</code></pre>
+                  </li>
+                  <li>💡 You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code> is of type <code>type_name</code><br>
+                    e.g., <code>type('x') is not float</code> evaluates to <code>True</code> because <code>'x'</code> is not a <code>float</code>.<br>
+                    [<a href="https://www.poftut.com/python-type-function-examples/">more examples ...</a>]</li>
+                </ul>
+                <p><strong><code>confirm_range_correct(start, end)</code></strong>:</p>
+                <ul>
+                  <li>Raises a <code>ValueError</code> if <code>end</code> or <code>start</code> are not integers. This behavior is already implemented by the code given below, using two calls to the <code>confirm_in_int</code> function.</li>
+                  <li>Raises a <code>ValueError('end is smaller than start)</code> if <code>end</code> is smaller than <code>start</code>. You need to implement this behavior.</li>
+                  <li>Partial code:
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span>
+  confirm_is_int(start)
+  confirm_is_int(end)
+  <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
+</code></pre>
+                  </li>
+                </ul>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+  <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:
+    <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-%3A-flexible-word-game"></a></h4>
+                <p>Implement a word game similar to the one you implement in the <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
+                <ul>
+                  <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
+                </ul>
+                <modal large="" title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
+                    <div>
+                    <h4 id="exercise-%3A-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-%3A-word-game"></a></h4>
+                    <p>Implement a word game with the following rules:</p>
+                    <ul>
+                      <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
+                      <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
+                      <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
+                      <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
+                    </ul>
+                    <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+                    <pre class="hljs"><code>========================================================
+Welcome to the WORD GAME
+Give all four-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  park
+What's the next word?  puck
+What's the next word?  cut
+Not a four-letter word
+What's the next word?  people
+Not a four-letter word
+What's the next word?  team
+What's the next word?  puck
+Repeated word! puck is number 2 in the accepted words list.
+puck is no longer an accepted word and is banned
+What's the next word?  bust
+What's the next word?  puck
+puck is banned!
+What's the next word?  meat
+What's the next word?  team
+Repeated word! team is number 2 in the accepted words list.
+team is no longer an accepted word and is banned
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): park bust meat
+Accepted words (in sorted order): bust meat park
+Banned words (in sorted order): puck team
+Thank you for playing the WORD GAME
+========================================================
+</code></pre>
+                    <p>💡 Implementation suggestions:</p>
+                    <ul>
+                      <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
+                      <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
+                    </ul>
+                  </div>
+                </modal>
+                <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+                <pre class="hljs"><code>========================================================
+Welcome to the FLEXIBLE WORD GAME
+Enter the word size (4 to 8): xyz
+That is not a number. Try again
+Enter the word size (4 to 8): 3
+Number not in correct range. Try again
+Enter the word size (4 to 8): 5
+Give all 5-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  frame
+What's the next word?  great
+What's the next word?  treat
+What's the next word?  fat
+Not a 5-letter word
+What's the next word?  creamy
+Not a 5-letter word
+What's the next word?  treat
+Repeated word! treat is number 3 in the accepted words list.
+treat is no longer an accepted word and is banned
+What's the next word?  crime
+What's the next word?  treat
+treat is banned!
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): frame great crime
+Accepted words (in sorted order): crime frame great
+Banned words (in sorted order): treat
+Thank you for playing the FLEXIBLE WORD GAME
+========================================================
+</code></pre>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr>
+          <hr>
+        </div>
       </tab>
     </tabs>
   </div>
@@ -1996,7 +1755,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 07:27:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
 </footer>
 </div>
 </body>

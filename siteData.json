@@ -38,13 +38,15 @@
     },
     {
       "headings": {
-        "running-intellij-idea-for-the-first-time": "Running Intellij IDEA for the First Time",
-        "importing-a-project-to-intellij-idea": "Importing a Project to Intellij IDEA",
-        "tracking-and-ignoring": "Tracking and Ignoring",
-        "staging-and-committing": "Staging and Committing",
-        "identifying-points-in-history": "Identifying Points in History",
+        "exercise-%3A-circle-circumference": "Exercise : Circle Circumference",
         "week-1-%5Bjan-14%5D": "Week 1 [Jan 14]",
-        "week-2-%5Bjan-21%5D": "Week 2 [Jan 21]"
+        "expressions%2C-data-types%2C-variables": "Expressions, Data Types, Variables",
+        "computer-programs": "Computer Programs",
+        "setting-up-the-programming-environment": "Setting up the Programming Environment",
+        "working-with-an-interactive-shell": "Working with an Interactive Shell",
+        "operators": "Operators",
+        "data-types": "Data Types",
+        "variables": "Variables"
       },
       "title": "Home",
       "footer": "footer.md",

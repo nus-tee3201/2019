@@ -2554,7 +2554,816 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </tab>
       <tab header=" Programming Topics">
-        <div></div>
+        <div>
+          <ul>
+            <li><a href="#files"><strong>Files</strong></a>
+              <ul>
+                <li><a href="#file-paths">File Paths</a></li>
+                <li><a href="#reading-from-files">Reading from Files</a></li>
+                <li><a href="#writing-to-files">Writing to Files</a></li>
+                <li><a href="#csv-files">CSV Files</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h1 id="files">Files<a class="fa fa-anchor" href="#files"></a></h1>
+          <div>
+            <h3 id="file-paths">File Paths<a class="fa fa-anchor" href="#file-paths"></a></h3>
+            <p>A file has a <em>filename</em> and a <em>path</em>. <strong>The <em>path</em> specifies the location of a file on the computer</strong>, as a hierarchy of <em>folders</em> (also called <em>directories</em>).</p>
+            <tip-box>
+              <tabs>
+                  <tab header="Windows">
+                  <p>📦 File <code>C:\photos\2018\home.jpg</code></p>
+                  <ul>
+                    <li>Filename: <code>home.jpg</code></li>
+                    <li>Path: <code>C:\photos\2018</code> (Windows uses the back slash <code>\</code> as the <em>separator</em> symbol in paths )</li>
+                    <li>Folders in the path (<code>C:</code> is called the <em>root folder</em>):
+                      <pre class="hljs"><code>C: {root}
+  ˪ photos
+      ˪ 2018
+</code></pre>
+                    </li>
+                  </ul>
+                  <p>❗️ Windows file names and paths are not case sensitive: <code>C:\photos\2018\home.jpg</code> is same as <code>C:\PHOTOS\2018\HOME.JPG</code>.
+                      </p>
+                </tab>
+                  <tab header="OS-X/Linux">
+                  <p>📦 File <code>/Users/john/home.jpg</code></p>
+                  <ul>
+                    <li>Filename: <code>home.jpg</code></li>
+                    <li>Path: <code>/Users/john</code> (OS-X/Linux uses the forward slash <code>/</code> as the <em>separator</em> symbol in paths )</li>
+                    <li>Folders in the path (the <code>/</code> at the start of the path is considered the <em>root folder</em>):
+                      <pre class="hljs"><code>/ {root}
+  ˪ Users
+      ˪ john
+</code></pre>
+                    </li>
+                  </ul>
+                  <p>❗️ OS-X/Linux file names and paths are case sensitive. <code>/Users/john/home.jpg</code> is NOT the same as <code>/USERS/JOHN/HOME.JPG</code></p>
+                  <p></p>
+                </tab>
+              </tabs>
+            </tip-box>
+            <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
+            <tip-box>
+              <p>📦 Example code showing how to print/change current working directory</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+
+cwd = os.getcwd() <span class="hljs-comment"># store current working dir</span>
+print(cwd) <span class="hljs-comment"># print current working dir</span>
+os.chdir(<span class="hljs-string">'C:\\temp\\python'</span>) <span class="hljs-comment"># change dir</span>
+print(os.getcwd()) <span class="hljs-comment"># print current working dir</span>
+os.chdir(cwd) <span class="hljs-comment"># change working dir back to original</span>
+print(os.getcwd())
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td><br><br><br><br><br> → </td>
+                    <td><br><br><br><br><br>
+                    <pre class="hljs"><code>C:\modules\te3201
+C:\temp\python
+C:\modules\te3201
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>💡 Note how the path <code>'C:\\temp\\python'</code> uses double slash to <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
+              <modal large="" title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
+                <div>
+                  <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em> to include a special character in a string literal</strong> without interpreting it as a special character. Given below are some examples:</p>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Escape Sequence</th>
+                          <th>Meaning</th>
+                          <th>Example</th>
+                          <th>Output</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>\'</code></td>
+                          <td>single quote</td>
+                          <td><code>print('How\'s Life')</code></td>
+                          <td><code>How's Life?</code></td>
+                        </tr>
+                        <tr>
+                          <td><code>\&quot;</code></td>
+                          <td>double quote</td>
+                          <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
+                          <td><code>Say &quot;wow&quot;</code></td>
+                        </tr>
+                        <tr>
+                          <td><code>\\</code></td>
+                          <td>back slash</td>
+                          <td><code>print('files\\text')</code></td>
+                          <td><code>files\text</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:</p>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Escape Sequence</th>
+                          <th>Meaning</th>
+                          <th>Example</th>
+                          <th>Output</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>\t</code></td>
+                          <td>horizontal tab</td>
+                          <td><code>print('aaa\tbbb')</code></td>
+                          <td><code>aaa</code> <code></code> <code>bbb</code></td>
+                        </tr>
+                        <tr>
+                          <td><code>\n</code></td>
+                          <td>line break</td>
+                          <td><code>print('hi\nthere!')</code></td>
+                          <td><code>hi</code><br><code>there!</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </modal>
+            </tip-box>
+            <p><strong>A path that specifies all folders starting from the root is an <em>absolute path</em>. A path that is specified relative to the current working directory is a <em>relative</em> path.</strong></p>
+            <tip-box>
+              <p>📦 Assume the current working directory is <code>C:\modules\te3201</code> and you created a new folder inside it named <code>exercises</code> and put a <code>ex.txt</code> file in that folder.</p>
+              <ul>
+                <li>Absolute path of the file: <code>C:\modules\te3201\exercises\ex1.txt</code></li>
+                <li>Relative path of the file: <code>exercises\ex1.txt</code></li>
+              </ul>
+            </tip-box>
+            <p>In a path, you can use the dot <code>.</code> as a shorthand to refer to the current working directory. Similarly, <code>..</code> can be used to refer to the parent directory.</p>
+            <tip-box>
+              <p>📦 If the current working directory is <code>C:\modules\te3201</code>, you can use any of the following to refer to <code>C:\modules\te3201\exercises\ex1.txt</code>.</p>
+              <ul>
+                <li><code>exercises\ex1.txt</code></li>
+                <li><code>.\exercises\ex1.txt</code></li>
+                <li><code>..\te3201\exercises\ex1.txt</code></li>
+                <li><code>..\..\modules\te3201\exercises\ex1.txt</code></li>
+              </ul>
+              <panel type="seamless" header="%%another example%%">
+                <p><a href="https://automatetheboringstuff.com/images/000032.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000032.jpg" alt="" class="img-fluid"></a></p>
+              </panel>
+            </tip-box>
+            <p>You can use <code>os.mkdirs()</code> function to create folders and <code>os.removedirs()</code> to delete folders.</p>
+            <tip-box>
+              <p>📦 Example code showing how to create/delete directories</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">print(os.getcwd())
+os.makedirs(<span class="hljs-string">'ex\\w1'</span>)
+os.chdir(<span class="hljs-string">'ex\\w1'</span>)
+print(os.getcwd())
+os.chdir(<span class="hljs-string">'..'</span>) <span class="hljs-comment"># go to parent dir</span>
+print(os.getcwd())
+os.chdir(<span class="hljs-string">'..'</span>)
+os.removedirs(<span class="hljs-string">'ex\\w1'</span>)
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td><br><br><br><br><br> → </td>
+                    <td><br><br><br><br><br>
+                    <pre class="hljs"><code>C:\repos\nus-te3201\sample-code
+C:\repos\nus-te3201\sample-code\ex\w1
+C:\repos\nus-te3201\sample-code\ex
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p><code>os.path</code> module has many functions that can help with paths. For example, <code>os.paths.join()</code> function can be used to generate file path that matches the current operating system.</p>
+            <tip-box>
+              <p>📦 Consider the code below:</p>
+              <pre><code class="hljs python">cwd = os.getcwd()
+print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs-string">'w2'</span>))
+</code></pre>
+              <p>If you run it on a Windows computer in the folder <code>C:\modules\te3201</code>, it prints <code>C:\modules\te3201\ex\w2</code>.<br>
+                If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
+            </tip-box>
+            <p>❗️ To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.</p>
+            <tip-box>
+              <p>📦 contrasting hard-coding the separator vs using <code>os.path.join()</code>:</p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>❌ Works only on Windows</th>
+                      <th>✅ Works on both Windows and OS-X</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>os.makedirs('ex\\w1')</code></td>
+                      <td><code>os.makedirs(os.path.join('ex', 'w1'))</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Create Directory" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-%3A-create-directory"></a></h4>
+                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
+  <span class="hljs-string">"""Create a directory dir_name in the current working directory
+  
+  Example:
+  If the current directory is c:/foo/, create_dir('bar') creates 
+  a c:/foo/bar directory.
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">change_dir</span><span class="hljs-params">(relative_path)</span>:</span>
+  <span class="hljs-string">"""Change to the directory dir_name relative to the current working directory
+  
+  Example:
+  If the current directory is c:/foo/, change_dir('bar') changes 
+  current working directory to c:/foo/bar
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_current</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-string">"""Print current working directory"""</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE </span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">change_to_parent_dir</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-string">"""Change to the parent directry of the current working directory
+  
+  Example:
+  If the current directory is c:/foo/bar, change_to_parent_dir() changes 
+  the working directory to c:/foo/
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(dir_name)</span>:</span>
+  create_dir(dir_name)
+  print_current()
+  change_dir(dir_name)
+  print_current()
+  change_to_parent_dir()
+  print_current()
+  
+check(<span class="hljs-string">'foo'</span>)
+check(<span class="hljs-string">'bar'</span>)
+
+</code></pre>
+                <p>⤵️ output when run in <a href="http://REPL.it">REPL.it</a></p>
+                <pre class="hljs"><code>/home/runner
+/home/runner/foo
+/home/runner
+/home/runner
+/home/runner/bar
+/home/runner
+</code></pre>
+                <p></p>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
+  <span class="hljs-string">"""Create a directory dir_name in the current working directory
+  
+  Example:
+  If the current directory is c:/foo/, create_dir('bar') creates 
+  a c:/foo/bar directory.
+  """</span>
+  os.makedirs(dir_name)
+  
+  
+...
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_current</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-string">"""Print current working directory"""</span>
+  print(os.getcwd())
+  
+
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="reading-from-files">Reading from Files<a class="fa fa-anchor" href="#reading-from-files"></a></h3>
+            <p>This section focuses on reading from text-based files (i.e., not binary files).</p>
+            <p><strong>There are three steps to reading files in Python:</strong></p>
+            <ul>
+              <li>Call the <strong><code>open()</code></strong> function to receive a <code>File</code> object.</li>
+              <li>Call the <strong><code>read()</code></strong> method on the <code>File</code> object to receive file content.</li>
+              <li>Close the file by calling the <strong><code>close()</code></strong> method on the <code>File</code> object.</li>
+            </ul>
+            <tip-box>
+              <p>📦 The code below shows how to read from a text file.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'r'</span>) <span class="hljs-comment"># open in read mode</span>
+items = f.read()
+print(items)
+f.close()
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td><br><br> → </td>
+                    <td><br><br>
+                    Output (contents of the <code>items.txt</code>):
+                    <pre class="hljs"><code>first line
+second line
+third line
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
+            </tip-box>
+            <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
+            <tip-box>
+              <p>📦 The code below shows how to read file content as a list of lines.</p>
+              <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'r'</span>)
+items = f.readlines()
+print(items) <span class="hljs-comment"># print as a list</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> items: <span class="hljs-comment"># print each item</span>
+  print(i.strip()) <span class="hljs-comment"># use strip() to remove linebreak at the end of each line</span>
+f.close()
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>['first line\n', 'second line\n', 'third line\n']
+first line
+second line
+third line
+</code></pre>
+              <p>💡 Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code> method.</p>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: File Stats" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-file-stats">Exercise : File Stats<a class="fa fa-anchor" href="#exercise-%3A-file-stats"></a></h4>
+                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return content of the file as a list of lines
+  
+  The file is expected to be in the current working directory.
+  The lines in the list contains trailing line breaks.
+  
+  Example:
+  If the a.txt has two lines 'aaa' and 'bbb', 
+  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
+  """</span>
+  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_stats</span><span class="hljs-params">(contents)</span>:</span>
+  <span class="hljs-string">"""Given a list of lines, return line count and letter count as a dictionary
+  
+  Trailing line breaks (if any) are not counted for letter count.
+  Spaces, even trailing spaces, are counted for letter count.
+  Example:
+  get_stats(['aaa\n', 'bbb']) returns {'lines': 2, 'letters': 6}
+  """</span>
+  stats = {}
+  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
+  <span class="hljs-keyword">return</span> stats
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analyze_file</span><span class="hljs-params">(filename)</span>:</span> 
+  contents_as_list = get_file_content_as_list(filename)
+  print(<span class="hljs-string">'lines in file:'</span>, contents_as_list)
+  print(<span class="hljs-string">'stats:'</span>, get_stats(contents_as_list))
+  
+analyze_file(<span class="hljs-string">'file1.txt'</span>)
+analyze_file(<span class="hljs-string">'file2.txt'</span>)
+
+</code></pre>
+                <p><code>file1.txt</code> (2 lines, 22 letters):</p>
+                <pre class="hljs"><code>aaa bbb ccc
+ddd eee fff
+</code></pre>
+                <p><code>file2.txt</code> (4 lines, 10 letters -- note: the <mark>last line has a trailing space</mark>, which adds up to 10 letters):</p>
+                <pre class="hljs"><code>a
+bb
+ccc
+ddd 
+</code></pre>
+                <p>⤵️</p>
+                <pre class="hljs"><code>lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
+stats: {'lines': 2, 'letters': 22}
+lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
+stats: {'lines': 4, 'letters': 10}
+</code></pre>
+                <panel type="seamless" header="%%:bulb: Tips%%">
+                  <ul>
+                    <li><code>strip()</code> removes trailing line breaks but also trailing spaces. <code>replace('\n', '')</code> will remove the trailing line break but will keep the trailing spaces.</li>
+                  </ul>
+                </panel>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return content of the file as a list of lines
+  
+  The file is expected to be in the current working directory.
+  The lines in the list contains trailing line breaks.
+  
+  Example:
+  If the a.txt has two lines 'aaa' and 'bbb', 
+  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
+  """</span>
+  f = open(filename, <span class="hljs-string">'r'</span>)
+  lines = f.readlines()
+  f.close()
+  <span class="hljs-keyword">return</span> lines
+
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="writing-to-files">Writing to Files<a class="fa fa-anchor" href="#writing-to-files"></a></h3>
+            <p>Similar to reading from a file, writing to a file too is a three step process. One main difference is <strong>the file needs to be opened in <code>write mode</code>.</strong></p>
+            <tip-box>
+              <p>📦 The code below shows how to write to a text file.</p>
+              <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'w'</span>)  <span class="hljs-comment"># open in write mode</span>
+f.write(<span class="hljs-string">'first line\n'</span>)
+f.write(<span class="hljs-string">'second line\n'</span>)
+f.close()
+</code></pre>
+              <p>⤵️ contents of the <code>items.txt</code>:</p>
+              <pre class="hljs"><code>first line
+second line
+</code></pre>
+              <ul>
+                <li>💡 The <code>'w'</code> argument indicates that the file should be opened in write mode.</li>
+                <li>💡 Unlike the <code>print()</code> function that prints content in a new line every time, the <code>write</code> function does not add an automatic line break at the end. You need to add a <code>\n</code> at each place you want a line break to appear in the file.</li>
+              </ul>
+            </tip-box>
+            <p>Opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened. To preserve original content and add to it, open the file in <em>append mode</em>.</p>
+            <tip-box>
+              <p>📦 The code below shows how to append to a file.</p>
+              <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'a'</span>)  <span class="hljs-comment"># open in append mode</span>
+f.write(<span class="hljs-string">'third line\n'</span>)
+f.close()
+</code></pre>
+              <p>⤵️ contents of the <code>items.txt</code>:</p>
+              <pre class="hljs"><code>first line
+second line
+third line
+</code></pre>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Add Line Numbers" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-%3A-add-line-numbers"></a></h4>
+                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return content of the file as a list of lines
+  
+  The file is expected to be in the current working directory.
+  The lines in the list contains trailing line breaks.
+  
+  Example:
+  If the a.txt has two lines 'aaa' and 'bbb', 
+  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
+  """</span>
+  f = open(filename, <span class="hljs-string">'r'</span>)
+  lines = f.readlines()
+  f.close()
+  <span class="hljs-keyword">return</span> lines
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
+  <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
+  
+  Example:
+  write_with_line_numbers(['aaa\n', 'bbb'], 'out.txt') writes the following content to out.txt
+  1. aaa
+  2. bbb
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_file</span><span class="hljs-params">(sourcefile, targetfile)</span>:</span>
+  <span class="hljs-string">"""Copy the text in sourcefile to targetfile, but also add line numbers to each line.
+  
+  Example:
+  Assume a.txt has the following text:
+  aaa
+  bbb
+  process_file('a.txt', 'b.txt') results in b.txt having the following text:
+  1. aaa
+  2. bbb
+  """</span>
+  contents = get_file_content_as_list(sourcefile)
+  write_with_line_numbers(contents, targetfile)
+  print(get_file_content_as_list(targetfile))
+  
+process_file(<span class="hljs-string">'file1a.txt'</span>, <span class="hljs-string">'file1b.txt'</span>)
+process_file(<span class="hljs-string">'file2a.txt'</span>, <span class="hljs-string">'file2b.txt'</span>)
+
+</code></pre>
+                <p><code>file1a.txt</code>:</p>
+                <pre class="hljs"><code>first line
+
+second line
+third line
+</code></pre>
+                <p><code>file2a.txt</code>:</p>
+                <pre class="hljs"><code>hang in there
+</code></pre>
+                <p>⤵️</p>
+                <pre class="hljs"><code>['1. first line\n', '2. \n', '3. second line\n', '4. third line']
+['1. hang in there']
+</code></pre>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
+  <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
+  
+  Example:
+  write_with_line_numbers(['aaa\n', 'bbb'], 'out.txt') writes the following content to out.txt
+  1. aaa
+  2. bbb
+  """</span>
+  <span class="hljs-keyword">for</span> n,line <span class="hljs-keyword">in</span> enumerate(lines):
+    f.write(str(n+<span class="hljs-number">1</span>) ... ) <span class="hljs-comment"># COMPLETE THIS LINE</span>
+  f.close()
+
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="csv-files">CSV files<a class="fa fa-anchor" href="#csv-files"></a></h3>
+            <p><strong>CSV files are often used as a simple way to save spreadsheet-like data.</strong> Each line in a CSV file represents a row in the spreadsheet, and commas separate the cells in the row. They usually have the <code>.csv</code> extension and can be opened in spreadsheet programs such as Excel or in any text editor.</p>
+            <tip-box>
+              <p>📦 Here is the content of a simple CSV file <span class="dimmed">(click <a href="deliveries.csv">here</a> to download a copy)</span> and how it looks like when opened in Excel.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre class="hljs"><code>4/11/2017,Alice Bee,4
+5/11/2017,Chris Ding,12
+5/11/2017,Brenda Chew,13
+6/11/2017,Dan Pillai,5
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td> → </td>
+                    <td>
+                    <p><a href="/2019/files-csv/images/deliveries.png" target="_self"><img src="/2019/files-csv/images/deliveries.png" alt="" class="img-fluid"></a></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>💡 If a value itself contains a comma <span class="dimmed">e.g., <code>Foo, Emily</code></span>, it can be enclosed in double quotes <span class="dimmed">e.g., <code>&quot;Foo, Emily&quot;</code></span>, to prevent it being misinterpreted as multiple values.</p>
+            <tip-box>
+              <p>📦 This example shows how to use double quotes to handle commas inside a value:</p>
+              <ul>
+                <li><code>7/11/2017,&quot;Foo, Emily&quot;,5</code> interpreted as three values: <code>7/11/2017</code> and <code>Foo, Emily</code> and <code>5</code></li>
+                <li><code>7/11/2017,Foo, Emily,5</code> interpreted as four values: <code>7/11/2017</code> and <code>Foo</code> and <code>Emily</code> and <code>5</code></li>
+              </ul>
+            </tip-box>
+            <p>Although CSV files are text files that can be read/written using normal file access techniques covered earlier, <strong>Python has an in-built module named <code>csv</code> that provides functions to deal with CSV files more conveniently.</strong> For example, <strong>it provides a way to read a CSV file as a <code>Reader</code> object that knows how to interpret a CSV file.</strong></p>
+            <tip-box>
+              <p>📦 The code below shows how to use the <code>csv</code> module to read contents of a CSV file named <code>deliveries.csv</code>:</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv 
+
+deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) <span class="hljs-comment"># open file</span>
+deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># create a Reader</span>
+<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader: <span class="hljs-comment"># access each line using the Reader</span>
+  print(row)
+deliveries_file.close() <span class="hljs-comment"># close file</span>
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>['4/11/2017', 'Alice Bee', '4']
+['5/11/2017', 'Chris Ding', '12']
+['5/11/2017', 'Brenda Chew', '13']
+['6/11/2017', 'Dan Pillai', '5']
+</code></pre>
+              <p>As you can see, <code>Reader</code> object returns content of a line as a list object with the value of each cell as an item in the list. Replacing the line,</p>
+              <pre><code class="hljs python">...
+print(row)
+...
+</code></pre>
+              <p>... with the following line,</p>
+              <pre><code class="hljs python">...
+print(<span class="hljs-string">'Date:'</span>, row[<span class="hljs-number">0</span>], <span class="hljs-string">'\tRecipient:'</span>, row[<span class="hljs-number">1</span>], <span class="hljs-string">'\tQuantity:'</span>, row[<span class="hljs-number">2</span>] )
+...
+</code></pre>
+              <p>... will give you the output shown below:</p>
+              <pre class="hljs"><code>Date: 4/11/2017 	Recipient: Alice Bee 	Quantity: 4
+Date: 5/11/2017 	Recipient: Chris Ding 	Quantity: 12
+Date: 5/11/2017 	Recipient: Brenda Chew 	Quantity: 13
+Date: 6/11/2017 	Recipient: Dan Pillai 	Quantity: 5
+</code></pre>
+            </tip-box>
+            <p>Note that all values read from a CSV files come as strings. If they are meant to represent other types, you need to convert the string to the correct type first.</p>
+            <tip-box>
+              <p>📦 In this example the 3rd value of each row is converted to an int before adding them up.</p>
+              <pre><code class="hljs python">deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) 
+deliveries_reader = csv.reader(deliveries_file) 
+total = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
+  <span class="hljs-comment"># convert 3rd cell to an int and add to total</span>
+  total = total + int(row[<span class="hljs-number">2</span>]) 
+
+print(<span class="hljs-string">'Total quantity delivered:'</span>, total)
+deliveries_file.close()
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>Total quantity delivered: 34
+</code></pre>
+            </tip-box>
+            <p><strong>The <code>csv</code> module also provide an easy way to write to CSV files, one row at a time, using a <code>Write</code> object.</strong></p>
+            <tip-box>
+              <p>📦 The code below writes two rows to the <code>pricelist.csv</code> file.</p>
+              <pre><code class="hljs python">output_file = open(<span class="hljs-string">'pricelist.csv'</span>, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>) <span class="hljs-comment"># open file in write mode</span>
+output_writer = csv.writer(output_file) <span class="hljs-comment"># get a Writer object</span>
+output_writer.writerow([<span class="hljs-string">'apples'</span>, <span class="hljs-string">'1'</span>, <span class="hljs-string">'1.5'</span>, <span class="hljs-string">'True'</span>]) <span class="hljs-comment"># write one row</span>
+output_writer.writerow([<span class="hljs-string">'bananas'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'2.0'</span>, <span class="hljs-string">'False'</span>]) <span class="hljs-comment"># write another row</span>
+output_file.close() <span class="hljs-comment"># close file</span>
+</code></pre>
+              <p>The <code>pricelist.csv</code> file will now contain:</p>
+              <pre class="hljs"><code>apples,1,1.5,True
+bananas,3,2.0,False
+</code></pre>
+              <ul>
+                <li>💡 You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., <code>output_file = open('pricelist.csv',</code><mark><code>'a',</code></mark><code>newline='')</code></li>
+                <li>💡 The keyword argument <code>newline=''</code> need to be used when opening a CSV file in Windows. The reasoning behind it is beyond the scope of this book.
+                </li>
+              </ul>
+            </tip-box>
+
+            <panel type="danger" header=":muscle: Exercise: Calcluate GST" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-calculate-gst">Exercise : Calculate GST<a class="fa fa-anchor" href="#exercise-%3A-calculate-gst"></a></h4>
+                <p>Suppose there is a CSV file in this format:</p>
+                <table>
+                  <tr>
+                      <td>
+                      <p><code>itemlist1.csv</code>:</p>
+                      <pre class="hljs"><code>item,price
+book,10.0
+bag,50.0
+&quot;pens, pencils&quot;, 5.0
+</code></pre>
+                      <p></p>
+                    </td>
+                      <td> → </td>
+                      <td>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>item</th>
+                              <th>price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>book</td>
+                              <td>10.0</td>
+                            </tr>
+                            <tr>
+                              <td>bag</td>
+                              <td>50.0</td>
+                            </tr>
+                            <tr>
+                              <td>pens, pencils</td>
+                              <td>5.0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+                <p>Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.</p>
+                <table>
+                  <tr>
+                      <td>
+                      <p><code>updated_itemlist1.csv</code>:</p>
+                      <pre class="hljs"><code>item,price,GST
+book,10.0,0.7
+bag,50.0,3.5
+&quot;pens, pencils&quot;, 5.0,0.35
+</code></pre>
+                      <p></p>
+                    </td>
+                      <td> → </td>
+                      <td>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>item</th>
+                              <th>price</th>
+                              <th>GST</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>book</td>
+                              <td>10.0</td>
+                              <td>0.7</td>
+                            </tr>
+                            <tr>
+                              <td>bag</td>
+                              <td>50.0</td>
+                              <td>3.5</td>
+                            </tr>
+                            <tr>
+                              <td>pens, pencils</td>
+                              <td>5.0</td>
+                              <td>0.35</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+                <panel type="seamless" header="%%:bulb: Python hints%%">
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_GST</span><span class="hljs-params">(source_file, target_file)</span>:</span>
+  <span class="hljs-string">"""Read the data from the CSV file source_file and write 
+  the data, including the calculated GST values, to the CSV file target_file
+  """</span>
+  input_lines = read_csv_lines(source_file)
+  updated_lines = []
+  
+  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
+  
+  write_to_csv_file(updated_lines, target_file)
+   
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read_csv_lines</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return the values in the csv file (specified by the filename) as a list of lists
+  each list representing a row of the file.
+  
+  Example: If the file file1.csv has the following contents,
+  item,price
+  book,10.0
+  read_csv_lines('file1.csv') returns [['item', 'price']['book', '10.0']]
+  
+  """</span>
+  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_to_csv_file</span><span class="hljs-params">(lines, filename)</span>:</span>
+  <span class="hljs-string">"""Write the given lines (a list of lists) to the CSV file (specified by filename)
+  
+  Example:
+  write_to_csv_file([['item', 'price', 'GST']['book', '10.0', '0.7']], 'file2.txt')
+  
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+  
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process</span><span class="hljs-params">(source_file, target_file)</span>:</span>
+  
+  calculate_GST(source_file, target_file)
+  print(read_csv_lines(target_file))
+  
+  
+process(<span class="hljs-string">'itemlist1.csv'</span>, <span class="hljs-string">'updated_itemlist1.csv'</span>)
+process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-string">'updated_itemlist2.csv'</span>)
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr>
+          <hr>
+        </div>
       </tab>
     </tabs>
   </div>
@@ -2562,7 +3371,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 07:27:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
 </footer>
 </div>
 </body>
