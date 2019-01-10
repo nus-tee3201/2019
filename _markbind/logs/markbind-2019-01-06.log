@@ -3602,3 +3602,11 @@ Missing reference in C:\repos\nus-te3201\te3201-2019-website\schedule\python-top
 2019-01-06T15:01:37.860Z - info: Press CTRL+C to stop ...
 2019-01-06T15:06:04.114Z - info: Website generation started at 23:05:58
 2019-01-06T15:06:06.697Z - info: Building assets...
+2019-01-06T15:06:09.703Z - info: Assets built
+2019-01-06T15:06:09.704Z - info: Generating pages...
+2019-01-06T15:07:46.757Z - info: Pages built
+2019-01-06T15:07:46.823Z - info: Site data built
+2019-01-06T15:07:46.823Z - info: Website generation complete! Total build time: 108.305s
+2019-01-06T15:07:46.824Z - info: Build success!
+2019-01-06T15:07:46.824Z - info: Generate Site durationMs=108306
+2019-01-06T15:08:46.409Z - info: Deployed!

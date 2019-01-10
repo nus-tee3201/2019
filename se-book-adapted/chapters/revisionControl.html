@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter : Revision Control</title>
+    <title>CS2103/T Website - Textbook Chapter : Revision Control</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -21,21 +21,30 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <link rel="icon" href="/2019/favicon.ico">
+    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
 </head>
 <body>
 <div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
       <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
           <i class="dropdown-btn-icon">
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
+          <i class="dropdown-btn-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
           </ul>
         </div>
       </li>
@@ -44,9 +53,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/requirements.html">Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/requirements.html">Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
           </ul>
         </div>
       </li>
@@ -55,10 +64,12 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/design.html">Software Design</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/architecture.html">Software Architecture</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></li>
           </ul>
         </div>
       </li>
@@ -67,13 +78,13 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html">Reuse</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/integration.html">Integration</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/reuse.html">Reuse</a></li>
           </ul>
         </div>
       </li>
@@ -82,9 +93,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testing.html">Testing</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/testing.html">Testing</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
           </ul>
         </div>
       </li>
@@ -93,10 +104,19 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
+          <i class="dropdown-btn-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/principles.html">Principles</a></li>
           </ul>
         </div>
       </li>
@@ -105,7 +125,11 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/javaTools.html">Java</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/junit.html">JUnit</a></li>
           </ul>
         </div>
       </li>
@@ -114,8 +138,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html">List of Definitions</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/common/definitions.html">List of Definitions</a></li>
           </ul>
         </div>
       </li>
@@ -130,37 +155,47 @@
   </div>
   <div id="page-content">
     <div id="content-wrapper">
-      <link rel="stylesheet" href="/2019/book/css/textbook.css">
+      <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
       <div class="website-content">
         <div>
           <navbar placement="top" type="inverse">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+            <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
             <dropdown text="Schedule" class="nav-link">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+              <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
             </dropdown>
-            <dropdown text="Textbook" class="nav-link">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+            <li><a href="/cs2103-website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+            <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
             <dropdown text="Links" class="nav-link">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+              <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+              <li><a href="/cs2103-website/admin/project-overview.html" class="dropdown-item"><span class="fas fa-drafting-compass"></span> Project Info</a></li>
+              <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+              <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+              <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+              <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+              <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+              <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
+              <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
@@ -275,7 +310,7 @@
           <div class="indented">
             <span class="badge badge-light">
               <span><span class="dimmed">
-                  <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                  <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                 </span></span></span>
             <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain repositories</span></span></span></span>
             <p></p>
@@ -312,6 +347,230 @@
             </div>
           </div>
         </panel>
+        <panel type="seamless" header="#### Saving History<a class='fa fa-anchor' href='#saving-history'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain saving history</span></span></span></span>
+            <p></p>
+            <div>
+              <h5 id="tracking-and-ignoring">Tracking and Ignoring<a class="fa fa-anchor" href="#tracking-and-ignoring"></a></h5>
+              <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such as temporary log files created during the build/test process should not be revision-controlled.</p>
+              <h5 id="staging-and-committing">Staging and Committing<a class="fa fa-anchor" href="#staging-and-committing"></a></h5>
+              <tabs>
+                  <tab header="<span class='far fa-file-alt'></span>">
+                  <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
+                  <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+                  <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              </tabs>
+              <h5 id="identifying-points-in-history">Identifying Points in History<a class="fa fa-anchor" href="#identifying-points-in-history"></a></h5>
+              <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated <mark>hash</mark></strong> e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
+              <p><strong>We can <mark>tag</mark> a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
+            </div>
+            <div></div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Using History<a class='fa fa-anchor' href='#using-history'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain using history</span></span></span></span>
+            <p></p>
+            <div>
+              <p><strong>
+                  <trigger for="pop:rcs">RCS</trigger> tools store the history of the working directory as a series of commits.
+                </strong> This means we should commit after each change that we want the RCS to 'remember' for us.</p>
+              <p><strong>To see what changed between two points of the history, you can ask the RCS tool to <mark><em>diff</em></mark> the two commits in concern.</strong></p>
+              <p><strong>To restore the state of the working directory at a point in the past, you can <mark><em>checkout</em></mark> the commit in concern.</strong> i.e., we can traverse the history of the working directory simply by checking out the commits we are interested in.</p>
+              <div>
+                <popover id="pop:rcs" placement="top">
+                  <div slot="content">
+                    <div>
+                      <p><strong>RCS</strong> : <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
+                    </div>
+                  </div>
+                </popover>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Remote Repositories<a class='fa fa-anchor' href='#remote-repositories'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain remote repositories</span></span></span></span>
+            <p></p>
+            <div>
+              <p><strong>Remote repositories are copies of a repo that are hosted on remote computers.</strong> They are especially useful for sharing the revision history of a codebase among team members of a multi-person project. <span class="dimmed">They can also serve as a remote backup of your code base.</span></p>
+              <p><strong>You can <mark><em>clone</em></mark> a remote repo onto your computer</strong> which will create a copy of a remote repo on your computer, including the version history as the remote repo.</p>
+              <p><strong>You can <mark><em>push</em></mark> new commits in your clone to the remote repo</strong> which will copy the new commits onto the remote repo. Note that pushing to a remote repo requires you to have write-access to it.</p>
+              <p><strong>You can <mark><em>pull</em></mark> from the remote repos to receive new commits in the remote repo</strong>. Pulling is used to <em>sync</em> your local repo with latest changes to the remote repo.</p>
+              <p>While it is possible to set up your own remote repo on a server, an easier option is to use a remote repo hosting service such as GitHub or BitBucket.</p>
+              <p><strong>A <mark><em>fork</em></mark> is a remote copy of a remote repo</strong>. If there is a remote repo that you want to push to but you do not have write access to it, you can fork the remote repo, which gives you your own remote repo that you can push to.</p>
+              <p><strong>A <mark><em>pull request</em></mark> is mechanism for contributing code to a remote repo.</strong> It is a formal request sent to the maintainers of the repo asking them to pull your new code to their repo.</p>
+              <div v-closeable="" alt="slideshow: remote repo scenario" class="non-printable">
+                <p>Here is a scenario that includes all the concepts introduced above (click on the slide to advance the animation):</p>
+                <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212290&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Branching<a class='fa fa-anchor' href='#branching'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain branching</span></span></span></span>
+            <p></p>
+            <div>
+              <p><strong><mark><em>Branching</em></mark> is the process of evolving multiple versions of the software in parallel.</strong> For example, one team member can create a new branch and add an experimental feature to it while the rest of the team keeps working on another branch. Branches can be given names e.g. <code>master</code>, <code>release</code>, <code>dev</code>.</p>
+              <p><strong>A branch can be <mark><em>merged</em></mark> into another branch.</strong> Merging usually result in a new commit that represents the changes done in the branch being merged.</p>
+              <pic src="/cs2103-website/book/revisionControl/branching/images/diagram.png" height="180">
+                <strong>Branching and merging</strong></pic>
+              <p><strong><mark><em>Merge conflicts</em></mark> happen when you try to merge two branches that had changed the same part of the code</strong> and the RCS software cannot decide which changes to keep. In those cases we have to ‘resolve’ those conflicts manually.</p>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is branching?">
+                      <question has-input="true">
+                        <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is merging?">
+                      <question has-input="true">
+                        <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### DRCS vs CRCS<a class='fa fa-anchor' href='#drcs-vs-crcs'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain DRCS vs CRCS</span></span></span></span>
+            <p></p>
+            <div>
+              <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
+              <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
+              <pic src="/cs2103-website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" width="300">
+                <p><em>The centralized RCS approach without any local repos (e.g., CVS, SVN)</em></p>
+              </pic>
+              <p><strong>Distributed RCS (DRCS for short, also known as Decentralized RCS) allows multiple remote repos</strong> and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For example, every team member can have his/her own remote repository in addition to their own local repository, as shown in the diagram below. Git and Mercurial are some prominent RCS tools that support the distributed approach.</p>
+              <pic src="/cs2103-website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" width="300">
+                <p><em>The decentralized RCS approach</em></p>
+              </pic>
+            </div>
+            <div></div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Forking Flow<a class='fa fa-anchor' href='#forking-flow'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain forking workflow</span></span></span></span>
+            <p></p>
+            <div>
+              <img src="/cs2103-website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+              <p></p>
+              <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
+              <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
+              <ol>
+                <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
+                <li>Jean pushes the branch to her fork.</li>
+                <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
+                <li>Other members review Jean’s pull request.</li>
+                <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
+                <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
+                <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own fork.</li>
+              </ol>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                  <ul>
+                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
+                  </ul>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Feature Branch Flow<a class='fa fa-anchor' href='#feature-branch-flow'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain feature branch flow</span></span></span></span>
+            <p></p>
+            <div>
+              <p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature (or bug fix, or any other modification) is done in a separate branch and merged to <code>master</code> branch when ready.</p>
+              <img src="/cs2103-website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+              <p></p>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                  <ul>
+                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li>
+                  </ul>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Centralized Flow<a class='fa fa-anchor' href='#centralized-flow'></a>" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+              <span><span class="dimmed">
+                  <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                </span></span></span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain centralized flow</span></span></span></span>
+            <p></p>
+            <div>
+              <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the <code>master</code> branch.</strong></p>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                  <ul>
+                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
+                  </ul>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </panel>
       </div>
     </div>
   </div>
@@ -319,7 +578,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -328,7 +587,7 @@
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
+    const baseUrl = '/cs2103-website'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 <script src="..\..\markbind\layouts\default\scripts.js"></script>

@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter : Testing</title>
+    <title>CS2103/T Website - Textbook Chapter : Testing</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -21,21 +21,30 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <link rel="icon" href="/2019/favicon.ico">
+    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
 </head>
 <body>
 <div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
       <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
           <i class="dropdown-btn-icon">
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
+          <i class="dropdown-btn-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
           </ul>
         </div>
       </li>
@@ -44,9 +53,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/requirements.html">Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/requirements.html">Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
           </ul>
         </div>
       </li>
@@ -55,10 +64,12 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/design.html">Software Design</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/architecture.html">Software Architecture</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></li>
           </ul>
         </div>
       </li>
@@ -67,13 +78,13 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html">Reuse</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/integration.html">Integration</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/reuse.html">Reuse</a></li>
           </ul>
         </div>
       </li>
@@ -82,9 +93,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testing.html">Testing</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/testing.html">Testing</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
           </ul>
         </div>
       </li>
@@ -93,10 +104,19 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
+          <i class="dropdown-btn-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/principles.html">Principles</a></li>
           </ul>
         </div>
       </li>
@@ -105,7 +125,11 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/javaTools.html">Java</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/junit.html">JUnit</a></li>
           </ul>
         </div>
       </li>
@@ -114,8 +138,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html">List of Definitions</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/common/definitions.html">List of Definitions</a></li>
           </ul>
         </div>
       </li>
@@ -130,37 +155,47 @@
   </div>
   <div id="page-content">
     <div id="content-wrapper">
-      <link rel="stylesheet" href="/2019/book/css/textbook.css">
+      <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
       <div class="website-content">
         <div>
           <navbar placement="top" type="inverse">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+            <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
             <dropdown text="Schedule" class="nav-link">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+              <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
             </dropdown>
-            <dropdown text="Textbook" class="nav-link">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+            <li><a href="/cs2103-website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+            <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
             <dropdown text="Links" class="nav-link">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+              <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+              <li><a href="/cs2103-website/admin/project-overview.html" class="dropdown-item"><span class="fas fa-drafting-compass"></span> Project Info</a></li>
+              <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+              <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+              <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+              <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+              <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+              <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
+              <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
@@ -195,7 +230,7 @@
                     <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
                   </div>
                 </tip-box>
-                <img src="/2019/book/testing/introduction/what/images/diagram.png" height="220">
+                <img src="/cs2103-website/book/testing/introduction/what/images/diagram.png" height="220">
                 <p></p>
                 <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
                 <tip-box>
@@ -257,6 +292,20 @@
                   </panel>
                 </div>
               </div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Testability<a class='fa fa-anchor' href='#testability'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain testability</span></span></span></span>
+              <p></p>
+              <div>
+                <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The higher the testability, the easier it is to achieve a better quality software.</p>
+              </div>
+              <div></div>
             </div>
           </panel>
         </panel>
@@ -600,7 +649,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
-                      <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                     </span></span></span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain dogfooding</span></span></span></span>
                 <p></p>
@@ -670,7 +719,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <blockquote>
                     <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
                   </blockquote>
-                  <img src="/2019/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+                  <img src="/cs2103-website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
                   <p></p>
                   <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
                 </div>
@@ -1090,7 +1139,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
-                    <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                   </span></span></span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can semi-automate testing of CLIs</span></span></span></span>
               <p></p>
@@ -1175,7 +1224,7 @@ Invalid command format: add
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
-                    <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                   </span></span></span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain test drivers</span></span></span></span>
               <p></p>
@@ -1211,6 +1260,559 @@ Invalid command format: add
                 </tip-box>
               </div>
               <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Test Automation Tools<a class='fa fa-anchor' href='#test-automation-tools'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain test automation tools</span></span></span></span>
+              <p></p>
+              <div>
+                <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages and for automating different types of testing.</p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+                  <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
+    Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+    <span class="hljs-comment">//test case 1</span>
+    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+    assertEquals(<span class="hljs-number">6400</span>, p.totalSalary());
+
+    <span class="hljs-comment">//test case 2</span>
+    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+    assertEquals(<span class="hljs-number">2300</span>, p.totalSalary());
+
+    <span class="hljs-comment">//more tests...</span>
+}
+</code></pre>
+                </tip-box>
+                <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p>
+                <img src="/cs2103-website/book/testing/testAutomation/tools/images/junit.png" height="190">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Automated Testing of GUIs<a class='fa fa-anchor' href='#automated-testing-of-guis'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain automated GUI testing</span></span></span></span>
+              <p></p>
+              <div>
+                <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>, for the following reasons:</p>
+                <ul>
+                  <li>Most GUIs can support a large number of different operations, many of which can be performed in any arbitrary order.</li>
+                  <li>GUI operations are more difficult to automate than API testing. Reliably automating GUI operations and automatically verifying whether the GUI behaves as expected is harder than calling an operation and comparing its return value with an expected value. Therefore, automated regression testing of GUIs is rather difficult.</li>
+                  <li>The appearance of a GUI (and sometimes even behavior) can be different across platforms and even environments. For example, a GUI can behave differently based on whether it is minimized or maximized, in focus or out of focus, and in a high resolution display or a low resolution display.</li>
+                </ul>
+                <img src="/cs2103-website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
+                <p></p>
+                <p><strong>One approach to overcome the challenges of testing GUIs is to minimize logic aspects in the GUI.</strong> Then, bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be tested manually, the number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
+                <p><strong>There are testing tools that can automate GUI testing.</strong></p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> Some tools used for automated GUI testing:</p>
+                  <ul>
+                    <li>
+                      <p><strong>TestFx</strong> can do automated testing of JavaFX GUIs<br></p>
+                    </li>
+                    <li>
+                      <p><strong>VisualStudio</strong> supports ‘record replay’ type of GUI test automation.</p>
+                    </li>
+                    <li>
+                      <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
+                      <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> demo video of automated testing of a Web application" class="non-printable">
+                        <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                      </panel>
+                    </li>
+                  </ul>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> API testing vs GUI testing">
+                        <question>
+                          <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
+                          <ul radio-group="dc574" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="dc574" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="dc574" type="radio"> False</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>False</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title">
+            <div>
+              <h2 id="test-coverage"><span>Test Coverage</span><a class="fa fa-anchor" href="#test-coverage"></a></h2>
+            </div>
+          </span>
+          <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain test coverage</span></span></span></span>
+              <p></p>
+              <div>
+                <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
+                <p>Here are some examples of different coverage criteria:</p>
+                <ul>
+                  <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
+                  <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
+                  <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
+                  <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
+                </ul>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
+                  <p>For 100% branch or decision coverage, two test cases are required:</p>
+                  <ul>
+                    <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+                    <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+                  </ul>
+                  <p>For 100% condition coverage, three test cases are required</p>
+                  <ul>
+                    <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+                    <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+                    <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
+                  </ul>
+                </tip-box>
+                <ul>
+                  <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the <em>Control Flow Graph (CFG)</em>.</li>
+                  <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> highest intensity coverage">
+                        <question>
+                          <p>Which of these gives us the highest intensity of testing?</p>
+                          <ul radio-group="3db75" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> a. 100% statement coverage</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> b. 100% path coverage</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> c. 100% branch coverage</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> d. 100% condition coverage</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(b)</p>
+                            <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us the highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because the programmer left them out by mistake.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how test coverage works</span></span></span></span>
+              <p></p>
+              <div>
+                <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
+                <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
+
+                <div v-closeable="" alt="Test Coverage in Intellij" class="non-printable">
+                  <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Measuring code coverage in Intellij IDEA</p>
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title">
+            <div>
+              <h2 id="dependency-injection"><span>Dependency Injection</span><a class="fa fa-anchor" href="#dependency-injection"></a></h2>
+            </div>
+          </span>
+          <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain dependency injection</span></span></span></span>
+              <p></p>
+              <div>
+                <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject <trigger trigger="click" for="modal:explainDi-stub">stubs</trigger> to isolate the <tooltip content="Software Under Test">SUT</tooltip> from its <tooltip content="objects it depends on">dependencies</tooltip> so that it can be tested in isolation.</p>
+                <modal large="" title="" id="modal:explainDi-stub">
+                    <div>
+                    <div>
+                      <p>
+                        <panel src="/cs2103-website\book\testing\testingTypes\unitTesting\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/cs2103-website/book/testing/testingTypes/unitTesting/what"></panel>
+                      </p>
+                    </div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
+                          </span></strong></span></p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="stubs"><span>Stubs</span><a class="fa fa-anchor" href="#stubs"></a></h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
+                          </tip-box>
+                          <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+                          <tip-box type="definition">
+                            <div>
+                              <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                            </div>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the code below:</p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    Storage s;
+
+    Logic(Storage s) {
+        <span class="hljs-keyword">this</span>.s = s;
+    }
+
+    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
+    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-comment">// retrieve name from the database</span>
+    }
+}
+</code></pre>
+                            <p>Normally, you would use the <code>Logic</code> class as follows (not how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
+                            <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
+String name = logic.getName(<span class="hljs-number">23</span>);
+</code></pre>
+                            <p>You can test it like this:</p>
+                            <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
+    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
+}
+</code></pre>
+                            <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+                            <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+        }
+    }
+}
+</code></pre>
+                            <p>Note how the stub has the same interface as the real dependency, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
+                            <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
+                            <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
+    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
+}
+</code></pre>
+                          </tip-box>
+                          <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                              <ul>
+                                <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
+                              </ul>
+                            </panel>
+                          </div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Purpose of stubs">
+                                  <question>
+                                    <p>Stubs help us to test a component in isolation from its dependencies.</p>
+                                    <ul radio-group="a0303" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>True</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> A <code>Foo</code> object normally depends on a <code>Bar</code> object, but we can inject a <code>BarStub</code> object so that the <code>Foo</code> object no longer depends on a <code>Bar</code> object. Now we can test the <code>Foo</code> object in isolation from the <code>Bar</code> object.</p>
+                  <img src="/cs2103-website/book/testing/dependencyInjection/what/images/diagram.png" height="150">
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use dependency injection</span></span></span></span>
+              <p></p>
+              <div>
+                <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in <trigger trigger="click" for="modal:useDi-stub">[Quality Assurance → Testing → Unit Testing → Stubs]</trigger> where a stub is injected to replace a dependency.</p>
+                <modal large="" title="" id="modal:useDi-stub">
+                    <div>
+                    <div>
+                      <p>
+                        <panel src="/cs2103-website\book\testing\testingTypes\unitTesting\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/cs2103-website/book/testing/testingTypes/unitTesting/what"></panel>
+                      </p>
+                    </div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
+                          </span></strong></span></p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="stubs"><span>Stubs</span><a class="fa fa-anchor" href="#stubs"></a></h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
+                          </tip-box>
+                          <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+                          <tip-box type="definition">
+                            <div>
+                              <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                            </div>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the code below:</p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    Storage s;
+
+    Logic(Storage s) {
+        <span class="hljs-keyword">this</span>.s = s;
+    }
+
+    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
+    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-comment">// retrieve name from the database</span>
+    }
+}
+</code></pre>
+                            <p>Normally, you would use the <code>Logic</code> class as follows (not how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
+                            <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
+String name = logic.getName(<span class="hljs-number">23</span>);
+</code></pre>
+                            <p>You can test it like this:</p>
+                            <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
+    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
+}
+</code></pre>
+                            <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+                            <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+        }
+    }
+}
+</code></pre>
+                            <p>Note how the stub has the same interface as the real dependency, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
+                            <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
+                            <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
+    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
+}
+</code></pre>
+                          </tip-box>
+                          <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                              <ul>
+                                <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
+                              </ul>
+                            </panel>
+                          </div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Purpose of stubs">
+                                  <question>
+                                    <p>Stubs help us to test a component in isolation from its dependencies.</p>
+                                    <ul radio-group="a0303" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>True</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> Here is another example of using polymorphism to implement dependency injection:</p>
+                  <p>Suppose we want to unit test the <code>Payroll#totalSalary()</code> given below. The method depends on the <code>SalaryManager</code> object to calculate the return value. Note how the <code>setSalaryManager(SalaryManager)</code> can be used to inject a <code>SalaryManager</code> object to replace the current <code>SalaryManager</code> object.</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+    <span class="hljs-keyword">private</span> SalaryManager manager = <span class="hljs-keyword">new</span> SalaryManager();
+    <span class="hljs-keyword">private</span> String[] employees;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setEmployees</span><span class="hljs-params">(String[] employees)</span> </span>{
+        <span class="hljs-keyword">this</span>.employees = employees;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSalaryManager</span><span class="hljs-params">(SalaryManager sm)</span> </span>{
+       <span class="hljs-keyword">this</span>. manager = sm;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">totalSalary</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; employees.length; i++){
+            total += manager.getSalaryForEmployee(employees[i]);
+        }
+        <span class="hljs-keyword">return</span> total;
+    }
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span></span>{
+        <span class="hljs-comment">//code to access employee’s salary history</span>
+        <span class="hljs-comment">//code to calculate total salary paid and return it</span>
+    }
+}
+</code></pre>
+                  <p>During testing, you can inject a <code>SalaryManagerStub</code> object to replace the <code>SalaryManager</code> object.</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTest</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">//test setup</span>
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+        p.setSalaryManager(<span class="hljs-keyword">new</span> SalaryManagerStub()); <span class="hljs-comment">//dependency injection</span>
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        assertEquals(<span class="hljs-number">2500.0</span>, p.totalSalary());
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        assertEquals(<span class="hljs-number">1000.0</span>, p.totalSalary());
+        <span class="hljs-comment">//more tests ...</span>
+    }
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{
+    <span class="hljs-comment">/** Returns hard coded values used for testing */</span>
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span> </span>{
+        <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E001"</span>)) {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1000.0</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E002"</span>)) {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1500.0</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"unknown id"</span>);
+        }
+    }
+}
+</code></pre>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> statements about dependency injection">
+                        <question>
+                          <p>Choose correct statement about dependency injection</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is a technique for increasing dependencies</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is useful for unit testing</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub</li>
+                          </ul>
+                          <div slot="answer">
+                            <p><s>(a)</s>(b)(c)(d)</p>
+                            <p>Explanation: It is a technique we can use to substitute an existing dependency with another, not increase dependencies. It is useful when you want to test a component in isolation but the SUT depends on other components. Using dependency injection, we can substitute those other components with test-friendly stubs. This is often done using polymorphism.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
             </div>
           </panel>
         </panel>
@@ -1293,7 +1895,7 @@ Invalid command format: add
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1302,7 +1904,7 @@ Invalid command format: add
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
+    const baseUrl = '/cs2103-website'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 <script src="..\..\markbind\layouts\default\scripts.js"></script>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter [Printable] : Testing</title>
+    <title>CS2103/T Website - Textbook Chapter [Printable] : Testing</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
     
-    <link rel="icon" href="/2019/favicon.ico">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
 </head>
 <body>
 <div id="app">
     <div id="content-wrapper">
-  <link rel="stylesheet" href="/2019/book/css/textbook.css">
-  <link rel="stylesheet" href="/2019/book/css/print.css">
+  <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+  <link rel="stylesheet" href="/cs2103-website/book/css/print.css">
   <div class="website-content">
     <div id="title">
       <div>
@@ -48,7 +48,7 @@
                 <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
               </div>
             </tip-box>
-            <img src="/2019/book/testing/introduction/what/images/diagram.png" height="220">
+            <img src="/cs2103-website/book/testing/introduction/what/images/diagram.png" height="220">
             <p></p>
             <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
             <tip-box>
@@ -96,6 +96,16 @@
               <p></p>
             </panel>
             <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="indented-less">
+        <h4 id="testability">Testability <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#testability"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The higher the testability, the easier it is to achieve a better quality software.</p>
           </div>
         </div>
       </div>
@@ -373,6 +383,16 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <h3 id="dogfooding"><span>Dogfooding</span><a class="fa fa-anchor" href="#dogfooding"></a></h3>
         </div>
       </p>
+      <div class="indented-less">
+        <h4 id="what-6">What <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-6"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong><em>Eating your own dog food</em> (aka dogfooding), is a creators of a product use their own product to test the product.</strong></p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="indented-less">
       <p>
@@ -381,9 +401,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </p>
       <div class="indented-less">
-        <h4 id="what-6">What <span class="badge badge-light"><small><small>
+        <h4 id="what-7">What <span class="badge badge-light"><small><small>
                 <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#what-6"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#what-7"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
@@ -407,7 +427,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <blockquote>
               <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
             </blockquote>
-            <img src="/2019/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+            <img src="/cs2103-website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
             <p></p>
             <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
           </div>
@@ -421,9 +441,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </p>
       <div class="indented-less">
-        <h4 id="what-7">What <span class="badge badge-light"><small><small>
+        <h4 id="what-8">What <span class="badge badge-light"><small><small>
                 <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#what-7"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#what-8"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
@@ -484,9 +504,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </p>
       <div class="indented-less">
-        <h4 id="what-8">What <span class="badge badge-light"><small><small>
+        <h4 id="what-9">What <span class="badge badge-light"><small><small>
                 <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#what-8"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#what-9"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>): test the delivered system to ensure it meets the user requirements.</strong></p>
@@ -576,9 +596,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </p>
       <div class="indented-less">
-        <h4 id="what-9">What <span class="badge badge-light"><small><small>
+        <h4 id="what-10">What <span class="badge badge-light"><small><small>
                 <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#what-9"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#what-10"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
@@ -595,9 +615,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </p>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-10">What <span class="badge badge-light"><small><small>
+        <h4 id="what-11">What <span class="badge badge-light"><small><small>
                 <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#what-10"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#what-11"></a></h4>
         <div class="indented-less">
           <div>
             <tabs>
@@ -617,13 +637,402 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           </div>
         </div>
       </div>
+      <div class="indented-less">
+        <h4 id="automated-testing-of-cli-apps">Automated Testing of CLI Apps <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#automated-testing-of-cli-apps"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
+            <ul>
+              <li>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</li>
+              <li>Next, we compare the actual output file with another file containing the expected output.</li>
+            </ul>
+            <p>Let us assume we are testing a CLI app called <code>AddressBook</code>. Here are the detailed steps:</p>
+            <ol>
+              <li>
+                <p>Store the test input in the text file <code>input.txt</code>.</p>
+                <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless">
+                  <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
+add Valid Name 12345 e/valid@email.butPhonePrefixMissing
+</code></pre>
+                </panel>
+              </li>
+              <li>
+                <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
+                <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless">
+                  <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
+Invalid command format: add 
+
+Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
+Invalid command format: add 
+</code></pre>
+                </panel>
+              </li>
+              <li>
+                <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
+                <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+</code></pre>
+                <ul>
+                  <li>
+                    <p>💡 The way to run a CLI program differs based on the language.<br>
+                      e.g., In Python, assuming the code is in <code>AddressBook.py</code> file, use the command<br>
+                      <code>python AddressBook.py &lt; input.txt &gt; output.txt</code></p>
+                  </li>
+                  <li>
+                    <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
+                  </li>
+                </ul>
+                <panel header="" minimized="">
+                  <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span></span>
+                  <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
+                  <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+</code></pre>
+                  <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
+                  <tip-box>
+                    <p><span class="fas fa-paperclip"></span> Resources:</p>
+                    <ul>
+                      <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
+                    </ul>
+                  </tip-box>
+                  <p></p>
+                </panel>
+                <p></p>
+              </li>
+              <li>
+                <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as <em>WinMerge</em>.</p>
+                <pre class="hljs"><code>FC output.txt expected.txt
+</code></pre>
+              </li>
+            </ol>
+            <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
+            <div>
+              <popover id="pop:cli" placement="top">
+                <div slot="content">
+                  <div>
+                    <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
+                  </div>
+                </div>
+              </popover>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indented-less">
+        <h4 id="test-automation-using-test-drivers">Test Automation Using Test Drivers <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#test-automation-using-test-drivers"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+
+        <span class="hljs-comment">//test setup</span>
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        <span class="hljs-comment">// automatically verify the response</span>
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);
+        }
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);
+        }
+
+        <span class="hljs-comment">//more tests...</span>
+
+        System.out.println(<span class="hljs-string">"All tests passed"</span>);
+    }
+}
+</code></pre>
+            </tip-box>
+          </div>
+        </div>
+      </div>
+      <div class="indented-less">
+        <h4 id="test-automation-tools">Test Automation Tools <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#test-automation-tools"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages and for automating different types of testing.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
+    Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+    <span class="hljs-comment">//test case 1</span>
+    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+    assertEquals(<span class="hljs-number">6400</span>, p.totalSalary());
+
+    <span class="hljs-comment">//test case 2</span>
+    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+    assertEquals(<span class="hljs-number">2300</span>, p.totalSalary());
+
+    <span class="hljs-comment">//more tests...</span>
+}
+</code></pre>
+            </tip-box>
+            <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p>
+            <img src="/cs2103-website/book/testing/testAutomation/tools/images/junit.png" height="190">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="indented-less">
+        <h4 id="automated-testing-of-guis">Automated Testing of GUIs <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#automated-testing-of-guis"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>, for the following reasons:</p>
+            <ul>
+              <li>Most GUIs can support a large number of different operations, many of which can be performed in any arbitrary order.</li>
+              <li>GUI operations are more difficult to automate than API testing. Reliably automating GUI operations and automatically verifying whether the GUI behaves as expected is harder than calling an operation and comparing its return value with an expected value. Therefore, automated regression testing of GUIs is rather difficult.</li>
+              <li>The appearance of a GUI (and sometimes even behavior) can be different across platforms and even environments. For example, a GUI can behave differently based on whether it is minimized or maximized, in focus or out of focus, and in a high resolution display or a low resolution display.</li>
+            </ul>
+            <img src="/cs2103-website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
+            <p></p>
+            <p><strong>One approach to overcome the challenges of testing GUIs is to minimize logic aspects in the GUI.</strong> Then, bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be tested manually, the number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
+            <p><strong>There are testing tools that can automate GUI testing.</strong></p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Some tools used for automated GUI testing:</p>
+              <ul>
+                <li>
+                  <p><strong>TestFx</strong> can do automated testing of JavaFX GUIs<br></p>
+                </li>
+                <li>
+                  <p><strong>VisualStudio</strong> supports ‘record replay’ type of GUI test automation.</p>
+                </li>
+                <li>
+                  <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
+                  <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> demo video of automated testing of a Web application" class="non-printable">
+                    <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  </panel>
+                </li>
+              </ul>
+            </tip-box>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div>
+        <h2 id="test-coverage"><span>Test Coverage</span><a class="fa fa-anchor" href="#test-coverage"></a></h2>
+      </div>
+    </p>
+    <div class="indented-less">
+      <div class="indented-less">
+        <h4 id="what-12">What <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-12"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
+            <p>Here are some examples of different coverage criteria:</p>
+            <ul>
+              <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
+              <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
+              <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
+              <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
+            </ul>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
+              <p>For 100% branch or decision coverage, two test cases are required:</p>
+              <ul>
+                <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+                <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+              </ul>
+              <p>For 100% condition coverage, three test cases are required</p>
+              <ul>
+                <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+                <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+                <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
+              </ul>
+            </tip-box>
+            <ul>
+              <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the <em>Control Flow Graph (CFG)</em>.</li>
+              <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="indented-less">
+        <h4 id="how-2">How <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#how-2"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
+            <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
+
+            <div v-closeable="" alt="Test Coverage in Intellij" class="non-printable">
+              <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Measuring code coverage in Intellij IDEA</p>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div>
+        <h2 id="dependency-injection"><span>Dependency Injection</span><a class="fa fa-anchor" href="#dependency-injection"></a></h2>
+      </div>
+    </p>
+    <div class="indented-less">
+      <div class="indented-less">
+        <h4 id="what-13">What <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-13"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject <trigger trigger="click" for="modal:explainDi-stub">stubs</trigger> to isolate the <tooltip content="Software Under Test">SUT</tooltip> from its <tooltip content="objects it depends on">dependencies</tooltip> so that it can be tested in isolation.</p>
+            <modal large="" title="" id="modal:explainDi-stub">
+                <div>
+                <div>
+                  <p>
+                    <panel src="/cs2103-website\book\testing\testingTypes\unitTesting\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/cs2103-website/book/testing/testingTypes/unitTesting/what"></panel>
+                  </p>
+                </div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
+                      </span></strong></span></p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="stubs"><span>Stubs</span><a class="fa fa-anchor" href="#stubs"></a></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
+                      </tip-box>
+                      <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+                      <tip-box type="definition">
+                        <div>
+                          <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                        </div>
+                      </tip-box>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Consider the code below:</p>
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    Storage s;
+
+    Logic(Storage s) {
+        <span class="hljs-keyword">this</span>.s = s;
+    }
+
+    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
+    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-comment">// retrieve name from the database</span>
+    }
+}
+</code></pre>
+                        <p>Normally, you would use the <code>Logic</code> class as follows (not how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
+                        <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
+String name = logic.getName(<span class="hljs-number">23</span>);
+</code></pre>
+                        <p>You can test it like this:</p>
+                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
+    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
+}
+</code></pre>
+                        <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+                        <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
+        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+        }
+    }
+}
+</code></pre>
+                        <p>Note how the stub has the same interface as the real dependency, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
+                        <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
+                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
+    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
+}
+</code></pre>
+                      </tip-box>
+                      <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                          <ul>
+                            <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
+                          </ul>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Purpose of stubs">
+                              <question>
+                                <p>Stubs help us to test a component in isolation from its dependencies.</p>
+                                <ul radio-group="a0303" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
+                                </ul>
+                                <div slot="answer">
+                                  <p>True</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </modal>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> A <code>Foo</code> object normally depends on a <code>Bar</code> object, but we can inject a <code>BarStub</code> object so that the <code>Foo</code> object no longer depends on a <code>Bar</code> object. Now we can test the <code>Foo</code> object in isolation from the <code>Bar</code> object.</p>
+              <img src="/cs2103-website/book/testing/dependencyInjection/what/images/diagram.png" height="150">
+            </tip-box>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -632,7 +1041,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
+    const baseUrl = '/cs2103-website'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 <script src="..\..\markbind\layouts\default\scripts.js"></script>

@@ -1,6 +1,6 @@
 {
-  "baseUrl": "/2019",
-  "titlePrefix": "TE3201 Website",
+  "baseUrl": "/cs2103-website",
+  "titlePrefix": "CS2103/T Website",
   "ignore": [
     "_site/*",
     ".idea/*",
@@ -14,13 +14,15 @@
   ],
   "pages": [
     {"glob": "index.md"},
-    {"src": "admin/te3201-admin.md"},
+    {"glob": "admin/*.md"},
+    {"glob": "admin/gradeBreakdown.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
     {"glob": "schedule/summary.md",
       "searchable": "no"},
     {"glob": "schedule/**/index.md",
       "searchable": "no"},
+    {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
     {"glob": "se-book-adapted/index.md"},
     {"glob": "se-book-adapted/chapters/*.md"},
@@ -34,12 +36,6 @@
     },
     {"glob": "book/**/index.md",
       "searchable": "no"
-    },
-    {"glob": "programming/index.md",
-      "searchable": "yes"
-    },
-    {"glob": "programming/toc/*.md",
-      "searchable": "yes"
     }
   ],
   "headingIndexingLevel": 5

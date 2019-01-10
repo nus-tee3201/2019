@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - UML: Class Diagrams</title>
+    <title>CS2103/T Website - UML: Class Diagrams</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\font-awesome.min.css" >
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="..\..\..\markbind\layouts\default\styles.css">
     
     
-    <link rel="icon" href="/2019/favicon.ico">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
 </head>
 <body>
 <div id="app">
@@ -29,7 +29,7 @@
     </navbar>
   </div>
   <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
+    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
     <div class="website-content" id="all">
       <p><span class="dimmed"><strong><span>Tools → UML →
             </span></strong></span></p>
@@ -62,7 +62,7 @@
                         <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> An example class diagram:</p>
-                          <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
+                          <img src="/cs2103-website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
                         </tip-box>
                       </div>
                       <div></div>
@@ -94,11 +94,11 @@
                       <p></p>
                       <div>
                         <p>The basic UML notations used to represent a <em>class</em>:<br></p>
-                        <img src="/2019/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
+                        <img src="/cs2103-website/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
                         <p></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> A <code>Table</code> class shown in UML notation:</p>
-                          <img src="/2019/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
+                          <img src="/cs2103-website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
                           <p></p>
                           <panel type="seamless" header="The equivalent code">
                             <table>
@@ -146,7 +146,7 @@
                         </tip-box>
                         <p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand. 'Attributes' always appear above the 'Operations' compartment. All operations should be in one compartment rather than each operation in a separate compartment. Same goes for attributes.</p>
                         <tip-box>
-                          <img src="/2019/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
+                          <img src="/cs2103-website/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
                         <p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language used. Here are some common visibilities and how they are indicated in a class diagram:</p>
                         <ul>
                           <li><code>+</code> : public</li>
@@ -193,7 +193,7 @@
                         <p></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> <code>Table</code> class with visibilities shown:</p>
-                          <img src="/2019/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
+                          <img src="/cs2103-website/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
                           <p></p>
                         </tip-box>
                       </div>
@@ -204,7 +204,7 @@
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which classes are correct?">
                                 <question>
                                   <p>Which of these follow the correct UML notation?</p>
-                                  <img src="/2019/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
+                                  <img src="/cs2103-website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
                                   <p></p>
                                   <ul class="task-list">
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
@@ -296,11 +296,11 @@
                       <p></p>
                       <div>
                         <p>We use a solid line to show an association between two classes.</p>
-                        <img src="/2019/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
+                        <img src="/cs2103-website/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
                         <p></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
-                            <img src="/2019/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
+                            <img src="/cs2103-website/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
                         </tip-box>
                       </div>
                       <div></div>
@@ -323,7 +323,7 @@
                         <p><strong>We use arrow heads to indication the navigability of an association.</strong></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> <code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p>
-                          <img src="/2019/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
                           <div>
                             <div class="alt-java">
                               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
@@ -351,13 +351,13 @@
                           </div>
                           <p><span class="fas fa-cube"></span> Here is an example of a bidirectional navigability; each class is aware of the other.</p>
                           <p></p>
-                          <img src="/2019/book/uml/classDiagrams/associations/navigability/images/manDog.png" height="40">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/manDog.png" height="40">
                           <p></p>
                         </tip-box>
                         <p><strong>Navigability can be shown in class diagrams as well as object diagrams</strong>.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> According to this object diagram the given <code>Logic</code> object is associated with and aware of two <code>MineField</code> objects.</p>
-                          <img src="/2019/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80">
                         </tip-box>
                       </div>
                       <div>
@@ -366,7 +366,7 @@
                             <div>
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does the navigability given by this diagram mean?">
                                 <question>
-                                  <img src="/2019/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
+                                  <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
                                   <p></p>
                                   <ul radio-group="9b3ad" class="radio-list">
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="9b3ad" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
@@ -400,10 +400,10 @@
                       <p></p>
                       <div>
                         <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p>
-                        <img src="/2019/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
+                        <img src="/cs2103-website/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
                         <tip-box>
                           <p><span class="fas fa-cube"></span> This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and <code>wife</code>.</p>
-                          <img src="/2019/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
                           <p></p>
                           <p>Note how the variable names match closely with the association roles.</p>
                           <table>
@@ -438,7 +438,7 @@
                         </tip-box>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> The role of <code>Student</code> objects in this association is <code>charges</code> <span class="dimmed">(i.e. Admin is in charge of students)</span></p>
-                          <img src="/2019/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
                           <p></p>
                           <table>
                             <tr>
@@ -481,10 +481,10 @@
                       <p></p>
                       <div>
                         <p><strong><em>Association labels</em> describe the meaning of the association.</strong> The arrow head indicates the direction in which the label is to be read.</p>
-                        <img src="/2019/book/uml/classDiagrams/associations/labels/images/notation.png" width="400">
+                        <img src="/cs2103-website/book/uml/classDiagrams/associations/labels/images/notation.png" width="400">
                         <tip-box>
                           <p><span class="fas fa-cube"></span> In this example, the same association is described using two different labels.</p>
-                          <img src="/2019/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
                           <p></p>
                           <ul>
                             <li>Diagram on the left: <code>Admin</code> class is associated with <code>Student</code> class because an <code>Admin</code> object <em>uses</em> a <code>Student</code> object.</li>
@@ -509,7 +509,7 @@
                       <p></p>
                       <p></p>
                       <div>
-                        <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
+                        <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
                         <p></p>
                         <p>Commonly used multiplicities:</p>
                         <ul>
@@ -520,7 +520,7 @@
                         </ul>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code> object</p>
-                          <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300">
                         </tip-box>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> In the diagram below,</p>
@@ -530,7 +530,7 @@
                             <li>An admin can handle any number of professors and any number of students, including none.</li>
                             <li>A professor/student can be handled by any number of admins, including none.</li>
                           </ul>
-                          <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70">
                         </tip-box>
                       </div>
                       <div>
@@ -539,7 +539,7 @@
                             <div>
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which statement agrees with the  multiplicity shown in this diagram?">
                                 <question>
-                                  <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
+                                  <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
                                   <p></p>
                                   <ul class="task-list">
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
@@ -584,10 +584,10 @@
                       <p></p>
                       <div>
                         <p><strong>UML uses a dashed arrow to show dependencies.</strong></p>
-                        <img src="/2019/book/uml/classDiagrams/dependencies/what/images/notation.png" width="350">
+                        <img src="/cs2103-website/book/uml/classDiagrams/dependencies/what/images/notation.png" width="350">
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Two examples of dependencies:</p>
-                          <img src="/2019/book/uml/classDiagrams/dependencies/what/images/examples.png" width="450">
+                          <img src="/cs2103-website/book/uml/classDiagrams/dependencies/what/images/examples.png" width="450">
                           <p></p>
                         </tip-box>
                       </div>
@@ -625,10 +625,10 @@
                         <tip-box>
                           <p><span class="fas fa-cube"></span> The diagram below depicts a multi-player <em>Square Game</em> being played on a board comprising of 100 squares. Each of the squares may be occupied with any number of pieces, each belonging to a certain player.</p>
                           <p>A <code>Piece</code> may or may not be on a <code>Square</code>. Note how that association can be replaced by an <code>isOn</code> attribute of the <code>Piece</code> class. The <code>isOn</code> attribute can either be <code>null</code> or hold a reference to a <code>Square</code> object, matching the <code>0..1</code> multiplicity of the association it replaces. The default value is <code>null</code>.</p>
-                          <img src="/2019/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
                           <p></p>
                           <p>The association that a <code>Board</code> has 100 <code>Sqaure</code>s can be shown in either of these two ways:</p>
-                          <img src="/2019/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
                           <p></p>
                         </tip-box>
                       </div>
@@ -661,10 +661,10 @@
                       <p></p>
                       <div>
                         <p>Notation:</p>
-                        <img src="/2019/book/uml/classDiagrams/enumerations/what/images/notation.png" width="150">
+                        <img src="/cs2103-website/book/uml/classDiagrams/enumerations/what/images/notation.png" width="150">
                         <tip-box>
                           <p><span class="fas fa-cube"></span> In the class diagram below, there are two enumerations in use:</p>
-                          <img src="/2019/book/uml/classDiagrams/enumerations/what/images/playerTurn.png" width="600">
+                          <img src="/cs2103-website/book/uml/classDiagrams/enumerations/what/images/playerTurn.png" width="600">
                           <p></p>
                         </tip-box>
                       </div>
@@ -713,7 +713,7 @@
                         <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> In the class below, <code>totalStudents</code> attribute and the <code>getTotalStudents</code> method are class-level.</p>
-                          <img src="/2019/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
+                          <img src="/cs2103-website/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
                           <p></p>
                         </tip-box>
                       </div>
@@ -746,10 +746,10 @@
                       <p></p>
                       <div>
                         <p>Association classes are denoted as a connection to an association link using a dashed line as shown below.</p>
-                        <img src="/2019/book/uml/classDiagrams/associationClasses/what/images/notation.png" height="100">
+                        <img src="/cs2103-website/book/uml/classDiagrams/associationClasses/what/images/notation.png" height="100">
                         <tip-box>
                           <p><span class="fas fa-cube"></span> In this example <code>Loan</code> is an association class because it stores information about the <code>borrows</code> association between the <code>User</code> and the <code>Book</code>.</p>
-                          <img src="/2019/book/uml/classDiagrams/associationClasses/what/images/bookLoan.png" height="150">
+                          <img src="/cs2103-website/book/uml/classDiagrams/associationClasses/what/images/bookLoan.png" height="150">
                           <p></p>
                         </tip-box>
                       </div>
@@ -783,11 +783,11 @@
                       <div>
                         <p><strong>UML uses a solid diamond symbol to denote composition.</strong></p>
                         <p>Notation:</p>
-                        <img src="/2019/book/uml/classDiagrams/composition/what/images/notation.png" width="220">
+                        <img src="/cs2103-website/book/uml/classDiagrams/composition/what/images/notation.png" width="220">
                         <p></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> A <code>Book</code> consists of <code>Chapter</code> objects. When the <code>Book</code> object is destroyed, its <code>Chapter</code> objects are destroyed too.</p>
-                          <img src="/2019/book/uml/classDiagrams/composition/what/images/bookChapter.png" width="220">
+                          <img src="/cs2103-website/book/uml/classDiagrams/composition/what/images/bookChapter.png" width="220">
                           <p></p>
                         </tip-box>
                       </div>
@@ -821,10 +821,10 @@
                       <div>
                         <p><strong>UML uses a hollow diamond is used to indicate an aggregation.</strong></p>
                         <p>Notation:</p>
-                        <img src="/2019/book/uml/classDiagrams/aggregation/what/images/notation.png" height="45">
+                        <img src="/cs2103-website/book/uml/classDiagrams/aggregation/what/images/notation.png" height="45">
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Example:</p>
-                          <img src="/2019/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
+                          <img src="/cs2103-website/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
                           <p></p>
                         </tip-box>
                         <box>
@@ -881,11 +881,11 @@
                       <div>
                         <p>You can use a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
                         <p>Notation:</p>
-                        <img src="/2019/book/uml/classDiagrams/classInheritance/what/images/notation.png" height="120">
+                        <img src="/cs2103-website/book/uml/classDiagrams/classInheritance/what/images/notation.png" height="120">
                         <p></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Examples: The <code>Car</code> class <em>inherits</em> from the <code>Vehicle</code> class. The <code>Cat</code> and <code>Dog</code> classes <em>inherit</em> from the <code>Pet</code> class.</p>
-                          <img src="/2019/book/uml/classDiagrams/classInheritance/what/images/examples.png" height="120">
+                          <img src="/cs2103-website/book/uml/classDiagrams/classInheritance/what/images/examples.png" height="120">
                           <p></p>
                         </tip-box>
                       </div>
@@ -920,7 +920,7 @@
                         <p><strong>An interface is shown similar to a class with an additional keyword <code>&lt;&lt; interface &gt;&gt;</code>. When a class implements an interface, it is shown similar to class inheritance except a dashed line is used instead of a solid line.</strong></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> The <code>AcademicStaff</code> and the <code>AdminStaff</code> classes <em>implement</em> the <code>SalariedStaff</code> interface.</p>
-                          <img src="/2019/book/uml/classDiagrams/interfaces/what/images/staff.png" height="250">
+                          <img src="/cs2103-website/book/uml/classDiagrams/interfaces/what/images/staff.png" height="250">
                           <p></p>
                         </tip-box>
                       </div>
@@ -953,11 +953,11 @@
                       <p></p>
                       <div>
                         <p><strong>You can use <em>italics</em> or <code>{abstract}</code> (preferred) keyword to denote abstract classes/methods.</strong></p>
-                        <img src="/2019/book/uml/classDiagrams/abstractClasses/what/images/notation.png" height="110">
+                        <img src="/cs2103-website/book/uml/classDiagrams/abstractClasses/what/images/notation.png" height="110">
                         <p></p>
                         <tip-box>
                           <p>Example:</p>
-                          <img src="/2019/book/uml/classDiagrams/abstractClasses/what/images/staff.png" height="110">
+                          <img src="/cs2103-website/book/uml/classDiagrams/abstractClasses/what/images/staff.png" height="110">
                           <p></p>
                         </tip-box>
                       </div>
@@ -1085,7 +1085,7 @@ item2.add_previous_box(box2);
 </code></pre>
                                   </div>
                                   <div slot="answer">
-                                    <img src="/2019/book/uml/classDiagrams/combine/basic/images/classDiagramForCodeAnswer.png" width="600"></div>
+                                    <img src="/cs2103-website/book/uml/classDiagrams/combine/basic/images/classDiagramForCodeAnswer.png" width="600"></div>
                                 </question>
                               </panel>
                             </div>
@@ -1093,7 +1093,7 @@ item2.add_previous_box(box2);
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Implement Class Diagram">
                                 <question>
                                   <p>Implement the class structure given below:</p>
-                                  <img src="/2019/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                                  <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
                                   <p></p>
                                 </question>
                               </panel>
@@ -1102,7 +1102,7 @@ item2.add_previous_box(box2);
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Object Diagrams for Class Diagram">
                                 <question>
                                   <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
-                                  <img src="/2019/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                                  <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
                                   <p></p>
                                   <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
                                   <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagram 1 → [diagram 2] and so on.</p>
@@ -1125,7 +1125,7 @@ item2.add_previous_box(box2);
                                   </ol>
                                   <div slot="hint">
                                     <p>After step 2, the diagram should be like this:</p>
-                                    <img src="/2019/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600">
+                                    <img src="/cs2103-website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600">
                                   </div>
                                 </question>
                               </panel>
@@ -1147,7 +1147,7 @@ item2.add_previous_box(box2);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1156,7 +1156,7 @@ item2.add_previous_box(box2);
 <script src="..\..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
+    const baseUrl = '/cs2103-website'
 </script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 <script src="..\..\..\markbind\layouts\default\scripts.js"></script>

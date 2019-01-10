@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Admin: Project: v1.3 [week 11]</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/cs2103-website/css/main.css">
+    <link rel="stylesheet" href="/cs2103-website/css/admin.css">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Module Structure
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><a href="instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Project
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="project-overview.html">Project: Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-product.html">Project: The product</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-scope.html">Project: Scope</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-constraints.html">Project: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-teams.html">Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-timeline.html">Project: Timeline</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w03-inception.html">Project: inception [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w04-mid-v10.html">Project: mid-v1.0 [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w05-v10.html">Project: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w06-mid-v11.html">Project: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w07-v11.html">Project: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w08-mid-v12.html">Project: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w09-v12.html">Project: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w10-mid-v13.html">Project: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w11-v13.html">Project: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w13-v14.html">Project: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-deliverables.html">Project: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-assessment.html">Project: Assessment</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-supervision.html">Project: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><a href="peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="exams.html">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Appendices
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="appendixA-principles.html">A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixB-policies.html">B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixC-faq.html">C: Frequently Asked Questions</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixD-help.html">D: Getting help in this module</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixE-gitHub.html">E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixF-teamworkIssues.html">F: Handling teamwork issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+            <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          </dropdown>
+          <li><a href="/cs2103-website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+          <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="/cs2103-website/admin/project-overview.html" class="dropdown-item"><span class="fas fa-drafting-compass"></span> Project Info</a></li>
+            <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+            <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+            <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+            <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content">
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w10-mid-v13.html">Project: mid-v1.3 [week 10]</a></span></span><span style="float:right"><span><a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span></p>
+        <br>
+        <p>
+          <div>
+            <h2 id="project%3A-v1.3-%5Bweek-11%5D">Project: v1.3 [week 11] <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span><a class="fa fa-anchor" href="#project%3A-v1.3-%5Bweek-11%5D"></a></h2>
+          </div>
+        </p>
+        <div id="main">
+          <div id="title"></div>
+          <div id="body">
+            <p class="lead" style="color: purple"><span><span class="far fa-calendar-check"></span> <span>Release as a jar file, release updated user guide, peer-test released products, verify code authorship.</span></span></p>
+            <p><strong>v1.3 Summary of Milestone</strong></p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Minimum acceptable performance to consider as 'reached'</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Contributed code to v1.3</td>
+                    <td>code merged</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Code is RepoSense-compatible</td>
+                    <td>as stated in mid-v1.3</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> v1.3 jar file released on GitHub</td>
+                    <td>as stated</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> v1.3 milestone properly wrapped up on GitHub</td>
+                    <td>as stated</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Documentation updated to match v1.3</td>
+                    <td>at least the User Guide and the <code>README.adoc</code> is updated</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 id="v1.3-project-management">v1.3 Project Management<a class="fa fa-anchor" href="#v1.3-project-management"></a></h3>
+            <p>Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v13-reposense">as explained in mid-v1.3</trigger>.</p>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.3 (extract)" id="modal:v13-reposense">
+                <div>
+                <h4 id="using-reposense">Using RepoSense<a class="fa fa-anchor" href="#using-reposense"></a></h4>
+                <div id="main">
+                  <p>In previous semesters we asked students to annotate all their code using special <code>@@author</code> tags so that we can extract each student's code for grading. This semester, we are trying out a tool called RepoSense that is expected to <strong>reduce the need for such tagging</strong>, and also make it <strong>easier for you to see (and learn from) code written by others</strong>.</p>
+                  <pic src="https://github.com/reposense/RepoSense/raw/release/docs/images/report.png" alt="Logo">
+                    <sub>Figure: RepoSense Report Features</sub></pic>
+                  <p><strong>1. View the current status of code authorship data:</strong></p>
+                  <ul>
+                    <li><strong>The report generated by the tool is available at <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>.</strong> The feature that is most relevant to you is the <em>Code Panel</em> (shown on the right side of the screenshot above). It shows the code attributed to a given author. You are welcome to play around with the <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#interpreting-the-report">other features</a> (they are still under development and will not be used for grading this semester).</li>
+                    <li>Click on your name to load the code attributed to you (based on Git blame/log data) onto the code panel on the right.</li>
+                    <li>If the code shown roughly matches the code you wrote, all is fine and there is nothing for you to do.</li>
+                  </ul>
+                  <p><strong>2. If the code does not match:</strong></p>
+                  <ul>
+                    <li>
+                      <p>Here are the possible reasons for the code shown not to match the code you wrote:</p>
+                      <ul>
+                        <li>the git username in some of your commits does not match your GitHub username (perhaps you missed our instructions to set your Git username to match GitHub username earlier in the project, or GitHub did not honor your Git username for some reason)</li>
+                        <li>the actual authorship does not match the authorship determined by git blame/log e.g., another student touched your code after you wrote it, and Git log attributed the code to that student instead</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>In those cases,</p>
+                      <ul>
+                        <li>Install RepoSense (see the <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#getting-started">Getting Started</a> section of the RepoSense User Guide)</li>
+                        <li>Use the two methods described in the RepoSense User Guide section <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#configuring-a-repo-to-provide-additional-data-to-reposense">Configuring a Repo to Provide Additional Data to RepoSense</a> to provide additional data to the authorship analysis to make it more accurate.</li>
+                        <li>If you add a <code>config.json</code> file to your repo (as specified by one of the two methods),
+                          <ul>
+                            <li><strong>Please use the <a href="https://nus-cs2103-ay1819s1.github.io/cs2103-website/admin/reposenseConfigTemplates.html">template json file given in the module website</a></strong> so that your display name matches the name we expect it to be.</li>
+                            <li>If your commits have multiple author names, specify all of them e.g., <code>&quot;authorNames&quot;: [&quot;theMyth&quot;, &quot;theLegend&quot;, &quot;theGary&quot;]</code></li>
+                            <li>Update the line <code>config.json</code> in the <code>.gitignore</code> file of your repo as <code>/config.json</code> so that it ignores the <code>config.json</code> produced by the app but not the <code>_reposense/config.json</code>.</li>
+                          </ul>
+                        </li>
+                        <li>If you add <code>@@author</code> annotations, please follow the guidelines below:</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="indented-level3">
+                    <panel header="Adding `@@author` tags to indicate authorship">
+                      <div>
+                        <h4 id="adding-%40%40author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-%40%40author-tags-indicate-authorship"></a></h4>
+                        <ul>
+                          <li>
+                            <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br>
+                              The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
+                              Here is a sample code file:</p>
+                            <pre class="hljs"><code>//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author sarahkhoo
+method 3 ...
+//@@author johndoe
+method 4 ...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
+                              Here is a sample code with an empty <code>author</code> tag:</p>
+                            <pre class="hljs"><code>method 0 ...
+//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author
+method 3 ...
+method 4 ...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
+                              Here is an example code from an xml/fxml file.</p>
+                            <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
+&lt;textbox&gt;
+  &lt;label&gt;...&lt;/label&gt;
+  &lt;input&gt;...&lt;/input&gt;
+&lt;/textbox&gt;
+...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br>
+                              👎<span class="fas fa-arrow-down"></span></p>
+                            <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author johndoe
+  */
+</code></pre>
+                            <p>👍<span class="fas fa-arrow-down"></span></p>
+                            <pre class="hljs"><code>//@@author johndoe
+/**
+  * Returns true if ...
+  */
+</code></pre>
+                          </li>
+                        </ul>
+                        <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate"></a></h4>
+                        <ul>
+                          <li>
+                            <p><strong>Annotate both functional and test code</strong> There is no need to annotate documentation files.</p>
+                          </li>
+                          <li>
+                            <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong> but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.</p>
+                            <ul>
+                              <li>If an enhancement required you to do tiny changes in many places, there is no need to annotate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
+                              <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
+                              <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
+                              <li>💡 GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p><strong>Do not try to boost the quantity of your contribution using unethical means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.
+                              Individual members are responsible for making sure code attributed to them are correct.
+                              If you notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
+                          </li>
+                          <li>
+                            <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
+                            <ul>
+                              <li>Create a folder called <code>{project root}/unused</code></li>
+                              <li>Move unused files (or copies of files containing unused code) to that folder</li>
+                              <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>)
+                                e.g.</li>
+                            </ul>
+                            <pre class="hljs"><code>//@@author johndoe-unused
+method 1 ...
+method 2 ...
+</code></pre>
+                            <p>Please put a comment in the code to explain why it was not used.</p>
+                          </li>
+                          <li>
+                            <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>)
+                              e.g.</p>
+                            <pre class="hljs"><code>//@@author johndoe-reused
+method 1 ...
+method 2 ...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
+                            <ul>
+                              <li>
+                                <p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+                              </li>
+                              <li>
+                                <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim credit for them.</p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </panel>
+                  </div>
+                  <ul>
+                    <li>After you are satisfied with the new results (i.e., results produced by running RepoSense locally), push the <code>config.json</code> file you added and/or the annotated code to your repo. We'll use that information the next time we run RepoSense (we run it at least once a week).</li>
+                    <li>If you choose to annotate code, please annotate code chunks not smaller than a method. We do not grade code snippets smaller than a method.</li>
+                    <li>If you encounter any problem when doing the above or if you have questions, please post in the <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">forum</a>.</li>
+                  </ul>
+                  <p><mark><strong>We recommend you ensure your code is RepoSense-compatible by v1.3</strong></mark></p>
+                </div>
+              </div>
+            </modal>
+            <h3 id="v1.3-product">v1.3 Product<a class="fa fa-anchor" href="#v1.3-product"></a></h3>
+            <ul>
+              <li>
+                <p>As before, move the product towards v2.0.</p>
+              </li>
+              <li>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip></strong> <a href="https://nus-cs2103-AY1819S2.github.io/addressbook-level4/DeveloperGuide.html#making-a-release">as described in the Developer Guide</a>. Do some manual tests to ensure the jar file works.
+                </p>
+              </li>
+            </ul>
+            <h3 id="v1.3-documentation">v1.3 Documentation<a class="fa fa-anchor" href="#v1.3-documentation"></a></h3>
+            <tip-box>
+              <p>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> v1.3 user guide should be updated to match the current version of the product. <span class="dimmed"> Reason: v1.3 will be subjected to a trial <em>acceptance testing</em> session</span>
+              </p>
+            </tip-box>
+            <ul>
+              <li><strong>README page</strong>: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, <mark>update the <code>Ui.png</code> to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">💡 tips</trigger>)</mark>.</li>
+            </ul>
+            <modal large="" title="Admin → Project Deliverables → Website" id="modal:v13-tipsForProductScreenshot">
+                <div>
+                <box>
+                  <p>💡 <strong>Some common sense tips for a good product screenshot</strong></p>
+                  <p><code>Ui.png</code> represents your product in its full glory.</p>
+                  <ul>
+                    <li>Before taking the screenshot, populate the product with data that makes the product look good. For example, if the product is supposed to show photos, use real photos instead of dummy placeholders.</li>
+                    <li>It should show a state in which the product is well-populated <span class="dimmed">i.e., don't leave data panels largely blank</span></li>
+                    <li>Choose a state that showcase the main features of the product <span class="dimmed">i.e., the login screen is not usually a good choice</span></li>
+                    <li>Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is being in use for real.</li>
+                  </ul>
+                  <panel type="seamless" header="Examples">
+                    <tabs>
+                        <tab header="Not Good">
+                        <img src="/cs2103-website/admin/images/Ui-notGood1.png" width="600"></tab>
+                        <tab header="Not Good">
+                        <img src="/cs2103-website/admin/images/Ui-notGood2.png" width="600"></tab>
+                      <tab header="Good">
+                        <img src="/cs2103-website/admin/images/Ui-good1.png" width="600"></tab>
+                        <tab header="Good">
+                        <img src="/cs2103-website/admin/images/Ui-good2.png" width="600"></tab>
+                    </tabs>
+                  </panel>
+                </box>
+              </div>
+            </modal>
+            <ul>
+              <li>
+                <p><strong>User Guide</strong>: <mark>This document will be used by acceptance testers</mark>. Update to match the current version. In particular,</p>
+                <ul>
+                  <li>Clearly indicate which features are not implemented yet <span class="dimmed">e.g. tag those features with a <code>Coming in v2.0</code></span>.</li>
+                  <li>For those features already implemented, ensure their descriptions match the exact behavior of the product <span class="dimmed">e.g. replace mockups with actual screenshots</span></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Developer Guide</strong>: As before, update if necessary.</p>
+              </li>
+              <li>
+                <p><strong>AboutUs page</strong>: Update to reflect current state of roles and responsibilities.</p>
+              </li>
+            </ul>
+            <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.3</code>.</p>
+            <h3 id="v1.3-demo">v1.3 Demo<a class="fa fa-anchor" href="#v1.3-demo"></a></h3>
+            <ul>
+              <li>Do a quick demo of the main features <mark>using the jar file</mark>. Objective: demonstrate that the jar file works.</li>
+            </ul>
+            <h3 id="v1.3-testing-(aka-practical-exam-dry-run)">v1.3 Testing (<em>aka</em> Practical Exam Dry Run)<a class="fa fa-anchor" href="#v1.3-testing-(aka-practical-exam-dry-run)"></a></h3>
+            <p><mark>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> See info in the panel below:
+              </mark>
+              <br></p>
+            <div class="flat">
+              <div>
+                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:v13-peDryRun">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Deliverables → <strong>Practical Exam - Dry Run</strong></trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+              </div>
+            </div>
+            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Deliverables → **Practical Exam - Dry Run**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:v13-peDryRun">
+                <div>
+                <p><strong>What</strong>: The v1.3 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam Dry Run</em> as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.</p>
+                <p><strong>When, where</strong>: uses a 30 minute slot at the start of week 11 lecture</p>
+                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
+                    <div>
+                    <p><strong>Objectives:</strong></p>
+                    <ul>
+                      <li>The primary objective of the PE is to <mark>increase the rigor of project assessment</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for 50% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.</li>
+                      <li>Note that <mark>none of the significant project grade components are calculated solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutor assessments and identify cases that need further investigation. When peer inputs are used for grading, usually they are combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other teams, if that is appropriate.</li>
+                      <li>As a bonus, PE also gives us an opportunity to evaluate your manual testing skills, product evaluation skills, effort estimation skills etc.</li>
+                      <li>Note that the PE is not a means of <em>pitting you against each other</em>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
+                    </ul>
+                    <p><strong>When, where</strong>: Week 13 lecture</p>
+                    <p>
+                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Grading</strong>:
+                    </p>
+                    <ul>
+                      <li>Your performance in the practical exam will affect your final grade and your peers, as explained in <a href="/cs2103-website/admin/project-assessment.html"><em>Admin: Project Assessment</em></a> section.</li>
+                      <li>As your submissions can affect the grades of peers, note that we have put in measures to identify insincere/random evaluations and penalize accordingly.</li>
+                    </ul>
+                    <div>
+                      <p><strong>Preparation</strong>:</p>
+                      <ul>
+                        <li>
+                          <p>Ensure that <strong>you can access the relevant issue tracker</strong> given below:<br>
+                            -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a><br>
+                            -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a> (will open only near the actual PE)</p>
+                          <ul>
+                            <li><mark>These are private repos!</mark>. If you cannot access the relevant repo, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-cs2103-AY1819S2/invitation">https://github.com/orgs/nus-cs2103-AY1819S2/invitation</a> to accept the invitation.</li>
+                            <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">forum</a>.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</p>
+                        </li>
+                        <li>
+                          <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
+                          <ul>
+                            <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p><strong>Charge your computer</strong> before coming to the PE session. The testing venue may not have enough charging points.</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <p><strong>During:</strong></p>
+                    <ol>
+                      <li><strong>Take note of your team to test</strong>. It will be given to you by the teaching team (distributed via IVLE gradebook).</li>
+                      <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed">(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)</span> <mark>into an empty folder</mark>.</li>
+                      <li><strong>[60 minutes] Test the product and report bugs</strong> as described below:</li>
+                    </ol>
+                    <div class="indented-level2">
+                      <div>
+                        <box>
+                          <h5 id="testing-instructions-for-pe-and-pe-dry-run">Testing instructions for PE and PE Dry Run<a class="fa fa-anchor" href="#testing-instructions-for-pe-and-pe-dry-run"></a></h5>
+                          <ul>
+                            <li>
+                              <p><strong>What to test</strong>:</p>
+                              <ul>
+                                <li>PE Dry Run (at <strong>v1.3</strong>):
+                                  <ul>
+                                    <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
+                                    <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
+                                  </ul>
+                                </li>
+                                <li>PE (at <strong>v1.4</strong>):
+                                  <ul>
+                                    <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
+                                    <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system testing bugs can earn you more credit.</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <p><strong>These are considered <em>bugs</em></strong>:</p>
+                              <ul>
+                                <li>Behavior differs from the User Guide</li>
+                                <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
+                                <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
+                                <li>The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'</li>
+                                <li>Problems in the User Guide e.g., missing/incorrect info</li>
+                              </ul>
+                            </li>
+                            <li>
+                              <p><strong>Where to report bugs</strong>: Post bug in the following issue trackers (<mark>not in the team's repo</mark>):</p>
+                              <ul>
+                                <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a>.</li>
+                                <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a>.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              <p><strong>Bug report format</strong>:</p>
+                              <ul>
+                                <li>
+                                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                                </li>
+                                <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
+                                <li>Each bug should be a separate issue.</li>
+                                <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
+                                <li>Use a descriptive title.</li>
+                                <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
+                                <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <div class="indented-level4">
+                            <div>
+                              <tip-box>
+                                <p><strong>Bug Severity</strong> labels:</p>
+                                <ul>
+                                  <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                  <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                  <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                                </ul>
+                              </tip-box>
+                            </div>
+                          </div>
+                          <ul>
+                            <li>
+                              <p><strong>About posting <em>suggestions</em>:</strong></p>
+                              <ul>
+                                <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
+                                <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              <p><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch</span>, you can test the <em>fallback</em> team allocated to you. But in this case <mark>you must inform us immediately after the session</mark> so that we can send your bug reports to the correct team.</p>
+                            </li>
+                          </ul>
+                        </box>
+                      </div>
+                    </div>
+                    <ol>
+                      <li><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.
+                        <ul>
+                          <li><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]:</li>
+                        </ul>
+                      </li>
+                    </ol>
+                    <div class="indented-level2">
+                      <div>
+                        <p>Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item">
+                            <p><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</p>
+                          </li>
+                          <li>
+                            <p>Target user:</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>target user specified and appropriate</code>: The target user is clearly specified, <strong>prefers typing over other modes of input</strong>, and not too general (should be narrowed to a specific user group with certain characteristics).</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value specified and matching</code>: The value offered by the product is clearly specified and matches the target user.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p>Value to the target user:</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: low</code>: The value to target user is low. App is not worth using.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: medium</code>: Some small group of target users might find the app worth using.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: high</code>: Most of the target users are likely to find the app worth using.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p>Feature-fit:</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: low</code>: Features don't seem to fit together.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: medium</code>: Some features fit together but some don't.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: high</code>: All features fit together.</li>
+                            </ul>
+                          </li>
+                          <li class="task-list-item">
+                            <p><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <ul>
+                      <li><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]:</li>
+                    </ul>
+                    <div class="indented-level2">
+                      <div>
+                        <p>Evaluate the quality of user documentation <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <ul>
+                      <li><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]:</li>
+                    </ul>
+                    <div class="indented-level2">
+                      <div>
+                        <p>Evaluate the quality of developer documentation <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
+                          <li>Diagrams:
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 1</code>: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 2</code>: Two types of diagrams used</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 3+</code>: Three or more types of diagrams used</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML diagrams suitable</code>: The diagrams used for the right purpose</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML notation correct</code>: No more than one minor error in the UML notation</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not repetitive</code>: No evidence of repeating the same diagram with minor differences</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not too complicated</code>: Diagrams don't cram too much information into them</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams integrates with text</code>: Diagrams are well integrated into the textual explanations</li>
+                            </ul>
+                          </li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <ul>
+                      <li><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]:</li>
+                    </ul>
+                    <div class="indented-level2">
+                      <div>
+                        <p>Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                        <ul>
+                          <li>Difficulty
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: low</code>: <span class="dimmed">e.g. make the existing <em>find</em> command case insensitive</span>.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: medium</code>: <span class="dimmed">e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: high</code>: e.g., <span class="dimmed">undo/redo command</span></li>
+                            </ul>
+                          </li>
+                          <li>Completeness
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: low</code>: A partial implementation of the feature. Barely useful.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: medium</code>: The feature has enough functionality to be useful for some of the users.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: high</code>: The feature has all functionality to be useful to almost all users.</li>
+                            </ul>
+                          </li>
+                          <li>Other
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ not hard to test</code>: The feature was not too hard to test manually.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ polished: high</code>: The feature looks <em>polished</em> (as if done by a professional programmer).</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <ul>
+                      <li><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]:</li>
+                    </ul>
+                    <div class="indented-level2">
+                      <div>
+                        <p>Evaluate the amount of work, on a scale of 0 to 30.</p>
+                        <ul>
+                          <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
+                          <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
+                          <li>
+                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. You will be asked to provide a brief justification for your effort estimates.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h4 id="processing-pe-bug-reports%3A">Processing PE Bug Reports:<a class="fa fa-anchor" href="#processing-pe-bug-reports%3A"></a></h4>
+                    <p>There will be a review period for you to respond to the <a href="https://github.com/nus-cs2103-AY1819S2/pe-results/issues">bug reports</a> you received.</p>
+                    <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Wednesday midnight</strong>. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.</p>
+                    <p>Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.</p>
+                    <tip-box>
+                      <p><strong>Instructions for Reviewing Bug Reports</strong></p>
+                      <ul>
+                        <li>
+                          <p><strong>First, don't freak out if there are lot of bug reports.</strong> Many can be duplicates and some can be <em>false positives</em>. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.</p>
+                        </li>
+                        <li>
+                          <p><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</p>
+                        </li>
+                        <li>
+                          <p>You may (but not required to) close the bug report after you are done processing it, as a convenient means of separating the 'processed' issues from 'not yet processed' issues.</p>
+                        </li>
+                        <li>
+                          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, <mark>use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of</mark>. Duplicates can be omitted from processing steps given below.</p>
+                        </li>
+                        <li>
+                          <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
+                        </li>
+                        <li>
+                          <p><strong>Decide if it is a real bug and apply ONLY one of these labels</strong>.</p>
+                        </li>
+                      </ul>
+                      <div class="indented">
+                        <box>
+                          <p>Response Labels:</p>
+                          <ul>
+                            <li><code>response.Accepted</code>: You accept it as a bug.</li>
+                            <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.</li>
+                            <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. You can reject bugs that you inherited from AB4.</li>
+                            <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
+                            <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.</li>
+                          </ul>
+                        </box>
+                      </div>
+                      <ul>
+                        <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type.*</code> are considered <code>type.FunctionalityBug</code> by default (which are liable to a heavier penalty).</li>
+                      </ul>
+                      <div class="indented">
+                        <box>
+                          <p>Bug Type Labels:</p>
+                          <ul>
+                            <li><code>type.FeatureFlaw</code>: some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                            <li><code>type.FunctionalityBug</code>: the bug is a flaw in how the product works.</li>
+                            <li><code>type.DocTypo</code>: A minor spelling/grammar error in the documentation. Does not affect the user.</li>
+                            <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction</span></li>
+                          </ul>
+                        </box>
+                      </div>
+                      <ul>
+                        <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level.</li>
+                      </ul>
+                      <p>
+                        <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> For all cases of downgrading severity or non-acceptance of a bug, <mark>you must add a comment justifying your stance</mark>. All such cases will be double-checked by the teaching team and indiscriminate downgrading/non-acceptance of bugs without a good justification, if deemed as a case of trying to <em>game the system</em>, may be penalized as it is unfair to the tester.
+                      </p>
+                      <div class="indented">
+                        <div>
+                          <tip-box>
+                            <p><strong>Bug Severity</strong> labels:</p>
+                            <ul>
+                              <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                              <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                              <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                            </ul>
+                          </tip-box>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
+                        </li>
+                        <li>
+                          <p>We recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, even if the bug was caused indirectly by someone else. Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.</p>
+                        </li>
+                        <li>
+                          <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
+                        </li>
+                        <li>
+                          <p>We recommend choosing <code>type.*</code>, <code>severity.*</code> and assignee even for bugs you are not accepting. Reason: your <em>non-acceptance</em> may be rejected by the tutor later, in which case we need to grade it as an accepted bug.</p>
+                        </li>
+                      </ul>
+                    </tip-box>
+                  </div>
+                </modal>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Grading</strong>: Taking part in the PE dry run is strongly encouraged as it <mark>can affect your grade in the following ways</mark>.
+                </p>
+                <ul>
+                  <li>If the product you are allocated to test in the Practical Exam (at v1.4) had a very low bug count, we will consider your performance in PE dry run as well when grading the PE.</li>
+                  <li>PE dry run will help you practice for the actual PE.</li>
+                  <li>Taking part in the PE dry run will earn you participation points.</li>
+                  <li>There is <mark>no penalty for bugs reported</mark> in your product. Every bug you find is a win-win for you and the team whose product you are testing.</li>
+                </ul>
+                <p><strong>Objectives</strong>:</p>
+                <ul>
+                  <li><strong>To train you</strong> to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.</li>
+                  <li><strong>To help you improve your product</strong> before the final submission.</li>
+                </ul>
+                <div>
+                  <p><strong>Preparation</strong>:</p>
+                  <ul>
+                    <li>
+                      <p>Ensure that <strong>you can access the relevant issue tracker</strong> given below:<br>
+                        -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a><br>
+                        -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a> (will open only near the actual PE)</p>
+                      <ul>
+                        <li><mark>These are private repos!</mark>. If you cannot access the relevant repo, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-cs2103-AY1819S2/invitation">https://github.com/orgs/nus-cs2103-AY1819S2/invitation</a> to accept the invitation.</li>
+                        <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">forum</a>.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
+                      <ul>
+                        <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Charge your computer</strong> before coming to the PE session. The testing venue may not have enough charging points.</p>
+                    </li>
+                  </ul>
+                </div>
+                <p><strong>During the session</strong>:</p>
+                <ol>
+                  <li><strong>Take note of your team to test</strong>. Distributed via IVLE gradebook and via email.</li>
+                  <li>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</li>
+                  <li>Confirm you are testing the allocated product by comparing the product UI with the UI screenshot sent via email.</li>
+                </ol>
+                <div id="project-deliverables-pe-testing-intructions">
+                  <box>
+                    <h5 id="testing-instructions-for-pe-and-pe-dry-run-2">Testing instructions for PE and PE Dry Run<a class="fa fa-anchor" href="#testing-instructions-for-pe-and-pe-dry-run-2"></a></h5>
+                    <ul>
+                      <li>
+                        <p><strong>What to test</strong>:</p>
+                        <ul>
+                          <li>PE Dry Run (at <strong>v1.3</strong>):
+                            <ul>
+                              <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
+                              <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
+                            </ul>
+                          </li>
+                          <li>PE (at <strong>v1.4</strong>):
+                            <ul>
+                              <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
+                              <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system testing bugs can earn you more credit.</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>These are considered <em>bugs</em></strong>:</p>
+                        <ul>
+                          <li>Behavior differs from the User Guide</li>
+                          <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
+                          <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
+                          <li>The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'</li>
+                          <li>Problems in the User Guide e.g., missing/incorrect info</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Where to report bugs</strong>: Post bug in the following issue trackers (<mark>not in the team's repo</mark>):</p>
+                        <ul>
+                          <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a>.</li>
+                          <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a>.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Bug report format</strong>:</p>
+                        <ul>
+                          <li>
+                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                          </li>
+                          <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
+                          <li>Each bug should be a separate issue.</li>
+                          <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
+                          <li>Use a descriptive title.</li>
+                          <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
+                          <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="indented-level4">
+                      <div>
+                        <tip-box>
+                          <p><strong>Bug Severity</strong> labels:</p>
+                          <ul>
+                            <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                            <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                            <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                          </ul>
+                        </tip-box>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>
+                        <p><strong>About posting <em>suggestions</em>:</strong></p>
+                        <ul>
+                          <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
+                          <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch</span>, you can test the <em>fallback</em> team allocated to you. But in this case <mark>you must inform us immediately after the session</mark> so that we can send your bug reports to the correct team.</p>
+                      </li>
+                    </ul>
+                  </box>
+                </div>
+                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project →" id="modal:v1.3-ppp">
+                    <div>
+                    <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
+                    <ul>
+                      <li>
+                        <p><strong>Objective:</strong></p>
+                        <ul>
+                          <li>For you to use <span class="dimmed"> (e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
+                          <li>For us to use as a data point to evaluate your,
+                            <ul>
+                              <li>contributions to the project</li>
+                              <li>your documentation skills</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Sections to include:</strong></p>
+                        <ul>
+                          <li>
+                            <p><strong>Overview</strong>: A short overview of your product to provide some context to the reader.</p>
+                          </li>
+                          <li>
+                            <p><strong>Summary of Contributions</strong>:</p>
+                            <ul>
+                              <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
+                              <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
+                              <li><strong>Other contributions:</strong>
+                                <ul>
+                                  <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
+                                  <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
+                                  <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p><strong>Contributions to the User Guide</strong>: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
+                              <span class="dimmed">The purpose of allowing you to include <em>proposed</em> features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></p>
+                          </li>
+                          <li>
+                            <p><strong>Contributions to the Developer Guide</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
+                          </li>
+                          <li>
+                            <p>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Format</strong>:</p>
+                        <ul>
+                          <li>
+                            <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
+                          </li>
+                          <li>
+                            <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
+                          </li>
+                          <li>
+                            <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
+                          </li>
+                          <li>
+                            <p><mark>
+                                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
+                              </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Page limit</strong>:</p>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Content</th>
+                                <th>Limit</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Overview + Summary of contributions</td>
+                                <td>0.5-1 (soft limit)</td>
+                              </tr>
+                              <tr>
+                                <td>Contributions to the User Guide</td>
+                                <td>1-3 (soft limit)</td>
+                              </tr>
+                              <tr>
+                                <td>Contributions to the Developer Guide</td>
+                                <td>3-6 (soft limit)</td>
+                              </tr>
+                              <tr>
+                                <td>Total</td>
+                                <td>5-10 <mark>(strict)</mark></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <ul>
+                          <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                          <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                            If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                            <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </modal>
+                <p><strong>After the session</strong>:</p>
+                <ul>
+                  <li>We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.</li>
+                  <li>You can post in the issue thread to communicate with the tester <span class="dimmed">e.g. to ask for more info</span>, etc. However, the tester is not obliged to respond.
+                    <ul>
+                      <li>💡 Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </modal>
+            <p>
+              <panel src="/cs2103-website\admin\project-deliverables._include_.html#project-deliverables-practicalexam-dry-run" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Deliverables → **Practical Exam - Dry Run**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-practicalexam-dry-run"></panel>
+            </p>
+          </div>
+        </div>
+        <br>
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w10-mid-v13.html">Project: mid-v1.3 [week 10]</a></span></span><span style="float:right"><span><a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/cs2103-website'
+</script>
+<script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\layouts\default\scripts.js"></script>
+</html>

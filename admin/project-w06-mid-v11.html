@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Admin: Project: mid-v1.1 [week 6]</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/cs2103-website/css/main.css">
+    <link rel="stylesheet" href="/cs2103-website/css/admin.css">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Module Structure
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><a href="instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Project
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="project-overview.html">Project: Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-product.html">Project: The product</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-scope.html">Project: Scope</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-constraints.html">Project: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-teams.html">Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-timeline.html">Project: Timeline</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w03-inception.html">Project: inception [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w04-mid-v10.html">Project: mid-v1.0 [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w05-v10.html">Project: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w06-mid-v11.html">Project: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w07-v11.html">Project: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w08-mid-v12.html">Project: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w09-v12.html">Project: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w10-mid-v13.html">Project: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w11-v13.html">Project: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w13-v14.html">Project: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-deliverables.html">Project: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-assessment.html">Project: Assessment</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-supervision.html">Project: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><a href="peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="exams.html">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><a href="participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Appendices
+          <i class="dropdown-btn-icon rotate-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="appendixA-principles.html">A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixB-policies.html">B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixC-faq.html">C: Frequently Asked Questions</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixD-help.html">D: Getting help in this module</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixE-gitHub.html">E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixF-teamworkIssues.html">F: Handling teamwork issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+            <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+            <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          </dropdown>
+          <li><a href="/cs2103-website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+          <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="/cs2103-website/admin/project-overview.html" class="dropdown-item"><span class="fas fa-drafting-compass"></span> Project Info</a></li>
+            <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+            <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+            <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+            <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content">
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w05-v10.html">Project: v1.0 [week 5]</a></span></span><span style="float:right"><span><a href="project-w07-v11.html">Project: v1.1 [week 7] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span></p>
+        <br>
+        <p>
+          <div>
+            <h2 id="project%3A-mid-v1.1-%5Bweek-6%5D">Project: mid-v1.1 [week 6] <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span><a class="fa fa-anchor" href="#project%3A-mid-v1.1-%5Bweek-6%5D"></a></h2>
+          </div>
+        </p>
+        <div id="main">
+          <div id="title"></div>
+          <div id="body">
+            <p class="lead" style="color: purple"><span><span class="far fa-calendar-check"></span> <span>Set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base.</span></span></p>
+            <p></p>
+            <div id="product">
+              <p><strong><big>Project Management:</big></strong></p>
+              <p>Set up the team org and the team repo as explained below:</p>
+              <div class="indented-level2">
+                <div class="flat">
+                  <div>
+                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:midv11-orgSetup">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E(extract): <strong>Organization setup</strong></trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+                  </div>
+                </div>
+                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E(extract): **Organization setup**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:midv11-orgSetup">
+                    <div>
+                    <h2 id="organization-setup">Organization setup<a class="fa fa-anchor" href="#organization-setup"></a></h2>
+                    <p>
+                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
+                    </p>
+                    <p>After receiving your team ID, one team member should do the following steps:</p>
+                    <ul>
+                      <li>Create a GitHub organization with the following details:
+                        <ul>
+                          <li><mark>Organization name : <code>CS2103-AY1819S2-TEAM_ID</code></mark>. e.g.  <code>CS2103-AY1819S2-W12-1</code></li>
+                          <li>Plan:  Open Source ($0/month)</li>
+                        </ul>
+                      </li>
+                      <li>Add members to the organization:
+                        <ul>
+                          <li>Create a team called <code>developers</code> to your organization.</li>
+                          <li>Add your team members to the developers team.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </modal>
+                <p>
+                  <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#organization-setup" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E(extract): **Organization setup**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="organization-setup"></panel>
+                </p>
+              </div>
+              <div class="indented-level2">
+                <div class="flat">
+                  <div>
+                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:midv11-repoSetup">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E(extract): <strong>Repo setup</strong></trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+                  </div>
+                </div>
+                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E(extract): **Repo setup**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:midv11-repoSetup">
+                    <div>
+                    <h2 id="repo-setup">Repo setup<a class="fa fa-anchor" href="#repo-setup"></a></h2>
+                    <p>Only one team member:</p>
+                    <ol>
+                      <li><strong>Fork</strong> <a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4">Address Book Level 4</a> to your team org.</li>
+                      <li><mark><strong>Rename</strong> the forked repo as <code>main</code></mark>. This repo (let's call it the <em>team repo</em>) is to be used as the repo for your project.</li>
+                      <li><mark>Ensure the issue tracker of your team repo is enabled.</mark> <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.</span></li>
+                      <li>Ensure your team members have the desired level of access to your team repo.</li>
+                      <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci"><strong>Enable Travis CI for the team repo</strong></a>.</li>
+                      <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation"><strong>Set up <em>auto-publishing</em> of docs</strong></a>. When set up correctly, your project website should be available via the URL <code>https://nus-cs2103-ay1819s2-{team-id}.github.io/main</code> e.g., <code>https://cs2103-ay1819s2-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
+                      <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4">nus-cs2103-AY1819S2/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[T09-2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span> In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
+                    </ol>
+                    <p>All team members:</p>
+                    <ol>
+                      <li><strong>Watch</strong>the <code>main</code> repo (created above) i.e., go to the repo and click on the <code>watch</code> button to subscribe to activities of the repo</li>
+                      <li><strong>Fork</strong> the <code>main</code> repo to your personal GitHub account.</li>
+                      <li><strong>Clone</strong> the fork to your Computer.</li>
+                      <li>Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).</li>
+                      <li><strong>Set up the developer environment</strong> in your computer. You are recommended to use JDK 9 for AB-4 as some of the libraries used in AB-4 have not updated to support Java 10 yet. <mark>JDK 9 can be downloaded from the <a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html">Java Archive</a>.</mark></li>
+                    </ol>
+                    <p>Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project.</p>
+                    <ul>
+                      <li><code>/src/main</code></li>
+                      <li><code>/src/test</code></li>
+                      <li><code>/docs</code></li>
+                    </ul>
+                  </div>
+                </modal>
+                <p>
+                  <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#repo-setup" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E(extract): **Repo setup**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="repo-setup"></panel>
+                </p>
+              </div>
+              <p>When updating code in the repo, follow the workflow explained below:</p>
+              <div class="indented-level2">
+                <div class="flat">
+                  <div>
+                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:midv11-workflow">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E(extract): <strong>Workflow</strong></trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+                  </div>
+                </div>
+                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E(extract): **Workflow**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:midv11-workflow">
+                    <div>
+                    <h2 id="workflow">Workflow<a class="fa fa-anchor" href="#workflow"></a></h2>
+                    <p>
+                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Before you do any coding for the project</strong>,
+                    </p>
+                    <ul>
+                      <li>Ensure you have <trigger trigger="click" for="modal:appE-gitUsername">set the Git username correctly (as explained in Appendix E)</trigger> in <em>all</em> Computers you use for coding.</li>
+                      <li>Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy <span class="dimmed">(in Admin: Appendix B)</span></trigger>, in particular, <mark>how to give credit when you reuse code from the Internet or classmates</mark>:</li>
+                    </ul>
+                    <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
+                        <div>
+                        <h2 id="setting-git-username-to-match-github-username">Setting Git Username to Match GitHub Username<a class="fa fa-anchor" href="#setting-git-username-to-match-github-username"></a></h2>
+                        <p>We use various tools to analyze your code. <mark>For us to be able to identify your commits, you should use the GitHub username as your Git username as well. If there is a mismatch, or if you use multiple user names for Git,</mark> our tools might miss some of your work and as a result you might not get credit for some of your work.</p>
+                        <p>In each Computer you use for coding, after installing Git, you should set the Git username as follows.</p>
+                        <ol>
+                          <li>Open a command window that can run Git commands (e.g., Git bash window)</li>
+                          <li>Run the command <code>git config --global user.name YOUR_GITHUB_USERNAME</code><br>
+                            e.g., <code>git config --global user.name JohnDoe</code></li>
+                        </ol>
+                        <p>More info about setting Git username is <a href="https://help.github.com/articles/setting-your-username-in-git/">here</a>.</p>
+                      </div>
+                    </modal>
+                    <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
+                        <div>
+                        <h3 id="policy-on-reuse">Policy on reuse <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small><a class="fa fa-anchor" href="#policy-on-reuse"></a></h3>
+                        <div class="indented">
+                          <div>
+                            <p><strong>Reuse is encouraged. However, note that reuse has its own costs</strong> (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for using work done by others.</p>
+                            <ul>
+                              <li>You are allowed to reuse work from your classmates, subject to following conditions:
+                                <ul>
+                                  <li>The work has been published by us or the authors.</li>
+                                  <li>You clearly give credit to the original author(s).</li>
+                                </ul>
+                              </li>
+                              <li>You are allowed to reuse work from external sources, subject to following conditions:
+                                <ul>
+                                  <li>The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.</li>
+                                  <li>You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely to get into trouble if you unintentionally reused something copyrighted.</li>
+                                  <li>You do not violate the license under which the work has been released. Please  <strong>do not use 3rd-party images/audio</strong> in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.</li>
+                                  <li><mark>Always get permission from us before you reuse</mark> third-party libraries. Please post your 'request to use 3rd party library' in our <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">forum</a>. That way, the whole class get to see what libraries are being used by others.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <tip-box>
+                              <h4 id="giving-credit-for-reused-work">Giving credit for reused work<a class="fa fa-anchor" href="#giving-credit-for-reused-work"></a></h4>
+                              <p>Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module <span class="dimmed"> i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)</span></p>
+                              <p>If you <strong>used a third party library</strong>:</p>
+                              <ul>
+                                <li>Mention in the <code>README.adoc</code> (under the <em>Acknowledgements</em> section)</li>
+                                <li>mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented</li>
+                              </ul>
+                              <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed"> e.g. from StackOverflow answers</span> or<br>
+                                <strong>referred code in another software</strong> or<br>
+                                <strong>referred project code by current/past student</strong>:</p>
+                              <ul>
+                                <li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
+                                  <span class="fas fa-cube"></span> Example:
+                                  <pre><code class="hljs java"><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span>
+{Your implmentation of the reused solution here ...}
+</code></pre>
+                                </li>
+                                <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed"> renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags"><code>@@author</code> tags</trigger>)<br>
+                                  Format:
+                                  <pre><code class="hljs java"><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span>
+<span class="hljs-comment">//{Info about the source...}</span>
+
+{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}
+
+<span class="hljs-comment">//@@author</span>
+</span></code></pre>
+                                  <span class="fas fa-cube"></span> Example of reusing a code snippet (with minor modifications):
+                                  <pre><code class="hljs java">persons = getList()
+<span class="hljs-comment">//@@author johndoe-reused</span>
+<span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span>
+Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{
+        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : (lhs.customInt &lt; rhs.customInt) ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
+    }
+});
+<span class="hljs-comment">//@@author</span>
+<span class="hljs-keyword">return</span> persons;
+</code></pre>
+                                </li>
+                              </ul>
+                            </tip-box>
+                            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
+                                <div>
+                                <h4 id="adding-%40%40author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-%40%40author-tags-indicate-authorship"></a></h4>
+                                <ul>
+                                  <li>
+                                    <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br>
+                                      The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
+                                      Here is a sample code file:</p>
+                                    <pre class="hljs"><code>//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author sarahkhoo
+method 3 ...
+//@@author johndoe
+method 4 ...
+</code></pre>
+                                  </li>
+                                  <li>
+                                    <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
+                                      Here is a sample code with an empty <code>author</code> tag:</p>
+                                    <pre class="hljs"><code>method 0 ...
+//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author
+method 3 ...
+method 4 ...
+</code></pre>
+                                  </li>
+                                  <li>
+                                    <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
+                                      Here is an example code from an xml/fxml file.</p>
+                                    <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
+&lt;textbox&gt;
+  &lt;label&gt;...&lt;/label&gt;
+  &lt;input&gt;...&lt;/input&gt;
+&lt;/textbox&gt;
+...
+</code></pre>
+                                  </li>
+                                  <li>
+                                    <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br>
+                                      👎<span class="fas fa-arrow-down"></span></p>
+                                    <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author johndoe
+  */
+</code></pre>
+                                    <p>👍<span class="fas fa-arrow-down"></span></p>
+                                    <pre class="hljs"><code>//@@author johndoe
+/**
+  * Returns true if ...
+  */
+</code></pre>
+                                  </li>
+                                </ul>
+                                <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate"></a></h4>
+                                <ul>
+                                  <li>
+                                    <p><strong>Annotate both functional and test code</strong> There is no need to annotate documentation files.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong> but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.</p>
+                                    <ul>
+                                      <li>If an enhancement required you to do tiny changes in many places, there is no need to annotate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
+                                      <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
+                                      <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
+                                      <li>💡 GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Do not try to boost the quantity of your contribution using unethical means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.
+                                      Individual members are responsible for making sure code attributed to them are correct.
+                                      If you notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
+                                    <ul>
+                                      <li>Create a folder called <code>{project root}/unused</code></li>
+                                      <li>Move unused files (or copies of files containing unused code) to that folder</li>
+                                      <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>)
+                                        e.g.</li>
+                                    </ul>
+                                    <pre class="hljs"><code>//@@author johndoe-unused
+method 1 ...
+method 2 ...
+</code></pre>
+                                    <p>Please put a comment in the code to explain why it was not used.</p>
+                                  </li>
+                                  <li>
+                                    <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>)
+                                      e.g.</p>
+                                    <pre class="hljs"><code>//@@author johndoe-reused
+method 1 ...
+method 2 ...
+</code></pre>
+                                  </li>
+                                  <li>
+                                    <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
+                                    <ul>
+                                      <li>
+                                        <p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim credit for them.</p>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </modal>
+                            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
+                                <div>
+                                <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
+                                <ul>
+                                  <li>
+                                    <p><strong>Objective:</strong></p>
+                                    <ul>
+                                      <li>For you to use <span class="dimmed"> (e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
+                                      <li>For us to use as a data point to evaluate your,
+                                        <ul>
+                                          <li>contributions to the project</li>
+                                          <li>your documentation skills</li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Sections to include:</strong></p>
+                                    <ul>
+                                      <li>
+                                        <p><strong>Overview</strong>: A short overview of your product to provide some context to the reader.</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Summary of Contributions</strong>:</p>
+                                        <ul>
+                                          <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
+                                          <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
+                                          <li><strong>Other contributions:</strong>
+                                            <ul>
+                                              <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
+                                              <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
+                                              <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
+                                            </ul>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <p><strong>Contributions to the User Guide</strong>: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
+                                          <span class="dimmed">The purpose of allowing you to include <em>proposed</em> features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Contributions to the Developer Guide</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
+                                      </li>
+                                      <li>
+                                        <p>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</p>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Format</strong>:</p>
+                                    <ul>
+                                      <li>
+                                        <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
+                                      </li>
+                                      <li>
+                                        <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
+                                      </li>
+                                      <li>
+                                        <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
+                                      </li>
+                                      <li>
+                                        <p><mark>
+                                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
+                                          </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <p><strong>Page limit</strong>:</p>
+                                    <div class="table-responsive">
+                                      <table class="markbind-table table table-bordered table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th>Content</th>
+                                            <th>Limit</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Overview + Summary of contributions</td>
+                                            <td>0.5-1 (soft limit)</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Contributions to the User Guide</td>
+                                            <td>1-3 (soft limit)</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Contributions to the Developer Guide</td>
+                                            <td>3-6 (soft limit)</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Total</td>
+                                            <td>5-10 <mark>(strict)</mark></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <ul>
+                                      <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                                      <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                                        If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                                        <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </modal>
+                          </div>
+                        </div>
+                      </div>
+                    </modal>
+                    <p><strong>Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> in your project up to v1.1.</strong> In particular,</p>
+                    <ul>
+                      <li><strong>Get team members to review PRs.</strong> A workflow without PR reviews is a risky workflow.</li>
+                      <li><strong>Do not merge PRs failing <tooltip content="Continuous Integration e.g., Travis">CI</tooltip>.</strong> After <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci">setting up Travis</a>, the CI status of a PR is reported at the bottom of the PR page. The screenshot below shows the status of a PR that is passing all CI checks. <br>
+                        <img src="/cs2103-website/admin/images/gitHubPrStatus.png" width="700"><br>
+                        <strong>If there is a failure</strong>, you can click on the <code>Details</code> link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.</li>
+                      <li>After <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingNetlify.html">setting up Netlify</a>, you can use <em>Netlify PR Preview</em> to preview changes to documentation files, if the PR contains updates to documentation. To see the preview, click on the <code>Details</code> link in front of the Netlify status reported (refer screenshot above).</li>
+                    </ul>
+                    <div id="workflow-after-v11">
+                      <p><strong>After completing v1.1, you can adjust process rigor to suit your team's pace,</strong> as explained below.</p>
+                      <ul>
+                        <li>
+                          <p><strong>Reduce automated tests</strong> have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
+                            It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
+                            There is no direct penalty for removing GUI tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.</p>
+                        </li>
+                        <li>
+                          <p><strong>Reduce automated checks</strong>: You can also reduce the rigor of checkstyle checks to expedite PR processing.</p>
+                        </li>
+                        <li>
+                          <p><strong>Switch to a lighter workflow</strong>: While <em>forking workflow</em> is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: <em>branching workflow</em>, <em>centralized workflow</em>. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.</p>
+                        </li>
+                      </ul>
+                      <p><strong>You can also increase the rigor/safety of your workflow</strong> in the following ways:</p>
+                      <ul>
+                        <li>Use GitHub's <a href="https://help.github.com/articles/about-protected-branches/"><em>Protected Branches</em></a> feature to protect your <code>master</code> branch against rogue PRs.</li>
+                      </ul>
+                      <modal title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Assessment → Expectation on testing" id="modal:appEworkflow-testingExpectations">
+                          <div>
+                          <ul>
+                            <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
+                            <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+                            <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
+                          </ul>
+                        </div>
+                      </modal>
+                    </div>
+                    <modal large="" title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:appErecommendedWorkflow-forkingworkflow">
+                        <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+                              </span></strong></span></p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="forking-flow"><span>Forking Flow</span><a class="fa fa-anchor" href="#forking-flow"></a></h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <img src="/cs2103-website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+                              <p></p>
+                              <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
+                              <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
+                              <ol>
+                                <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
+                                <li>Jean pushes the branch to her fork.</li>
+                                <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
+                                <li>Other members review Jean’s pull request.</li>
+                                <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
+                                <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
+                                <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own fork.</li>
+                              </ol>
+                            </div>
+                            <div>
+                              <div>
+                                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                                  <ul>
+                                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
+                                  </ul>
+                                </panel>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </modal>
+                  </div>
+                </modal>
+                <p>
+                  <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#workflow" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E(extract): **Workflow**  <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="workflow"></panel>
+                </p>
+              </div>
+            </div>
+            <div id="documentation">
+              <p><strong><big>Documentation:</big></strong></p>
+              <tip-box>
+                <p><strong>Recommended procedure for updating docs</strong>:</p>
+                <ol>
+                  <li>Divide among yourselves who will update which parts of the document(s).</li>
+                  <li>Update the team repo by following the workflow mentioned above.</li>
+                </ol>
+              </tip-box>
+              <div class="indented">
+                <p>Update the following pages in your project repo:</p>
+              </div>
+              <ul>
+                <li><strong><em>About Us</em> page</strong>:
+                  This page is used for module admin purposes. <mark>Please follow the format closely</mark> or else our scripts will not be able to give credit for your work.
+                  <ul>
+                    <li>Replace info of SE-EDU developers with info of your team, including a <mark>suitable photo</mark> as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.</li>
+                    <li>Including the name/photo of the supervisor/lecturer is optional.</li>
+                    <li>The photo of a team member should be <code>doc/images/githbub_username_in_lower_case.png</code> <span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>. <mark>If you photo is in jpg format, name the file as <code>.png</code> anyway</mark>.</li>
+                    <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities <span class="dimmed">(as explained in Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope)</span></trigger> later in the project, if necessary.</li>
+                  </ul>
+                </li>
+              </ul>
+              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" id="modal:mid-v12-photo">
+                  <div>
+                  <ul>
+                    <li>
+                      <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
+                        <img src="/cs2103-website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+                    </li>
+                    <li>
+                      <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you can request permission to omit your photo from the page by writing to prof.</p>
+                    </li>
+                  </ul>
+                </div>
+              </modal>
+              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
+                  <div>
+                  <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+                  <panel type="seamless" header="<span class='fas fa-cube'></span> Recommended roles and responsibilities">
+                    <p>This is a non-exhaustive list; you may define additional roles.</p>
+                    <ul>
+                      <li><em>Team lead</em>: Responsible for overall project coordination.</li>
+                      <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+                      <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+                      <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+                      <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+                      <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+                      <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+                      <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
+                      <li><em>In charge of[Component XYZ]</em>: <span class="dimmed">e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc.</span> If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.4.</li>
+                    </ul>
+                  </panel>
+                  <p></p>
+                  <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.</p>
+                </div>
+              </modal>
+              <ul>
+                <li>
+                  <p><strong><em>Contact Us</em> Page</strong>: Update to match your product.</p>
+                </li>
+                <li>
+                  <p><strong>README.adoc</strong> page: Update it to match your project.</p>
+                  <ul>
+                    <li>
+                      <p>Add a UI mockup of your intended final product.<br>
+                        Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same <code>height x width</code> proportions as the original one. <span class="dimmed">Reason: when we compile these images from all teams into one page (<a href="https://nus-cs2103-ay1819s1.github.io/cs2103-website/admin/projectList.html">example</a>), yours should not look out of place.</span></p>
+                    </li>
+                    <li>
+                      <p>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should <mark>restructure this page to look like the home page of a real product</mark> (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span> On a related note, also remove <code>Learning Outcomes</code> link and related pages.</p>
+                    </li>
+                    <li>
+                      <p>Update the link of the Travis <em>build status badge</em> (<img src="https://travis-ci.org/se-edu/addressbook-level4.svg?branch=master" alt="Build Status">) so that it reflects the build status of your team repo.<br>
+                        For the other badges,</p>
+                      <ul>
+                        <li>either set up the respective tool for your project (AB-4 Developer Guide has instructions on how to set up AppVeyor and Coveralls) and update the badges accordingly,</li>
+                        <li>or remove the badge.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>User Guide</strong>: Start moving the content from your User Guide (draft created in previous weeks) into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code">example</a>).</p>
+                </li>
+                <li>
+                  <p><strong>Developer Guide</strong>: Similar to the User Guide, start moving the content from your Developer Guide (draft created in previous weeks) into the Developer Guide page in your team repository.</p>
+                </li>
+              </ul>
+              <p><strong><big>Product:</big></strong></p>
+              <ul>
+                <li>
+                  <p>Each member can attempt to do a <tooltip content="a change impacting only one component">local-impact</tooltip> change to the code base.</p>
+                  <p><strong>Objective</strong>: To familiarize yourself with at least one <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> of the product.</p>
+                  <p><strong>Description</strong>: Divide the components among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the <a href="https://nus-cs2103-AY1819S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component">AddressBook-Level4 developer guide</a>.</p>
+                  <p><strong>Submission</strong>: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.</p>
+                </li>
+              </ul>
+            </div>
+            <p></p>
+          </div>
+        </div>
+        <br>
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w05-v10.html">Project: v1.0 [week 5]</a></span></span><span style="float:right"><span><a href="project-w07-v11.html">Project: v1.1 [week 7] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/cs2103-website'
+</script>
+<script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\layouts\default\scripts.js"></script>
+</html>

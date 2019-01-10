@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - UML: Class Diagrams: Associations</title>
+    <title>CS2103/T Website - UML: Class Diagrams: Associations</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\font-awesome.min.css" >
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="..\..\..\..\markbind\layouts\default\styles.css">
     
     
-    <link rel="icon" href="/2019/favicon.ico">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
 </head>
 <body>
 <div id="app">
@@ -29,7 +29,7 @@
     </navbar>
   </div>
   <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
+    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
     <div class="website-content" id="all">
       <p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams →
             </span></strong></span></p>
@@ -52,11 +52,11 @@
                 <p></p>
                 <div>
                   <p>We use a solid line to show an association between two classes.</p>
-                  <img src="/2019/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
+                  <img src="/cs2103-website/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
                   <p></p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
-                      <img src="/2019/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
+                      <img src="/cs2103-website/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
                   </tip-box>
                 </div>
                 <div></div>
@@ -79,7 +79,7 @@
                   <p><strong>We use arrow heads to indication the navigability of an association.</strong></p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> <code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p>
-                    <img src="/2019/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
                     <div>
                       <div class="alt-java">
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
@@ -107,13 +107,13 @@
                     </div>
                     <p><span class="fas fa-cube"></span> Here is an example of a bidirectional navigability; each class is aware of the other.</p>
                     <p></p>
-                    <img src="/2019/book/uml/classDiagrams/associations/navigability/images/manDog.png" height="40">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/manDog.png" height="40">
                     <p></p>
                   </tip-box>
                   <p><strong>Navigability can be shown in class diagrams as well as object diagrams</strong>.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> According to this object diagram the given <code>Logic</code> object is associated with and aware of two <code>MineField</code> objects.</p>
-                    <img src="/2019/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80">
                   </tip-box>
                 </div>
                 <div>
@@ -122,7 +122,7 @@
                       <div>
                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does the navigability given by this diagram mean?">
                           <question>
-                            <img src="/2019/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
+                            <img src="/cs2103-website/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
                             <p></p>
                             <ul radio-group="9b3ad" class="radio-list">
                               <li class="radio-list-item"><label><input class="radio-list-input" name="9b3ad" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
@@ -156,10 +156,10 @@
                 <p></p>
                 <div>
                   <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p>
-                  <img src="/2019/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
+                  <img src="/cs2103-website/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
                   <tip-box>
                     <p><span class="fas fa-cube"></span> This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and <code>wife</code>.</p>
-                    <img src="/2019/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
                     <p></p>
                     <p>Note how the variable names match closely with the association roles.</p>
                     <table>
@@ -194,7 +194,7 @@
                   </tip-box>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The role of <code>Student</code> objects in this association is <code>charges</code> <span class="dimmed">(i.e. Admin is in charge of students)</span></p>
-                    <img src="/2019/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
                     <p></p>
                     <table>
                       <tr>
@@ -237,10 +237,10 @@
                 <p></p>
                 <div>
                   <p><strong><em>Association labels</em> describe the meaning of the association.</strong> The arrow head indicates the direction in which the label is to be read.</p>
-                  <img src="/2019/book/uml/classDiagrams/associations/labels/images/notation.png" width="400">
+                  <img src="/cs2103-website/book/uml/classDiagrams/associations/labels/images/notation.png" width="400">
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In this example, the same association is described using two different labels.</p>
-                    <img src="/2019/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
                     <p></p>
                     <ul>
                       <li>Diagram on the left: <code>Admin</code> class is associated with <code>Student</code> class because an <code>Admin</code> object <em>uses</em> a <code>Student</code> object.</li>
@@ -265,7 +265,7 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
+                  <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
                   <p></p>
                   <p>Commonly used multiplicities:</p>
                   <ul>
@@ -276,7 +276,7 @@
                   </ul>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code> object</p>
-                    <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300">
                   </tip-box>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the diagram below,</p>
@@ -286,7 +286,7 @@
                       <li>An admin can handle any number of professors and any number of students, including none.</li>
                       <li>A professor/student can be handled by any number of admins, including none.</li>
                     </ul>
-                    <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70">
+                    <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70">
                   </tip-box>
                 </div>
                 <div>
@@ -295,7 +295,7 @@
                       <div>
                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which statement agrees with the  multiplicity shown in this diagram?">
                           <question>
-                            <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
+                            <img src="/cs2103-website/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
                             <p></p>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
@@ -323,7 +323,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -332,7 +332,7 @@
 <script src="..\..\..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
+    const baseUrl = '/cs2103-website'
 </script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 <script src="..\..\..\..\markbind\layouts\default\scripts.js"></script>

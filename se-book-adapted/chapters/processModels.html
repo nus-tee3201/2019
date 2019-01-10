@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter : SDLC Process Models</title>
+    <title>CS2103/T Website - Textbook Chapter : SDLC Process Models</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -21,21 +21,30 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <link rel="icon" href="/2019/favicon.ico">
+    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
 </head>
 <body>
 <div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
       <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
           <i class="dropdown-btn-icon">
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
+          <i class="dropdown-btn-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
           </ul>
         </div>
       </li>
@@ -44,9 +53,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/requirements.html">Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/requirements.html">Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
           </ul>
         </div>
       </li>
@@ -55,10 +64,12 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/design.html">Software Design</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/architecture.html">Software Architecture</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></li>
           </ul>
         </div>
       </li>
@@ -67,13 +78,13 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html">Reuse</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/integration.html">Integration</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/reuse.html">Reuse</a></li>
           </ul>
         </div>
       </li>
@@ -82,9 +93,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testing.html">Testing</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/testing.html">Testing</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
           </ul>
         </div>
       </li>
@@ -93,10 +104,19 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
+          <i class="dropdown-btn-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/principles.html">Principles</a></li>
           </ul>
         </div>
       </li>
@@ -105,7 +125,11 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/javaTools.html">Java</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/junit.html">JUnit</a></li>
           </ul>
         </div>
       </li>
@@ -114,8 +138,9 @@
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html">List of Definitions</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/common/definitions.html">List of Definitions</a></li>
           </ul>
         </div>
       </li>
@@ -130,37 +155,47 @@
   </div>
   <div id="page-content">
     <div id="content-wrapper">
-      <link rel="stylesheet" href="/2019/book/css/textbook.css">
+      <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
       <div class="website-content">
         <div>
           <navbar placement="top" type="inverse">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+            <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
             <dropdown text="Schedule" class="nav-link">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+              <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+              <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
             </dropdown>
-            <dropdown text="Textbook" class="nav-link">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+            <li><a href="/cs2103-website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+            <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
             <dropdown text="Links" class="nav-link">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+              <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+              <li><a href="/cs2103-website/admin/project-overview.html" class="dropdown-item"><span class="fas fa-drafting-compass"></span> Project Info</a></li>
+              <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+              <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+              <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+              <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+              <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+              <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
+              <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
@@ -205,7 +240,7 @@
               <p></p>
               <div>
                 <p><strong>The <em>sequential model</em>, also called the <em>waterfall</em> model, models software development as a linear process</strong>, in which the project is seen as progressing steadily in one direction through the development stages. The name <em>waterfall</em> stems from how the model is drawn to look like a waterfall (see below).</p>
-                <img src="/2019/book/processModels/introduction/sequentialModels/images/diagram.png" height="180">
+                <img src="/cs2103-website/book/processModels/introduction/sequentialModels/images/diagram.png" height="180">
                 <p></p>
                 <p><strong>When one stage of the process is completed, it should produce some artifacts to be used in the next stage.</strong> For example, upon completion of the requirement stage a comprehensive list of requirements is produced that will see no further modifications. A strict application of the sequential model would require each stage to be completed before starting the next.</p>
                 <p><strong>This could be a useful model when the problem statement that is well-understood and stable.</strong> In such cases, using the sequential model should result in a timely and systematic development effort, provided that all goes well. As each stage has a well-defined outcome, the progress of the project can be tracked with a relative ease.</p>
@@ -224,7 +259,7 @@
               <p></p>
               <div>
                 <p><strong>The iterative model (sometimes called <em>iterative</em> and <em>incremental</em>) advocates having several <em>iterations</em> of SDLC.</strong> Each of the iterations could potentially go through all the development stages, from requirement gathering to testing &amp; deployment. Roughly, it appears to be similar to several cycles of the sequential model.</p>
-                <img src="/2019/book/processModels/introduction/iterativeModels/images/diagram.png" height="300">
+                <img src="/cs2103-website/book/processModels/introduction/iterativeModels/images/diagram.png" height="300">
                 <p></p>
                 <p><strong>In this model, each of the iterations produces a new version of the product.</strong> Feedback on the version can then be fed to the next iteration. Taking the Minesweeper game as an example, the iterative model will deliver a fully playable version from the early iterations. However, the first iteration will have primitive functionality, for example, a clumsy text based UI, fixed board size, limited randomization etc. These functionalities will then be improved in later releases.</p>
                 <p><strong>The iterative model can take a <em>breadth-first</em> or a <em>depth-first</em> approach to iteration planning.</strong></p>
@@ -314,7 +349,7 @@
                   <p><strong>XP emphasizes teamwork.</strong> Managers, customers, and developers are all equal partners in a collaborative team. XP implements a simple, yet effective environment enabling teams to become highly productive. The team self-organizes around the problem to solve it as efficiently as possible.</p>
                   <p><strong>XP aims to improve a software project in five essential ways: communication, simplicity, feedback, respect, and courage.</strong> Extreme Programmers constantly communicate with their customers and fellow programmers. They keep their design simple and clean. They get feedback by testing their software starting on day one. Every small success deepens their respect for the unique contributions of each and every team member. With this foundation, Extreme Programmers are able to courageously respond to changing requirements and technology.</p>
                   <p><strong>XP has a set of simple rules.</strong> XP is a lot like a jig saw puzzle with many small pieces. Individually the pieces make no sense, but when combined together a complete picture can be seen. This flow chart shows how Extreme Programming's rules work together.</p>
-                  <img src="/2019/book/processModels/exampleProcessModels/xp/images/diagram.png" height="200">
+                  <img src="/cs2103-website/book/processModels/exampleProcessModels/xp/images/diagram.png" height="200">
                   <p></p>
                 </tip-box>
                 <p><strong><em>Pair programming, CRC cards, project velocity</em>, and <em>standup meetings</em> are some interesting topics related to XP.</strong> Refer to <a href="http://extremeprogramming.org">extremeprogramming.org</a> to find out more about XP.</p>
@@ -344,7 +379,7 @@
                   <p><strong>During each sprint, the team creates a potentially deliverable product increment</strong> (for example, working and tested software). The set of features that go into a sprint come from the product backlog, which is a prioritized set of high level requirements of work to be done. Which backlog items go into the sprint is determined during the sprint planning meeting. During this meeting, the Product Owner informs the team of the items in the product backlog that he or she wants completed. The team then determines how much of this they can commit to complete during the next sprint, and records this in the sprint backlog. During a sprint, no one is allowed to change the sprint backlog, which means that the requirements are frozen for that sprint. Development is timeboxed such that the sprint must end on time; if requirements are not completed for any reason they are left out and returned to the product backlog. After a sprint is completed, the team demonstrates the use of the software.</p>
                   <p><strong>Scrum enables the creation of self-organizing teams by encouraging co-location of all team members</strong>, and verbal communication between all team members and disciplines in the project.</p>
                   <p><strong>A key principle of Scrum is its recognition that during a project the customers can change their minds about what they want and need</strong> (often called requirements churn), and that unpredicted challenges cannot be easily addressed in a traditional predictive or planned manner. As such, Scrum adopts an empirical approach—accepting that the problem cannot be fully understood or defined, focusing instead on maximizing the team’s ability to deliver quickly and respond to emerging requirements.</p>
-                  <img src="/2019/book/processModels/exampleProcessModels/scrum/images/diagram.png" height="250">
+                  <img src="/cs2103-website/book/processModels/exampleProcessModels/scrum/images/diagram.png" height="250">
                   <p></p>
                 </tip-box>
                 <p><strong><em>Daily Scrum</em> is another key scrum practice</strong>. The description below was adapted from <a href="https://www.mountaingoatsoftware.com/agile/scrum/meetings/daily-scrum">https://www.mountaingoatsoftware.com</a> (emphasis added):</p>
@@ -451,7 +486,7 @@
                     </td>
                   </tr>
                 </table>
-                <img src="/2019/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png" height="280">
+                <img src="/cs2103-website/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png" height="280">
                 <p></p>
                 <p>Given above is a visualization of a project done using the Unified process (source: Wikipedia). As the diagram shows, a phase can consist of several iterations. Each vertical column (labeled “I1” “E1”, “E2”, “C1”, etc.) represents a single iteration. Each of the iterations consists of a set of ‘workflows’ such as ‘Business modeling’, ‘Requirements’, ‘Analysis &amp; Design’ etc. The shaded region indicates the amount of resource and effort spent on a particular workflow in a particular iteration.</p>
                 <p><strong>Unified process is a flexible and customizable process model framework rather than a single fixed process.</strong> For example, the number of iterations in each phase, definition of workflows, and the intensity of a given workflow in a given iteration can be adjusted according to the nature of the project. Take the Construction Phase, to develop a simple system, one or two iterations would be sufficient. For a more complicated system, multiple iterations will be more helpful. Therefore, the diagram above simply records a particular application of the UP rather than prescribe how the UP is to be applied. However, this record can be refined and reused for similar future projects.</p>
@@ -501,10 +536,191 @@
                   <p>CMMI (Capability Maturity Model Integration) is a process improvement approach defined by Software Engineering Institute at Carnegie Melon University. CMMI provides organizations with the essential elements of effective processes, which will improve their performance. <sub>-- adapted from <a href="http://www.sei.cmu.edu/cmmi/">http://www.sei.cmu.edu/cmmi/</a></sub></p>
                 </tip-box>
                 <p><strong>CMMI defines five maturity levels for a process and provides criteria to determine if the process of an organization is at a certain maturity level.</strong> The diagram below [taken from Wikipedia] gives an overview of the five levels.</p>
-                <img src="/2019/book/processModels/more/cmmi/images/diagram.png" height="250">
+                <img src="/cs2103-website/book/processModels/more/cmmi/images/diagram.png" height="250">
                 <p></p>
               </div>
               <div></div>
+            </div>
+          </panel>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title">
+            <div>
+              <h2 id="summary"><span>Summary</span><a class="fa fa-anchor" href="#summary"></a></h2>
+            </div>
+          </span>
+          <panel type="seamless" header="#### Recap<a class='fa fa-anchor' href='#recap'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain process models at a higher level</span></span></span></span>
+              <p></p>
+              <div>
+                <p>This section has some exercise that cover multiple topics related to SDLC process models.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Sequential vs iterative approach">
+                        <question has-input="true">
+                          <p>Discuss how sequential approach and the iterative approach can affect the following aspects of a project.</p>
+                          <p>a) Quality of the final product.</p>
+                          <p>b) Risk of overshooting the deadline.</p>
+                          <p>c) Total project cost.</p>
+                          <p>d) Customer satisfaction.</p>
+                          <p>e) Monitoring the project progress.</p>
+                          <p>f) Suitability for a school project</p>
+                          <div slot="answer">
+                            <p>a) Quality of the final product:</p>
+                            <ul>
+                              <li>Iterative: Frequent reworking can deteriorate the design. Frequent refactoring should be used to prevent this. Frequent customer feedback can help to improve the quality (i.e. quality as seen by the customer).</li>
+                              <li>Sequential: Final quality depends on the quality of each phase. Any quality problem in any phase could result in a low quality product.</li>
+                            </ul>
+                            <p>b) Risk of overshooting the deadline.</p>
+                            <ul>
+                              <li>Iterative: Less risk. If the last iteration got delayed, we can always deliver the previous version. However, this does not guarantee that all features promised at the beginning will be delivered on the deadline.</li>
+                              <li>Sequential: High risk. Any delay in any phase can result in overshooting the deadline with nothing to deliver.</li>
+                            </ul>
+                            <p>c) Total project cost.</p>
+                            <ul>
+                              <li>Iterative: We can always stop before the project budget is exceeded. However, this does not guarantee that all features promised at the beginning will be delivered under the estimated cost. (The sequential model requires us to carry on even if the budget is exceeded because there is no intermediate version to fall back on).</li>
+                            </ul>
+                            <p>Iterative reworking of existing artifacts could add to the cost. However, this is “cheaper” than finding at the end that we built the wrong product.</p>
+                            <p>d) Customer satisfaction</p>
+                            <ul>
+                              <li>Iterative: Customer gets many opportunities to guide the product in the direction he wants. Customer gets to change requirements even in the middle of the product. Both these can increase the probability of customer satisfaction.</li>
+                              <li>Sequential: Customer satisfaction is guaranteed only if the product was delivered as promised and if the initial requirements proved to be accurate. However, the customer is not required to do the extra work of giving frequent feedback during the project.</li>
+                            </ul>
+                            <p>e) Monitoring project progress</p>
+                            <ul>
+                              <li>Iterative: Hard to measure progress against a plan, as the plan itself keeps changing.</li>
+                              <li>Sequential: Easier to measure progress against the plan, although this does not ensure eventual success.</li>
+                            </ul>
+                            <p>f) Suitability for a school project:</p>
+                            <p>Reasons to use iterative:</p>
+                            <ul>
+                              <li>Requirements are not fixed.</li>
+                              <li>Overshooting the deadline is not an option.</li>
+                              <li>Gives a chance to learn lessons from one iteration and apply them in the next.</li>
+                            </ul>
+                            <p>Sequential:</p>
+                            <ul>
+                              <li>Can save time because we minimize rework.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Agile processes, Pair programming, Test-driven development">
+                        <question has-input="true">
+                          <p>Find out more about the following three topics and give at least three arguments for and three arguments against each.</p>
+                          <p>(a) Agile processes</p>
+                          <p>(b) Pair programming</p>
+                          <p>(c) Test-driven development</p>
+                          <div slot="answer">
+                            <p>(a) Arguments in favor of agile processes:</p>
+                            <ul>
+                              <li>More focus on customer satisfaction.</li>
+                              <li>Less chance of building the wrong product (because of frequent customer feedback).</li>
+                              <li>Less resource wasted on bureaucracy, over-documenting, contract negotiations.</li>
+                            </ul>
+                            <p>Arguments against agile processes (not necessarily true):</p>
+                            <ul>
+                              <li>It is ‘just hacking’. Not very systematic. No discipline.</li>
+                              <li>It is hard to know in advance the exact final product.</li>
+                              <li>It does not give enough attention to documentation.</li>
+                              <li>Lack of management control (gives too much freedom to developers)</li>
+                            </ul>
+                            <p>(b) Arguments in favor of pair programming:</p>
+                            <ul>
+                              <li>It could produce better quality code.</li>
+                              <li>It is good to have more than one person know about any piece of code.</li>
+                              <li>It is a way to learn from each other.</li>
+                              <li>It can be used to train new programmers.</li>
+                              <li>Better discipline and better time management (e.g. less likely to play Farmville while working).</li>
+                              <li>Better morale due to more interactions with co-workers.</li>
+                            </ul>
+                            <p>Arguments against pair programming:</p>
+                            <ul>
+                              <li>Increase in total man hours required</li>
+                              <li>Personality clashes between pair-members</li>
+                              <li>Workspaces need to be adapted to suit two developers working at one computer.</li>
+                              <li>If pairs are rotated, one needs to know more parts of the system than in solo programming</li>
+                            </ul>
+                            <p>(c) Arguments in favor of TDD:</p>
+                            <ul>
+                              <li>Testing will not be neglected due to time pressure (because it is done first).</li>
+                              <li>Forces the developer to think about what the component should be before jumping into implementing it.</li>
+                              <li>Optimizes programmer effort (i.e. if all tests pass, there is no need to add any more functionality).</li>
+                              <li>Forces us to automate all tests.</li>
+                            </ul>
+                            <p>Arguments against TDD (not necessarily true):</p>
+                            <ul>
+                              <li>Since tests can be seen as ‘executable specifications’, programmers tend to neglect others forms of documentation.</li>
+                              <li>Promotes ‘trial-and-error’ coding instead of making programmers think through their algorithms (i.e. ‘just keep hacking until all tests pass’).</li>
+                              <li>Gives a false sense of security. (what if you forgot to test certain scenarios?)</li>
+                            </ul>
+                            <p>Not intuitive. Some programmer might resist adopting TDD.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> the two basic process models">
+                        <question>
+                          <p>The sequential model and the waterfall model are the two most basic process models.</p>
+                          <ul radio-group="44ac6" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="44ac6" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="44ac6" type="radio"> False</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>False</p>
+                            <p>Explanation: The sequential model and the waterfall model are the same thing. The second basic model is the iterative model.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about sequential and iterative process models">
+                        <question>
+                          <p>Choose the correct statements about the sequential and iterative process models.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The sequential model organizes the project based on activities.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The iterative and incremental model organizes the project based on functionality.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The iterative model can be breadth-first or depth-first.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The iterative model is always better than the sequential model.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Compared to the sequential model, the iterative model is better at adapting to changing requirements.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)(b)(c)<s>(d)</s>(e)</p>
+                            <p>Explanation: Both models have pros and cons. There is no definitive ‘better’ choice between the two. However, the iterative model works better in typical software projects than a purely sequential approach.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Risk of overshooting a deadline">
+                        <question>
+                          <p>In general, which has a higher risk of overshooting a deadline?</p>
+                          <ul radio-group="2ba69" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> a. The iterative process.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> b. The sequential process.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> c. The risk is similar.</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(b)</p>
+                            <p>Explanation: An iterative process can meet a deadline better than a sequential process. If the last iteration got delayed, we can always deliver the previous version. However, this does not guarantee that all features promised at the beginning will be delivered on the deadline.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
             </div>
           </panel>
         </panel>
@@ -515,7 +731,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Sun, 06 Jan 2019 15:06:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -524,7 +740,7 @@
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
+    const baseUrl = '/cs2103-website'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 <script src="..\..\markbind\layouts\default\scripts.js"></script>
