@@ -10,7 +10,7 @@ for variable_used_as_index in range(number_of_times_to_repeat) :
 
 <tip-box>
 
-:package: the code below use a `for` loop to iterate three times. Note how the variable `i` is used as an indexing variable and how `i in range(3)` causes `i` to take values `0, 1, 2` over the three iterations. 
+{{ icon_example }} the code below use a `for` loop to iterate three times. Note how the variable `i` is used as an indexing variable and how `i in range(3)` causes `i` to take values `0, 1, 2` over the three iterations.
 
 <table>
 <tr>
@@ -62,7 +62,7 @@ while i < 3:
 
 <tip-box> 
 
-:package: The code below totals the numbers entered by the user. It uses `range(5)` to limit the number of entries to 5. It uses a `break` to exit the loop if user hits <kbd>Enter</kbd> without entering a value. It uses a `continue` statement to skip negative numbers entered by the user.
+{{ icon_example }} The code below totals the numbers entered by the user. It uses `range(5)` to limit the number of entries to 5. It uses a `break` to exit the loop if user hits <kbd>Enter</kbd> without entering a value. It uses a `continue` statement to skip negative numbers entered by the user.
 
 
 ```python
@@ -106,7 +106,7 @@ print('Grand total of non-negative numbers:', str(total))
 
 <tip-box> 
 
-:package: The code below use two nested `for` loops to print multiplication tables for 2, 3, and 4.
+{{ icon_example }} The code below use two nested `for` loops to print multiplication tables for 2, 3, and 4.
 
 
 ```python

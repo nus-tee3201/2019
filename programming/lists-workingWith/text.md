@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: Some example of slicing to get a sub list:
+{{ icon_example }} Some example of slicing to get a sub list:
   
 ```python
 letters = ['0a', '1b', '2c', '3d', '4e']
@@ -37,7 +37,7 @@ Note that slicing gives you a _copy_ of a portion of the original list i.e., you
 
 <tip-box> 
 
-:package: In the example below, the first item `0a` of the list `letters` is deleted after taking the first two elements as a sub list. Note how the item `0a` still remains in the sub list after it has been deleted from the original list.
+{{ icon_example }} In the example below, the first item `0a` of the list `letters` is deleted after taking the first two elements as a sub list. Note how the item `0a` still remains in the sub list after it has been deleted from the original list.
   
 ```python
 letters = ['0a', '1b', '2c', '3d', '4e']
@@ -78,7 +78,7 @@ sub list     : ['0a', '1b']
 
 <tip-box>
 
-:package: The code below shows how to use `del` to delete items in a list.
+{{ icon_example }} The code below shows how to use `del` to delete items in a list.
 
 <table>
 <tr>

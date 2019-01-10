@@ -17,7 +17,7 @@ Some mutable types| &nbsp; | &nbsp; | &nbsp;
 
 <tip-box> 
 
-:package: In the example below, `i = 5` assigns an integer to `i`. Because integers are immutable, `i = i + 1` is not mutating the integer object `5`; rather, it is simply creating a new integer object `6` and assigning that to `i`. Similarly, `s = s + '  World!'` is not adding more letters to the existing string object `Hello`; ratehr, it is creating a new string object `'Hello World!'` and assigning that to `s`.
+{{ icon_example }} In the example below, `i = 5` assigns an integer to `i`. Because integers are immutable, `i = i + 1` is not mutating the integer object `5`; rather, it is simply creating a new integer object `6` and assigning that to `i`. Similarly, `s = s + '  World!'` is not adding more letters to the existing string object `Hello`; ratehr, it is creating a new string object `'Hello World!'` and assigning that to `s`.
 
 ```python
 i = 5
@@ -38,7 +38,7 @@ However, lists are mutable. Therefore, `numbers[0] = 4` is changing the existing
 
 <tip-box> 
 
-:package: The variable `spam` is bound to the object reference `57207444` which is the memory location of the list object `[0, 1, 2, 3, 4, 5]`. i.e., `spam` is pointing to the object `[0, 1, 2, 3, 4, 5]` using the object reference `57207444`.
+{{ icon_example }} The variable `spam` is bound to the object reference `57207444` which is the memory location of the list object `[0, 1, 2, 3, 4, 5]`. i.e., `spam` is pointing to the object `[0, 1, 2, 3, 4, 5]` using the object reference `57207444`.
 
 ```python
 spam = [0, 1, 2, 3, 4, 5]
@@ -52,7 +52,7 @@ spam = [0, 1, 2, 3, 4, 5]
 
 <tip-box> 
 
-:package: Continuing with the previous example, `cheese = spam` results in the object reference stored in `spam` being copied into the variable `cheese`. The end result is both variables are now pointing to the same list object.
+{{ icon_example }} Continuing with the previous example, `cheese = spam` results in the object reference stored in `spam` being copied into the variable `cheese`. The end result is both variables are now pointing to the same list object.
 
 ```python
 cheese = spam
@@ -123,7 +123,7 @@ cheese is: 6
 
 <tip-box> 
 
-:package: In the `foo` function below, when `foo(original)` is executed, the object reference of the argument `original` is copied to the parameter `items`.  Now the function is able to modify the list object now being pointed to by both `original` and `items`, and the changes remain in the list even after the function has finished.
+{{ icon_example }} In the `foo` function below, when `foo(original)` is executed, the object reference of the argument `original` is copied to the parameter `items`.  Now the function is able to modify the list object now being pointed to by both `original` and `items`, and the changes remain in the list even after the function has finished.
 
 <table> 
 <tr>
@@ -199,7 +199,7 @@ If the argument passed to a function is of an immutable type, the function recei
 
 <tip-box> 
 
-:package: In this example, the function `increment(age)` is given an immutable object `25` as the argument. Although the parameter `v` that received the argument is assigned a new object (i.e., `v = v + 1`) inside the function, that change is not reflected in the argument `age`. That is because `v` is given a reference to a _copy_ of `age`, not a reference to the actual object in `age`. 
+{{ icon_example }} In this example, the function `increment(age)` is given an immutable object `25` as the argument. Although the parameter `v` that received the argument is assigned a new object (i.e., `v = v + 1`) inside the function, that change is not reflected in the argument `age`. That is because `v` is given a reference to a _copy_ of `age`, not a reference to the actual object in `age`.
 
 <table> 
 <tr>

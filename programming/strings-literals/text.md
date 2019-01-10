@@ -29,7 +29,7 @@ You can **use a pair of triple quotes to indicate a multi-line string literal**.
 
 <tip-box> 
 
-:package: Here is an example multi-line string that uses triple quotes.
+{{ icon_example }} Here is an example multi-line string that uses triple quotes.
 
 <table> 
 <tr>
@@ -95,7 +95,7 @@ It is optional to escape `'` and `"` inside a mult-line string within triple quo
 
 <tip-box> 
 
-:package: The `remove_head(items)` function below has a docstring that explains its behavior.
+{{ icon_example }} The `remove_head(items)` function below has a docstring that explains its behavior.
 
 ```python
 def remove_head(items):

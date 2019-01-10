@@ -12,7 +12,7 @@ After that, to install a third-party module (or _packages_ as they are sometimes
 
 <tip-box> 
 
-:package: The example below shows how to install the `colorama` module that allows you to colorize text printed out to the console.
+{{ icon_example }} The example below shows how to install the `colorama` module that allows you to colorize text printed out to the console.
 
 ```bash
 pip install colorama

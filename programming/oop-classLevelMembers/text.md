@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: The `Student` class below has one class-level attribute `total_students`. As it is meant to track the total number of `Student` objects created, it is incremented in the `__init__()` method. `course_count` and `name` are instance-level attributes.
+{{ icon_example }} The `Student` class below has one class-level attribute `total_students`. As it is meant to track the total number of `Student` objects created, it is incremented in the `__init__()` method. `course_count` and `name` are instance-level attributes.
 
 ```python
 class Student:
@@ -45,7 +45,7 @@ Ben course count: 0
 
 <tip-box> 
 
-:package: The `Printer` class below has a class-level attribute `enabled` and class-level methods `enable()` and `disable()`.
+{{ icon_example }} The `Printer` class below has a class-level attribute `enabled` and class-level methods `enable()` and `disable()`.
 
 ```python
 class Printer:

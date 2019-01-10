@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: Here is the content of a simple CSV file %%(click [here](deliveries.csv) to download a copy)%% and how it looks like when opened in Excel.
+{{ icon_example }} Here is the content of a simple CSV file %%(click [here](deliveries.csv) to download a copy)%% and how it looks like when opened in Excel.
 
 <table> 
 <tr>
@@ -31,7 +31,7 @@
 
 <tip-box> 
 
-:package: This example shows how to use double quotes to handle commas inside a value:
+{{ icon_example }} This example shows how to use double quotes to handle commas inside a value:
 
 * `7/11/2017,"Foo, Emily",5` interpreted as three values: `7/11/2017` and `Foo, Emily` and `5`
 * `7/11/2017,Foo, Emily,5` interpreted as four values: `7/11/2017` and `Foo` and ` Emily` and `5`
@@ -42,7 +42,7 @@ Although CSV files are text files that can be read/written using normal file acc
 
 <tip-box> 
 
-:package: The code below shows how to use the `csv` module to read contents of a CSV file named `deliveries.csv`:
+{{ icon_example }} The code below shows how to use the `csv` module to read contents of a CSV file named `deliveries.csv`:
 
 ```python
 import csv 
@@ -86,7 +86,7 @@ Note that all values read from a CSV files come as strings. If they are meant to
 
 <tip-box> 
 
-:package: In this example the 3rd value of each row is converted to an int before adding them up.
+{{ icon_example }} In this example the 3rd value of each row is converted to an int before adding them up.
 
 ```python
 deliveries_file = open('deliveries.csv') 
@@ -110,7 +110,7 @@ Total quantity delivered: 34
 
 <tip-box> 
 
-:package: The code below writes two rows to the `pricelist.csv` file.
+{{ icon_example }} The code below writes two rows to the `pricelist.csv` file.
 
 ```python
 output_file = open('pricelist.csv', 'w', newline='') # open file in write mode

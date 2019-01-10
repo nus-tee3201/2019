@@ -23,11 +23,11 @@ siteNav: programming-sitenav.md
 
 # Lists
 
-<include src="../lists-intro/text.md" /><hr><hr>
-<include src="../objectReferences/text.md" /><hr><hr>
-<include src="../lists-workingWith/text.md" /><hr><hr>
-<include src="../methods/text.md" /><hr><hr>
-<include src="../lists-methods/text.md" /><hr><hr>
+<include src="../lists-intro/text.md" />{{ hr_double }}
+<include src="../objectReferences/text.md" />{{ hr_double }}
+<include src="../lists-workingWith/text.md" />{{ hr_double }}
+<include src="../methods/text.md" />{{ hr_double }}
+<include src="../lists-methods/text.md" />{{ hr_double }}
 
 </div>
 </div>

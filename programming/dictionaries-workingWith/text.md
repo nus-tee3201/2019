@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: Some examples of retrieving values based on the key:
+{{ icon_example }} Some examples of retrieving values based on the key:
 
 <table> 
 <tr>
@@ -30,7 +30,7 @@ one
 </tr>
 </table>
 
-:package: Examples of adding, updating, and deleting dictionary entries:
+{{ icon_example }} Examples of adding, updating, and deleting dictionary entries:
 
 <table> 
 <tr>
@@ -67,7 +67,7 @@ After deleting: {'TE3201': 'A+'}
 
 <tip-box> 
 
-:package: This exampls raises an exception because the key `'santa'` does not exist in the dictionary `is_nice`:
+{{ icon_example }} This exampls raises an exception because the key `'santa'` does not exist in the dictionary `is_nice`:
 
 <table> 
 <tr>
@@ -100,7 +100,7 @@ KeyError: 'santa'
 
 <tip-box> 
 
-:package: The code below shows how to iterate through keys/values of a dictionary.
+{{ icon_example }} The code below shows how to iterate through keys/values of a dictionary.
 
 <table> 
 <tr>
@@ -150,7 +150,7 @@ You can **use the `sorted()` function to sort the keys/values before iterating t
 
 <tip-box> 
 
-:package: The code below shows how to iterate through keys/values of a dictionary.
+{{ icon_example }} The code below shows how to iterate through keys/values of a dictionary.
 
 <table> 
 <tr>
@@ -185,7 +185,7 @@ As usual, you can **use `in` and `not in` to check whether a key or a value is i
 
 <tip-box> 
 
-:package: The code below shows how to check if a certain key or a value exists in a dictionary.
+{{ icon_example }} The code below shows how to check if a certain key or a value exists in a dictionary.
 
 <table> 
 <tr>

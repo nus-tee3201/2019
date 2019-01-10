@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: Some list examples:
+{{ icon_example }} Some list examples:
   
 ```python
 friends = [] # an empty list
@@ -35,7 +35,7 @@ print(everything)
 
 <tip-box>
 
-:package: The code below shows how to use indexes to access items in a list.
+{{ icon_example }} The code below shows how to use indexes to access items in a list.
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ Cherry
 
 :bulb: As you can see from the above example, **list indexes can be negative**; index `-1` refers to the last item in the list, `-2` refers to the second last item in the list, and so on.
 
-:package: The code below shows how to use indexes to update items in a list.
+{{ icon_example }} The code below shows how to use indexes to update items in a list.
 
 <table>
 <tr>
@@ -91,7 +91,7 @@ print(coins)
 </tr>
 </table>
 
-:package: The example below shows how to access an item of a list that is inside another list; `list_of_lists[2]` accesses `list_of_lists[2]` which gives you the item at index 2 (`[0.1, 0.2]`) which is also a list, and then accesses the item at index `0` from that list, which is `0.1`. 
+{{ icon_example }} The example below shows how to access an item of a list that is inside another list; `list_of_lists[2]` accesses `list_of_lists[2]` which gives you the item at index 2 (`[0.1, 0.2]`) which is also a list, and then accesses the item at index `0` from that list, which is `0.1`.
 
 <table>
 <tr>

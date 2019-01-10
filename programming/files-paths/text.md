@@ -7,7 +7,7 @@ A file has a _filename_ and a _path_. **The _path_ specifies the location of a f
 <tabs> 
   <tab header="Windows">
 
-:package: File `C:\photos\2018\home.jpg`
+{{ icon_example }} File `C:\photos\2018\home.jpg`
 
 * Filename: `home.jpg`
 * Path: `C:\photos\2018` (Windows uses the back slash `\` as the _separator_ symbol in paths )
@@ -22,7 +22,7 @@ A file has a _filename_ and a _path_. **The _path_ specifies the location of a f
   </tab>
   <tab header="OS-X/Linux">
 
-:package: File `/Users/john/home.jpg`
+{{ icon_example }} File `/Users/john/home.jpg`
 
 * Filename: `home.jpg`
 * Path: `/Users/john` (OS-X/Linux uses the forward slash `/` as the _separator_ symbol in paths )
@@ -43,7 +43,7 @@ The Python module `os` contains functions for dealing with files and folders. Fo
 
 <tip-box> 
 
-:package: Example code showing how to print/change current working directory
+{{ icon_example }} Example code showing how to print/change current working directory
 
 <table> 
 <tr>
@@ -84,7 +84,7 @@ C:\modules\te3201
 
 <tip-box> 
 
-:package: Assume the current working directory is `C:\modules\te3201` and you created a new folder inside it named `exercises` and put a `ex.txt` file in that folder.
+{{ icon_example }} Assume the current working directory is `C:\modules\te3201` and you created a new folder inside it named `exercises` and put a `ex.txt` file in that folder.
 
 * Absolute path of the file: `C:\modules\te3201\exercises\ex1.txt`
 * Relative path of the file: `exercises\ex1.txt`
@@ -96,7 +96,7 @@ In a path, you can use the  dot `.` as a shorthand to refer to the current worki
 
 <tip-box> 
 
-:package: If the current working directory is `C:\modules\te3201`, you can use any of the following to refer to `C:\modules\te3201\exercises\ex1.txt`. 
+{{ icon_example }} If the current working directory is `C:\modules\te3201`, you can use any of the following to refer to `C:\modules\te3201\exercises\ex1.txt`.
 * `exercises\ex1.txt`
 * `.\exercises\ex1.txt`
 * `..\te3201\exercises\ex1.txt`
@@ -113,7 +113,7 @@ You can use `os.mkdirs()` function to create folders and `os.removedirs()` to de
 
 <tip-box> 
 
-:package: Example code showing how to create/delete directories
+{{ icon_example }} Example code showing how to create/delete directories
 
 <table> 
 <tr>
@@ -148,7 +148,7 @@ C:\repos\nus-te3201\sample-code\ex
 
 <tip-box> 
 
-:package: Consider the code below: 
+{{ icon_example }} Consider the code below:
 
 ```python
 cwd = os.getcwd()
@@ -164,7 +164,7 @@ If your run it on a OS-X computer in the folder `/Users/john`, it prints `/Users
 
 <tip-box> 
 
-:package: contrasting hard-coding the separator vs using `os.path.join()`:
+{{ icon_example }} contrasting hard-coding the separator vs using `os.path.join()`:
 
 :x: Works only on Windows | :white_check_mark: Works on both Windows and OS-X
 --------------------- | ------------------------------

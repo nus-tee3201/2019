@@ -8,7 +8,8 @@ if condition :
     statements_to_execute_if_true
 ```
 
-:package: The code below has two `if` statements; one evaluates to `true` while the other doesn't.
+{{ icon_example }} The code below has two `if` statements; one evaluates to `true` while the other doesn't.
+
 ```python
 price = 55
 print(price)
@@ -22,7 +23,7 @@ if weight > 100:
     
 print('Done')
 ```
-Output :arrow_heading_down: <trigger trigger="click" for="modal:simpelIf-pyTutor">%%[Click here to visualize execution]%%</trigger>
+Output {{ icon_output }} <trigger trigger="click" for="modal:simpelIf-pyTutor">%%[Click here to visualize execution]%%</trigger>
 ```
 50
 Expensive
@@ -39,7 +40,7 @@ If the space below is blank, you may need to configure your browser to allow loa
 
 </modal>
 
-Note how the code to execute if the condition is true is indented (usually by 4 spaces). **Python uses indentation to indicate code _blocks_** (aka _clauses_) %%&nbsp;i.e., a sequence of statements that belong together%%. In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation level, indicating the end of the code block. 
+Note how the code that should execute when the condition is true is indented (usually by 4 spaces). **Python uses indentation to indicate code _blocks_** (aka _clauses_) %%i.e., a sequence of statements that belong together%%. In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation level, indicating the end of the code block.
 
 ```python
 if name == 'Blue':          # line 1
@@ -69,7 +70,7 @@ if (age > 12) and (age < 20):
     print('Gender code is ' + gender) 
 print('Age is ' + str(age))               
 ```
-:arrow_heading_down: <trigger trigger="click" for="modal:nestedIf-pyTutor">%%[visualize]%%</trigger>
+{{ icon_output }} <trigger trigger="click" for="modal:nestedIf-pyTutor">%%[visualize]%%</trigger>
 ```
 Teenager
 Female
@@ -90,9 +91,9 @@ Age is 13
 
 </panel><p/>
 
-If a situation has only two <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities %%&nbsp;e.g. the value of `gender` can only be `M` or `F`%%, we can use the `else` statement to deal with both conditions together.
+If a situation has only two <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities %%e.g. if we assume the value of `gender` can only be `M` or `F`%%, we can use the `else` statement to deal with both conditions together.
 
-:package: In the example below, the entire `else` block will be skipped if the `if` condition is true.
+{{ icon_example }} In the example below, the entire `else` block will be skipped if the `if` condition is true.
 ```python
 if gender == 'F':
     print('Female')
@@ -107,7 +108,7 @@ else:
 
 If a situation has more than two mutually exclusive possibilities, we can bring in `elif` (an abbreviation of _else if_) blocks too.
 
-:package: The example below shows how to use an `if-elif-else` construct to control the flow of the execution.
+{{ icon_example }} The example below shows how to use an `if-elif-else` construct to control the flow of the execution.
 ```python
 if gender == 'F':
     print('Female')

@@ -11,7 +11,7 @@ A variable must be in the global scope or the local scope; it cannot be in both.
 <sub>%%[Some parts of the above explanation were adapted from [_Automate the Boring Stuff_](https://automatetheboringstuff.com/chapter3/)]%%</sub>
 
 Consider the code given below, apparently from a program related to a farm, with the global scope and the local scope of each function indicated by shaded areas.<br>
-<img src="{{baseUrl}}/functions-scope/images/scopeAsShadedAreas.png" width="500" />
+<img src="{{baseUrl}}/programming/functions-scope/images/scopeAsShadedAreas.png" width="500" />
 
 Note the following rules about scope:
 * Rule 1: **Local scopes can read global variables** e.g., `raise_chicken` function can access the global variable `total_chickens` (see line 6).
@@ -23,7 +23,7 @@ Note the following rules about scope:
 
 <tip-box> 
 
-:package: The `breed_cows` function below can increase the global variable `total_cows` to `10` from the local scope because it has a `global total_cows` statement. If you remove that statement, the last print statement will print `5` instead of `10` 
+{{ icon_example }} The `breed_cows` function below can increase the global variable `total_cows` to `10` from the local scope because it has a `global total_cows` statement. If you remove that statement, the last print statement will print `5` instead of `10`
 
 ```python
 total_cows = 5
@@ -43,7 +43,7 @@ print('total cows after breeding:', total_cows) # prints 10
 <tr>
   <td>
   
-:arrow_heading_down:
+{{ icon_output }}
 ```
 total cows before breeding: 5
 breeding cows
@@ -54,7 +54,7 @@ total cows after breeding: 10
   <td>&nbsp;&nbsp;</td>
   <td>
  
-:arrow_heading_down: without the `global total_cows` statement
+{{ icon_output }} without the `global total_cows` statement
 ```
 total cows before breeding: 5
 breeding cows

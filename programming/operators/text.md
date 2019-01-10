@@ -2,19 +2,19 @@
 
 **An expression normally contains _operators_ that combine with values.** Here are some common operators used in Python:
 
-Operator | Operation | Example | Evaluates to...
--------- | --------- | ------- | ----------------
-`+` | Addition | `2 + 2` | `4`
-`-` | Subtraction | `5 - 2` | `3`
-`*` | Multiplication | `3 * 5` | `15`
-`/` | Division | `22 / 8` | `2.75`
-`**` | Exponent | `2 ** 3` | `8`
-`%` | Modulus/remainder | `22 % 8` | `6`
-`//` | Integer division | `22 // 8` | `2`
+Operator | Operation         | Example   | Evaluates to...
+:------: | :---------------- | :-------: | :--------------:
+`+`      | Addition          | `2 + 2`   | `4`
+`-`      | Subtraction       | `5 - 2`   | `3`
+`*`      | Multiplication    | `3 * 5`   | `15`
+`/`      | Division          | `22 / 8`  | `2.75`
+`**`     | Exponent          | `2 ** 3`  | `8`
+`%`      | Modulus/remainder | `22 % 8`  | `6`
+`//`     | Integer division  | `22 // 8` | `2`
 
-When there are multiple operators in an expression, normal operator precedence apply. You can force your own precedence using parentheses.
+When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.
 
-```
+```python
 >>> 2 + 4 * 5
 22
 >>> (2 + 4) * 5

@@ -4,12 +4,12 @@
 
 Python comes with many built-in functions you can use right away. 
 
-:package: To print some content, you can use the `print` function which can take one or more arguments:
+{{ icon_example }} To print some text, you can use the `print` function which can take one or more arguments:
 
 <tabs> 
   <tab header="Using the shell">
 
-```
+```python
 >>> print('Hello World')
 Hello World
 
@@ -24,7 +24,7 @@ Bye my friend
 print('Hello World')
 print('Bye', 'my', 'friend')
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 Hello World
 Bye my friend
@@ -42,7 +42,7 @@ Bye my friend
 
 **Some functions return a value.**
 
-:package: `int`, `float`, `str` functions can be used to convert a data value of one type to another. The built-in function `type` tells you the type of a value.
+{{ icon_example }} `int`, `float`, `str` functions can be used to convert a data value of one type to another. The built-in function `type` tells you the type of a value.
 
 ```python
 age = 25 # age is of integer type
@@ -52,12 +52,12 @@ print(type(-4)) # print the type of value -4
 print(type('-4')) # print the type of value '-4'
 print(type(float('5.0'))) # convert string '5.0' to a float and print the type
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 My age is 25
-< class 'int' >
-< class 'str' >
-< class 'float' >
+<class 'int'>
+<class 'str'>
+<class 'float'>
 ```
 <panel type="seamless" header="%%:computer: Try your own%%">
 
@@ -65,7 +65,7 @@ My age is 25
 
 </panel><p/>
 
-:package: `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==. :bulb: Note how a call to the `print` without any arguments (i.e. `print()`) prints an empty line.
+{{ icon_example }} `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==. :bulb: Note how a call to the `print` without any arguments (i.e. `print()`) prints an empty line.
 
 ```python
 # read current price

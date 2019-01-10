@@ -23,10 +23,10 @@ siteNav: programming-sitenav.md
 
 # Files
 
-<include src="../files-paths/text.md" /><hr><hr>
-<include src="../files-reading/text.md" /><hr><hr>
-<include src="../files-writing/text.md" /><hr><hr>
-<include src="../files-csv/text.md" /><hr><hr>
+<include src="../files-paths/text.md" />{{ hr_double }}
+<include src="../files-reading/text.md" />{{ hr_double }}
+<include src="../files-writing/text.md" />{{ hr_double }}
+<include src="../files-csv/text.md" />{{ hr_double }}
 
 </div>
 </div>

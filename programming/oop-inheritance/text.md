@@ -36,7 +36,7 @@ My name is Amy
 </tr>
 </table>
 
-:package: Note how the `Teacher` class below inherits from the `Person` class given above. Observe how,
+{{ icon_example }} Note how the `Teacher` class below inherits from the `Person` class given above. Observe how,
  * a `Teacher` object can use the `print_info()` method defined in the parent class.
  * the statement `dan = Teacher('Dan')` invokes the `__init__()` method defined in the parent class too.
  * the statement `print('the name is', dan.name)` is accessing the attribute `name` from a `Teacher` object although the attribute is defined in the parent class.
@@ -80,7 +80,7 @@ the name is Dan
 
 <tip-box> 
 
-:package: Note how the `Student` class below overrides the `__init__()` method and the `print_info()` method of the parent class `Person`.  
+{{ icon_example }} Note how the `Student` class below overrides the `__init__()` method and the `print_info()` method of the parent class `Person`.
 
 <table> 
 <tr>
@@ -126,7 +126,7 @@ class Person:
   def __init__(self, name):
     self.name = name
 ```
-:package: Given that `Person` class has the initializer method given above, the following two versions of the `Student` class are equivalent.
+{{ icon_example }} Given that `Person` class has the initializer method given above, the following two versions of the `Student` class are equivalent.
 
 <table> 
 <tr>
@@ -165,7 +165,7 @@ class Student(Person):
 
 <tip-box> 
 
-:package: The `Book` class below overrides the `__str__()` method so that `Book` objects can be printed in a specific format.
+{{ icon_example }} The `Book` class below overrides the `__str__()` method so that `Book` objects can be printed in a specific format.
 
 <table> 
 <tr>
@@ -254,7 +254,7 @@ class TeachingAssistant(Teacher, Student):
   </tr>
 </table>
 
-:package: The `TeachingAssistant` class above inherits from both `Student` class and the `Parent` class both of which inherit from the `Person` class. That means a `TeachingAssistant` object can use methods from classes `object`, `Person`, `Student`, `Teacher`, and `TeachingAssistant`.
+{{ icon_example }} The `TeachingAssistant` class above inherits from both `Student` class and the `Parent` class both of which inherit from the `Person` class. That means a `TeachingAssistant` object can use methods from classes `object`, `Person`, `Student`, `Teacher`, and `TeachingAssistant`.
 
 <table>
   <tr>

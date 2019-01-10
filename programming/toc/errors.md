@@ -22,10 +22,10 @@ siteNav: programming-sitenav.md
 
 # Error Handling
 
-<include src="../errors-intro/text.md" /><hr><hr>
-<include src="../errors-syntax/text.md" /><hr><hr>
-<include src="../errors-exceptions-handling/text.md" /><hr><hr>
-<include src="../errors-exceptions-raising/text.md" /><hr><hr>
+<include src="../errors-intro/text.md" />{{ hr_double }}
+<include src="../errors-syntax/text.md" />{{ hr_double }}
+<include src="../errors-exceptions-handling/text.md" />{{ hr_double }}
+<include src="../errors-exceptions-raising/text.md" />{{ hr_double }}
 
 </div>
 </div>

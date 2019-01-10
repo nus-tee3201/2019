@@ -4,7 +4,7 @@ Write a function that prints an inventory report like the examples given below, 
 
 <tip-box> 
 
-:package: Kitchen Inventory Report:
+{{ icon_example }} Kitchen Inventory Report:
 
 * Title: Kitchen
 * Width: 15
@@ -39,7 +39,7 @@ total......:105
 
 <tip-box> 
 
-:package: Bookshop Inventory Report:
+{{ icon_example }} Bookshop Inventory Report:
 
 * Title: Book Shop
 * Width: 25
