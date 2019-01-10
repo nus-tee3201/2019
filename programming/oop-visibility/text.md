@@ -10,7 +10,7 @@ The _encapsulation_ aspect of OOP requires that an object should only allow cont
 
 <tip-box> 
 
-:package: Consider the `Account` class below.
+{{ icon_example }} Consider the `Account` class below.
 
 ```python
 class Account:

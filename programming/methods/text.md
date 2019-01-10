@@ -6,7 +6,7 @@ Accordingly, **most Python objects have _methods_**. Methods represent what the 
 
 <tip-box> 
 
-:package: The first line below uses the `strip()` method of the string object to get rid of leading and trailing spaces. The second statement uses the `replace()` method to replace spaces with dashes. 
+{{ icon_example }} The first line below uses the `strip()` method of the string object to get rid of leading and trailing spaces. The second statement uses the `replace()` method to replace spaces with dashes.
 
 <table> 
 <tr>
@@ -41,7 +41,7 @@ Some methods return an object. In such cases another method can be called on the
 
 <tip-box> 
 
-:package: In the example of method chaining given below, `'aa bb cc  '.strip()` returns a string object `'aa bb cc'` on which the `replace(' ', '_')` method is called. That returns a string object `'aa_bb_cc'` on which the `upper()` method is called. That method converts the string into its upper case, giving us the final output of `'AA_BB_CC'` 
+{{ icon_example }} In the example of method chaining given below, `'aa bb cc  '.strip()` returns a string object `'aa bb cc'` on which the `replace(' ', '_')` method is called. That returns a string object `'aa_bb_cc'` on which the `upper()` method is called. That method converts the string into its upper case, giving us the final output of `'AA_BB_CC'`
 
 <table> 
 <tr>

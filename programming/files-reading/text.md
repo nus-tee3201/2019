@@ -9,7 +9,7 @@ This section focuses on reading from text-based files (i.e., not binary files).
 
 <tip-box> 
 
-:package: The code below shows how to read from a text file.
+{{ icon_example }} The code below shows how to read from a text file.
 
 <table> 
 <tr>
@@ -43,7 +43,7 @@ It is also possible to read the file content as a list of lines, using the `read
 
 <tip-box> 
 
-:package: The code below shows how to read file content as a list of lines.
+{{ icon_example }} The code below shows how to read file content as a list of lines.
 
 ```python
 file_path = os.path.join('data', 'items.txt')

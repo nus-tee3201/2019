@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: The `get_body(items)` function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the `hide_ends(items)` function. <br>
+{{ icon_example }} The `get_body(items)` function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the `hide_ends(items)` function. <br>
 :bulb: Also note how an `except` clause can assign a name to the exception using `as temporary_name` (as done by `except ValueError as e:`) so that the exception object can be referenced later (as done in `print('Cannot hide ends', str(e))`)
 
 
@@ -48,7 +48,7 @@ Cannot hide ends: Not enough items
 
 <tip-box> 
 
-:package: The code `hide_ends2(items)` function below catches the `ValueError` exception, prints an error message, and raises it again so that the code that called the function can catch the exception again. Also note how the line `hide_ends2([0, 1, 2, 3, 4])` is never executed due to the exception raised by the line just above it.
+{{ icon_example }} The code `hide_ends2(items)` function below catches the `ValueError` exception, prints an error message, and raises it again so that the code that called the function can catch the exception again. Also note how the line `hide_ends2([0, 1, 2, 3, 4])` is never executed due to the exception raised by the line just above it.
 
 <table> 
 <tr>

@@ -26,7 +26,7 @@ Camel Case refers to a styling text writing compound words or phrases such that 
 
 <tip-box> 
 
-:package: The code below defines a class named `Employee`, creates two employee objects, and prints the class/type of each object.
+{{ icon_example }} The code below defines a class named `Employee`, creates two employee objects, and prints the class/type of each object.
 
 ```python
 class Employee:
@@ -48,7 +48,7 @@ You can add methods to the class by defining them inside the class definition. N
 
 <tip-box> 
 
-:package: In the example below,<br>
+{{ icon_example }} In the example below,<br>
 `write(self, text)` method is called as `p.write('It was a dark night ...')`.<br>
 This is how the arguments are matched with the parameters: 
 * `self` → `p`
@@ -89,7 +89,7 @@ writing: It was a dark night ...
 
 <tip-box> 
 
-:package: This example shows an `__init__` method added to a `Person` class.
+{{ icon_example }} This example shows an `__init__` method added to a `Person` class.
 
 <table> 
 <tr>
@@ -119,7 +119,7 @@ The code within a class needs to use the `self.` to refer to its own attributes 
 
 <tip-box> 
 
-:package: Note how the `__init__()` method of the `Book` class initializes its two attributes and calls another of its own methods i.e., `self.describe()`.
+{{ icon_example }} Note how the `__init__()` method of the `Book` class initializes its two attributes and calls another of its own methods i.e., `self.describe()`.
 
 ```python
 class Book:
@@ -146,7 +146,7 @@ Attributes and methods of the objects can be accessed using `objectname.` syntax
 
 <tip-box> 
 
-:package: This example shows how you can access the attributes and methods of the `book1` object (an object of class `Book`) defined in a previous example:
+{{ icon_example }} This example shows how you can access the attributes and methods of the `book1` object (an object of class `Book`) defined in a previous example:
 
 <table> 
 <tr>
@@ -176,7 +176,7 @@ As to be expected, you can get your classes to work with each other.
 
 <tip-box> 
 
-:package: In this example we define a `ReadingList` class that can store a list of `Book` objects.
+{{ icon_example }} In this example we define a `ReadingList` class that can store a list of `Book` objects.
 <table> 
 <tr>
   <td>

@@ -22,10 +22,10 @@ siteNav: programming-sitenav.md
 
 # Functions
 
-<include src="../functions-def/text.md" /><hr><hr>
-<include src="../functions-parameters/text.md" /><hr><hr>
-<include src="../functions-return/text.md" /><hr><hr>
-<include src="../functions-scope/text.md" /><hr><hr>
+<include src="../functions-def/text.md" />{{ hr_double }}
+<include src="../functions-parameters/text.md" />{{ hr_double }}
+<include src="../functions-return/text.md" />{{ hr_double }}
+<include src="../functions-scope/text.md" />{{ hr_double }}
 
 </div>
 </div>

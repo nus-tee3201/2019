@@ -5,7 +5,7 @@ At times you may need to terminate a program execution early %%&nbsp;i.e., witho
 
 <tip-box> 
 
-:package: The code below prints out the factorials of `1` to `n` where `n` is specified by the user. If `n` is `0`, it uses `sys.exit()` to terminate the program immediately.
+{{ icon_example }} The code below prints out the factorials of `1` to `n` where `n` is specified by the user. If `n` is `0`, it uses `sys.exit()` to terminate the program immediately.
 
 ```python
 import math, sys

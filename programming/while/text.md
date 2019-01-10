@@ -9,7 +9,7 @@ while condition :
 ```
 <tip-box>
 
-:package: the code below prints 'Hello' 3 times (i.e., the loop is executed for 3 iterations), followed by 'Done'.
+{{ icon_example }} the code below prints 'Hello' 3 times (i.e., the loop is executed for 3 iterations), followed by 'Done'.
 
 <table>
 <tr>
@@ -58,7 +58,7 @@ Done
 
 <tip-box>
 
-**:exclamation: Infinite Loops**: Sometimes programming mistakes can result in _infinite loops_ %%&nbsp;i.e., loops that never terminate.%% In the example below, the condition `counter < 3` always evaluates to `True` (because the statement to increment `counter` has been left out by mistake)
+**{{ icon_important_big_red }} Infinite Loops**: Sometimes programming mistakes can result in _infinite loops_ %%&nbsp;i.e., loops that never terminate.%% In the example below, the condition `counter < 3` always evaluates to `True` (because the statement to increment `counter` has been left out by mistake)
 
 ```python
 counter = 0
@@ -86,7 +86,7 @@ while counter < 3:
 
 <tip-box> 
 
-:package: The code below uses the `break` statement to break out of the loop when the password given is `abcd`. Without the `break` statement, the loop will repeat forever because the condition in `while True:` is always `True`. 
+{{ icon_example }} The code below uses the `break` statement to break out of the loop when the password given is `abcd`. Without the `break` statement, the loop will repeat forever because the condition in `while True:` is always `True`.
 
 ```python
 while True:
@@ -119,7 +119,7 @@ print('Password correct. You may proceed.')
 
 <tip-box> 
 
-:package: The code below is for reading three words from the user and printing all three at the end. It uses the `continue` statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters). 
+{{ icon_example }} The code below is for reading three words from the user and printing all three at the end. It uses the `continue` statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters).
 
 ```python
 accepted_words = ''

@@ -12,7 +12,7 @@ Method | Description
 
 <tip-box> 
 
-:package: Here are some examples of how those list methods can be used:
+{{ icon_example }} Here are some examples of how those list methods can be used:
 
 ```python
 pets = ['Cats', 'Dogs', 'Hamsters']
@@ -56,7 +56,7 @@ Note how in the example above `sort(reverse=True)` sorts the list in the reverse
 
 <tip-box> 
 
-:package: The `print` function takes an optional parameter `end`. If you provide it with an empty string i.e., `end=''`, the function will not print a line break at the end. The example below illustrates the difference it makes. 
+{{ icon_example }} The `print` function takes an optional parameter `end`. If you provide it with an empty string i.e., `end=''`, the function will not print a line break at the end. The example below illustrates the difference it makes.
 
 <table> 
 <tr>
@@ -106,7 +106,7 @@ Note that **some methods <tooltip content="changes the value(s) of the object">m
 
 <tip-box> 
 
-:package: In the example below, `lower()` (a _non-mutating_ method) returns a new string that is in lower case while the original string remains unchanged. However, `sort()` (a _mutating_ method) changes the list object it is attached to (and does not return anything).
+{{ icon_example }} In the example below, `lower()` (a _non-mutating_ method) returns a new string that is in lower case while the original string remains unchanged. However, `sort()` (a _mutating_ method) changes the list object it is attached to (and does not return anything).
 
 <table> 
 <tr>

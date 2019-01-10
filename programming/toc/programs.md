@@ -21,9 +21,9 @@ siteNav: programming-sitenav.md
 
 # Python Programs
 
-<include src="../scripts/text.md" /><hr><hr>
-<include src="../comments/text.md" /><hr><hr>
-<include src="../usingFunctions/text.md" /><hr><hr>
+<include src="../scripts/text.md" />{{ hr_double }}
+<include src="../comments/text.md" />{{ hr_double }}
+<include src="../usingFunctions/text.md" />{{ hr_double }}
 
 </div>
 </div>

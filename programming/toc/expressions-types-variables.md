@@ -24,12 +24,12 @@ siteNav: programming-sitenav.md
 
 # Expressions, Data Types, Variables
 
-<include src="../programs/text.md" /><hr><hr>
-<include src="../environment/text.md" /><hr><hr>
-<include src="../shell/text.md" /><hr><hr>
-<include src="../operators/text.md" /><hr><hr>
-<include src="../types/text.md" /><hr><hr>
-<include src="../variables/text.md" /><hr><hr>
+<include src="../programs/text.md" />{{ hr_double }}
+<include src="../environment/text.md" />{{ hr_double }}
+<include src="../shell/text.md" />{{ hr_double }}
+<include src="../operators/text.md" />{{ hr_double }}
+<include src="../types/text.md" />{{ hr_double }}
+<include src="../variables/text.md" />{{ hr_double }}
 
 </div>
 </div>

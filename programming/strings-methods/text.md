@@ -16,7 +16,7 @@ Here are some string methods related to the nature of the string.
 
 <tip-box> 
 
-:package: Examples of string methods mentioned above:
+{{ icon_example }} Examples of string methods mentioned above:
 
 <table> 
 <tr>
@@ -96,7 +96,7 @@ True False
 
 <tip-box> 
 
-:package: Examples of the `find()` method:
+{{ icon_example }} Examples of the `find()` method:
 
 <table> 
 <tr>
@@ -131,7 +131,7 @@ print(s.find('Spam'))
 
 <tip-box> 
 
-:package: Examples of the `join()` method:
+{{ icon_example }} Examples of the `join()` method:
 
 <table> 
 <tr>
@@ -159,7 +159,7 @@ one-to-one
 
 <tip-box> 
 
-:package: Some examples of using the `split()` method:
+{{ icon_example }} Some examples of using the `split()` method:
 
 <table> 
 <tr>
@@ -194,7 +194,7 @@ print('1-to-1-talk'.split('-'))
 
 <tip-box> 
 
-:package: Examples of stripping leading/trailing spaces from a string:
+{{ icon_example }} Examples of stripping leading/trailing spaces from a string:
 
 <table> 
 <tr>
@@ -229,7 +229,7 @@ print('['+ s.rstrip() + ']') #right side strip
 
 <tip-box> 
 
-:package: Some examples of using `replace()` method:
+{{ icon_example }} Some examples of using `replace()` method:
 
 ```python
 print('face to face'.replace(' ', '-'))  # replace space with a dash
@@ -249,7 +249,7 @@ Yes, Yes, I agree
 
 <tip-box> 
 
-:package: Examples of aligning text using string methods:
+{{ icon_example }} Examples of aligning text using string methods:
 
 <table> 
 <tr>

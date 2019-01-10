@@ -23,10 +23,10 @@ siteNav: programming-sitenav.md
 
 # Object-Oriented Programming
 
-<include src="../oop-classes/text.md" /><hr><hr>
-<include src="../oop-classLevelMembers/text.md" /><hr><hr>
-<include src="../oop-visibility/text.md" /><hr><hr>
-<include src="../oop-inheritance/text.md" /><hr><hr>
+<include src="../oop-classes/text.md" />{{ hr_double }}
+<include src="../oop-classLevelMembers/text.md" />{{ hr_double }}
+<include src="../oop-visibility/text.md" />{{ hr_double }}
+<include src="../oop-inheritance/text.md" />{{ hr_double }}
 
 </div>
 </div>

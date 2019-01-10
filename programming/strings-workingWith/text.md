@@ -13,7 +13,7 @@ H   | i | &nbsp; | t | h | e | r | e | !
 
 <tip-box> 
 
-:package: The code below shows how to use index and slice notations to get parts of a string.
+{{ icon_example }} The code below shows how to use index and slice notations to get parts of a string.
 
 <table> 
 <tr>
@@ -51,7 +51,7 @@ You can **use the `in` and `not in` operator to see if one string is a sub-strin
 
 <tip-box> 
 
-:package: Examples of checking for the existence of a sub-string:
+{{ icon_example }} Examples of checking for the existence of a sub-string:
 
 <table> 
 <tr>

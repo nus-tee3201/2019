@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: The `play()` function below returns one of the strings `Rock`, `Paper`, `Scissors` randomly.
+{{ icon_example }} The `play()` function below returns one of the strings `Rock`, `Paper`, `Scissors` randomly.
 
 ```python
 import random
@@ -34,7 +34,7 @@ print('Player2 response : ' + play())
 
 <tip-box> 
 
-:package: The `print_all_products` function below uses an empty `return` statement to return from the function early if one of the arguments is `0`:
+{{ icon_example }} The `print_all_products` function below uses an empty `return` statement to return from the function early if one of the arguments is `0`:
 
 ```python
 def print_product(a, b):

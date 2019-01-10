@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: The code below has a syntax error because it breaks the Python rule that requires a `:` to follow the condition of an `if` statement.
+{{ icon_example }} The code below has a syntax error because it breaks the Python rule that requires a `:` to follow the condition of an `if` statement.
 
 <table> 
 <tr>
@@ -37,7 +37,7 @@ Some Python editors (e.g., REPL) flag syntax errors even before you run the code
 
 <tip-box> 
 
-:package: Note how REPL Python editor points out the syntax error using a red :x: in the _<tooltip content="the column on the extreme left of the editor">gutter</tooltip>_ of the editor.
+{{ icon_example }} Note how REPL Python editor points out the syntax error using a red :x: in the _<tooltip content="the column on the extreme left of the editor">gutter</tooltip>_ of the editor.
 
 ![]({{baseUrl}}/errors-syntax/images/syntaxErrorInRepl.png =250x)
 

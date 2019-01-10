@@ -1,10 +1,10 @@
 ### Importing Modules
 
-In addition to _built-in_ functions such as `print()`, `input()`, and `len()`, **Python has a set of functions called the _standard library_.** Functions in the standard library are divided in to modules. **A _module_ is a python program that contains a related group of functions**. You can think of it as a file containing some python functions.
+In addition to _built-in_ functions such as `print()`, `input()`, and `len()`, **Python has a set of functions called the _standard library_.** Functions in the standard library are divided into modules. **A _module_ is a python program that contains a related group of functions**. You can think of it as a file containing some python functions.
 
 <tip-box> 
 
-:package: Some example modules in the Python standard library:
+{{ icon_example }} Some example modules in the Python standard library:
 
 Name | What it contains
 ---- | ----------------
@@ -14,11 +14,11 @@ Name | What it contains
 
 </tip-box>
  
-Unlike built-in functions which you can use simply use in your code, **to use a function in the standard library you need to _import_ the corresponding module first.**
+Unlike built-in functions which you can directly use in your code as if the function is already in your code file, **to use a function in the standard library you need to _import_ the corresponding module first.**
 
 Format: `import module_name(s)`
 
-:package: Some examples:
+{{ icon_example }} Some examples:
 * `import math` (imports the `math` module)
 * `import math, sys, random` (imports all three modules in one statement)
 
@@ -26,7 +26,7 @@ Furthermore, to use a function from an imported module, you should use the `modu
 
 <tip-box>
 
-:package: the code below imports the `random` module and uses its `randint()` function to generate a number between 1 and 10. 
+{{ icon_example }} the code below imports the `random` module and uses its `randint()` function to generate a number between 1 and 10.
 
 
 ```python

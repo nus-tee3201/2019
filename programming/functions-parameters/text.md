@@ -12,7 +12,7 @@ A note about terminology: a function can have _parameters_ and when we call the 
 
 <tip-box> 
 
-:package: The `say_hello` function below takes one parameter. The first time we call it we pass the argument `Gina` to that parameter, and the next time we pass a different argument `John` to the same parameter.
+{{ icon_example }} The `say_hello` function below takes one parameter. The first time we call it we pass the argument `Gina` to that parameter, and the next time we pass a different argument `John` to the same parameter.
 
 <table>
 <tr>
@@ -54,7 +54,7 @@ How are you John ?
 
 </panel><p/>
 
-:package: The code below has one function that takes one parameter and one that takes two. Furthermore, note how one function calls the other.
+{{ icon_example }} The code below has one function that takes one parameter and one that takes two. Furthermore, note how one function calls the other.
 
 ```python
 def say_hello(name):
@@ -82,11 +82,11 @@ say_hello('Sheldon')
 
 </tip-box>
 
-**Parameter values are are forgotten after the function returns**.
+**Parameter values are forgotten after the function returns**.
 
 <tip-box> 
 
-:package: The code below produces an error because variable `v1` is not available after the function has returned.
+{{ icon_example }} The code below produces an error because variable `v1` is not available after the function has returned.
 
 ```python
 def print_uniqueness(v1, v2, v3):

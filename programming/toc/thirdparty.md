@@ -15,7 +15,7 @@ siteNav: programming-sitenav.md
 </div>
 <div id="main">
 
-<include src="../thirdparty/text.md" /><hr><hr>
+<include src="../thirdparty/text.md" />{{ hr_double }}
 
 </div>
 </div>

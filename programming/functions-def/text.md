@@ -12,7 +12,7 @@ def function_name():
 
 <tip-box> 
 
-:package: The code below defines a function named `say_hello` and calls it twice.
+{{ icon_example }} The code below defines a function named `say_hello` and calls it twice.
 
 <table>
 <tr>

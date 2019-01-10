@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: A list containing names of animals `['cat', 'dog', 'hen', 'fish']`
+{{ icon_example }} A list containing names of animals `['cat', 'dog', 'hen', 'fish']`
 
 Index | Value
 ----- | -----
@@ -13,7 +13,7 @@ Index | Value
 `2` | `'hen'`
 `3` | `'fish'`
 
-:package: A dictionary containing ages of three people `{'john': 12, 'sara': 14.5, 'colin': 13}`. `john`-`12` is a key-value pair.
+{{ icon_example }} A dictionary containing ages of three people `{'john': 12, 'sara': 14.5, 'colin': 13}`. `john`-`12` is a key-value pair.
 
 Key | Value
 ----- | -----
@@ -21,7 +21,7 @@ Key | Value
 `'sara'` | `14.5`
 `'colin'` | `13`
 
-:package: A dictionary containing details of a person `{'name': 'john', 'age': 14.5, 'sex': 'F', 'citizen': True}`
+{{ icon_example }} A dictionary containing details of a person `{'name': 'john', 'age': 14.5, 'sex': 'F', 'citizen': True}`
 
 Key | Value
 ----- | -----
@@ -34,7 +34,7 @@ Key | Value
 
 <tip-box> 
 
-:package: Some examples of defining dictionaries.
+{{ icon_example }} Some examples of defining dictionaries.
 
 
 ```python

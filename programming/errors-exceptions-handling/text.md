@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: The code below raises an exception when it attempts to divide a number by `0`. The type of the exception raised is `ZeroDivisionError`, as mentioned in the last line of the error message.
+{{ icon_example }} The code below raises an exception when it attempts to divide a number by `0`. The type of the exception raised is `ZeroDivisionError`, as mentioned in the last line of the error message.
 
 
 <table> 
@@ -47,7 +47,7 @@ It is not desirable for programs to 'crash' every time an exception occurs. You 
 
 <tip-box> 
 
-:package: The code below specifies what to do if the `ZeroDivisionError` is raised, thereby avoiding a program crash in such an event.
+{{ icon_example }} The code below specifies what to do if the `ZeroDivisionError` is raised, thereby avoiding a program crash in such an event.
 
 <table> 
 <tr>
@@ -95,7 +95,7 @@ If the exception does not match the `except` clause, the program crashes.
 
 <tip-box> 
 
-:package: The code below crashes because the actual exception %%(caused by passing a string when an foloating point number is expected)%% does not match the specified exception `ZeroDivisionError`.
+{{ icon_example }} The code below crashes because the actual exception %%(caused by passing a string when an foloating point number is expected)%% does not match the specified exception `ZeroDivisionError`.
 
 <table> 
 <tr>
@@ -126,7 +126,7 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
 
 <tip-box> 
 
-:package: The code below handles two types of exceptions: `ZeroDivisionError` and `ValueError`. 
+{{ icon_example }} The code below handles two types of exceptions: `ZeroDivisionError` and `ValueError`.
 
 :bulb: The `ValueError` is raised when the string `abc` is being converted to a float using `float(divisor)`.
 
@@ -173,7 +173,7 @@ Calculation over!........
 
 <tip-box> 
 
-:package: The code below handles both `ZeroDivisionError` and `ValueError` in the same `except` clause.
+{{ icon_example }} The code below handles both `ZeroDivisionError` and `ValueError` in the same `except` clause.
 
 <table> 
 <tr>
@@ -216,7 +216,7 @@ Calculation over!........
 
 <tip-box> 
 
-:package: 
+{{ icon_example }}
 
 <table> 
 <tr>
@@ -248,7 +248,7 @@ It is also possible to **use `except Exception` to catch any kind of exception**
 
 <tip-box> 
 
-:package: The code below handles both `ZeroDivisionError` and `ValueError` in the same `except` clause.
+{{ icon_example }} The code below handles both `ZeroDivisionError` and `ValueError` in the same `except` clause.
 
 <table> 
 <tr>

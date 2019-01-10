@@ -4,7 +4,7 @@
 
 <tip-box> 
 
-:package: This dictionary keeps track of assignments of each subject. Note how the value is a list rather than a simple value such as int or string.
+{{ icon_example }} This dictionary keeps track of assignments of each subject. Note how the value is a list rather than a simple value such as int or string.
 
 ```python
 assignments = {'TE3201': ['do exercises', 'submit project'],
@@ -45,7 +45,7 @@ total tasks to do: 4
 
 <tip-box> 
 
-:package: This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.
+{{ icon_example }} This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.
 
 ```python
 friends = {'john': {'name': 'John Doe', 'birthday': 'Jan 12'},

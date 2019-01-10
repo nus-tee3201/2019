@@ -15,26 +15,26 @@ Note that we called `v = 5` a _statement_. **Unlike expressions that evaluates t
 </tip-box>
 
 If you enter the above statement in the interactive shell, it causes the shell to remember the variable name `v` and its value. 
-```
+```python
 >>> v = 5
 >>> 
 ```
 Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.
-```
+```python
 >>> v
 5
 ```
 You can even use the variable in expressions.
-```
+```python
 >>> v * 4
 20
 ```
 
 <tip-box> 
 
-:package: Here are some examples of variables being declared, assigned, and being used:
+{{ icon_example }} Here are some examples of variables being declared, assigned, and being used:
 
-```
+```python
 >>> max_bag_count = 2
 >>> max_bag_count
 2
@@ -59,7 +59,7 @@ long_variable_name = 56
 ```
 
 **Variable names are case sensitive.** In the example below, you can see how Python prints an error message if you try to access the variable `height` using the name `Height`
-```
+```python
 >>> height = 12.0
 
 >>> height
@@ -74,7 +74,7 @@ NameError: name 'Height' is not defined
 
 **Variables can be overwritten**. In the example below, `height` was initially `5` but the value is reassigned later to be `1` more than the previous value.
 
-```
+```python
 >>> height = 5
 >>> height
 5
@@ -84,12 +84,12 @@ NameError: name 'Height' is not defined
 6
 ```
 
-**Value of one variable can be assigned to another variable.** 
+**The value of one variable can be assigned to another variable.**
 
 <tip-box>
 
-:package: In the example below, the value of variable `height` is assigned to the variable `width`.
-```
+{{ icon_example }} In the example below, the value of variable `height` is assigned to the variable `width`.
+```python
 >>> height = 5
 >>> width = height
 >>> width

@@ -22,9 +22,9 @@ siteNav: programming-sitenav.md
 
 # Dictionaries
 
-<include src="../dictionaries-intro/text.md" /><hr><hr>
-<include src="../dictionaries-workingWith/text.md" /><hr><hr>
-<include src="../dictionaries-nested/text.md" /><hr><hr>
+<include src="../dictionaries-intro/text.md" />{{ hr_double }}
+<include src="../dictionaries-workingWith/text.md" />{{ hr_double }}
+<include src="../dictionaries-nested/text.md" />{{ hr_double }}
 
 </div>
 </div>

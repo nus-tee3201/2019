@@ -24,12 +24,12 @@ siteNav: programming-sitenav.md
 
 # Program Flow Control
 
-<include src="../booleans/text.md" /><hr><hr>
-<include src="../if/text.md" /><hr><hr>
-<include src="../while/text.md" /><hr><hr>
-<include src="../for/text.md" /><hr><hr>
-<include src="../import/text.md" /><hr><hr>
-<include src="../exit/text.md" /><hr><hr>
+<include src="../booleans/text.md" />{{ hr_double }}
+<include src="../if/text.md" />{{ hr_double }}
+<include src="../while/text.md" />{{ hr_double }}
+<include src="../for/text.md" />{{ hr_double }}
+<include src="../import/text.md" />{{ hr_double }}
+<include src="../exit/text.md" />{{ hr_double }}
 
 </div>
 </div>

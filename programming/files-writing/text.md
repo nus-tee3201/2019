@@ -4,7 +4,7 @@ Similar to reading from a file, writing to a file too is a three step process. O
 
 <tip-box> 
 
-:package: The code below shows how to write to a text file.
+{{ icon_example }} The code below shows how to write to a text file.
 
 ```python
 file_path = os.path.join('data', 'items.txt')
@@ -27,7 +27,7 @@ Opening a file in write mode and writing to it results in overwriting the conten
 
 <tip-box> 
 
-:package: The code below shows how to append to a file.
+{{ icon_example }} The code below shows how to append to a file.
 
 ```python
 f = open(file_path, 'a')  # open in append mode
