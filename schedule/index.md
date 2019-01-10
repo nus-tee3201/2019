@@ -365,7 +365,7 @@ head: scheduleHead.md
   <tab header="{{ fas_graduation_cap }} SE Topics">
     <include src="{{ path }}topics.md" />
   </tab>
-  <tab header="{{ fas_laptop_code }} Programming Topics">
+  <tab header="{{ fas_code }} Programming Topics">
     <include src="{{ path }}../python-topics.md#week{{ week.num }}" />
   </tab>
 </tabs>
