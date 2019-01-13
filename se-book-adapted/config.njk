@@ -319,16 +319,17 @@
       },
       {
         name: "modelingStructures",
+        priority: "-1",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
               {name: "ooStructures", heading: "OO Structures", priority: "1"},
-              {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "1"},
-              {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "3"},
-              {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "2"},
+              {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "-1"},
+              {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "-1"},
+              {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "-1"},
               {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "-1"},
-              {name: "objectDiagrams", heading: "Object Diagrams", priority: "1"},
+              {name: "objectDiagrams", heading: "Object Diagrams", priority: "-1"},
               {name: "objectOrientedDomainModels", heading: "Object Oriented Domain Models", priority: "4"},
               {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "4"},
               {name: "componentDiagrams", heading: "Component Diagrams", priority: "4"},
@@ -340,6 +341,7 @@
       },
       {
         name: "modelingBehaviors",
+        priority: "-1",
         level_two_topics: [
           {
             name: "",
@@ -650,9 +652,9 @@
             level_three_topics: [
               {name: "avoidLongMethods", heading: "Avoid Long Methods", priority: "3"},
               {name: "avoidDeepNesting", heading: "Avoid Deep Nesting", priority: "3"},
-              {name: "avoidComplicatedExpressions", heading: "Avoid Complicated Expressions", priority: "2"},
-              {name: "avoidMagicNumbers", heading: "Avoid Magic Numbers", priority: "2"},
-              {name: "makeCodeObvious", heading: "Make the Code Obvious", priority: "3"}
+              {name: "avoidComplicatedExpressions", heading: "Avoid Complicated Expressions", priority: "3"},
+              {name: "avoidMagicNumbers", heading: "Avoid Magic Numbers", priority: "3"},
+              {name: "makeCodeObvious", heading: "Make the Code Obvious", priority: "4"}
             ]
           },
           {
@@ -728,14 +730,15 @@
           {
             name: "basic",
             level_three_topics: [
-              {name: "useDefaultBranch", heading: "Use the Default Branch", priority: "2"},
+              {name: "useDefaultBranch", heading: "Use the Default Branch", priority: "-1"},
               {name: "dontRecycleVarsOrParams", heading: "Don't Recycle Variables or Parameters", priority: "2"},
-              {name: "avoidEmptyCatchBlocks", heading: "Avoid Empty Catch Blocks", priority: "2"},
-              {name: "deleteDeadCode", heading: "Delete Dead Code", priority: "2"}
+              {name: "avoidEmptyCatchBlocks", heading: "Avoid Empty Catch Blocks", priority: "-1"},
+              {name: "deleteDeadCode", heading: "Delete Dead Code", priority: "-1"}
             ]
           },
           {
             name: "intermediate",
+            priority: "-1",
             level_three_topics: [
               {name: "minimiseVariableScope", heading: "Minimise Scope of Variables", priority: "3"},
               {name: "minimiseCodeDuplication", heading: "Minimise Code Duplication", priority: "3"}
@@ -781,7 +784,7 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "4"},
+              {name: "how", heading: "How", priority: "-1"},
               {name: "when", heading: "When", priority: "4"}
             ]
           }
@@ -955,7 +958,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           }
         ]
@@ -966,7 +969,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "lateVsEarly", heading: "Late-and-One-Time vs Early-and-Frequent", priority: "2"},
+              {name: "lateVsEarly", heading: "Late-and-One-Time vs Early-and-Frequent", priority: "3"},
               {name: "bigBangVsIncremental", heading: "Big-Bang vs Incremental Integration", priority: "3"},
               {name: "topDownVsBottomUp", heading: "Top-Down vs Bottom-Up Integration", priority: "4"}
             ]
@@ -1010,7 +1013,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
+              {name: "what", heading: "What", priority: "3"},
               {name: "when", heading: "When", priority: "3"}
             ]
           }
@@ -1034,7 +1037,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"},
+              {name: "what", heading: "What", priority: "2"},
               {name: "how", heading: "How", priority: "2"}
             ]
           }
@@ -1088,7 +1091,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
+              {name: "what", heading: "What", priority: "3"},
               {name: "validationVsVerification", heading: "Validation vs Verification", priority: "-1"}
             ]
           }
@@ -1152,14 +1155,14 @@
             name: "unitTesting",
             level_three_topics: [
               {name: "what", heading: "What", priority: "1"},
-              {name: "stubs", heading: "Stubs", priority: "3"}
+              {name: "stubs", heading: "Stubs", priority: "-1"}
             ]
           },
           {
             name: "integrationTesting",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "3"}
+              {name: "how", heading: "How", priority: "-1"}
             ]
           },
           {
@@ -1184,14 +1187,14 @@
             name: "developerTesting",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
-              {name: "why", heading: "Why", priority: "3"}
+              {name: "why", heading: "Why", priority: "4"}
             ]
           },
           {
             name: "exploratoryVsScriptedTesting",
             level_three_topics: [
               {name: "what", heading: "What", priority: "3"},
-              {name: "when", heading: "When", priority: "3"}
+              {name: "when", heading: "When", priority: "4"}
             ]
           },
           {
@@ -1216,8 +1219,8 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
-              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "4"},
-              {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "4"},
+              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "3"},
+              {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "-1"},
               {name: "tools", heading: "Test Automation Tools", priority: "-1"},
               {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "-1"}
             ]
@@ -1276,9 +1279,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"},
-              {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "2"},
-              {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "2"}
+              {name: "what", heading: "What", priority: "2"},
+              {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "-1"},
+              {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "3"}
             ]
           }
         ]
@@ -1326,6 +1329,7 @@
       },
       {
         name: "more",
+        priority: "-1",
         level_two_topics: [
           {
             name: "",
@@ -1536,7 +1540,7 @@
           {
             name: "composition",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
@@ -1971,8 +1975,8 @@
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
-  {heading: "Design", chapters: [chapters.design, chapters.oop, chapters.designFundamentals, chapters.modeling]},
-  {heading: "Implementation", chapters: [ chapters.errorHandling, chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.integration, chapters.reuse, chapters.documentation]},
+  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.oop]},
+  {heading: "Implementation", chapters: [ chapters.errorHandling, chapters.ides, chapters.integration, chapters.codeQuality, chapters.refactoring, chapters.reuse, chapters.documentation]},
   {heading: "Quality Assurance", chapters: [chapters.testing, chapters.testCaseDesign, chapters.qualityAssurance]},
   {heading: "Project Management", chapters: [chapters.projectPlanning, chapters.teamwork, chapters.processModels, chapters.revisionControl]},
   {heading: "Tools", chapters: [chapters.uml]}

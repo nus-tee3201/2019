@@ -20,9 +20,12 @@
 
 {% macro show_item(item) -%}
 {% if item.week %}
+<hr>
 <br><big><md>**Week {{ item.week }}**</md></big>
+<include src="python-topics.md#week{{ item.week }}-toc" optional />
+
 {% elif item.name %}
-<br>{{ fas_circle }} **{{ item.name }}**
+<br><md>{{ fas_circle }} **{{ item.name }}**</md>
 {% elif item.heading %}
 <br>&nbsp;&nbsp;&nbsp;{{ far_circle }} {{ item.heading }} {{ show_stars(item.priority) if item.priority }} :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 {% elif item.location %}
