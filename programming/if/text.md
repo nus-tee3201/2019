@@ -10,6 +10,10 @@ if condition :
 
 {{ icon_example }} The code below has two `if` statements; one evaluates to `true` while the other doesn't.
 
+<div class="container">
+ <div class="row">
+  <div class="col">
+
 ```python
 price = 55
 print(price)
@@ -20,16 +24,25 @@ weight = 45
 print(weight)
 if weight > 100:
     print('Heavy')
-    
+
 print('Done')
 ```
-Output {{ icon_output }} <trigger trigger="click" for="modal:simpelIf-pyTutor">%%[Click here to visualize execution]%%</trigger>
+
+  </div>
+  <div class="col align-self-end">
+
+output {{ fas_level_down_alt }}
 ```
 50
 Expensive
 45
 Done
 ```
+<trigger trigger="click" for="modal:simpelIf-pyTutor">%%[Click here to visualize execution]%%</trigger>
+  </div>
+ </div>
+</div>
+
 <modal large title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
 
 Use the `Back` and `Forward` buttons to visualize execution one step at a time. 

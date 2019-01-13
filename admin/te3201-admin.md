@@ -95,15 +95,15 @@ There is no formal tutorial. Instead, tutorial-like activities are integrated in
 
 A customized **online text book** is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.
 * Full version is [here]({{baseUrl}}/se-book-adapted/index.html): The relevant sections are embedded under the corresponding week in the [schedule page]({{baseUrl}}/schedule/index.html).
-* {{ icon_print }} Printable version is [here]({{baseUrl}}/se-book-adapted/print.html). PDF copies of the relevant sections will be uploaded to IVLE, by Monday of each week. ==You are encouraged to use the online full version when possible== (instead of the printable version or the PDF version), as it has more content %%videos, exercises, etc.%%
+* {{ icon_print }} Printable version is [here]({{baseUrl}}/se-book-adapted/print.html). ==You are encouraged to use the online full version when possible== (instead of the printable version or the PDF version), as it has more content %%videos, exercises, etc.%%
 
 **Programming Textbook**:
 
-[An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. Contents in that guide are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
+[An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
 
 {{ dotted_line }}
 
-# Programming language
+# Programming Language
 
 This module uses Python programming language to teach you programming basics required for software engineering. However, Python is not examinable.
 
