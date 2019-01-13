@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/2019/css/main.css">
+    <link rel="stylesheet" href="/2019/css/admin.css">
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+            <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+            <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+            <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+            <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+            <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+            <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+            <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+            <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+            <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          </dropdown>
+          <dropdown text="Textbook" class="nav-link">
+            <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+            <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+          </dropdown>
+          <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content" id="main">
+        <div id="toc">
+          <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a></span></p>
+        </div>
+        <div id="main">
+          <div>
+            <h1 id="appendix-a%3A-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a%3A-installing-3rd-party-modules"></a></h1>
+            <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
+            <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
+            <pre class="hljs"><code>pip --version
+</code></pre>
+            <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
+              <pre><code class="hljs bash">pip install colorama
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>Collecting colorama
+  Downloading colorama-0.3.9-py2.py3-none-any.whl
+Installing collected packages: colorama
+Successfully installed colorama-0.3.9
+</code></pre>
+              <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
+
+colorama.init()  <span class="hljs-comment"># one-time initialization</span>
+
+print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
+print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
+print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
+</code></pre>
+              <p>⤵️<br></p>
+              <img src="/2019/thirdparty/images/coloramaOutput.png">
+            </tip-box>
+            <tip-box>
+              <p><strong>💡 Some useful third-party modules:</strong></p>
+              <ul>
+                <li><a href="https://pypi.python.org/pypi/colorama"><code>colorama</code></a>: For colorizing text printed in the console</li>
+                <li><a href="https://pypi.python.org/pypi/selenium"><code>selenium</code></a>: For automating the Browser</li>
+                <li><a href="http://www.magiksys.net/pyzmail/"><code>pyzmail</code></a>: For sending emails</li>
+                <li><a href="https://www.twilio.com/docs/libraries/python"><code>twilio</code></a>: For sending SMS</li>
+                <li><a href="https://pythonhosted.org/PyPDF2/"><code>PyPDF2</code></a>: For working with PDF files</li>
+                <li><a href="https://pypi.python.org/pypi/pyperclip/1.6.0"><code>pyperclip</code></a>: To access the clipboard of the operating system</li>
+                <li><a href="https://pypi.python.org/pypi/dateparser/0.7.0"><code>dateparser</code></a>: To parse natural language repsentation of dates e.g., <code>in 2 days</code>, <code>tomorrow</code></li>
+              </ul>
+            </tip-box>
+            <p><strong>📎 Resources</strong>:</p>
+            <ul>
+              <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
+            </ul>
+            <panel type="danger" header=":muscle: Exercise: Print Errors in Red" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-%3A-print-errors-in-red"></a></h4>
+                <p>Update a CLI program you have written in the past to print error messages in red color.</p>
+                <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+<script src="..\..\markbind\layouts\default\scripts.js"></script>
+</html>

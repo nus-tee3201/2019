@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122519234-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website</title>
+    <title>TE3201 Website - Week 1 - Outcomes</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -14,51 +21,42 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
-    
-    <link rel="icon" href="/cs2103-website/favicon.ico">
+    <link rel="stylesheet" href="/2019/css/main.css">
+    <link rel="stylesheet" href="/2019/css/schedule.css">
+    <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body>
 <div id="app">
     <div id="content-wrapper">
   <div>
     <navbar placement="top" type="inverse">
-      <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
+      <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
       <dropdown text="Schedule" class="nav-link">
-        <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+        <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+        <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+        <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+        <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+        <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+        <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+        <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+        <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+        <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+        <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+        <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
       </dropdown>
-      <li><a href="/cs2103-website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-      <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+      <dropdown text="Textbook" class="nav-link">
+        <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+        <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+      </dropdown>
+      <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
       <dropdown text="Links" class="nav-link">
-        <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-        <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-        <li><a href="/cs2103-website/admin/project-overview.html" class="dropdown-item"><span class="fas fa-drafting-compass"></span> Project Info</a></li>
-        <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-        <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-        <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-        <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-        <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
-        <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+        <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
@@ -68,1122 +66,566 @@
     </navbar>
   </div>
   <div class="website-content" id="main">
-    <p><span style="float:right"><span><a href="/cs2103-website/schedule/week2/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
+    <p><span style="float:right"><span><a href="/2019/schedule/week2/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
     <h1 id="week-1-%5Bjan-14%5D">Week 1 <small><small><span class="dimmed">[Jan 14]</span></small></small><a class="fa fa-anchor" href="#week-1-%5Bjan-14%5D"></a></h1>
+    <div></div>
     <tabs>
-      <tab header="<span class='fas fa-bell'></span> Notices">
+      <tab header="<span class='fas fa-graduation-cap'></span> SE Topics">
+        <div>
+          <p><span class="dimmed">Topics allocated to the week will appear here.</span></p>
+          <div class="website-content">
+            <div id="main">
+              <div class="indented">
+                <ul>
+                  <li><a href="#W1-1">[W1.1] SE: Intro <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></li>
+                </ul>
+                <p></p>
+              </div>
+              <hr style="border: 1px dotted #cccccc;">
+              <p><span id="W1-1"></span></p>
+              <panel type="seamless" no-close="" expandable="true" expanded="">
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W1.1]</span> <big><big><strong>SE: Intro</strong></big></big></big> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W1.1a]</span></span> <span class="dimmed"><strong><span>Software Engineering → Introduction →
+                            </span></strong></span> <strong><big><big><span>Pros and Cons</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain pros and cons of software engineering</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <tip-box type="definition">
+                              <div>
+                              <p><strong>Software Engineering</strong>: Software Engineering is the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software&quot; <sub>-- IEEE Standard Glossary of Software Engineering Terminology</sub></p>
+                            </div>
+                          </tip-box>
+                          <p>The following description of the <em>Joys of the Programming Craft</em> was taken from Chapter 1 of the famous book <trigger for="modal:mmm" trigger="click"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</trigger>.</p>
+                          <blockquote>
+                            <p><strong>Why is programming fun? What delights may its practitioner expect as his reward?</strong></p>
+                            <p>First is the sheer joy of making things. As the child delights in his mud pie, so the adult enjoys building things,
+                              especially things of his own design. I think this delight must be an image of God's delight in making things,
+                              a delight shown in the distinctness and newness of each leaf and each snowflake.</p>
+                            <p>Second is the pleasure of making things that are useful to other people. Deep within, we want others to use our work and
+                              to find it helpful. In this respect the programming system is not essentially different from the child's
+                              first clay pencil holder &quot;for Daddy's office.&quot;</p>
+                            <p>Third is the fascination of fashioning complex puzzle-like objects of interlocking moving parts and watching them
+                              work in subtle cycles, playing out the consequences of principles built in from the beginning. The programmed computer
+                              has all the fascination of the pinball machine or the jukebox mechanism, carried to the ultimate.</p>
+                            <p>Fourth is the joy of always learning, which springs from the nonrepeating nature of the task. In one way or another
+                              the problem is ever new, and its solver learns something: sometimes practical, sometimes theoretical, and sometimes both.</p>
+                            <p>Finally, there is the delight of working in such a tractable medium. The programmer, like the poet,
+                              works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by the exertion of
+                              the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand
+                              conceptual structures....</p>
+                            <p>Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing
+                              visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms.
+                              The magic of myth and legend has come true in our time. One types the correct incantation on a keyboard, and a display screen comes to life,
+                              showing things that never were nor could be.</p>
+                            <p>Programming then is fun because it gratifies creative longings built deep within us and delights sensibilities we have in common with all men.</p>
+                          </blockquote>
+                          <blockquote>
+                            <p><strong>Not all is delight, however, and knowing the inherent woes makes it easier to bear them when they appear.</strong></p>
+                            <p>First, one must perform perfectly. The computer resembles the magic of legend in this respect, too. If one character,
+                              one pause, of the incantation is not strictly in proper form, the magic doesn't work. Human beings are not accustomed to being perfect,
+                              and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.</p>
+                            <p>Next, other people set one's objectives, provide one's resources, and furnish one's information. One rarely controls the
+                              circumstances of his work, or even its goal. In management terms, one's authority is not sufficient for his responsibility.
+                              It seems that in all fields, however, the jobs where things get done never have formal authority commensurate with responsibility.
+                              In practice, actual (as opposed to formal) authority is acquired from the very momentum of accomplishment.</p>
+                            <p>The dependence upon others has a particular case that is especially painful for the system programmer. He depends upon other
+                              people's programs. These are often maldesigned, poorly implemented, incompletely delivered (no source code or test cases),
+                              and poorly documented. So he must spend hours studying and fixing things that in an ideal world would be complete, available, and usable.</p>
+                            <p>The next woe is that designing grand concepts is fun; finding nitty little bugs is just work. With any creative activity
+                              come dreary hours of tedious, painstaking labor, and programming is no exception.</p>
+                            <p>Next, one finds that debugging has a linear convergence, or worse, where one somehow expects a quadratic sort of approach to the end.
+                              So testing drags on and on, the last difficult bugs taking more time to find than the first.</p>
+                            <p>The last woe, and sometimes the last straw, is that the product over which one has labored so long appears to be
+                              obsolete upon (or before) completion. Already colleagues and competitors are in hot pursuit of new and better ideas.
+                              Already the displacement of one's thought-child is not only conceived, but scheduled.</p>
+                            <p>This always seems worse than it really is. The new and better product is generally not available when one completes his own;
+                              it is only talked about. It, too, will require months of development. The real tiger is never a match for the paper one,
+                              unless actual use is wanted. Then the virtues of reality have a satisfaction all their own.</p>
+                            <p>Of course the technological base on which one builds is always advancing. As soon as one freezes a design,
+                              it becomes obsolete in terms of its concepts. But implementation of real products demands phasing and quantizing.
+                              The obsolescence of an implementation must be measured against other existing implementations, not against unrealized concepts.
+                              The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
+                            <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys
+                              and woes all its own. For many, the joys far outweigh the woes....</p>
+                          </blockquote>
+                          <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
+                            <table>
+                              <tr>
+                                <td>
+                                  <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Mythical_man-month_%28book_cover%29.jpg" height="250"></td>
+                                <td>
+                                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fred_Brooks.jpg/800px-Fred_Brooks.jpg" height="250"></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p><sub>[<a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Text and book cover source: Wikipedia</a>]</sub></p>
+                                </td>
+                                <td>
+                                  <p><sub>[<a href="https://commons.wikimedia.org/wiki/File:Fred_Brooks.jpg">Fred Brooks photo source</a>]</sub></p>
+                                </td>
+                              </tr>
+                            </table>
+                            <p><em>The Mythical Man-Month: Essays on Software Engineering</em> is a book on software engineering and project management by Fred Brooks, whose central theme is that &quot;adding manpower to a late software project makes it later&quot;. This idea is known as Brooks's law, and is presented along with the second-system effect and advocacy of prototyping.</p>
+                          </modal>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> SE vs Civil Engineering">
+                                  <question has-input="true">
+                                    <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
+                                    <div slot="answer">
+                                      <div class="table-responsive">
+                                        <table class="markbind-table table table-bordered table-striped">
+                                          <thead>
+                                            <tr>
+                                              <th style="text-align:center">Buildings</th>
+                                              <th style="text-align:center">Software</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td style="text-align:center">Visible, tangible</td>
+                                              <td style="text-align:center">Invisible, intangible</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Wears out over time</td>
+                                              <td style="text-align:center">Does not wear out</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Change is limited by physical restrictions (e.g. difficult to remove a floor from a high rise building)</td>
+                                              <td style="text-align:center">Change is not limited by such restrictions. Just change the code and recompile.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Creating an exact copy of a building is impossible. Creating a near copy is almost as costly as creating the original.</td>
+                                              <td style="text-align:center">Any number of exact copies can be made with near zero cost.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Difficult to move.</td>
+                                              <td style="text-align:center">Easily delivered from one place to another.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Many low-skilled workers following tried-and-tested procedures.</td>
+                                              <td style="text-align:center">No low-skilled workers involved. Workers have more freedom to follow their own procedures.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Easier to assure quality (just follow accepted procedure).</td>
+                                              <td style="text-align:center">Not easy to assure quality.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Majority of the work force has to be on location.</td>
+                                              <td style="text-align:center">Can be built by people who are not even in the same country.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Raw materials are costly, costly equipment required.</td>
+                                              <td style="text-align:center">Almost free raw materials and relatively cheap equipment.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Once construction is started, it is hard to do drastic changes to the design.</td>
+                                              <td style="text-align:center">Building process is very flexible. Drastic design changes can be done, although costly</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">A lot of manual and menial labor involved.</td>
+                                              <td style="text-align:center">Most work involves highly-skilled labor.</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center">Generally robust. E.g. removing a single brick is unlikely to destroy a building.</td>
+                                              <td style="text-align:center">More fragile than buildings. A single misplaced semicolon can render the whole system useless.</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Software vs Bridges">
+                                  <question has-input="true">
+                                    <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
+                                    <div slot="answer">
+                                      <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month) with a just a PC and a few days of work!</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coding as a manufacturing activity">
+                                  <question has-input="true">
+                                    <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
+                                    <div slot="answer">
+                                      <p>Arguments to support this statement:</p>
+                                      <ul>
+                                        <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
+                                        <li>If coding is a manufacturing activity, we wouldn’t be changing it so much after we code software. But if the code is in fact a ‘design’, yes, we would fiddle with it until we get it right.</li>
+                                        <li>Manufacturing is the process of building a finished product based on the design. Code is the design. Manufacturing is what is done by the compiler (fully automated).</li>
+                                      </ul>
+                                      <p>However, the type of ‘design’ that occurs during coding is at a much lower level than the ‘design’ that occurs before coding.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> List pros and cons of SE">
+                                  <question has-input="true">
+                                    <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
+                                  <question>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Requiring some amount of tedious, painstaking labor</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Ease of copying and transporting software makes it difficult to keep track of versions</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. High dependence on others</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(c)</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </tab>
+      <tab header="<span class='fas fa-code'></span> Programming Topics">
         <div>
           <ul>
-            <li>
-              <p><strong>Submit the pre-module survey <mark>(Compulsory)</mark> ⏰ <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></strong></p>
-              <p><em>Pre-Module Survey</em> will be available on IVLE <strong>Week 1 Monday - Friday 2359 ⏰</strong>. <span class="dimmed">We need all of you to submit it because it tells us some important information about you, especially your GitHub username.</span></p>
-            </li>
-            <li>
-              <p><strong><mark>Week 1 lecture is compulsory</mark></strong></p>
-            </li>
-            <li>
-              <p><strong>See the</strong> '<span class="fas fa-info-circle"></span> Admin Info' <strong>tab</strong> (above) for some important admin info you need to know at the start of the semester.</p>
+            <li><a href="#expressions%2C-data-types%2C-variables"><strong>Expressions, Data Types, Variables</strong></a>
+              <ul>
+                <li><a href="#computer-programs">Computer Programs</a></li>
+                <li><a href="#setting-up-the-programming-environment">Setting up the Programming Environment</a></li>
+                <li><a href="#working-with-an-interactive-shell">Working with an Interactive Shell</a></li>
+                <li><a href="#operators">Operators</a></li>
+                <li><a href="#data-types">Data Types</a></li>
+                <li><a href="#variables">Variables</a></li>
+              </ul>
             </li>
           </ul>
-        </div>
-      </tab>
-      <tab header="<span class='fas fa-trophy'></span> Topics">
-        <div>
-          <p><span class="dimmed">Topics allocated to the week will appear in this tab.</span></p>
-          <p>No topics are allocated to week 1 as our lecture falls on the Friday.</p>
-        </div>
-      </tab>
-      <tab header="<span class='fas fa-drafting-compass'></span> Project">
-        <div>
-          <p><span class="dimmed">Project-related information relevant to the week will appear in this tab.</span></p>
-          <p>While you wait for the project to start, brush up your Java knowledge. In particular, learn new features added in Java 8.</p>
-        </div>
-      </tab>
-      <tab header="<span class='fas fa-chalkboard-teacher'></span> Tutorial">
-        <div>
-          <p><span class="dimmed">Information relevant to the week's tutorial will appear in this tab.</span></p>
-          <p>Note: We use <code>Tutorial 1</code> to mean <code>the tutorial in week 1</code>.<br>
-            <strong>There is no tutorial in week 1.</strong></p>
-        </div>
-      </tab>
-      <tab header="<span class='fas fa-info-circle'></span> Admin Info">
-        <div>
-          <div id="additional">
-            <p><span class="dimmed">Admin info relevant to the week's will appear in this tab.</span></p>
-            <panel type="danger" header="**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Using this website [essential info]** <span class='glyphicon glyphicon-star' aria-hidden='true'></span>" expandable="">
-              <div>
-                <p>
-                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The <span><a href="/cs2103-website/index.html">Schedule page</a></span> is your main source of information for CS2103/T. You will need to refer to it weekly.
-                </p>
-                <p><span class="fas fa-info-circle"></span> More details for the upcoming weeks will be added as the weeks progress. In general, <mark>information given for more than 1 week into the future should be treated as <em>tentative</em></mark>.</p>
-                <div>
-                  <h3 id="browser-compatibility">Browser Compatibility<a class="fa fa-anchor" href="#browser-compatibility"></a></h3>
-                  <p>Most of this will work on most mainstream Browsers, but <mark>embedded slides are best viewed using Chrome</mark>.</p>
-                </div>
-                <div>
-                  <h3 id="information-layers">Information Layers<a class="fa fa-anchor" href="#information-layers"></a></h3>
-                  <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
-                  <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
-                  <tip-box>
-                    <panel header="Some less important info in a minimized panel" minimized="">
-                      <p>Less important info</p>
-                      <p></p>
-                    </panel>
-                    <p></p>
-                    <panel header="%%Some less important info in a boarder-less panel%%" type="seamless">
-                      <p>Less important info</p>
-                      <p></p>
-                    </panel>
-                    <p></p>
-                    <panel header="%%Some less important info in a panel%%">
-                      <p>Less important info</p>
-                      <p></p>
-                    </panel>
-                    <p></p>
-                  </tip-box>
-                  <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
-                  <tip-box>
-                    <tabs>
-                        <tab header="<span class='far fa-file-alt'></span>">
-                         
-                        Some textual description of X
-                        <p></p>
-                      </tab>
-                        <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
-                        <p>Video describing X</p>
-                        <p></p>
-                      </tab>
-                    </tabs>
-                  </tip-box>
-                  <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong> (activated by clicking) containing additional information.</p>
-                  <popover id="pop:tooltip-example" title="Tooltip Example" placement="top">
-                    <div slot="content">
-                      Additional information
-                    </div>
-                  </popover>
-                  <modal title="Modal Example" id="modal:modal-example">
-                    Additional information
-                  </modal>
-                </div>
-                <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
-                <div class="flat">
-                  <div>
-                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:usingThisWebsite-starRatingSystem">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Module Expectations → Star Rating System</trigger> ]</span></p>
-                  </div>
-                </div>
-                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations → Star Rating System  " id="modal:usingThisWebsite-starRatingSystem">
-                    <div>
-                    <h4 id="star-rating-system">Star rating system<a class="fa fa-anchor" href="#star-rating-system"></a></h4>
-                    <div class="indented">
-                      <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
-                      </p>
-                      <p><strong>Star ratings for Learning Outcomes</strong> (and textbook sections):</p>
-                      <ul>
-                        <li>
-                          <p><strong>One-star topics</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The topics you need to learn just to keep up with the module. We recommend you to <mark>learn these topics if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</p>
-                        </li>
-                        <li>
-                          <p><strong>Two-stars topics</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>: Can get you up to a <strong>B+</strong>.</p>
-                        </li>
-                        <li>
-                          <p><strong>Three-stars topics</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
-                        </li>
-                        <li>
-                          <p><strong>Four-stars topics</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive entry requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star topics are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
-                        </li>
-                        <li>
-                          <p>Topics marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are relevant topoics you are expected have learned in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.</p>
-                        </li>
-                      </ul>
-                      <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
-                      <ul>
-                        <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark> without affecting your ability to follow the module.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </modal>
-                <p>
-                  <panel src="/cs2103-website\admin\moduleExpectations._include_.html#starRatingSystem" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations → Star Rating System  " class="embedding" minimized="" fragment="starRatingSystem"></panel>
-                </p>
-              </div>
+          <h1 id="expressions%2C-data-types%2C-variables">Expressions, Data Types, Variables<a class="fa fa-anchor" href="#expressions%2C-data-types%2C-variables"></a></h1>
+          <div>
+            <h3 id="computer-programs">Computer Programs<a class="fa fa-anchor" href="#computer-programs"></a></h3>
+            <p><strong>A <em>computer program</em> is a collection of instructions that a computer can follow to perform a specific task.</strong> A <em>software</em> is a collection of programs wrapped up as a product that can be used <span class="dimmed"> e.g. Microsoft Office</span>. A software <em>application</em> is a software that is meant to be used by an end user, <span class="dimmed"> as opposed to software used by other software (e.g. the software that drives a hard disk)</span>. <em>Programming</em> is the task of writing programs. <em>Software Engineering</em> is the task of creating software.</p>
+            <p>Points to note:</p>
+            <ul>
+              <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
+            </ul>
+            <panel type="seamless" header="%%:tv: What is programming (a 2-minute intro from Khan Academy):%%">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
             </panel>
-            <panel type="info" header="**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Using this website [more info]** <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" expandable="">
-              <div>
-                <div name="Conventions Used">
-                  <h3 id="conventions-used">Conventions Used<a class="fa fa-anchor" href="#conventions-used"></a></h3>
-                  <h4 id="shorthand-headings">Shorthand Headings<a class="fa fa-anchor" href="#shorthand-headings"></a></h4>
-                  <p>Meaning of some shortened headings:</p>
-                  <ul>
-                    <li>
-                      <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
-                      <p>
-                        <panel header="%%Example%%" src="/cs2103-website\book\refactoring\what\unit-inElsewhere-asFlat._include_.html"></panel>
-                      </p>
-                    </li>
-                    <li>
-                      <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
-                      <p>
-                        <panel header="%%Example%%" src="/cs2103-website\book\documentation\guidelines\goTopDown\why\unit-inElsewhere-asFlat._include_.html"></panel>
-                      </p>
-                    </li>
-                    <li>
-                      <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
-                      <p>
-                        <panel header="%%Example%%" src="/cs2103-website\book\refactoring\how\unit-inElsewhere-asFlat._include_.html"></panel>
-                      </p>
-                    </li>
-                    <li>
-                      <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
-                      <p>
-                        <panel header="%%Example%%" src="/cs2103-website\book\refactoring\when\unit-inElsewhere-asFlat._include_.html"></panel>
-                      </p>
-                    </li>
-                  </ul>
-                  <h4 id="boxed-text-styles">Boxed-Text Styles<a class="fa fa-anchor" href="#boxed-text-styles"></a></h4>
-                  <div class="indented">
-                    <tip-box type="info">
-                      additional info
-                    </tip-box>
-                    <tip-box type="warning">
-                      warning
-                    </tip-box>
-                    <tip-box type="success">
-                      positive message
-                    </tip-box>
-                    <tip-box type="important">
-                      important message
-                    </tip-box>
-                    <tip-box type="wrong">
-                      an error to avoid
-                    </tip-box>
-                    <tip-box type="tip">
-                      tip
-                    </tip-box>
-                    <tip-box type="definition">
-                      definition
-                    </tip-box>
-                  </div>
-                  <h4 id="meaning-of-icons">Meaning of Icons<a class="fa fa-anchor" href="#meaning-of-icons"></a></h4>
-                  <div class="indented">
-                    <p><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested<br>
-                      <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> : direct link to the LO. <kbd>Ctrl</kbd>+<code>Click</code> to open the LO in new window/tab.<br>
-                      <span class="fas fa-trophy"></span> : learning outcomes<br>
-                      <span class="glyphicon glyphicon-education" aria-hidden="true"></span> : prerequisite learning outcome<br>
-                      <span class="fas fa-cube"></span> : examples<br>
-                      <span class="fas fa-paperclip"></span> : resources<br>
-                      <span class="fas fa-dumbbell"></span> : exercises<br>
-                      <span class="glyphicon glyphicon-print" aria-hidden="true"></span> : printable version<br>
-                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> : preview/more info<br>
-                      <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> : video<br>
-                      <smal><span class="badge badge-secondary">&gt;_</span></smal> : a command to be run in a terminal<br>
-                      <span class="far fa-file-alt"></span> : textual description<br>
-                      <span class="far fa-images"></span> : slides<br>
-                      <span class="fas fa-arrow-down"></span> : output produced by running code<br>
-                      <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> question without answer<br>
-                      <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> question with answer<br>
-                    </p>
-                  </div>
-                </div>
-                <div class="indented">
-                  <p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> : tasks to do<br>
-                    <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> : lecture<br>
-                    <span class="fas fa-chalkboard-teacher"></span> : tutorial<br>
-                    <span class="fas fa-briefcase"></span> : evidence you can use to prove you have achieved a learning outcome<br>
-                    ⏰ : deadline<br></p>
-                </div>
-                <h3 id="searching-for-keywords">Searching for keywords<a class="fa fa-anchor" href="#searching-for-keywords"></a></h3>
-                <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">in the forum</a> so that we can add the missing keyword to our search index.</p>
-                <div>
-                  <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files"></a></h3>
-                  <ol>
-                    <li>
-                      <p>Use Chrome to load the page you want to save as pdf.</p>
-                    </li>
-                    <li>
-                      <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
-                    </li>
-                    <li>
-                      <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
-                        <img src="/cs2103-website/book/about/images/chromeSaveAsPdf.png"></p>
-                    </li>
-                  </ol>
-                </div>
-                <h3 id="printing-textbook-content">Printing Textbook Content<a class="fa fa-anchor" href="#printing-textbook-content"></a></h3>
-                <p>Printer-friendly version <span class="dimmed">(indicated by <span class="glyphicon glyphicon-print" aria-hidden="true"></span> icon)</span> have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.</p>
-                <h3 id="making-this-website-better">Making this Website Better<a class="fa fa-anchor" href="#making-this-website-better"></a></h3>
-                <p>This website was generated using the <a href="https://markbind.github.io/">MarkBind</a> software developed at NUS. <strong>We welcome bug reports, suggestions, and contributions</strong>, to be submitted <a href="https://github.com/nus-cs2103-AY1819S2/website/issues">at the website issue tracker</a>.</p>
-              </div>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="setting-up-the-programming-environment">Setting up the Programming Environment<a class="fa fa-anchor" href="#setting-up-the-programming-environment"></a></h3>
+            <p><strong>Programming requires certain specialized tools</strong> most of which are specific to the programming language being used. While some of these tools may come pre-installed in your computer, often you need to install and configure them yourself.</p>
+            <div class="alt-python">
+              <p>Some options for setting up the Python programming environment</p>
+              <p><strong>Option 1. use an online python programming environment</strong></p>
+              <p>In the initial stages you can use an online programming environment to practice Python.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> An example online Python programming tool you can use is <a href="https://repl.it/repls">repl.it</a>:</p>
+                <ol>
+                  <li>Go to <a href="https://repl.it/repls">repl.it</a> and signup for a free account</li>
+                  <li>Go to <a href="https://repl.it/languages/python3">https://repl.it/languages/python3</a> (or choose <em>Python 3</em> from the options in the web page) to enter the online Python environment</li>
+                </ol>
+              </box>
+              <p><strong>Option 2. install python on your computer</strong></p>
+              <p>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)
+              </p>
+              <panel type="seamless" header=":tv: How to install Python on Windows">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              </panel>
+            </div>
+            <div class="alt-java">
+              <p>Programming in Java requires minimally the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html"><em>Java Development Kit (JDK)</em></a> to be installed in your computer. The JDK includes tools useful for developing and testing programs written in the Java programming language and running on the Java platform.</p>
+            </div>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell<a class="fa fa-anchor" href="#working-with-an-interactive-shell"></a></h3>
+            <p><strong>Some programming environments provide an <em>
+                  <tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip>
+                </em>.</strong> In the python interactive shell you can type in a python <em>expression</em> and get the shell to evaluate the expression.</p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> * <span class="hljs-number">4</span> * <span class="hljs-number">3</span>
+<span class="hljs-number">24</span>
+&gt;&gt;&gt;
+</code></pre>
+            <panel type="seamless" header="%%:tv: Python interactive shell in action:%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
+            <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Operator</th>
+                    <th style="text-align:left">Operation</th>
+                    <th style="text-align:center">Example</th>
+                    <th style="text-align:center">Evaluates to...</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center"><code>+</code></td>
+                    <td style="text-align:left">Addition</td>
+                    <td style="text-align:center"><code>2 + 2</code></td>
+                    <td style="text-align:center"><code>4</code></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><code>-</code></td>
+                    <td style="text-align:left">Subtraction</td>
+                    <td style="text-align:center"><code>5 - 2</code></td>
+                    <td style="text-align:center"><code>3</code></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><code>*</code></td>
+                    <td style="text-align:left">Multiplication</td>
+                    <td style="text-align:center"><code>3 * 5</code></td>
+                    <td style="text-align:center"><code>15</code></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><code>/</code></td>
+                    <td style="text-align:left">Division</td>
+                    <td style="text-align:center"><code>22 / 8</code></td>
+                    <td style="text-align:center"><code>2.75</code></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><code>**</code></td>
+                    <td style="text-align:left">Exponent</td>
+                    <td style="text-align:center"><code>2 ** 3</code></td>
+                    <td style="text-align:center"><code>8</code></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><code>%</code></td>
+                    <td style="text-align:left">Modulus/remainder</td>
+                    <td style="text-align:center"><code>22 % 8</code></td>
+                    <td style="text-align:center"><code>6</code></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><code>//</code></td>
+                    <td style="text-align:left">Integer division</td>
+                    <td style="text-align:center"><code>22 // 8</code></td>
+                    <td style="text-align:center"><code>2</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
+<span class="hljs-number">22</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
+<span class="hljs-number">30</span>
+</code></pre>
+            <panel type="seamless" header="%%:tv: Operators%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
+            <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
+              <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
+              <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
             </panel>
-            <panel type="warning" header="**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Weekly schedule** <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" expandable="">
-              <div>
-                <p><span class="fas fa-calendar-alt"></span> <strong>[Friday (previous week)]</strong><br></p>
-                <p>Attend the lecture for,</p>
-                <ul>
-                  <li>a recap of the preceding week's topics</li>
-                  <li>an introduction to the current week's topics</li>
-                </ul>
-                <div class="flat">
-                  <div>
-                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:weeklySchedule-lectures">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Lectures</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-                  </div>
-                </div>
-                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Lectures  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:weeklySchedule-lectures">
-                    <div>
-                    <img src="/cs2103-website/admin/images/Lecture photo.png" width="100%">
-                    <p><strong>Timing/venue</strong>:</p>
-                    <div class="table-responsive">
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>Semester</th>
-                            <th>Venue</th>
-                            <th>Time</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Semester 1 (Aug-Nov)</td>
-                            <td>ICube Auditorium</td>
-                            <td><strong>1600</strong>-1800</td>
-                          </tr>
-                          <tr>
-                            <td>Semester 2 (Jan-April)</td>
-                            <td>ICube Auditorium</td>
-                            <td><strong>1600</strong>-1800</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <p>Lectures start on time sharp and end around 15 minutes before official end time.</p>
-                    <panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%">
-                      <p>CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. <span class="dimmed">The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.</span></p>
-                      <p></p>
-                    </panel>
-                    <p></p>
-                    <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
-                    <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture. <mark>Webcast lectures will be available on LumiNUS instead fo IVLE</mark> (IVLE no longer supports webcasts).</p>
-                    <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around topics, are given in Web format, and can be found in the <a href="/cs2103-website/se-book-adapted/index.html">Textbook</a> section and are also embedded in from the <span><a href="/cs2103-website/index.html">Schedule page</a></span>.</p>
-                    <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to IVLE <em>after</em> the lecture.</p>
-                  </div>
-                </modal>
-                <p>
-                  <panel src="/cs2103-website\admin\lectures._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Lectures  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="main"></panel>
-                </p>
-                <p></p>
-                <p><span class="fas fa-calendar-alt"></span> <strong>[Saturday (previous week) - Tuesday]</strong><br></p>
-                <ul>
-                  <li>Use the relevant learning resources to learn the topics.</li>
-                  <li>Self-test your knowledge using exercises given in the learning resources.</li>
-                  <li>If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.</li>
-                </ul>
-                <p></p>
-                <p><span class="fas fa-calendar-alt"></span> <strong>[Wednesday - Friday]</strong><br></p>
-                <p>Attend the tutorial to,</p>
-                <ul>
-                  <li>demonstrate evidence of your learning weekly topics to the tutor</li>
-                  <li>learn from peer demos of showing evidence of their own learning</li>
-                </ul>
-                <div class="flat">
-                  <div>
-                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:weeklySchedule-tutorials">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Tutorials</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-                  </div>
-                </div>
-                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:weeklySchedule-tutorials">
-                    <div>
-                    <panel type="seamless" expanded="">
-                      <span slot="header" class="card-title">
-                        <div>
-                          <h3 id="tutorial-timetable">Tutorial Timetable<a class="fa fa-anchor" href="#tutorial-timetable"></a></h3>
-                        </div>
-                      </span>
-                      <div id="tutorialTimetable">
-                        <tip-box>
-                          <p>
-                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <mark>Our tutorials start on week 2</mark> (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
-                          </p>
-                          <p>
-                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.
-                          </p>
-                        </tip-box>
-                        <div class="table-responsive">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th>Module</th>
-                                <th>Tutorial ID <span class="dimmed">(ID in CORS)</span></th>
-                                <th>Time</th>
-                                <th>Venue</th>
-                                <th>Tutors (<a href="/cs2103-website/admin/instructors.html">contact details</a>)</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>CS2103</td>
-                                <td>W10 <span class="dimmed">(T01)</span></td>
-                                <td><strong>W</strong>ed <strong>10</strong>00</td>
-                                <td>COM1-B103 (ALL)<sup>*</sup></td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>W12 <span class="dimmed">(T01)</span></td>
-                                <td><strong>W</strong>ed <strong>12</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103</td>
-                                <td>W13 <span class="dimmed">(T02)</span></td>
-                                <td><strong>W</strong>ed <strong>13</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>W14 <span class="dimmed">(T02)</span></td>
-                                <td><strong>W</strong>ed <strong>14</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>W16 <span class="dimmed">(T03)</span></td>
-                                <td><strong>W</strong>ed <strong>16</strong>00</td>
-                                <td>COM1-B103 (ALL)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>W17 <span class="dimmed">(T04)</span></td>
-                                <td><strong>W</strong>ed <strong>17</strong>00</td>
-                                <td>COM1-B103 (ALL)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>T09 <span class="dimmed">(T06)</span></td>
-                                <td><strong>T</strong>hu <strong>09</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103</td>
-                                <td>T10 <span class="dimmed">(T04)</span></td>
-                                <td><strong>T</strong>hu <strong>10</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>T12 <span class="dimmed">(T07)</span></td>
-                                <td><strong>T</strong>hu <strong>12</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103</td>
-                                <td>T13 <span class="dimmed">(T06)</span></td>
-                                <td><strong>T</strong>hu <strong>13</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>T16 <span class="dimmed">(T08)</span></td>
-                                <td><strong>T</strong>hu <strong>16</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103T</td>
-                                <td>F10 <span class="dimmed">(T10)</span></td>
-                                <td><strong>F</strong>ri <strong>10</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                              <tr>
-                                <td>CS2103</td>
-                                <td>F11 <span class="dimmed">(T09)</span></td>
-                                <td><strong>F</strong>ri <strong>11</strong>00</td>
-                                <td>COM1-0210 (SR10)</td>
-                                <td>TBD</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <p><span class="dimmed">*ALL: Active Learning Room</span></p>
-                      </div>
-                    </panel>
-                    <panel type="seamless" header="### Tutorial Structure<a class='fa fa-anchor' href='#tutorial-structure'></a>" expanded="">
-                      <div id="tutorialStructure">
-                        <p><strong>What happens during the tutorial</strong>:</p>
-                        <ul>
-                          <li>A tutorial group is handled by two tutors. Each tutor will work with two teams.</li>
-                          <li>The tutor will direct students to share/discuss evidence of learning the weekly topics.</li>
-                          <li>If some students have met with difficulties while learning a topic, the tutor can direct those students to get help from those who have learned the topic. <strong>The number of topics that can be covered in the tutorial session depends on how well-prepared you are.</strong></li>
-                          <li>The tutor will observe, and give feedback on how well you are learning required topics.</li>
-                          <li>Please <mark>bring your laptop to tutorials.</mark> You often need it to show evidence of learning the topics. At other times, we ask you to work on project related things with your team members, which too may require the laptop.</li>
-                        </ul>
-                        <div class="indented-level2">
-                          <div class="flat">
-                            <div>
-                              <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:tutorials-faqLaptop">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C(FAQ): What if I don't carry around a laptop?</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-                            </div>
-                          </div>
-                          <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix C(FAQ): What if I don't carry around a laptop?  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:tutorials-faqLaptop">
-                              <div>
-                              <h3 id="what-if-i-don%E2%80%99t-carry-around-a-laptop%3F">What if I don’t carry around a laptop? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#what-if-i-don%E2%80%99t-carry-around-a-laptop%3F"></a></h3>
-                              <div class="indented">
-                                <div>
-                                  <p>If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), <em>without</em> requiring extra time/effort from the tutor or team members.</p>
-                                  <p><span class="dimmed">Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.</span></p>
-                                </div>
-                              </div>
-                            </div>
-                          </modal>
-                          <p>
-                            <panel src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-noLaptop" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix C(FAQ): What if I don't carry around a laptop?  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="admin-faq-noLaptop"></panel>
-                          </p>
-                        </div>
-                        <br>
-                        <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
-                        <ul>
-                          <li><strong>No direct tech help</strong>: Tutors are prohibited from giving direct technical help. <span class="dimmed">Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.</span></li>
-                        </ul>
-                        <div class="indented-level2">
-                          <div class="flat">
-                            <div>
-                              <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:tutorials-apdxD">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix D: How to get Help in CS2103/T</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-                            </div>
-                          </div>
-                          <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:tutorials-apdxD">
-                              <div>
-                              <p><span class="dimmed"><span class="fas fa-info-circle"></span> This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>refactoring</em> and <em>rewriting</em>?</span></p>
-                              <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
-                              <p><strong>We want to move you away from 'hand holding' and make you learn how to solve problems on your own.</strong> This is a vital survival skill in the industry and it needs practice.</p>
-                              <p>Whether it is a technical problem <span class="dimmed">(e.g. error when using the IDE)</span> or a doubt about a concept <span class="dimmed">(e.g. what is the difference between scripted testing and exploratory testing?) </span> <strong>the teaching team is happy to work <em>with</em> you when you look for a solution/answer, but we do not do it <em>for</em> you.</strong> We discourage unconditional direct help from tutors because we want you to learn to help yourself. Yes, we believe in ‘tough love’😝.</p>
-                              <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p>
-                              <p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300"><br></p>
-                              <p><big><span class="fas fa-thumbs-down"></span> <strong>What not to do:</strong></big></p>
-                              <ul>
-                                <li>When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately, unless it is something only the lecturer/tutor is supposed to know.</li>
-                              </ul>
-                              <p><big><span class="fas fa-thumbs-up"></span> <strong>What to do:</strong></big></p>
-                              <ul>
-                                <li>
-                                  <p><strong>Check what is given</strong>: Check if the problem/concept has been discussed in the lectures, textbook, or the list of resources given to you. Yes, it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.</p>
-                                </li>
-                                <li>
-                                  <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't give an opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br>
-                                    Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.  <br>
-                                    <img src="/cs2103-website/admin/images/how to google it.png" width="460" height="268"></p>
-                                </li>
-                                <li>
-                                  <p><strong>Ask peers</strong>:</p>
-                                  <p>Ask your team members.</p>
-                                  <p>Ask classmates using the module forum or the slack channel. Even if you figured out one way to solve a problem, discussing it on a public forum might lead you to better ways of solving it, and will help other classmates who are facing similar problems too. If you are really shy to ask questions in the forum, you may use <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a> to submit your question anonymously which we will then post in the forum.</p>
-                                  <panel header="Rubber Duck Debugging">
-                                    <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
-                                    <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
-                                    <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
-                                    <p></p>
-                                  </panel>
-                                  <p></p>
-                                </li>
-                                <li>
-                                  <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
-                                  <p>Here are some tips for posting help request:</p>
-                                  <ul>
-                                    <li>
-                                      <p>PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.</p>
-                                    </li>
-                                    <li>
-                                      <p>Learn to isolate the problem. &quot;My code doesn't work&quot; isn't going to help even if you post the whole code online. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself. If not, at least it increases the chance of someone else being able to help you.</p>
-                                      <tip-box>
-                                        <p>💡 How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.</p>
-                                      </tip-box>
-                                    </li>
-                                    <li>
-                                      <p>Generalize the problem. &quot;How to write tasks to a text file using Java&quot; is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) &quot;How to write to a file using Java&quot;.</p>
-                                    </li>
-                                    <li>
-                                      <p>Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.</p>
-                                      <tip-box>
-                                        <p>💡 Know what these stand for: <strong>RTFM</strong>, <strong>STFW</strong>, <strong>GIYF</strong></p>
-                                      </tip-box>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                              <span id="questions-for-tutros">
-                                <ul>
-                                  <li><strong>Raise your question during a tutorial</strong>. Some questions can be discussed with the tutor and tutorial-mates.
-                                    What kind of questions are suitable to discuss with the tutor? Consider these two questions you might want to ask a tutor:
-                                    <ul>
-                                      <li>
-                                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font> <em>This is how I understood/applied coupling. Is that correct?</em> - Such questions are welcome. <span class="dimmed"><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.</span>
-                                      </li>
-                                      <li>
-                                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <em>What is coupling?</em> - Such questions are discouraged. <span class="dimmed"><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</span>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </span>
-                              <ul>
-                                <li>
-                                  <p><strong>Talk to the lecturer</strong> before or after the lecture. The lecturer will be at the lecture venue from 30 minutes before the start of the lecture.</p>
-                                </li>
-                                <li>
-                                  <p><strong>Request our help</strong>: Failing all above, you can always request for help by emailing the lecturer.</p>
-                                </li>
-                              </ul>
-                              <p>Resources</p>
-                              <ul>
-                                <li>[lifehacker article]  <a href="http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671">Google Tips and Tricks Every Student Should Know</a></li>
-                                <li>[Article] <a href="http://catb.org/esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a> by Eric Steven Raymond</li>
-                              </ul>
-                            </div>
-                          </modal>
-                          <p>
-                            <panel src="/cs2103-website\admin\appendixD-help._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="main"></panel>
-                          </p>
-                        </div>
-                        <br>
-                        <ul>
-                          <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify doubts under the right circumstances.</li>
-                        </ul>
-                        <div class="indented-level2">
-                          <div class="flat">
-                            <div>
-                              <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:tutorials-apdxDtutorQuestions">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix D (extract): Questions suitable for tutor</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-                            </div>
-                          </div>
-                          <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D (extract): Questions suitable for tutor  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:tutorials-apdxDtutorQuestions">
-                              <div>
-                              <ul>
-                                <li><strong>Raise your question during a tutorial</strong>. Some questions can be discussed with the tutor and tutorial-mates.
-                                  What kind of questions are suitable to discuss with the tutor? Consider these two questions you might want to ask a tutor:
-                                  <ul>
-                                    <li>
-                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font> <em>This is how I understood/applied coupling. Is that correct?</em> - Such questions are welcome. <span class="dimmed"><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.</span>
-                                    </li>
-                                    <li>
-                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <em>What is coupling?</em> - Such questions are discouraged. <span class="dimmed"><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</span>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </modal>
-                          <p>
-                            <panel src="/cs2103-website\admin\appendixD-help._include_.html#questions-for-tutros" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D (extract): Questions suitable for tutor  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="questions-for-tutros"></panel>
-                          </p>
-                        </div>
-                        <br>
-                        <ul>
-                          <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback on how you are doing (or have done) project tasks so that you can improve further.</li>
-                        </ul>
-                        <p><strong>Timing/venue:</strong></p>
-                        <ul>
-                          <li>Please refer to the <span><a href="/cs2103-website/index.html">Schedule page</a></span> for further details on each tutorial.</li>
-                          <li>You are expected to arrive on time. <mark>Punctuality is considered for participation marks.</mark></li>
-                          <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is dismissed.</li>
-                          <li>Please make sure you <mark>vacate the table 5 minutes before the hour</mark> so that the next group can start on time.</li>
-                          <li>In the past many students have suggested to increase the tutorial duration because 1 hour is barely enough to get through all weekly topics. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time.</li>
-                        </ul>
-                        <p><strong>Grading:</strong></p>
-                        <p>Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.</p>
-                        <div id="exchangeStudentTutorialSignup">
-                          <p><strong>[Exchange students only] Registering for tutorials:</strong></p>
-                          <ul>
-                            <li>Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your appeal on ORATUT, we can allocate you to the tutorial slot.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </panel>
-                  </div>
-                </modal>
-                <p>
-                  <panel src="/cs2103-website\admin\tutorials._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="main"></panel>
-                </p>
-              </div>
-            </panel>
-            <panel type="success" header="**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module overview** <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" expandable="">
-              <div>
-                <p><big>
-                    <p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p>
-                  </big></p>
-                <img src="/cs2103-website/images/growingPlant.png" width="700">
-                <p class="lead"><span>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</span></p>
-                <p>On the theory side, this module is supported by a customized online textbook <a href="/cs2103-website/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
-                <p><a href="images/timeline.png"><img src="/cs2103-website/admin/images/timeline.png" width="100%"></a></p>
-                <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
-                <p>Given below is a summary of what the module covers and does not cover.</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Topic</th>
-                        <th><span style="color:green"><span class="fas fa-check"></span></span> Covered</th>
-                        <th><span style="color:red"><span class="fas fa-times"></span></span> Not covered</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Java</td>
-                        <td>Used heavily, but not taught</td>
-                        <td>syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
-                      </tr>
-                      <tr>
-                        <td>OOP</td>
-                        <td>Used in a non-trivial project, <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
-                        </td>
-                        <td>basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
-                      </tr>
-                      <tr>
-                        <td>SE tools/practices</td>
-                        <td>
-                          <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
-                        </td>
-                        <td>those specific to start-ups</td>
-                      </tr>
-                      <tr>
-                        <td>Modeling</td>
-                        <td>
-                          <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)
-                        </td>
-                        <td>intensive <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Requirements</td>
-                        <td>
-                          <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements
-                        </td>
-                        <td>rapid prototyping, heavy UI design, designing a product from scratch</td>
-                      </tr>
-                      <tr>
-                        <td>Documentation</td>
-                        <td>Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</td>
-                        <td>Marketing materials</td>
-                      </tr>
-                      <tr>
-                        <td>Project Management</td>
-                        <td>Iterative delivery of a product, working collaboratively with team members, on-site as well as remotely</td>
-                        <td>Setting up project infrastructure from scratch</td>
-                      </tr>
-                      <tr>
-                        <td>Testing</td>
-                        <td>
-                          <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and <tooltip content="e.g., acceptance testing">user testing</tooltip>
-                        </td>
-                        <td>
-                          <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Applications domains</td>
-                        <td>Cross-platform desktop applications</td>
-                        <td>Web programming, Mobile programming, Database programming</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><br>
-                <p>
-                  <panel src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-tVsNonT" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> **FAQ: What are the differences between CS2103 and CS2103T?**" class="embedding" minimized="" fragment="admin-faq-tVsNonT"></panel>
-                </p>
-              </div>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="data-types">Data Types<a class="fa fa-anchor" href="#data-types"></a></h3>
+            <p><strong>A data value has a <em>type</em>.</strong> Here is a summary of three basic data types used in Python often:</p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Type name</th>
+                    <th>Description</th>
+                    <th>Examples</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>int</code></td>
+                    <td>whole numbers (integers)</td>
+                    <td><code>-23</code>, <code>-22</code>, <code>-1</code>, <code>0</code>, <code>1</code>, <code>65</code>, <code>66</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>float</code></td>
+                    <td>numbers with decimal points (floating point numbers)</td>
+                    <td><code>-34.576</code>, <code>436.0</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>str</code></td>
+                    <td>sequence of characters (strings)</td>
+                    <td><code>adam</code> <code>What can it be?</code>, <code>x</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>String values are denoted by enclosing them in double quotes or single quotes.</p>
+            <pre><code class="hljs python"><span class="hljs-string">'Hello'</span>
+<span class="hljs-string">"What's going on?"</span>
+</code></pre>
+            <p>Some operators can be used on strings as well.</p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'hello'</span>
+<span class="hljs-string">'hello'</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Hello'</span> + <span class="hljs-string">' '</span> + <span class="hljs-string">'World!'</span>
+<span class="hljs-string">'Hello World!'</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Bye'</span> + (<span class="hljs-string">'!'</span> * <span class="hljs-number">10</span>)
+<span class="hljs-string">'Bye!!!!!!!!!!'</span>
+</code></pre>
+            <panel type="seamless" header="%%:tv: Data types%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
+            <panel type="seamless" header="%%:computer: Try your own%%">
+              <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+          </div>
+          <hr>
+          <hr>
+          <div>
+            <h3 id="variables">Variables<a class="fa fa-anchor" href="#variables"></a></h3>
+            <blockquote>
+              <p><strong>Variables are used to store information to be referenced and manipulated in a computer program.</strong> They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
+            </blockquote>
+            <p>The following statement <em>
+                <tooltip content="creates">declares</tooltip>
+              </em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
+            <pre><code class="hljs python">v = <span class="hljs-number">5</span>
+</code></pre>
+            <tip-box>
+              <p><strong>Statements</strong></p>
+              <p>Note that we called <code>v = 5</code> a <em>statement</em>. <strong>Unlike expressions that evaluates to a single value, a statement does not evaluates to a value.</strong> However, a statement can contain an expression e.g. <code>v = 5 + 8</code>.
+              </p>
+            </tip-box>
+            <p>If you enter the above statement in the interactive shell, it causes the shell to remember the variable name <code>v</code> and its value.</p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v = <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+</code></pre>
+            <p>Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.</p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v
+<span class="hljs-number">5</span>
+</code></pre>
+            <p>You can even use the variable in expressions.</p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v * <span class="hljs-number">4</span>
+<span class="hljs-number">20</span>
+</code></pre>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Here are some examples of variables being declared, assigned, and being used:</p>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count = <span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count
+<span class="hljs-number">2</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>price = <span class="hljs-number">10.0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>discount_percentage = <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>discount = price * discount_percentage / <span class="hljs-number">100</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>price - discount
+<span class="hljs-number">9.5</span>
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+            </tip-box>
+            <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
+            <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
+</code></pre>
+            <p><strong>Variable names are case sensitive.</strong> In the example below, you can see how Python prints an error message if you try to access the variable <code>height</code> using the name <code>Height</code></p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">12.0</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>height
+<span class="hljs-number">12.0</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>Height
+Traceback (most recent call last):
+ File <span class="hljs-string">"&lt; pyshell#5 &gt;"</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt; module &gt;
+   Height
+NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+            <p><strong>Variables can be overwritten</strong>. In the example below, <code>height</code> was initially <code>5</code> but the value is reassigned later to be <code>1</code> more than the previous value.</p>
+            <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>height
+<span class="hljs-number">5</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>height = height + <span class="hljs-number">1</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>height
+<span class="hljs-number">6</span>
+</code></pre>
+            <p><strong>The value of one variable can be assigned to another variable.</strong></p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> In the example below, the value of variable <code>height</code> is assigned to the variable <code>width</code>.</p>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>width = height
+<span class="hljs-meta">&gt;&gt;&gt; </span>width
+<span class="hljs-number">5</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>height + width
+<span class="hljs-number">10</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">10</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>width
+<span class="hljs-number">5</span>
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+            </tip-box>
+            <panel type="seamless" header="%%:tv: Variables%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
+              <p></p>
             </panel>
             <p></p>
+            <panel type="danger" header=":muscle: Exercise: Circle Circumference" expanded="">
+              <div>
+                <h4 id="exercise-%3A-circle-circumference">Exercise : Circle Circumference<a class="fa fa-anchor" href="#exercise-%3A-circle-circumference"></a></h4>
+                <ol>
+                  <li>Declare variables to represent the radius of a circle, and assign it value <code>7</code>.</li>
+                  <li>Declare a variable to represent PI and assign it <code>3.14</code></li>
+                  <li>Calculate and assign the circumference of the circle to a new variable.</li>
+                  <li>Use the previous variables to output the text <code>If radius is R, the circumference is C</code> where <code>R</code> and <code>C</code> are the radius and the circumference respectively <span class="dimmed"> e.g. <code>If radius is 7, the circumference is 43.96</code></span>.</li>
+                </ol>
+              </div>
+            </panel>
           </div>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Where is everything? <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-            <div>
-              <h3 id="where-is-everything%3F">Where is everything? <small><small><span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#where-is-everything%3F"></a></h3>
-              <div class="indented">
-                <div>
-                  <p class="lead">The <span><a href="/cs2103-website/index.html">Schedule page</a></span> presents all you need to know in chronological order while the other pages have some of the same content organized by topic.
-                  </p>
-                  <p>The <span class="font-weight-bold"><span><a href="/cs2103-website/index.html">Schedule page</a></span></span> is <mark><em>the</em> one page you need to refer weekly</mark>. Although there is a lot of content in the <span class="font-weight-bold"><span><a href="/cs2103-website/admin/index.html">Admin Info page</a></span></span> and the <a href="/cs2103-website/se-book-adapted/index.html"><strong>Textbook page</strong></a> -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded extracts usually appear in expandable panels and can be identified by the symbol <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> in the panel title.</p>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Module Expectations <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <h3 id="prior-knowledge%3A-java-and-oop">Prior Knowledge: Java and OOP<a class="fa fa-anchor" href="#prior-knowledge%3A-java-and-oop"></a></h3>
-              <p>This module requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, do brush up your Java programming skills.</p>
-              <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <em>streams</em>, <em>lambdas</em>, <em>Optionals</em>, that may not have been covered in previous Java modules.</p>
-              <p>CS2103 students: <mark>This module assumes a reasonable prior knowledge of Java and OOP</mark> because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113 (Software Engineering &amp; Object-Oriented Programming) instead.</p>
-              <h3 id="workload">Workload<a class="fa fa-anchor" href="#workload"></a></h3>
-              <p>Given 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its peer modules</strong> <span class="dimmed">(e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program)</span>.</p>
-              <ul>
-                <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
-                <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
-                <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
-              </ul>
-              <div id="starRatingSystem">
-                <h4 id="star-rating-system-2">Star rating system<a class="fa fa-anchor" href="#star-rating-system-2"></a></h4>
-                <div class="indented">
-                  <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
-                  </p>
-                  <p><strong>Star ratings for Learning Outcomes</strong> (and textbook sections):</p>
-                  <ul>
-                    <li>
-                      <p><strong>One-star topics</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The topics you need to learn just to keep up with the module. We recommend you to <mark>learn these topics if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</p>
-                    </li>
-                    <li>
-                      <p><strong>Two-stars topics</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>: Can get you up to a <strong>B+</strong>.</p>
-                    </li>
-                    <li>
-                      <p><strong>Three-stars topics</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
-                    </li>
-                    <li>
-                      <p><strong>Four-stars topics</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive entry requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star topics are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
-                    </li>
-                    <li>
-                      <p>Topics marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are relevant topoics you are expected have learned in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.</p>
-                    </li>
-                  </ul>
-                  <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
-                  <ul>
-                    <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark> without affecting your ability to follow the module.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> E: Using GitHub [Creating a GitHub Account] <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-            <div>
-              <p>Create a personal GitHub account if you don't have one yet.</p>
-              <ol>
-                <li>
-                  <p>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</p>
-                </li>
-                <li>
-                  <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
-                  <ul>
-                    <li>Specify your full name.</li>
-                    <li>Upload a profile photo that matches <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.</li>
-                  </ul>
-                  <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%">
-                    <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.</p>
-                  </panel>
-                </li>
-                <li>
-                  <p><mark>You are discouraged from changing your GitHub username during the semester/exam/grading period</mark> as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.</p>
-                </li>
-              </ol>
-              <modal large="" title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
-                  <div>
-                  <ul>
-                    <li>
-                      <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
-                        <img src="/cs2103-website/admin/images/profilephotos.png" style="width: 365.33px"></p>
-                    </li>
-                    <li>
-                      <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you can request permission to omit your photo from the page by writing to prof.</p>
-                    </li>
-                  </ul>
-                </div>
-              </modal>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Tools [Communication] <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-            <div>
-              <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to practice how to communicate technical things in written form.</p>
-              <ul>
-                <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">github/nus-cs2103-AY1819S2/forum</a></mark>.</li>
-                <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103-ay1819s2.slack.com">https://nus-cs2103-ay1819s2.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email address ending in <code>@nus.edu.sg</code>, <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
-                <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
-                <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct emails. <span class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
-              </ul>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Forming Teams <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <p><img src="/cs2103-website/admin/images/team.png" width="300px"><br>
-                <small><span class="dimmed">[Picture: The team that was at the top of early Google]</span></small></p>
-              <p></p>
-              <p><strong>When to form teams</strong>: Your team will be formed in week 3 tutorial.</p>
-              <p><strong>Team size</strong>: The default <mark>team size is five</mark>.</p>
-              <p><strong>Team ID</strong>: This will be given to you after forming teams. It has the form <code>TUTORIAL_ID-TEAM_NUMBER</code> e.g, <code>W14-2</code> means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.</p>
-              <div class="flat">
-                <div>
-                  <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectTeams-tutorialIDs">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Tutorials → Tutorial IDs</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-                </div>
-              </div>
-              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials → Tutorial IDs  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:projectTeams-tutorialIDs">
-                  <div>
-                  <tip-box>
-                    <p>
-                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <mark>Our tutorials start on week 2</mark> (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
-                    </p>
-                    <p>
-                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.
-                    </p>
-                  </tip-box>
-                  <div class="table-responsive">
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>Module</th>
-                          <th>Tutorial ID <span class="dimmed">(ID in CORS)</span></th>
-                          <th>Time</th>
-                          <th>Venue</th>
-                          <th>Tutors (<a href="/cs2103-website/admin/instructors.html">contact details</a>)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>CS2103</td>
-                          <td>W10 <span class="dimmed">(T01)</span></td>
-                          <td><strong>W</strong>ed <strong>10</strong>00</td>
-                          <td>COM1-B103 (ALL)<sup>*</sup></td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>W12 <span class="dimmed">(T01)</span></td>
-                          <td><strong>W</strong>ed <strong>12</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103</td>
-                          <td>W13 <span class="dimmed">(T02)</span></td>
-                          <td><strong>W</strong>ed <strong>13</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>W14 <span class="dimmed">(T02)</span></td>
-                          <td><strong>W</strong>ed <strong>14</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>W16 <span class="dimmed">(T03)</span></td>
-                          <td><strong>W</strong>ed <strong>16</strong>00</td>
-                          <td>COM1-B103 (ALL)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>W17 <span class="dimmed">(T04)</span></td>
-                          <td><strong>W</strong>ed <strong>17</strong>00</td>
-                          <td>COM1-B103 (ALL)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>T09 <span class="dimmed">(T06)</span></td>
-                          <td><strong>T</strong>hu <strong>09</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103</td>
-                          <td>T10 <span class="dimmed">(T04)</span></td>
-                          <td><strong>T</strong>hu <strong>10</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>T12 <span class="dimmed">(T07)</span></td>
-                          <td><strong>T</strong>hu <strong>12</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103</td>
-                          <td>T13 <span class="dimmed">(T06)</span></td>
-                          <td><strong>T</strong>hu <strong>13</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>T16 <span class="dimmed">(T08)</span></td>
-                          <td><strong>T</strong>hu <strong>16</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103T</td>
-                          <td>F10 <span class="dimmed">(T10)</span></td>
-                          <td><strong>F</strong>ri <strong>10</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                        <tr>
-                          <td>CS2103</td>
-                          <td>F11 <span class="dimmed">(T09)</span></td>
-                          <td><strong>F</strong>ri <strong>11</strong>00</td>
-                          <td>COM1-0210 (SR10)</td>
-                          <td>TBD</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <p><span class="dimmed">*ALL: Active Learning Room</span></p>
-                </div>
-              </modal>
-              <p>
-                <panel src="/cs2103-website\admin\tutorials._include_.html#tutorialTimetable" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials → Tutorial IDs  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="tutorialTimetable"></panel>
-              </p>
-              <p><strong>Team composition</strong></p>
-              <p>We allow some freedom in choosing team members, subject to these constraints:</p>
-              <ul>
-                <li>
-                  <p>All team members should be in the same tutorial. <mark>Delay forming teams until your place in a tutorial is confirmed.</mark> We do not allow changing tutorials to team up with your preferred team mates.</p>
-                </li>
-                <li>
-                  <p>Teams of <mark>single nationality are not allowed</mark> unless the only language common among all team members is English. e.g. an all-Singaporean team that include both Chinese and Malay students. <span class="dimmed">Rationale: to train you to work in multicultural teams, to ensure that English is used for all project communication</span></p>
-                </li>
-                <li>
-                  <p>No more than one exchange students per team <span class="dimmed">Rationale: to increase interaction between exchange students and NUS students.</span></p>
-                </li>
-                <li>
-                  <p>Same gender teams are highly discouraged unless unavoidable. <span class="dimmed">Rationale: to train you for mixed-gender work environments.</span></p>
-                </li>
-                <li>
-                  <p>Also note that <mark><strong>we may modify teams when circumstances call for it</strong></mark>. There is no avenue for you to object. Staying with your preferred team is not guaranteed.</p>
-                </li>
-              </ul>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Programming Language <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <table class="two-column-content">
-                <tr>
-                  <td width="160px">
-                    <img src="/cs2103-website/admin/images/JamesGosling.png" width="150px"></td>
-                  <td>
-                    <p><mark><strong>The main language</strong> used in this module is Java</mark>. You should use
-                      Java for all programming activities, the project, and exam answers.</p>
-                    <p>The module doesn’t “teach” Java. We assume you already know Java basics.
-                      We expect you to learn on your own any Java constructs not covered in your previous modules.</p>
-                  </td>
-                </tr>
-              </table>
-              <h4 id="java-coding-standard">Java coding standard<a class="fa fa-anchor" href="#java-coding-standard"></a></h4>
-              <p>This module follows the <mark><a href="/cs2103-website/coding-standards/java/intermediate.html">OSS-NUS Java coding standard</a></mark>.</p>
-              <p><mark><strong>In the project you are required to follow basic and intermediate guidelines</strong></mark> (those marked as ⭐️ and ⭐️⭐️). In other programming activities in the module, we recommend (but not require) you to follow the coding standard.</p>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Textbooks <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <p>This module is supported by a customized online textbook <a href="/cs2103-website/se-book-adapted/index.html"><strong><em>Software Engineering for Self-Directed Learners</em></strong> (CS2103 edition)</a>, integrated into this module website. While it is in a dynamic Web page format, there is a way to save the main text as pdf files. Printer-friendly versions have been provided too.</p>
-              <div class="flat">
-                <div>
-                  <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:textbooks-savingAsPdf">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Using this Website → Saving as PDF files</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-                </div>
-              </div>
-              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Using this Website → Saving as PDF files  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:textbooks-savingAsPdf">
-                  <div>
-                  <h3 id="saving-as-pdf-files-2">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files-2"></a></h3>
-                  <ol>
-                    <li>
-                      <p>Use Chrome to load the page you want to save as pdf.</p>
-                    </li>
-                    <li>
-                      <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
-                    </li>
-                    <li>
-                      <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
-                        <img src="/cs2103-website/book/about/images/chromeSaveAsPdf.png"></p>
-                    </li>
-                  </ol>
-                </div>
-              </modal>
-              <p>
-                <panel src="/cs2103-website\book\about\usage._include_.html#saving" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Using this Website → Saving as PDF files  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="saving"></panel>
-              </p>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Tutorials [Exchange Students: Tutorial Registration] <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <p><strong>[Exchange students only] Registering for tutorials:</strong></p>
-              <ul>
-                <li>Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your appeal on ORATUT, we can allocate you to the tutorial slot.</li>
-              </ul>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → What are the differences between the T and the non-T version of the module? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-            <div>
-              <h3 id="what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module%3F">What are the differences between the T and the non-T version of the module? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module%3F"></a></h3>
-              <div class="indented">
-                <div>
-                  <p>Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.</p>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why the workload is so high? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-            <div>
-              <h3 id="why-the-workload-is-so-high%3F">Why the workload is so high? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#why-the-workload-is-so-high%3F"></a></h3>
-              <div class="indented">
-                <div>
-                  <img src="/cs2103-website/admin/images/Why workload heavy.png" width="250">
-                  <p>CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3203, CS3281/2, etc.), each requiring a slightly different skill set. It is also the only SE module some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.</p>
-                  <p>Remember, everything you learn here is going to be useful in a SE-related career.</p>
-                  <p>Also, consider this a gradual introduction to 'heavy' modules; most project modules you do after this are going to be much heavier 😛</p>
-                  <p><mark>How to reduce the workload?</mark> You can omit Learning Outcomes rated <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>. Furthermore, control the project workload by using no more than a fixed amount of time weekly on the project (e.g., 1 day).</p>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <p></p>
-          <panel type="default" no-close="" expandable="true">
-            <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → What are the extra requirements to get an A+? <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-            <div>
-              <h3 id="what-are-the-extra-requirements-to-get-an-a%2B%3F">What are the extra requirements to get an A+? <small><small><span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#what-are-the-extra-requirements-to-get-an-a%2B%3F"></a></h3>
-              <div class="indented">
-                <div>
-                  <p>In CS2103/T, A+ is not given simply based on the final score. To get an A+ you should,</p>
-                  <ul>
-                    <li>score enough to get an A</li>
-                    <li>be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)</li>
-                    <li>be considered helpful by peers (based on peer evaluations and tutor observations)
-                      <ul>
-                        <li>In particular, you are encouraged to be active on the slack channel and our <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">forum</a> and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.</li>
-                        <li>Whenever you can, go out of your way to review PRs created by other team members.</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <p></p>
+          <hr>
+          <hr>
         </div>
       </tab>
     </tabs>
   </div>
 </div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
+</footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
@@ -1191,7 +633,7 @@
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/cs2103-website'
+    const baseUrl = '/2019'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 <script src="..\..\markbind\layouts\default\scripts.js"></script>

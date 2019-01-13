@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Revision Control</title>
+    <title>TE3201 Website - Revision Control</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
     
-    <link rel="icon" href="/cs2103-website/favicon.ico">
+    <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body>
 <div id="app">
@@ -29,7 +29,7 @@
     </navbar>
   </div>
   <div>
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <div class="website-content" id="all">
       <p><span class="dimmed"><strong><span></span></strong></span></p>
       <div id="title">
@@ -299,7 +299,7 @@
                 <div>
                   <p><strong><mark><em>Branching</em></mark> is the process of evolving multiple versions of the software in parallel.</strong> For example, one team member can create a new branch and add an experimental feature to it while the rest of the team keeps working on another branch. Branches can be given names e.g. <code>master</code>, <code>release</code>, <code>dev</code>.</p>
                   <p><strong>A branch can be <mark><em>merged</em></mark> into another branch.</strong> Merging usually result in a new commit that represents the changes done in the branch being merged.</p>
-                  <pic src="/cs2103-website/book/revisionControl/branching/images/diagram.png" height="180">
+                  <pic src="/2019/book/revisionControl/branching/images/diagram.png" height="180">
                     <strong>Branching and merging</strong></pic>
                   <p><strong><mark><em>Merge conflicts</em></mark> happen when you try to merge two branches that had changed the same part of the code</strong> and the RCS software cannot decide which changes to keep. In those cases we have to ‘resolve’ those conflicts manually.</p>
                 </div>
@@ -341,11 +341,11 @@
                 <div>
                   <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
                   <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
-                  <pic src="/cs2103-website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" width="300">
+                  <pic src="/2019/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" width="300">
                     <p><em>The centralized RCS approach without any local repos (e.g., CVS, SVN)</em></p>
                   </pic>
                   <p><strong>Distributed RCS (DRCS for short, also known as Decentralized RCS) allows multiple remote repos</strong> and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For example, every team member can have his/her own remote repository in addition to their own local repository, as shown in the diagram below. Git and Mercurial are some prominent RCS tools that support the distributed approach.</p>
-                  <pic src="/cs2103-website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" width="300">
+                  <pic src="/2019/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" width="300">
                     <p><em>The decentralized RCS approach</em></p>
                   </pic>
                 </div>
@@ -366,7 +366,7 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <img src="/cs2103-website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+                  <img src="/2019/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
                   <p></p>
                   <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
                   <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
@@ -406,7 +406,7 @@
                 <p></p>
                 <div>
                   <p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature (or bug fix, or any other modification) is done in a separate branch and merged to <code>master</code> branch when ready.</p>
-                  <img src="/cs2103-website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+                  <img src="/2019/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
                   <p></p>
                 </div>
                 <div>
@@ -456,7 +456,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -465,7 +465,7 @@
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/cs2103-website'
+    const baseUrl = '/2019'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 <script src="..\..\markbind\layouts\default\scripts.js"></script>

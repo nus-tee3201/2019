@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Software Design Patterns: Abstraction Occurrence</title>
+    <title>TE3201 Website - Software Design Patterns: Abstraction Occurrence</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\font-awesome.min.css" >
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="..\..\..\markbind\layouts\default\styles.css">
     
     
-    <link rel="icon" href="/cs2103-website/favicon.ico">
+    <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body>
 <div id="app">
@@ -29,7 +29,7 @@
     </navbar>
   </div>
   <div>
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <div class="website-content" id="all">
       <p><span class="dimmed"><strong><span>Design → Design Patterns →
             </span></strong></span></p>
@@ -65,14 +65,14 @@
                   <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p>
-                    <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
+                    <img src="/2019/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
                     <p></p>
                     <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian realized that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the librarian (or the system) has to make sure that all information entered is the same as the existing copies to avoid inconsistency.</p>
                   </tip-box>
                   <p><strong>Anti-pattern</strong></p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Refer to the same Library example given above.</p>
-                    <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+                    <img src="/2019/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
                     <p></p>
                     <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
                   </tip-box>
@@ -80,14 +80,14 @@
                   <p>Let a copy of an entity (e.g. a copy of a book)be represented by two objects instead of one, separating the common and unique information into two classes to avoid duplication.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Given below is how the pattern is applied to the Library example:</p>
-                    <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
+                    <img src="/2019/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
                     <p></p>
                     <p><span class="fas fa-cube"></span> Here's a more generic example:</p>
-                    <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
+                    <img src="/2019/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
                     <p></p>
                   </tip-box>
                   <p>The general solution:</p>
-                  <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
+                  <img src="/2019/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
                   <p></p>
                   <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not class names, but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
                 </div>
@@ -153,7 +153,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -162,7 +162,7 @@
 <script src="..\..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/cs2103-website'
+    const baseUrl = '/2019'
 </script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 <script src="..\..\..\markbind\layouts\default\scripts.js"></script>

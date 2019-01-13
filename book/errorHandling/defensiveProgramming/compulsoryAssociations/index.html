@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Error Handling: Defensive Programming: Enforcing Compulsory Associations</title>
+    <title>TE3201 Website - Error Handling: Defensive Programming: Enforcing Compulsory Associations</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\font-awesome.min.css" >
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="..\..\..\..\markbind\layouts\default\styles.css">
     
     
-    <link rel="icon" href="/cs2103-website/favicon.ico">
+    <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body>
 <div id="app">
@@ -29,7 +29,7 @@
     </navbar>
   </div>
   <div>
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <div class="website-content">
       <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use defensive coding to enforce compulsory associations</span></span></span></span></p>
       <p></p>
@@ -37,7 +37,7 @@
       <div>
         <div>
           <p>
-            <panel src="/cs2103-website\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/cs2103-website/book/errorHandling/defensiveProgramming/what"></panel>
+            <panel src="/2019\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/2019/book/errorHandling/defensiveProgramming/what"></panel>
           </p>
         </div>
         <p></p>
@@ -52,7 +52,7 @@
               <p>Consider two classes, <code>Account</code> and <code>Guarantor</code>, with an association as shown in the following diagram:</p>
               <tip-box>
                 <p>Example:</p>
-                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
+                <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
                 <p></p>
                 <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable, like this:</p>
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -99,7 +99,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                           <li>restricts the maximum number of Accounts to 8</li>
                           <li>avoids adding duplicate Accounts</li>
                         </ul>
-                        <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
+                        <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
                         <p></p>
                         <div slot="answer">
                           <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
@@ -130,7 +130,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Implement `Marriage`">
                       <question has-input="true">
                         <p>Implement the classes defensively with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the <code>Marriage</code> class handle setting/removal of reference.</p>
-                        <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
+                        <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
                         <p></p>
                         <div slot="answer">
                           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
@@ -188,7 +188,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Immutable `Account` class">
                       <question has-input="true">
                         <p>Give a suitable defensive implementation to the <code>Account</code> class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p>
-                        <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
+                        <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
                         <p></p>
                         <div slot="answer">
                           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -210,7 +210,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                   <div>
                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this defensive?">
                       <question>
-                        <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
+                        <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
                         <p></p>
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">City</span></span>{
     Country country;
@@ -244,7 +244,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Thu, 10 Jan 2019 14:27:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -253,7 +253,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
 <script src="..\..\..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/cs2103-website'
+    const baseUrl = '/2019'
 </script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 <script src="..\..\..\..\markbind\layouts\default\scripts.js"></script>

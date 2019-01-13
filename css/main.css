@@ -16,10 +16,6 @@ mark {
     color: #980000;
 }
 
-.alt-python {
-    display: none;
-}
-
 .flat {
     display: none;
 }
@@ -42,4 +38,8 @@ mark {
 
 .indented-level4 {
     padding-left: 80px;
+}
+
+.full-mode {
+    display: none;
 }
