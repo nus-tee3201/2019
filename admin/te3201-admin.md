@@ -115,6 +115,9 @@ To be done in individually, or teams of 2-3 members.
 
 **Programming language**: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.
 
+More info coming soon ...
+
+<!--
 ### Software to build
 
 You will be building a personal assistant chat-bot software named _PAC_ (_PAC_ is a temporary name; you should give a different name to your own chat bot)
@@ -262,6 +265,8 @@ Description of the function: appends the `Person` object `new_contact` to the `c
 `[Person('John')]` | `Person('Amy')` | `[Person('John'), Person('Amy')]`
 
 </modal>
+
+-->
 
 {{ dotted_line }}
 
