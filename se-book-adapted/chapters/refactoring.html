@@ -56,9 +56,9 @@
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
           </ul>
         </div>
       </li>
@@ -69,9 +69,9 @@
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html">Reuse</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html">Documentation</a></li>
           </ul>
@@ -140,9 +140,9 @@
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
               <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
               <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
               <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
               <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
@@ -380,42 +380,6 @@ send()
             </div>
           </div>
         </panel>
-        <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-              <span><span class="dimmed">
-                  <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-                </span></span></span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can apply some basic refactoring</span></span></span></span>
-            <p></p>
-            <div>
-              <p>Given below are some more commonly used refactorings. A more comprehensive list is available at <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
-              <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how">
-                <div>
-                  <ul>
-                    <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
-                    <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
-                  </ul>
-                </div>
-              </modal>
-              <ol>
-                <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
-                <li><a href="https://refactoring.com/catalog/decomposeConditional.html">Decompose Conditional</a></li>
-                <li><a href="https://refactoring.com/catalog/inlineMethod.html">Inline Method</a></li>
-                <li><a href="https://refactoring.com/catalog/removeDoubleNegative.html">Remove Double Negative</a></li>
-                <li><a href="https://refactoring.com/catalog/replaceMagicNumberWithSymbolicConstant.html">Replace Magic Number with Symbolic Constant</a></li>
-                <li><a href="https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html">Replace Nested Conditional with Guard Clauses</a></li>
-                <li><a href="https://refactoring.com/catalog/replaceParameterWithExplicitMethods.html">Replace Parameter with Explicit Methods</a></li>
-                <li><a href="https://refactoring.com/catalog/reverseConditional.html">Reverse Conditional</a></li>
-                <li><a href="https://refactoring.com/catalog/splitLoop.html">Split Loop</a></li>
-                <li><a href="https://refactoring.com/catalog/splitTemporaryVariable.html">Split Temporary Variable</a></li>
-              </ol>
-            </div>
-            <div>
-              <div></div>
-            </div>
-          </div>
-        </panel>
         <panel type="seamless" header="#### When<a class='fa fa-anchor' href='#when'></a>" expanded="">
           <div class="indented">
             <span class="badge badge-light">
@@ -456,7 +420,7 @@ send()
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 11:38:20 GMT</small></div>
 </footer>
 </div>
 </body>

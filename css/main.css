@@ -43,3 +43,11 @@ mark {
 .full-mode {
     display: none;
 }
+
+.alt-java {
+    display: none;
+}
+
+.alt-python {
+    display: block;
+}

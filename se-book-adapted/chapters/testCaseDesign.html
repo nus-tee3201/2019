@@ -56,9 +56,9 @@
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
           </ul>
         </div>
       </li>
@@ -69,9 +69,9 @@
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html">Reuse</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html">Documentation</a></li>
           </ul>
@@ -140,9 +140,9 @@
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
               <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
               <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
               <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
               <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
@@ -186,7 +186,7 @@
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
-                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                   </span></span></span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for deliberate test case design</span></span></span></span>
               <p></p>
@@ -302,32 +302,11 @@ Enter side 1:
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Positive vs Negative Test Cases<a class='fa fa-anchor' href='#positive-vs-negative-test-cases'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain positive and negative test cases</span></span></span></span>
-              <p></p>
-              <div>
-                <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
-                  <ul>
-                    <li>A positive test case: <code>i == new Integer(50)</code></li>
-                    <li>A negative test case: <code>i == null;</code></li>
-                  </ul>
-                </tip-box>
-              </div>
-              <div></div>
-            </div>
-          </panel>
           <panel type="seamless" header="#### Black Box vs Glass Box<a class='fa fa-anchor' href='#black-box-vs-glass-box'></a>" expanded="">
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
-                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                   </span></span></span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain black box and glass box test case design</span></span></span></span>
               <p></p>
@@ -719,132 +698,6 @@ Enter side 1:
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title">
             <div>
-              <h2 id="more"><span>More</span><a class="fa fa-anchor" href="#more"></a></h2>
-            </div>
-          </span>
-          <panel type="seamless" header="#### Testing Based on Use Cases<a class='fa fa-anchor' href='#testing-based-on-use-cases'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain test case design for use case based testing</span></span></span></span>
-              <p></p>
-              <div>
-                <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
-                <p>To increase <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-                <modal large="" title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing" id="modal:usebaseBased-EandE">
-                    <div>
-                    <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
-                    <ul>
-                      <li>
-                        <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
-                      </li>
-                      <li>
-                        <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
-                      </li>
-                    </ul>
-                    <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
-                  </div>
-                </modal>
-                <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:usecaseBased-scripted">
-                    <div>
-                    <div></div>
-                    <p></p>
-                    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
-                          </span></strong></span></p>
-                    <div id="title-and-body">
-                      <div>
-                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
-                      </div>
-                      <div id="main">
-                        <div>
-                          <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
-                          <ol>
-                            <li>
-                              <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
-                            </li>
-                            <li>
-                              <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
-                            </li>
-                          </ol>
-                          <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
-                            <blockquote>
-                              <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
-                                But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
-                            </blockquote>
-                          </tip-box>
-                          <tip-box>
-                            <p>💡 <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
-                          </tip-box>
-                          <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
-                            <div>
-                              <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
-                            </div>
-                          </modal>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> statements about exploratory and scripted testing">
-                                  <question>
-                                    <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                                    <ul radio-group="db31a" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>A) False</p>
-                                      <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which testing technique is better?">
-                                  <question>
-                                    <p>Which testing technique is better?</p>
-                                    <ul radio-group="9fd35" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> a. error guessing</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> b. bug hunting</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> c. attack-based testing</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>(e)</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Explain the concept of exploratory testing using Minesweeper as an example.">
-                                  <question has-input="true">
-                                    <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                    <div slot="answer">
-                                      <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </modal>
-              </div>
-              <div></div>
-            </div>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
-            <div>
               <h2 id="recap"><span>Recap</span><a class="fa fa-anchor" href="#recap"></a></h2>
             </div>
           </span>
@@ -1172,7 +1025,7 @@ Enter side 1:
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 11:38:20 GMT</small></div>
 </footer>
 </div>
 </body>

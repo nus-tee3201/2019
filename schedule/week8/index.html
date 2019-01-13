@@ -35,9 +35,9 @@
         <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
         <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-        <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
-        <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
-        <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
+        <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+        <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+        <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
         <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
         <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
         <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
@@ -262,7 +262,7 @@
                   </panel>
                   <panel type="seamless" expanded="">
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1d]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
-                            </span></strong></span> <strong><big><big><span>Automated Testing of CLI Apps</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                            </span></strong></span> <strong><big><big><span>Automated Testing of CLI Apps</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
@@ -358,16 +358,18 @@ Invalid command format: add
       </tab>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
         <div>
-          <ul>
-            <li><a href="#files"><strong>Files</strong></a>
-              <ul>
-                <li><a href="#file-paths">File Paths</a></li>
-                <li><a href="#reading-from-files">Reading from Files</a></li>
-                <li><a href="#writing-to-files">Writing to Files</a></li>
-                <li><a href="#csv-files">CSV Files</a></li>
-              </ul>
-            </li>
-          </ul>
+          <div id="week8-toc">
+            <ul>
+              <li><a href="#files"><strong>Files</strong></a>
+                <ul>
+                  <li><a href="#file-paths">File Paths</a></li>
+                  <li><a href="#reading-from-files">Reading from Files</a></li>
+                  <li><a href="#writing-to-files">Writing to Files</a></li>
+                  <li><a href="#csv-files">CSV Files</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
           <h1 id="files">Files<a class="fa fa-anchor" href="#files"></a></h1>
           <div>
             <h3 id="file-paths">File Paths<a class="fa fa-anchor" href="#file-paths"></a></h3>
@@ -666,8 +668,7 @@ check(<span class="hljs-string">'bar'</span>)
             </panel>
             <p></p>
           </div>
-          <hr>
-          <hr>
+          <hr style="border-top: 3px double #c5c5c5;">
           <div>
             <h3 id="reading-from-files">Reading from Files<a class="fa fa-anchor" href="#reading-from-files"></a></h3>
             <p>This section focuses on reading from text-based files (i.e., not binary files).</p>
@@ -802,8 +803,7 @@ stats: {'lines': 4, 'letters': 10}
             </panel>
             <p></p>
           </div>
-          <hr>
-          <hr>
+          <hr style="border-top: 3px double #c5c5c5;">
           <div>
             <h3 id="writing-to-files">Writing to Files<a class="fa fa-anchor" href="#writing-to-files"></a></h3>
             <p>Similar to reading from a file, writing to a file too is a three step process. One main difference is <strong>the file needs to be opened in <code>write mode</code>.</strong></p>
@@ -918,8 +918,7 @@ third line
             </panel>
             <p></p>
           </div>
-          <hr>
-          <hr>
+          <hr style="border-top: 3px double #c5c5c5;">
           <div>
             <h3 id="csv-files">CSV files<a class="fa fa-anchor" href="#csv-files"></a></h3>
             <p><strong>CSV files are often used as a simple way to save spreadsheet-like data.</strong> Each line in a CSV file represents a row in the spreadsheet, and commas separate the cells in the row. They usually have the <code>.csv</code> extension and can be opened in spreadsheet programs such as Excel or in any text editor.</p>
@@ -1164,8 +1163,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
             </panel>
             <p></p>
           </div>
-          <hr>
-          <hr>
+          <hr style="border-top: 3px double #c5c5c5;">
         </div>
       </tab>
     </tabs>
@@ -1174,7 +1172,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 11:38:20 GMT</small></div>
 </footer>
 </div>
 </body>

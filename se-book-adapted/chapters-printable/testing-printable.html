@@ -183,90 +183,6 @@
           </div>
         </div>
       </div>
-      <div class="indented-less">
-        <h4 id="stubs">Stubs <span class="badge badge-light"><small><small>
-                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#stubs"></a></h4>
-        <div class="indented-less">
-          <div>
-            <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
-            </tip-box>
-            <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
-            <tip-box type="definition">
-              <div>
-                <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
-              </div>
-            </tip-box>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Consider the code below:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    Storage s;
-
-    Logic(Storage s) {
-        <span class="hljs-keyword">this</span>.s = s;
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-comment">// retrieve name from the database</span>
-    }
-}
-</code></pre>
-              <p>Normally, you would use the <code>Logic</code> class as follows (not how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-              <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-String name = logic.getName(<span class="hljs-number">23</span>);
-</code></pre>
-              <p>You can test it like this:</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
-              <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code> <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
-              <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
-            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
-        }
-    }
-}
-</code></pre>
-              <p>Note how the stub has the same interface as the real dependency, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
-              <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
-    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
-            </tip-box>
-            <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="indented-less">
       <p>
@@ -283,30 +199,6 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the actual <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
-            </tip-box>
-          </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="how">How <span class="badge badge-light"><small><small>
-                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#how"></a></h4>
-        <div class="indented-less">
-          <div>
-            <p><strong>Integration testing is not simply a repetition of the unit test cases but run using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus on the interactions between the parts.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Suppose a class <code>Car</code> uses classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
-              <p>a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br>
-                b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, <mark>using stubs for <code>Engine</code> and <code>Wheel</code></mark>.<br>
-                c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</p>
-            </tip-box>
-            <p><strong>In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs.</strong></p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
-              <p>(a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br>
-                <s>(b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</s><br>
-                (c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code>Car</code> with <code>Wheel</code> and <code>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
-              <p>💡 Note that you no longer need stubs for <code>Engine</code> and <code>Wheel</code>. The downside is that <code>Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code>Engine</code> and <code>Wheel</code> affecting the testing of <code>Car</code> can be considered minimal.</p>
             </tip-box>
           </div>
         </div>
@@ -390,29 +282,6 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           </div>
         </div>
       </div>
-      <div class="indented-less">
-        <h4 id="why">Why <span class="badge badge-light"><small><small>
-                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#why"></a></h4>
-        <div class="indented-less">
-          <div>
-            <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
-            <ul>
-              <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also be due to multiple inter-related bugs.</li>
-              <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification <span class="dimmed">i.e. a faulty design or faulty requirements</span>.</li>
-              <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
-              <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
-            </ul>
-            <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
-            <blockquote>
-              <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
-            </blockquote>
-            <img src="/2019/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
-            <p></p>
-            <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="indented-less">
       <p>
@@ -447,28 +316,6 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               <p>💡 <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
             </tip-box>
             <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
-              <div>
-                <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
-              </div>
-            </modal>
-          </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="when">When <span class="badge badge-light"><small><small>
-                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#when"></a></h4>
-        <div class="indented-less">
-          <div>
-            <p>Which approach is better – <strong>scripted or exploratory? A mix is better.</strong></p>
-            <p><strong>The success of exploratory testing depends on the tester’s prior experience and intuition.</strong> Exploratory testing should be done by experienced testers, using a clear strategy/plan/framework. Ad-hoc exploratory testing by unskilled or inexperienced testers without a clear strategy is not recommended for real-world non-trivial systems. While <strong>exploratory testing may allow us to detect some problems in a relatively short time, it is not prudent to use exploratory testing as the sole means of testing a critical system</strong>.</p>
-            <p><strong>Scripted testing is more systematic, and hence, likely to discover more bugs given sufficient time</strong>, while exploratory testing would aid in quick error discovery, especially if the tester has a lot of experience in testing similar systems.</p>
-            <blockquote>
-              <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations benefit from a mix of scripted and exploratory approaches.
-                --<trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
-              </p>
-            </blockquote>
-            <modal id="modal:ExploratoryWhen-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
               <div>
                 <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
               </div>
@@ -617,13 +464,94 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           </div>
         </div>
       </div>
+      <div class="indented-less">
+        <h4 id="automated-testing-of-cli-apps">Automated Testing of CLI Apps <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#automated-testing-of-cli-apps"></a></h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
+            <ul>
+              <li>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</li>
+              <li>Next, we compare the actual output file with another file containing the expected output.</li>
+            </ul>
+            <p>Let us assume we are testing a CLI app called <code>AddressBook</code>. Here are the detailed steps:</p>
+            <ol>
+              <li>
+                <p>Store the test input in the text file <code>input.txt</code>.</p>
+                <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless">
+                  <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
+add Valid Name 12345 e/valid@email.butPhonePrefixMissing
+</code></pre>
+                </panel>
+              </li>
+              <li>
+                <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
+                <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless">
+                  <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
+Invalid command format: add 
+
+Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
+Invalid command format: add 
+</code></pre>
+                </panel>
+              </li>
+              <li>
+                <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
+                <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+</code></pre>
+                <ul>
+                  <li>
+                    <p>💡 The way to run a CLI program differs based on the language.<br>
+                      e.g., In Python, assuming the code is in <code>AddressBook.py</code> file, use the command<br>
+                      <code>python AddressBook.py &lt; input.txt &gt; output.txt</code></p>
+                  </li>
+                  <li>
+                    <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
+                  </li>
+                </ul>
+                <panel header="" minimized="">
+                  <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span></span>
+                  <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
+                  <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+</code></pre>
+                  <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
+                  <tip-box>
+                    <p><span class="fas fa-paperclip"></span> Resources:</p>
+                    <ul>
+                      <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
+                    </ul>
+                  </tip-box>
+                  <p></p>
+                </panel>
+                <p></p>
+              </li>
+              <li>
+                <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as <em>WinMerge</em>.</p>
+                <pre class="hljs"><code>FC output.txt expected.txt
+</code></pre>
+              </li>
+            </ol>
+            <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
+            <div>
+              <popover id="pop:cli" placement="top">
+                <div slot="content">
+                  <div>
+                    <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
+                  </div>
+                </div>
+              </popover>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 07:20:23 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 11:38:20 GMT</small></div>
 </footer>
 </div>
 </body>
