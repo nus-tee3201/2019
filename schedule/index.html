@@ -330,6 +330,13 @@
                   <li><a href="#variables">Variables</a></li>
                 </ul>
               </li>
+              <li><a href="#python-programs"><strong>Python Programs</strong></a>
+                <ul>
+                  <li><a href="#scripts-programs">Scripts (Programs)</a></li>
+                  <li><a href="#comments">Comments</a></li>
+                  <li><a href="#using-functions">Using Functions</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           <h1 id="expressions%2C-data-types%2C-variables">Expressions, Data Types, Variables<a class="fa fa-anchor" href="#expressions%2C-data-types%2C-variables"></a></h1>
@@ -607,10 +614,143 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
                   <li>Declare variables to represent the radius of a circle, and assign it value <code>7</code>.</li>
                   <li>Declare a variable to represent PI and assign it <code>3.14</code></li>
                   <li>Calculate and assign the circumference of the circle to a new variable.</li>
-                  <li>Use the previous variables to output the text <code>If radius is R, the circumference is C</code> where <code>R</code> and <code>C</code> are the radius and the circumference respectively <span class="dimmed"> e.g. <code>If radius is 7, the circumference is 43.96</code></span>.</li>
+                  <li>Use the previous variables to calculate the circumference of the circle <span class="dimmed">e.g. If radius is <code>7</code>, the circumference is <code>43.96</code></span>.</li>
                 </ol>
               </div>
             </panel>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <h1 id="python-programs">Python Programs<a class="fa fa-anchor" href="#python-programs"></a></h1>
+          <div>
+            <h3 id="scripts-(programs)">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-(programs)"></a></h3>
+            <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em>
+                <tooltip content="the tool that interprets the code and executes it">interpreter</tooltip>
+              </em> reads the program and executes statements from top to bottom.</p>
+            <p>Let's create and run a Python program:</p>
+            <tabs>
+                <tab header="Using Repl.it (no need to save as a file)">
+                <p>Press the <span class="fas fa-play"></span> button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p>
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </tab>
+                <tab header="Using IDLE (need to save as a `.py` file)">
+                <ol>
+                  <li>
+                    <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.
+                  </li>
+                  <li>Choose <code>File</code> → <code>New File</code></li>
+                  <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
+                    <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
+print(<span class="hljs-string">'Bye!'</span>)
+</code></pre>
+                  </li>
+                  <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
+                  <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
+                </ol>
+                <panel type="seamless" header="%%:tv: Writing your first Python program%%">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe></panel>
+                <p></p>
+              </tab>
+            </tabs>
+            <modal title=":tv: Opening IDEL in Windows 10" id="modal:scripts-openIdle">
+               
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe></modal>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="comments">Comments<a class="fa fa-anchor" href="#comments"></a></h3>
+            <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
+            <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
+
+print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span>
+
+<span class="hljs-comment"># read user's name from the keyboard</span>
+print(<span class="hljs-string">'What is your name?'</span>)
+name = input()
+</code></pre>
+            <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="using-functions">Using Functions<a class="fa fa-anchor" href="#using-functions"></a></h3>
+            <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>, <em>invoke</em>) a function takes the form <code>function_name(arguments)</code> <span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
+            <p>Python comes with many built-in functions you can use right away.</p>
+            <p><span class="fas fa-cube"></span> To print some text, you can use the <code>print</code> function which can take one or more arguments:</p>
+            <tabs>
+                <tab header="Using the shell">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
+Hello World
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
+Bye my friend
+</code></pre>
+                <p></p>
+              </tab>
+                <tab header="Running as a script">
+                <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
+print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>Hello World
+Bye my friend
+</code></pre>
+                <p></p>
+              </tab>
+            </tabs>
+            <panel type="seamless" header="%%:computer: Try your own%%">
+              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <p></p>
+            </panel>
+            <p></p>
+            <p><strong>Some functions return a value.</strong></p>
+            <p><span class="fas fa-cube"></span> <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells you the type of a value.</p>
+            <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
+print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span>
+
+print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span>
+print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span>
+print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span>
+</code></pre>
+            <p><span class="fas fa-arrow-down"></span></p>
+            <pre class="hljs"><code>My age is 25
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;
+&lt;class 'float'&gt;
+</code></pre>
+            <panel type="seamless" header="%%:computer: Try your own%%">
+              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <p></p>
+            </panel>
+            <p></p>
+            <p><span class="fas fa-cube"></span> <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user <mark>as a string</mark>. 💡 Note how a call to the <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
+            <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
+print(<span class="hljs-string">'What is the current price?'</span>)
+price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span>
+
+<span class="hljs-comment"># print current price</span>
+print() <span class="hljs-comment"># print an empty line</span>
+print(<span class="hljs-string">'Current price is $'</span> + price) <span class="hljs-comment"># no need to convert; price is already a string</span>
+
+<span class="hljs-comment"># calculate and show discounted price</span>
+discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
+print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
+</code></pre>
+            <panel type="seamless" header="%%:computer: Try your own%%">
+              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+            <panel type="seamless" header="%%:tv: Explanation of a similar Python program%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
+            <panel type="danger" header=":muscle: Exercise: Length of Names" expanded="">
+              <div>
+                <h4 id="exercise-%3A-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-%3A-length-of-name"></a></h4>
+                <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
+                <pre class="hljs"><code>What is your name?
+John Doe
+The length of your name is 8
+</code></pre>
+                <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
+              </div>
+            </panel>
+            <p></p>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -623,7 +763,7 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 11:38:20 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 14 Jan 2019 11:41:04 GMT</small></div>
 </footer>
 </div>
 </body>

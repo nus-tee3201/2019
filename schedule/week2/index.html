@@ -663,154 +663,18 @@
         <div>
           <div id="week2-toc">
             <ul>
-              <li><a href="#python-programs"><strong>Python Programs</strong></a>
-                <ul>
-                  <li><a href="#scripts-programs">Scripts (Programs)</a></li>
-                  <li><a href="#comments">Comments</a></li>
-                  <li><a href="#using-functions">Using Functions</a></li>
-                </ul>
-              </li>
               <li><a href="#program-flow-control"><strong>Program Flow Control</strong></a>
                 <ul>
                   <li><a href="#booleans">Booleans</a></li>
                   <li><a href="#if-statements"><code>if</code> Statements</a></li>
+                  <li><a href="#while-statements"><code>while</code> Statements</a></li>
+                  <li><a href="#for-statements"><code>for</code> Statements</a></li>
+                  <li><a href="#importing-modules">Importing Modules</a></li>
+                  <li><a href="#early-termination">Early Termination</a></li>
                 </ul>
               </li>
             </ul>
           </div>
-          <h1 id="python-programs">Python Programs<a class="fa fa-anchor" href="#python-programs"></a></h1>
-          <div>
-            <h3 id="scripts-(programs)">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-(programs)"></a></h3>
-            <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em>
-                <tooltip content="the tool that interprets the code and executes it">interpreter</tooltip>
-              </em> reads the program and executes statements from top to bottom.</p>
-            <p>Let's create and run a Python program:</p>
-            <tabs>
-                <tab header="Using Repl.it (no need to save as a file)">
-                <p>Press the <span class="fas fa-play"></span> button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p>
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-                <p></p>
-              </tab>
-                <tab header="Using IDLE (need to save as a `.py` file)">
-                <ol>
-                  <li>
-                    <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.
-                  </li>
-                  <li>Choose <code>File</code> → <code>New File</code></li>
-                  <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
-                    <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
-print(<span class="hljs-string">'Bye!'</span>)
-</code></pre>
-                  </li>
-                  <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
-                  <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
-                </ol>
-                <panel type="seamless" header="%%:tv: Writing your first Python program%%">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe></panel>
-                <p></p>
-              </tab>
-            </tabs>
-            <modal title=":tv: Opening IDEL in Windows 10" id="modal:scripts-openIdle">
-               
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe></modal>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="comments">Comments<a class="fa fa-anchor" href="#comments"></a></h3>
-            <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
-            <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
-
-print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span>
-
-<span class="hljs-comment"># read user's name from the keyboard</span>
-print(<span class="hljs-string">'What is your name?'</span>)
-name = input()
-</code></pre>
-            <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="using-functions">Using Functions<a class="fa fa-anchor" href="#using-functions"></a></h3>
-            <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>, <em>invoke</em>) a function takes the form <code>function_name(arguments)</code> <span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
-            <p>Python comes with many built-in functions you can use right away.</p>
-            <p><span class="fas fa-cube"></span> To print some text, you can use the <code>print</code> function which can take one or more arguments:</p>
-            <tabs>
-                <tab header="Using the shell">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
-Hello World
-
-<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
-Bye my friend
-</code></pre>
-                <p></p>
-              </tab>
-                <tab header="Running as a script">
-                <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
-print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
-</code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre class="hljs"><code>Hello World
-Bye my friend
-</code></pre>
-                <p></p>
-              </tab>
-            </tabs>
-            <panel type="seamless" header="%%:computer: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-              <p></p>
-            </panel>
-            <p></p>
-            <p><strong>Some functions return a value.</strong></p>
-            <p><span class="fas fa-cube"></span> <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells you the type of a value.</p>
-            <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
-print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span>
-
-print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span>
-print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span>
-print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span>
-</code></pre>
-            <p><span class="fas fa-arrow-down"></span></p>
-            <pre class="hljs"><code>My age is 25
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;
-&lt;class 'float'&gt;
-</code></pre>
-            <panel type="seamless" header="%%:computer: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-              <p></p>
-            </panel>
-            <p></p>
-            <p><span class="fas fa-cube"></span> <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user <mark>as a string</mark>. 💡 Note how a call to the <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
-            <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
-print(<span class="hljs-string">'What is the current price?'</span>)
-price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span>
-
-<span class="hljs-comment"># print current price</span>
-print() <span class="hljs-comment"># print an empty line</span>
-print(<span class="hljs-string">'Current price is $'</span> + price) <span class="hljs-comment"># no need to convert; price is already a string</span>
-
-<span class="hljs-comment"># calculate and show discounted price</span>
-discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
-print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
-</code></pre>
-            <panel type="seamless" header="%%:computer: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
-            <panel type="seamless" header="%%:tv: Explanation of a similar Python program%%">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
-            <panel type="danger" header=":muscle: Exercise: Length of Names" expanded="">
-              <div>
-                <h4 id="exercise-%3A-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-%3A-length-of-name"></a></h4>
-                <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
-                <pre class="hljs"><code>What is your name?
-John Doe
-The length of your name is 8
-</code></pre>
-                <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
           <h1 id="program-flow-control">Program Flow Control<a class="fa fa-anchor" href="#program-flow-control"></a></h1>
           <div>
             <h3 id="booleans">Booleans<a class="fa fa-anchor" href="#booleans"></a></h3>
@@ -1163,6 +1027,586 @@ Grade   : NA
             </panel>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="while-statements"><code>while</code> Statements<a class="fa fa-anchor" href="#while-statements"></a></h3>
+            <p><strong>Python uses the <code>while</code> statement to repeat a code block until a certain condition is true. Such an execution path is also known as a <em>loop</em> and each execution of the code block is called an <em>iteration</em>.</strong></p>
+            <p>Format:</p>
+            <pre class="hljs"><code>while condition :
+    statements_to_execute_if_condition_is_true
+</code></pre>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> the code below prints 'Hello' 3 times (i.e., the loop is executed for 3 iterations), followed by 'Done'.</p>
+              <table>
+                <tr>
+                  <td>
+                    <pre><code class="hljs python">counter = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> counter &lt; <span class="hljs-number">3</span>:
+    print(<span class="hljs-string">'Hello'</span>)
+    counter = counter + <span class="hljs-number">1</span>
+print(<span class="hljs-string">'Done'</span>)
+</code></pre>
+                  </td>
+                  <td>&nbsp;→&nbsp;</td>
+                  <td>
+                    <pre class="hljs"><code>Hello
+Hello
+Hello
+Done
+</code></pre>
+                    <p>
+                      <trigger trigger="click" for="modal:multipleHello-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <modal large="" title="Code with a simple `if` condition" id="modal:multipleHello-pyTutor">
+                <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=10&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <panel type="seamless" header="%%:tv: Basic `while` loops%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
+              <p></p>
+            </panel>
+            <p></p>
+            <tip-box>
+              <p><strong>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Infinite Loops
+                </strong>: Sometimes programming mistakes can result in <em>infinite loops</em> <span class="dimmed"> i.e., loops that never terminate.</span> In the example below, the condition <code>counter &lt; 3</code> always evaluates to <code>True</code> (because the statement to increment <code>counter</code> has been left out by mistake)</p>
+              <pre><code class="hljs python">counter = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> counter &lt; <span class="hljs-number">3</span>:
+    print(<span class="hljs-string">'Hello'</span>)
+</code></pre>
+              <p>💡 When using IDLE, if a bug in your code caused it to go into an infinite loop, you can use <code>Ctrl + C</code> to force it to stop executing.</p>
+              <panel type="seamless" header="%%:tv: Infinite loops%%">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Vending Machine - Add Loop" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-vending-machine---add-loop">Exercise : Vending Machine - Add Loop<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---add-loop"></a></h4>
+                <p>The code below simulates a vending machine that asks for a coin and gives out the product and the balance.</p>
+                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_value = <span class="hljs-number">0</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+print(<span class="hljs-string">'You have entered:'</span>, coin_value)
+
+print(<span class="hljs-string">'Here is the product'</span>)
+print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
+</code></pre>
+                <p>💡 Note how the above code uses <code>input</code> function with a string argument e.g., <code>input('Enter a coin:')</code> to show the string to the user and read the input from the user at the same time.</p>
+                <table>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python">name = input(<span class="hljs-string">'Input a name:'</span>)
+</code></pre>
+                    </td>
+                    <td>&nbsp;→&nbsp;</td>
+                    <td>
+                      <pre><code class="hljs python">Input a name: John
+</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python">print(<span class="hljs-string">'Input a name:'</span>)
+name = input()
+</code></pre>
+                    </td>
+                    <td>&nbsp;→&nbsp;</td>
+                    <td>
+                      <pre><code class="hljs python">Input a name:
+John
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+                <p>💡 Also note how the above code uses <code>print()</code> with two parameters, one an integer and one a string. The <code>print()</code> method can take multiple parameters and the parameters can be of different types. Note that the <mark>output will have a space between each parameter</mark>.</p>
+                <table>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python">print(<span class="hljs-string">'ABC'</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4.50</span>)
+print(<span class="hljs-string">'ABC'</span> + str(<span class="hljs-number">3</span>) + str(<span class="hljs-number">4.50</span>))
+print(<span class="hljs-string">'ABC'</span> + <span class="hljs-string">' '</span> + str(<span class="hljs-number">3</span>) + <span class="hljs-string">' '</span> + str(<span class="hljs-number">4.50</span>))
+</code></pre>
+                    </td>
+                    <td>&nbsp;→&nbsp;</td>
+                    <td>
+                      <pre class="hljs"><code>
+ABC 3 4.50
+ABC34.50
+ABC 3 4.50
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+                <p>Example output from the code:</p>
+                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">200</span>
+You have entered: <span class="hljs-number">200</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">100</span>
+</code></pre>
+                <p>As you can see, this code does not consider the case where the inserted coin is less than the price of the product, resulting in the following incorrect behavior.</p>
+                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">50</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">-50</span>
+</code></pre>
+                <p>Modify the code to repeat these two lines until the coin entered is enough to pay for the product. Note that you <mark>don't need to add up all the coins entered.</mark> Instead, assume the vending machine can accept only one coin for a purchase and keeps rejecting coins until a big-enough coin is entered.</p>
+                <pre><code class="hljs python">coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+print(<span class="hljs-string">'You have entered:'</span>, coin_value)
+</code></pre>
+                <p>The output should be something like this:</p>
+                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">50</span>
+Enter a coin: <span class="hljs-number">100</span>
+You have entered: <span class="hljs-number">100</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">0</span>
+</code></pre>
+              </div>
+            </panel>
+            <panel type="danger" header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-vending-machine---accept-multiple-coins">Exercise : Vending Machine - Accept Multiple Coins<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---accept-multiple-coins"></a></h4>
+                <p>The vending machine you wrote in the previous exercise (an example solution given below) can accept only one coin as the payment. If the coin is not enough, it rejects the coin and request the user to insert a new coin.</p>
+                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_value = <span class="hljs-number">0</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+<span class="hljs-keyword">while</span> price &gt; coin_value:
+  coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+  print(<span class="hljs-string">'You have entered:'</span>, coin_value)
+
+print(<span class="hljs-string">'Here is the product'</span>)
+print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
+</code></pre>
+                <p>Modify the code so that it can accumulate coins until there is enough to pay for the product. An example output is given below:</p>
+                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">20</span>
+You have entered: <span class="hljs-number">20</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">70</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">120</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">20</span>
+</code></pre>
+                <panel type="seamless" header=":bulb: see hint">
+                  <pre><code class="hljs python">...
+coin_sum = <span class="hljs-number">0</span>
+...
+  coin_sum = coin_sum + coin_value
+...
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+            <p><strong>You can use a <code>break</code> statement to break out of a loop.</strong></p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below uses the <code>break</code> statement to break out of the loop when the password given is <code>abcd</code>. Without the <code>break</code> statement, the loop will repeat forever because the condition in <code>while True:</code> is always <code>True</code>.</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+  password = input(<span class="hljs-string">'What is the password?'</span>)
+  <span class="hljs-keyword">if</span> password == <span class="hljs-string">'abcd'</span>:
+    <span class="hljs-keyword">break</span> <span class="hljs-comment"># exit the loop</span>
+  <span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'Password incorrect. Try again.'</span>)
+print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <panel type="seamless" header="%%:tv: `break` inside `while` loops%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
+            <panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-vending-machine---allow-abort">Exercise : Vending Machine - Allow Abort<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---allow-abort"></a></h4>
+                <p>The vending machine you wrote in the previous exercise (an example solution given below) does not allow the user to abort the purchase and get the money back.</p>
+                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_sum = <span class="hljs-number">0</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+<span class="hljs-keyword">while</span> price &gt; coin_sum:
+  coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+  coin_sum = coin_sum + coin_value
+  print(<span class="hljs-string">'You have entered:'</span>, coin_sum)
+
+print(<span class="hljs-string">'Here is the product'</span>)
+print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
+</code></pre>
+                <p>Modify the code so that the user can abort the purchase by entering <code>0</code> as the coin value:</p>
+                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">20</span>
+You have entered: <span class="hljs-number">20</span>
+Enter a coin: <span class="hljs-number">0</span>
+Your balance: <span class="hljs-number">20</span>
+</code></pre>
+                <panel type="seamless" header=":bulb: see hint">
+                  <pre><code class="hljs python">...
+is_aborting = <span class="hljs-keyword">False</span>
+...
+  <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
+    is_aborting = <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">break</span>
+<span class="hljs-meta">... </span>
+<span class="hljs-keyword">if</span> is_aborting:
+  print(<span class="hljs-string">'Your balance:'</span>, coin_sum)
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+            <p><strong>You can use a <code>continue</code> statement to skip the remainder of the current iteration</strong> and go back to the <code>while</code> condition.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below is for reading three words from the user and printing all three at the end. It uses the <code>continue</code> statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters).</p>
+              <pre><code class="hljs python">accepted_words = <span class="hljs-string">''</span>
+count = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> count &lt; <span class="hljs-number">3</span>:
+  word = input(<span class="hljs-string">'Enter a word (with 4 letters or more):'</span>)
+  <span class="hljs-keyword">if</span> len(word) &lt; <span class="hljs-number">4</span>:
+    print(<span class="hljs-string">'Too short. Ignored.'</span>)
+    <span class="hljs-keyword">continue</span> <span class="hljs-comment"># skip the remainder of the iteration</span>
+  accepted_words = accepted_words + <span class="hljs-string">' '</span> + word
+  count = count + <span class="hljs-number">1</span>
+print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <panel type="seamless" header="%%:tv: `continue` inside `while` loops%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
+              <p></p>
+            </panel>
+            <p></p>
+            <panel type="danger" header=":muscle: Exercise: Vending Machine - Legit Coins" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-vending-machine---legit-coins">Exercise : Vending Machine - Legit Coins<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---legit-coins"></a></h4>
+                <p>The vending machine you wrote in the previous exercise (an example solution given below) accepts any value as the coin value. However, coins come in only certain values only.</p>
+                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_sum = <span class="hljs-number">0</span>
+is_aborting = <span class="hljs-keyword">False</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+<span class="hljs-keyword">while</span> price &gt; coin_sum:
+  coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+  <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
+    is_aborting = <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">break</span>
+  coin_sum = coin_sum + coin_value
+  print(<span class="hljs-string">'You have entered:'</span>, coin_sum)
+
+<span class="hljs-keyword">if</span> is_aborting:
+  print(<span class="hljs-string">'Your balance:'</span>, coin_sum)
+<span class="hljs-keyword">else</span>:
+  print(<span class="hljs-string">'Here is the product'</span>)
+  print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
+</code></pre>
+                <p>Modify the code so that it accepts coins of value 10, 20, 50, 100 only:</p>
+                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">30</span>
+Coin <span class="hljs-keyword">not</span> recognized
+Enter a coin: <span class="hljs-number">100</span>
+You have entered: <span class="hljs-number">100</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">0</span>
+</code></pre>
+                <panel type="seamless" header=":bulb: see hint">
+                  <pre><code class="hljs python">...
+<span class="hljs-keyword">if</span> coin_value != <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> ... :
+    ...
+    <span class="hljs-keyword">continue</span>
+...
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="for-statements"><code>for</code> Statements<a class="fa fa-anchor" href="#for-statements"></a></h3>
+            <p>You can <strong>use a <code>for</code> statement, together with the <code>range()</code> function, to repeat a code block a pre-determined number of times.</strong></p>
+            <p>Format:</p>
+            <pre class="hljs"><code>for variable_used_as_index in range(number_of_times_to_repeat) :
+    statements_to_repeat
+</code></pre>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> the code below use a <code>for</code> loop to iterate three times. Note how the variable <code>i</code> is used as an indexing variable and how <code>i in range(3)</code> causes <code>i</code> to take values <code>0, 1, 2</code> over the three iterations.</p>
+              <table>
+                <tr>
+                  <td>
+                    <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+  print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
+</code></pre>
+                  </td>
+                  <td>&nbsp;→&nbsp;</td>
+                  <td>
+                    <pre class="hljs"><code>0 Knock knock, Penny!
+1 Knock knock, Penny!
+2 Knock knock, Penny!
+</code></pre>
+                  </td>
+                </tr>
+              </table>
+              <p>💡 Note how the above <code>for</code> loop is equivalent to the following <code>while</code> loop but more concise.</p>
+              <pre><code class="hljs python">i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">3</span>:
+  print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
+  i = i + <span class="hljs-number">1</span>
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <panel type="seamless" header="%%:tv: Basic `for` statements%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
+              <p></p>
+            </panel>
+            <p></p>
+            <panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-multiplication-table">Exercise : Multiplication Table<a class="fa fa-anchor" href="#exercise-%3A-multiplication-table"></a></h4>
+                <p>Write a program to read in an integer and generate the multiplication table (for <code>1</code> to <code>10</code>) for that number. An example is given below:</p>
+                <pre><code class="hljs python">Enter a number: <span class="hljs-number">7</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">1</span> = <span class="hljs-number">7</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">2</span> = <span class="hljs-number">14</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">3</span> = <span class="hljs-number">21</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">4</span> = <span class="hljs-number">28</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">5</span> = <span class="hljs-number">35</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">6</span> = <span class="hljs-number">42</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">7</span> = <span class="hljs-number">49</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">8</span> = <span class="hljs-number">56</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">9</span> = <span class="hljs-number">63</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">10</span> = <span class="hljs-number">70</span>
+</code></pre>
+                <panel type="seamless" header=":bulb: see hint">
+                  <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+            <p><strong>You can use <code>break</code> and <code>continue</code> in <code>for</code> loops as well</strong>, with similar effects as in <code>while</code> loops.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below totals the numbers entered by the user. It uses <code>range(5)</code> to limit the number of entries to 5. It uses a <code>break</code> to exit the loop if user hits <kbd>Enter</kbd> without entering a value. It uses a <code>continue</code> statement to skip negative numbers entered by the user.</p>
+              <pre><code class="hljs python">total = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> range (<span class="hljs-number">5</span>):
+  number_as_string = input(<span class="hljs-string">'Enter a number (press enter to exit):'</span>)
+  
+  <span class="hljs-comment"># exit if user input is empty</span>
+  <span class="hljs-keyword">if</span> number_as_string == <span class="hljs-string">''</span>:
+    print(<span class="hljs-string">'Exiting as per user request...'</span>)
+    <span class="hljs-keyword">break</span>
+    
+  <span class="hljs-comment"># convert the input into an integer</span>
+  number_as_int = int(number_as_string)
+  
+  <span class="hljs-comment"># skip if the number is negative</span>
+  <span class="hljs-keyword">if</span> number_as_int &lt; <span class="hljs-number">0</span> :
+    print(<span class="hljs-string">'Negative number, skipped'</span>)
+    <span class="hljs-keyword">continue</span> 
+    
+  <span class="hljs-comment"># update the total and print the running total</span>
+  total = total + number_as_int
+  print(<span class="hljs-string">'Running total:'</span> + str(total))
+
+print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, str(total))
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Multiplication Table (Extended)" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-multiplication-table-(extended)">Exercise : Multiplication Table (Extended)<a class="fa fa-anchor" href="#exercise-%3A-multiplication-table-(extended)"></a></h4>
+                <p>Modify the code a program to,</p>
+                <ul>
+                  <li>print multiplication values of up to <code>x 20</code> (not up to <code>x 10</code> as before)</li>
+                  <li>omit squares (i.e. <code>n*n</code>). Note how <code>8 x 8</code> has been omitted in the example below. Recommended: use a <code>continue</code> statement to achieve this.</li>
+                  <li>not print rows that has a value higher than 100. Note how the printing stops after <code>8 x 12 = 96</code> in the example below. Recommended: use a <code>break</code> statement for this.</li>
+                </ul>
+                <pre><code class="hljs python">Enter a number: <span class="hljs-number">8</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">1</span> = <span class="hljs-number">8</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">2</span> = <span class="hljs-number">16</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">3</span> = <span class="hljs-number">24</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">4</span> = <span class="hljs-number">32</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">5</span> = <span class="hljs-number">40</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">6</span> = <span class="hljs-number">48</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">7</span> = <span class="hljs-number">56</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">9</span> = <span class="hljs-number">72</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">10</span> = <span class="hljs-number">80</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">11</span> = <span class="hljs-number">88</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">12</span> = <span class="hljs-number">96</span>
+</code></pre>
+              </div>
+            </panel>
+            <p></p>
+            <p><strong>Loops can be nested.</strong></p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below use two nested <code>for</code> loops to print multiplication tables for 2, 3, and 4.</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>):
+  print(<span class="hljs-string">'Multiplication table for'</span>, i)
+  <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>):
+    print(i, <span class="hljs-string">'x'</span>, j, <span class="hljs-string">'='</span>, i*j)
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Three Dice Throws" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-three-dice-throws">Exercise : Three Dice Throws<a class="fa fa-anchor" href="#exercise-%3A-three-dice-throws"></a></h4>
+                <p>Write a program to generate all possible results you can get by throwing a <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.</p>
+                <pre><code class="hljs python"><span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">3</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">4</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">6</span>
+<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">1</span>
+<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>
+...
+</code></pre>
+                <popover id="pop:exerciseThreeDiceThrows-dice" title="" placement="top">
+                    <div slot="content">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br>
+                      <sub>source: wikipedia</sub></p>
+                    <p></p>
+                  </div>
+                </popover>
+                <panel type="seamless" header=":bulb: see hint">
+                  <p>Use three nested <code>for</code> loops.</p>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="importing-modules">Importing Modules<a class="fa fa-anchor" href="#importing-modules"></a></h3>
+            <p>In addition to <em>built-in</em> functions such as <code>print()</code>, <code>input()</code>, and <code>len()</code>, <strong>Python has a set of functions called the <em>standard library</em>.</strong> Functions in the standard library are divided into modules. <strong>A <em>module</em> is a python program that contains a related group of functions</strong>. You can think of it as a file containing some python functions.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Some example modules in the Python standard library:</p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>What it contains</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>math</code></td>
+                      <td>mathematics-related functions</td>
+                    </tr>
+                    <tr>
+                      <td><code>random</code></td>
+                      <td>random number–related functions</td>
+                    </tr>
+                    <tr>
+                      <td><code>sys</code></td>
+                      <td>provides ways to interact with the Python interpreter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </tip-box>
+            <p>Unlike built-in functions which you can directly use in your code as if the function is already in your code file, <strong>to use a function in the standard library you need to <em>import</em> the corresponding module first.</strong></p>
+            <p>Format: <code>import module_name(s)</code></p>
+            <p><span class="fas fa-cube"></span> Some examples:</p>
+            <ul>
+              <li><code>import math</code> (imports the <code>math</code> module)</li>
+              <li><code>import math, sys, random</code> (imports all three modules in one statement)</li>
+            </ul>
+            <p>Furthermore, to use a function from an imported module, you should use the <code>module_name.function_name()</code> format.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> the code below imports the <code>random</code> module and uses its <code>randint()</code> function to generate a number between 1 and 10.</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> random
+
+print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 10'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    print(random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>))
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <p>💡 It is common practice to put the <code>import</code> statements at the top of the program code.</p>
+            <panel type="seamless" header="%%:tv: Importing modules%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
+              <p></p>
+            </panel>
+            <p></p>
+            <panel type="danger" header=":muscle: Exercise: Circle Area" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-circle-area">Exercise : Circle Area<a class="fa fa-anchor" href="#exercise-%3A-circle-area"></a></h4>
+                <p>Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.</p>
+                <p>💡 some useful hints:</p>
+                <ul>
+                  <li>Area = PI * radius<sup>2</sup></li>
+                  <li>You can use <code>math.pi</code> as the value of PI.</li>
+                  <li>You can use the built-in function <code>round</code> to round off a number to a specified number of decimal places. e.g., <code>round(1.12345, 2)</code> returns <code>1.12</code></li>
+                </ul>
+                <pre><code class="hljs python">Enter radius: <span class="hljs-number">4.5</span>
+Area: <span class="hljs-number">63.61725</span>
+</code></pre>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="early-termination">Early Termination<a class="fa fa-anchor" href="#early-termination"></a></h3>
+            <p>At times you may need to terminate a program execution early <span class="dimmed"> i.e., without reaching the end of the code</span>. <strong>You can use the <code>exit()</code> function in the <code>system</code> module to terminate a program early.</strong></p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below prints out the factorials of <code>1</code> to <code>n</code> where <code>n</code> is specified by the user. If <code>n</code> is <code>0</code>, it uses <code>sys.exit()</code> to terminate the program immediately.</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> math, sys
+
+n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</span>))
+
+<span class="hljs-keyword">if</span> n == <span class="hljs-number">0</span>:
+  print(<span class="hljs-string">'Terminating as requested...'</span>)
+  sys.exit()
+  
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):
+    print(math.factorial(i+<span class="hljs-number">1</span>)) <span class="hljs-comment"># use i+1 because i starts from 0</span>
+</code></pre>
+              <panel type="seamless" header="%%:computer: Try your own%%">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-factorials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
+              <p></p>
+            </tip-box>
+            <panel type="seamless" header="%%:tv: Early termination%%">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=155&end=223&version=3" frameborder="0" allowfullscreen></iframe></panel>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
         </div>
       </tab>
     </tabs>
@@ -1171,7 +1615,7 @@ Grade   : NA
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sun, 13 Jan 2019 11:38:20 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 14 Jan 2019 11:41:04 GMT</small></div>
 </footer>
 </div>
 </body>

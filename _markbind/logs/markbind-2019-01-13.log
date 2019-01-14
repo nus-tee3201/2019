@@ -6807,3 +6807,11 @@ Missing reference in C:\repos\nus-te3201\te3201-2019-website\schedule\summary.md
 2019-01-13T11:34:00.526Z - info: Site data built
 2019-01-13T11:38:16.304Z - info: Website generation started at 7:38:13 PM
 2019-01-13T11:38:18.177Z - info: Building assets...
+2019-01-13T11:38:20.198Z - info: Assets built
+2019-01-13T11:38:20.198Z - info: Generating pages...
+2019-01-13T11:39:09.672Z - info: Pages built
+2019-01-13T11:39:09.807Z - info: Site data built
+2019-01-13T11:39:09.807Z - info: Website generation complete! Total build time: 56.553s
+2019-01-13T11:39:09.808Z - info: Build success!
+2019-01-13T11:39:09.808Z - info: Generate Site durationMs=56554
+2019-01-13T11:40:20.478Z - info: Deployed!

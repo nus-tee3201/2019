@@ -36,6 +36,7 @@
     {
       "headings": {
         "exercise-%3A-circle-circumference": "Exercise : Circle Circumference",
+        "exercise-%3A-length-of-name": "Exercise : Length of Name",
         "week-1-%5Bjan-14%5D": "Week 1 [Jan 14]",
         "expressions%2C-data-types%2C-variables": "Expressions, Data Types, Variables",
         "computer-programs": "Computer Programs",
@@ -43,7 +44,11 @@
         "working-with-an-interactive-shell": "Working with an Interactive Shell",
         "operators": "Operators",
         "data-types": "Data Types",
-        "variables": "Variables"
+        "variables": "Variables",
+        "python-programs": "Python Programs",
+        "scripts-(programs)": "Scripts (Programs)",
+        "comments": "Comments",
+        "using-functions": "Using Functions"
       },
       "title": "Home",
       "footer": "footer.md",
@@ -858,7 +863,7 @@
         "working-with-dictionaries": "Working with Dictionaries",
         "nested-dictionaries": "Nested Dictionaries"
       },
-      "title": "",
+      "title": "Python Basics: Dictionaries",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -876,7 +881,7 @@
         "handling-exceptions": "Handling Exceptions",
         "raising-exceptions": "Raising Exceptions"
       },
-      "title": "",
+      "title": "Python Basics: Error Handling",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -894,7 +899,7 @@
         "data-types": "Data Types",
         "variables": "Variables"
       },
-      "title": "",
+      "title": "Python Basics: Expressions, Data Types, Variables",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -913,7 +918,7 @@
         "writing-to-files": "Writing to Files",
         "csv-files": "CSV files"
       },
-      "title": "",
+      "title": "Python Basics: Files",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -941,7 +946,7 @@
         "importing-modules": "Importing Modules",
         "early-termination": "Early Termination"
       },
-      "title": "",
+      "title": "Python Basics: Flow Control",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -960,7 +965,7 @@
         "return-value": "Return Value",
         "local-and-global-scope": "Local and Global Scope"
       },
-      "title": "",
+      "title": "Python Basics: Functions",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -989,7 +994,7 @@
         "methods": "Methods",
         "list-methods": "List Methods"
       },
-      "title": "",
+      "title": "Python Basics: Lists",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -1011,7 +1016,7 @@
         "visibility": "Visibility",
         "inheritance": "Inheritance"
       },
-      "title": "",
+      "title": "Python Basics: Object-Oriented Programming",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -1026,7 +1031,7 @@
         "comments": "Comments",
         "using-functions": "Using Functions"
       },
-      "title": "",
+      "title": "Python Basics: Programs",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -1050,7 +1055,7 @@
         "working-with-strings": "Working with Strings",
         "string-methods": "String Methods"
       },
-      "title": "",
+      "title": "Python Basics: Strings",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -1062,7 +1067,7 @@
         "exercise-%3A-print-errors-in-red": "Exercise : Print Errors In Red",
         "appendix-a%3A-installing-3rd-party-modules": "Appendix A: Installing 3rd-Party Modules"
       },
-      "title": "",
+      "title": "Python Basics: Installing 3rd Party Libraries",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
@@ -1073,7 +1078,7 @@
       "headings": {
         "appendix-b%3A-unit-testing": "Appendix B: Unit Testing"
       },
-      "title": "",
+      "title": "Python Basics: Unit Testing",
       "footer": "footer.md",
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
