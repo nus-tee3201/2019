@@ -1,5 +1,5 @@
 <frontmatter>
-title: ""
+title: "Python Basics: Lists"
 footer: footer.md
 head: adminHead.md
 siteNav: programming-sitenav.md
