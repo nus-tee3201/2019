@@ -1,5 +1,5 @@
 <frontmatter>
-title: ""
+title: "Python Basics: Error Handling"
 footer: footer.md
 head: adminHead.md
 siteNav: programming-sitenav.md
