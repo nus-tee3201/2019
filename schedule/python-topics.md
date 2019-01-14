@@ -8,6 +8,10 @@
   * [Operators](#operators)
   * [Data Types](#data-types)
   * [Variables](#variables)
+* [**Python Programs**](#python-programs)
+  * [Scripts (Programs)](#scripts-programs)
+  * [Comments](#comments)
+  * [Using Functions](#using-functions)
 </div>
 
 # Expressions, Data Types, Variables
@@ -18,53 +22,46 @@
 <include src="../programming/operators/text.md" />{{ hr_double }}
 <include src="../programming/types/text.md" />{{ hr_double }}
 <include src="../programming/variables/text.md" />{{ hr_double }}
-</div>
-<div id="week2">
-<div id="week2-toc">
-
-* [**Python Programs**](#python-programs)
-  * [Scripts (Programs)](#scripts-programs)
-  * [Comments](#comments)
-  * [Using Functions](#using-functions)
-* [**Program Flow Control**](#program-flow-control)
-  * [Booleans](#booleans)
-  * [`if` Statements](#if-statements)
-</div>
 
 # Python Programs
 
 <include src="../programming/scripts/text.md" />{{ hr_double }}
 <include src="../programming/comments/text.md" />{{ hr_double }}
 <include src="../programming/usingFunctions/text.md" />{{ hr_double }}
+</div>
+
+<div id="week2">
+<div id="week2-toc">
+
+* [**Program Flow Control**](#program-flow-control)
+  * [Booleans](#booleans)
+  * [`if` Statements](#if-statements)
+  * [`while` Statements](#while-statements)
+  * [`for` Statements](#for-statements)
+  * [Importing Modules](#importing-modules)
+  * [Early Termination](#early-termination)
+
+</div>
 
 # Program Flow Control
 
 <include src="../programming/booleans/text.md" />{{ hr_double }}
 <include src="../programming/if/text.md" />{{ hr_double }}
-
+<include src="../programming/while/text.md" />{{ hr_double }}
+<include src="../programming/for/text.md" />{{ hr_double }}
+<include src="../programming/import/text.md" />{{ hr_double }}
+<include src="../programming/exit/text.md" />{{ hr_double }}
 
 </div>
 <div id="week3">
 <div id="week3-toc">
 
-* [**Program Flow Control - continued**](#program-flow-control-continued)
-  * [`while` Statements](#while-statements)
-  * [`for` Statements](#for-statements)
-  * [Importing Modules](#importing-modules)
-  * [Early Termination](#early-termination)
 * [**Functions**](#functions)
   * [Writing Functions](#writing-functions)
   * [Function Parameters](#function-parameters)
   * [Return Value](#return-value)
   * [Local and Global Scope](#local-and-global-scope)
 </div>
-
-# Program Flow Control %%- continued%%
-
-<include src="../programming/while/text.md" />{{ hr_double }}
-<include src="../programming/for/text.md" />{{ hr_double }}
-<include src="../programming/import/text.md" />{{ hr_double }}
-<include src="../programming/exit/text.md" />{{ hr_double }}
 
 # Functions
 
