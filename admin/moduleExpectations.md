@@ -25,7 +25,7 @@ Given 60% of this module is based on CA, it can appear to be _heavy_. However, *
 <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
 </p>
 
-**Star ratings for Learning Outcomes** (and textbook sections):
+**Star ratings for topics**:
 
 * **One-star topics** {{ one_star }}: The topics you need to learn just to keep up with the module. We recommend you to ==learn these topics if you want to pass the module== (i.e. up to a **C** grade).
 * **Two-stars topics** {{ two_stars }}: Can get you up to a **B+**.
