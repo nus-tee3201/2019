@@ -4317,3 +4317,21 @@
 2019-01-14T11:39:12.606Z - info: Rebuilding 676 pages
 2019-01-14T11:41:01.015Z - info: Website generation started at 7:40:58 PM
 2019-01-14T11:41:02.821Z - info: Building assets...
+2019-01-14T11:41:04.658Z - info: Assets built
+2019-01-14T11:41:04.659Z - info: Generating pages...
+2019-01-14T11:41:42.367Z - info: Pages built
+2019-01-14T11:41:52.786Z - info: Website generation complete! Total build time: 54.669s
+2019-01-14T11:41:52.786Z - info: Build success!
+2019-01-14T11:41:52.787Z - info: Generate Site durationMs=54670
+2019-01-14T11:41:52.794Z - info: Site data built
+2019-01-14T11:43:04.833Z - info: Deployed!
+2019-01-14T11:47:26.695Z - info: Website generation started at 7:47:23 PM
+2019-01-14T11:47:28.468Z - info: Building assets...
+2019-01-14T11:47:30.229Z - info: Assets built
+2019-01-14T11:47:30.229Z - info: Generating pages...
+2019-01-14T11:48:06.542Z - info: Pages built
+2019-01-14T11:48:16.032Z - info: Website generation complete! Total build time: 52.25s
+2019-01-14T11:48:16.044Z - info: Generate Site durationMs=52263
+2019-01-14T11:48:16.386Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-01-14T11:48:16.386Z - info: Press CTRL+C to stop ...
+2019-01-14T11:48:16.411Z - info: Site data built

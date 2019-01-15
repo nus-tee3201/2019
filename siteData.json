@@ -7,6 +7,7 @@
         "using-this-module-website": "Using this module website",
         "browser-compatibility": "Browser Compatibility",
         "information-layers": "Information Layers",
+        "star-rating-system": "Star rating system",
         "conventions-used": "Conventions Used",
         "shorthand-headings": "Shorthand Headings",
         "boxed-text-styles": "Boxed-Text Styles",
@@ -35,7 +36,7 @@
     },
     {
       "headings": {
-        "exercise-%3A-circle-circumference": "Exercise : Circle Circumference",
+        "exercise%3A-circle-circumference": "Exercise: Circle Circumference",
         "exercise-%3A-length-of-name": "Exercise : Length of Name",
         "week-1-%5Bjan-14%5D": "Week 1 [Jan 14]",
         "expressions%2C-data-types%2C-variables": "Expressions, Data Types, Variables",
@@ -890,7 +891,7 @@
     },
     {
       "headings": {
-        "exercise-%3A-circle-circumference": "Exercise : Circle Circumference",
+        "exercise%3A-circle-circumference": "Exercise: Circle Circumference",
         "expressions%2C-data-types%2C-variables": "Expressions, Data Types, Variables",
         "computer-programs": "Computer Programs",
         "setting-up-the-programming-environment": "Setting up the Programming Environment",
