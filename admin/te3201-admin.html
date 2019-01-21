@@ -347,8 +347,8 @@
               <li>To be done using Python.</li>
               <li>You are also expected to,
                 <ul>
-                  <li>submit most of the weekly exercises within two weeks of the corresponding lecture <span class="dimmed">e.g., submit 60% week 2 exercises before week 4 lecture</span></li>
-                  <li>submit suggested project increments within two weeks of the corresponding lecture for the first 8 weeks.</li>
+                  <li>submit <tooltip content="more than 60% of exercises">most</tooltip> of the weekly programming exercises (on <a href="http://repl.it">repl.it</a>) within two weeks of the corresponding lecture <span class="dimmed">e.g., submit week 2 exercises before week 4 lecture</span></li>
+                  <li>submit weekly <trigger trigger="click" for="modal:admin-projectIncrements">project increments</trigger> within two weeks of the corresponding lecture for the first 8 weeks.</li>
                 </ul>
               </li>
               <li>Marks breakdown [40 marks]:
@@ -362,29 +362,49 @@
             </ul>
           </li>
         </ul>
-        <div class="indented-level2">
-          <panel header="Project Increments">
-            <panel header="week1">
-              <div>
-                <h3 id="monty-1">Monty 1<a class="fa fa-anchor" href="#monty-1"></a></h3>
-                <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
-                <pre class="hljs"><code>&gt;&gt;&gt; Hello, my name is Monty
+        <box type="warning">
+          <p>When creating <a href="http://repl.it">repl.it</a> accounts, please use a username similar to your actual name so that it is easy to identify you.
+          </p>
+        </box>
+        <ul>
+          <li><strong><strong>Option B (flexible):</strong></strong>
+            <ul>
+              <li>This option is recommended for those who have some prior programming experience.</li>
+              <li>To be done in individually, or teams of 2-3 members.</li>
+              <li>The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</li>
+              <li>Marks breakdown [40 marks]:
+                <ul>
+                  <li>Midterm submission: [10 marks]</li>
+                  <li>Final submission: [30 marks]</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <modal large="" title="Project Increments" id="modal:admin-projectIncrements">
+          <p>Missing project increments will be filled up near to the corresponding week.</p>
+          <panel header="week1" expanded="">
+            <div>
+              <h3 id="monty-1">Monty 1<a class="fa fa-anchor" href="#monty-1"></a></h3>
+              <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
+              <pre class="hljs"><code>&gt;&gt;&gt; Hello, my name is Monty
 &gt;&gt;&gt; What can I do for you?
 foo
 &gt;&gt;&gt; Your command is: foo
 &gt;&gt;&gt; Bye!
 </code></pre>
-                <p>Partial code:</p>
+              <panel type="seamless" header="Partial solution">
                 <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
-
+<span class="hljs-comment"># ADD MORE CODE HERE</span>
 </code></pre>
-              </div>
-            </panel>
-            <panel header="week2">
-              <div>
-                <h3 id="monty-2">Monty 2<a class="fa fa-anchor" href="#monty-2"></a></h3>
-                <p>Extend Monty 1 code to work as follows:</p>
-                <pre class="hljs"><code>&gt;&gt;&gt; Hello, my name is Monty
+              </panel>
+            </div>
+          </panel>
+          <panel header="week2" expanded="">
+            <div>
+              <h3 id="monty-2">Monty 2<a class="fa fa-anchor" href="#monty-2"></a></h3>
+              <p>Extend Monty 1 code to work as follows:</p>
+              <pre class="hljs"><code>&gt;&gt;&gt; Hello, my name is Monty
 &gt;&gt;&gt; What can I do for you?
 
 list
@@ -405,52 +425,44 @@ exit
 y
 &gt;&gt;&gt; Bye!
 </code></pre>
-              </div>
-            </panel>
-            <panel header="week3">
-              <div></div>
-            </panel>
-            <panel header="week4">
-              <div></div>
-            </panel>
-            <panel header="week5">
-              <div></div>
-            </panel>
-            <panel header="week6">
-              <div></div>
-            </panel>
-            <panel header="week7">
-              <div></div>
-            </panel>
-            <panel header="week8">
-              <div></div>
-            </panel>
-            <panel header="week9">
-              <div></div>
-            </panel>
-            <panel header="week10">
-              <div></div>
-            </panel>
-            <panel header="week11">
-              <div></div>
-            </panel>
+              <panel type="seamless" header="Partial solution">
+                <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
+    <span class="hljs-comment"># ADD MORE CODE HERE</span>
+print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
+</code></pre>
+              </panel>
+            </div>
           </panel>
-        </div>
-        <ul>
-          <li><strong><strong>Option B (flexible):</strong></strong>
-            <ul>
-              <li>This option is recommended for those who have some prior programming experience.</li>
-              <li>To be done in individually, or teams of 2-3 members.</li>
-              <li>The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</li>
-              <li>Marks breakdown [40 marks]:
-                <ul>
-                  <li>Midterm submission: [10 marks]</li>
-                  <li>Final submission: [30 marks]</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <panel header="week3" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week4" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week5" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week6" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week7" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week8" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week9" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week10" expanded="">
+            <div></div>
+          </panel>
+          <panel header="week11" expanded="">
+            <div></div>
+          </panel>
+        </modal>
         <h3 id="software-to-build">Software to build<a class="fa fa-anchor" href="#software-to-build"></a></h3>
         <p>You will be building a personal assistant chat-bot software named <em>Monty</em> (<em>Monty</em> is a temporary name; you should give a different name to your own chat bot)</p>
         <p><strong><em>Basic</em> Functionality</strong>:</p>
@@ -770,7 +782,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 12:17:44 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:10:54 GMT</small></div>
 </footer>
 </div>
 </body>
