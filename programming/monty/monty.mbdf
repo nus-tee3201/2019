@@ -1,5 +1,7 @@
 The project below explains how to build a simple chat bot called Monty, adding functionality in small incremental steps.
 
+{{ hr_double }}
+
 <div id="monty1">
 
 ### Monty 1
@@ -14,11 +16,13 @@ foo
 >>> Bye!
 ```
 
-Partial code:
+<panel type="seamless" header="Partial solution">
+
 ```python
 print('>>> Hello, my name is Monty')
-
+# ADD MORE CODE HERE
 ```
+</panel>
 </div>
 {{ hr_double }}
 <div id="monty2">
@@ -50,4 +54,18 @@ y
 >>> Bye!
 ```
 
+<panel type="seamless" header="Partial solution">
+
+```python
+print('>>> Hello, my name is Monty')
+while True:
+    print('>>> What can I do for you?')
+    # ADD MORE CODE HERE
+print('>>> Bye!')
+```
+</panel>
+
 </div>
+{{ hr_double }}
+
+%%Remaining increments to be added soon.%%
