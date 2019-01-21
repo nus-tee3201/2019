@@ -17,7 +17,7 @@ siteNav: programming-sitenav.md
 
 # The Monty Project
 
-<include src="../monty/monty.mbdf" />{{ hr_double }}
+<include src="../monty/monty.mbdf" />
 
 </div>
 </div>

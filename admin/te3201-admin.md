@@ -118,25 +118,18 @@ You may choose one of these two options. You can switch between the options any 
   * The project is to be done individually, but you may collaborate with each other in the early stages of the project to help each other.
   * To be done using Python.
   * You are also expected to,
-    * submit most of the weekly exercises within two weeks of the corresponding lecture %%e.g., submit 60% week 2 exercises before week 4 lecture%%
-    * submit suggested project increments within two weeks of the corresponding lecture for the first 8 weeks.
+    * submit <tooltip content="more than 60% of exercises">most</tooltip> of the weekly programming exercises (on repl.it) within two weeks of the corresponding lecture %%e.g., submit week 2 exercises before week 4 lecture%%
+    * submit weekly <trigger trigger="click" for="modal:admin-projectIncrements">project increments</trigger> within two weeks of the corresponding lecture for the first 8 weeks.
   * Marks breakdown [40 marks]:
     * ==Weekly exercises [5 marks]==
     * ==Weekly project increments [5 marks]==
     * Midterm submission: [5 marks]
     * Final submission: [25 marks]
 
-<div class="indented-level2">
+<box type="warning">
 
-<panel header="Project Increments">
-{% for i in range(1, 12) -%}
-<panel header="week{{ i }}">
-<include src="../programming/monty/monty.mbdf#monty{{ i }}" optional />
-</panel>
-{%- endfor %}
-</panel>
-
-</div>
+When creating repl.it accounts, please use a username similar to your actual name so that it is easy to identify you.
+</box>
 
 * ****Option B (flexible):****
   * This option is recommended for those who have some prior programming experience.
@@ -145,6 +138,19 @@ You may choose one of these two options. You can switch between the options any 
   * Marks breakdown [40 marks]:
     * Midterm submission: [10 marks]
     * Final submission: [30 marks]
+
+
+<modal large title="Project Increments" id="modal:admin-projectIncrements">
+
+Missing project increments will be filled up near to the corresponding week.
+
+{% for i in range(1, 12) -%}
+<panel header="week{{ i }}" expanded>
+<include src="../programming/monty/monty.mbdf#monty{{ i }}" optional />
+</panel>
+{%- endfor %}
+
+</modal>
 
 ### Software to build
 
