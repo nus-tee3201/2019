@@ -13,7 +13,8 @@
     ".git/*"
   ],
   "pages": [
-    {"glob": "index.md"},
+    {"src": "index.md",
+      "searchable": "no"},
     {"src": "admin/te3201-admin.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},

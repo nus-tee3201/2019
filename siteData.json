@@ -36,29 +36,6 @@
     },
     {
       "headings": {
-        "exercise%3A-circle-circumference": "Exercise: Circle Circumference",
-        "exercise-%3A-length-of-name": "Exercise : Length of Name",
-        "week-1-%5Bjan-14%5D": "Week 1 [Jan 14]",
-        "expressions%2C-data-types%2C-variables": "Expressions, Data Types, Variables",
-        "computer-programs": "Computer Programs",
-        "setting-up-the-programming-environment": "Setting up the Programming Environment",
-        "working-with-an-interactive-shell": "Working with an Interactive Shell",
-        "operators": "Operators",
-        "data-types": "Data Types",
-        "variables": "Variables",
-        "python-programs": "Python Programs",
-        "scripts-(programs)": "Scripts (Programs)",
-        "comments": "Comments",
-        "using-functions": "Using Functions"
-      },
-      "title": "Home",
-      "footer": "footer.md",
-      "head": "scheduleHead.md",
-      "src": "index.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
         "acknowledgements": "Acknowledgements"
       },
       "title": "About: Acknowledgements",
@@ -928,17 +905,17 @@
     },
     {
       "headings": {
-        "exercise-%3A-even-numbers": "Exercise : Even Numbers",
-        "exercise-%3A-grade-analyzer": "Exercise : Grade Analyzer",
-        "exercise-%3A-grade-analyzer-(extended)": "Exercise : Grade Analyzer (Extended)",
-        "exercise-%3A-vending-machine---add-loop": "Exercise : Vending Machine - Add Loop",
-        "exercise-%3A-vending-machine---accept-multiple-coins": "Exercise : Vending Machine - Accept Multiple Coins",
-        "exercise-%3A-vending-machine---allow-abort": "Exercise : Vending Machine - Allow Abort",
-        "exercise-%3A-vending-machine---legit-coins": "Exercise : Vending Machine - Legit Coins",
-        "exercise-%3A-multiplication-table": "Exercise : Multiplication Table",
-        "exercise-%3A-multiplication-table-(extended)": "Exercise : Multiplication Table (Extended)",
-        "exercise-%3A-three-dice-throws": "Exercise : Three Dice Throws",
-        "exercise-%3A-circle-area": "Exercise : Circle Area",
+        "exercise---even-numbers": "Exercise - Even Numbers",
+        "exercise---grade-analyzer": "Exercise - Grade Analyzer",
+        "exercise---grade-analyzer-(extended)": "Exercise - Grade Analyzer (Extended)",
+        "exercise---vending-machine---add-loop": "Exercise - Vending Machine - Add Loop",
+        "exercise---vending-machine---accept-multiple-coins": "Exercise - Vending Machine - Accept Multiple Coins",
+        "exercise---vending-machine---allow-abort": "Exercise - Vending Machine - Allow Abort",
+        "exercise---vending-machine---legit-coins": "Exercise - Vending Machine - Legit Coins",
+        "exercise---multiplication-table": "Exercise - Multiplication Table",
+        "exercise---multiplication-table-(extended)": "Exercise - Multiplication Table (Extended)",
+        "exercise---three-dice-throws": "Exercise - Three Dice Throws",
+        "exercise---circle-area": "Exercise - Circle Area",
         "program-flow-control": "Program Flow Control",
         "booleans": "Booleans",
         "if-statements": "if Statements",

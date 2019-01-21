@@ -32,8 +32,8 @@
     <navbar placement="top" type="inverse">
       <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
       <dropdown text="Schedule" class="nav-link">
-        <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+        <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
         <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
         <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
@@ -70,153 +70,6 @@
     <h1 id="week-5-%5Bfeb-18%5D">Week 5 <small><small><span class="dimmed">[Feb 18]</span></small></small><a class="fa fa-anchor" href="#week-5-%5Bfeb-18%5D"></a></h1>
     <div></div>
     <tabs>
-      <tab header="<span class='fas fa-graduation-cap'></span> SE Topics">
-        <div>
-          <div class="website-content">
-            <div id="main">
-              <div class="indented">
-                <ul>
-                  <li><a href="#W5-1">[W5.1] Exception Handling <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></li>
-                </ul>
-                <p></p>
-              </div>
-              <hr style="border: 1px dotted #cccccc;">
-              <p><span id="W5-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
-                <span slot="header" class="card-title">
-                  <div>
-                    <p><big> <span class="dimmed">[W5.1]</span> <big><big><strong>Exception Handling</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                  </div>
-                </span>
-                <div class="indented-level1">
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1a]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Introduction →
-                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain error handling</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <blockquote>
-                            <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p>
-                          </blockquote>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1b]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
-                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain exceptions</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
-                          <tip-box type="definition">
-                            <div>
-                              <p><strong>Exception</strong>:</p>
-                              <blockquote>
-                                <p>The term <em>exception</em> is shorthand for the phrase &quot;exceptional event.&quot; An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
-                              </blockquote>
-                            </div>
-                          </tip-box>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Examples:</p>
-                            <ul>
-                              <li>A network connection encounters a timeout due to a slow server.</li>
-                              <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
-                            </ul>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1c]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
-                            </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how exception handling is done typically</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Most languages allow code that encountered an &quot;exceptional&quot; situation to encapsulate details of the situation in an <em>Exception</em> object and <em>throw</em>/<em>raise</em> that object so that another piece of code can <em>catch</em> it and deal with it.</strong> This is especially useful when the code that encountered the unusual situation does not know how to deal with it.</p>
-                          <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
-                          <div class="indented">
-                            <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
-                            <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
-                            <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p>
-                          </div>
-                          <p>Advantages of exception handling in this way:</p>
-                          <ul>
-                            <li>The ability to propagate error information through the call stack.</li>
-                            <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
-                          </ul>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Benefit of exceptions">
-                                  <question>
-                                    <p>Which are benefits of exceptions?</p>
-                                    <ul class="task-list">
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>(a) (c)</p>
-                                      <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1d]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
-                            </span></strong></span> <strong><big><big><span>When</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can avoid using exceptions to control normal workflow</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </tab>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
         <div>
           <div id="week5-toc">
@@ -819,13 +672,160 @@ Thank you for playing the FLEXIBLE WORD GAME
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
       </tab>
+      <tab header="<span class='fas fa-graduation-cap'></span> SE Topics">
+        <div>
+          <div class="website-content">
+            <div id="main">
+              <div class="indented">
+                <ul>
+                  <li><a href="#W5-1">[W5.1] Exception Handling <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></li>
+                </ul>
+                <p></p>
+              </div>
+              <hr style="border: 1px dotted #cccccc;">
+              <p><span id="W5-1"></span></p>
+              <panel type="seamless" no-close="" expandable="true" expanded="">
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W5.1]</span> <big><big><strong>Exception Handling</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1a]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Introduction →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain error handling</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <blockquote>
+                            <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p>
+                          </blockquote>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1b]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain exceptions</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
+                          <tip-box type="definition">
+                            <div>
+                              <p><strong>Exception</strong>:</p>
+                              <blockquote>
+                                <p>The term <em>exception</em> is shorthand for the phrase &quot;exceptional event.&quot; An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
+                              </blockquote>
+                            </div>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Examples:</p>
+                            <ul>
+                              <li>A network connection encounters a timeout due to a slow server.</li>
+                              <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
+                            </ul>
+                          </tip-box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1c]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+                            </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how exception handling is done typically</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Most languages allow code that encountered an &quot;exceptional&quot; situation to encapsulate details of the situation in an <em>Exception</em> object and <em>throw</em>/<em>raise</em> that object so that another piece of code can <em>catch</em> it and deal with it.</strong> This is especially useful when the code that encountered the unusual situation does not know how to deal with it.</p>
+                          <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
+                          <div class="indented">
+                            <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
+                            <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
+                            <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p>
+                          </div>
+                          <p>Advantages of exception handling in this way:</p>
+                          <ul>
+                            <li>The ability to propagate error information through the call stack.</li>
+                            <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Benefit of exceptions">
+                                  <question>
+                                    <p>Which are benefits of exceptions?</p>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(a) (c)</p>
+                                      <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W5.1d]</span></span> <span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+                            </span></strong></span> <strong><big><big><span>When</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can avoid using exceptions to control normal workflow</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </tab>
     </tabs>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Tue, 15 Jan 2019 07:00:07 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 08:25:23 GMT</small></div>
 </footer>
 </div>
 </body>

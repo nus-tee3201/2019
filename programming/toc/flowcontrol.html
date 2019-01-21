@@ -57,8 +57,8 @@
         <navbar placement="top" type="inverse">
           <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
           <dropdown text="Schedule" class="nav-link">
-            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
             <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
             <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
             <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
@@ -265,7 +265,7 @@ print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</spa
                 </div>
               </div>
             </div>
-            <p>You can mix both types of operators. Some examples below:</p>
+            <p>You can mix the two types of operators. Some examples below:</p>
             <pre><code class="hljs python">result = (<span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">or</span> (<span class="hljs-number">10</span> &lt; <span class="hljs-number">20</span>) <span class="hljs-comment"># True</span>
 result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</span>) <span class="hljs-keyword">and</span> (<span class="hljs-number">3</span> != <span class="hljs-number">3</span>) <span class="hljs-comment"># False</span>
 </code></pre>
@@ -324,7 +324,7 @@ print(<span class="hljs-string">'Done'</span>)               <span class="hljs-c
 </code></pre>
             <panel type="danger" header=":muscle: Exercise: Even Numbers" expanded="">
               <div>
-                <h4 id="exercise-%3A-even-numbers">Exercise : Even Numbers<a class="fa fa-anchor" href="#exercise-%3A-even-numbers"></a></h4>
+                <h4 id="exercise---even-numbers">Exercise - Even Numbers<a class="fa fa-anchor" href="#exercise---even-numbers"></a></h4>
                 <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
                 <pre class="hljs"><code>Enter an integer:
 4
@@ -342,7 +342,7 @@ Done
             <pre><code class="hljs python">age = <span class="hljs-number">13</span>
 gender = <span class="hljs-string">'F'</span>
 <span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">12</span>) <span class="hljs-keyword">and</span> (age &lt; <span class="hljs-number">20</span>):          
-    print(<span class="hljs-string">"Teenager"</span>)  <span class="hljs-comment"># indented one level - new code block starts here </span>
+    print(<span class="hljs-string">'Teenager'</span>)  <span class="hljs-comment"># indented one level - new code block starts here </span>
     <span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
         print(<span class="hljs-string">'Female'</span>)<span class="hljs-comment"># indented two levels - this block is nested within the first block</span>
         print(<span class="hljs-string">'Girl'</span>)  
@@ -404,7 +404,7 @@ Age is 13
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded="">
               <div>
-                <h4 id="exercise-%3A-grade-analyzer">Exercise : Grade Analyzer<a class="fa fa-anchor" href="#exercise-%3A-grade-analyzer"></a></h4>
+                <h4 id="exercise---grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise---grade-analyzer"></a></h4>
                 <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
                 <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
@@ -420,7 +420,7 @@ Total   : ==============
 Grade   : A
 </code></pre>
                 <ul>
-                  <li>Note how the colons are aligned.</li>
+                  <li>Note how the colons (<code>:</code>) are aligned.</li>
                   <li>Note the extra blank lines in the expected output.</li>
                   <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
                   <li>Assume all inputs are positive integers.</li>
@@ -436,7 +436,7 @@ Grade   : A
             </panel>
             <panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded="">
               <div>
-                <h4 id="exercise-%3A-grade-analyzer-(extended)">Exercise : Grade Analyzer (Extended)<a class="fa fa-anchor" href="#exercise-%3A-grade-analyzer-(extended)"></a></h4>
+                <h4 id="exercise---grade-analyzer-(extended)">Exercise - Grade Analyzer (Extended)<a class="fa fa-anchor" href="#exercise---grade-analyzer-(extended)"></a></h4>
                 <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
                 <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
                 <pre><code class="hljs python">Enter project score
@@ -518,7 +518,7 @@ Done
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Vending Machine - Add Loop" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-vending-machine---add-loop">Exercise : Vending Machine - Add Loop<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---add-loop"></a></h4>
+                <h4 id="exercise---vending-machine---add-loop">Exercise - Vending Machine - Add Loop<a class="fa fa-anchor" href="#exercise---vending-machine---add-loop"></a></h4>
                 <p>The code below simulates a vending machine that asks for a coin and gives out the product and the balance.</p>
                 <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_value = <span class="hljs-number">0</span>
@@ -540,7 +540,7 @@ print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
                     </td>
                     <td>&nbsp;→&nbsp;</td>
                     <td>
-                      <pre><code class="hljs python">Input a name: John
+                      <pre class="hljs"><code>Input a name: John
 </code></pre>
                     </td>
                   </tr>
@@ -552,13 +552,13 @@ name = input()
                     </td>
                     <td>&nbsp;→&nbsp;</td>
                     <td>
-                      <pre><code class="hljs python">Input a name:
+                      <pre class="hljs"><code>Input a name:
 John
 </code></pre>
                     </td>
                   </tr>
                 </table>
-                <p>💡 Also note how the above code uses <code>print()</code> with two parameters, one an integer and one a string. The <code>print()</code> method can take multiple parameters and the parameters can be of different types. Note that the <mark>output will have a space between each parameter</mark>.</p>
+                <p>💡 Also note how the above code uses <code>print()</code> with two arguments, one an integer and one a string. The <code>print()</code> method can take multiple arguments and the arguments can be of different types. Note that the <mark>output will have a space between each argument</mark>.</p>
                 <table>
                   <tr>
                     <td>
@@ -578,37 +578,37 @@ ABC 3 4.50
                   </tr>
                 </table>
                 <p>Example output from the code:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
-Enter a coin: <span class="hljs-number">200</span>
-You have entered: <span class="hljs-number">200</span>
-Here <span class="hljs-keyword">is</span> the product
-Your balance: <span class="hljs-number">100</span>
+                <pre class="hljs"><code>Price: 100
+Enter a coin: 200
+You have entered: 200
+Here is the product
+Your balance: 100
 </code></pre>
                 <p>As you can see, this code does not consider the case where the inserted coin is less than the price of the product, resulting in the following incorrect behavior.</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
-Enter a coin: <span class="hljs-number">50</span>
-You have entered: <span class="hljs-number">50</span>
-Here <span class="hljs-keyword">is</span> the product
-Your balance: <span class="hljs-number">-50</span>
+                <pre class="hljs"><code>Price: 100
+Enter a coin: 50
+You have entered: 50
+Here is the product
+Your balance: -50
 </code></pre>
                 <p>Modify the code to repeat these two lines until the coin entered is enough to pay for the product. Note that you <mark>don't need to add up all the coins entered.</mark> Instead, assume the vending machine can accept only one coin for a purchase and keeps rejecting coins until a big-enough coin is entered.</p>
                 <pre><code class="hljs python">coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
 print(<span class="hljs-string">'You have entered:'</span>, coin_value)
 </code></pre>
                 <p>The output should be something like this:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
-Enter a coin: <span class="hljs-number">50</span>
-You have entered: <span class="hljs-number">50</span>
-Enter a coin: <span class="hljs-number">100</span>
-You have entered: <span class="hljs-number">100</span>
-Here <span class="hljs-keyword">is</span> the product
-Your balance: <span class="hljs-number">0</span>
+                <pre class="hljs"><code>Price: 100
+Enter a coin: 50
+You have entered: 50
+Enter a coin: 100
+You have entered: 100
+Here is the product
+Your balance: 0
 </code></pre>
               </div>
             </panel>
             <panel type="danger" header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-vending-machine---accept-multiple-coins">Exercise : Vending Machine - Accept Multiple Coins<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---accept-multiple-coins"></a></h4>
+                <h4 id="exercise---vending-machine---accept-multiple-coins">Exercise - Vending Machine - Accept Multiple Coins<a class="fa fa-anchor" href="#exercise---vending-machine---accept-multiple-coins"></a></h4>
                 <p>The vending machine you wrote in the previous exercise (an example solution given below) can accept only one coin as the payment. If the coin is not enough, it rejects the coin and request the user to insert a new coin.</p>
                 <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_value = <span class="hljs-number">0</span>
@@ -623,15 +623,15 @@ print(<span class="hljs-string">'Here is the product'</span>)
 print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
 </code></pre>
                 <p>Modify the code so that it can accumulate coins until there is enough to pay for the product. An example output is given below:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
-Enter a coin: <span class="hljs-number">20</span>
-You have entered: <span class="hljs-number">20</span>
-Enter a coin: <span class="hljs-number">50</span>
-You have entered: <span class="hljs-number">70</span>
-Enter a coin: <span class="hljs-number">50</span>
-You have entered: <span class="hljs-number">120</span>
-Here <span class="hljs-keyword">is</span> the product
-Your balance: <span class="hljs-number">20</span>
+                <pre class="hljs"><code>Price: 100
+Enter a coin: 20
+You have entered: 20
+Enter a coin: 50
+You have entered: 70
+Enter a coin: 50
+You have entered: 120
+Here is the product
+Your balance: 20
 </code></pre>
                 <panel type="seamless" header=":bulb: see hint">
                   <pre><code class="hljs python">...
@@ -665,7 +665,7 @@ print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
               <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
             <panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-vending-machine---allow-abort">Exercise : Vending Machine - Allow Abort<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---allow-abort"></a></h4>
+                <h4 id="exercise---vending-machine---allow-abort">Exercise - Vending Machine - Allow Abort<a class="fa fa-anchor" href="#exercise---vending-machine---allow-abort"></a></h4>
                 <p>The vending machine you wrote in the previous exercise (an example solution given below) does not allow the user to abort the purchase and get the money back.</p>
                 <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_sum = <span class="hljs-number">0</span>
@@ -681,11 +681,11 @@ print(<span class="hljs-string">'Here is the product'</span>)
 print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
 </code></pre>
                 <p>Modify the code so that the user can abort the purchase by entering <code>0</code> as the coin value:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
-Enter a coin: <span class="hljs-number">20</span>
-You have entered: <span class="hljs-number">20</span>
-Enter a coin: <span class="hljs-number">0</span>
-Your balance: <span class="hljs-number">20</span>
+                <pre class="hljs"><code>Price: 100
+Enter a coin: 20
+You have entered: 20
+Enter a coin: 0
+Your balance: 20
 </code></pre>
                 <panel type="seamless" header=":bulb: see hint">
                   <pre><code class="hljs python">...
@@ -729,7 +729,7 @@ print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Vending Machine - Legit Coins" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-vending-machine---legit-coins">Exercise : Vending Machine - Legit Coins<a class="fa fa-anchor" href="#exercise-%3A-vending-machine---legit-coins"></a></h4>
+                <h4 id="exercise---vending-machine---legit-coins">Exercise - Vending Machine - Legit Coins<a class="fa fa-anchor" href="#exercise---vending-machine---legit-coins"></a></h4>
                 <p>The vending machine you wrote in the previous exercise (an example solution given below) accepts any value as the coin value. However, coins come in only certain values only.</p>
                 <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_sum = <span class="hljs-number">0</span>
@@ -752,13 +752,13 @@ print(<span class="hljs-string">'Price:'</span>, price)
   print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
 </code></pre>
                 <p>Modify the code so that it accepts coins of value 10, 20, 50, 100 only:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
-Enter a coin: <span class="hljs-number">30</span>
-Coin <span class="hljs-keyword">not</span> recognized
-Enter a coin: <span class="hljs-number">100</span>
-You have entered: <span class="hljs-number">100</span>
-Here <span class="hljs-keyword">is</span> the product
-Your balance: <span class="hljs-number">0</span>
+                <pre class="hljs"><code>Price: 100
+Enter a coin: 30
+Coin not recognized
+Enter a coin: 100
+You have entered: 100
+Here is the product
+Your balance: 0
 </code></pre>
                 <panel type="seamless" header=":bulb: see hint">
                   <pre><code class="hljs python">...
@@ -817,7 +817,7 @@ Your balance: <span class="hljs-number">0</span>
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-multiplication-table">Exercise : Multiplication Table<a class="fa fa-anchor" href="#exercise-%3A-multiplication-table"></a></h4>
+                <h4 id="exercise---multiplication-table">Exercise - Multiplication Table<a class="fa fa-anchor" href="#exercise---multiplication-table"></a></h4>
                 <p>Write a program to read in an integer and generate the multiplication table (for <code>1</code> to <code>10</code>) for that number. An example is given below:</p>
                 <pre><code class="hljs python">Enter a number: <span class="hljs-number">7</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">1</span> = <span class="hljs-number">7</span>
@@ -871,7 +871,7 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Multiplication Table (Extended)" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-multiplication-table-(extended)">Exercise : Multiplication Table (Extended)<a class="fa fa-anchor" href="#exercise-%3A-multiplication-table-(extended)"></a></h4>
+                <h4 id="exercise---multiplication-table-(extended)">Exercise - Multiplication Table (Extended)<a class="fa fa-anchor" href="#exercise---multiplication-table-(extended)"></a></h4>
                 <p>Modify the code a program to,</p>
                 <ul>
                   <li>print multiplication values of up to <code>x 20</code> (not up to <code>x 10</code> as before)</li>
@@ -910,7 +910,7 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Three Dice Throws" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-three-dice-throws">Exercise : Three Dice Throws<a class="fa fa-anchor" href="#exercise-%3A-three-dice-throws"></a></h4>
+                <h4 id="exercise---three-dice-throws">Exercise - Three Dice Throws<a class="fa fa-anchor" href="#exercise---three-dice-throws"></a></h4>
                 <p>Write a program to generate all possible results you can get by throwing a <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.</p>
                 <pre><code class="hljs python"><span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>
 <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>
@@ -997,7 +997,7 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Circle Area" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-circle-area">Exercise : Circle Area<a class="fa fa-anchor" href="#exercise-%3A-circle-area"></a></h4>
+                <h4 id="exercise---circle-area">Exercise - Circle Area<a class="fa fa-anchor" href="#exercise---circle-area"></a></h4>
                 <p>Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.</p>
                 <p>💡 some useful hints:</p>
                 <ul>
@@ -1047,7 +1047,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Tue, 15 Jan 2019 07:00:07 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 08:25:23 GMT</small></div>
 </footer>
 </div>
 </body>

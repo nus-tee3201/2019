@@ -32,8 +32,8 @@
     <navbar placement="top" type="inverse">
       <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
       <dropdown text="Schedule" class="nav-link">
-        <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+        <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
         <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
         <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
@@ -70,6 +70,603 @@
     <h1 id="week-9-%5Bmar-18%5D">Week 9 <small><small><span class="dimmed">[Mar 18]</span></small></small><a class="fa fa-anchor" href="#week-9-%5Bmar-18%5D"></a></h1>
     <div></div>
     <tabs>
+      <tab header="<span class='fas fa-code'></span> Programming Topics">
+        <div>
+          <div id="week9-toc">
+            <ul>
+              <li><a href="#object-oriented-programming"><strong>Object-Oriented Programing</strong></a>
+                <ul>
+                  <li><a href="#classes">Classes</a></li>
+                  <li><a href="#class-level-members">Class-Level Members</a></li>
+                  <li><a href="#visibility">Visibility</a></li>
+                </ul>
+              </li>
+              <li><a href="#installing-3rd-party-modules"><strong>Installing 3rd Party Modules</strong></a></li>
+            </ul>
+          </div>
+          <h1 id="object-oriented-programming">Object-Oriented Programming<a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
+          <div>
+            <h3 id="classes">Classes<a class="fa fa-anchor" href="#classes"></a></h3>
+            <p>As you have seen already, Python has some built in object types (i.e., classes) such as <code>list</code>, <code>int</code>, <code>str</code>, etc. In addition, <strong>you can define your own classes</strong> in Python.</p>
+            <p>The syntax for defining a class:</p>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span>:</span>
+  <span class="hljs-comment"># &lt;statement-1&gt;</span>
+  .
+  .
+  .
+  <span class="hljs-comment"># &lt;statement-N&gt;</span>
+</code></pre>
+            <p>💡 It is customary to use <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
+            <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
+            <modal title="CamelCase" id="modal:classes-camelcase">
+              <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt="" class="img-fluid"></a><br></p>
+              <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>. <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
+              <p><sub>[source: <a href="https://en.wikipedia.org/wiki/Camel_case">Wikipedia</a>]</sub></p>
+            </modal>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below defines a class named <code>Employee</code>, creates two employee objects, and prints the class/type of each object.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span>:</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># an empty class</span>
+
+john = Employee() <span class="hljs-comment"># create an Employee object</span>
+print(type(john)) <span class="hljs-comment"># print type of the john object</span>
+alice = Employee()
+print(type(alice))
+</code></pre>
+              <p>⤵️ <span class="dimmed">Note how the type of each object is given as <code>&lt;class 'Employee'&gt;</code> i.e., a class with name <code>Employee</code>.</span></p>
+              <pre class="hljs"><code>&lt;class 'Employee'&gt;
+&lt;class 'Employee'&gt;
+</code></pre>
+            </tip-box>
+            <p>You can add methods to the class by defining them inside the class definition. Note that a method of a class always take <code>self</code> as the first parameter. <code>self</code> refers to the object itself. When calling the method, there is no need to supply an argument for the <code>self</code> parameter as the target object is implicitly taken as the argument for that parameter.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> In the example below,<br>
+                <code>write(self, text)</code> method is called as <code>p.write('It was a dark night ...')</code>.<br>
+                This is how the arguments are matched with the parameters:</p>
+              <ul>
+                <li><code>self</code> → <code>p</code></li>
+                <li><code>text</code> → <code>'It was a dark night ...'</code></li>
+              </ul>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Pen</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, text)</span>:</span>
+    print(<span class="hljs-string">'writing:'</span>, text)
+    
+p = Pen()
+p.write(<span class="hljs-string">'It was a dark night ...'</span>)
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                  <td valign="bottom">
+                    <pre class="hljs"><code>writing: It was a dark night ...
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p><strong>You can specify how to initialize an object of a class by defining an <code>__init__()</code> method in the class.</strong> Here are the important things to note about the <code>__init__()</code> method:</p>
+            <ol>
+              <li>There are two underscores in front and two behind the word <code>init</code>.<br>
+                ❌ <code>_init_()</code><br>
+                ✅ <code>__init__()</code></li>
+              <li>It will be called every time you create an instance of the class.</li>
+              <li>If it has parameters, you need to provide arguments for those parameters when you instantiate an object of that class.</li>
+            </ol>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> This example shows an <code>__init__</code> method added to a <code>Person</code> class.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    print(<span class="hljs-string">'Person object'</span>, name, <span class="hljs-string">'initialized!'</span>)
+    
+tom = Person(<span class="hljs-string">'Tom'</span>)
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom">
+                    <pre class="hljs"><code>Person object Tom initialized!
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>The code within a class needs to use the <code>self.</code> to refer to its own attributes and methods. Furthermore, the best place to initialize attributes is the <code>__init__()</code> method.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Note how the <code>__init__()</code> method of the <code>Book</code> class initializes its two attributes and calls another of its own methods i.e., <code>self.describe()</code>.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, book_title, book_author)</span>:</span>
+    self.title = book_title <span class="hljs-comment"># initialize attribute title</span>
+    self.author = book_author <span class="hljs-comment"># initialize attribute author</span>
+    self.describe() <span class="hljs-comment"># call another method of the class</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'Book info:'</span>, self.title, <span class="hljs-string">'/by'</span>, self.author) <span class="hljs-comment"># use attributes of the class</span>
+    
+book1 = Book(<span class="hljs-string">'The Jungle Book'</span>, <span class="hljs-string">'Leo Tolstoy'</span>)
+book2 = Book(<span class="hljs-string">'The Art of War'</span>, <span class="hljs-string">'Sun Tzu'</span>)
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>Book info: The Jungle Book /by Leo Tolstoy
+Book info: The Art of War /by Sun Tzu
+</code></pre>
+            </tip-box>
+            <p>Attributes and methods of the objects can be accessed using <code>objectname.</code> syntax, as you would do with objects of built-in classes.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> This example shows how you can access the attributes and methods of the <code>book1</code> object (an object of class <code>Book</code>) defined in a previous example:</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">print(<span class="hljs-string">'Title:'</span>, book1.title) 
+print(<span class="hljs-string">'Author:'</span>, book1.author)
+book1.describe()
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom">
+                    <pre class="hljs"><code>Title: The Jungle Book
+Author: Leo Tolstoy
+Book info: The Jungle Book /by Leo Tolstoy
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>As to be expected, you can get your classes to work with each other.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> In this example we define a <code>ReadingList</code> class that can store a list of <code>Book</code> objects.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReadingList</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, initial_list)</span>:</span>
+    self.books = initial_list
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_book</span><span class="hljs-params">(self, book)</span>:</span>
+    self.books.append(book)
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show_authors</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">for</span> b <span class="hljs-keyword">in</span> self.books:
+      print(b.author)
+      
+my_list = ReadingList([book1]) <span class="hljs-comment"># book1 defined in a previous example </span>
+my_list.add_book(book2) <span class="hljs-comment"># book2 defined in a previous example</span>
+my_list.show_authors()
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom">
+                    <pre class="hljs"><code>Leo Tolstoy
+Sun Tzu
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-%3A-create-stockitem-class"></a></h4>
+                <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
+                <table>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
+<span class="hljs-comment"># It should have an attribute: name</span>
+<span class="hljs-comment"># It should have a method: info() </span>
+    
+a = StockItem(<span class="hljs-string">'Apple'</span>)
+print(a.info())
+print(a.name)
+b = StockItem(<span class="hljs-string">'Bag of Beans'</span>)
+print(b.info())
+b.name = <span class="hljs-string">'Bananas'</span>
+print(b.info())
+</code></pre>
+                    </td>
+                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                    <td valign="bottom">
+                      <pre class="hljs"><code>Item info: Apple
+Apple
+Item info: Bag of Beans
+Item info: Bananas
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = ...
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> ...
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="class-level-members">Class-Level Members<a class="fa fa-anchor" href="#class-level-members"></a></h3>
+            <p><strong>Attributes initialized inside a class but outside of its methods are considered class-level attributes</strong> (attributes are also called <em>data</em> or <em>variables</em>) i.e., they are shared among all objects of that class whereas attributed initialized inside the <code>__init__()</code> method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the <code>ClassName.</code> syntax.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects created, it is incremented in the <code>__init__()</code> method. <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
+  
+  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span>
+    self.name = student_name <span class="hljs-comment"># instance-level attribute</span>
+    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span>
+    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span>
+</code></pre>
+              <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
+              <ul>
+                <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
+                <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
+              </ul>
+              <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
+print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span>
+print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span>
+print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)
+
+ben = Student(<span class="hljs-string">"Ben"</span>)
+print(<span class="hljs-string">'total students:'</span>, Student.total_students)
+print(<span class="hljs-string">'total students:'</span>, ben.total_students) 
+print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>total students: 1
+total students: 1
+Amy course count: 0
+total students: 2
+total students: 2
+Ben course count: 0
+</code></pre>
+            </tip-box>
+            <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong> <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
+  
+  enabled = <span class="hljs-keyword">True</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span>
+    self.text = new_text
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">if</span> Printer.enabled:
+      print(self.text)
+    
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span>
+    Printer.enabled = <span class="hljs-keyword">False</span>
+    print(<span class="hljs-string">'All Printers disabled'</span>)
+  
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span>
+    Printer.enabled = <span class="hljs-keyword">True</span>
+    print(<span class="hljs-string">'All Printers enabled'</span>)
+</code></pre>
+              <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">Printer.disable()
+p1 = Printer(<span class="hljs-string">'blah blah'</span>)
+p2 = Printer(<span class="hljs-string">'yak yak'</span>)
+p1.print_text() <span class="hljs-comment"># will not print</span>
+p2.print_text() <span class="hljs-comment"># will not print</span>
+
+Printer.enable() 
+p1.print_text()
+p2.print_text()
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom">
+                    <pre class="hljs"><code>All Printers disabled
+All Printers enabled
+blah blah
+yak yak
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>💡 As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
+              </p>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Add Class-Level Members to `Subject` Class" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-%3A-add-class-level-members-to-subject-class"></a></h4>
+                <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
+                <ul>
+                  <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
+                  <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
+                </ul>
+                <table>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
+    self.name = name
+    self.code = code
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.code, <span class="hljs-string">':'</span>, self.name)
+    
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) 
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+print(Subject.limit_reached(<span class="hljs-number">1</span>))
+print(Subject.limit_reached(<span class="hljs-number">2</span>))
+s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+print(Subject.limit_reached(<span class="hljs-number">2</span>))
+print(Subject.limit_reached(<span class="hljs-number">3</span>))
+Subject.total = <span class="hljs-number">100</span>
+print(Subject.limit_reached(<span class="hljs-number">100</span>))
+</code></pre>
+                    </td>
+                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                    <td valign="bottom">
+                      <pre class="hljs"><code>total subjects: 0
+total subjects: 1
+True
+False
+total subjects: 2
+True
+False
+True
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+                <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
+                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+  
+  <span class="hljs-comment"># ADD `total` attribute here</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
+    self.name = name
+    self.code = code
+    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.code, <span class="hljs-string">':'</span>, self.name)
+    
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
+    ... <span class="hljs-comment"># ADD implementation</span>
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="visibility">Visibility<a class="fa fa-anchor" href="#visibility"></a></h3>
+            <p>The <em>encapsulation</em> aspect of OOP requires that an object should only allow controlled access to its members. For example, it should be able to make some of its attributes visible to other object while keeping others hidden. As a consequence of Python's aim to be a very flexible and versatile language, it does not enforce encapsulation as strictly as some other OOP languages. However, it recommends some conventions, if followed, will maintain a reasonable level of encapsulation in objects.</p>
+            <ul>
+              <li>
+                <p><strong><em>Private</em> members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., <code>__foo</code>, <code>__bar_()</code>) cannot be accessed using its name by code outside the class.</strong> These are</p>
+              </li>
+              <li>
+                <p><strong><em>Protected</em> members: a name prefixed with a single underscore (e.g. <code>_foo</code>, <code>_bar()</code>) are -- by convention -- should not be accessed by code outside of the owner class</strong> as they are not meant to be part of the object's public interface.</p>
+              </li>
+              <li>
+                <p><strong><em>Public</em> members: other members are considered public and OK to be accessed by code outside the class.</strong></p>
+              </li>
+            </ul>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Consider the <code>Account</code> class below.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
+  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span>
+  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span>
+  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span>
+    self.__balance = amount <span class="hljs-comment"># private</span>
+    self._owner = person    <span class="hljs-comment"># protected</span>
+    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span>
+    <span class="hljs-keyword">return</span> [self.status]
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span>
+    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span>
+    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span>
+    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span>
+</code></pre>
+              <p>✅ The following code works fine because the members being accessed are public.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'status:'</span>, a.status)
+print(<span class="hljs-string">'info:'</span>, a.get_info())
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom">
+                    <pre class="hljs"><code>currency: $
+status: OK
+info: ['OK']
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>❗️ The following code works too. But they access protected members which is <mark>not a recommended practice</mark>.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'owner:'</span>, a._owner) 
+print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom">
+                    <pre class="hljs"><code>minimum allowed: 10.0
+owner: Adam
+more info: ['OK', 'Adam']
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>❌ The following code will not work because they try to access private members.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span>
+print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span>
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom">
+                    <pre class="hljs"><code>AttributeError: type object 'Account' has no attribute '__max'...
+AttributeError: 'Account' object has no attribute '__balance'...
+AttributeError: 'Account' object has no attribute '__get_income'...
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>💡 Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
+              </p>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Change Visibility of `School` Class Members" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-%3A-change-visibility-of-school-class-members"></a></h4>
+                <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
+                <table>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
+  
+  __target = <span class="hljs-number">0.99</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span>
+    self.__budget = capital
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> self.__budget * School.__target
+    
+print(School.__target)
+s = School(<span class="hljs-number">100000</span>)
+print(s.__budget)
+print(s.__max_expenditure())
+</code></pre>
+                    </td>
+                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                    <td valign="bottom">
+                      <pre class="hljs"><code>0.99
+100000
+99000.0
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+                <panel type="seamless" header="%%:bulb: Hint%%">
+                  <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <h1 id="installing-3rd-party-modules">Installing 3rd Party Modules<a class="fa fa-anchor" href="#installing-3rd-party-modules"></a></h1>
+          <div>
+            <h1 id="appendix-a%3A-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a%3A-installing-3rd-party-modules"></a></h1>
+            <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
+            <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
+            <pre class="hljs"><code>pip --version
+</code></pre>
+            <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
+              <pre><code class="hljs bash">pip install colorama
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>Collecting colorama
+  Downloading colorama-0.3.9-py2.py3-none-any.whl
+Installing collected packages: colorama
+Successfully installed colorama-0.3.9
+</code></pre>
+              <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
+
+colorama.init()  <span class="hljs-comment"># one-time initialization</span>
+
+print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
+print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
+print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
+</code></pre>
+              <p>⤵️<br></p>
+              <img src="/2019/thirdparty/images/coloramaOutput.png">
+            </tip-box>
+            <tip-box>
+              <p><strong>💡 Some useful third-party modules:</strong></p>
+              <ul>
+                <li><a href="https://pypi.python.org/pypi/colorama"><code>colorama</code></a>: For colorizing text printed in the console</li>
+                <li><a href="https://pypi.python.org/pypi/selenium"><code>selenium</code></a>: For automating the Browser</li>
+                <li><a href="http://www.magiksys.net/pyzmail/"><code>pyzmail</code></a>: For sending emails</li>
+                <li><a href="https://www.twilio.com/docs/libraries/python"><code>twilio</code></a>: For sending SMS</li>
+                <li><a href="https://pythonhosted.org/PyPDF2/"><code>PyPDF2</code></a>: For working with PDF files</li>
+                <li><a href="https://pypi.python.org/pypi/pyperclip/1.6.0"><code>pyperclip</code></a>: To access the clipboard of the operating system</li>
+                <li><a href="https://pypi.python.org/pypi/dateparser/0.7.0"><code>dateparser</code></a>: To parse natural language repsentation of dates e.g., <code>in 2 days</code>, <code>tomorrow</code></li>
+              </ul>
+            </tip-box>
+            <p><strong>📎 Resources</strong>:</p>
+            <ul>
+              <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
+            </ul>
+            <panel type="danger" header=":muscle: Exercise: Print Errors in Red" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-%3A-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-%3A-print-errors-in-red"></a></h4>
+                <p>Update a CLI program you have written in the past to print error messages in red color.</p>
+                <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+        </div>
+      </tab>
       <tab header="<span class='fas fa-graduation-cap'></span> SE Topics">
         <div>
           <div class="website-content">
@@ -1099,610 +1696,13 @@ Enter command: exit
           </div>
         </div>
       </tab>
-      <tab header="<span class='fas fa-code'></span> Programming Topics">
-        <div>
-          <div id="week9-toc">
-            <ul>
-              <li><a href="#object-oriented-programming"><strong>Object-Oriented Programing</strong></a>
-                <ul>
-                  <li><a href="#classes">Classes</a></li>
-                  <li><a href="#class-level-members">Class-Level Members</a></li>
-                  <li><a href="#visibility">Visibility</a></li>
-                </ul>
-              </li>
-              <li><a href="#installing-3rd-party-modules"><strong>Installing 3rd Party Modules</strong></a></li>
-            </ul>
-          </div>
-          <h1 id="object-oriented-programming">Object-Oriented Programming<a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
-          <div>
-            <h3 id="classes">Classes<a class="fa fa-anchor" href="#classes"></a></h3>
-            <p>As you have seen already, Python has some built in object types (i.e., classes) such as <code>list</code>, <code>int</code>, <code>str</code>, etc. In addition, <strong>you can define your own classes</strong> in Python.</p>
-            <p>The syntax for defining a class:</p>
-            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span>:</span>
-  <span class="hljs-comment"># &lt;statement-1&gt;</span>
-  .
-  .
-  .
-  <span class="hljs-comment"># &lt;statement-N&gt;</span>
-</code></pre>
-            <p>💡 It is customary to use <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
-            <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
-            <modal title="CamelCase" id="modal:classes-camelcase">
-              <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt="" class="img-fluid"></a><br></p>
-              <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>. <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
-              <p><sub>[source: <a href="https://en.wikipedia.org/wiki/Camel_case">Wikipedia</a>]</sub></p>
-            </modal>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The code below defines a class named <code>Employee</code>, creates two employee objects, and prints the class/type of each object.</p>
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># an empty class</span>
-
-john = Employee() <span class="hljs-comment"># create an Employee object</span>
-print(type(john)) <span class="hljs-comment"># print type of the john object</span>
-alice = Employee()
-print(type(alice))
-</code></pre>
-              <p>⤵️ <span class="dimmed">Note how the type of each object is given as <code>&lt;class 'Employee'&gt;</code> i.e., a class with name <code>Employee</code>.</span></p>
-              <pre class="hljs"><code>&lt;class 'Employee'&gt;
-&lt;class 'Employee'&gt;
-</code></pre>
-            </tip-box>
-            <p>You can add methods to the class by defining them inside the class definition. Note that a method of a class always take <code>self</code> as the first parameter. <code>self</code> refers to the object itself. When calling the method, there is no need to supply an argument for the <code>self</code> parameter as the target object is implicitly taken as the argument for that parameter.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> In the example below,<br>
-                <code>write(self, text)</code> method is called as <code>p.write('It was a dark night ...')</code>.<br>
-                This is how the arguments are matched with the parameters:</p>
-              <ul>
-                <li><code>self</code> → <code>p</code></li>
-                <li><code>text</code> → <code>'It was a dark night ...'</code></li>
-              </ul>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Pen</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, text)</span>:</span>
-    print(<span class="hljs-string">'writing:'</span>, text)
-    
-p = Pen()
-p.write(<span class="hljs-string">'It was a dark night ...'</span>)
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                  <td valign="bottom">
-                    <pre class="hljs"><code>writing: It was a dark night ...
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <p><strong>You can specify how to initialize an object of a class by defining an <code>__init__()</code> method in the class.</strong> Here are the important things to note about the <code>__init__()</code> method:</p>
-            <ol>
-              <li>There are two underscores in front and two behind the word <code>init</code>.<br>
-                ❌ <code>_init_()</code><br>
-                ✅ <code>__init__()</code></li>
-              <li>It will be called every time you create an instance of the class.</li>
-              <li>If it has parameters, you need to provide arguments for those parameters when you instantiate an object of that class.</li>
-            </ol>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> This example shows an <code>__init__</code> method added to a <code>Person</code> class.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
-    print(<span class="hljs-string">'Person object'</span>, name, <span class="hljs-string">'initialized!'</span>)
-    
-tom = Person(<span class="hljs-string">'Tom'</span>)
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                    <td valign="bottom">
-                    <pre class="hljs"><code>Person object Tom initialized!
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <p>The code within a class needs to use the <code>self.</code> to refer to its own attributes and methods. Furthermore, the best place to initialize attributes is the <code>__init__()</code> method.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Note how the <code>__init__()</code> method of the <code>Book</code> class initializes its two attributes and calls another of its own methods i.e., <code>self.describe()</code>.</p>
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, book_title, book_author)</span>:</span>
-    self.title = book_title <span class="hljs-comment"># initialize attribute title</span>
-    self.author = book_author <span class="hljs-comment"># initialize attribute author</span>
-    self.describe() <span class="hljs-comment"># call another method of the class</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(self)</span>:</span>
-    print(<span class="hljs-string">'Book info:'</span>, self.title, <span class="hljs-string">'/by'</span>, self.author) <span class="hljs-comment"># use attributes of the class</span>
-    
-book1 = Book(<span class="hljs-string">'The Jungle Book'</span>, <span class="hljs-string">'Leo Tolstoy'</span>)
-book2 = Book(<span class="hljs-string">'The Art of War'</span>, <span class="hljs-string">'Sun Tzu'</span>)
-</code></pre>
-              <p>⤵️</p>
-              <pre class="hljs"><code>Book info: The Jungle Book /by Leo Tolstoy
-Book info: The Art of War /by Sun Tzu
-</code></pre>
-            </tip-box>
-            <p>Attributes and methods of the objects can be accessed using <code>objectname.</code> syntax, as you would do with objects of built-in classes.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> This example shows how you can access the attributes and methods of the <code>book1</code> object (an object of class <code>Book</code>) defined in a previous example:</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">print(<span class="hljs-string">'Title:'</span>, book1.title) 
-print(<span class="hljs-string">'Author:'</span>, book1.author)
-book1.describe()
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                    <td valign="bottom">
-                    <pre class="hljs"><code>Title: The Jungle Book
-Author: Leo Tolstoy
-Book info: The Jungle Book /by Leo Tolstoy
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <p>As to be expected, you can get your classes to work with each other.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> In this example we define a <code>ReadingList</code> class that can store a list of <code>Book</code> objects.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReadingList</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, initial_list)</span>:</span>
-    self.books = initial_list
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_book</span><span class="hljs-params">(self, book)</span>:</span>
-    self.books.append(book)
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show_authors</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">for</span> b <span class="hljs-keyword">in</span> self.books:
-      print(b.author)
-      
-my_list = ReadingList([book1]) <span class="hljs-comment"># book1 defined in a previous example </span>
-my_list.add_book(book2) <span class="hljs-comment"># book2 defined in a previous example</span>
-my_list.show_authors()
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                    <td valign="bottom">
-                    <pre class="hljs"><code>Leo Tolstoy
-Sun Tzu
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-%3A-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-%3A-create-stockitem-class"></a></h4>
-                <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
-<span class="hljs-comment"># It should have an attribute: name</span>
-<span class="hljs-comment"># It should have a method: info() </span>
-    
-a = StockItem(<span class="hljs-string">'Apple'</span>)
-print(a.info())
-print(a.name)
-b = StockItem(<span class="hljs-string">'Bag of Beans'</span>)
-print(b.info())
-b.name = <span class="hljs-string">'Bananas'</span>
-print(b.info())
-</code></pre>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre class="hljs"><code>Item info: Apple
-Apple
-Item info: Bag of Beans
-Item info: Bananas
-</code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
-    self.name = ...
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">return</span> ...
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="class-level-members">Class-Level Members<a class="fa fa-anchor" href="#class-level-members"></a></h3>
-            <p><strong>Attributes initialized inside a class but outside of its methods are considered class-level attributes</strong> (attributes are also called <em>data</em> or <em>variables</em>) i.e., they are shared among all objects of that class whereas attributed initialized inside the <code>__init__()</code> method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the <code>ClassName.</code> syntax.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects created, it is incremented in the <code>__init__()</code> method. <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
-  
-  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span>
-    self.name = student_name <span class="hljs-comment"># instance-level attribute</span>
-    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span>
-    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span>
-</code></pre>
-              <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
-              <ul>
-                <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
-                <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
-              </ul>
-              <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
-print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span>
-print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span>
-print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)
-
-ben = Student(<span class="hljs-string">"Ben"</span>)
-print(<span class="hljs-string">'total students:'</span>, Student.total_students)
-print(<span class="hljs-string">'total students:'</span>, ben.total_students) 
-print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
-</code></pre>
-              <p>⤵️</p>
-              <pre class="hljs"><code>total students: 1
-total students: 1
-Amy course count: 0
-total students: 2
-total students: 2
-Ben course count: 0
-</code></pre>
-            </tip-box>
-            <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong> <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
-  
-  enabled = <span class="hljs-keyword">True</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span>
-    self.text = new_text
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">if</span> Printer.enabled:
-      print(self.text)
-    
-<span class="hljs-meta">  @classmethod</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span>
-    Printer.enabled = <span class="hljs-keyword">False</span>
-    print(<span class="hljs-string">'All Printers disabled'</span>)
-  
-<span class="hljs-meta">  @classmethod</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span>
-    Printer.enabled = <span class="hljs-keyword">True</span>
-    print(<span class="hljs-string">'All Printers enabled'</span>)
-</code></pre>
-              <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">Printer.disable()
-p1 = Printer(<span class="hljs-string">'blah blah'</span>)
-p2 = Printer(<span class="hljs-string">'yak yak'</span>)
-p1.print_text() <span class="hljs-comment"># will not print</span>
-p2.print_text() <span class="hljs-comment"># will not print</span>
-
-Printer.enable() 
-p1.print_text()
-p2.print_text()
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                    <td valign="bottom">
-                    <pre class="hljs"><code>All Printers disabled
-All Printers enabled
-blah blah
-yak yak
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-              <p>💡 As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
-              </p>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Add Class-Level Members to `Subject` Class" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-%3A-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-%3A-add-class-level-members-to-subject-class"></a></h4>
-                <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
-                <ul>
-                  <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
-                  <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
-                </ul>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
-    self.name = name
-    self.code = code
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(self.code, <span class="hljs-string">':'</span>, self.name)
-    
-print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
-s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) 
-print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
-print(Subject.limit_reached(<span class="hljs-number">1</span>))
-print(Subject.limit_reached(<span class="hljs-number">2</span>))
-s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)
-print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
-print(Subject.limit_reached(<span class="hljs-number">2</span>))
-print(Subject.limit_reached(<span class="hljs-number">3</span>))
-Subject.total = <span class="hljs-number">100</span>
-print(Subject.limit_reached(<span class="hljs-number">100</span>))
-</code></pre>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre class="hljs"><code>total subjects: 0
-total subjects: 1
-True
-False
-total subjects: 2
-True
-False
-True
-</code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
-  
-  <span class="hljs-comment"># ADD `total` attribute here</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
-    self.name = name
-    self.code = code
-    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(self.code, <span class="hljs-string">':'</span>, self.name)
-    
-<span class="hljs-meta">  @classmethod</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
-    ... <span class="hljs-comment"># ADD implementation</span>
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="visibility">Visibility<a class="fa fa-anchor" href="#visibility"></a></h3>
-            <p>The <em>encapsulation</em> aspect of OOP requires that an object should only allow controlled access to its members. For example, it should be able to make some of its attributes visible to other object while keeping others hidden. As a consequence of Python's aim to be a very flexible and versatile language, it does not enforce encapsulation as strictly as some other OOP languages. However, it recommends some conventions, if followed, will maintain a reasonable level of encapsulation in objects.</p>
-            <ul>
-              <li>
-                <p><strong><em>Private</em> members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., <code>__foo</code>, <code>__bar_()</code>) cannot be accessed using its name by code outside the class.</strong> These are</p>
-              </li>
-              <li>
-                <p><strong><em>Protected</em> members: a name prefixed with a single underscore (e.g. <code>_foo</code>, <code>_bar()</code>) are -- by convention -- should not be accessed by code outside of the owner class</strong> as they are not meant to be part of the object's public interface.</p>
-              </li>
-              <li>
-                <p><strong><em>Public</em> members: other members are considered public and OK to be accessed by code outside the class.</strong></p>
-              </li>
-            </ul>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Consider the <code>Account</code> class below.</p>
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
-  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span>
-  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span>
-  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span>
-    self.__balance = amount <span class="hljs-comment"># private</span>
-    self._owner = person    <span class="hljs-comment"># protected</span>
-    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span>
-    <span class="hljs-keyword">return</span> [self.status]
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span>
-    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span>
-    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span>
-    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span>
-</code></pre>
-              <p>✅ The following code works fine because the members being accessed are public.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
-a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
-print(<span class="hljs-string">'status:'</span>, a.status)
-print(<span class="hljs-string">'info:'</span>, a.get_info())
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                    <td valign="bottom">
-                    <pre class="hljs"><code>currency: $
-status: OK
-info: ['OK']
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-              <p>❗️ The following code works too. But they access protected members which is <mark>not a recommended practice</mark>.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
-a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
-print(<span class="hljs-string">'owner:'</span>, a._owner) 
-print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                    <td valign="bottom">
-                    <pre class="hljs"><code>minimum allowed: 10.0
-owner: Adam
-more info: ['OK', 'Adam']
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-              <p>❌ The following code will not work because they try to access private members.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
-a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
-print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span>
-print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span>
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td valign="bottom"> → <br><br></td>
-                    <td valign="bottom">
-                    <pre class="hljs"><code>AttributeError: type object 'Account' has no attribute '__max'...
-AttributeError: 'Account' object has no attribute '__balance'...
-AttributeError: 'Account' object has no attribute '__get_income'...
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-              <p>💡 Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
-              </p>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Change Visibility of `School` Class Members" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-%3A-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-%3A-change-visibility-of-school-class-members"></a></h4>
-                <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
-  
-  __target = <span class="hljs-number">0.99</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span>
-    self.__budget = capital
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">return</span> self.__budget * School.__target
-    
-print(School.__target)
-s = School(<span class="hljs-number">100000</span>)
-print(s.__budget)
-print(s.__max_expenditure())
-</code></pre>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre class="hljs"><code>0.99
-100000
-99000.0
-</code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <panel type="seamless" header="%%:bulb: Hint%%">
-                  <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <h1 id="installing-3rd-party-modules">Installing 3rd Party Modules<a class="fa fa-anchor" href="#installing-3rd-party-modules"></a></h1>
-          <div>
-            <h1 id="appendix-a%3A-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a%3A-installing-3rd-party-modules"></a></h1>
-            <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
-            <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
-            <pre class="hljs"><code>pip --version
-</code></pre>
-            <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
-              <pre><code class="hljs bash">pip install colorama
-</code></pre>
-              <p>⤵️</p>
-              <pre class="hljs"><code>Collecting colorama
-  Downloading colorama-0.3.9-py2.py3-none-any.whl
-Installing collected packages: colorama
-Successfully installed colorama-0.3.9
-</code></pre>
-              <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
-              <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
-
-colorama.init()  <span class="hljs-comment"># one-time initialization</span>
-
-print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
-print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
-print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
-</code></pre>
-              <p>⤵️<br></p>
-              <img src="/2019/thirdparty/images/coloramaOutput.png">
-            </tip-box>
-            <tip-box>
-              <p><strong>💡 Some useful third-party modules:</strong></p>
-              <ul>
-                <li><a href="https://pypi.python.org/pypi/colorama"><code>colorama</code></a>: For colorizing text printed in the console</li>
-                <li><a href="https://pypi.python.org/pypi/selenium"><code>selenium</code></a>: For automating the Browser</li>
-                <li><a href="http://www.magiksys.net/pyzmail/"><code>pyzmail</code></a>: For sending emails</li>
-                <li><a href="https://www.twilio.com/docs/libraries/python"><code>twilio</code></a>: For sending SMS</li>
-                <li><a href="https://pythonhosted.org/PyPDF2/"><code>PyPDF2</code></a>: For working with PDF files</li>
-                <li><a href="https://pypi.python.org/pypi/pyperclip/1.6.0"><code>pyperclip</code></a>: To access the clipboard of the operating system</li>
-                <li><a href="https://pypi.python.org/pypi/dateparser/0.7.0"><code>dateparser</code></a>: To parse natural language repsentation of dates e.g., <code>in 2 days</code>, <code>tomorrow</code></li>
-              </ul>
-            </tip-box>
-            <p><strong>📎 Resources</strong>:</p>
-            <ul>
-              <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
-            </ul>
-            <panel type="danger" header=":muscle: Exercise: Print Errors in Red" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-%3A-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-%3A-print-errors-in-red"></a></h4>
-                <p>Update a CLI program you have written in the past to print error messages in red color.</p>
-                <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-        </div>
-      </tab>
     </tabs>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Tue, 15 Jan 2019 07:00:07 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 08:25:23 GMT</small></div>
 </footer>
 </div>
 </body>
