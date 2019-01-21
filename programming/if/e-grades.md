@@ -1,4 +1,4 @@
-#### Exercise : Grade Analyzer
+#### Exercise - Grade Analyzer
 
 Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:
 ```python
@@ -16,7 +16,7 @@ Total   : ==============
 Grade   : A
 ```
 
-* Note how the colons are aligned.
+* Note how the colons (`:`) are aligned.
 * Note the extra blank lines in the expected output.
 * The bar chart has one `=` for each 5 marks %%&nbsp;24 marks should be shown as `====`.%%
 * Assume all inputs are positive integers.

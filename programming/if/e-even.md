@@ -1,4 +1,4 @@
-#### Exercise : Even Numbers
+#### Exercise - Even Numbers
 
 Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:
 ```

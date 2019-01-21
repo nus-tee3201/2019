@@ -1,4 +1,4 @@
-#### Exercise : Vending Machine - Add Loop
+#### Exercise - Vending Machine - Add Loop
 
 The code below simulates a vending machine that asks for a coin and gives out the product and the balance.
 ```python
@@ -26,7 +26,7 @@ name = input('Input a name:')
   <td>&nbsp;→&nbsp;</td>
   <td>
   
-```python
+```
 Input a name: John
 ```
   </td>
@@ -42,7 +42,7 @@ name = input()
   <td>&nbsp;→&nbsp;</td>
   <td>
   
-```python
+```
 Input a name:
 John
 ```
@@ -50,7 +50,7 @@ John
 </tr>
 </table>
 
-:bulb: Also note how the above code uses `print()` with two parameters, one an integer and one a string. The `print()` method can take multiple parameters and the parameters can be of different types. Note that the ==output will have a space between each parameter==. 
+:bulb: Also note how the above code uses `print()` with two arguments, one an integer and one a string. The `print()` method can take multiple arguments and the arguments can be of different types. Note that the ==output will have a space between each argument==. 
 
 <table>
 <tr>
@@ -76,7 +76,7 @@ ABC 3 4.50
 </table>
 
 Example output from the code:
-```python
+```
 Price: 100
 Enter a coin: 200
 You have entered: 200
@@ -86,7 +86,7 @@ Your balance: 100
 
 As you can see, this code does not consider the case where the inserted coin is less than the price of the product, resulting in the following incorrect behavior.
 
-```python
+```
 Price: 100
 Enter a coin: 50
 You have entered: 50
@@ -101,7 +101,7 @@ print('You have entered:', coin_value)
 ```
 
 The output should be something like this:
-```python
+```
 Price: 100
 Enter a coin: 50
 You have entered: 50

@@ -77,7 +77,7 @@ Expression | Result
   </div>
 </div>
 
-You can mix both types of operators. Some examples below:
+You can mix the two types of operators. Some examples below:
 
 ```python
 result = (2 > 5) or (10 < 20) # True

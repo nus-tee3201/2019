@@ -1,0 +1,53 @@
+The project below explains how to build a simple chat bot called Monty, adding functionality in small incremental steps.
+
+<div id="monty1">
+
+### Monty 1
+
+Write a Python program to read in one user command and repeat it back to the user. An example output is given below.
+
+```
+>>> Hello, my name is Monty
+>>> What can I do for you?
+foo
+>>> Your command is: foo
+>>> Bye!
+```
+
+Partial code:
+```python
+print('>>> Hello, my name is Monty')
+
+```
+</div>
+{{ hr_double }}
+<div id="monty2">
+
+### Monty 2
+
+Extend Monty 1 code to work as follows:
+
+```
+>>> Hello, my name is Monty
+>>> What can I do for you?
+
+list
+>>> Nothing to list
+>>> What can I do for you?
+
+foo
+>>> OOPS! Unknown command
+>>> What can I do for you?
+
+exit
+>>> Are you sure? y/n
+n
+>>> What can I do for you?
+
+exit
+>>> Are you sure? y/n
+y
+>>> Bye!
+```
+
+</div>
