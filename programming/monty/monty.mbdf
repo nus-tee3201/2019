@@ -29,7 +29,7 @@ print('>>> Hello, my name is Monty')
 
 ### Monty 2
 
-Extend Monty 1 code to work as follows:
+Extend [Monty 1 code]({{ baseUrl }}/programming/toc/monty.html#monty-1) to work as follows:
 
 ```
 >>> Hello, my name is Monty
