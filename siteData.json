@@ -22,6 +22,9 @@
         "textbook": "Textbook",
         "programming-language": "Programming Language",
         "project": "Project",
+        "software-to-build": "Software to build",
+        "constraints": "Constraints",
+        "deliverables": "Deliverables",
         "assessment": "Assessment",
         "exam": "Exam",
         "final-exam%3A-part-1-(mcq)": "Final Exam: Part 1 (MCQ)",
@@ -977,6 +980,19 @@
       "head": "adminHead.md",
       "siteNav": "programming-sitenav.md",
       "src": "programming/toc/lists.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "the-monty-project": "The Monty Project",
+        "monty-1": "Monty 1",
+        "monty-2": "Monty 2"
+      },
+      "title": "Python Basics: The Monty Project",
+      "footer": "footer.md",
+      "head": "adminHead.md",
+      "siteNav": "programming-sitenav.md",
+      "src": "programming/toc/monty.md",
       "layout": "default"
     },
     {
