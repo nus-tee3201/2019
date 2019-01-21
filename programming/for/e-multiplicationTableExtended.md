@@ -1,4 +1,4 @@
-#### Exercise : Multiplication Table (Extended)
+#### Exercise - Multiplication Table (Extended)
 
 Modify the code a program to,
 * print multiplication values of up to `x 20` (not up to `x 10` as before)

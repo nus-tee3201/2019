@@ -1,4 +1,4 @@
-#### Exercise : Vending Machine - Accept Multiple Coins
+#### Exercise - Vending Machine - Accept Multiple Coins
 
 The vending machine you wrote in the previous exercise (an example solution given below) can accept only one coin as the payment. If the coin is not enough, it rejects the coin and request the user to insert a new coin.
 ```python
@@ -17,7 +17,7 @@ print('Your balance:', coin_value - price)
 
 Modify the code so that it can accumulate coins until there is enough to pay for the product. An example output is given below:
 
-```python
+```
 Price: 100
 Enter a coin: 20
 You have entered: 20

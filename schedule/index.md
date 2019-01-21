@@ -23,7 +23,7 @@ head: scheduleHead.md
 ] %}
 
 
-{% set current_weeks = ["1"] %}
+{% set current_weeks = ["2"] %}
 
 
 {% set all_outcomes = [
@@ -342,11 +342,14 @@ head: scheduleHead.md
 <include src="{{ path }}notices-{{ module | lower }}.md" optional />
 
 <tabs>
+  <tab header="{{ fas_code }} Programming Topics">
+    <include src="{{ path }}../python-topics.md#week{{ week.num }}" />
+  </tab>
   <tab header="{{ fas_graduation_cap }} SE Topics">
     <include src="{{ path }}topics.md" />
   </tab>
-  <tab header="{{ fas_code }} Programming Topics">
-    <include src="{{ path }}../python-topics.md#week{{ week.num }}" />
+  <tab header="{{ icon_project }} Project">
+    <include src="{{ path }}project-te3201.md" optional />
   </tab>
 </tabs>
 

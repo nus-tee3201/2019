@@ -111,50 +111,78 @@ This module uses Python programming language to teach you programming basics req
 
 # Project
 
-To be done in individually, or teams of 2-3 members.
+You may choose one of these two options. You can switch between the options any time.
 
-**Programming language**: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.
+* ****Option A (structured):****
+  * This option is recommended for those who are new to programming.
+  * The project is to be done individually, but you may collaborate with each other in the early stages of the project to help each other.
+  * To be done using Python.
+  * You are also expected to,
+    * submit most of the weekly exercises within two weeks of the corresponding lecture %%e.g., submit 60% week 2 exercises before week 4 lecture%%
+    * submit suggested project increments within two weeks of the corresponding lecture for the first 8 weeks.
+  * Marks breakdown [40 marks]:
+    * ==Weekly exercises [5 marks]==
+    * ==Weekly project increments [5 marks]==
+    * Midterm submission: [5 marks]
+    * Final submission: [25 marks]
 
-More info coming soon ...
+<div class="indented-level2">
 
-<!--
+<panel header="Project Increments">
+{% for i in range(1, 12) -%}
+<panel header="week{{ i }}">
+<include src="../programming/monty/monty.mbdf#monty{{ i }}" optional />
+</panel>
+{%- endfor %}
+</panel>
+
+</div>
+
+* ****Option B (flexible):****
+  * This option is recommended for those who have some prior programming experience.
+  * To be done in individually, or teams of 2-3 members.
+  * The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.
+  * Marks breakdown [40 marks]:
+    * Midterm submission: [10 marks]
+    * Final submission: [30 marks]
+
 ### Software to build
 
-You will be building a personal assistant chat-bot software named _PAC_ (_PAC_ is a temporary name; you should give a different name to your own chat bot)
+You will be building a personal assistant chat-bot software named _Monty_ (_Monty_ is a temporary name; you should give a different name to your own chat bot)
 
 **_Basic_ Functionality**:
 
-1. PAC interface can be text-based (i.e., no need for a graphical UI)
-1. PAC helps with storing and retrieving at least **one type of data** that is useful to the user. Some examples of different types of data (you can pick one of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:
+1. Monty interface can be text-based (i.e., no need for a graphical UI)
+1. Monty helps with storing and retrieving at least **one type of data** that is useful to the user. Some examples of different types of data (you can pick one or more of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a Monty that deals with TODO items:
    ```
-   >> Hi, I'm PAC. What can I do to help you with your TODOs?
+   Hi, I'm Monty. How can I help you?
 
    add Return library book
-   >> TODO added: Return library book
+   >>> TODO added: Return library book
 
    list
-   >> Here are the list of TODOs you have:
+   >>> Here are the list of TODOs you have:
    1. Return library book
    2. Do TE3201 exercises
    3. Call back Jina
 
    delete 2
-   >> TODO deleted: Do TE3201 exercises
+   >>> TODO deleted: Do TE3201 exercises
 
    are you single?
-   >> Sorry. I did not understand your request.
+   >>> Sorry. I did not understand your request.
 
    help
-   >> Here are the requests I understand.
+   >>> Here are the requests I understand.
    add {TODO description} : adds a TODO to the list
    list : lists all TODOs
    ...
 
    ```
 
-1. There is **no need for PAC to be able to understand natural language** sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.
-1. PAC should support **adding, deleting, listing, searching** (by keyword) of data items.
-1. _Persistence_: The data should be **stored in the hard disk** so that restarting PAC should not cause a loss of data entered in a previous session.
+1. There is **no need for Monty to be able to understand natural language** sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.
+1. Monty should support **adding, deleting, listing, searching** (by keyword) of data items.
+1. _Persistence_: The data should be **stored in the hard disk** so that restarting Monty should not cause a loss of data entered in a previous session.
    1. The data files should be in a human-readable format such as `.csv` (recommended), `xml`, `json`, plain text, etc.
 
 
@@ -180,24 +208,24 @@ Some suggestions for _additional functionality_:
 
 1. You should not use relational/SQL databases e.g., MySQL
 1. The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
-   * If your software need other software to be installed (e.g., third-party libraries), please get prof's permission first.
+   * If your software needs other software to be installed (e.g., third-party libraries), please get prof's permission first.
 
 ### Deliverables
 
-* **Week 8** (mid-term submission): 10%
+* **Week 8** (mid-term submission):
   * Deadline: Week 8, Tuesday 6pm
   * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement)
     * Submission: demo during lecture in week 8.
   * Documentation:
     * Sections to include:
       * Cover page: Include product name, names of team members
-      * User stories: Give user stories to cover all current and future functionalities
+      * User stories: Give user stories to cover all current and planned future functionalities
       * Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.
       * Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.
       * Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.
     * Submission: upload to IVLE as a `.docx` or `.pdf` file. File name should contain team member names. e.g., `John Doe, Sarah Tan, Viet Ngoc.docx`
 
-* **Week 13** (final submission): 30%
+* **Week 13** (final submission):
   * Functionality: all functionality
     * Submission:
       * Zip up all source files, upload to IVLE as a single `.zip` file (not `.rar`). File name should contain member names. :alarm_clock: Deadline: week 13 Monday midnight.
@@ -265,8 +293,6 @@ Description of the function: appends the `Person` object `new_contact` to the `c
 `[Person('John')]` | `Person('Amy')` | `[Person('John'), Person('Amy')]`
 
 </modal>
-
--->
 
 {{ dotted_line }}
 

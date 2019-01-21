@@ -1,4 +1,4 @@
-#### Exercise : Multiplication Table
+#### Exercise - Multiplication Table
 
 Write a program to read in an integer and generate the multiplication table (for `1` to `10`) for that number. An example is given below:
 

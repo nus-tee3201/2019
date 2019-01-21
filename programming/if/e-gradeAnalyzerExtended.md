@@ -1,4 +1,4 @@
-#### Exercise : Grade Analyzer (Extended)
+#### Exercise - Grade Analyzer (Extended)
 
 Extend the code you wrote for the exercise _Grade Analyzer_ with the following additional feature.
 

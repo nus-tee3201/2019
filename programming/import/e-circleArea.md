@@ -1,4 +1,4 @@
-#### Exercise : Circle Area
+#### Exercise - Circle Area
         
 Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.
 
