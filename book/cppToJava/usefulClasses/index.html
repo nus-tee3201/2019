@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="..\..\..\markbind\layouts\default\styles.css">
     
     
+    
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -90,7 +91,7 @@
                     <pre><code class="hljs java"><span class="hljs-keyword">char</span>[] fruitChars = fruit.toCharArray()
 </code></pre>
                   </div>
-                  <h5 id="change-a-string-to-upper%2Flower-case">Change a string to upper/lower case<a class="fa fa-anchor" href="#change-a-string-to-upper%2Flower-case"></a></h5>
+                  <h5 id="change-a-string-to-upper-lower-case">Change a string to upper/lower case<a class="fa fa-anchor" href="#change-a-string-to-upper-lower-case"></a></h5>
                   <div class="indented">
                     <p>Strings provide methods, <code>toUpperCase</code> and <code>toLowerCase</code>, that convert from uppercase to lowercase and back.</p>
                     <box>
@@ -194,7 +195,7 @@ System.out.println(s1.equalsIgnoreCase(s2)); <span class="hljs-comment">//true</
                       <li><code>endsWith</code>: checks if one string has the other as a substring at the <em>end</em> e.g., <code>Crab</code> and <code>ab</code></li>
                     </ul>
                   </div>
-                  <h5 id="printing-special-characters-(line-breaks%2C-tabs%2C-...)">Printing special characters (line breaks, tabs, ...)<a class="fa fa-anchor" href="#printing-special-characters-(line-breaks%2C-tabs%2C-...)"></a></h5>
+                  <h5 id="printing-special-characters-line-breaks-tabs">Printing special characters (line breaks, tabs, ...)<a class="fa fa-anchor" href="#printing-special-characters-line-breaks-tabs"></a></h5>
                   <div class="indented">
                     <p>You can embed a special character <span class="dimmed">e.g., line break, tab, backspace, etc.</span> in a string using an <em>escape sequence</em>.</p>
                     <div class="table-responsive">
@@ -826,12 +827,13 @@ Bye!
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

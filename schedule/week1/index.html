@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
+    
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/schedule.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -67,7 +68,7 @@
   </div>
   <div class="website-content" id="main">
     <p><span style="float:right"><span><a href="/2019/schedule/week2/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-    <h1 id="week-1-%5Bjan-14%5D">Week 1 <small><small><span class="dimmed">[Jan 14]</span></small></small><a class="fa fa-anchor" href="#week-1-%5Bjan-14%5D"></a></h1>
+    <h1 id="week-1-jan-14">Week 1 <small><small><span class="dimmed">[Jan 14]</span></small></small><a class="fa fa-anchor" href="#week-1-jan-14"></a></h1>
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
@@ -93,7 +94,7 @@
               </li>
             </ul>
           </div>
-          <h1 id="expressions%2C-data-types%2C-variables">Expressions, Data Types, Variables<a class="fa fa-anchor" href="#expressions%2C-data-types%2C-variables"></a></h1>
+          <h1 id="expressions-data-types-variables">Expressions, Data Types, Variables<a class="fa fa-anchor" href="#expressions-data-types-variables"></a></h1>
           <div>
             <h3 id="computer-programs">Computer Programs<a class="fa fa-anchor" href="#computer-programs"></a></h3>
             <p><strong>A <em>computer program</em> is a collection of instructions that a computer can follow to perform a specific task.</strong> A <em>software</em> is a collection of programs wrapped up as a product that can be used <span class="dimmed"> e.g. Microsoft Office</span>. A software <em>application</em> is a software that is meant to be used by an end user, <span class="dimmed"> as opposed to software used by other software (e.g. the software that drives a hard disk)</span>. <em>Programming</em> is the task of writing programs. <em>Software Engineering</em> is the task of creating software.</p>
@@ -363,7 +364,7 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Circle Circumference" expanded="">
               <div>
-                <h4 id="exercise%3A-circle-circumference">Exercise: Circle Circumference<a class="fa fa-anchor" href="#exercise%3A-circle-circumference"></a></h4>
+                <h4 id="exercise-circle-circumference">Exercise: Circle Circumference<a class="fa fa-anchor" href="#exercise-circle-circumference"></a></h4>
                 <ol>
                   <li>Declare a variable <code>r</code> to represent the radius of a circle, and assign it value <code>7</code>.</li>
                   <li>Declare a variable <code>pi</code> to represent PI and assign it <code>3.14</code></li>
@@ -376,7 +377,7 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
           <hr style="border-top: 3px double #c5c5c5;">
           <h1 id="python-programs">Python Programs<a class="fa fa-anchor" href="#python-programs"></a></h1>
           <div>
-            <h3 id="scripts-(programs)">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-(programs)"></a></h3>
+            <h3 id="scripts-programs">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-programs"></a></h3>
             <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em>
                 <tooltip content="the tool that interprets the code and executes it">interpreter</tooltip>
               </em> reads the program and executes statements from top to bottom.</p>
@@ -495,7 +496,7 @@ print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(dis
               <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
             <panel type="danger" header=":muscle: Exercise: Length of Names" expanded="">
               <div>
-                <h4 id="exercise-%3A-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-%3A-length-of-name"></a></h4>
+                <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
                 <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
                 <pre class="hljs"><code>What is your name?
 John Doe
@@ -782,12 +783,13 @@ foo
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
+    
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/schedule.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -67,7 +68,7 @@
   </div>
   <div class="website-content" id="main">
     <p><span style="float:left"><span><a href="/2019/schedule/week9/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week11/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-    <h1 id="week-10-%5Bmar-25%5D">Week 10 <small><small><span class="dimmed">[Mar 25]</span></small></small><a class="fa fa-anchor" href="#week-10-%5Bmar-25%5D"></a></h1>
+    <h1 id="week-10-mar-25">Week 10 <small><small><span class="dimmed">[Mar 25]</span></small></small><a class="fa fa-anchor" href="#week-10-mar-25"></a></h1>
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
@@ -148,7 +149,7 @@ the name is Dan
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Add `Fish` Class" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-%3A-add-fish-class"></a></h4>
+                <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-add-fish-class"></a></h4>
                 <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
                 <table>
                   <tr>
@@ -255,7 +256,7 @@ Ben is learning
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Add `FlightlessBird` Class" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-%3A-add-flightlessbird-class"></a></h4>
+                <h4 id="exercise-add-flightless-bird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightless-bird-class"></a></h4>
                 <p>Do the following changes to the given code so that the code below produces the given output:</p>
                 <ol>
                   <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
@@ -343,7 +344,7 @@ print(book)
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Override `__str__()` Method" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-override-__str__()-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-%3A-override-__str__()-method"></a></h4>
+                <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-override-str-method"></a></h4>
                 <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
                 <table>
                   <tr>
@@ -446,7 +447,7 @@ Elsie is grading
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Add `SmartPhone` Class" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-%3A-add-smartphone-class"></a></h4>
+                <h4 id="exercise-add-smart-phone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smart-phone-class"></a></h4>
                 <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
                 <table>
                   <tr>
@@ -2176,12 +2177,13 @@ send()
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

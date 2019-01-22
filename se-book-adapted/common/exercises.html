@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
     
+    
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="flex-body">
   <div id="site-nav">
@@ -102,12 +103,12 @@
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">Supplementary
-          <i class="dropdown-btn-icon">
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Supplementary
+          <i class="dropdown-btn-icon rotate-icon">
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
+        <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
+            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html" class="current">Combined Exercises</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html">List of Definitions</a></li>
           </ul>
         </div>
@@ -230,6 +231,7 @@
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

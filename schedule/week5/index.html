@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
+    
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/schedule.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -67,7 +68,7 @@
   </div>
   <div class="website-content" id="main">
     <p><span style="float:left"><span><a href="/2019/schedule/week4/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week6/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-    <h1 id="week-5-%5Bfeb-18%5D">Week 5 <small><small><span class="dimmed">[Feb 18]</span></small></small><a class="fa fa-anchor" href="#week-5-%5Bfeb-18%5D"></a></h1>
+    <h1 id="week-5-feb-18">Week 5 <small><small><span class="dimmed">[Feb 18]</span></small></small><a class="fa fa-anchor" href="#week-5-feb-18"></a></h1>
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
@@ -359,7 +360,7 @@ print(get_head2(<span class="hljs-number">2</span>))
             </ul>
             <panel type="danger" header=":muscle: Exercise: Enter Integer" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-%3A-enter-integer"></a></h4>
+                <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer"></a></h4>
                 <p>The code below assumes the entered string will always represent an integer.</p>
                 <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
 print(<span class="hljs-string">'You entered'</span>, value)
@@ -472,7 +473,7 @@ hide_ends2 failed: Not enough items
               <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
             <panel type="danger" header=":muscle: Exercise: Is Even-Integer in Range" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-%3A-is-even-integer-in-range"></a></h4>
+                <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-is-even-integer-in-range"></a></h4>
                 <tip-box>
                   <p>❗️ This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
                 </tip-box>
@@ -578,14 +579,14 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
             </panel>
             <panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-%3A-flexible-word-game"></a></h4>
+                <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-flexible-word-game"></a></h4>
                 <p>Implement a word game similar to the one you implement in the <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
                 <ul>
                   <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
                 </ul>
                 <modal large="" title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
                     <div>
-                    <h4 id="exercise-%3A-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-%3A-word-game"></a></h4>
+                    <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
                     <p>Implement a word game with the following rules:</p>
                     <ul>
                       <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
@@ -828,12 +829,13 @@ Thank you for playing the FLEXIBLE WORD GAME
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

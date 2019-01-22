@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
+    
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/schedule.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -67,7 +68,7 @@
   </div>
   <div class="website-content" id="main">
     <p><span style="float:left"><span><a href="/2019/schedule/week6/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week8/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-    <h1 id="week-7-%5Bmar-4%5D">Week 7 <small><small><span class="dimmed">[Mar 4]</span></small></small><a class="fa fa-anchor" href="#week-7-%5Bmar-4%5D"></a></h1>
+    <h1 id="week-7-mar-4">Week 7 <small><small><span class="dimmed">[Mar 4]</span></small></small><a class="fa fa-anchor" href="#week-7-mar-4"></a></h1>
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
@@ -151,7 +152,7 @@
             </div>
             <panel type="danger" header=":muscle: Exercise: Escape Sequences" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-escape-sequences">Exercise : Escape Sequences<a class="fa fa-anchor" href="#exercise-%3A-escape-sequences"></a></h4>
+                <h4 id="exercise-escape-sequences">Exercise : Escape Sequences<a class="fa fa-anchor" href="#exercise-escape-sequences"></a></h4>
                 <p>Modify the <code>get_string()</code> function so that the code prints the given output.<br>
                   Note that these words are separated by tabs, not normal spaces:<code>&quot;oops&quot;</code><span class="dimmed">{tab here}</span><code>&quot;ok&quot;</code><span class="dimmed">{tab here}</span><code>&quot;oh?&quot;</code></p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_string</span><span class="hljs-params">()</span>:</span>
@@ -231,7 +232,7 @@ This is the third line.
             <p>It is optional to escape <code>'</code> and <code>&quot;</code> inside a mult-line string within triple quotes e.g., <code>How's life?</code> in the example above.</p>
             <panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-multi-line-string">Exercise : Multi-Line String<a class="fa fa-anchor" href="#exercise-%3A-multi-line-string"></a></h4>
+                <h4 id="exercise-multi-line-string">Exercise : Multi-Line String<a class="fa fa-anchor" href="#exercise-multi-line-string"></a></h4>
                 <p>Modify the <code>get_multiline_string()</code> function so that the code prints the given output exactly as given.<br></p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_multiline_string</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-string">''</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE</span>
@@ -339,7 +340,7 @@ the
             <p>❗️ Strings are immutable. The following code will not work: <code>s[0] = 'h'</code></p>
             <panel type="danger" header=":muscle: Exercise: Shorten String" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-shorten-string">Exercise : Shorten String<a class="fa fa-anchor" href="#exercise-%3A-shorten-string"></a></h4>
+                <h4 id="exercise-shorten-string">Exercise : Shorten String<a class="fa fa-anchor" href="#exercise-shorten-string"></a></h4>
                 <p>Complete the function given below, to behave as described by its docstring.</p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">shorten</span><span class="hljs-params">(text)</span>:</span>
   <span class="hljs-string">""" Return a 10-character version of the string if it is longer.
@@ -412,7 +413,7 @@ True
               <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
             <panel type="danger" header=":muscle: Exercise: Has All Characters" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-has-all-characters">Exercise : Has All Characters<a class="fa fa-anchor" href="#exercise-%3A-has-all-characters"></a></h4>
+                <h4 id="exercise-has-all-characters">Exercise : Has All Characters<a class="fa fa-anchor" href="#exercise-has-all-characters"></a></h4>
                 <p>Complete the function given below so that it returns <code>True</code> if <code>text</code> has all the characters in the list <code>characters</code>.</p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">has_all_characters</span><span class="hljs-params">(text, characters)</span>:</span>
   <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
@@ -528,7 +529,7 @@ True False
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Rectify Case" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-rectify-case">Exercise : Rectify Case<a class="fa fa-anchor" href="#exercise-%3A-rectify-case"></a></h4>
+                <h4 id="exercise-rectify-case">Exercise : Rectify Case<a class="fa fa-anchor" href="#exercise-rectify-case"></a></h4>
                 <p>Complete the <code>rectify_case(text)</code> function given below, to behave as follows:</p>
                 <ul>
                   <li>If <code>text</code> is all upper case, return <code>text</code> in lower case</li>
@@ -570,7 +571,7 @@ BABY FOX
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Is Doctor" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-is-doctor">Exercise : Is Doctor<a class="fa fa-anchor" href="#exercise-%3A-is-doctor"></a></h4>
+                <h4 id="exercise-is-doctor">Exercise : Is Doctor<a class="fa fa-anchor" href="#exercise-is-doctor"></a></h4>
                 <p>Complete the <code>is_doctor(name)</code> function to return <code>True</code> for the following cases:</p>
                 <ul>
                   <li>If <code>name</code> has a <code>Dr.</code> at the start</li>
@@ -649,7 +650,7 @@ print(s.find(<span class="hljs-string">'Spam'</span>))
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Remove From Word" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-remove-from-word">Exercise : Remove From Word<a class="fa fa-anchor" href="#exercise-%3A-remove-from-word"></a></h4>
+                <h4 id="exercise-remove-from-word">Exercise : Remove From Word<a class="fa fa-anchor" href="#exercise-remove-from-word"></a></h4>
                 <p>Complete the <code>remove_from_word(text, word)</code> function given below, to behave as follows:</p>
                 <ul>
                   <li>If <code>word</code> is found in <code>text</code>, return <code>text</code> minus the <code>word</code> (its first appearance) and any characters that appears after the <code>word</code></li>
@@ -769,7 +770,7 @@ print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-strin
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Get Part" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-get-part">Exercise : Get Part<a class="fa fa-anchor" href="#exercise-%3A-get-part"></a></h4>
+                <h4 id="exercise-get-part">Exercise : Get Part<a class="fa fa-anchor" href="#exercise-get-part"></a></h4>
                 <p>Complete the <code>get_part(text, index)</code> function given below, to behave as follows:</p>
                 <ol>
                   <li>Split <code>text</code> using <code>|</code> as the delimiter</li>
@@ -846,7 +847,7 @@ Price===============
               <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
             <panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-print-formatted-item">Exercise : Print Formatted Item<a class="fa fa-anchor" href="#exercise-%3A-print-formatted-item"></a></h4>
+                <h4 id="exercise-print-formatted-item">Exercise : Print Formatted Item<a class="fa fa-anchor" href="#exercise-print-formatted-item"></a></h4>
                 <p>Complete the <code>print_formatted_item(name, count, width)</code> function given below, to behave as follows:</p>
                 <ul>
                   <li>Print <code>name</code> and <code>count</code> in the format <code>name.................: count</code></li>
@@ -908,7 +909,7 @@ pins(new).......:110
             </panel>
             <panel type="danger" header=":muscle: Exercise: Inventory Report" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-inventory-report">Exercise : Inventory Report<a class="fa fa-anchor" href="#exercise-%3A-inventory-report"></a></h4>
+                <h4 id="exercise-inventory-report">Exercise : Inventory Report<a class="fa fa-anchor" href="#exercise-inventory-report"></a></h4>
                 <p>Write a function that prints an inventory report like the examples given below, when the report title (a string), print-width (an int), and list of items (as a suitable data structure, e.g., dictionary) is given to the function.</p>
                 <tip-box>
                   <p><span class="fas fa-cube"></span> Kitchen Inventory Report:</p>
@@ -1988,12 +1989,13 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
+    
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/schedule.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -67,7 +68,7 @@
   </div>
   <div class="website-content" id="main">
     <p><span style="float:left"><span><a href="/2019/schedule/week5/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week7/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-    <h1 id="week-6-%5Bfeb-25%5D">Week 6 <small><small><span class="dimmed">[Feb 25]</span></small></small><a class="fa fa-anchor" href="#week-6-%5Bfeb-25%5D"></a></h1>
+    <h1 id="week-6-feb-25">Week 6 <small><small><span class="dimmed">[Feb 25]</span></small></small><a class="fa fa-anchor" href="#week-6-feb-25"></a></h1>
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
@@ -184,7 +185,7 @@ prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.
             <p>Unlike lists which contain an ordered sequence of items, <strong>dictionaries are not ordered</strong> i.e., we cannot force a key-value pair in a dictionary to be at a specific position <span class="dimmed">e.g., in the example above, there is no guarantee that <code>'bread'</code>:<code>'3.50'</code> pair will be at the first position of the dictionary <code>prices</code> after adding more key-value pairs to it</span>.</p>
             <panel type="danger" header=":muscle: Exercise: Get Subject Info" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-get-subject-info">Exercise: Get Subject Info<a class="fa fa-anchor" href="#exercise%3A-get-subject-info"></a></h4>
+                <h4 id="exercise-get-subject-info">Exercise: Get Subject Info<a class="fa fa-anchor" href="#exercise-get-subject-info"></a></h4>
                 <p>Complete the <code>get_subject_info</code> function below to return a dictionary such that the code produces the given output.</p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {} <span class="hljs-comment"># UPDATE THIS LINE</span>
@@ -261,7 +262,7 @@ After deleting: {'TE3201': 'A+'}
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Get Set Delete Score" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-get%2C-set%2C-delete-score">Exercise: Get, Set, Delete Score<a class="fa fa-anchor" href="#exercise%3A-get%2C-set%2C-delete-score"></a></h4>
+                <h4 id="exercise-get-set-delete-score">Exercise: Get, Set, Delete Score<a class="fa fa-anchor" href="#exercise-get-set-delete-score"></a></h4>
                 <p>Complete the three function below such that the code produces the given output.</p>
                 <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
                 <ul>
@@ -328,7 +329,7 @@ KeyError: 'santa'
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Get Score with Error Handling" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-get-score-with-error-handling">Exercise: Get Score with Error Handling<a class="fa fa-anchor" href="#exercise%3A-get-score-with-error-handling"></a></h4>
+                <h4 id="exercise-get-score-with-error-handling">Exercise: Get Score with Error Handling<a class="fa fa-anchor" href="#exercise-get-score-with-error-handling"></a></h4>
                 <p>Update the <code>get_score1(scores, player)</code> function to handle error situations, as described below.</p>
                 <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
                 <ul>
@@ -421,7 +422,7 @@ butter -&gt; 5.0
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Print Scorecard" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-print-scorecard">Exercise: Print Scorecard<a class="fa fa-anchor" href="#exercise%3A-print-scorecard"></a></h4>
+                <h4 id="exercise-print-scorecard">Exercise: Print Scorecard<a class="fa fa-anchor" href="#exercise-print-scorecard"></a></h4>
                 <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
                 <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
                 <ul>
@@ -501,7 +502,7 @@ False
               <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
             <panel type="danger" header=":muscle: Exercise: Add Bonus" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-add-bonus">Exercise: Add Bonus<a class="fa fa-anchor" href="#exercise%3A-add-bonus"></a></h4>
+                <h4 id="exercise-add-bonus">Exercise: Add Bonus<a class="fa fa-anchor" href="#exercise-add-bonus"></a></h4>
                 <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
                 <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
                 <ul>
@@ -565,7 +566,7 @@ total tasks to do: 4
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Inning-Scores" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-inning-scores">Exercise: Inning-Scores<a class="fa fa-anchor" href="#exercise%3A-inning-scores"></a></h4>
+                <h4 id="exercise-inning-scores">Exercise: Inning-Scores<a class="fa fa-anchor" href="#exercise-inning-scores"></a></h4>
                 <p>Assume the game has three innings and a player can play in 0-3 innings. For each inning, a player will have a inning-score which is an integer <span class="dimmed">e.g., player <code>amy</code> scored <code>5</code>, <code>5</code>, and <code>10</code> for the three innings (in order)</span>.</p>
                 <p>Update the <code>get_detailed_scores</code> functions in the code below such that it returns a dictionary that stores inning scores of each player as a <mark>list of integers for each player</mark>. Inning-scores of each player is given below.</p>
                 <div class="table-responsive">
@@ -638,7 +639,7 @@ Betsy Sims
               <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-nested?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
             <panel type="danger" header=":muscle: Exercise: Player Stats" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise%3A-player-stats"></a></h4>
+                <h4 id="exercise-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise-player-stats"></a></h4>
                 <p>Assume in each inning a player gets to bat number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
                 <p>Note how the <code>player_stats</code> dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player <code>amy</code> scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of <code>0*0 + 1*1 + 4*1 + 6*0 = 10</code> for her first inning).</p>
                 <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code> for the given <code>hit_size</code>.<br>
@@ -669,7 +670,7 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span
             </panel>
             <panel type="danger" header=":muscle: Exercise: Grade Report" expanded="" no-close="">
               <div>
-                <h4 id="exercise%3A-grade-report">Exercise: Grade Report<a class="fa fa-anchor" href="#exercise%3A-grade-report"></a></h4>
+                <h4 id="exercise-grade-report">Exercise: Grade Report<a class="fa fa-anchor" href="#exercise-grade-report"></a></h4>
                 <p>Write a program that reads student grades one entry at a time and print a consolidated grade report at the end. Follow the sample output given below.</p>
                 <pre class="hljs"><code>-----------------------------------------------------
      ~ Welcome to Grade Report System ~
@@ -1144,12 +1145,13 @@ charlie : F
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

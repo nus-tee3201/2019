@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
+    
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/schedule.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -67,7 +68,7 @@
   </div>
   <div class="website-content" id="main">
     <p><span style="float:left"><span><a href="/2019/schedule/week8/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week10/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-    <h1 id="week-9-%5Bmar-18%5D">Week 9 <small><small><span class="dimmed">[Mar 18]</span></small></small><a class="fa fa-anchor" href="#week-9-%5Bmar-18%5D"></a></h1>
+    <h1 id="week-9-mar-18">Week 9 <small><small><span class="dimmed">[Mar 18]</span></small></small><a class="fa fa-anchor" href="#week-9-mar-18"></a></h1>
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
@@ -260,7 +261,7 @@ Sun Tzu
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-%3A-create-stockitem-class"></a></h4>
+                <h4 id="exercise-create-stock-item-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stock-item-class"></a></h4>
                 <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
                 <table>
                   <tr>
@@ -397,7 +398,7 @@ yak yak
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Add Class-Level Members to `Subject` Class" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-%3A-add-class-level-members-to-subject-class"></a></h4>
+                <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class"></a></h4>
                 <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
                 <ul>
                   <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
@@ -571,7 +572,7 @@ AttributeError: 'Account' object has no attribute '__get_income'...
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Change Visibility of `School` Class Members" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-%3A-change-visibility-of-school-class-members"></a></h4>
+                <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members"></a></h4>
                 <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
                 <table>
                   <tr>
@@ -611,7 +612,7 @@ print(s.__max_expenditure())
           <hr style="border-top: 3px double #c5c5c5;">
           <h1 id="installing-3rd-party-modules">Installing 3rd Party Modules<a class="fa fa-anchor" href="#installing-3rd-party-modules"></a></h1>
           <div>
-            <h1 id="appendix-a%3A-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a%3A-installing-3rd-party-modules"></a></h1>
+            <h1 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a-installing-3rd-party-modules"></a></h1>
             <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
             <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
             <pre class="hljs"><code>pip --version
@@ -657,7 +658,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
             </ul>
             <panel type="danger" header=":muscle: Exercise: Print Errors in Red" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-%3A-print-errors-in-red"></a></h4>
+                <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
                 <p>Update a CLI program you have written in the past to print error messages in red color.</p>
                 <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
               </div>
@@ -1705,12 +1706,13 @@ Enter command: exit
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

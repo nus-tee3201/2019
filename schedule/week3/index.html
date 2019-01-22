@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     
+    
     <link rel="stylesheet" href="/2019/css/main.css">
     <link rel="stylesheet" href="/2019/css/schedule.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="content-wrapper">
   <div>
@@ -67,7 +68,7 @@
   </div>
   <div class="website-content" id="main">
     <p><span style="float:left"><span><a href="/2019/schedule/week2/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week4/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-    <h1 id="week-3-%5Bjan-28%5D">Week 3 <small><small><span class="dimmed">[Jan 28]</span></small></small><a class="fa fa-anchor" href="#week-3-%5Bjan-28%5D"></a></h1>
+    <h1 id="week-3-jan-28">Week 3 <small><small><span class="dimmed">[Jan 28]</span></small></small><a class="fa fa-anchor" href="#week-3-jan-28"></a></h1>
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
@@ -177,7 +178,7 @@ say_hello()
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Hip Hip Hooray!" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-hip-hip-hooray">Exercise : Hip Hip Hooray<a class="fa fa-anchor" href="#exercise-%3A-hip-hip-hooray"></a></h4>
+                <h4 id="exercise-hip-hip-hooray">Exercise : Hip Hip Hooray<a class="fa fa-anchor" href="#exercise-hip-hip-hooray"></a></h4>
                 <p>Define the missing functions in the code below so that it produces the given output:</p>
                 <table>
                   <tr>
@@ -301,7 +302,7 @@ print(v1)
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Grader `print_score` function" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-grader---print_score-function">Exercise : Grader - <code>print_score</code> Function<a class="fa fa-anchor" href="#exercise-%3A-grader---print_score-function"></a></h4>
+                <h4 id="exercise-grader-print-score-function">Exercise : Grader - <code>print_score</code> Function<a class="fa fa-anchor" href="#exercise-grader-print-score-function"></a></h4>
                 <p>The code below prints the grade based on exam and project score, somewhat similar to <trigger trigger="click" for="modal:printScoreFunction-gradeAnalyzer">a previous exercise you did</trigger>.</p>
                 <pre><code class="hljs python">project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
 exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
@@ -335,7 +336,7 @@ print_score(<span class="hljs-string">'Total   :'</span>, total_score)
                 <p>without changing the external behavior of the program.</p>
                 <modal large="" title="" id="modal:printScoreFunction-gradeAnalyzer">
                     <div>
-                    <h4 id="exercise---grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise---grade-analyzer"></a></h4>
+                    <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
                     <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
                     <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
@@ -429,7 +430,7 @@ print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">
             <p></p>
             <panel type="danger" header=":muscle: Exercise: Grader - `calculate_grade` function" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-grader---calculate_grade-function">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-%3A-grader---calculate_grade-function"></a></h4>
+                <h4 id="exercise-grader-calculate-grade-function">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function"></a></h4>
                 <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
@@ -533,7 +534,7 @@ total cows after breeding: 5
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Grader - Analyze Grades in a Loop" expanded="" no-close="">
               <div>
-                <h4 id="exercise-%3A-grader---analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop<a class="fa fa-anchor" href="#exercise-%3A-grader---analyze-grades-in-a-loop"></a></h4>
+                <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop<a class="fa fa-anchor" href="#exercise-grader-analyze-grades-in-a-loop"></a></h4>
                 <p>Write a program to analyze grades of multiple students. The grade analysis can be similar to <trigger trigger="click" for="modal:analyzeGradesInLoop-gradeAnalyzer">a grade analyzer you wrote in a previous exercise</trigger> but the program needs to repeat the process until the user chooses to stop.</p>
                 <pre><code class="hljs python">Enter project score: <span class="hljs-number">10</span>
 Enter exam score: <span class="hljs-number">50</span>
@@ -555,7 +556,7 @@ Continue y/n? n
                 <p>You are <mark>required to divide your code into multiple functions</mark>.</p>
                 <modal large="" title="" id="modal:analyzeGradesInLoop-gradeAnalyzer">
                     <div>
-                    <h4 id="exercise---grade-analyzer-2">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise---grade-analyzer-2"></a></h4>
+                    <h4 id="exercise-grade-analyzer-2">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer-2"></a></h4>
                     <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
                     <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
@@ -2451,12 +2452,13 @@ Grade   : A
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>

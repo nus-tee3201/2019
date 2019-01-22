@@ -1,0 +1,47 @@
+2019-01-22T04:45:14.263Z - info: Website generation started at 12:45:11 PM
+2019-01-22T04:45:16.024Z - info: Building assets...
+2019-01-22T04:45:17.806Z - info: Assets built
+2019-01-22T04:45:17.807Z - info: Generating pages...
+2019-01-22T04:45:53.162Z - info: Pages built
+2019-01-22T04:46:02.489Z - info: Website generation complete! Total build time: 51.087s
+2019-01-22T04:46:02.500Z - info: Generate Site durationMs=51099
+2019-01-22T04:46:02.827Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-01-22T04:46:02.827Z - info: Press CTRL+C to stop ...
+2019-01-22T04:46:02.858Z - info: Site data built
+2019-01-22T04:47:59.783Z - info: [12:47:59 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\flowcontrol.md
+2019-01-22T04:48:00.786Z - info: Rebuilding affected source files
+2019-01-22T04:48:00.788Z - info: Rebuilding 1 pages
+2019-01-22T04:48:01.163Z - info: Pages rebuilt
+2019-01-22T04:48:01.173Z - info: Site data built
+2019-01-22T04:48:25.595Z - info: [12:48:25 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\flowcontrol.md
+2019-01-22T04:48:26.597Z - info: Rebuilding affected source files
+2019-01-22T04:48:26.598Z - info: Rebuilding 1 pages
+2019-01-22T04:48:26.930Z - info: Pages rebuilt
+2019-01-22T04:48:26.941Z - info: Site data built
+2019-01-22T04:48:47.160Z - info: [12:48:47 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\flowcontrol.md
+2019-01-22T04:48:48.164Z - info: Rebuilding affected source files
+2019-01-22T04:48:48.166Z - info: Rebuilding 1 pages
+2019-01-22T04:48:48.524Z - info: Pages rebuilt
+2019-01-22T04:48:48.533Z - info: Site data built
+2019-01-22T04:49:51.218Z - info: [12:49:51 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\dictionaries.md
+2019-01-22T04:49:52.233Z - info: Rebuilding affected source files
+2019-01-22T04:49:52.234Z - info: Rebuilding 1 pages
+2019-01-22T04:49:52.480Z - info: Pages rebuilt
+2019-01-22T04:49:52.489Z - info: Site data built
+2019-01-22T04:54:40.017Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\expressions-types-variables.md
+2019-01-22T04:54:40.020Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\files.md
+2019-01-22T04:54:40.023Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\programs.md
+2019-01-22T04:54:40.026Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\unittesting.md
+2019-01-22T04:54:40.028Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\thirdparty.md
+2019-01-22T04:54:40.031Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\functions.md
+2019-01-22T04:54:40.034Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\oop.md
+2019-01-22T04:54:40.037Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\lists.md
+2019-01-22T04:54:40.040Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\errors.md
+2019-01-22T04:54:40.043Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\monty.md
+2019-01-22T04:54:40.047Z - info: [12:54:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\strings.md
+2019-01-22T04:54:41.023Z - info: Rebuilding affected source files
+2019-01-22T04:54:41.028Z - info: Rebuilding 11 pages
+2019-01-22T04:54:42.346Z - info: Pages rebuilt
+2019-01-22T04:54:42.357Z - info: Site data built
+2019-01-22T05:28:23.470Z - info: Website generation started at 1:28:20 PM
+2019-01-22T05:28:25.259Z - info: Building assets...

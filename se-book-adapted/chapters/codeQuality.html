@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
     <div id="flex-body">
   <div id="site-nav">
@@ -62,15 +63,15 @@
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
-          <i class="dropdown-btn-icon">
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open"><strong>Implementation</strong>
+          <i class="dropdown-btn-icon rotate-icon">
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
+        <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
+            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="current">Code Quality</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html">Reuse</a></li>
             <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html">Documentation</a></li>
@@ -210,7 +211,7 @@
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title">
             <div>
-              <h2 id="guideline%3A-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline%3A-maximise-readability"></a></h2>
+              <h2 id="guideline-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability"></a></h2>
             </div>
           </span>
           <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
@@ -556,7 +557,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title">
             <div>
-              <h2 id="guideline%3A-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline%3A-follow-a-standard"></a></h2>
+              <h2 id="guideline-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard"></a></h2>
             </div>
           </span>
           <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
@@ -675,7 +676,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title">
             <div>
-              <h2 id="guideline%3A-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline%3A-name-well"></a></h2>
+              <h2 id="guideline-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline-name-well"></a></h2>
             </div>
           </span>
           <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
@@ -787,7 +788,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title">
             <div>
-              <h2 id="guideline%3A-comment-minimally%2C-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline%3A-comment-minimally%2C-but-sufficiently"></a></h2>
+              <h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently"></a></h2>
             </div>
           </span>
           <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
@@ -900,12 +901,13 @@ trimInput();
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 21 Jan 2019 15:30:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 05:28:26 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
