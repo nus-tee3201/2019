@@ -84,7 +84,7 @@ if (age > 12) and (age < 20):
 print('Age is ' + str(age))               
 ```
 {{ icon_output }} <trigger trigger="click" for="modal:nestedIf-pyTutor">%%[visualize]%%</trigger>
-```
+```python
 Teenager
 Female
 Girl
