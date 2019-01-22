@@ -3,6 +3,7 @@ title: "Python Basics: Installing 3rd Party Libraries"
 footer: footer.md
 head: adminHead.md
 siteNav: programming-sitenav.md
+pageNav: 4
 </frontmatter>
 
 <include src="../../common/header.md" />

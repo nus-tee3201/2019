@@ -3,6 +3,7 @@ title: "Python Basics: Files"
 footer: footer.md
 head: adminHead.md
 siteNav: programming-sitenav.md
+pageNav: 4
 </frontmatter>
 
 <include src="../../common/header.md" />
