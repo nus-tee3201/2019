@@ -21,13 +21,25 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
-    
+    <link rel="stylesheet" href="..\..\markbind\css\page-nav.css">
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
-    <div id="flex-body">
+    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
+
+  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
+    <a class="nav-link py-1" href="#j-unit">JUnit&#x200E;</a>
+    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+      <a class="nav-link py-1" href="#j-unit-basic">JUnit: Basic&#x200E;</a>
+      <a class="nav-link py-1" href="#j-unit-intermediate">JUnit: Intermediate&#x200E;</a>
+    </nav>
+
+  </nav>
+</nav>
+
+<div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
       <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
@@ -130,66 +142,67 @@
     </div>
   </div>
   <div id="page-content">
-    <div id="content-wrapper">
-      <link rel="stylesheet" href="/2019/book/css/textbook.css">
-      <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
-      <div class="website-content">
-        <div>
-          <navbar placement="top" type="inverse">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-            <dropdown text="Schedule" class="nav-link">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-            </dropdown>
-            <dropdown text="Textbook" class="nav-link">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-            <dropdown text="Links" class="nav-link">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-            </dropdown>
-            <li slot="right" class="nav-link">
-              <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-              </form>
-            </li>
-          </navbar>
-        </div>
-        <p><span class="dimmed"><strong><span></span></strong></span></p>
-        <div id="title">
+    <div id="page-nav-content-wrapper">
+      <div id="content-wrapper">
+        <link rel="stylesheet" href="/2019/book/css/textbook.css">
+        <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
+        <div class="website-content">
           <div>
-            <h1 id="j-unit"><span>JUnit</span><a class="fa fa-anchor" href="#j-unit"></a></h1>
+            <navbar placement="top" type="inverse">
+              <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+              <dropdown text="Schedule" class="nav-link">
+                <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+                <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+                <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+                <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+                <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+                <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+                <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+                <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+                <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+                <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+                <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+                <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+                <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+              </dropdown>
+              <dropdown text="Textbook" class="nav-link">
+                <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+                <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+              </dropdown>
+              <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+              <dropdown text="Links" class="nav-link">
+                <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+                <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              </dropdown>
+              <li slot="right" class="nav-link">
+                <form class="navbar-form">
+                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                </form>
+              </li>
+            </navbar>
           </div>
-        </div>
-        <panel type="seamless" header="#### JUnit: Basic<a class='fa fa-anchor' href='#j-unit-basic'></a>" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-              <span><span class="dimmed">
-                  <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span></span></span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use simple JUnit tests</span></span></span></span>
-            <p></p>
+          <p><span class="dimmed"><strong><span></span></strong></span></p>
+          <div id="title">
             <div>
-              <p>When writing JUnit tests for a class <code>Foo</code>, the common practice is to create a <code>FooTest</code> class, which will contain various test methods.</p>
-              <box>
-                <p><span class="fas fa-cube"></span> Suppose we want to write tests for the <code>IntPair</code> class below.</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPair</span> </span>{
+              <h1 id="j-unit"><span>JUnit</span><a class="fa fa-anchor" href="#j-unit"></a></h1>
+            </div>
+          </div>
+          <panel type="seamless" header="#### JUnit: Basic<a class='fa fa-anchor' href='#j-unit-basic'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use simple JUnit tests</span></span></span></span>
+              <p></p>
+              <div>
+                <p>When writing JUnit tests for a class <code>Foo</code>, the common practice is to create a <code>FooTest</code> class, which will contain various test methods.</p>
+                <box>
+                  <p><span class="fas fa-cube"></span> Suppose we want to write tests for the <code>IntPair</code> class below.</p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPair</span> </span>{
     <span class="hljs-keyword">int</span> first;
     <span class="hljs-keyword">int</span> second;
 
@@ -211,8 +224,8 @@
     }
 }
 </code></pre>
-                <p>Here's a <code>IntPairTest</code> class to match.</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.Test;
+                  <p>Here's a <code>IntPairTest</code> class to match.</p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.Test;
 <span class="hljs-keyword">import</span> org.junit.Assert;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPairTest</span> </span>{
@@ -240,66 +253,67 @@
     }
 }
 </code></pre>
-              </box>
-              <p>Notes:</p>
-              <ul>
-                <li>Each test method is marked with a <code>@Test</code> annotation.</li>
-                <li>Tests use <code>Assert.assertEquals(expected, actual)</code> methods to compare the expected output with the actual output. If they do not match, the test will fail. JUnit comes with other similar methods such as <code>Assert.assertNull</code> and <code>Assert.assertTrue</code>.</li>
-                <li>Java code normally use camelCase for method names e.g., <code>testStringConversion</code> but when writing test methods, sometimes another convention is used: <code>whatIsBeingTested_descriptionOfTestInputs_expectedOutcome</code> e.g., <code>intDivision_zeroDivisor_exceptionThrown</code></li>
-                <li>There are <a href="https://github.com/junit-team/junit4/wiki/exception-testing">several ways to verify the code throws the correct exception</a>. The third test method in the example above shows one of the simpler methods. If the exception is thrown, it will be caught and further verified inside the <code>catch</code> block. But if it is not thrown as expected, the test will reach <code>Assert.fail()</code> line and will fail as a result.</li>
-                <li>The easiest way to run JUnit tests is to do it via the IDE. For example, in Intellij you can right-click the folder containing test classes and choose 'Run all tests...'</li>
-                <li>Optionally, you can use <a href="https://docs.oracle.com/javase/1.5.0/docs/guide/language/static-import.html">static imports</a> to avoid having to specify <code>Assert.</code> everywhere.
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.Assert.assertEquals;
+                </box>
+                <p>Notes:</p>
+                <ul>
+                  <li>Each test method is marked with a <code>@Test</code> annotation.</li>
+                  <li>Tests use <code>Assert.assertEquals(expected, actual)</code> methods to compare the expected output with the actual output. If they do not match, the test will fail. JUnit comes with other similar methods such as <code>Assert.assertNull</code> and <code>Assert.assertTrue</code>.</li>
+                  <li>Java code normally use camelCase for method names e.g., <code>testStringConversion</code> but when writing test methods, sometimes another convention is used: <code>whatIsBeingTested_descriptionOfTestInputs_expectedOutcome</code> e.g., <code>intDivision_zeroDivisor_exceptionThrown</code></li>
+                  <li>There are <a href="https://github.com/junit-team/junit4/wiki/exception-testing">several ways to verify the code throws the correct exception</a>. The third test method in the example above shows one of the simpler methods. If the exception is thrown, it will be caught and further verified inside the <code>catch</code> block. But if it is not thrown as expected, the test will reach <code>Assert.fail()</code> line and will fail as a result.</li>
+                  <li>The easiest way to run JUnit tests is to do it via the IDE. For example, in Intellij you can right-click the folder containing test classes and choose 'Run all tests...'</li>
+                  <li>Optionally, you can use <a href="https://docs.oracle.com/javase/1.5.0/docs/guide/language/static-import.html">static imports</a> to avoid having to specify <code>Assert.</code> everywhere.
+                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.Assert.assertEquals;
 <span class="hljs-comment">//...</span>
 <span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testStringConversion</span><span class="hljs-params">()</span> </span>{
     assertEquals(<span class="hljs-string">"4,7"</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">4</span>, <span class="hljs-number">7</span>).toString());
 }
 </code></pre>
-                </li>
-              </ul>
-              <div v-closeable="" alt="Junit tutorial video" class="non-printable">
-                <box>
-                  <p><strong><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> JUnit 4 with IntelliJ: A quick introduction</strong> <sub>-- by DrBFraser</sub></p>
-                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                </box>
+                  </li>
+                </ul>
+                <div v-closeable="" alt="Junit tutorial video" class="non-printable">
+                  <box>
+                    <p><strong><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> JUnit 4 with IntelliJ: A quick introduction</strong> <sub>-- by DrBFraser</sub></p>
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  </box>
+                </div>
               </div>
-            </div>
-            <div>
               <div>
-                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                  <ul>
-                    <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
-                    <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
-                    <li>How to test private methods in Java?
-                      [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ]
-                      [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a> ]</li>
-                  </ul>
-                </panel>
+                <div>
+                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                    <ul>
+                      <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
+                      <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
+                      <li>How to test private methods in Java?
+                        [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ]
+                        [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a> ]</li>
+                    </ul>
+                  </panel>
+                </div>
               </div>
             </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### JUnit: Intermediate<a class='fa fa-anchor' href='#j-unit-intermediate'></a>" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-              <span><span class="dimmed">
-                  <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span></span></span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use intermediate features of JUnit</span></span></span></span>
-            <p></p>
-            <div>
-              <p>Some intermediate JUnit techniques that may be useful:</p>
-              <ul>
-                <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
-                <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by) the test.</li>
-                <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
-                <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
-              </ul>
+          </panel>
+          <panel type="seamless" header="#### JUnit: Intermediate<a class='fa fa-anchor' href='#j-unit-intermediate'></a>" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use intermediate features of JUnit</span></span></span></span>
+              <p></p>
+              <div>
+                <p>Some intermediate JUnit techniques that may be useful:</p>
+                <ul>
+                  <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
+                  <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by) the test.</li>
+                  <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
+                  <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
+                </ul>
+              </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-        </panel>
+          </panel>
+        </div>
       </div>
     </div>
   </div>
@@ -307,7 +321,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 07:53:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
 </footer>
 </div>
 </body>

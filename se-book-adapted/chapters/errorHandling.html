@@ -21,13 +21,32 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
-    
+    <link rel="stylesheet" href="..\..\markbind\css\page-nav.css">
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
-    <div id="flex-body">
+    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
+
+  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
+    <a class="nav-link py-1" href="#error-handling">Error Handling&#x200E;</a>
+    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+      <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
+      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+        <a class="nav-link py-1" href="#what">What&#x200E;</a>
+      </nav>
+      <a class="nav-link py-1" href="#exceptions">Exceptions&#x200E;</a>
+      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+        <a class="nav-link py-1" href="#how">How&#x200E;</a>
+        <a class="nav-link py-1" href="#when">When&#x200E;</a>
+      </nav>
+    </nav>
+
+  </nav>
+</nav>
+
+<div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
       <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
@@ -130,172 +149,174 @@
     </div>
   </div>
   <div id="page-content">
-    <div id="content-wrapper">
-      <link rel="stylesheet" href="/2019/book/css/textbook.css">
-      <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
-      <div class="website-content">
-        <div>
-          <navbar placement="top" type="inverse">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-            <dropdown text="Schedule" class="nav-link">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-            </dropdown>
-            <dropdown text="Textbook" class="nav-link">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-            <dropdown text="Links" class="nav-link">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-            </dropdown>
-            <li slot="right" class="nav-link">
-              <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-              </form>
-            </li>
-          </navbar>
-        </div>
-        <p><span class="dimmed"><strong><span></span></strong></span></p>
-        <div id="title">
+    <div id="page-nav-content-wrapper">
+      <div id="content-wrapper">
+        <link rel="stylesheet" href="/2019/book/css/textbook.css">
+        <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
+        <div class="website-content">
           <div>
-            <h1 id="error-handling"><span>Error Handling</span><a class="fa fa-anchor" href="#error-handling"></a></h1>
+            <navbar placement="top" type="inverse">
+              <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+              <dropdown text="Schedule" class="nav-link">
+                <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+                <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+                <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+                <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+                <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+                <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+                <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+                <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+                <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+                <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+                <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+                <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+                <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+              </dropdown>
+              <dropdown text="Textbook" class="nav-link">
+                <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+                <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+              </dropdown>
+              <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+              <dropdown text="Links" class="nav-link">
+                <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+                <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              </dropdown>
+              <li slot="right" class="nav-link">
+                <form class="navbar-form">
+                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                </form>
+              </li>
+            </navbar>
           </div>
-        </div>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
+          <p><span class="dimmed"><strong><span></span></strong></span></p>
+          <div id="title">
             <div>
-              <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
+              <h1 id="error-handling"><span>Error Handling</span><a class="fa fa-anchor" href="#error-handling"></a></h1>
             </div>
-          </span>
-          <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain error handling</span></span></span></span>
-              <p></p>
+          </div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title">
               <div>
-                <blockquote>
-                  <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p>
-                </blockquote>
+                <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
               </div>
-              <div></div>
-            </div>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
-            <div>
-              <h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions"></a></h2>
-            </div>
-          </span>
-          <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain exceptions</span></span></span></span>
-              <p></p>
-              <div>
-                <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
-                <tip-box type="definition">
-                  <div>
-                    <p><strong>Exception</strong>:</p>
-                    <blockquote>
-                      <p>The term <em>exception</em> is shorthand for the phrase &quot;exceptional event.&quot; An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
-                    </blockquote>
-                  </div>
-                </tip-box>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Examples:</p>
-                  <ul>
-                    <li>A network connection encounters a timeout due to a slow server.</li>
-                    <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
-                  </ul>
-                </tip-box>
-              </div>
-              <div></div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how exception handling is done typically</span></span></span></span>
-              <p></p>
-              <div>
-                <p><strong>Most languages allow code that encountered an &quot;exceptional&quot; situation to encapsulate details of the situation in an <em>Exception</em> object and <em>throw</em>/<em>raise</em> that object so that another piece of code can <em>catch</em> it and deal with it.</strong> This is especially useful when the code that encountered the unusual situation does not know how to deal with it.</p>
-                <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
-                <div class="indented">
-                  <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
-                  <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
-                  <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p>
-                </div>
-                <p>Advantages of exception handling in this way:</p>
-                <ul>
-                  <li>The ability to propagate error information through the call stack.</li>
-                  <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
-                </ul>
-              </div>
-              <div>
+            </span>
+            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain error handling</span></span></span></span>
+                <p></p>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <blockquote>
+                    <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p>
+                  </blockquote>
+                </div>
+                <div></div>
+              </div>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions"></a></h2>
+              </div>
+            </span>
+            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain exceptions</span></span></span></span>
+                <p></p>
+                <div>
+                  <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
+                  <tip-box type="definition">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Benefit of exceptions">
-                        <question>
-                          <p>Which are benefits of exceptions?</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
-                          </ul>
-                          <div slot="answer">
-                            <p>(a) (c)</p>
-                            <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
-                          </div>
-                        </question>
-                      </panel>
+                      <p><strong>Exception</strong>:</p>
+                      <blockquote>
+                        <p>The term <em>exception</em> is shorthand for the phrase &quot;exceptional event.&quot; An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
+                      </blockquote>
                     </div>
-                  </panel>
+                  </tip-box>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Examples:</p>
+                    <ul>
+                      <li>A network connection encounters a timeout due to a slow server.</li>
+                      <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
+                    </ul>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </panel>
+            <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how exception handling is done typically</span></span></span></span>
+                <p></p>
+                <div>
+                  <p><strong>Most languages allow code that encountered an &quot;exceptional&quot; situation to encapsulate details of the situation in an <em>Exception</em> object and <em>throw</em>/<em>raise</em> that object so that another piece of code can <em>catch</em> it and deal with it.</strong> This is especially useful when the code that encountered the unusual situation does not know how to deal with it.</p>
+                  <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
+                  <div class="indented">
+                    <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
+                    <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
+                    <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p>
+                  </div>
+                  <p>Advantages of exception handling in this way:</p>
+                  <ul>
+                    <li>The ability to propagate error information through the call stack.</li>
+                    <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Benefit of exceptions">
+                          <question>
+                            <p>Which are benefits of exceptions?</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(a) (c)</p>
+                              <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
                 </div>
               </div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### When<a class='fa fa-anchor' href='#when'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can avoid using exceptions to control normal workflow</span></span></span></span>
-              <p></p>
-              <div>
-                <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+            </panel>
+            <panel type="seamless" header="#### When<a class='fa fa-anchor' href='#when'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can avoid using exceptions to control normal workflow</span></span></span></span>
+                <p></p>
+                <div>
+                  <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+                </div>
+                <div></div>
               </div>
-              <div></div>
-            </div>
+            </panel>
           </panel>
-        </panel>
+        </div>
       </div>
     </div>
   </div>
@@ -303,7 +324,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 07:53:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
 </footer>
 </div>
 </body>

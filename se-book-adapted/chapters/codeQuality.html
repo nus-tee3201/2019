@@ -21,13 +21,48 @@
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
-    
+    <link rel="stylesheet" href="..\..\markbind\css\page-nav.css">
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
 <div id="app">
-    <div id="flex-body">
+    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
+
+  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
+    <a class="nav-link py-1" href="#code-quality">Code Quality&#x200E;</a>
+    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+      <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
+    </nav>
+    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+      <a class="nav-link py-1" href="#basic">Basic&#x200E;</a>
+    </nav>
+    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+      <a class="nav-link py-1" href="#guideline-maximise-readability">Guideline: Maximise Readability&#x200E;</a>
+      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+        <a class="nav-link py-1" href="#avoid-long-methods">Avoid Long Methods&#x200E;</a>
+        <a class="nav-link py-1" href="#avoid-deep-nesting">Avoid Deep Nesting&#x200E;</a>
+        <a class="nav-link py-1" href="#avoid-complicated-expressions">Avoid Complicated Expressions&#x200E;</a>
+        <a class="nav-link py-1" href="#avoid-magic-numbers">Avoid Magic Numbers&#x200E;</a>
+        <a class="nav-link py-1" href="#make-the-code-obvious">Make the Code Obvious&#x200E;</a>
+      </nav>
+      <a class="nav-link py-1" href="#guideline-follow-a-standard">Guideline: Follow a Standard&#x200E;</a>
+      <a class="nav-link py-1" href="#guideline-name-well">Guideline: Name Well&#x200E;</a>
+      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+        <a class="nav-link py-1" href="#use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions&#x200E;</a>
+        <a class="nav-link py-1" href="#use-standard-words">Use Standard Words&#x200E;</a>
+      </nav>
+      <a class="nav-link py-1" href="#guideline-comment-minimally-but-sufficiently">Guideline: Comment Minimally, but Sufficiently&#x200E;</a>
+      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
+        <a class="nav-link py-1" href="#do-not-repeat-the-obvious">Do Not Repeat the Obvious&#x200E;</a>
+        <a class="nav-link py-1" href="#write-to-the-reader">Write to the Reader&#x200E;</a>
+      </nav>
+    </nav>
+
+  </nav>
+</nav>
+
+<div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
       <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
@@ -130,114 +165,115 @@
     </div>
   </div>
   <div id="page-content">
-    <div id="content-wrapper">
-      <link rel="stylesheet" href="/2019/book/css/textbook.css">
-      <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
-      <div class="website-content">
-        <div>
-          <navbar placement="top" type="inverse">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-            <dropdown text="Schedule" class="nav-link">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-            </dropdown>
-            <dropdown text="Textbook" class="nav-link">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-            <dropdown text="Links" class="nav-link">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-            </dropdown>
-            <li slot="right" class="nav-link">
-              <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-              </form>
-            </li>
-          </navbar>
-        </div>
-        <p><span class="dimmed"><strong><span></span></strong></span></p>
-        <div id="title">
+    <div id="page-nav-content-wrapper">
+      <div id="content-wrapper">
+        <link rel="stylesheet" href="/2019/book/css/textbook.css">
+        <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
+        <div class="website-content">
           <div>
-            <h1 id="code-quality"><span>Code Quality</span><a class="fa fa-anchor" href="#code-quality"></a></h1>
+            <navbar placement="top" type="inverse">
+              <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+              <dropdown text="Schedule" class="nav-link">
+                <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+                <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+                <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+                <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+                <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+                <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+                <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+                <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+                <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+                <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+                <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
+                <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+                <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+              </dropdown>
+              <dropdown text="Textbook" class="nav-link">
+                <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+                <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+              </dropdown>
+              <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+              <dropdown text="Links" class="nav-link">
+                <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+                <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+              </dropdown>
+              <li slot="right" class="nav-link">
+                <form class="navbar-form">
+                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                </form>
+              </li>
+            </navbar>
           </div>
-        </div>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
+          <p><span class="dimmed"><strong><span></span></strong></span></p>
+          <div id="title">
             <div>
-              <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
+              <h1 id="code-quality"><span>Code Quality</span><a class="fa fa-anchor" href="#code-quality"></a></h1>
             </div>
-          </span>
-          <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the importance of code quality</span></span></span></span>
-              <p></p>
+          </div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title">
               <div>
-                <blockquote>
-                  <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
-                </blockquote>
-                <p><strong>
-                    <trigger for="pop:production-code">Production code</trigger> needs to be of high quality
-                  </strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
-                <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top">
-                  <div slot="content">
-                    Code being used in an actual product with actual users
-                  </div>
-                </popover>
+                <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
               </div>
-              <div></div>
-            </div>
+            </span>
+            <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the importance of code quality</span></span></span></span>
+                <p></p>
+                <div>
+                  <blockquote>
+                    <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
+                  </blockquote>
+                  <p><strong>
+                      <trigger for="pop:production-code">Production code</trigger> needs to be of high quality
+                    </strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
+                  <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top">
+                    <div slot="content">
+                      Code being used in an actual product with actual users
+                    </div>
+                  </popover>
+                </div>
+                <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
-            <div>
-              <h2 id="guideline-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability"></a></h2>
-            </div>
-          </span>
-          <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the importance of readability</span></span></span></span>
-              <p></p>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title">
               <div>
-                <blockquote>
-                  <p>Programs should be written and polished until they acquire publication quality. <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
-                </blockquote>
-                <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood, and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
-                  <div class="alt-java">
-                    <div>
-                      <table>
-                        <tr>
-                            <td>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+                <h2 id="guideline-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability"></a></h2>
+              </div>
+            </span>
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the importance of readability</span></span></span></span>
+                <p></p>
+                <div>
+                  <blockquote>
+                    <p>Programs should be written and polished until they acquire publication quality. <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
+                  </blockquote>
+                  <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood, and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
+                    <div class="alt-java">
+                      <div>
+                        <table>
+                          <tr>
+                              <td>
+                              <p>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                              </p>
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -255,14 +291,14 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                            <p></p>
-                          </td>
-                            <td>  <br><br></td>
-                            <td valign="top">
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                              <p></p>
+                            </td>
+                              <td>  <br><br></td>
+                              <td valign="top">
+                              <p>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                              </p>
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -276,21 +312,21 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                            <p></p>
-                          </td>
-                        </tr>
-                      </table>
+                              <p></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
                     </div>
-                  </div>
-                  <div class="alt-python">
-                    <div>
-                      <table>
-                        <tr>
-                            <td>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </p>
-                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+                    <div class="alt-python">
+                      <div>
+                        <table>
+                          <tr>
+                              <td>
+                              <p>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                              </p>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
             <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
@@ -303,14 +339,14 @@
         subsidy = <span class="hljs-number">-1</span>
     <span class="hljs-keyword">return</span> subsidy
 </code></pre>
-                            <p></p>
-                          </td>
-                            <td>  <br><br></td>
-                            <td valign="top">
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                            </p>
-                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+                              <p></p>
+                            </td>
+                              <td>  <br><br></td>
+                              <td valign="top">
+                              <p>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                              </p>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
     <span class="hljs-keyword">elif</span> is_already_subsidised:
@@ -320,82 +356,82 @@
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
 </code></pre>
-                            <p></p>
-                          </td>
-                        </tr>
-                      </table>
+                              <p></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
                     </div>
-                  </div>
-                </tip-box>
-              </div>
-              <div></div>
-            </div>
-          </panel>
-          <panel type="seamless" expanded="">
-            <span slot="header" class="card-title">
-              <div>
-                <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
-              </div>
-            </span>
-            <panel type="seamless" header="#### Avoid Long Methods<a class='fa fa-anchor' href='#avoid-long-methods'></a>" expanded="">
-              <div class="indented">
-                <span class="badge badge-light">
-                  <span><span class="dimmed">
-                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid long methods </span></span></span></span>
-                <p></p>
-                <div>
-                  <p>Be wary when a method is longer than the computer screen, and take corrective action when it goes beyond 30 LOC (lines of code). The bigger the haystack, the harder it is to find a needle.</p>
-                </div>
-                <div></div>
-              </div>
-            </panel>
-            <panel type="seamless" header="#### Avoid Deep Nesting<a class='fa fa-anchor' href='#avoid-deep-nesting'></a>" expanded="">
-              <div class="indented">
-                <span class="badge badge-light">
-                  <span><span class="dimmed">
-                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid deep nesting </span></span></span></span>
-                <p></p>
-                <div>
-                  <blockquote>
-                    <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
-                  </blockquote>
-                  <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
-                  <tip-box>
-                    <p>Example:</p>
-                    <img src="/2019/book/codeQuality/maximiseReadability/basic/avoidDeepNesting/images/arrowheadStyle.png" height="250">
-                    <p></p>
                   </tip-box>
                 </div>
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Avoid Complicated Expressions<a class='fa fa-anchor' href='#avoid-complicated-expressions'></a>" expanded="">
-              <div class="indented">
-                <span class="badge badge-light">
-                  <span><span class="dimmed">
-                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid complicated expressions </span></span></span></span>
-                <p></p>
+            <panel type="seamless" expanded="">
+              <span slot="header" class="card-title">
                 <div>
-                  <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate the final value).</p>
-                  <div class="alt-java">
-                    <div>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> Example:</p>
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                        </p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+                  <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
+                </div>
+              </span>
+              <panel type="seamless" header="#### Avoid Long Methods<a class='fa fa-anchor' href='#avoid-long-methods'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid long methods </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <p>Be wary when a method is longer than the computer screen, and take corrective action when it goes beyond 30 LOC (lines of code). The bigger the haystack, the harder it is to find a needle.</p>
+                  </div>
+                  <div></div>
+                </div>
+              </panel>
+              <panel type="seamless" header="#### Avoid Deep Nesting<a class='fa fa-anchor' href='#avoid-deep-nesting'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid deep nesting </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <blockquote>
+                      <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
+                    </blockquote>
+                    <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
+                    <tip-box>
+                      <p>Example:</p>
+                      <img src="/2019/book/codeQuality/maximiseReadability/basic/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </panel>
+              <panel type="seamless" header="#### Avoid Complicated Expressions<a class='fa fa-anchor' href='#avoid-complicated-expressions'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid complicated expressions </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate the final value).</p>
+                    <div class="alt-java">
+                      <div>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> Example:</p>
+                          <p>
+                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                          </p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                        </p>
-                        <pre><code class="hljs java">
+                          <p>
+                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                          </p>
+                          <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
 <span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
@@ -404,22 +440,22 @@
 
 <span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
 </code></pre>
-                      </tip-box>
+                        </tip-box>
+                      </div>
                     </div>
-                  </div>
-                  <div class="alt-python">
-                    <div>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> Example:</p>
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                        </p>
-                        <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
+                    <div class="alt-python">
+                      <div>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> Example:</p>
+                          <p>
+                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                          </p>
+                          <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                        </p>
-                        <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
+                          <p>
+                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                          </p>
+                          <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
 
@@ -427,208 +463,208 @@ is_urgent = type_code == URGENT
 
 <span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
 </code></pre>
-                      </tip-box>
+                        </tip-box>
+                      </div>
                     </div>
+                    <blockquote>
+                      <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
+                    </blockquote>
                   </div>
-                  <blockquote>
-                    <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
-                  </blockquote>
+                  <div></div>
                 </div>
-                <div></div>
-              </div>
-            </panel>
-            <panel type="seamless" header="#### Avoid Magic Numbers<a class='fa fa-anchor' href='#avoid-magic-numbers'></a>" expanded="">
-              <div class="indented">
-                <span class="badge badge-light">
-                  <span><span class="dimmed">
-                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span></span></span></span>
-                <p></p>
-                <div>
-                  <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Example:</p>
-                    <div class="alt-java">
-                      <div>
-                        <table>
-                          <tr>
-                              <td valign="top">
-                              <p>
-                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                              </p>
-                              <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+              </panel>
+              <panel type="seamless" header="#### Avoid Magic Numbers<a class='fa fa-anchor' href='#avoid-magic-numbers'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Example:</p>
+                      <div class="alt-java">
+                        <div>
+                          <table>
+                            <tr>
+                                <td valign="top">
+                                <p>
+                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                                </p>
+                                <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
 </code></pre>
-                              <p></p>
-                            </td>
-                              <td>  <br><br></td>
-                              <td valign="top">
-                              <p>
-                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                              </p>
-                              <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+                                <p></p>
+                              </td>
+                                <td>  <br><br></td>
+                                <td valign="top">
+                                <p>
+                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                                </p>
+                                <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
 <span class="hljs-keyword">return</span> PI;
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
 </code></pre>
-                              <p></p>
-                            </td>
-                          </tr>
-                        </table>
+                                <p></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
                       </div>
-                    </div>
-                    <div class="alt-python">
-                      <div>
-                        <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
-                        <table>
-                          <tr>
-                              <td valign="top">
-                              <p>
-                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                              </p>
-                              <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+                      <div class="alt-python">
+                        <div>
+                          <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                          <table>
+                            <tr>
+                                <td valign="top">
+                                <p>
+                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                                </p>
+                                <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
 </code></pre>
-                              <p></p>
-                            </td>
-                              <td>  <br><br></td>
-                              <td valign="top">
-                              <p>
-                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                              </p>
-                              <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+                                <p></p>
+                              </td>
+                                <td>  <br><br></td>
+                                <td valign="top">
+                                <p>
+                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                                </p>
+                                <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
 <span class="hljs-keyword">return</span> PI
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
 </code></pre>
-                              <p></p>
-                            </td>
-                          </tr>
-                        </table>
+                                <p></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
                       </div>
-                    </div>
-                  </tip-box>
-                  <p>Similarly, we can have ‘magic’ values of other data types.</p>
-                  <tip-box>
-                    <p>
-                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                    </p>
-                    <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                    </tip-box>
+                    <p>Similarly, we can have ‘magic’ values of other data types.</p>
+                    <tip-box>
+                      <p>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                      </p>
+                      <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
-                  </tip-box>
+                    </tip-box>
+                  </div>
+                  <div></div>
                 </div>
-                <div></div>
+              </panel>
+              <panel type="seamless" header="#### Make the Code Obvious<a class='fa fa-anchor' href='#make-the-code-obvious'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
+                    <ul>
+                      <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
+                      <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
+                      <li>[<code>Java</code>, <code>Python</code>] Use <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
+                    </ul>
+                    <modal title="More about enumerations" id="modal:obviousCode-enums">
+                      <ul>
+                        <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
+                        <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
+                      </ul>
+                    </modal>
+                  </div>
+                  <div></div>
+                </div>
+              </panel>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="guideline-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard"></a></h2>
+              </div>
+            </span>
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span></span></span></span>
+                <p></p>
+                <div>
+                  <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+                  <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening and closing braces, indentation styles and naming styles (e.g. whether to use <em>Hungarian style</em>, <em>Pascal casing</em>, <em>Camel casing</em>, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
+                  <p>💡 IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+                </div>
+                <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
+                          <question>
+                            <p>What is the recommended approach regarding coding standards?</p>
+                            <ul radio-group="5c5a1" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                            </ul>
+                            <div slot="answer">
+                              <p>c</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
+                          <question has-input="">
+                            <p>What is the aim of using a coding standard? How does it help?</p>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Make the Code Obvious<a class='fa fa-anchor' href='#make-the-code-obvious'></a>" expanded="">
+            <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded="">
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
                       <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
                     </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span></span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span></span></span></span>
                 <p></p>
                 <div>
-                  <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
-                  <ul>
-                    <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
-                    <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
-                    <li>[<code>Java</code>, <code>Python</code>] Use <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
-                  </ul>
-                  <modal title="More about enumerations" id="modal:obviousCode-enums">
-                    <ul>
-                      <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
-                      <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
-                    </ul>
-                  </modal>
+                  <div class="alt-java">
+                    <p>Learn <em>basic</em> guidelines of the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard (by OSS-Generic)</a></p>
+                  </div>
+                  <div class="alt-python">
+                    <p>Sample coding standard: <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></p>
+                  </div>
                 </div>
-                <div></div>
-              </div>
-            </panel>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
-            <div>
-              <h2 id="guideline-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard"></a></h2>
-            </div>
-          </span>
-          <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span></span></span></span>
-              <p></p>
-              <div>
-                <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
-                <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening and closing braces, indentation styles and naming styles (e.g. whether to use <em>Hungarian style</em>, <em>Pascal casing</em>, <em>Camel casing</em>, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
-                <p>💡 IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
-              </div>
-              <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
-                        <question>
-                          <p>What is the recommended approach regarding coding standards?</p>
-                          <ul radio-group="5c5a1" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
-                          </ul>
-                          <div slot="answer">
-                            <p>c</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                        <question has-input="">
-                          <p>What is the aim of using a coding standard? How does it help?</p>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span></span></span></span>
-              <p></p>
-              <div>
-                <div class="alt-java">
-                  <p>Learn <em>basic</em> guidelines of the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard (by OSS-Generic)</a></p>
-                </div>
-                <div class="alt-python">
-                  <p>Sample coding standard: <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                    <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                       <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find basic coding standard violations">
-                          <question>
-                            <p>Consider the code given below:</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find basic coding standard violations">
+                            <question>
+                              <p>Consider the code given below:</p>
+                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;
@@ -653,247 +689,248 @@ MAX_SIZE = <span class="hljs-number">10</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }
 }
 </code></pre>
-                            <p>In what ways the code violate the <em>basic</em> guidelines (i.e., those marked with one ⭐️) of the OSS-Generic Java Coding Standard given <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">here</a>?</p>
-                            <div slot="hint">
-                              <p>Here are three:</p>
-                              <ul>
-                                <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
-                                <li>method name <code>printingDescription()</code> should be named as <code>printDescription()</code></li>
-                                <li>boolean variable <code>important</code> should be named to sound boolean e.g., <code>isImportant</code></li>
-                              </ul>
-                              <p>There are many more.</p>
-                            </div>
-                          </question>
-                        </panel>
+                              <p>In what ways the code violate the <em>basic</em> guidelines (i.e., those marked with one ⭐️) of the OSS-Generic Java Coding Standard given <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">here</a>?</p>
+                              <div slot="hint">
+                                <p>Here are three:</p>
+                                <ul>
+                                  <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
+                                  <li>method name <code>printingDescription()</code> should be named as <code>printDescription()</code></li>
+                                  <li>boolean variable <code>important</code> should be named to sound boolean e.g., <code>isImportant</code></li>
+                                </ul>
+                                <p>There are many more.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
                       </div>
-                    </div>
-                  </panel>
+                    </panel>
+                  </div>
                 </div>
               </div>
-            </div>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
-            <div>
-              <h2 id="guideline-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline-name-well"></a></h2>
-            </div>
-          </span>
-          <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span></span></span></span>
-              <p></p>
-              <div>
-                <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
-                <blockquote>
-                  <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
-                </blockquote>
-              </div>
-              <div></div>
-            </div>
+            </panel>
           </panel>
           <panel type="seamless" expanded="">
             <span slot="header" class="card-title">
               <div>
-                <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
+                <h2 id="guideline-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline-name-well"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Use Nouns for Things and Verbs for Actions<a class='fa fa-anchor' href='#use-nouns-for-things-and-verbs-for-actions'></a>" expanded="">
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
                       <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                     </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span></span></span></span>
+                <p></p>
+                <div>
+                  <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
+                  <blockquote>
+                    <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
+                  </blockquote>
+                </div>
+                <div></div>
+              </div>
+            </panel>
+            <panel type="seamless" expanded="">
+              <span slot="header" class="card-title">
+                <div>
+                  <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
+                </div>
+              </span>
+              <panel type="seamless" header="#### Use Nouns for Things and Verbs for Actions<a class='fa fa-anchor' href='#use-nouns-for-things-and-verbs-for-actions'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <blockquote>
+                      <p><span class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns. <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
+                    </blockquote>
+                    <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
+                    <tip-box>
+                      <p>Examples:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>Name for a</th>
+                              <th>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                              </th>
+                              <th>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Class</td>
+                              <td><code>CheckLimit</code></td>
+                              <td><code>LimitChecker</code></td>
+                            </tr>
+                            <tr>
+                              <td>method</td>
+                              <td><code>result()</code></td>
+                              <td><code>calculate()</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Examples:</p>
+                      <div class="alt-java">
+                        <p>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                        </p>
+                        <pre><code class="hljs java">Person student;
+ArrayList&lt;Person&gt; students;
+</code></pre>
+                      </div>
+                      <div class="alt-python">
+                        <p>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                        </p>
+                        <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
+students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
+</code></pre>
+                      </div>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </panel>
+              <panel type="seamless" header="#### Use Standard Words<a class='fa fa-anchor' href='#use-standard-words'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard words </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
+                  </div>
+                  <div></div>
+                </div>
+              </panel>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title">
+              <div>
+                <h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently"></a></h2>
+              </div>
+            </span>
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally but sufficiently</span></span></span></span>
                 <p></p>
                 <div>
                   <blockquote>
-                    <p><span class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns. <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
+                    <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
                   </blockquote>
-                  <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
-                  <tip-box>
-                    <p>Examples:</p>
-                    <div class="table-responsive">
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>Name for a</th>
-                            <th>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </th>
-                            <th>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Class</td>
-                            <td><code>CheckLimit</code></td>
-                            <td><code>LimitChecker</code></td>
-                          </tr>
-                          <tr>
-                            <td>method</td>
-                            <td><code>result()</code></td>
-                            <td><code>calculate()</code></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </tip-box>
-                  <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Examples:</p>
-                    <div class="alt-java">
-                      <p>
-                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                      </p>
-                      <pre><code class="hljs java">Person student;
-ArrayList&lt;Person&gt; students;
-</code></pre>
-                    </div>
-                    <div class="alt-python">
-                      <p>
-                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                      </p>
-                      <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
-students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
-</code></pre>
-                    </div>
-                  </tip-box>
+                  <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
                 </div>
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Use Standard Words<a class='fa fa-anchor' href='#use-standard-words'></a>" expanded="">
-              <div class="indented">
-                <span class="badge badge-light">
-                  <span><span class="dimmed">
-                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard words </span></span></span></span>
-                <p></p>
+            <panel type="seamless" expanded="">
+              <span slot="header" class="card-title">
                 <div>
-                  <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
+                  <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
                 </div>
-                <div></div>
-              </div>
-            </panel>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title">
-            <div>
-              <h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently"></a></h2>
-            </div>
-          </span>
-          <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-                <span><span class="dimmed">
-                    <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                  </span></span></span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally but sufficiently</span></span></span></span>
-              <p></p>
-              <div>
-                <blockquote>
-                  <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
-                </blockquote>
-                <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
-              </div>
-              <div></div>
-            </div>
-          </panel>
-          <panel type="seamless" expanded="">
-            <span slot="header" class="card-title">
-              <div>
-                <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
-              </div>
-            </span>
-            <panel type="seamless" header="#### Do Not Repeat the Obvious<a class='fa fa-anchor' href='#do-not-repeat-the-obvious'></a>" expanded="">
-              <div class="indented">
-                <span class="badge badge-light">
-                  <span><span class="dimmed">
-                      <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not repeat the obvious </span></span></span></span>
-                <p></p>
-                <div>
-                  <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
-                  <p>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                  </p>
-                  <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+              </span>
+              <panel type="seamless" header="#### Do Not Repeat the Obvious<a class='fa fa-anchor' href='#do-not-repeat-the-obvious'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not repeat the obvious </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
+                    <p>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                    </p>
+                    <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
 x++;
 
 <span class="hljs-comment">//trim the input</span>
 trimInput();
 </code></pre>
+                  </div>
+                  <div></div>
                 </div>
-                <div></div>
-              </div>
-            </panel>
-            <panel type="seamless" header="#### Write to the Reader<a class='fa fa-anchor' href='#write-to-the-reader'></a>" expanded="">
-              <div class="indented">
-                <span class="badge badge-light">
-                  <span><span class="dimmed">
-                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                    </span></span></span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: write to the reader </span></span></span></span>
-                <p></p>
-                <div>
-                  <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class or an operation to explain its purpose.</p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Examples:</p>
-                    <div class="alt-java">
-                      <div>
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
-                        </p>
-                        <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+              </panel>
+              <panel type="seamless" header="#### Write to the Reader<a class='fa fa-anchor' href='#write-to-the-reader'></a>" expanded="">
+                <div class="indented">
+                  <span class="badge badge-light">
+                    <span><span class="dimmed">
+                        <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      </span></span></span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: write to the reader </span></span></span></span>
+                  <p></p>
+                  <div>
+                    <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class or an operation to explain its purpose.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Examples:</p>
+                      <div class="alt-java">
+                        <div>
+                          <p>
+                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
+                          </p>
+                          <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                        </p>
-                        <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                          <p>
+                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                          </p>
+                          <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
+                        </div>
                       </div>
-                    </div>
-                    <div class="alt-python">
-                      <div>
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
-                        </p>
-                        <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+                      <div class="alt-python">
+                        <div>
+                          <p>
+                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
+                          </p>
+                          <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                        </p>
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                          <p>
+                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                          </p>
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
     ...
 </code></pre>
+                        </div>
                       </div>
-                    </div>
-                  </tip-box>
+                    </tip-box>
+                  </div>
+                  <div></div>
                 </div>
-                <div></div>
-              </div>
+              </panel>
             </panel>
           </panel>
-        </panel>
+        </div>
       </div>
     </div>
   </div>
@@ -901,7 +938,7 @@ trimInput();
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 07:53:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
 </footer>
 </div>
 </body>

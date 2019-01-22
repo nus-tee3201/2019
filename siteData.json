@@ -41,6 +41,7 @@
       "title": "Textbook Chapter : Software Architecture",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/architecture.md",
       "layout": "default"
@@ -67,6 +68,7 @@
       "title": "Textbook Chapter : Code Quality",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/codeQuality.md",
       "layout": "default"
@@ -182,6 +184,7 @@
       "title": "Textbook Chapter : C++ to Java",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/cppToJava.md",
       "layout": "default"
@@ -195,6 +198,7 @@
       "title": "Textbook Chapter : Software Design",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/design.md",
       "layout": "default"
@@ -210,6 +214,7 @@
       "title": "Textbook Chapter : Design Approaches",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designApproaches.md",
       "layout": "default"
@@ -223,6 +228,7 @@
       "title": "Textbook Chapter : Design Fundamentals",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designFundamentals.md",
       "layout": "default"
@@ -251,6 +257,7 @@
       "title": "Textbook Chapter : Software Design Patterns",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designPatterns.md",
       "layout": "default"
@@ -270,6 +277,7 @@
       "title": "Textbook Chapter : Documentation",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/documentation.md",
       "layout": "default"
@@ -286,6 +294,7 @@
       "title": "Textbook Chapter : Error Handling",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/errorHandling.md",
       "layout": "default"
@@ -304,6 +313,7 @@
       "title": "Textbook Chapter : Gathering Requirements",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gatheringRequirements.md",
       "layout": "default"
@@ -329,6 +339,7 @@
       "title": "Textbook Chapter : Git and Github",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gitAndGithub.md",
       "layout": "default"
@@ -343,6 +354,7 @@
       "title": "Textbook Chapter : IDEs",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/ides.md",
       "layout": "default"
@@ -360,6 +372,7 @@
       "title": "Textbook Chapter : Integration",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/integration.md",
       "layout": "default"
@@ -378,6 +391,7 @@
       "title": "Textbook Chapter : Intellij IDEA",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/intellij.md",
       "layout": "default"
@@ -392,6 +406,7 @@
       "title": "Textbook Chapter : Java",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/javaTools.md",
       "layout": "default"
@@ -405,6 +420,7 @@
       "title": "Textbook Chapter : JUnit",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/junit.md",
       "layout": "default"
@@ -420,6 +436,7 @@
       "title": "Textbook Chapter : Modeling",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/modeling.md",
       "layout": "default"
@@ -452,6 +469,7 @@
       "title": "Textbook Chapter : Object-Oriented Programming",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/oop.md",
       "layout": "default"
@@ -474,6 +492,7 @@
       "title": "Textbook Chapter : Principles",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/principles.md",
       "layout": "default"
@@ -496,6 +515,7 @@
       "title": "Textbook Chapter : SDLC Process Models",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/processModels.md",
       "layout": "default"
@@ -513,6 +533,7 @@
       "title": "Textbook Chapter : Project Planning",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/projectPlanning.md",
       "layout": "default"
@@ -529,6 +550,7 @@
       "title": "Textbook Chapter : Quality Assurance",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/qualityAssurance.md",
       "layout": "default"
@@ -542,6 +564,7 @@
       "title": "Textbook Chapter : Refactoring",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/refactoring.md",
       "layout": "default"
@@ -557,6 +580,7 @@
       "title": "Textbook Chapter : Requirements",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/requirements.md",
       "layout": "default"
@@ -579,6 +603,7 @@
       "title": "Textbook Chapter : Reuse",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/reuse.md",
       "layout": "default"
@@ -592,6 +617,7 @@
       "title": "Textbook Chapter : Revision Control",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/revisionControl.md",
       "layout": "default"
@@ -605,6 +631,7 @@
       "title": "Textbook Chapter : Software Engineering",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/softwareEngineering.md",
       "layout": "default"
@@ -627,6 +654,7 @@
       "title": "Textbook Chapter : Specifying Requirements",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/specifyingRequirements.md",
       "layout": "default"
@@ -639,6 +667,7 @@
       "title": "Textbook Chapter : Teamwork",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/teamwork.md",
       "layout": "default"
@@ -666,6 +695,7 @@
       "title": "Textbook Chapter : Test Case Design",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testCaseDesign.md",
       "layout": "default"
@@ -696,6 +726,7 @@
       "title": "Textbook Chapter : Testing",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testing.md",
       "layout": "default"
@@ -735,6 +766,7 @@
       "title": "Textbook Chapter : UML",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/uml.md",
       "layout": "default"

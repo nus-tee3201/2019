@@ -2187,3 +2187,40 @@
 2019-01-22T07:52:23.536Z - info: [3:52:23 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\while\e-vending-legitCoins.md
 2019-01-22T07:53:32.526Z - info: Website generation started at 3:53:27 PM
 2019-01-22T07:53:34.226Z - info: Building assets...
+2019-01-22T07:53:35.992Z - info: Assets built
+2019-01-22T07:53:35.993Z - info: Generating pages...
+2019-01-22T07:54:11.818Z - info: Pages built
+2019-01-22T07:54:21.275Z - info: Website generation complete! Total build time: 53.354s
+2019-01-22T07:54:21.275Z - info: Build success!
+2019-01-22T07:54:21.275Z - info: Generate Site durationMs=53355
+2019-01-22T07:54:21.281Z - info: Site data built
+2019-01-22T07:55:23.468Z - info: Deployed!
+2019-01-22T07:58:19.819Z - info: Website generation started at 3:58:17 PM
+2019-01-22T07:58:21.537Z - info: Building assets...
+2019-01-22T07:58:23.351Z - info: Assets built
+2019-01-22T07:58:23.351Z - info: Generating pages...
+2019-01-22T07:59:00.085Z - info: Pages built
+2019-01-22T07:59:10.213Z - info: Website generation complete! Total build time: 53.177s
+2019-01-22T07:59:10.225Z - info: Generate Site durationMs=53190
+2019-01-22T07:59:10.571Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-01-22T07:59:10.571Z - info: Press CTRL+C to stop ...
+2019-01-22T07:59:10.603Z - info: Site data built
+2019-01-22T08:01:33.448Z - info: [4:01:33 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\index.md
+2019-01-22T08:01:34.455Z - info: Rebuilding affected source files
+2019-01-22T08:01:34.456Z - info: Rebuilding 2 pages
+2019-01-22T08:01:35.463Z - info: Pages rebuilt
+2019-01-22T08:01:35.473Z - info: Site data built
+2019-01-22T08:02:07.074Z - info: [4:02:07 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\se-book-adapted\chapters\chapter.njk
+2019-01-22T08:02:08.094Z - info: Assets built
+2019-01-22T08:02:23.217Z - info: Website generation started at 4:02:20 PM
+2019-01-22T08:02:25.174Z - info: Building assets...
+2019-01-22T08:02:26.973Z - info: Assets built
+2019-01-22T08:02:26.974Z - info: Generating pages...
+2019-01-22T08:03:04.757Z - info: Pages built
+2019-01-22T08:03:14.108Z - info: Website generation complete! Total build time: 53.774s
+2019-01-22T08:03:14.120Z - info: Generate Site durationMs=53786
+2019-01-22T08:03:14.452Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-01-22T08:03:14.453Z - info: Press CTRL+C to stop ...
+2019-01-22T08:03:14.487Z - info: Site data built
+2019-01-22T08:57:06.277Z - info: Website generation started at 4:57:03 PM
+2019-01-22T08:57:08.021Z - info: Building assets...
