@@ -4,7 +4,7 @@
 
 {{ input | safe }}
   </td>
-  <td>&nbsp;→&nbsp;</td>
+  <td><span id="arrow">&nbsp;→&nbsp;</span></td>
   <td>
 
 {{ output | safe }}

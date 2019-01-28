@@ -10,7 +10,7 @@ A variable must be in the global scope or the local scope; it cannot be in both.
 
 <sub>%%[Some parts of the above explanation were adapted from [_Automate the Boring Stuff_](https://automatetheboringstuff.com/chapter3/)]%%</sub>
 
-Consider the code given below, apparently from a program related to a farm, with the global scope and the local scope of each function indicated by shaded areas.<br>
+Consider the code given below %%(apparently, from a program related to a farm)%%. The global scope and the local scope of each function indicated by shaded areas.<br>
 <img src="{{baseUrl}}/programming/functions-scope/images/scopeAsShadedAreas.png" width="500" />
 
 Note the following rules about scope:
@@ -65,11 +65,7 @@ total cows after breeding: 5
 </tr>
 </table>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+<include src="tryYourOwn.md" boilerplate><span id="program">functions-breedCows</span></include>
 
 </tip-box>
 
