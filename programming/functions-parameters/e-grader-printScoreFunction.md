@@ -21,6 +21,12 @@ print('Exam    :', '=' * (exam_score//5))
 print('Total   :', '=' * (total_score//5))
 print('Grade   :', grade)
 ```
+Read the above code to understand how it works. Do you remember <trigger trigger="click" for="printScoreFunction-operators">the meaning of `//` operator</trigger> used in the code above?
+
+<modal large title="%%Programming Basics » Expressions, Data Types, Variables »%%" id="printScoreFunction-operators">
+  <include src="../operators/text.md"/>
+</modal>
+
 Add a `print_score` function to the code and replace the following three lines,
   
 ```python
@@ -29,7 +35,7 @@ print('Exam    :', '=' * (exam_score//5))
 print('Total   :', '=' * (total_score//5))
 ```
 
-with these three lines
+with these three lines,
   
 ```python
 print_score('Project :', project_score)

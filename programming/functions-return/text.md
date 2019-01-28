@@ -21,16 +21,11 @@ def play():
 print('Player1 response : ' + play())
 print('Player2 response : ' + play())
 ```
-
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+<include src="tryYourOwn.md" boilerplate ><span id="program">rps-play-only</span></include>
 
 </tip-box>
 
-**You can use an empty `return` statement to return from the function without executing the remainder of the function**.
+**You can use an empty `return` statement to return from the function without executing the remainder of the function**, even if the function does not return anything.
 
 <tip-box> 
 
@@ -55,12 +50,7 @@ def print_all_products(n1, n2, n3):
 print_all_products(2,3,4)
 print_all_products(0,2,3)
 ```
-
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+<include src="tryYourOwn.md" boilerplate ><span id="program">print-all-products</span></include>
 
 </tip-box>
 

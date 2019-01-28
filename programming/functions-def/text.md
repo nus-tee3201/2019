@@ -54,11 +54,7 @@ Nice to meet you.
 
 Note how the statements inside the function are not executed unless the method is called.
 
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+<include src="tryYourOwn.md" boilerplate><span id="program">hello-function</span></include>
 
 </tip-box>
 
@@ -70,7 +66,7 @@ The function definition should appear in the code _before_ it is called.
 <tr>
   <td>
 
-:+1: this works
+{{ good }} (this works)
 ```python
 print('starting ...')
 
@@ -82,16 +78,16 @@ print('Going to say hello ...')
 say_hello()
 ```
   </td>
-  <td>&nbsp;→&nbsp;</td>
+  <td>&nbsp;&nbsp;</td>
   <td>
   
-:-1: this doesn't work
+{{ bad }} (this will not work!)
 ```python
 print('starting ...')
 print('Going to say hello ...')
 
 # call appears before definition
-say_hello() 
+say_hello()
 
 def say_hello():
   print('Hello!')
