@@ -55,7 +55,7 @@
               <img src="/2019/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
               <p></p>
               <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
-              <pre class="hljs"><code>COLORS
+              <pre><code class="hljs">COLORS
 ------
 blue
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
@@ -68,21 +68,21 @@ white
 </code></pre>
               <p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and a line starting with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting with <code>=======</code>.</p>
               <p>This is the conflicting part that is coming from the <code>master</code> branch:</p>
-              <pre class="hljs"><code>
+              <pre><code class="hljs">
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 black
 =======
 
 </code></pre>
               <p>This is the conflicting part that is coming from the <code>fix1</code> branch:</p>
-              <pre class="hljs"><code>
+              <pre><code class="hljs">
 =======
 green
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
 
 </code></pre>
               <p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
-              <pre class="hljs"><code>COLORS
+              <pre><code class="hljs">COLORS
 ------
 blue
 black
@@ -102,7 +102,7 @@ white
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

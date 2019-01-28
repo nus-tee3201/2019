@@ -60,19 +60,19 @@
 <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="current">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html">Appendix C: The Monty Project</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a current">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix C: The Monty Project</a></li>
     </ul>
   </div>
   <div id="site-nav-btn-wrap">
@@ -90,8 +90,8 @@
             <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
             <dropdown text="Schedule" class="nav-link">
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
               <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
               <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -167,7 +167,7 @@ alice = Employee()
 print(type(alice))
 </code></pre>
                 <p>⤵️ <span class="dimmed">Note how the type of each object is given as <code>&lt;class 'Employee'&gt;</code> i.e., a class with name <code>Employee</code>.</span></p>
-                <pre class="hljs"><code>&lt;class 'Employee'&gt;
+                <pre><code class="hljs">&lt;class 'Employee'&gt;
 &lt;class 'Employee'&gt;
 </code></pre>
               </tip-box>
@@ -195,7 +195,7 @@ p.write(<span class="hljs-string">'It was a dark night ...'</span>)
                     </td>
                       <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                      <pre class="hljs"><code>writing: It was a dark night ...
+                      <pre><code class="hljs">writing: It was a dark night ...
 </code></pre>
                       <p></p>
                     </td>
@@ -226,7 +226,7 @@ tom = Person(<span class="hljs-string">'Tom'</span>)
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>Person object Tom initialized!
+                      <pre><code class="hljs">Person object Tom initialized!
 </code></pre>
                       <p></p>
                     </td>
@@ -250,7 +250,7 @@ book1 = Book(<span class="hljs-string">'The Jungle Book'</span>, <span class="hl
 book2 = Book(<span class="hljs-string">'The Art of War'</span>, <span class="hljs-string">'Sun Tzu'</span>)
 </code></pre>
                 <p>⤵️</p>
-                <pre class="hljs"><code>Book info: The Jungle Book /by Leo Tolstoy
+                <pre><code class="hljs">Book info: The Jungle Book /by Leo Tolstoy
 Book info: The Art of War /by Sun Tzu
 </code></pre>
               </tip-box>
@@ -268,7 +268,7 @@ book1.describe()
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>Title: The Jungle Book
+                      <pre><code class="hljs">Title: The Jungle Book
 Author: Leo Tolstoy
 Book info: The Jungle Book /by Leo Tolstoy
 </code></pre>
@@ -303,7 +303,7 @@ my_list.show_authors()
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>Leo Tolstoy
+                      <pre><code class="hljs">Leo Tolstoy
 Sun Tzu
 </code></pre>
                       <p></p>
@@ -333,7 +333,7 @@ print(b.info())
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre class="hljs"><code>Item info: Apple
+                        <pre><code class="hljs">Item info: Apple
 Apple
 Item info: Bag of Beans
 Item info: Bananas
@@ -386,7 +386,7 @@ print(<span class="hljs-string">'total students:'</span>, ben.total_students)
 print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
 </code></pre>
                 <p>⤵️</p>
-                <pre class="hljs"><code>total students: 1
+                <pre><code class="hljs">total students: 1
 total students: 1
 Amy course count: 0
 total students: 2
@@ -436,7 +436,7 @@ p2.print_text()
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>All Printers disabled
+                      <pre><code class="hljs">All Printers disabled
 All Printers enabled
 blah blah
 yak yak
@@ -483,7 +483,7 @@ print(Subject.limit_reached(<span class="hljs-number">100</span>))
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre class="hljs"><code>total subjects: 0
+                        <pre><code class="hljs">total subjects: 0
 total subjects: 1
 True
 False
@@ -569,7 +569,7 @@ print(<span class="hljs-string">'info:'</span>, a.get_info())
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>currency: $
+                      <pre><code class="hljs">currency: $
 status: OK
 info: ['OK']
 </code></pre>
@@ -590,7 +590,7 @@ print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>minimum allowed: 10.0
+                      <pre><code class="hljs">minimum allowed: 10.0
 owner: Adam
 more info: ['OK', 'Adam']
 </code></pre>
@@ -611,7 +611,7 @@ print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class=
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>AttributeError: type object 'Account' has no attribute '__max'...
+                      <pre><code class="hljs">AttributeError: type object 'Account' has no attribute '__max'...
 AttributeError: 'Account' object has no attribute '__balance'...
 AttributeError: 'Account' object has no attribute '__get_income'...
 </code></pre>
@@ -647,7 +647,7 @@ print(s.__max_expenditure())
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre class="hljs"><code>0.99
+                        <pre><code class="hljs">0.99
 100000
 99000.0
 </code></pre>
@@ -687,7 +687,7 @@ amy.print_info()
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>My name is Amy
+                      <pre><code class="hljs">My name is Amy
 </code></pre>
                       <p></p>
                     </td>
@@ -717,7 +717,7 @@ print(<span class="hljs-string">'the name is'</span>, dan.name)
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>My name is Dan
+                      <pre><code class="hljs">My name is Dan
 Dan is teaching
 the name is Dan
 </code></pre>
@@ -752,7 +752,7 @@ guppy.move()
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre class="hljs"><code>I'm a Tuna
+                        <pre><code class="hljs">I'm a Tuna
 I'm swimming
 I'm a Guppy
 I'm swimming
@@ -794,7 +794,7 @@ ben.learn()
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>Ben is a student
+                      <pre><code class="hljs">Ben is a student
 Ben is learning
 </code></pre>
                       <p></p>
@@ -874,7 +874,7 @@ penguin.move()
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre class="hljs"><code>I'm a Crow
+                        <pre><code class="hljs">I'm a Crow
 I have feathers
 I'm flying
 I'm a Penguin
@@ -914,7 +914,7 @@ print(book)
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>Book title: Python for Beginners
+                      <pre><code class="hljs">Book title: Python for Beginners
 </code></pre>
                       <p></p>
                     </td>
@@ -942,7 +942,7 @@ print(Person(<span class="hljs-string">'Ben'</span>, <span class="hljs-number">2
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre class="hljs"><code>Amy (25years)
+                        <pre><code class="hljs">Amy (25years)
 Ben (26years)
 </code></pre>
                       </td>
@@ -1013,7 +1013,7 @@ elsie.grade()
                     </td>
                       <td valign="bottom"> → <br><br></td>
                       <td valign="bottom">
-                      <pre class="hljs"><code>Elsie is a teacher
+                      <pre><code class="hljs">Elsie is a teacher
 Elsie is teaching
 Elsie is learning
 Elsie is grading
@@ -1051,7 +1051,7 @@ iphone.play_game()
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre class="hljs"><code>My model: iPhone
+                        <pre><code class="hljs">My model: iPhone
 taking photo
 making call
 playing game
@@ -1083,7 +1083,7 @@ playing game
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -989,7 +989,8 @@
       "headings": {
         "the-monty-project": "The Monty Project",
         "monty-1": "Monty 1",
-        "monty-2": "Monty 2"
+        "monty-2": "Monty 2",
+        "monty-3": "Monty 3"
       },
       "title": "Python Basics: The Monty Project",
       "footer": "footer.md",

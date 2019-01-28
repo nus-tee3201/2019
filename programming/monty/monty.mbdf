@@ -67,5 +67,62 @@ print('>>> Bye!')
 
 </div>
 {{ hr_double }}
+<div id="monty3">
+
+### Monty 3
+
+Restructure the [Monty 2 code]({{ baseUrl }}/programming/toc/monty.html#monty-2) to fit the following structure, while keeping the behavior same as Monty 2.
+
+```python
+import sys
+
+
+# ADD MISSING METHODS
+
+
+def main():
+    print_greeting()
+    while True:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+```
+
+<panel type="seamless" header="Partial solution">
+
+```python
+import sys
+
+def is_exit_confirmed():
+    print('>>> Are you sure? y/n')
+    response = input()
+    return response == 'y'
+
+
+def execute_command(command):
+    if command == '':
+        return
+    elif command == 'exit':
+        if is_exit_confirmed():
+            print('>>> Bye!')
+            sys.exit()
+    # ...
+
+
+def main():
+    print_greeting()
+    while True:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+```
+</panel>
+
+</div>
+{{ hr_double }}
 
 %%Remaining increments to be added soon.%%

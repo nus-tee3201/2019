@@ -52,19 +52,19 @@
 <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="current">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html">Appendix C: The Monty Project</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a current">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix C: The Monty Project</a></li>
     </ul>
   </div>
   <div id="site-nav-btn-wrap">
@@ -82,8 +82,8 @@
             <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
             <dropdown text="Schedule" class="nav-link">
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
               <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
               <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -152,7 +152,7 @@
                     </td>
                       <td> → </td>
                       <td>
-                      <pre class="hljs"><code>Traceback (most recent call last):
+                      <pre><code class="hljs">Traceback (most recent call last):
   File &quot;python&quot;, line 1
     if 5 &gt; 4
            ^
@@ -195,11 +195,11 @@ divide(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
                     </td>
                       <td> → <br><br><br><br></td>
                       <td>
-                      <pre class="hljs"><code>Starting calculation
+                      <pre><code class="hljs">Starting calculation
 50 / 5 = 10.0
 Calculation over!........
 </code></pre>
-                      <pre class="hljs"><code>Starting calculation
+                      <pre><code class="hljs">Starting calculation
 Traceback (most recent call last):
   File &quot;python&quot;, line 9, in &lt;module&gt;
   File &quot;python&quot;, line 4, in divide
@@ -233,12 +233,12 @@ divide2(<span class="hljs-number">3</span>, <span class="hljs-number">1.5</span>
                       <td> → </td>
                       <td><br><br>
                       <p>[<a target="_blank" href="https://goo.gl/rc8X9h">visualize</a>]<br></p>
-                      <pre class="hljs"><code>Starting calculation
+                      <pre><code class="hljs">Starting calculation
 Cannot divide by zero
 Calculation over!........
 
 </code></pre>
-                      <pre class="hljs"><code>Starting calculation
+                      <pre><code class="hljs">Starting calculation
 3 / 1.5 = 2.0
 Calculation over!........
 </code></pre>
@@ -262,7 +262,7 @@ Calculation over!........
                     </td>
                       <td>&nbsp;→&nbsp;<br><br><br><br></td>
                       <td>
-                      <pre class="hljs"><code>Starting calculation
+                      <pre><code class="hljs">Starting calculation
 Traceback (most recent call last):
   File &quot;python&quot;, line 24, in &lt;module&gt;
   File &quot;python&quot;, line 16, in divide2
@@ -298,11 +298,11 @@ divide3(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</spa
                     </td>
                       <td> → </td>
                       <td><br><br><br><br><br><br>
-                      <pre class="hljs"><code>Calculating 3 / 0
+                      <pre><code class="hljs">Calculating 3 / 0
 Cannot divide by zero
 Calculation over!........
 </code></pre>
-                      <pre class="hljs"><code>Calculating 3 / abc
+                      <pre><code class="hljs">Calculating 3 / abc
 Cannot divide non-numbers
 Calculation over!........
 </code></pre>
@@ -333,11 +333,11 @@ divide4(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</spa
                     </td>
                       <td> → </td>
                       <td><br><br><br><br>
-                      <pre class="hljs"><code>Calculating 3 / 0
+                      <pre><code class="hljs">Calculating 3 / 0
 Incorrect inputs
 Calculation over!........
 </code></pre>
-                      <pre class="hljs"><code>Calculating 3 / abc
+                      <pre><code class="hljs">Calculating 3 / abc
 Incorrect inputs
 Calculation over!........
 </code></pre>
@@ -364,7 +364,7 @@ print(get_head([]))
                     </td>
                       <td><br><br><br><br><br><br> → </td>
                       <td><br><br><br><br><br><br>
-                      <pre class="hljs"><code>List too short
+                      <pre><code class="hljs">List too short
 </code></pre>
                       <p></p>
                     </td>
@@ -389,7 +389,7 @@ print(get_head2(<span class="hljs-number">2</span>))
                     </td>
                       <td><br><br><br><br><br><br> → </td>
                       <td><br><br><br><br><br><br>
-                      <pre class="hljs"><code>Something wrong
+                      <pre><code class="hljs">Something wrong
 </code></pre>
                       <p></p>
                     </td>
@@ -411,7 +411,7 @@ print(<span class="hljs-string">'You entered'</span>, value)
 </code></pre>
                   <p>However, users may not follow that assumption. If the user were to enter a non-integer string, the program crashes. To avoid such crashes, programs need to do <em>input validation</em> i.e., perform checks on inputs to ensure their validity.</p>
                   <p>Update the above code so that it accepts integers only, and produces the behavior given below.</p>
-                  <pre class="hljs"><code>Input an integer: x
+                  <pre><code class="hljs">Input an integer: x
 That is not an integer, try again
 Input an integer: 5.5
 That is not an integer, try again
@@ -472,7 +472,7 @@ hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span
                       <td><br><br><br><br><br><br><br><br><br><br><br><br> → </td>
                       <td><br><br><br><br><br><br><br><br><br><br><br>
                       <p>[<a target="_blank" href="https://goo.gl/tsteqe">visualize</a>]<br></p>
-                      <pre class="hljs"><code>Cannot hide ends: Not enough items
+                      <pre><code class="hljs">Cannot hide ends: Not enough items
 ['_', 1, 2, 3, '_']
 </code></pre>
                       <p></p>
@@ -505,7 +505,7 @@ hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span
                       <td><br><br><br><br><br><br><br><br> → </td>
                       <td><br><br><br><br><br><br><br><br><br>
                       <p>[<a target="_blank" href="https://goo.gl/EGkxAW">visualize</a>]<br></p>
-                      <pre class="hljs"><code>Cannot hide ends: Not enough items
+                      <pre><code class="hljs">Cannot hide ends: Not enough items
 hide_ends2 failed: Not enough items
 </code></pre>
                       <p></p>
@@ -537,7 +537,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
 check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>x is an int in range y - z ? Value error: x is not an integer
+                  <pre><code class="hljs">x is an int in range y - z ? Value error: x is not an integer
 3 is an int in range y - z ? No
 2 is an int in range 3.4 - 5 ? Value error: 3.4 is not an integer
 2 is an int in range 3 - [] ? Value error: [] is not an integer
@@ -639,7 +639,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                         <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
                       </ul>
                       <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
-                      <pre class="hljs"><code>========================================================
+                      <pre><code class="hljs">========================================================
 Welcome to the WORD GAME
 Give all four-letter words you know, one word at a time
 Enter the word 'end' to exit
@@ -678,7 +678,7 @@ Thank you for playing the WORD GAME
                     </div>
                   </modal>
                   <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
-                  <pre class="hljs"><code>========================================================
+                  <pre><code class="hljs">========================================================
 Welcome to the FLEXIBLE WORD GAME
 Enter the word size (4 to 8): xyz
 That is not a number. Try again
@@ -724,7 +724,7 @@ Thank you for playing the FLEXIBLE WORD GAME
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

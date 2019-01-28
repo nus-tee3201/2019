@@ -2224,3 +2224,11 @@
 2019-01-22T08:03:14.487Z - info: Site data built
 2019-01-22T08:57:06.277Z - info: Website generation started at 4:57:03 PM
 2019-01-22T08:57:08.021Z - info: Building assets...
+2019-01-22T08:57:09.820Z - info: Assets built
+2019-01-22T08:57:09.820Z - info: Generating pages...
+2019-01-22T08:57:48.796Z - info: Pages built
+2019-01-22T08:58:00.608Z - info: Website generation complete! Total build time: 57.419s
+2019-01-22T08:58:00.609Z - info: Build success!
+2019-01-22T08:58:00.609Z - info: Generate Site durationMs=57420
+2019-01-22T08:58:00.616Z - info: Site data built
+2019-01-22T08:59:06.137Z - info: Deployed!

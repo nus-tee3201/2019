@@ -34,8 +34,8 @@
       <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
       <dropdown text="Schedule" class="nav-link">
         <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+        <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
         <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
         <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -115,7 +115,7 @@ alice = Employee()
 print(type(alice))
 </code></pre>
               <p>⤵️ <span class="dimmed">Note how the type of each object is given as <code>&lt;class 'Employee'&gt;</code> i.e., a class with name <code>Employee</code>.</span></p>
-              <pre class="hljs"><code>&lt;class 'Employee'&gt;
+              <pre><code class="hljs">&lt;class 'Employee'&gt;
 &lt;class 'Employee'&gt;
 </code></pre>
             </tip-box>
@@ -143,7 +143,7 @@ p.write(<span class="hljs-string">'It was a dark night ...'</span>)
                   </td>
                     <td valign="bottom"> → <br><br></td>
                   <td valign="bottom">
-                    <pre class="hljs"><code>writing: It was a dark night ...
+                    <pre><code class="hljs">writing: It was a dark night ...
 </code></pre>
                     <p></p>
                   </td>
@@ -174,7 +174,7 @@ tom = Person(<span class="hljs-string">'Tom'</span>)
                   </td>
                     <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                    <pre class="hljs"><code>Person object Tom initialized!
+                    <pre><code class="hljs">Person object Tom initialized!
 </code></pre>
                     <p></p>
                   </td>
@@ -198,7 +198,7 @@ book1 = Book(<span class="hljs-string">'The Jungle Book'</span>, <span class="hl
 book2 = Book(<span class="hljs-string">'The Art of War'</span>, <span class="hljs-string">'Sun Tzu'</span>)
 </code></pre>
               <p>⤵️</p>
-              <pre class="hljs"><code>Book info: The Jungle Book /by Leo Tolstoy
+              <pre><code class="hljs">Book info: The Jungle Book /by Leo Tolstoy
 Book info: The Art of War /by Sun Tzu
 </code></pre>
             </tip-box>
@@ -216,7 +216,7 @@ book1.describe()
                   </td>
                     <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                    <pre class="hljs"><code>Title: The Jungle Book
+                    <pre><code class="hljs">Title: The Jungle Book
 Author: Leo Tolstoy
 Book info: The Jungle Book /by Leo Tolstoy
 </code></pre>
@@ -251,7 +251,7 @@ my_list.show_authors()
                   </td>
                     <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                    <pre class="hljs"><code>Leo Tolstoy
+                    <pre><code class="hljs">Leo Tolstoy
 Sun Tzu
 </code></pre>
                     <p></p>
@@ -281,7 +281,7 @@ print(b.info())
                     </td>
                     <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                     <td valign="bottom">
-                      <pre class="hljs"><code>Item info: Apple
+                      <pre><code class="hljs">Item info: Apple
 Apple
 Item info: Bag of Beans
 Item info: Bananas
@@ -334,7 +334,7 @@ print(<span class="hljs-string">'total students:'</span>, ben.total_students)
 print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
 </code></pre>
               <p>⤵️</p>
-              <pre class="hljs"><code>total students: 1
+              <pre><code class="hljs">total students: 1
 total students: 1
 Amy course count: 0
 total students: 2
@@ -384,7 +384,7 @@ p2.print_text()
                   </td>
                     <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                    <pre class="hljs"><code>All Printers disabled
+                    <pre><code class="hljs">All Printers disabled
 All Printers enabled
 blah blah
 yak yak
@@ -431,7 +431,7 @@ print(Subject.limit_reached(<span class="hljs-number">100</span>))
                     </td>
                     <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                     <td valign="bottom">
-                      <pre class="hljs"><code>total subjects: 0
+                      <pre><code class="hljs">total subjects: 0
 total subjects: 1
 True
 False
@@ -517,7 +517,7 @@ print(<span class="hljs-string">'info:'</span>, a.get_info())
                   </td>
                     <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                    <pre class="hljs"><code>currency: $
+                    <pre><code class="hljs">currency: $
 status: OK
 info: ['OK']
 </code></pre>
@@ -538,7 +538,7 @@ print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
                   </td>
                     <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                    <pre class="hljs"><code>minimum allowed: 10.0
+                    <pre><code class="hljs">minimum allowed: 10.0
 owner: Adam
 more info: ['OK', 'Adam']
 </code></pre>
@@ -559,7 +559,7 @@ print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class=
                   </td>
                     <td valign="bottom"> → <br><br></td>
                     <td valign="bottom">
-                    <pre class="hljs"><code>AttributeError: type object 'Account' has no attribute '__max'...
+                    <pre><code class="hljs">AttributeError: type object 'Account' has no attribute '__max'...
 AttributeError: 'Account' object has no attribute '__balance'...
 AttributeError: 'Account' object has no attribute '__get_income'...
 </code></pre>
@@ -595,7 +595,7 @@ print(s.__max_expenditure())
                     </td>
                     <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                     <td valign="bottom">
-                      <pre class="hljs"><code>0.99
+                      <pre><code class="hljs">0.99
 100000
 99000.0
 </code></pre>
@@ -615,7 +615,7 @@ print(s.__max_expenditure())
             <h1 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a-installing-3rd-party-modules"></a></h1>
             <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
             <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
-            <pre class="hljs"><code>pip --version
+            <pre><code class="hljs">pip --version
 </code></pre>
             <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
             <tip-box>
@@ -623,7 +623,7 @@ print(s.__max_expenditure())
               <pre><code class="hljs bash">pip install colorama
 </code></pre>
               <p>⤵️</p>
-              <pre class="hljs"><code>Collecting colorama
+              <pre><code class="hljs">Collecting colorama
   Downloading colorama-0.3.9-py2.py3-none-any.whl
 Installing collected packages: colorama
 Successfully installed colorama-0.3.9
@@ -789,7 +789,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
                                   <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Classes for CityConnect app">
                                     <question has-input="true">
                                       <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
-                                      <pre class="hljs"><code>Welcome to CityConnect!
+                                      <pre><code class="hljs">Welcome to CityConnect!
 
 Enter command: addroute Clementi BuonaVista 12
 Route from Clementi to BuonaVista with distance 12km added
@@ -1706,7 +1706,7 @@ Enter command: exit
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

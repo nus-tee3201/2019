@@ -57,19 +57,19 @@
 <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="current">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html">Appendix C: The Monty Project</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a current">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix C: The Monty Project</a></li>
     </ul>
   </div>
   <div id="site-nav-btn-wrap">
@@ -87,8 +87,8 @@
             <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
             <dropdown text="Schedule" class="nav-link">
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
               <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
               <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -146,7 +146,7 @@
                       <li>Filename: <code>home.jpg</code></li>
                       <li>Path: <code>C:\photos\2018</code> (Windows uses the back slash <code>\</code> as the <em>separator</em> symbol in paths )</li>
                       <li>Folders in the path (<code>C:</code> is called the <em>root folder</em>):
-                        <pre class="hljs"><code>C: {root}
+                        <pre><code class="hljs">C: {root}
   ˪ photos
       ˪ 2018
 </code></pre>
@@ -161,7 +161,7 @@
                       <li>Filename: <code>home.jpg</code></li>
                       <li>Path: <code>/Users/john</code> (OS-X/Linux uses the forward slash <code>/</code> as the <em>separator</em> symbol in paths )</li>
                       <li>Folders in the path (the <code>/</code> at the start of the path is considered the <em>root folder</em>):
-                        <pre class="hljs"><code>/ {root}
+                        <pre><code class="hljs">/ {root}
   ˪ Users
       ˪ john
 </code></pre>
@@ -191,7 +191,7 @@ print(os.getcwd())
                     </td>
                       <td><br><br><br><br><br> → </td>
                       <td><br><br><br><br><br>
-                      <pre class="hljs"><code>C:\modules\te3201
+                      <pre><code class="hljs">C:\modules\te3201
 C:\temp\python
 C:\modules\te3201
 </code></pre>
@@ -305,7 +305,7 @@ os.removedirs(<span class="hljs-string">'ex\\w1'</span>)
                     </td>
                       <td><br><br><br><br><br> → </td>
                       <td><br><br><br><br><br>
-                      <pre class="hljs"><code>C:\repos\nus-te3201\sample-code
+                      <pre><code class="hljs">C:\repos\nus-te3201\sample-code
 C:\repos\nus-te3201\sample-code\ex\w1
 C:\repos\nus-te3201\sample-code\ex
 </code></pre>
@@ -397,7 +397,7 @@ check(<span class="hljs-string">'bar'</span>)
 
 </code></pre>
                   <p>⤵️ output when run in <a href="http://REPL.it">REPL.it</a></p>
-                  <pre class="hljs"><code>/home/runner
+                  <pre><code class="hljs">/home/runner
 /home/runner/foo
 /home/runner
 /home/runner
@@ -458,7 +458,7 @@ f.close()
                       <td><br><br> → </td>
                       <td><br><br>
                       Output (contents of the <code>items.txt</code>):
-                      <pre class="hljs"><code>first line
+                      <pre><code class="hljs">first line
 second line
 third line
 </code></pre>
@@ -480,7 +480,7 @@ print(items) <span class="hljs-comment"># print as a list</span>
 f.close()
 </code></pre>
                 <p>⤵️</p>
-                <pre class="hljs"><code>['first line\n', 'second line\n', 'third line\n']
+                <pre><code class="hljs">['first line\n', 'second line\n', 'third line\n']
 first line
 second line
 third line
@@ -525,17 +525,17 @@ analyze_file(<span class="hljs-string">'file2.txt'</span>)
 
 </code></pre>
                   <p><code>file1.txt</code> (2 lines, 22 letters):</p>
-                  <pre class="hljs"><code>aaa bbb ccc
+                  <pre><code class="hljs">aaa bbb ccc
 ddd eee fff
 </code></pre>
                   <p><code>file2.txt</code> (4 lines, 10 letters -- note: the <mark>last line has a trailing space</mark>, which adds up to 10 letters):</p>
-                  <pre class="hljs"><code>a
+                  <pre><code class="hljs">a
 bb
 ccc
 ddd 
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
+                  <pre><code class="hljs">lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
 stats: {'lines': 2, 'letters': 22}
 lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
 stats: {'lines': 4, 'letters': 10}
@@ -580,7 +580,7 @@ f.write(<span class="hljs-string">'second line\n'</span>)
 f.close()
 </code></pre>
                 <p>⤵️ contents of the <code>items.txt</code>:</p>
-                <pre class="hljs"><code>first line
+                <pre><code class="hljs">first line
 second line
 </code></pre>
                 <ul>
@@ -596,7 +596,7 @@ f.write(<span class="hljs-string">'third line\n'</span>)
 f.close()
 </code></pre>
                 <p>⤵️ contents of the <code>items.txt</code>:</p>
-                <pre class="hljs"><code>first line
+                <pre><code class="hljs">first line
 second line
 third line
 </code></pre>
@@ -651,16 +651,16 @@ process_file(<span class="hljs-string">'file2a.txt'</span>, <span class="hljs-st
 
 </code></pre>
                   <p><code>file1a.txt</code>:</p>
-                  <pre class="hljs"><code>first line
+                  <pre><code class="hljs">first line
 
 second line
 third line
 </code></pre>
                   <p><code>file2a.txt</code>:</p>
-                  <pre class="hljs"><code>hang in there
+                  <pre><code class="hljs">hang in there
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>['1. first line\n', '2. \n', '3. second line\n', '4. third line']
+                  <pre><code class="hljs">['1. first line\n', '2. \n', '3. second line\n', '4. third line']
 ['1. hang in there']
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
@@ -691,7 +691,7 @@ third line
                 <table>
                   <tr>
                       <td>
-                      <pre class="hljs"><code>4/11/2017,Alice Bee,4
+                      <pre><code class="hljs">4/11/2017,Alice Bee,4
 5/11/2017,Chris Ding,12
 5/11/2017,Brenda Chew,13
 6/11/2017,Dan Pillai,5
@@ -725,7 +725,7 @@ deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># cre
 deliveries_file.close() <span class="hljs-comment"># close file</span>
 </code></pre>
                 <p>⤵️</p>
-                <pre class="hljs"><code>['4/11/2017', 'Alice Bee', '4']
+                <pre><code class="hljs">['4/11/2017', 'Alice Bee', '4']
 ['5/11/2017', 'Chris Ding', '12']
 ['5/11/2017', 'Brenda Chew', '13']
 ['6/11/2017', 'Dan Pillai', '5']
@@ -741,7 +741,7 @@ print(<span class="hljs-string">'Date:'</span>, row[<span class="hljs-number">0<
 ...
 </code></pre>
                 <p>... will give you the output shown below:</p>
-                <pre class="hljs"><code>Date: 4/11/2017 	Recipient: Alice Bee 	Quantity: 4
+                <pre><code class="hljs">Date: 4/11/2017 	Recipient: Alice Bee 	Quantity: 4
 Date: 5/11/2017 	Recipient: Chris Ding 	Quantity: 12
 Date: 5/11/2017 	Recipient: Brenda Chew 	Quantity: 13
 Date: 6/11/2017 	Recipient: Dan Pillai 	Quantity: 5
@@ -761,7 +761,7 @@ print(<span class="hljs-string">'Total quantity delivered:'</span>, total)
 deliveries_file.close()
 </code></pre>
                 <p>⤵️</p>
-                <pre class="hljs"><code>Total quantity delivered: 34
+                <pre><code class="hljs">Total quantity delivered: 34
 </code></pre>
               </tip-box>
               <p><strong>The <code>csv</code> module also provide an easy way to write to CSV files, one row at a time, using a <code>Write</code> object.</strong></p>
@@ -774,7 +774,7 @@ output_writer.writerow([<span class="hljs-string">'bananas'</span>, <span class=
 output_file.close() <span class="hljs-comment"># close file</span>
 </code></pre>
                 <p>The <code>pricelist.csv</code> file will now contain:</p>
-                <pre class="hljs"><code>apples,1,1.5,True
+                <pre><code class="hljs">apples,1,1.5,True
 bananas,3,2.0,False
 </code></pre>
                 <ul>
@@ -792,7 +792,7 @@ bananas,3,2.0,False
                     <tr>
                         <td>
                         <p><code>itemlist1.csv</code>:</p>
-                        <pre class="hljs"><code>item,price
+                        <pre><code class="hljs">item,price
 book,10.0
 bag,50.0
 &quot;pens, pencils&quot;, 5.0
@@ -834,7 +834,7 @@ bag,50.0
                     <tr>
                         <td>
                         <p><code>updated_itemlist1.csv</code>:</p>
-                        <pre class="hljs"><code>item,price,GST
+                        <pre><code class="hljs">item,price,GST
 book,10.0,0.7
 bag,50.0,3.5
 &quot;pens, pencils&quot;, 5.0,0.35
@@ -937,7 +937,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

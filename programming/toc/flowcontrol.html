@@ -66,19 +66,19 @@
 <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="current">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html">Appendix C: The Monty Project</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a current">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix C: The Monty Project</a></li>
     </ul>
   </div>
   <div id="site-nav-btn-wrap">
@@ -96,8 +96,8 @@
             <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
             <dropdown text="Schedule" class="nav-link">
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
               <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
               <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -315,7 +315,7 @@ result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</spa
               <h3 id="if-statements"><code>if</code> Statements<a class="fa fa-anchor" href="#if-statements"></a></h3>
               <p>Python uses the <code>if</code> statement to indicate that some code should only be executed if a certain condition is true.</p>
               <p>Format:</p>
-              <pre class="hljs"><code>if condition :
+              <pre><code class="hljs">if condition :
     statements_to_execute_if_true
 </code></pre>
               <p><span class="fas fa-cube"></span> The code below has two <code>if</code> statements; one evaluates to <code>true</code> while the other doesn't.</p>
@@ -337,7 +337,7 @@ print(<span class="hljs-string">'Done'</span>)
                   </div>
                   <div class="col align-self-end">
                     <p>output <span class="fas fa-level-down-alt"></span></p>
-                    <pre class="hljs"><code>50
+                    <pre><code class="hljs">50
 Expensive
 45
 Done
@@ -501,7 +501,7 @@ Grade   : NA
               <h3 id="while-statements"><code>while</code> Statements<a class="fa fa-anchor" href="#while-statements"></a></h3>
               <p><strong>Python uses the <code>while</code> statement to repeat a code block until a certain condition is true. Such an execution path is also known as a <em>loop</em> and each execution of the code block is called an <em>iteration</em>.</strong></p>
               <p>Format:</p>
-              <pre class="hljs"><code>while condition :
+              <pre><code class="hljs">while condition :
     statements_to_execute_if_condition_is_true
 </code></pre>
               <tip-box>
@@ -518,19 +518,21 @@ print(<span class="hljs-string">'Done'</span>)
                     </td>
                     <td>&nbsp;→&nbsp;</td>
                     <td>
-                      <pre class="hljs"><code>Hello
+                      <pre><code class="hljs">Hello
 Hello
 Hello
 Done
 </code></pre>
-                      <p>
-                        <trigger trigger="click" for="modal:multipleHello-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
-                      </p>
+                      <div>
+                        <p>
+                          <trigger trigger="click" for="modal:visualizeCodewithasimple`if`condition"><span class="dimmed">[Visualize execution]</span></trigger>
+                        </p>
+                        <modal large="" title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition">
+                          <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+                      </div>
                     </td>
                   </tr>
                 </table>
-                <modal large="" title="Code with a simple `if` condition" id="modal:multipleHello-pyTutor">
-                  <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=10&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                 <panel type="seamless" header="%%:computer: Try your own%%">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
@@ -578,7 +580,7 @@ print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
                       </td>
                       <td>&nbsp;→&nbsp;</td>
                       <td>
-                        <pre class="hljs"><code>Input a name: John
+                        <pre><code class="hljs">Input a name: John
 </code></pre>
                       </td>
                     </tr>
@@ -590,7 +592,7 @@ name = input()
                       </td>
                       <td>&nbsp;→&nbsp;</td>
                       <td>
-                        <pre class="hljs"><code>Input a name:
+                        <pre><code class="hljs">Input a name:
 John
 </code></pre>
                       </td>
@@ -607,7 +609,7 @@ print(<span class="hljs-string">'ABC'</span> + <span class="hljs-string">' '</sp
                       </td>
                       <td>&nbsp;→&nbsp;</td>
                       <td>
-                        <pre class="hljs"><code>
+                        <pre><code class="hljs">
 ABC 3 4.50
 ABC34.50
 ABC 3 4.50
@@ -815,7 +817,7 @@ Your balance: <span class="hljs-number">0</span>
               <h3 id="for-statements"><code>for</code> Statements<a class="fa fa-anchor" href="#for-statements"></a></h3>
               <p>You can <strong>use a <code>for</code> statement, together with the <code>range()</code> function, to repeat a code block a pre-determined number of times.</strong></p>
               <p>Format:</p>
-              <pre class="hljs"><code>for variable_used_as_index in range(number_of_times_to_repeat) :
+              <pre><code class="hljs">for variable_used_as_index in range(number_of_times_to_repeat) :
     statements_to_repeat
 </code></pre>
               <tip-box>
@@ -829,7 +831,7 @@ Your balance: <span class="hljs-number">0</span>
                     </td>
                     <td>&nbsp;→&nbsp;</td>
                     <td>
-                      <pre class="hljs"><code>0 Knock knock, Penny!
+                      <pre><code class="hljs">0 Knock knock, Penny!
 1 Knock knock, Penny!
 2 Knock knock, Penny!
 </code></pre>
@@ -1086,7 +1088,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

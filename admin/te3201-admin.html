@@ -31,19 +31,19 @@
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="#module-overview">Module Overview</a></li>
-      <li style="margin-top: 10px"><a href="#using-this-module-website">Using this module website</a></li>
-      <li style="margin-top: 10px"><a href="#instructors">Instructors</a></li>
-      <li style="margin-top: 10px"><a href="#lectures">Lectures</a></li>
-      <li style="margin-top: 10px"><a href="#tutorials">Tutorials</a></li>
-      <li style="margin-top: 10px"><a href="#textbook">Textbook</a></li>
-      <li style="margin-top: 10px"><a href="#programming-language">Programming Language</a></li>
-      <li style="margin-top: 10px"><a href="#project">Project</a></li>
-      <li style="margin-top: 10px"><a href="#assessment">Assessment</a></li>
-      <li style="margin-top:10px"><a href="#exam">Exam</a>
+      <li style="margin-top: 10px"><a href="#module-overview" class="site-nav__a">Module Overview</a></li>
+      <li style="margin-top: 10px"><a href="#using-this-module-website" class="site-nav__a">Using this module website</a></li>
+      <li style="margin-top: 10px"><a href="#instructors" class="site-nav__a">Instructors</a></li>
+      <li style="margin-top: 10px"><a href="#lectures" class="site-nav__a">Lectures</a></li>
+      <li style="margin-top: 10px"><a href="#tutorials" class="site-nav__a">Tutorials</a></li>
+      <li style="margin-top: 10px"><a href="#textbook" class="site-nav__a">Textbook</a></li>
+      <li style="margin-top: 10px"><a href="#programming-language" class="site-nav__a">Programming Language</a></li>
+      <li style="margin-top: 10px"><a href="#project" class="site-nav__a">Project</a></li>
+      <li style="margin-top: 10px"><a href="#assessment" class="site-nav__a">Assessment</a></li>
+      <li style="margin-top:10px"><a href="#exam" class="site-nav__a">Exam</a>
         <ul style="list-style-type: none; margin-left:-1em">
-          <li style="margin-top: 10px"><a href="#final-exam-part-1-mcq">Part 1</a></li>
-          <li style="margin-top: 10px"><a href="#final-exam-part-2-essay">Part 2</a></li>
+          <li style="margin-top: 10px"><a href="#final-exam-part-1-mcq" class="site-nav__a">Part 1</a></li>
+          <li style="margin-top: 10px"><a href="#final-exam-part-2-essay" class="site-nav__a">Part 2</a></li>
         </ul>
       </li>
     </ul>
@@ -62,8 +62,8 @@
           <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
           <dropdown text="Schedule" class="nav-link">
             <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
             <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
             <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
             <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -388,7 +388,7 @@
             <div>
               <h3 id="monty-1">Monty 1<a class="fa fa-anchor" href="#monty-1"></a></h3>
               <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
-              <pre class="hljs"><code>&gt;&gt;&gt; Hello, my name is Monty
+              <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
 &gt;&gt;&gt; What can I do for you?
 foo
 &gt;&gt;&gt; Your command is: foo
@@ -405,7 +405,7 @@ foo
             <div>
               <h3 id="monty-2">Monty 2<a class="fa fa-anchor" href="#monty-2"></a></h3>
               <p>Extend <a href="/2019/programming/toc/monty.html#monty-1">Monty 1 code</a> to work as follows:</p>
-              <pre class="hljs"><code>&gt;&gt;&gt; Hello, my name is Monty
+              <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
 &gt;&gt;&gt; What can I do for you?
 
 list
@@ -437,7 +437,54 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
             </div>
           </panel>
           <panel header="week3" expanded="">
-            <div></div>
+            <div>
+              <h3 id="monty-3">Monty 3<a class="fa fa-anchor" href="#monty-3"></a></h3>
+              <p>Restructure the <a href="/2019/programming/toc/monty.html#monty-2">Monty 2 code</a> to fit the following structure, while keeping the behavior same as Monty 2.</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-comment"># ADD MISSING METHODS</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+              <panel type="seamless" header="Partial solution">
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)
+    response = input()
+    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        <span class="hljs-keyword">if</span> is_exit_confirmed():
+            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
+            sys.exit()
+    <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+              </panel>
+            </div>
           </panel>
           <panel header="week4" expanded="">
             <div></div>
@@ -473,7 +520,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
           </li>
           <li>
             <p>Monty helps with storing and retrieving at least <strong>one type of data</strong> that is useful to the user. Some examples of different types of data (you can pick one or more of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a Monty that deals with TODO items:</p>
-            <pre class="hljs"><code>Hi, I'm Monty. How can I help you?
+            <pre><code class="hljs">Hi, I'm Monty. How can I help you?
 
 add Return library book
 &gt;&gt;&gt; TODO added: Return library book
@@ -783,7 +830,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

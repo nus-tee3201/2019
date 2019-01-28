@@ -58,19 +58,19 @@
 <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="current">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html">Appendix A: Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html">Appendix B: Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html">Appendix C: The Monty Project</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a current">Dictionaries</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix C: The Monty Project</a></li>
     </ul>
   </div>
   <div id="site-nav-btn-wrap">
@@ -88,8 +88,8 @@
             <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
             <dropdown text="Schedule" class="nav-link">
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
               <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
               <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -244,7 +244,7 @@ print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="h
 print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-keyword">True</span>))
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
+                  <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
 {'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
@@ -277,7 +277,7 @@ print(prices[<span class="hljs-string">'butter'</span>])
                     </td>
                       <td><br><br> → </td>
                       <td><br><br>
-                      <pre class="hljs"><code>&lt;class 'dict'&gt;
+                      <pre><code class="hljs">&lt;class 'dict'&gt;
 one
 5.0
 </code></pre>
@@ -301,7 +301,7 @@ print(<span class="hljs-string">'After deleting:'</span>, grades)
                     </td>
                       <td><br><br><br> → </td>
                       <td><br><br><br>
-                      <pre class="hljs"><code>After adding: {'TE3201': 'A', 'CS2103': 'B'}
+                      <pre><code class="hljs">After adding: {'TE3201': 'A', 'CS2103': 'B'}
 After updating: {'TE3201': 'A+', 'CS2103': 'B'}
 After deleting: {'TE3201': 'A+'}
 </code></pre>
@@ -339,7 +339,7 @@ delete_score(game1_scores, <span class="hljs-string">'dan'</span>)
 print(game1_scores)
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>36
+                  <pre><code class="hljs">36
 35
 {'amy': 35, 'betty': 36, 'charlie': 5, 'dan': 0}
 {'amy': 35, 'betty': 36, 'charlie': 5}
@@ -368,7 +368,7 @@ print(is_nice[<span class="hljs-string">'santa'</span>])
                     </td>
                       <td> → </td>
                       <td>
-                      <pre class="hljs"><code>Traceback (most recent call last):
+                      <pre><code class="hljs">Traceback (most recent call last):
   File &quot;python&quot;, line 9, in &lt;module&gt;
 KeyError: 'santa'
 </code></pre>
@@ -393,7 +393,7 @@ print(get_score1(game1_scores, <span class="hljs-string">'charlie'</span>))
 print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>30
+                  <pre><code class="hljs">30
 brown is not in the game!
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
@@ -421,7 +421,7 @@ brown is not in the game!
                     </td>
                       <td> → </td>
                       <td>
-                      <pre class="hljs"><code>bread -&gt; 3.5
+                      <pre><code class="hljs">bread -&gt; 3.5
 butter -&gt; 5.0
 banana -&gt; 0.15
 </code></pre>
@@ -438,7 +438,7 @@ banana -&gt; 0.15
                     </td>
                       <td> → </td>
                       <td>
-                      <pre class="hljs"><code>3.5
+                      <pre><code class="hljs">3.5
 5.0
 0.15
 </code></pre>
@@ -461,7 +461,7 @@ banana -&gt; 0.15
                     </td>
                       <td> → </td>
                       <td>
-                      <pre class="hljs"><code>banana -&gt; 0.15
+                      <pre><code class="hljs">banana -&gt; 0.15
 bread -&gt; 3.5
 butter -&gt; 5.0
 </code></pre>
@@ -492,7 +492,7 @@ print_scorecard(game2_scores)
 print(<span class="hljs-string">'total ='</span>, get_team_score(game2_scores))
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>aaron = 10
+                  <pre><code class="hljs">aaron = 10
 betty = 30
 zac = 35
 total = 75
@@ -522,7 +522,7 @@ print(<span class="hljs-string">'sugar'</span> <span class="hljs-keyword">not</s
                     </td>
                       <td> → </td>
                       <td>
-                      <pre class="hljs"><code>
+                      <pre><code class="hljs">
 True
 True
 </code></pre>
@@ -539,7 +539,7 @@ print(<span class="hljs-number">6.0</span> <span class="hljs-keyword">in</span> 
                     </td>
                       <td> → </td>
                       <td>
-                      <pre class="hljs"><code>
+                      <pre><code class="hljs">
 True
 False
 </code></pre>
@@ -568,7 +568,7 @@ add_bonus(game3_scores, <span class="hljs-string">'dan'</span>, <span class="hlj
 print(game3_scores)
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
+                  <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
@@ -608,7 +608,7 @@ total = <span class="hljs-number">0</span>
 print(<span class="hljs-string">'total tasks to do:'</span>, total)
 </code></pre>
                 <p>⤵️</p>
-                <pre class="hljs"><code>CS3281 assignments: ['do presentation']
+                <pre><code class="hljs">CS3281 assignments: ['do presentation']
 ['do presentation', 'study for exams']
 How many things to do in TE3201? 2
 total tasks to do: 4
@@ -649,7 +649,7 @@ total tasks to do: 4
 print(get_detailed_scores())
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
+                  <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
@@ -676,7 +676,7 @@ print(friends[<span class="hljs-string">'john'</span>][<span class="hljs-string"
     print(details[<span class="hljs-string">'name'</span>])
 </code></pre>
                 <p>⤵️</p>
-                <pre class="hljs"><code>Jan 12
+                <pre><code class="hljs">Jan 12
 John Doe
 Betsy Sims
 </code></pre>
@@ -707,7 +707,7 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>,
 print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>))
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>5
+                  <pre><code class="hljs">5
 2
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
@@ -722,7 +722,7 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span
                 <div>
                   <h4 id="exercise-grade-report">Exercise: Grade Report<a class="fa fa-anchor" href="#exercise-grade-report"></a></h4>
                   <p>Write a program that reads student grades one entry at a time and print a consolidated grade report at the end. Follow the sample output given below.</p>
-                  <pre class="hljs"><code>-----------------------------------------------------
+                  <pre><code class="hljs">-----------------------------------------------------
      ~ Welcome to Grade Report System ~
 * Enter one entry at a time in the format NAME GRADE
 * NAME should be one word
@@ -772,7 +772,7 @@ charlie : F
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>

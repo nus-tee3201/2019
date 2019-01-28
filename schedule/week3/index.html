@@ -34,8 +34,8 @@
       <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
       <dropdown text="Schedule" class="nav-link">
         <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+        <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+        <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
         <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
         <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
@@ -90,31 +90,32 @@
             <h3 id="writing-functions">Writing Functions<a class="fa fa-anchor" href="#writing-functions"></a></h3>
             <p><strong>You can write your own functions in Python.</strong> Function are useful when you want to execute a bunch of statements multiple times at different points of a program.</p>
             <p>Format:</p>
-            <pre class="hljs"><code>def function_name():
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">function_name</span><span class="hljs-params">()</span>:</span>
     statement_1
     statement_2
     ...
 </code></pre>
             <tip-box>
               <p><span class="fas fa-cube"></span> The code below defines a function named <code>say_hello</code> and calls it twice.</p>
-              <table>
-                <tr>
-                  <td>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">()</span>:</span>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">()</span>:</span>
   print(<span class="hljs-string">'Hello!'</span>)
   print(<span class="hljs-string">'How are you?'</span>)
   print(<span class="hljs-string">'Nice to meet you.'</span>)
-  
+
 <span class="hljs-comment"># call the function twice</span>
 print(<span class="hljs-string">'Going to call the function ...'</span>)
 say_hello()
 print(<span class="hljs-string">'Going to repeat ...'</span>)
 say_hello()
 </code></pre>
-                  </td>
-                  <td>&nbsp;→&nbsp;</td>
-                  <td>
-                    <pre class="hljs"><code>Going to call the function ...
+                    </td>
+                    <td><span id="arrow">&nbsp;→&nbsp;</span></td>
+                    <td>
+                      <pre><code class="hljs">Going to call the function ...
 Hello!
 How are you?
 Nice to meet you.
@@ -124,27 +125,34 @@ How are you?
 Nice to meet you.
 
 </code></pre>
-                    <p>
-                      <trigger trigger="click" for="modal:sayHelloFunction-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
-                    </p>
-                    <modal large="" title="Calling functions" id="modal:sayHelloFunction-pyTutor">
-                      <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
-                  </td>
-                </tr>
-              </table>
+                      <div>
+                        <p>
+                          <trigger trigger="click" for="modal:visualizeCallingfunctions"><span class="dimmed">[Visualize execution]</span></trigger>
+                        </p>
+                        <modal large="" title="Calling functions" id="modal:visualizeCallingfunctions">
+                          <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
               <p>Note how the statements inside the function are not executed unless the method is called.</p>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
                 <p></p>
-              </panel>
-              <p></p>
+              </div>
             </tip-box>
             <p>The function definition should appear in the code <em>before</em> it is called.</p>
             <tip-box>
               <table>
                 <tr>
                   <td>
-                    <p>👍 this works</p>
+                    <p>
+                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font> (this works)
+                    </p>
                     <pre><code class="hljs python">print(<span class="hljs-string">'starting ...'</span>)
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">()</span>:</span>
@@ -155,14 +163,16 @@ print(<span class="hljs-string">'Going to say hello ...'</span>)
 say_hello()
 </code></pre>
                   </td>
-                  <td>&nbsp;→&nbsp;</td>
+                  <td>&nbsp;&nbsp;</td>
                   <td>
-                    <p>👎 this doesn't work</p>
+                    <p>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> (this will not work!)
+                    </p>
                     <pre><code class="hljs python">print(<span class="hljs-string">'starting ...'</span>)
 print(<span class="hljs-string">'Going to say hello ...'</span>)
 
 <span class="hljs-comment"># call appears before definition</span>
-say_hello() 
+say_hello()
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">()</span>:</span>
   print(<span class="hljs-string">'Hello!'</span>)
@@ -197,7 +207,7 @@ say_hello()
                     </td>
                     <td>&nbsp;→&nbsp;</td>
                     <td>
-                      <pre class="hljs"><code>Hip
+                      <pre><code class="hljs">Hip
 Hip
 Hooray!
 
@@ -219,47 +229,51 @@ Hooray!
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
             <h3 id="function-parameters">Function Parameters<a class="fa fa-anchor" href="#function-parameters"></a></h3>
-            <p><strong>You can configure a function to have <em>parameters</em></strong>. The parameters can be used by the code inside the function like a variable. That means we can pass arguments (i.e., values for those parameters) to affect the behavior of a function so that the function behaves differently each time it is executed.</p>
+            <p><strong>You can configure a function to have <em>parameters</em>. The code inside the function can use the parameters like variables.</strong> That means we can pass arguments (i.e., values for those parameters) to affect the behavior of a function so that the function behaves differently each time it is executed.</p>
             <p>Format:</p>
-            <pre class="hljs"><code>def function_name(parameter1_name, parameter2_name, ...):
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">function_name</span><span class="hljs-params">(parameter1_name, parameter2_name, ...)</span>:</span>
     ...
 </code></pre>
-            <p>A note about terminology: a function can have <em>parameters</em> and when we call the function we can assign <em>arguments</em> (i.e. values) to each of those parameters.</p>
+            <p><strong><strong>Parameters vs arguments:</strong></strong> When you define a function, you can specify <em>parameters</em> that it can accept. When you call the function, you can assign <em>arguments</em> (i.e. values) to each of those parameters.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The <code>say_hello</code> function below takes one parameter. The first time we call it we pass the argument <code>Gina</code> to that parameter, and the next time we pass a different argument <code>John</code> to the same parameter.</p>
-              <table>
-                <tr>
-                  <td>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">(name)</span>:</span>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">(name)</span>:</span>
   print(<span class="hljs-string">'Hello '</span> + name)
   print(<span class="hljs-string">'How are you'</span>, name, <span class="hljs-string">'?'</span>)
-  
+
 say_hello(<span class="hljs-string">'Gina'</span>)
 say_hello(<span class="hljs-string">'John'</span>)
 </code></pre>
-                  </td>
-                  <td>&nbsp;→&nbsp;</td>
-                  <td>
-                    <pre class="hljs"><code>Hello Gina
+                    </td>
+                    <td><span id="arrow">&nbsp;→&nbsp;</span></td>
+                    <td>
+                      <pre><code class="hljs">Hello Gina
 How are you Gina ?
 Hello John
 How are you John ?
 
 </code></pre>
-                    <p>
-                      <trigger trigger="click" for="modal:sayHelloFunctionWithName-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
-                    </p>
-                    <modal large="" title="Calling functions with arguments" id="modal:sayHelloFunctionWithName-pyTutor">
-                      <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
-                  </td>
-                </tr>
-              </table>
+                      <div>
+                        <p>
+                          <trigger trigger="click" for="modal:visualizeCallingfunctionswitharguments"><span class="dimmed">[Visualize execution]</span></trigger>
+                        </p>
+                        <modal large="" title="Calling functions with arguments" id="modal:visualizeCallingfunctionswitharguments">
+                          <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
               <panel type="seamless" header="%%:computer: Try your own%%">
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
               <p></p>
-              <p><span class="fas fa-cube"></span> The code below has one function that takes one parameter and one that takes two. Furthermore, note how one function calls the other.</p>
+              <p><span class="fas fa-cube"></span> The code below has a <code>say_hello</code> function that takes one parameter and a <code>repeat_hello</code> function that takes two parameters. Furthermore, note how one function calls the other.</p>
               <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">(name)</span>:</span>
   print(<span class="hljs-string">'Knock knock '</span> + name)
 
@@ -271,12 +285,14 @@ How are you John ?
 repeat_hello(<span class="hljs-string">'Penny'</span>, <span class="hljs-number">3</span>)
 say_hello(<span class="hljs-string">'Sheldon'</span>)
 </code></pre>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
                 <p></p>
-              </panel>
-              <p></p>
-              <panel type="seamless" header="%%:laughing: See human version of the above code%%">
+              </div>
+              <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized="">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -323,12 +339,87 @@ print(<span class="hljs-string">'Exam    :'</span>, <span class="hljs-string">'=
 print(<span class="hljs-string">'Total   :'</span>, <span class="hljs-string">'='</span> * (total_score//<span class="hljs-number">5</span>))
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
+                <p>Read the above code to understand how it works. Do you remember <trigger trigger="click" for="printScoreFunction-operators">the meaning of <code>//</code> operator</trigger> used in the code above?</p>
+                <modal large="" title="%%Programming Basics » Expressions, Data Types, Variables »%%" id="printScoreFunction-operators">
+                    <div>
+                    <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
+                    <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th style="text-align:center">Operator</th>
+                            <th style="text-align:left">Operation</th>
+                            <th style="text-align:center">Example</th>
+                            <th style="text-align:center">Evaluates to...</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align:center"><code>+</code></td>
+                            <td style="text-align:left">Addition</td>
+                            <td style="text-align:center"><code>2 + 2</code></td>
+                            <td style="text-align:center"><code>4</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>-</code></td>
+                            <td style="text-align:left">Subtraction</td>
+                            <td style="text-align:center"><code>5 - 2</code></td>
+                            <td style="text-align:center"><code>3</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>*</code></td>
+                            <td style="text-align:left">Multiplication</td>
+                            <td style="text-align:center"><code>3 * 5</code></td>
+                            <td style="text-align:center"><code>15</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>/</code></td>
+                            <td style="text-align:left">Division</td>
+                            <td style="text-align:center"><code>22 / 8</code></td>
+                            <td style="text-align:center"><code>2.75</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>**</code></td>
+                            <td style="text-align:left">Exponent</td>
+                            <td style="text-align:center"><code>2 ** 3</code></td>
+                            <td style="text-align:center"><code>8</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>%</code></td>
+                            <td style="text-align:left">Modulus/remainder</td>
+                            <td style="text-align:center"><code>22 % 8</code></td>
+                            <td style="text-align:center"><code>6</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>//</code></td>
+                            <td style="text-align:left">Integer division</td>
+                            <td style="text-align:center"><code>22 // 8</code></td>
+                            <td style="text-align:center"><code>2</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
+                    <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
+<span class="hljs-number">22</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
+<span class="hljs-number">30</span>
+</code></pre>
+                    <panel type="seamless" header="%%:tv: Operators%%">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
+                    <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
+                      <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
+                      <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                    </panel>
+                  </div>
+                </modal>
                 <p>Add a <code>print_score</code> function to the code and replace the following three lines,</p>
                 <pre><code class="hljs python">print(<span class="hljs-string">'Project :'</span>, <span class="hljs-string">'='</span> * (project_score//<span class="hljs-number">5</span>))
 print(<span class="hljs-string">'Exam    :'</span>, <span class="hljs-string">'='</span> * (exam_score//<span class="hljs-number">5</span>))
 print(<span class="hljs-string">'Total   :'</span>, <span class="hljs-string">'='</span> * (total_score//<span class="hljs-number">5</span>))
 </code></pre>
-                <p>with these three lines</p>
+                <p>with these three lines,</p>
                 <pre><code class="hljs python">print_score(<span class="hljs-string">'Project :'</span>, project_score)
 print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
@@ -390,13 +481,15 @@ Grade   : A
 print(<span class="hljs-string">'Player1 response : '</span> + play())
 print(<span class="hljs-string">'Player2 response : '</span> + play())
 </code></pre>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
                 <p></p>
-              </panel>
-              <p></p>
+              </div>
             </tip-box>
-            <p><strong>You can use an empty <code>return</code> statement to return from the function without executing the remainder of the function</strong>.</p>
+            <p><strong>You can use an empty <code>return</code> statement to return from the function without executing the remainder of the function</strong>, even if the function does not return anything.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The <code>print_all_products</code> function below uses an empty <code>return</code> statement to return from the function early if one of the arguments is <code>0</code>:</p>
               <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_product</span><span class="hljs-params">(a, b)</span>:</span>
@@ -417,11 +510,13 @@ print(<span class="hljs-string">'Player2 response : '</span> + play())
 print_all_products(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>)
 print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
 </code></pre>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
                 <p></p>
-              </panel>
-              <p></p>
+              </div>
             </tip-box>
             <panel type="seamless" header="%%:tv: Returning values from functions%%">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=315&end=462&version=3" frameborder="0" allowfullscreen></iframe>
@@ -481,7 +576,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
             <p><strong>A <em>local scope</em> is a scope that applies only during the execution of a function.</strong> A local scope is created whenever a function is called. Parameters and variables that are assigned in the called function are said to exist in that function’s local scope. <strong>A variable that exists in a local scope is called a <em>local variable</em>.</strong> When the function returns, the local scope is destroyed, and these variables are forgotten. The next time you call this function, the local variables will not remember the values stored in them from the last time the function was called.</p>
             <p>A variable must be in the global scope or the local scope; it cannot be in both.</p>
             <p><sub><span class="dimmed">[Some parts of the above explanation were adapted from <a href="https://automatetheboringstuff.com/chapter3/"><em>Automate the Boring Stuff</em></a>]</span></sub></p>
-            <p>Consider the code given below, apparently from a program related to a farm, with the global scope and the local scope of each function indicated by shaded areas.<br>
+            <p>Consider the code given below <span class="dimmed">(apparently, from a program related to a farm)</span>. The global scope and the local scope of each function indicated by shaded areas.<br>
               <img src="/2019/programming/functions-scope/images/scopeAsShadedAreas.png" width="500"></p>
             <p>Note the following rules about scope:</p>
             <ul>
@@ -509,7 +604,7 @@ print(<span class="hljs-string">'total cows after breeding:'</span>, total_cows)
                 <tr>
                   <td>
                     <p><span class="fas fa-arrow-down"></span></p>
-                    <pre class="hljs"><code>total cows before breeding: 5
+                    <pre><code class="hljs">total cows before breeding: 5
 breeding cows
 total cows at the end of breeding: 10
 total cows after breeding: 10
@@ -518,7 +613,7 @@ total cows after breeding: 10
                   <td>&nbsp;&nbsp;</td>
                   <td>
                     <p><span class="fas fa-arrow-down"></span> without the <code>global total_cows</code> statement</p>
-                    <pre class="hljs"><code>total cows before breeding: 5
+                    <pre><code class="hljs">total cows before breeding: 5
 breeding cows
 total cows at the end of breeding: 10
 total cows after breeding: 5
@@ -526,11 +621,13 @@ total cows after breeding: 5
                   </td>
                 </tr>
               </table>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
                 <p></p>
-              </panel>
-              <p></p>
+              </div>
             </tip-box>
             <panel type="danger" header=":muscle: Exercise: Grader - Analyze Grades in a Loop" expanded="" no-close="">
               <div>
@@ -2444,7 +2541,56 @@ Grade   : A
         </div>
       </tab>
       <tab header="<span class='fas fa-drafting-compass'></span> Project">
-        <div></div>
+        <div>
+          <div>
+            <h3 id="monty-3">Monty 3<a class="fa fa-anchor" href="#monty-3"></a></h3>
+            <p>Restructure the <a href="/2019/programming/toc/monty.html#monty-2">Monty 2 code</a> to fit the following structure, while keeping the behavior same as Monty 2.</p>
+            <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-comment"># ADD MISSING METHODS</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+            <panel type="seamless" header="Partial solution">
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)
+    response = input()
+    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        <span class="hljs-keyword">if</span> is_exit_confirmed():
+            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
+            sys.exit()
+    <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+            </panel>
+          </div>
+        </div>
       </tab>
     </tabs>
   </div>
@@ -2452,7 +2598,7 @@ Grade   : A
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.0</a> at Tue, 22 Jan 2019 08:57:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
 </footer>
 </div>
 </body>
