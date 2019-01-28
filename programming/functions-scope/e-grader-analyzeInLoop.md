@@ -1,6 +1,6 @@
 #### Exercise : Grader - Analyze Grades in a Loop
 
-Write a program to analyze grades of multiple students. The grade analysis can be similar to <trigger trigger="click" for="modal:analyzeGradesInLoop-gradeAnalyzer">a grade analyzer you wrote in a previous exercise</trigger> but the program needs to repeat the process until the user chooses to stop.
+Take the program you wrote in the <trigger trigger="click" for="modal:analyzeGradesInLoop-restructureMain">previous exercise</trigger>. Enhance it to analyze grades in a loop until the user chooses to stop. A sample output is given below:
 ```python
 Enter project score: 10
 Enter exam score: 50
@@ -19,8 +19,7 @@ Total   : ===================
 Grade   : A
 Continue y/n? n
 ```
-You are ==required to divide your code into multiple functions==.
 
-<modal large title="" id="modal:analyzeGradesInLoop-gradeAnalyzer">
-  <include src="../if/e-grades.md"/>
+<modal large title="" id="modal:analyzeGradesInLoop-restructureMain">
+  <include src="e-grader-restructureTheMainFunction.md"/>
 </modal>
