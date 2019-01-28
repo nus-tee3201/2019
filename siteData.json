@@ -940,6 +940,8 @@
         "exercise-hip-hip-hooray": "Exercise : Hip Hip Hooray",
         "exercise-grader-print-score-function": "Exercise : Grader - print_score Function",
         "exercise-grader-calculate-grade-function": "Exercise : Grader - calculate_grade Function",
+        "exercise-grader-add-a-main-function": "Exercise : Grader - Add a main Function",
+        "exercise-grader-restructure-the-main-function": "Exercise : Grader - Restructure the main Function",
         "exercise-grader-analyze-grades-in-a-loop": "Exercise : Grader - Analyze Grades in a Loop",
         "functions": "Functions",
         "writing-functions": "Writing Functions",

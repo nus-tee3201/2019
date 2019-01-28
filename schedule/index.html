@@ -630,10 +630,213 @@ total cows after breeding: 5
                 <p></p>
               </div>
             </tip-box>
+            <panel type="danger" header=":muscle: Exercise: Grader - Add `main` Function" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-grader-add-a-main-function">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function"></a></h4>
+                <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
+                  Here is an example of how the code is likely to look like:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam &gt;= <span class="hljs-number">25</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>
+  <span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam &gt;= <span class="hljs-number">25</span>):
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'B'</span>
+  <span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'C'</span>
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'D'</span>
+
+project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+grade = calculate_grade(project_score, exam_score)
+
+print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+                <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-comment"># MOVE CODE HERE</span>
+
+main()
+</code></pre>
+                <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
+                <modal large="" title="" id="modal:graderMainFunction-graderCalculateGradeFunction">
+                    <div>
+                    <h4 id="exercise-grader-calculate-grade-function-2">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-2"></a></h4>
+                    <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
+
+project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+<span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+
+print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+                    <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+                    <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+</code></pre>
+                    <p>with the line,</p>
+                    <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+</code></pre>
+                    <p>without changing the external behavior of the program.</p>
+                  </div>
+                </modal>
+              </div>
+            </panel>
+            <panel type="danger" header=":muscle: Exercise: Grader - Restructure the `main` Function" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-grader-restructure-the-main-function">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function"></a></h4>
+                <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
+                  Restructure the <code>main</code> function so that its code looks as follows:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-comment"># ADD MISSING FUNCTIONS</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+  project_score = read_number(<span class="hljs-string">'Enter project score:'</span>)
+  exam_score = read_number(<span class="hljs-string">'Enter exam score:'</span>)
+  grade = calculate_grade(project_score, exam_score)
+  print_report(project_score, exam_score, grade)
+
+main()
+</code></pre>
+                <p>The external behavior of the code should remain as before.</p>
+                <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
+                <modal large="" title="" id="modal:graderRestructureMain-graderMainFunction">
+                    <div>
+                    <h4 id="exercise-grader-add-a-main-function-2">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-2"></a></h4>
+                    <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
+                      Here is an example of how the code is likely to look like:</p>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam &gt;= <span class="hljs-number">25</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>
+  <span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam &gt;= <span class="hljs-number">25</span>):
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'B'</span>
+  <span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'C'</span>
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'D'</span>
+
+project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+grade = calculate_grade(project_score, exam_score)
+
+print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+                    <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-comment"># MOVE CODE HERE</span>
+
+main()
+</code></pre>
+                    <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
+                    <modal large="" title="" id="modal:graderMainFunction-graderCalculateGradeFunction">
+                        <div>
+                        <h4 id="exercise-grader-calculate-grade-function-3">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-3"></a></h4>
+                        <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
+
+project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+<span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+
+print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+                        <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+</code></pre>
+                        <p>with the line,</p>
+                        <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+</code></pre>
+                        <p>without changing the external behavior of the program.</p>
+                      </div>
+                    </modal>
+                  </div>
+                </modal>
+              </div>
+            </panel>
             <panel type="danger" header=":muscle: Exercise: Grader - Analyze Grades in a Loop" expanded="" no-close="">
               <div>
                 <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop<a class="fa fa-anchor" href="#exercise-grader-analyze-grades-in-a-loop"></a></h4>
-                <p>Write a program to analyze grades of multiple students. The grade analysis can be similar to <trigger trigger="click" for="modal:analyzeGradesInLoop-gradeAnalyzer">a grade analyzer you wrote in a previous exercise</trigger> but the program needs to repeat the process until the user chooses to stop.</p>
+                <p>Take the program you wrote in the <trigger trigger="click" for="modal:analyzeGradesInLoop-restructureMain">previous exercise</trigger>. Enhance it to analyze grades in a loop until the user chooses to stop. A sample output is given below:</p>
                 <pre><code class="hljs python">Enter project score: <span class="hljs-number">10</span>
 Enter exam score: <span class="hljs-number">50</span>
 Total: <span class="hljs-number">60</span>
@@ -651,37 +854,118 @@ Total   : ===================
 Grade   : A
 Continue y/n? n
 </code></pre>
-                <p>You are <mark>required to divide your code into multiple functions</mark>.</p>
-                <modal large="" title="" id="modal:analyzeGradesInLoop-gradeAnalyzer">
+                <modal large="" title="" id="modal:analyzeGradesInLoop-restructureMain">
                     <div>
-                    <h4 id="exercise-grade-analyzer-2">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer-2"></a></h4>
-                    <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
-                    <pre><code class="hljs python">Enter project score:
-<span class="hljs-number">30</span>
+                    <h4 id="exercise-grader-restructure-the-main-function-2">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function-2"></a></h4>
+                    <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
+                      Restructure the <code>main</code> function so that its code looks as follows:</p>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  <span class="hljs-comment"># ...</span>
 
-Enter exam score:
-<span class="hljs-number">40</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-comment"># ...</span>
 
-Total: <span class="hljs-number">70</span>
+<span class="hljs-comment"># ADD MISSING FUNCTIONS</span>
 
-Project : ======
-Exam    : ========
-Total   : ==============
-Grade   : A
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+  project_score = read_number(<span class="hljs-string">'Enter project score:'</span>)
+  exam_score = read_number(<span class="hljs-string">'Enter exam score:'</span>)
+  grade = calculate_grade(project_score, exam_score)
+  print_report(project_score, exam_score, grade)
+
+main()
 </code></pre>
-                    <ul>
-                      <li>Note how the colons (<code>:</code>) are aligned.</li>
-                      <li>Note the extra blank lines in the expected output.</li>
-                      <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
-                      <li>Assume all inputs are positive integers.</li>
-                    </ul>
-                    <p>Grading rules:</p>
-                    <ul>
-                      <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
-                      <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
-                      <li><code>C</code>: at least 40 in total</li>
-                      <li><code>D</code>: otherwise</li>
-                    </ul>
+                    <p>The external behavior of the code should remain as before.</p>
+                    <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
+                    <modal large="" title="" id="modal:graderRestructureMain-graderMainFunction">
+                        <div>
+                        <h4 id="exercise-grader-add-a-main-function-3">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-3"></a></h4>
+                        <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
+                          Here is an example of how the code is likely to look like:</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam &gt;= <span class="hljs-number">25</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>
+  <span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam &gt;= <span class="hljs-number">25</span>):
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'B'</span>
+  <span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'C'</span>
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'D'</span>
+
+project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+grade = calculate_grade(project_score, exam_score)
+
+print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+                        <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-comment"># MOVE CODE HERE</span>
+
+main()
+</code></pre>
+                        <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
+                        <modal large="" title="" id="modal:graderMainFunction-graderCalculateGradeFunction">
+                            <div>
+                            <h4 id="exercise-grader-calculate-grade-function-4">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-4"></a></h4>
+                            <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
+
+project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+<span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+
+print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+                            <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+                            <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+</code></pre>
+                            <p>with the line,</p>
+                            <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+</code></pre>
+                            <p>without changing the external behavior of the program.</p>
+                          </div>
+                        </modal>
+                      </div>
+                    </modal>
                   </div>
                 </modal>
               </div>
@@ -2601,7 +2885,7 @@ main()
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 11:20:10 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 15:13:25 GMT</small></div>
 </footer>
 </div>
 </body>
