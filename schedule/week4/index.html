@@ -255,59 +255,14 @@ print(get_tail([<span class="hljs-string">'a'</span>, <span class="hljs-number">
           <div>
             <h3 id="object-references">Object References<a class="fa fa-anchor" href="#object-references"></a></h3>
             <p><strong>Objects of some Python <em>types</em> are <em>immutable</em>.</strong> An immutable object, once created, cannot be modified.</p>
-            <div class="table-responsive">
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Some immutable types</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>int</code></td>
-                    <td><code>float</code></td>
-                    <td><code>decimal</code></td>
-                    <td><code>complex</code></td>
-                  </tr>
-                  <tr>
-                    <td><code>bool</code></td>
-                    <td><code>string</code></td>
-                    <td><code>tuple</code></td>
-                    <td><code>range</code></td>
-                  </tr>
-                  <tr>
-                    <td><code>frozenset</code></td>
-                    <td><code>bytes</code></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <ul>
+              <li>Some immutable types you have seen already: <code>int</code>, <code>float</code>, <code>decimal</code>, <code>bool</code>, <code>string</code></li>
+              <li>Other immutable types: <code>complex</code>, <code>tuple</code>, <code>range</code>, <code>frozenset</code>, <code>bytes</code></li>
+            </ul>
             <p><strong>Objects of some other Python types are <em>mutable</em>.</strong> A mutable object can be modified during its lifetime.</p>
-            <div class="table-responsive">
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Some mutable types</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>list</code></td>
-                    <td><code>dict</code></td>
-                    <td><code>set</code></td>
-                    <td><code>bytearray</code></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <ul>
+              <li>Some mutable types: <code>list</code>, <code>dict</code>, <code>set</code>, <code>bytearray</code></li>
+            </ul>
             <tip-box>
               <p><span class="fas fa-cube"></span> In the example below, <code>i = 5</code> assigns an integer to <code>i</code>. Because integers are immutable, <code>i = i + 1</code> is not mutating the integer object <code>5</code>; rather, it is simply creating a new integer object <code>6</code> and assigning that to <code>i</code>. Similarly, <code>s = s + ' World!'</code> is not adding more letters to the existing string object <code>Hello</code>; ratehr, it is creating a new string object <code>'Hello World!'</code> and assigning that to <code>s</code>.</p>
               <pre><code class="hljs python">i = <span class="hljs-number">5</span>
@@ -329,7 +284,7 @@ numbers[<span class="hljs-number">0</span>] = <span class="hljs-number">4</span>
               <p><a href="https://automatetheboringstuff.com/images/000081.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000081.jpg" alt="" class="img-fluid"></a><br>
                 <sub>Image credit: <a href="https://automatetheboringstuff.com">AtBSwP</a></sub></p>
             </tip-box>
-            <p><strong>When you assign variables as <code>v1 = v2</code>, if <code>v2</code> is pointing to a mutable object, its object reference is copied to <code>v1</code></strong> so that now both <code>v1</code> and <code>v2</code> are pointing to the same object. However, <strong>if <code>v2</code> is pointing to a mutable object, <code>v1 = v2</code> results in each variable pointing to its own copy of the object</strong>.</p>
+            <p><strong>When you assign variables as <code>v1 = v2</code>, if <code>v2</code> is pointing to a mutable object, its object reference is copied to <code>v1</code></strong> so that now both <code>v1</code> and <code>v2</code> are pointing to the same object. However, <strong>if <code>v2</code> is pointing to an immutable object, <code>v1 = v2</code> results in each variable pointing to its own copy of the object</strong>.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> Continuing with the previous example, <code>cheese = spam</code> results in the object reference stored in <code>spam</code> being copied into the variable <code>cheese</code>. The end result is both variables are now pointing to the same list object.</p>
               <pre><code class="hljs python">cheese = spam
@@ -414,7 +369,7 @@ after foo: ['Hi', 2, 3]
               </table>
               <modal large="" title="`foo(items)`" id="modal:foo_items-pyTutor">
                 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20foo%28items%29%3A%0A%20%20items%5B0%5D%20%3D%20'Hi'%0A%20%20print%28'inside%20foo%3A',%20items%29%0A%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Afoo%28original%29%0Aprint%28'after%20foo%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
-              <p>Contrast the above example with the one below. The <code>bar(items)</code> function assigns a new list to <code>items</code> parameter. That means <code>items</code> is not longer pointing to the list object that was passed in as the argument. After the function is executed, the <code>original</code> list remains the same as before.</p>
+              <p>Contrast the above example with the one below. The <code>bar(items)</code> function assigns a new list to <code>items</code> parameter. That means <code>items</code> is no longer pointing to the list object that was passed in as the argument. After the function is executed, the <code>original</code> list remains the same as before.</p>
               <table>
                 <tr>
                     <td>
@@ -1884,7 +1839,7 @@ Thank you for playing the WORD GAME
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Mon, 28 Jan 2019 15:13:25 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Fri, 01 Feb 2019 15:21:24 GMT</small></div>
 </footer>
 </div>
 </body>
