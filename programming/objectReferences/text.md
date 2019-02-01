@@ -2,18 +2,13 @@
 
 **Objects of some Python _types_ are _immutable_.** An immutable object, once created, cannot be modified.
 
-Some immutable types| &nbsp; | &nbsp; | &nbsp;
---- | ----------------------- | ------ | ------
-`int` | `float` | `decimal` | `complex` |
- `bool` | `string` | `tuple` | `range` | 
-`frozenset` |`bytes` |
+* Some immutable types you have seen already: `int`, `float`, `decimal`, `bool`, `string`
+* Other immutable types: `complex`, `tuple`, `range`, `frozenset`, `bytes`
 
 
 **Objects of some other Python types are _mutable_.** A mutable object can be modified during its lifetime.
 
-Some mutable types| &nbsp; | &nbsp; | &nbsp;
---- | ----------------------- | ------ | ------
-`list` | `dict` | `set` | `bytearray` |
+* Some mutable types: `list`, `dict`, `set`, `bytearray`
 
 <tip-box> 
 
@@ -48,7 +43,7 @@ spam = [0, 1, 2, 3, 4, 5]
 
 </tip-box>
 
-**When you assign variables as `v1 = v2`, if `v2` is pointing to a mutable object, its object reference is copied to `v1`** so that now both `v1` and `v2` are pointing to the same object. However, **if `v2` is pointing to a mutable object, `v1 = v2` results in each variable pointing to its own copy of the object**.
+**When you assign variables as `v1 = v2`, if `v2` is pointing to a mutable object, its object reference is copied to `v1`** so that now both `v1` and `v2` are pointing to the same object. However, **if `v2` is pointing to an immutable object, `v1 = v2` results in each variable pointing to its own copy of the object**.
 
 <tip-box> 
 
@@ -158,7 +153,7 @@ after foo: ['Hi', 2, 3]
 
 </modal>
 
-Contrast the above example with the one below. The `bar(items)` function assigns a new list to `items` parameter. That means `items` is not longer pointing to the list object that was passed in as the argument. After the function is executed, the `original` list remains the same as before. 
+Contrast the above example with the one below. The `bar(items)` function assigns a new list to `items` parameter. That means `items` is no longer pointing to the list object that was passed in as the argument. After the function is executed, the `original` list remains the same as before.
 
 <table> 
 <tr>
