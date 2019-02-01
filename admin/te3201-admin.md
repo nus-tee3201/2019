@@ -137,8 +137,15 @@ When creating repl.it accounts, please use a username similar to your actual nam
   * The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.
   * Marks breakdown [40 marks]:
     * Midterm submission: [10 marks]
-    * Final submission: [30 marks]
-
+    * Final submission: [30 marks]<br><br>
+* ****Option C (mix of A and B):****
+  * Similar to option A, you should submit weekly exercises and project increments.
+  * Do the project ~~individually or~~ as a team of 2-3 members.
+  * Programming language: Python
+  * Marks breakdown [40 marks]:
+    * ==Weekly exercises  +  Weekly project increments [5 marks]==
+    * Midterm submission: [10 marks]
+    * Final submission: [25 marks]
 
 <modal large title="Project Increments" id="modal:admin-projectIncrements">
 
