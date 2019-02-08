@@ -7,28 +7,26 @@ You may find these built-in functions useful to this exercise:
 * `list(string)`: splits a string into a list of letters.<br>
   e.g., `'quick'.split()` → `['q', 'u', 'i', 'c', 'k']`
 
-<table>
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def is_anagram(word1, word2):
-  return 
+  return  # REPLACE WITH YOUR CODE
 
 print(is_anagram('santa', 'damith'))
 print(is_anagram('santa', 'satan'))
 ```
-  </td>
-  <td><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
-  
+</span>
+<span id="output">
+
 ```
 False
 True
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
+
 
 <panel type="seamless" header="%%:bulb: Hint%%">
 

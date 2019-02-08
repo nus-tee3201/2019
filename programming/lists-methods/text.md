@@ -20,7 +20,7 @@ print('Hamster is at', pets.index('Hamsters'))
 print('Dog is at', pets.index('Dogs'))
 
 pets.append('Parrots')
-print('After apending Parrots', pets)
+print('After appending Parrots', pets)
 
 pets.insert(1, 'Rabbits')
 print('After inserting Rabbits', pets)
@@ -34,21 +34,20 @@ print('After sorting', pets)
 pets.sort(reverse=True)
 print('After reverse-sorting', pets)
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 Hamster is at 2
 Dog is at 1
-After apending Parrots ['Cats', 'Dogs', 'Hamsters', 'Parrots']
+After appending Parrots ['Cats', 'Dogs', 'Hamsters', 'Parrots']
 After inserting Rabbits ['Cats', 'Rabbits', 'Dogs', 'Hamsters', 'Parrots']
 After removing Cats ['Rabbits', 'Dogs', 'Hamsters', 'Parrots']
 After sorting ['Dogs', 'Hamsters', 'Parrots', 'Rabbits']
 After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
 ```
-<panel type="seamless" header="%%:computer: Try your own%%">
 
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+<include src="tryYourOwn.md" boilerplate>
+  <span id="program">lists-methods</span>
+</include>
 
 </tip-box>
 
@@ -58,42 +57,34 @@ Note how in the example above `sort(reverse=True)` sorts the list in the reverse
 
 {{ icon_example }} The `print` function takes an optional parameter `end`. If you provide it with an empty string i.e., `end=''`, the function will not print a line break at the end. The example below illustrates the difference it makes.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 pets = ['Rabbits', 'Parrots', 'Hamsters']
 
 for animal in pets:
   print('{' + animal + '}')
-  
+
 for animal in pets:
   print('{' + animal + '}', end='')
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
-
-
-
 {Rabbits}
 {Parrots}
 {Hamsters}
 {Rabbits}{Parrots}{Hamsters}
-
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
 
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+<include src="tryYourOwn.md" boilerplate>
+  <span id="program">lists-methods</span>
+</include>
 
 </tip-box>
  
@@ -108,54 +99,44 @@ Note that **some methods <tooltip content="changes the value(s) of the object">m
 
 {{ icon_example }} In the example below, `lower()` (a _non-mutating_ method) returns a new string that is in lower case while the original string remains unchanged. However, `sort()` (a _mutating_ method) changes the list object it is attached to (and does not return anything).
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 name = 'JOHN DOE'
 print(name.lower()) # lower() is a non-mutating method
-print(name) 
+print(name)
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
-
-
 john doe
 JOHN DOE
 ```
-  </td>
-</tr>
-<tr>
-  <td>
+</span>
+</include>
+
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 names = ['Zoe', 'Adam', 'Norm']
 names.sort() # sort() is a mutating method
 print(names)
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
-
-
-
 ['Adam', 'Norm', 'Zoe']
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods-mutating?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+<include src="tryYourOwn.md" boilerplate>
+  <span id="program">methods-mutating</span>
+</include>
 
 </tip-box>
 

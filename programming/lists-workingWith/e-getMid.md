@@ -5,25 +5,22 @@ Complete the functions as described below:
 
 :bulb: follow the example in the code below when defining which element is considered the `middle` element when the list has an even number of elements.
 
-<table>
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def get_mid(item_list):
-  return
-  
+  return  # REPLACE WITH YOUR CODE
+
 print(get_mid(['a', 'b', 'c']))
 print(get_mid([1, 2, 3, 4]))
 ```
-  </td>
-  <td><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
-  
+</span>
+<span id="output">
+
 ```
 b
 3
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
