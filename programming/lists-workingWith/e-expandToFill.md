@@ -10,13 +10,13 @@ Complete the functions as described below:
 
 ```python
 def expand_to_fill(item_list, length):
-  return
+  return  # REPLACE WITH YOUR CODE
 
 meals = ['Rice', 'Bread', 'Noodles']
 print(expand_to_fill(meals, 5))
 print(expand_to_fill(meals, 7))
 ```
-:arrow_heading_down:
+{{ icon_output }}
   
 ```
 ['Rice', 'Bread', 'Noodles', 'Rice', 'Bread']

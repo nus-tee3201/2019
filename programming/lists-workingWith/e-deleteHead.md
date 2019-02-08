@@ -4,17 +4,16 @@ Complete the functions as described below:
 * `delete_head(item_list)`: deletes the first item in the list passed as `item_list` parameter.
 * `delete_tail(item_list)`: deletes the last item in the list passed as `item_list` parameter.
 
-<table>
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def delete_head(item_list):
   pass # REPLACE THIS WITH YOUR CODE
-  
+
 def delete_tail(item_list):
   pass # REPLACE THIS WITH YOUR CODE
-  
+
 letters = ['a', 'b', 'c']
 print(letters)
 delete_head(letters)
@@ -22,18 +21,16 @@ print(letters)
 delete_tail(letters)
 print(letters)
 ```
-  </td>
-  <td><br><br><br><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br><br><br><br><br><br>
-  
+</span>
+<span id="output">
+
 ```
 ['a', 'b', 'c']
 ['b', 'c']
 ['b']
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 

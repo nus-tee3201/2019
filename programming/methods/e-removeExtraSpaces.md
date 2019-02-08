@@ -11,9 +11,8 @@ You may find these built-in string functions useful:
 * `join(list_of_items)`: joins the items in the `list_of_items` using the given string.<br>
   e.g., `'-'.join(['a', 'b', 'c'])` → `'a-b-c'`
 
-<table>
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def remove_extra_spaces(text):
@@ -21,16 +20,14 @@ def remove_extra_spaces(text):
 
 print('[' + remove_extra_spaces('  aaa bbb   ccc  ') + ']')
 ```
-  </td>
-  <td><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
-  
+</span>
+<span id="output">
+
 ```
 [aaa bbb ccc]
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Hint%%">
 
