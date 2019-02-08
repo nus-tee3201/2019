@@ -6,29 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website - Modeling: Modeling Structures: Class Diagrams - Intermediate</title>
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-vue.min.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\font-awesome.min.css" >
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../../../markbind/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../../../../markbind/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
     
     
     
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
+<div id="loading-overlay">
+    <div id="spinner-layout">
+        <div id="spinner"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById("loading-overlay").style.display = 'initial';
+</script>
 <div id="app">
     <div id="content-wrapper">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
-      <li slot="right">
-        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-      </li>
-    </navbar>
-  </div>
   <div>
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <div class="website-content">
@@ -38,7 +38,7 @@
       <div>
         <div>
           <p>
-            <panel src="/2019\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Class Diagrams (Basic)%%" popup-url="/2019/book/modeling/modelingStructures/classDiagramsBasic"></panel>
+            <panel src="/2019/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Class Diagrams (Basic)%%" popup-url="/2019/book/modeling/modelingStructures/classDiagramsBasic"></panel>
           </p>
         </div>
         <p></p>
@@ -54,41 +54,41 @@
               <div class="indented">
                 <h5 id="modeling-inheritance">Modeling inheritance<a class="fa fa-anchor" href="#modeling-inheritance"></a></h5>
                 <p>
-                  <panel type="seamless" src="/2019\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Inheritance" fragment="main"></panel>
-                  <panel type="seamless" src="/2019\book\uml\classDiagrams\classInheritance\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Inheritance" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Inheritance" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/uml/classDiagrams/classInheritance/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Inheritance" fragment="main"></panel>
                 </p>
                 <h5 id="modeling-composition">Modeling composition<a class="fa fa-anchor" href="#modeling-composition"></a></h5>
                 <p>
-                  <panel type="seamless" src="/2019\book\oop\associations\composition\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Composition" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Composition" fragment="main"></panel>
-                  <panel type="seamless" src="/2019\book\uml\classDiagrams\composition\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Composition → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Composition" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/oop/associations/composition/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Composition" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Composition" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/uml/classDiagrams/composition/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Composition → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Composition" fragment="main"></panel>
                 </p>
                 <h5 id="modeling-aggregation">Modeling aggregation<a class="fa fa-anchor" href="#modeling-aggregation"></a></h5>
                 <p>
-                  <panel type="seamless" src="/2019\book\oop\associations\aggregation\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Aggregation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Aggregation" fragment="main"></panel>
-                  <panel type="seamless" src="/2019\book\uml\classDiagrams\aggregation\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Aggregation → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Aggregation" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/oop/associations/aggregation/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Aggregation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Aggregation" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/uml/classDiagrams/aggregation/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Aggregation → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Aggregation" fragment="main"></panel>
                 </p>
                 <h5 id="modeling-dependencies">Modeling dependencies<a class="fa fa-anchor" href="#modeling-dependencies"></a></h5>
                 <p>
-                  <panel type="seamless" src="/2019\book\oop\associations\dependencies\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Dependencies" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Dependencies" fragment="main"></panel>
-                  <panel type="seamless" src="/2019\book\uml\classDiagrams\dependencies\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Dependencies → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Dependencies" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/oop/associations/dependencies/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Dependencies" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Dependencies" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/uml/classDiagrams/dependencies/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Dependencies → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Dependencies" fragment="main"></panel>
                 </p>
               </div>
               <p><strong>A class diagram can also show different types of class-like entities:</strong></p>
               <div class="indented">
                 <h5 id="modeling-enumerations">Modeling enumerations<a class="fa fa-anchor" href="#modeling-enumerations"></a></h5>
                 <p>
-                  <panel type="seamless" src="/2019\book\oop\classes\enumerations\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Classes → Enumerations" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Enumerations" fragment="main"></panel>
-                  <panel type="seamless" src="/2019\book\uml\classDiagrams\enumerations\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Enumerations → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Enumerations" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/oop/classes/enumerations/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Classes → Enumerations" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Enumerations" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/uml/classDiagrams/enumerations/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Enumerations → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Enumerations" fragment="main"></panel>
                 </p>
                 <h5 id="modeling-abstract-classes">Modeling abstract classes<a class="fa fa-anchor" href="#modeling-abstract-classes"></a></h5>
                 <p>
-                  <panel type="seamless" src="/2019\book\oop\inheritance\abstractClasses\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → Abstract Classes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/AbstractClasses" fragment="main"></panel>
-                  <panel type="seamless" src="/2019\book\uml\classDiagrams\abstractClasses\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Abstract Classes → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AbstractClasses" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/oop/inheritance/abstractClasses/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → Abstract Classes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/AbstractClasses" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/uml/classDiagrams/abstractClasses/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Abstract Classes → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AbstractClasses" fragment="main"></panel>
                 </p>
                 <h5 id="modeling-interfaces">Modeling interfaces<a class="fa fa-anchor" href="#modeling-interfaces"></a></h5>
                 <p>
-                  <panel type="seamless" src="/2019\book\oop\inheritance\interfaces\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → Interfaces" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Interfaces" fragment="main"></panel>
-                  <panel type="seamless" src="/2019\book\uml\classDiagrams\interfaces\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Interfaces → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Interfaces" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/oop/inheritance/interfaces/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → Interfaces" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Interfaces" fragment="main"></panel>
+                  <panel type="seamless" src="/2019/book/uml/classDiagrams/interfaces/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Interfaces → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/Interfaces" fragment="main"></panel>
                 </p>
               </div>
             </div>
@@ -215,21 +215,17 @@
     </div>
   </div>
 </div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Fri, 01 Feb 2019 15:21:24 GMT</small></div>
-</footer>
 </div>
 </body>
-<script src="..\..\..\..\markbind\js\vue.min.js"></script>
-<script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
-<script src="..\..\..\..\markbind\js\bootstrap-utility.min.js"></script>
-<script src="..\..\..\..\markbind\js\polyfill.min.js"></script>
-<script src="..\..\..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script src="../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
+    const enableSearch = true
 </script>
-<script src="..\..\..\..\markbind\js\setup.js"></script>
-<script src="..\..\..\..\markbind\layouts\default\scripts.js"></script>
+<script src="../../../../markbind/js/setup.js"></script>
+<script src="../../../../markbind/layouts/default/scripts.js"></script>
 </html>

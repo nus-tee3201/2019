@@ -6,7 +6,6 @@
         "acknowledgements": "Acknowledgements"
       },
       "title": "About: Acknowledgements",
-      "footer": "footer.md",
       "src": "book/about/acknowledgements.md",
       "layout": "default"
     },
@@ -962,8 +961,8 @@
         "exercise-countries": "Exercise : Countries",
         "exercise-get-head-get-tail": "Exercise : Get Head, Get Tail",
         "exercise-swap-ends": "Exercise : Swap Ends",
-        "exercise-get-body": "Exercise : Get Body",
         "exercise-delete-head-delete-tail": "Exercise : Delete Head, Delete Tail",
+        "exercise-get-body": "Exercise : Get Body",
         "exercise-get-mid": "Exercise : Get Mid",
         "exercise-expand-to-fill": "Exercise : Expand to Fill",
         "exercise-xor": "Exercise : XOR",

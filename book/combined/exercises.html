@@ -6,19 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website</title>
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../markbind/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
     
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
+<div id="loading-overlay">
+    <div id="spinner-layout">
+        <div id="spinner"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById("loading-overlay").style.display = 'initial';
+</script>
 <div id="app">
     <div id="content-wrapper">
   <link rel="stylesheet" href="/2019/book/css/textbook.css">
@@ -28,9 +36,9 @@
     <div>
       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Choose the correct statement about requirements." expanded="">
         <panel header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Prerequisites" minimized="">
-          <panel src="/2019\book\requirements\introduction\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Introduction%%"></panel>
-          <panel src="/2019\book\requirements\nonFunctionalRequirements\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Non-Functional Requirements%%"></panel>
-          <panel src="/2019\book\gatheringRequirements\prototyping\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Gathering Requirements: Prototyping%%"></panel>
+          <panel src="/2019/book/requirements/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Introduction%%"></panel>
+          <panel src="/2019/book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Non-Functional Requirements%%"></panel>
+          <panel src="/2019/book/gatheringRequirements/prototyping/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Gathering Requirements: Prototyping%%"></panel>
         </panel>
         <p></p>
         <question>
@@ -59,9 +67,9 @@
     <div>
       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Class Diagrams vs Object Diagrams vs Sequence Diagrams" expanded="">
         <panel header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Prerequisites" expandable="" minimized="">
-          <panel src="/2019\book\modeling\modelingStructures\objectDiagrams\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Object Diagrams"></panel>
-          <panel src="/2019\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Class Diagrams"></panel>
-          <panel src="/2019\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Sequence Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingStructures/objectDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Object Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Class Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingBehaviors/sequenceDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Sequence Diagrams"></panel>
         </panel>
         <p></p>
         <question>
@@ -85,11 +93,11 @@
     <div>
       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one of these is the most useful to describe a workflow?" expanded="">
         <panel header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Prerequisites" expandable="" minimized="">
-          <panel src="/2019\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Class Diagrams"></panel>
-          <panel src="/2019\book\modeling\modelingStructures\objectDiagrams\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Object Diagrams"></panel>
-          <panel src="/2019\book\modeling\modelingBehaviors\activityDiagrams\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Activity Diagrams"></panel>
-          <panel src="/2019\book\modeling\modelingBehaviors\stateMachineDiagrams\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: State Machine Diagrams"></panel>
-          <panel src="/2019\book\modeling\modelingBehaviors\useCaseDiagrams\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Use Case Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Class Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingStructures/objectDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Object Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingBehaviors/activityDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Activity Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingBehaviors/stateMachineDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: State Machine Diagrams"></panel>
+          <panel src="/2019/book/modeling/modelingBehaviors/useCaseDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Use Case Diagrams"></panel>
         </panel>
         <p></p>
         <question>
@@ -112,11 +120,11 @@
     <div>
       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Pick the odd one out of these project management tools/techniques." expanded="">
         <panel header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Prerequisites" minimized="">
-          <panel src="/2019\book\revisionControl\what\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control: What"></panel>
-          <panel src="/2019\book\projectPlanning\ganttCharts\unit-inElsewhere-asFlat._include_.html" header="Project Planning: Gantt Charts"></panel>
-          <panel src="/2019\book\projectPlanning\issueTrackers\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Project Planning: Issue Trackers"></panel>
-          <panel src="/2019\book\projectPlanning\pertCharts\unit-inElsewhere-asFlat._include_.html" header="Project Planning: PERT Charts"></panel>
-          <panel src="/2019\book\projectPlanning\workBreakdownStructure\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Project Planning: Work Breakdown Structure"></panel>
+          <panel src="/2019/book/revisionControl/what/unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control: What"></panel>
+          <panel src="/2019/book/projectPlanning/ganttCharts/unit-inElsewhere-asFlat._include_.html" header="Project Planning: Gantt Charts"></panel>
+          <panel src="/2019/book/projectPlanning/issueTrackers/unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Project Planning: Issue Trackers"></panel>
+          <panel src="/2019/book/projectPlanning/pertCharts/unit-inElsewhere-asFlat._include_.html" header="Project Planning: PERT Charts"></panel>
+          <panel src="/2019/book/projectPlanning/workBreakdownStructure/unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Project Planning: Work Breakdown Structure"></panel>
         </panel>
         <p></p>
         <question>
@@ -140,7 +148,7 @@
     <div>
       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Choose the least  correct statement about principles and patterns." expanded="">
         <panel header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Prerequisites" minimized="">
-          <panel src="/2019\book\designPatterns\introduction\what\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design Patterns: Introduction: What"></panel>
+          <panel src="/2019/book/designPatterns/introduction/what/unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design Patterns: Introduction: What"></panel>
         </panel>
         <p></p>
         <question>
@@ -165,14 +173,15 @@
 </div>
 </div>
 </body>
-<script src="..\..\markbind\js\vue.min.js"></script>
-<script src="..\..\markbind\js\vue-strap.min.js"></script>
-<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
-<script src="..\..\markbind\js\polyfill.min.js"></script>
-<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
+    const enableSearch = true
 </script>
-<script src="..\..\markbind\js\setup.js"></script>
-<script src="..\..\markbind\layouts\default\scripts.js"></script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

@@ -6,29 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website - Object Oriented Programming</title>
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../markbind/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
     
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
+<div id="loading-overlay">
+    <div id="spinner-layout">
+        <div id="spinner"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById("loading-overlay").style.display = 'initial';
+</script>
 <div id="app">
     <div id="content-wrapper">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
-      <li slot="right">
-        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-      </li>
-    </navbar>
-  </div>
   <div>
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <div class="website-content" id="all">
@@ -1094,7 +1094,7 @@ Enter command: exit
                           <p><span class="fas fa-cube"></span> A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather than specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p>
                         </tip-box>
                         <p>
-                          <panel type="seamless" src="/2019\book\uml\classDiagrams\associationClasses\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Association Classes → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AssociationClasses" fragment="main"></panel>
+                          <panel type="seamless" src="/2019/book/uml/classDiagrams/associationClasses/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Association Classes → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AssociationClasses" fragment="main"></panel>
                         </p>
                         <h5 id="implementing-association-classes">Implementing association classes<a class="fa fa-anchor" href="#implementing-association-classes"></a></h5>
                         <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
@@ -1549,7 +1549,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                             <div>
                             <div>
                               <p>
-                                <panel src="/2019\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → What%%" popup-url="/2019/book/oop/inheritance/what"></panel>
+                                <panel src="/2019/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → What%%" popup-url="/2019/book/oop/inheritance/what"></panel>
                               </p>
                             </div>
                             <p></p>
@@ -1940,8 +1940,8 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                             <div>
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> In the context of OOP, what is the relationship between abstraction and encapsulation?">
                                 <panel header="%%Prerequisites%%" expandable="" expanded="">
-                                  <panel src="/2019\book\oop\objects\encapsulation\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
-                                  <panel src="/2019\book\oop\objects\abstraction\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
+                                  <panel src="/2019/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
+                                  <panel src="/2019/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
                                 </panel>
                                 <p></p>
                                 <question>
@@ -1964,11 +1964,11 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                             <div>
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these do not belong to four main OO principles?">
                                 <panel header="%%Prerequisites%%" expandable="" expanded="">
-                                  <panel src="/2019\book\oop\objects\abstraction\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
-                                  <panel src="/2019\book\oop\objects\encapsulation\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
-                                  <panel src="/2019\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Basic"></panel>
-                                  <panel src="/2019\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Substitutability"></panel>
-                                  <panel src="/2019\book\oop\polymorphism\what\unit-inElsewhere-asFlat._include_.html" header="OOP: Polymorphism: Introduction"></panel>
+                                  <panel src="/2019/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
+                                  <panel src="/2019/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
+                                  <panel src="/2019/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Basic"></panel>
+                                  <panel src="/2019/book/oop/inheritance/substitutability/unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Substitutability"></panel>
+                                  <panel src="/2019/book/oop/polymorphism/what/unit-inElsewhere-asFlat._include_.html" header="OOP: Polymorphism: Introduction"></panel>
                                 </panel>
                                 <p></p>
                                 <question>
@@ -2002,21 +2002,17 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
     </div>
   </div>
 </div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Fri, 01 Feb 2019 15:21:24 GMT</small></div>
-</footer>
 </div>
 </body>
-<script src="..\..\markbind\js\vue.min.js"></script>
-<script src="..\..\markbind\js\vue-strap.min.js"></script>
-<script src="..\..\markbind\js\bootstrap-utility.min.js"></script>
-<script src="..\..\markbind\js\polyfill.min.js"></script>
-<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
+    const enableSearch = true
 </script>
-<script src="..\..\markbind\js\setup.js"></script>
-<script src="..\..\markbind\layouts\default\scripts.js"></script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

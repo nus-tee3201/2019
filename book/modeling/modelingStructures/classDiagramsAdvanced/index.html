@@ -6,29 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website - Modeling: Modeling Structures: Class Diagrams - Advanced</title>
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-vue.min.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\font-awesome.min.css" >
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\..\..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../../../markbind/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../../../../markbind/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
     
     
     
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
+<div id="loading-overlay">
+    <div id="spinner-layout">
+        <div id="spinner"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById("loading-overlay").style.display = 'initial';
+</script>
 <div id="app">
     <div id="content-wrapper">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
-      <li slot="right">
-        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-      </li>
-    </navbar>
-  </div>
   <div>
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <div class="website-content">
@@ -38,7 +38,7 @@
       <div>
         <div>
           <p>
-            <panel src="/2019\book\modeling\modelingStructures\classDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Class Diagrams (Intermediate)%%" popup-url="/2019/book/modeling/modelingStructures/classDiagramsIntermediate"></panel>
+            <panel src="/2019/book/modeling/modelingStructures/classDiagramsIntermediate/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Class Diagrams (Intermediate)%%" popup-url="/2019/book/modeling/modelingStructures/classDiagramsIntermediate"></panel>
           </p>
         </div>
         <p></p>
@@ -52,8 +52,8 @@
             <div>
               <p><strong>A class diagram can show association classes too.</strong></p>
               <p>
-                <panel type="seamless" src="/2019\book\oop\associations\associationClasses\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Association Classes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/AssociationClasses" fragment="main"></panel>
-                <panel type="seamless" src="/2019\book\uml\classDiagrams\associationClasses\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Association Classes → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AssociationsClasses" fragment="main"></panel>
+                <panel type="seamless" src="/2019/book/oop/associations/associationClasses/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Association Classes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/AssociationClasses" fragment="main"></panel>
+                <panel type="seamless" src="/2019/book/uml/classDiagrams/associationClasses/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Association Classes → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AssociationsClasses" fragment="main"></panel>
               </p>
             </div>
             <div>
@@ -126,21 +126,17 @@
     </div>
   </div>
 </div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Fri, 01 Feb 2019 15:21:24 GMT</small></div>
-</footer>
 </div>
 </body>
-<script src="..\..\..\..\markbind\js\vue.min.js"></script>
-<script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
-<script src="..\..\..\..\markbind\js\bootstrap-utility.min.js"></script>
-<script src="..\..\..\..\markbind\js\polyfill.min.js"></script>
-<script src="..\..\..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script src="../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
+    const enableSearch = true
 </script>
-<script src="..\..\..\..\markbind\js\setup.js"></script>
-<script src="..\..\..\..\markbind\layouts\default\scripts.js"></script>
+<script src="../../../../markbind/js/setup.js"></script>
+<script src="../../../../markbind/layouts/default/scripts.js"></script>
 </html>

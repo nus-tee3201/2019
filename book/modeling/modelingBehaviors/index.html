@@ -6,29 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website - Modeling: Modeling Behaviors</title>
-    <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap-vue.min.css">
-    <link rel="stylesheet" href="..\..\..\markbind\css\font-awesome.min.css" >
-    <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
-    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../../markbind/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
     
     <link rel="icon" href="/2019/favicon.ico">
 </head>
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
+<div id="loading-overlay">
+    <div id="spinner-layout">
+        <div id="spinner"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById("loading-overlay").style.display = 'initial';
+</script>
 <div id="app">
     <div id="content-wrapper">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
-      <li slot="right">
-        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-      </li>
-    </navbar>
-  </div>
   <div>
     <link rel="stylesheet" href="/2019/book/css/textbook.css">
     <div class="website-content" id="all">
@@ -60,18 +60,18 @@
                     <p><span class="fas fa-cube"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
                   </tip-box>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\activityDiagrams\introduction\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Introduction → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Intro" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/activityDiagrams/introduction/what/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Introduction → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Intro" fragment="main"></panel>
                   </p>
                   <p></p>
                   <p></p>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Linear Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/LinearPaths" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/activityDiagrams/basicNotations/linearPaths/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Linear Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/LinearPaths" fragment="main"></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Alternate Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/AlternatePaths" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/activityDiagrams/basicNotations/alternatePaths/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Alternate Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/AlternatePaths" fragment="main"></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Parellel Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/ParallelPaths" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/activityDiagrams/basicNotations/parallelPaths/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Parellel Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/ParallelPaths" fragment="main"></panel>
                   </p>
                 </div>
                 <div>
@@ -135,10 +135,10 @@
                 <p></p>
                 <div>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\activityDiagrams\basicNotations\rakes\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermediate Notation → Rakes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Rakes" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/activityDiagrams/basicNotations/rakes/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermediate Notation → Rakes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Rakes" fragment="main"></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\activityDiagrams\basicNotations\swimlanes\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermedidate Notation → Swim Lanes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/SwimLanes" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/activityDiagrams/basicNotations/swimlanes/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermedidate Notation → Swim Lanes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/SwimLanes" fragment="main"></panel>
                   </p>
                 </div>
                 <div></div>
@@ -159,17 +159,17 @@
                 <p></p>
                 <div>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\introduction\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Introduction" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SequenceDiagrams" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Introduction" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SequenceDiagrams" fragment="main"></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\basic\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Basic Notation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Basic" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Basic Notation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Basic" fragment="main"></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\loops\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Loops" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Loops" fragment="main"></panel>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\objectCreation\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Object Creation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Creation" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Loops" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Loops" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Object Creation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Creation" fragment="main"></panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\minimalNotation\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Minimal Notation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Minimal" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Minimal Notation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Minimal" fragment="main"></panel>
                   </p>
                 </div>
                 <div>
@@ -257,10 +257,10 @@
                 <p></p>
                 <div>
                   <p>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\objectDeletion\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Object Deletion" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Deletion" fragment="main"></panel>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\selfInvocation\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Self-Invocation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Self-Invocation" fragment="main"></panel>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\alternativePaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Alternative Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Alternative" fragment="main"></panel>
-                    <panel type="seamless" src="/2019\book\uml\sequenceDiagrams\optionalPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Optional Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Optional" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Object Deletion" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Deletion" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Self-Invocation" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Self-Invocation" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Alternative Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Alternative" fragment="main"></panel>
+                    <panel type="seamless" src="/2019/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Optional Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Optional" fragment="main"></panel>
                   </p>
                 </div>
                 <div>
@@ -355,7 +355,7 @@
                 <p></p>
                 <div>
                   <p>
-                    <panel src="/2019\book\uml\sequenceDiagrams\parallelPaths\embed._include_.html" header="UML: Sequence Diagrams: Parallel Paths" is-open=""></panel>
+                    <panel src="/2019/book/uml/sequenceDiagrams/parallelPaths/embed._include_.html" header="UML: Sequence Diagrams: Parallel Paths" is-open=""></panel>
                   </p>
                 </div>
                 <div></div>
@@ -503,21 +503,17 @@
     </div>
   </div>
 </div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.1</a> at Fri, 01 Feb 2019 15:21:24 GMT</small></div>
-</footer>
 </div>
 </body>
-<script src="..\..\..\markbind\js\vue.min.js"></script>
-<script src="..\..\..\markbind\js\vue-strap.min.js"></script>
-<script src="..\..\..\markbind\js\bootstrap-utility.min.js"></script>
-<script src="..\..\..\markbind\js\polyfill.min.js"></script>
-<script src="..\..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script src="../../../markbind/js/vue.min.js"></script>
+<script src="../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
+    const enableSearch = true
 </script>
-<script src="..\..\..\markbind\js\setup.js"></script>
-<script src="..\..\..\markbind\layouts\default\scripts.js"></script>
+<script src="../../../markbind/js/setup.js"></script>
+<script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>
