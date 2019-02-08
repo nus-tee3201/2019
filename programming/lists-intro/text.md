@@ -1,6 +1,6 @@
 ### The List Data Structure
 
-**A _data structure_ contains data that are more complex than a single data value** such as an integer. Lists are one such very useful data structure in Python. **A list contains an ordered sequence of _items_.** Python uses square brackets to indicate lists.
+**A _data structure_ contains data that are more complex than a single data value** such as an integer. Lists are one such very useful data structure used in Python. **A list contains an ordered sequence of _items_.** Python uses square brackets to indicate lists.
 
 <tip-box> 
 
@@ -15,7 +15,7 @@ print(friends, fruits, values)
 everything = [friends, fruits, values] # a list containing other lists
 print(everything)
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 [] ['apple', 'banana', 'orange'] [0, 3.4, 'High', True]
 [[], ['apple', 'banana', 'orange'], [0, 3.4, 'High', True]]
@@ -37,10 +37,9 @@ print(everything)
 
 {{ icon_example }} The code below shows how to use indexes to access items in a list.
 
-<table>
-<tr>
-  <td>
-  
+<include src="inputOutput.md" boilerplate>
+<span id="input">
+
 ```python
 fruits = ['Apple', 'Banana', 'Cherry', 'Dragon fruit']
 print(fruits[0])
@@ -48,77 +47,61 @@ print(fruits[3])
 print(fruits[-1])
 print(fruits[-2])
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
-  
-```
+</span>
+<span id="output">
 
+```
 Apple
 Dragon Fruit
 Dragon Fruit
 Cherry
-
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 :bulb: As you can see from the above example, **list indexes can be negative**; index `-1` refers to the last item in the list, `-2` refers to the second last item in the list, and so on.
 
 {{ icon_example }} The code below shows how to use indexes to update items in a list.
 
-<table>
-<tr>
-  <td>
-  
+<include src="inputOutput.md" boilerplate>
+<span id="input">
+
 ```python
 coins = [10, 30, 50, 100]
 coins[1] = 20
 print(coins)
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
-  
+</span>
+<span id="output">
+
 ```
-
-
 [10, 20, 50, 100]
-
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
+
 
 {{ icon_example }} The example below shows how to access an item of a list that is inside another list; `list_of_lists[2]` accesses `list_of_lists[2]` which gives you the item at index 2 (`[0.1, 0.2]`) which is also a list, and then accesses the item at index `0` from that list, which is `0.1`.
 
-<table>
-<tr>
-  <td>
-  
+<include src="inputOutput.md" boilerplate>
+<span id="input">
+
 ```python
 list_of_lists = [['a', 'b', 'c'], [1, 2, 3, 4], [0.1, 0.2]]
 print(list_of_lists[2][0])
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
-  
-```
+</span>
+<span id="output">
 
+```
 0.1
-
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-access-using-index?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+<include src="tryYourOwn.md" boilerplate >
+  <span id="program">lists-access-using-index</span>
+</include>
 
 </tip-box>
 
