@@ -12,7 +12,8 @@
 
 <tip-box> 
 
-{{ icon_example }} In the example below, `i = 5` assigns an integer to `i`. Because integers are immutable, `i = i + 1` is not mutating the integer object `5`; rather, it is simply creating a new integer object `6` and assigning that to `i`. Similarly, `s = s + '  World!'` is not adding more letters to the existing string object `Hello`; ratehr, it is creating a new string object `'Hello World!'` and assigning that to `s`.
+{{ icon_example }} In the example below, `i = 5` assigns an integer to `i`. Because integers are immutable, `i = i + 1` is not mutating the integer object `5`; rather, it is simply creating a new integer object `6` and assigning that to `i`.<br>
+Similarly, `s = s + '  World!'` is not adding more letters to the existing string object `Hello`; rather, it is creating a new string object `'Hello World!'` and assigning that to `s`.
 
 ```python
 i = 5
@@ -58,35 +59,31 @@ cheese = spam
 
 This means any change to the list pointed by `cheese` will be reflected as a change to the list pointed to by `spam` (because both are pointing to the same list object!).
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 cheese [1] = 'Hello!'
 print('spam is:', spam)
 print('cheese is:', cheese)
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 spam is: [0, 'Hello!', 2, 3, 4, 5]
 cheese is: [0, 'Hello!', 2, 3, 4, 5]
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 ![](http://automatetheboringstuff.com/images/000071.jpg)<br>
 <sub>Image credit: [AtBSwP](https://automatetheboringstuff.com)</sub>
 
 However, the behavior is different when we do a similar variable assignment and update using integers instead of lists. Because integers are immutable, `cheese` points to a _copy_ of the integer pointed to by `spam`, not the same object.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 spam = 5
@@ -98,9 +95,8 @@ cheese = cheese + 1
 print('spam is:', spam)
 print('cheese is:', cheese)
 ```
-  </td>
-  <td><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br>
+</span>
+<span id="output">
 
 ```
 spam is: 5
@@ -108,9 +104,8 @@ cheese is: 5
 spam is: 5
 cheese is: 6
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 </tip-box>
 
@@ -118,11 +113,10 @@ cheese is: 6
 
 <tip-box> 
 
-{{ icon_example }} In the `foo` function below, when `foo(original)` is executed, the object reference of the argument `original` is copied to the parameter `items`.  Now the function is able to modify the list object now being pointed to by both `original` and `items`, and the changes remain in the list even after the function has finished.
+{{ icon_example }} In the `foo` function below, when `foo(original)` is executed, the object reference of the argument `original` is copied to the parameter `items`.  Now the function is able to modify the list object (i.e., the list object being pointed to by both `original` and `items`), and the changes remain in the list object even after the function has finished.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def foo(items):
@@ -133,9 +127,8 @@ original = [1, 2, 3]
 foo(original)
 print('after foo:', original)
 ```
-  </td>
-  <td><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
+</span>
+<span id="output">
 
 ==<trigger trigger="click" for="modal:foo_items-pyTutor">[Visualize]</trigger>==%%[<a target="_blank" href="https://goo.gl/2E2uvp">alt link</a>]%%<br>
 
@@ -143,9 +136,8 @@ print('after foo:', original)
 inside foo: ['Hi', 2, 3]
 after foo: ['Hi', 2, 3]
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <modal large title="`foo(items)`" id="modal:foo_items-pyTutor">
 
@@ -155,22 +147,20 @@ after foo: ['Hi', 2, 3]
 
 Contrast the above example with the one below. The `bar(items)` function assigns a new list to `items` parameter. That means `items` is no longer pointing to the list object that was passed in as the argument. After the function is executed, the `original` list remains the same as before.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def bar(items):
   items = ['a', 'b', 'c']
   print('inside bar:', items)
-  
+
 original = [1, 2, 3]
 bar(original)
 print('after bar:', original)
 ```
-  </td>
-  <td><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
+</span>
+<span id="output">
 
 %%<trigger trigger="click" for="modal:bar_items-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/4KHpPR">alt link</a>]%%<br>
 
@@ -178,9 +168,8 @@ print('after bar:', original)
 inside bar: ['a', 'b', 'c']
 after bar: [1, 2, 3]
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <modal large title="`bar(items)`" id="modal:bar_items-pyTutor">
 
@@ -196,23 +185,21 @@ If the argument passed to a function is of an immutable type, the function recei
 
 {{ icon_example }} In this example, the function `increment(age)` is given an immutable object `25` as the argument. Although the parameter `v` that received the argument is assigned a new object (i.e., `v = v + 1`) inside the function, that change is not reflected in the argument `age`. That is because `v` is given a reference to a _copy_ of `age`, not a reference to the actual object in `age`.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def increment(v):
   v = v + 1
   return v
-  
+
 age = 25
 new_age = increment(age)
 print('age:', age)
 print('new age:', new_age)
 ```
-  </td>
-  <td><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br><br>
+</span>
+<span id="output">
 
 %%<trigger trigger="click" for="modal:increment_v-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/9uR4eR">alt link</a>]%%<br>
 
@@ -220,9 +207,9 @@ print('new age:', new_age)
 age: 25
 new age: 26
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
+
 
 <modal large title="`increment(v)`" id="modal:increment_v-pyTutor">
 

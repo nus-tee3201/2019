@@ -4,8 +4,8 @@
 
 {{ input | safe }}
   </td>
-  <td><span id="arrow">&nbsp;→&nbsp;</span></td>
-  <td>
+  <td valign="bottom"><span id="arrow">&nbsp;→&nbsp;</span><br><br></td>
+  <td valign="bottom">
 
 {{ output | safe }}
   </td>
