@@ -2068,3 +2068,87 @@ Missing reference in C:\repos\nus-te3201\te3201-2019-website\programming\lists-w
 2019-02-08T14:58:42.726Z - info: [22:58:42] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\book\architecture\introduction\path.md
 2019-02-08T14:59:13.004Z - info: Website generation started at 22:59:05
 2019-02-08T14:59:16.293Z - info: Building assets...
+2019-02-08T14:59:18.299Z - info: Assets built
+2019-02-08T14:59:18.299Z - info: Generating pages...
+2019-02-08T15:00:57.237Z - info: Pages built
+2019-02-08T15:01:16.827Z - info: Website generation complete! Total build time: 131.062s
+2019-02-08T15:01:16.843Z - info: Generate Site durationMs=131078
+2019-02-08T15:01:16.863Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-08T15:01:16.863Z - info: Press CTRL+C to stop ...
+2019-02-08T15:01:16.883Z - info: Site data built
+2019-02-08T15:03:40.416Z - info: [23:03:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\text.md
+2019-02-08T15:03:41.429Z - info: Rebuilding affected source files
+2019-02-08T15:03:41.429Z - info: Rebuilding 2 pages
+2019-02-08T15:03:43.077Z - info: Pages rebuilt
+2019-02-08T15:03:43.097Z - info: Site data built
+2019-02-08T15:04:03.712Z - info: [23:04:03] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-firstQuarter.md
+2019-02-08T15:04:04.713Z - info: Rebuilding affected source files
+2019-02-08T15:04:04.718Z - info: Rebuilding 2 pages
+2019-02-08T15:04:06.690Z - info: Pages rebuilt
+2019-02-08T15:04:06.708Z - info: Site data built
+2019-02-08T15:06:19.162Z - info: [23:06:19] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-deleteHead.md
+2019-02-08T15:06:20.180Z - info: Rebuilding affected source files
+2019-02-08T15:06:20.181Z - info: Rebuilding 2 pages
+2019-02-08T15:06:21.641Z - info: Pages rebuilt
+2019-02-08T15:06:21.669Z - info: Site data built
+2019-02-08T15:06:37.121Z - info: [23:06:37] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\methods\text.md
+2019-02-08T15:06:38.126Z - info: Rebuilding affected source files
+2019-02-08T15:06:38.130Z - info: Rebuilding 2 pages
+2019-02-08T15:06:39.374Z - info: Pages rebuilt
+2019-02-08T15:06:39.384Z - info: Site data built
+2019-02-08T15:08:45.065Z - info: [23:08:45] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\methods\text.md
+2019-02-08T15:08:46.071Z - info: Rebuilding affected source files
+2019-02-08T15:08:46.076Z - info: Rebuilding 2 pages
+2019-02-08T15:08:47.422Z - info: Pages rebuilt
+2019-02-08T15:08:47.432Z - info: Site data built
+2019-02-08T15:10:15.380Z - info: [23:10:15] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\methods\text.md
+2019-02-08T15:10:16.385Z - info: Rebuilding affected source files
+2019-02-08T15:10:16.402Z - info: Rebuilding 2 pages
+2019-02-08T15:10:17.669Z - info: Pages rebuilt
+2019-02-08T15:10:17.692Z - info: Site data built
+2019-02-08T15:12:12.589Z - info: [23:12:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\methods\e-removeExtraSpaces.md
+2019-02-08T15:12:13.590Z - info: Rebuilding affected source files
+2019-02-08T15:12:13.590Z - info: Rebuilding 2 pages
+2019-02-08T15:12:15.048Z - info: Pages rebuilt
+2019-02-08T15:12:15.052Z - info: Site data built
+2019-02-08T15:13:35.941Z - info: [23:13:35] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\text.md
+2019-02-08T15:13:36.945Z - info: Rebuilding affected source files
+2019-02-08T15:13:36.950Z - info: Rebuilding 2 pages
+2019-02-08T15:13:38.451Z - info: Pages rebuilt
+2019-02-08T15:13:38.460Z - info: Site data built
+2019-02-08T15:15:51.694Z - info: [23:15:51] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\text.md
+2019-02-08T15:15:52.696Z - info: Rebuilding affected source files
+2019-02-08T15:15:52.702Z - info: Rebuilding 2 pages
+2019-02-08T15:15:53.421Z - info: [23:15:53] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-getBody.md
+2019-02-08T15:15:54.158Z - info: Pages rebuilt
+2019-02-08T15:15:54.162Z - info: Site data built
+2019-02-08T15:15:54.422Z - info: Rebuilding affected source files
+2019-02-08T15:15:54.423Z - info: Rebuilding 2 pages
+2019-02-08T15:15:57.929Z - info: Pages rebuilt
+2019-02-08T15:15:57.937Z - info: Site data built
+2019-02-08T15:22:58.860Z - info: [23:22:58] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\text.md
+2019-02-08T15:22:59.874Z - info: Rebuilding affected source files
+2019-02-08T15:22:59.882Z - info: Rebuilding 2 pages
+2019-02-08T15:23:01.873Z - info: Pages rebuilt
+2019-02-08T15:23:01.882Z - info: Site data built
+2019-02-08T15:25:12.208Z - info: [23:25:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\text.md
+2019-02-08T15:25:13.220Z - info: Rebuilding affected source files
+2019-02-08T15:25:13.221Z - info: Rebuilding 2 pages
+2019-02-08T15:25:14.644Z - info: Pages rebuilt
+2019-02-08T15:25:14.652Z - info: Site data built
+2019-02-08T15:25:43.379Z - info: [23:25:43] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\text.md
+2019-02-08T15:25:44.384Z - info: Rebuilding affected source files
+2019-02-08T15:25:44.389Z - info: Rebuilding 2 pages
+2019-02-08T15:25:45.854Z - info: Pages rebuilt
+2019-02-08T15:25:45.863Z - info: Site data built
+2019-02-08T15:27:13.221Z - info: [23:27:13] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\e-anagramChecker.md
+2019-02-08T15:27:14.229Z - info: Rebuilding affected source files
+2019-02-08T15:27:14.234Z - info: Rebuilding 2 pages
+2019-02-08T15:27:15.779Z - info: Pages rebuilt
+2019-02-08T15:27:15.790Z - info: Site data built
+2019-02-08T15:27:35.124Z - info: [23:27:35] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\e-anagramChecker.md
+2019-02-08T15:27:36.143Z - info: Rebuilding affected source files
+2019-02-08T15:27:36.149Z - info: Rebuilding 2 pages
+2019-02-08T15:27:37.422Z - info: Pages rebuilt
+2019-02-08T15:27:37.449Z - info: Site data built
+2019-02-08T15:34:58.531Z - info: Deployed!

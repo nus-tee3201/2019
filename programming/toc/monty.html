@@ -44,6 +44,7 @@
       <a class="nav-link py-1" href="#monty-1">Monty 1&#x200E;</a>
       <a class="nav-link py-1" href="#monty-2">Monty 2&#x200E;</a>
       <a class="nav-link py-1" href="#monty-3">Monty 3&#x200E;</a>
+      <a class="nav-link py-1" href="#monty-4">Monty 4&#x200E;</a>
     </nav>
 
   </nav>
@@ -222,6 +223,109 @@ main()
                 </panel>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
+              <div id="monty4">
+                <h3 id="monty-4">Monty 4<a class="fa fa-anchor" href="#monty-4"></a></h3>
+                <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-3">Monty 3 code</a> to improve the functionality as per the sample output given below.</p>
+                <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Nothing to list
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     1. read book
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     1. read book
+     2. return book
+&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Are you sure? y/n
+y
+&gt;&gt;&gt; Bye!
+</code></pre>
+                <box>
+                  <p>💡 You can use the list slicing syntax to extract a portion of a string.<br></p>
+                  <div>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python">s = <span class="hljs-string">'abcdefgh'</span>
+print(s[<span class="hljs-number">2</span>:])
+print(s[:<span class="hljs-number">5</span>])
+</code></pre>
+                        </td>
+                        <td valign="bottom"><span id="arrow">&nbsp;→&nbsp;</span><br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">cdefgh
+abcde
+</code></pre>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>The above technique can be used to extract the item description from an <code>add</code> command.
+                  </p>
+                </box>
+                <panel type="seamless" header="Partial solution">
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+items = []
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_items</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> len(items) == <span class="hljs-number">0</span>:
+        print(<span class="hljs-string">'&gt;&gt;&gt; Nothing to list'</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> enumerate(items):
+            <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item</span><span class="hljs-params">(user_input)</span>:</span>
+    <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">terminate</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># ...</span>
+
+<span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        terminate()
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:
+        print_items()
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+        add_item(command)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">'&gt;&gt;&gt; OOPS! Unknown command'</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+                </panel>
+              </div>
+              <hr style="border-top: 3px double #c5c5c5;">
               <p><span class="dimmed">Remaining increments to be added soon.</span></p>
             </div>
           </div>
@@ -233,7 +337,7 @@ main()
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.2</a> at Fri, 08 Feb 2019 14:59:18 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.2</a> at Sun, 10 Feb 2019 07:35:45 GMT</small></div>
 </footer>
 </div>
 </body>
