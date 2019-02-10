@@ -2195,3 +2195,23 @@
 2019-02-10T07:33:38.636Z - info: Site data built
 2019-02-10T07:35:41.852Z - info: Website generation started at 15:35:37
 2019-02-10T07:35:43.935Z - info: Building assets...
+2019-02-10T07:35:45.986Z - info: Assets built
+2019-02-10T07:35:45.986Z - info: Generating pages...
+2019-02-10T07:37:00.285Z - info: Pages built
+2019-02-10T07:37:16.471Z - info: Website generation complete! Total build time: 98.835s
+2019-02-10T07:37:16.471Z - info: Build success!
+2019-02-10T07:37:16.471Z - info: Generate Site durationMs=98836
+2019-02-10T07:37:16.475Z - info: Site data built
+2019-02-10T07:37:44.911Z - info: Deployed!
+2019-02-10T13:36:58.349Z - info: Website generation started at 21:36:52
+2019-02-10T13:37:01.979Z - info: Building assets...
+2019-02-10T13:37:04.298Z - info: Assets built
+2019-02-10T13:37:04.298Z - info: Generating pages...
+2019-02-10T13:38:52.757Z - info: Pages built
+2019-02-10T13:39:17.870Z - info: Website generation complete! Total build time: 145.16s
+2019-02-10T13:39:17.890Z - info: Generate Site durationMs=145184
+2019-02-10T13:39:17.910Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-10T13:39:17.910Z - info: Press CTRL+C to stop ...
+2019-02-10T13:39:17.934Z - info: Site data built
+2019-02-10T13:45:38.695Z - info: Website generation started at 21:45:34
+2019-02-10T13:45:41.815Z - info: Building assets...
