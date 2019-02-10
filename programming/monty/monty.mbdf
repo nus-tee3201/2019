@@ -124,5 +124,120 @@ main()
 
 </div>
 {{ hr_double }}
+<div id="monty4">
+
+### Monty 4
+
+Enhance the [Monty 3 code]({{ baseUrl }}/programming/toc/monty.html#monty-3) to improve the functionality as per the sample output given below.
+
+```
+>>> Hello, my name is Monty
+>>> What can I do for you?
+
+list
+>>> Nothing to list
+>>> What can I do for you?
+
+add read book
+>>> What can I do for you?
+
+list
+>>> List of items:
+     1. read book
+>>> What can I do for you?
+
+add return book
+>>> What can I do for you?
+
+list
+>>> List of items:
+     1. read book
+     2. return book
+>>> What can I do for you?
+
+exit
+>>> Are you sure? y/n
+y
+>>> Bye!
+```
+
+<box>
+
+:bulb: You can use the list slicing syntax to extract a portion of a  string.<br>
+
+<include src="inputOutput.md" boilerplate>
+<span id="input">
+
+```python
+s = 'abcdefgh'
+print(s[2:])
+print(s[:5])
+```
+</span>
+<span id="output">
+
+```
+cdefgh
+abcde
+```
+
+</span>
+</include>
+
+The above technique can be used to extract the item description from an `add` command.
+</box>
+
+
+<panel type="seamless" header="Partial solution">
+
+```python
+import sys
+
+items = []
+
+
+def print_items():
+    if len(items) == 0:
+        print('>>> Nothing to list')
+    else:
+        for i, item in enumerate(items):
+            # ...
+
+
+def add_item(user_input):
+    # ...
+
+
+def terminate():
+    # ...
+
+# ...
+
+def execute_command(command):
+    if command == '':
+        return
+    elif command == 'exit':
+        terminate()
+    elif command == 'list':
+        print_items()
+    elif command.startswith('add '):
+        add_item(command)
+    else:
+        print('>>> OOPS! Unknown command')
+
+
+def main():
+    print_greeting()
+    while True:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+```
+</panel>
+
+</div>
+{{ hr_double }}
 
 %%Remaining increments to be added soon.%%
