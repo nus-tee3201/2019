@@ -65,7 +65,7 @@ total cows after breeding: 5
 </tr>
 </table>
 
-<include src="tryYourOwn.md" boilerplate><span id="program">functions-breedCows</span></include>
+<include src="tryYourOwn.md" boilerplate var-program="functions-breedCows" />
 
 </tip-box>
 

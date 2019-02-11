@@ -23,9 +23,7 @@ print(spam)
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-del</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-del" />
 
 </tip-box>
 
@@ -72,9 +70,7 @@ print(letters[1:-1]) # print from item 1 to 2nd last item
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-slicing</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-slicing" />
 
 </tip-box>
 
@@ -108,9 +104,7 @@ sub list     : ['0a', '1b']
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-slicing</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-slicing" />
 
 </box>
 
@@ -145,9 +139,7 @@ Length is: 2
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-len-plus-star-for</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 
@@ -177,9 +169,7 @@ print(friends)
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-len-plus-star-for</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 
@@ -205,9 +195,7 @@ print(walking)
 </include>
 
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-len-plus-star-for</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 
@@ -252,9 +240,7 @@ Tea is already in the list
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-in-not-in</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-in-not-in" />
 
 </tip-box>
 
@@ -290,9 +276,7 @@ Do you sell Hamsters?
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-len-plus-star-for</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 
@@ -324,9 +308,7 @@ for i, animal in enumerate(pets):
 </include>
 
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-len-plus-star-for</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 

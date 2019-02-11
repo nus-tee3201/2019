@@ -62,7 +62,7 @@ def repeat_hello(name, times):
 repeat_hello('Penny', 3)
 say_hello('Sheldon')
 ```
-<include src="tryYourOwn.md" boilerplate><span id="program">hello-given-times</span></include>
+<include src="tryYourOwn.md" boilerplate var-program="hello-given-times" />
 
 <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>

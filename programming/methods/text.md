@@ -25,9 +25,7 @@ some-simple-words
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">methods</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="methods" />
 
 </tip-box>
 
@@ -52,9 +50,7 @@ AA_BB_CC
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">methods</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="methods" />
 
 </tip-box>
 

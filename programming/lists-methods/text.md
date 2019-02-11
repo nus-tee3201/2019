@@ -45,9 +45,7 @@ After sorting ['Dogs', 'Hamsters', 'Parrots', 'Rabbits']
 After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
 ```
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-methods</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-methods" />
 
 </tip-box>
 
@@ -82,9 +80,7 @@ for animal in pets:
 </include>
 
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">lists-methods</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="lists-methods" />
 
 </tip-box>
  
@@ -134,9 +130,7 @@ print(names)
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate>
-  <span id="program">methods-mutating</span>
-</include>
+<include src="tryYourOwn.md" boilerplate var-program="methods-mutating" />
 
 </tip-box>
 
