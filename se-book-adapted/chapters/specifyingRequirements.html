@@ -26,14 +26,6 @@
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="loading-overlay">
-    <div id="spinner-layout">
-        <div id="spinner"></div>
-    </div>
-</div>
-<script type="text/javascript">
-    document.getElementById("loading-overlay").style.display = 'initial';
-</script>
 <div id="app">
     <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
 
@@ -171,9 +163,10 @@
         <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
         <div class="website-content">
           <div>
-            <navbar placement="top" type="inverse">
+            <navbar placement="top" type="inverse" class="temp-navbar">
               <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-              <dropdown text="Schedule" class="nav-link">
+              <span class="nav-link temp-dropdown-placeholder">Schedule</span>
+              <dropdown text="Schedule" class="nav-link temp-dropdown">
                 <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
                 <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
                 <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
@@ -188,12 +181,14 @@
                 <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
                 <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
               </dropdown>
-              <dropdown text="Textbook" class="nav-link">
+              <span class="nav-link temp-dropdown-placeholder">Textbook</span>
+              <dropdown text="Textbook" class="nav-link temp-dropdown">
                 <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
                 <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
               </dropdown>
               <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-              <dropdown text="Links" class="nav-link">
+              <span class="nav-link temp-dropdown-placeholder">Links</span>
+              <dropdown text="Links" class="nav-link temp-dropdown">
                 <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
                 <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
                 <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
@@ -1607,7 +1602,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.2</a> at Sun, 10 Feb 2019 13:45:44 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
 </footer>
 </div>
 </body>

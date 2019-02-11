@@ -11,7 +11,7 @@
     },
     {
       "headings": {
-        "software-engineering-for-self-directed-learners-t-e3201-edition-2019": "Software Engineering for Self-Directed Learners TE3201 edition - 2019"
+        "software-engineering-for-self-directed-learners-te3201-edition-2019": "Software Engineering for Self-Directed Learners TE3201 edition - 2019"
       },
       "title": "Textbook",
       "footer": "footer.md",
@@ -80,7 +80,7 @@
         "java-editions": "Java Editions",
         "the-java-world": "The Java World",
         "installation": "Installation",
-        "hello-world": "HelloWorld",
+        "helloworld": "HelloWorld",
         "compiling-programs": "Compiling Programs",
         "running-programs": "Running Programs",
         "getting-started": "Getting Started",
@@ -112,7 +112,7 @@
         "garbage-collection": "Garbage Collection",
         "importing": "importing",
         "new-operator": "new operator",
-        "null-and-null-pointer-exception": "null and NullPointerException",
+        "null-and-nullpointerexception": "null and NullPointerException",
         "java-objects": "Java Objects",
         "defining-classes": "Defining Classes",
         "getters-and-setters": "Getters and Setters",
@@ -143,7 +143,7 @@
         "accessing-superclass-members": "Accessing Superclass Members",
         "subclass-constructors": "Subclass Constructors",
         "access-modifiers-simplified": "Access Modifiers (simplified)",
-        "the-to-string-method": "The toString method",
+        "the-tostring-method": "The toString method",
         "the-equals-method": "The equals method",
         "inheritance": "Inheritance",
         "what-are-exceptions": "What are Exceptions?",
@@ -153,8 +153,8 @@
         "how-to-use-generics": "How to use Generics",
         "generics": "Generics",
         "the-collections-framework": "The Collections Framework",
-        "the-array-list-class": "The ArrayList Class",
-        "the-hash-map-class": "The HashMap Class",
+        "the-arraylist-class": "The ArrayList Class",
+        "the-hashmap-class": "The HashMap Class",
         "collections": "Collections",
         "enums": "Enums",
         "packages": "Packages",
@@ -164,19 +164,19 @@
         "casting": "Casting",
         "jar-files": "JAR Files",
         "miscellaneous-topics": "Miscellaneous Topics",
-        "task-manager": "TaskManager",
-        "task-manager-level-1": "TaskManager Level 1",
-        "task-manager-level-2": "TaskManager Level 2",
-        "task-manager-level-3": "TaskManager Level 3",
-        "task-manager-level-4": "TaskManager Level 4",
-        "task-manager-level-5": "TaskManager Level 5",
-        "task-manager-level-6": "TaskManager Level 6",
-        "task-manager-level-7": "TaskManager Level 7",
-        "task-manager-level-8": "TaskManager Level 8",
-        "task-manager-level-9": "TaskManager Level 9",
-        "task-manager-level-10": "TaskManager Level 10",
-        "task-manager-level-11": "TaskManager Level 11",
-        "task-manager-level-12": "TaskManager Level 12",
+        "taskmanager": "TaskManager",
+        "taskmanager-level-1": "TaskManager Level 1",
+        "taskmanager-level-2": "TaskManager Level 2",
+        "taskmanager-level-3": "TaskManager Level 3",
+        "taskmanager-level-4": "TaskManager Level 4",
+        "taskmanager-level-5": "TaskManager Level 5",
+        "taskmanager-level-6": "TaskManager Level 6",
+        "taskmanager-level-7": "TaskManager Level 7",
+        "taskmanager-level-8": "TaskManager Level 8",
+        "taskmanager-level-9": "TaskManager Level 9",
+        "taskmanager-level-10": "TaskManager Level 10",
+        "taskmanager-level-11": "TaskManager Level 11",
+        "taskmanager-level-12": "TaskManager Level 12",
         "practice-projects": "Practice Projects",
         "c-to-java": "C++ to Java"
       },
@@ -330,8 +330,8 @@
         "push": "Push",
         "branch": "Branch",
         "merge-conflicts": "Merge Conflicts",
-        "create-p-rs": "Create PRs",
-        "manage-p-rs": "Manage PRs",
+        "create-prs": "Create PRs",
+        "manage-prs": "Manage PRs",
         "forking-workflow": "Forking Workflow",
         "git-and-github": "Git and Github"
       },
@@ -348,7 +348,7 @@
         "what": "What",
         "introduction": "Introduction",
         "debugging": "Debugging",
-        "id-es": "IDEs"
+        "ides": "IDEs"
       },
       "title": "Textbook Chapter : IDEs",
       "footer": "footer.md",
@@ -398,7 +398,7 @@
     {
       "headings": {
         "varargs": "Varargs ",
-        "java-fx-basic": "JavaFX: Basic",
+        "javafx-basic": "JavaFX: Basic",
         "streams-basic": "Streams: Basic",
         "java": "Java"
       },
@@ -412,9 +412,9 @@
     },
     {
       "headings": {
-        "j-unit-basic": "JUnit: Basic",
-        "j-unit-intermediate": "JUnit: Intermediate",
-        "j-unit": "JUnit"
+        "junit-basic": "JUnit: Basic",
+        "junit-intermediate": "JUnit: Intermediate",
+        "junit": "JUnit"
       },
       "title": "Textbook Chapter : JUnit",
       "footer": "footer.md",
@@ -589,13 +589,13 @@
         "what": "What",
         "when": "When",
         "introduction": "Introduction",
-        "ap-is": "APIs",
+        "apis": "APIs",
         "how": "How",
         "libraries": "Libraries",
         "frameworks-vs-libraries": "Frameworks vs Libraries",
         "frameworks": "Frameworks",
         "platforms": "Platforms",
-        "iaas-paa-s-and-saa-s": "Iaas, PaaS, and SaaS",
+        "iaas-paas-and-saas": "Iaas, PaaS, and SaaS",
         "cloud-computing": "Cloud Computing",
         "reuse": "Reuse"
       },
@@ -1004,13 +1004,13 @@
     },
     {
       "headings": {
-        "exercise-create-stock-item-class": "Exercise : Create StockItem Class",
+        "exercise-create-stockitem-class": "Exercise : Create StockItem Class",
         "exercise-add-class-level-members-to-subject-class": "Exercise : Add Class Level Members to Subject class",
         "exercise-change-visibility-of-school-class-members": "Exercise : Change Visibility of School Class Members",
         "exercise-add-fish-class": "Exercise : Add Fish Class",
-        "exercise-add-flightless-bird-class": "Exercise : Add FlightlessBird Class",
+        "exercise-add-flightlessbird-class": "Exercise : Add FlightlessBird Class",
         "exercise-override-str-method": "Exercise : Override __str__() Method",
-        "exercise-add-smart-phone-class": "Exercise : Add SmartPhone Class",
+        "exercise-add-smartphone-class": "Exercise : Add SmartPhone Class",
         "object-oriented-programming": "Object-Oriented Programming",
         "classes": "Classes",
         "class-level-members": "Class-Level Members",
@@ -1093,7 +1093,7 @@
     },
     {
       "headings": {
-        "t-e3201-software-engineering": "TE3201 Software Engineering",
+        "te3201-software-engineering": "TE3201 Software Engineering",
         "module-overview": "Module overview",
         "using-this-module-website": "Using this module website",
         "browser-compatibility": "Browser Compatibility",

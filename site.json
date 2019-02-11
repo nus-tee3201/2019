@@ -43,5 +43,6 @@
       "searchable": "yes"
     }
   ],
+  "enableSearch": true,
   "headingIndexingLevel": 5
 }

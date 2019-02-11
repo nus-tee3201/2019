@@ -19,14 +19,6 @@
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body>
-<div id="loading-overlay">
-    <div id="spinner-layout">
-        <div id="spinner"></div>
-    </div>
-</div>
-<script type="text/javascript">
-    document.getElementById("loading-overlay").style.display = 'initial';
-</script>
 <div id="app">
     <div id="content-wrapper">
   <link rel="stylesheet" href="/2019/book/css/textbook.css">
@@ -107,9 +99,9 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="hello-world">HelloWorld <span class="badge badge-light"><small><small>
+        <h4 id="helloworld">HelloWorld <span class="badge badge-light"><small><small>
                 <font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#hello-world"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#helloworld"></a></h4>
         <div class="indented-less">
           <div>
             <p>In Java, the HelloWorld program looks like this:</p>
@@ -1011,7 +1003,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
               <p>The return type of this method is <code>Point</code>. The last line creates a new <code>Point</code> object and returns a reference to it.
               </p>
             </box>
-            <h5 id="null-and-null-pointer-exception"><code>null</code> and <code>NullPointerException</code><a class="fa fa-anchor" href="#null-and-null-pointer-exception"></a></h5>
+            <h5 id="null-and-nullpointerexception"><code>null</code> and <code>NullPointerException</code><a class="fa fa-anchor" href="#null-and-nullpointerexception"></a></h5>
             <div class="indented">
               <p><strong><code>null</code> is a special value that means &quot;no object&quot;</strong>. You can assign null to a variable to indicate that the variable is 'empty' at the moment. However, if you try to use a null value, either by accessing an attribute or invoking a method, Java throws a <code>NullPointerException</code>.</p>
               <box>
@@ -1820,7 +1812,7 @@ Printed in Subclass
         <div class="indented-less">
           <div>
             <p>As you know, all Java objects inherit from the <code>Object</code> class. Let us look at some of the useful methods in the <code>Object</code> class that can be used by other classes.</p>
-            <h5 id="the-to-string-method">The <code>toString</code> method<a class="fa fa-anchor" href="#the-to-string-method"></a></h5>
+            <h5 id="the-tostring-method">The <code>toString</code> method<a class="fa fa-anchor" href="#the-tostring-method"></a></h5>
             <div class="indented">
               <p><strong>Every class inherits a <code>toString</code> method from the <code>Object</code> class that is used by Java to get a string representation of the object</strong> <span class="dimmed">e.g., for printing</span>. By default it simply returns the type of the object and its address (in hexadecimal).</p>
               <box>
@@ -2662,9 +2654,9 @@ Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPa
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="the-array-list-class">The ArrayList Class <span class="badge badge-light"><small><small>
+        <h4 id="the-arraylist-class">The ArrayList Class <span class="badge badge-light"><small><small>
                 <font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#the-array-list-class"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#the-arraylist-class"></a></h4>
         <div class="indented-less">
           <div>
             <p>The <code>ArrayList</code> class is a resizable-array implementation of the <code>List</code> interface. Unlike a normal <code>array</code>, an <code>ArrayList</code> can grow in size as you add more items to it. The example below illustrate some of the useful methods of the <code>ArrayList</code> class using an <code>ArrayList</code> of <code>String</code> objects.</p>
@@ -2731,9 +2723,9 @@ After clearing: []
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="the-hash-map-class">The HashMap Class <span class="badge badge-light"><small><small>
+        <h4 id="the-hashmap-class">The HashMap Class <span class="badge badge-light"><small><small>
                 <font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#the-hash-map-class"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#the-hashmap-class"></a></h4>
         <div class="indented-less">
           <div>
             <p><code>HashMap</code> is an implementation of the <code>Map</code> interface. It allows you to store a collection of <em>key-value pairs</em>. The example below illustrates how to use a <code>HashMap&lt;String, Point&gt;</code> to maintain a list of coordinates and their identifiers e.g., the identifier <code>x1</code> is used to identify the point <code>0,0</code> where <code>x1</code> is the <em>key</em> and <code>0,0</code> is the <em>value</em>.</p>
@@ -3314,13 +3306,13 @@ Integer x = (Integer)o;
     </p>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="task-manager">TaskManager <span class="badge badge-light"><small><small>
+        <h4 id="taskmanager">TaskManager <span class="badge badge-light"><small><small>
                 <font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span><a class="fa fa-anchor" href="#task-manager"></a></h4>
+              </small></small></span><a class="fa fa-anchor" href="#taskmanager"></a></h4>
         <div class="indented-less">
           <div>
             <p>In this practice project, you will create a small <code>TaskManager</code> program that can store a list of tasks. It is a <tooltip content="Command Line Interface i.e., no Graphical User Interface">CLI</tooltip> program. You will start with a very simple version (aka TaskManager Level 1) and grow its functionality in small steps.</p>
-            <h4 id="task-manager-level-1">TaskManager Level 1<a class="fa fa-anchor" href="#task-manager-level-1"></a></h4>
+            <h4 id="taskmanager-level-1">TaskManager Level 1<a class="fa fa-anchor" href="#taskmanager-level-1"></a></h4>
             <div>
               <p>In this first version of the TaskManager, the task list is not saved to the disk <span class="dimmed">i.e., the task list does not persist between multiple runs of the program</span></p>
               <p>Here is an example output: <span class="fas fa-arrow-down"></span></p>
@@ -3416,7 +3408,7 @@ Bye!
               </div>
             </div>
             <hr>
-            <h4 id="task-manager-level-2">TaskManager Level 2<a class="fa fa-anchor" href="#task-manager-level-2"></a></h4>
+            <h4 id="taskmanager-level-2">TaskManager Level 2<a class="fa fa-anchor" href="#taskmanager-level-2"></a></h4>
             <div>
               <p>Enhance your TaskManager program in the following ways.</p>
               <p><strong>A. Add support for two types of tasks:</strong></p>
@@ -3612,7 +3604,7 @@ Invalid command format: add
               </panel>
             </div>
             <hr>
-            <h4 id="task-manager-level-3">TaskManager Level 3<a class="fa fa-anchor" href="#task-manager-level-3"></a></h4>
+            <h4 id="taskmanager-level-3">TaskManager Level 3<a class="fa fa-anchor" href="#taskmanager-level-3"></a></h4>
             <div>
               <p>Enhance the TaskManager to print an error message if a command is missing parts. Use exceptions so that error detection and printing of error message happen at different places of code and the error information is passed between the two places using an Exception object.</p>
               <p>Here is an example output: <span class="fas fa-arrow-down"></span></p>
@@ -3674,7 +3666,7 @@ Invalid command format: add
               </panel>
             </div>
             <hr>
-            <h4 id="task-manager-level-4">TaskManager Level 4<a class="fa fa-anchor" href="#task-manager-level-4"></a></h4>
+            <h4 id="taskmanager-level-4">TaskManager Level 4<a class="fa fa-anchor" href="#taskmanager-level-4"></a></h4>
             <div>
               <p>Enhance the TaskManager in the following ways:</p>
               <ol>
@@ -3759,7 +3751,7 @@ Invalid command format: add
               </panel>
             </div>
             <hr>
-            <h4 id="task-manager-level-5">TaskManager Level 5<a class="fa fa-anchor" href="#task-manager-level-5"></a></h4>
+            <h4 id="taskmanager-level-5">TaskManager Level 5<a class="fa fa-anchor" href="#taskmanager-level-5"></a></h4>
             <div>
               <p><strong>Enhance the TaskManager to store tasks in a text file</strong> between runs:</p>
               <ol>
@@ -3797,7 +3789,7 @@ T | 1 | join sports club
               </panel>
             </div>
             <hr>
-            <h4 id="task-manager-level-6">TaskManager Level 6<a class="fa fa-anchor" href="#task-manager-level-6"></a></h4>
+            <h4 id="taskmanager-level-6">TaskManager Level 6<a class="fa fa-anchor" href="#taskmanager-level-6"></a></h4>
             <div>
               <p><strong>Refactor the TaskManager to have classes such as the below</strong> so that your code is more Object-Oriented:</p>
               <ol>
@@ -3914,7 +3906,7 @@ ui.showToUser(taskListDescription);
               </panel>
             </div>
             <hr>
-            <h4 id="task-manager-level-7">TaskManager Level 7<a class="fa fa-anchor" href="#task-manager-level-7"></a></h4>
+            <h4 id="taskmanager-level-7">TaskManager Level 7<a class="fa fa-anchor" href="#taskmanager-level-7"></a></h4>
             <div>
               <p><strong>Add JUnit tests</strong> for some of the methods in your code.</p>
               <panel type="seamless" header="Partial solution">
@@ -3947,12 +3939,12 @@ ui.showToUser(taskListDescription);
               </panel>
             </div>
             <hr>
-            <h4 id="task-manager-level-8">TaskManager Level 8<a class="fa fa-anchor" href="#task-manager-level-8"></a></h4>
+            <h4 id="taskmanager-level-8">TaskManager Level 8<a class="fa fa-anchor" href="#taskmanager-level-8"></a></h4>
             <div>
               <p>Move the classes in your TaskManager into a package. For example, assuming your name in John Doe, you can move it to a pacakge <code>johndoe.tojava.taskmanager</code>. Optionally, you can add sub-packages too.</p>
             </div>
             <hr>
-            <h4 id="task-manager-level-9">TaskManager Level 9<a class="fa fa-anchor" href="#task-manager-level-9"></a></h4>
+            <h4 id="taskmanager-level-9">TaskManager Level 9<a class="fa fa-anchor" href="#taskmanager-level-9"></a></h4>
             <div>
               <p>Add javadoc comments to all non-trivial public classes and methods. Follow the format of the <em>minimal</em> javadoc comment examples given below.</p>
               <p>
@@ -3960,17 +3952,17 @@ ui.showToUser(taskListDescription);
               </p>
             </div>
             <hr>
-            <h4 id="task-manager-level-10">TaskManager Level 10<a class="fa fa-anchor" href="#task-manager-level-10"></a></h4>
+            <h4 id="taskmanager-level-10">TaskManager Level 10<a class="fa fa-anchor" href="#taskmanager-level-10"></a></h4>
             <div>
               <p>Ensure the code follows the <strong><em>basic</em> rules</strong> (optional to apply intermediate/advanced rules) specified in the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>.</p>
             </div>
             <hr>
-            <h4 id="task-manager-level-11">TaskManager Level 11<a class="fa fa-anchor" href="#task-manager-level-11"></a></h4>
+            <h4 id="taskmanager-level-11">TaskManager Level 11<a class="fa fa-anchor" href="#taskmanager-level-11"></a></h4>
             <div>
               <p>Add some assertions (i.e., Java <code>assert</code>s, not JUnit assertions) to your code.</p>
             </div>
             <hr>
-            <h4 id="task-manager-level-12">TaskManager Level 12<a class="fa fa-anchor" href="#task-manager-level-12"></a></h4>
+            <h4 id="taskmanager-level-12">TaskManager Level 12<a class="fa fa-anchor" href="#taskmanager-level-12"></a></h4>
             <div>
               <p>Package your TaskManager as a JAR file.</p>
             </div>
@@ -3984,7 +3976,7 @@ ui.showToUser(taskListDescription);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.2</a> at Sun, 10 Feb 2019 13:45:44 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
 </footer>
 </div>
 </body>

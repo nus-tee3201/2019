@@ -19,18 +19,10 @@
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body>
-<div id="loading-overlay">
-    <div id="spinner-layout">
-        <div id="spinner"></div>
-    </div>
-</div>
-<script type="text/javascript">
-    document.getElementById("loading-overlay").style.display = 'initial';
-</script>
 <div id="app">
     <div id="content-wrapper">
   <div>
-    <navbar placement="top" type="inverse">
+    <navbar placement="top" type="inverse" class="temp-navbar">
       <a slot="brand" href="/" title="Home" class="navbar-brand">Software Engineering for Self-Directed Learners</a>
       <li slot="right">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
@@ -113,7 +105,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.2</a> at Sun, 10 Feb 2019 13:45:44 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
 </footer>
 </div>
 </body>

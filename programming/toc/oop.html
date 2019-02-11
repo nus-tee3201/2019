@@ -27,14 +27,6 @@
     <link rel="icon" href="/2019/favicon.ico">
 </head>
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="loading-overlay">
-    <div id="spinner-layout">
-        <div id="spinner"></div>
-    </div>
-</div>
-<script type="text/javascript">
-    document.getElementById("loading-overlay").style.display = 'initial';
-</script>
 <div id="app">
     <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
 
@@ -43,7 +35,7 @@
     <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
       <a class="nav-link py-1" href="#classes">Classes&#x200E;</a>
       <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-create-stock-item-class">Exercise : Create StockItem Class&#x200E;</a>
+        <a class="nav-link py-1" href="#exercise-create-stockitem-class">Exercise : Create StockItem Class&#x200E;</a>
       </nav>
       <a class="nav-link py-1" href="#class-level-members">Class-Level Members&#x200E;</a>
       <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
@@ -56,9 +48,9 @@
       <a class="nav-link py-1" href="#inheritance">Inheritance&#x200E;</a>
       <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
         <a class="nav-link py-1" href="#exercise-add-fish-class">Exercise : Add Fish Class&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-add-flightless-bird-class">Exercise : Add FlightlessBird Class&#x200E;</a>
+        <a class="nav-link py-1" href="#exercise-add-flightlessbird-class">Exercise : Add FlightlessBird Class&#x200E;</a>
         <a class="nav-link py-1" href="#exercise-override-str-method">Exercise : Override __str__() Method&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-add-smart-phone-class">Exercise : Add SmartPhone Class&#x200E;</a>
+        <a class="nav-link py-1" href="#exercise-add-smartphone-class">Exercise : Add SmartPhone Class&#x200E;</a>
       </nav>
     </nav>
 
@@ -94,9 +86,10 @@
     <div id="page-nav-content-wrapper">
       <div id="content-wrapper">
         <div>
-          <navbar placement="top" type="inverse">
+          <navbar placement="top" type="inverse" class="temp-navbar">
             <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-            <dropdown text="Schedule" class="nav-link">
+            <span class="nav-link temp-dropdown-placeholder">Schedule</span>
+            <dropdown text="Schedule" class="nav-link temp-dropdown">
               <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
               <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
               <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
@@ -111,12 +104,14 @@
               <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
               <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
             </dropdown>
-            <dropdown text="Textbook" class="nav-link">
+            <span class="nav-link temp-dropdown-placeholder">Textbook</span>
+            <dropdown text="Textbook" class="nav-link temp-dropdown">
               <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
               <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
             </dropdown>
             <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-            <dropdown text="Links" class="nav-link">
+            <span class="nav-link temp-dropdown-placeholder">Links</span>
+            <dropdown text="Links" class="nav-link temp-dropdown">
               <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
               <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
               <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
@@ -321,7 +316,7 @@ Sun Tzu
               </tip-box>
               <panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded="" no-close="">
                 <div>
-                  <h4 id="exercise-create-stock-item-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stock-item-class"></a></h4>
+                  <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
                   <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
                   <table>
                     <tr>
@@ -843,7 +838,7 @@ Ben is learning
               </tip-box>
               <panel type="danger" header=":muscle: Exercise: Add `FlightlessBird` Class" expanded="" no-close="">
                 <div>
-                  <h4 id="exercise-add-flightless-bird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightless-bird-class"></a></h4>
+                  <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightlessbird-class"></a></h4>
                   <p>Do the following changes to the given code so that the code below produces the given output:</p>
                   <ol>
                     <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
@@ -1034,7 +1029,7 @@ Elsie is grading
               </tip-box>
               <panel type="danger" header=":muscle: Exercise: Add `SmartPhone` Class" expanded="" no-close="">
                 <div>
-                  <h4 id="exercise-add-smart-phone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smart-phone-class"></a></h4>
+                  <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smartphone-class"></a></h4>
                   <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
                   <table>
                     <tr>
@@ -1091,7 +1086,7 @@ playing game
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.17.2</a> at Sun, 10 Feb 2019 13:45:44 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
 </footer>
 </div>
 </body>
