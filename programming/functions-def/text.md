@@ -54,7 +54,7 @@ Nice to meet you.
 
 Note how the statements inside the function are not executed unless the method is called.
 
-<include src="tryYourOwn.md" boilerplate><span id="program">hello-function</span></include>
+<include src="tryYourOwn.md" boilerplate var-program="hello-function" />
 
 </tip-box>
 
