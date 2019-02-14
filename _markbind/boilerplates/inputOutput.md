@@ -1,10 +1,12 @@
+<variable name="align">bottom</variable>
+<variable name="arrow">→</variable>
 <table>
 <tr>
-  <td>
+  <td valign="top">
 
 {{ input | safe }}
   </td>
-  <td valign="bottom"><span id="arrow">&nbsp;→&nbsp;</span><br><br></td>
+  <td valign="{{ align }}">&nbsp;{{ arrow }}&nbsp;<br><br></td>
   <td valign="bottom">
 
 {{ output | safe }}
