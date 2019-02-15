@@ -12,28 +12,24 @@ def get_part(text, index):
 ```
 
 Example usage:
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 print(get_part(' John Doe | Male |    X', 0))
 print(get_part('John Doe | Male |    X', 2))
 print(get_part('Dog|Cat', 0))
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 John Doe
 X
 Dog
 ```
-  </td>
-</tr>
-</table>
-
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 

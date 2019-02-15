@@ -20,7 +20,7 @@ def get_player_hit_count(stats, player, inning, hit_size):
 print(get_player_hit_count(player_stats, 'amy', 2, 1))
 print(get_player_hit_count(player_stats, 'betty', 1, 4))
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 5
 2

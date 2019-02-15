@@ -8,7 +8,7 @@ def get_string():
 
 print(get_string())
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 Which word didn't he/she say? ["oops" "ok" "oh?"]
 ```

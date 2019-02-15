@@ -16,7 +16,7 @@ add_bonus(game3_scores, 'amy', 5)
 add_bonus(game3_scores, 'dan', 10)
 print(game3_scores)
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 {'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
 ```

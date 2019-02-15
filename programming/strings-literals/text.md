@@ -8,16 +8,16 @@ An escape sequence is a sequence of characters in a string literal that is taken
 
 Escape Sequence | Meaning | Example | Output
 --------------- | ------- | ------- | ------
-`\'` | single quote | `print('How\'s Life')` | `How's Life?`
-`\"` | double quote | `print("Say \"wow\"")` | `Say "wow"`
-`\\` | back slash | `print('files\\text')` | `files\text`
+`\'` | single quote | `print('How\'s Life')`{.python} | `How's Life?`
+`\"` | double quote | `print("Say \"wow\"")`{.python} | `Say "wow"`
+`\\` | back slash | `print('files\\text')`{.python} | `files\text`
 
 Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:
 
 Escape Sequence | Meaning | Example | Output
 --------------- | ------- | ------- | ------
-`\t` | horizontal tab | `print('aaa\tbbb')` | `aaa` `  ` `bbb`
-`\n` | line break | `print('hi\nthere!')` | `hi`<br>`there!`
+`\t` | horizontal tab | `print('aaa\tbbb')`{.python} | `aaa` `  ` `bbb`
+`\n` | line break | `print('hi\nthere!')`{.python} | `hi`<br>`there!`
 
 </div>
 
@@ -27,13 +27,12 @@ Escape Sequence | Meaning | Example | Output
 
 You can **use a pair of triple quotes to indicate a multi-line string literal**. 
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Here is an example multi-line string that uses triple quotes.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 print('''Hi,
@@ -41,9 +40,8 @@ How's life?
 bye!
 -me''')
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 Hi,
@@ -51,13 +49,11 @@ How's life?
 bye!
 -me
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 def get_email_body():
@@ -69,9 +65,8 @@ This is the third line.
 
 print(get_email_body())
 ```
-  </td>
-  <td><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br>
+</span>
+<span id="output">
 
 ```
 This is the first line of the email.
@@ -79,13 +74,12 @@ This is the second line.
 This is the third line.
           - bye!
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
-It is optional to escape `'` and `"` inside a mult-line string within triple quotes e.g., `How's life?` in the example above.
+{{ icon_info }} It is optional to escape `'` and `"` inside a mult-line string within triple quotes e.g., `How's life?` in the example above.
 
 <panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded no-close>
   <include src="e-multiLineString.md" />
@@ -114,8 +108,5 @@ def remove_head(items):
 
 :paperclip: Vist [this page](https://www.python.org/dev/peps/pep-0257/) to learn more about docstrings
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<include src="tryYourOwn.md" boilerplate var-program="strings-literals" />
 
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-literals?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>

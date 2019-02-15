@@ -12,28 +12,24 @@ def rectify_case(text):
 ```
 
 Example usage:
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 print(rectify_case('Mrs. Fox'))
 print(rectify_case('MR. FOX'))
 print(rectify_case('baby fox'))
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 Mrs. Fox
 mr. fox
 BABY FOX
 ```
-  </td>
-</tr>
-</table>
-
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 

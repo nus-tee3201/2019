@@ -20,7 +20,7 @@ game2_scores = {'zac': 35, 'betty': 30, 'aaron': 10}
 print_scorecard(game2_scores)
 print('total =', get_team_score(game2_scores))
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 aaron = 10
 betty = 30
