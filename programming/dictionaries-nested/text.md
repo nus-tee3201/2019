@@ -82,4 +82,7 @@ Betsy Sims
 </panel>
 <panel type="danger" header=":muscle: Exercise: Grade Report" expanded no-close>
   <include src="e-gradeReport.md" />
+</panel>
+<panel type="danger" header=":muscle: Exercise: Inventory Report" expanded no-close>
+  <include src="e-inventoryReport.md" />
 </panel><p/>
