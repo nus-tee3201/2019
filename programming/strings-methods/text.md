@@ -237,7 +237,6 @@ Yes, Yes, I agree
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-
 ```python
 print('Here:'.rjust(20, '>')) # right-justify
 print('Price'.ljust(20, '=')) # left-justify
@@ -260,7 +259,4 @@ Price===============
 
 <panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded no-close>
   <include src="e-printFormattedItem.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Inventory Report" expanded no-close>
-  <include src="e-inventoryReport.md" />
 </panel><p/>

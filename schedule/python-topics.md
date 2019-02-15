@@ -98,6 +98,10 @@
   * [Syntax Errors](#syntax-errors)
   * [Handling Exceptions](#handling-exceptions)
   * [Raising Exceptions](#raising-exceptions)
+* [**Strings**](#lists)
+  * [String Literals](#string-literals)
+  * [Working with Strings](#working-with-strings)
+  * [String Methods](#string-methods)
 </div>
 
 # Error Handling
@@ -106,6 +110,13 @@
 <include src="../programming/errors-syntax/text.md" />{{ hr_double }}
 <include src="../programming/errors-exceptions-handling/text.md" />{{ hr_double }}
 <include src="../programming/errors-exceptions-raising/text.md" />{{ hr_double }}
+
+# Strings
+
+<include src="../programming/strings-literals/text.md" />{{ hr_double }}
+<include src="../programming/strings-workingWith/text.md" />{{ hr_double }}
+<include src="../programming/strings-methods/text.md" />{{ hr_double }}
+
 </div>
 <div id="week6">
 <div id="week6-toc">
@@ -125,21 +136,6 @@
 <div id="week7">
 <div id="week7-toc">
 
-* [**Strings**](#lists)
-  * [String Literals](#string-literals)
-  * [Working with Strings](#working-with-strings)
-  * [String Methods](#string-methods)
-</div>
-
-# Strings
-
-<include src="../programming/strings-literals/text.md" />{{ hr_double }}
-<include src="../programming/strings-workingWith/text.md" />{{ hr_double }}
-<include src="../programming/strings-methods/text.md" />{{ hr_double }}
-</div>
-<div id="week8">
-<div id="week8-toc">
-
 * [**Files**](#files)
   * [File Paths](#file-paths)
   * [Reading from Files](#reading-from-files)
@@ -154,8 +150,8 @@
 <include src="../programming/files-writing/text.md" />{{ hr_double }}
 <include src="../programming/files-csv/text.md" />{{ hr_double }}
 </div>
-<div id="week9">
-<div id="week9-toc">
+<div id="week8">
+<div id="week8-toc">
 
 * [**Object-Oriented Programing**](#object-oriented-programming)
   * [Classes](#classes)
@@ -173,10 +169,9 @@
 # Installing 3rd Party Modules
 
 <include src="../programming/thirdparty/text.md" />{{ hr_double }}
-
 </div>
-<div id="week10">
-<div id="week10-toc">
+<div id="week9">
+<div id="week9-toc">
 
 * [**Object-Oriented Programing - continued**](#object-oriented-programming---continued)
   * [Inheritance](#inheritance)
@@ -186,10 +181,18 @@
 
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
 
+<include src="../programming/unittesting/text.md" />{{ hr_double }}
+</div>
+<div id="week10">
+<div id="week10-toc">
+
+
+</div>
+
+
 </div>
 <div id="week11">
 
-<include src="../programming/unittesting/text.md" />{{ hr_double }}
 
 </div>
 <div id="week12">
