@@ -2,9 +2,9 @@
 
 **Dictionaries and lists can be nested in each other to create more complicated data structures.**
 
-<tip-box> 
+<box>
 
-{{ icon_example }} This dictionary keeps track of assignments of each subject. Note how the value is a list rather than a simple value such as int or string.
+{{ icon_example }} This dictionary keeps track of assignments of each subject. Note how the value is a `list` rather than a simple value such as an `int` or a `string`.
 
 ```python
 assignments = {'TE3201': ['do exercises', 'submit project'],
@@ -29,7 +29,7 @@ for a in assignments.values():
   total = total + len(a)
 print('total tasks to do:', total)
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 CS3281 assignments: ['do presentation']
 ['do presentation', 'study for exams']
@@ -37,13 +37,13 @@ How many things to do in TE3201? 2
 total tasks to do: 4
 ```
 
-</tip-box>
+</box>
 
 <panel type="danger" header=":muscle: Exercise: Inning-Scores" expanded no-close>
   <include src="e-inningScores.md" />
 </panel><p/>
 
-<tip-box> 
+<box>
 
 {{ icon_example }} This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.
 
@@ -61,7 +61,7 @@ for f in friends.keys():
   if details['birthday'] == 'Jan 12':
     print(details['name'])
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 Jan 12
 John Doe
@@ -73,13 +73,9 @@ Betsy Sims
 → `{'name': 'John Doe', 'birthday': 'Jan 12'}['birthday']`<br>
 → `'Jan 12'`
 
-</tip-box>
+</box>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-nested?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+<include src="tryYourOwn.md" boilerplate var-program="dictionaries-nested" />
 
 <panel type="danger" header=":muscle: Exercise: Player Stats" expanded no-close>
   <include src="e-playerStats.md" />

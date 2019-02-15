@@ -16,7 +16,7 @@ def get_detailed_scores():
 
 print(get_detailed_scores())
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 {'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
 ```

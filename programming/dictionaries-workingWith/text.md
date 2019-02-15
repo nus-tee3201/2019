@@ -2,13 +2,12 @@
 
 **You can use keys to access values in a dictionary.**
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Some examples of retrieving values based on the key:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 numbers = {1: 'one', 2: 'two', 3: 'three'}
@@ -17,24 +16,21 @@ print(type(numbers))
 print(numbers[1])
 print(prices['butter'])
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 <class 'dict'>
 one
 5.0
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 {{ icon_example }} Examples of adding, updating, and deleting dictionary entries:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 grades = {'TE3201': 'A'}
@@ -45,19 +41,18 @@ print('After updating:',grades)
 del grades['CS2103']
 print('After deleting:', grades)
 ```
-  </td>
-  <td><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
+</span>
+<span id="output">
 
 ```
 After adding: {'TE3201': 'A', 'CS2103': 'B'}
 After updating: {'TE3201': 'A+', 'CS2103': 'B'}
 After deleting: {'TE3201': 'A+'}
 ```
-  </td>
-</tr>
-</table>
-</tip-box>
+</span>
+</include>
+
+</box>
 
 <panel type="danger" header=":muscle: Exercise: Get Set Delete Score" expanded no-close>
   <include src="e-getSetDeleteScore.md" />
@@ -65,32 +60,29 @@ After deleting: {'TE3201': 'A+'}
 
 **Trying to access a value for a non-existent key raises a `KeyError` exception.**
 
-<tip-box> 
+<box>
 
-{{ icon_example }} This exampls raises an exception because the key `'santa'` does not exist in the dictionary `is_nice`:
+{{ icon_example }} This example raises an exception because the key `'santa'` does not exist in the dictionary `is_nice`:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="top" boilerplate>
+<span id="input">
 
 ```python
 is_nice = {'jane': False, 'hakim': True}
 print(is_nice['santa'])
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
 Traceback (most recent call last):
   File "python", line 9, in <module>
 KeyError: 'santa'
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 <panel type="danger" header=":muscle: Exercise: Get Score with Error Handling" expanded no-close>
   <include src="e-getScoreWithErrorHandling.md" />
@@ -98,84 +90,76 @@ KeyError: 'santa'
 
 **You can use `keys()` and `values()` methods to iterate through keys and values of a dictionary, respectively.**
 
-<tip-box> 
+<box>
 
 {{ icon_example }} The code below shows how to iterate through keys/values of a dictionary.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for k in prices.keys():
   print(k, '->', prices[k])
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
 bread -> 3.5
 butter -> 5.0
 banana -> 0.15
 ```
+</span>
+</include>
 
-  </td>
-</tr> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for v in prices.values():
   print(v)
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
 3.5
 5.0
 0.15
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 You can **use the `sorted()` function to sort the keys/values before iterating through them**.
 
-<tip-box> 
+<box>
 
 {{ icon_example }} The code below shows how to iterate through keys/values of a dictionary.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for k in sorted(prices.keys()):
   print(k, '->', prices[k])
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
 banana -> 0.15
 bread -> 3.5
 butter -> 5.0
 ```
+</span>
+</include>
 
-  </td>
-</tr> 
-</table>
-
-</tip-box>
+</box>
 
 <panel type="danger" header=":muscle: Exercise: Print Scorecard" expanded no-close>
   <include src="e-printScorecard.md" />
@@ -183,58 +167,49 @@ butter -> 5.0
 
 As usual, you can **use `in` and `not in` to check whether a key or a value is in a dictionary**.
 
-<tip-box> 
+<box>
 
 {{ icon_example }} The code below shows how to check if a certain key or a value exists in a dictionary.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 print('bread' in prices.keys())
 print('sugar' not in prices.keys())
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
-
 True
 True
 ```
-  </td>
-</tr>
-<tr>
-  <td>
+</span>
+</include>
+
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 print(3.5 in prices.values())
 print(6.0 in prices.values())
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 ```
-
 True
 False
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+<include src="tryYourOwn.md" boilerplate var-program="dictionaries-workingWith" />
 
 <panel type="danger" header=":muscle: Exercise: Add Bonus" expanded no-close>
   <include src="e-addBonus.md" />

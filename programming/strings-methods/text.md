@@ -14,31 +14,29 @@ Here are some string methods related to the nature of the string.
 * `startswith(s)`: returns `True` if the substring `s` appears at the start of the string
 * `endswith(s)`: returns `True` if the substring `s` appears at the end of the string
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Examples of string methods mentioned above:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 print('Hi there!'.upper())
 print('Hi there!'.lower())
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 HI THERE!
 hi there!
 ```
-  </td>
-</tr>
+</span>
+</include>
 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 print('ABC'.isupper(), 'Abc'.isupper())
@@ -48,9 +46,8 @@ print('A23'.isalnum(), 'A+1'.isalnum())
 print('123'.isdecimal(), 'A12'.isdecimal())
 print(' \t\n'.isspace(), 'a b'.isspace())
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 True False
@@ -60,30 +57,28 @@ True False
 True False
 True False
 ```
-  </td>
-</tr>
+</span>
+</include>
 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 s = 'Hi there!'
 print(s.startswith('Hi'), s.startswith('hi'))
 print(s.endswith('!'), s.endswith('?'))
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 True False
 True False
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 <panel type="danger" header=":muscle: Exercise: Rectify Case" expanded no-close>
   <include src="e-rectifyCase.md" />
@@ -94,13 +89,12 @@ True False
 
 **The `find(s)` method gives index of `s` in the string**, if it is found. It returns `-1` if `s` is not found.
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Examples of the `find()` method:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 s = 'Monty Python'
@@ -108,20 +102,18 @@ print(s.find('Monty'))
 print(s.find('Python'))
 print(s.find('Spam'))
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 0
 6
 -1
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 <panel type="danger" header=":muscle: Exercise: Remove From Word" expanded no-close>
   <include src="e-removeFromWord.md" />
@@ -129,41 +121,37 @@ print(s.find('Spam'))
 
 **The `join()` method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.**
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Examples of the `join()` method:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 print(', '.join(['tom', 'dick', 'harry']))
 print('-'.join(['one', 'to', 'one']))
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 tom, dick, harry
 one-to-one
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
-**The `split()` method is the opposite of `join()`.** It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters">whitespace</tooltip> in the string are used as delimiters.
+**The `split()` method is the opposite of `join()`.** It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters">whitespaces</tooltip> in the string are used as delimiters.
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Some examples of using the `split()` method:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 print('hi, how are you?'.split())
@@ -173,9 +161,8 @@ print('''Todo:
 2. sleep'''.split('\n')) # split into lines
 print('1-to-1-talk'.split('-'))
 ```
-  </td>
-  <td><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
+</span>
+<span id="output">
 
 ```
 ['hi,', 'how', 'are', 'you?']
@@ -183,22 +170,20 @@ print('1-to-1-talk'.split('-'))
 ['Todo:', '1. eat', '2. sleep']
 ['1', 'to', '1', 'talk']
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 
 **There are some string methods to help you to strip trailing/leading spaces.**
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Examples of stripping leading/trailing spaces from a string:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 s = '  hello  there!  '
@@ -206,20 +191,18 @@ print('['+ s.strip() + ']')
 print('['+ s.lstrip() + ']') #left side strip
 print('['+ s.rstrip() + ']') #right side strip
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 [hello  there!]
 [hello  there!  ]
 [  hello  there!]
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 <panel type="danger" header=":muscle: Exercise: Get Part" expanded no-close>
   <include src="e-getPart.md" />
@@ -227,7 +210,7 @@ print('['+ s.rstrip() + ']') #right side strip
 
 **The `replace()` method can replace a character (or a phrase) with another character/phrase**. 
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Some examples of using `replace()` method:
 
@@ -236,52 +219,44 @@ print('face to face'.replace(' ', '-'))  # replace space with a dash
 print('1,2,3,4'.replace(',', '\t'))  # replace comma with a tab
 print('Yup, Yup, I agree'.replace('Yup', 'Yes'))
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 face-to-face
 1	2	3	4
 Yes, Yes, I agree
 ```
 
-</tip-box>
+</box>
 
 **There are some string methods to help you to align text.**
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Examples of aligning text using string methods:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
+
 
 ```python
 print('Here:'.rjust(20, '>')) # right-justify
 print('Price'.ljust(20, '=')) # left-justify
-print('Title'.center(20, ':')) # center
+print('Title'.center(16, ':')) # center
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 >>>>>>>>>>>>>>>Here:
 Price===============
-:::::::Title::::::::
+:::::Title::::::
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
-
-
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+<include src="tryYourOwn.md" boilerplate var-program="strings-methods" />
 
 <panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded no-close>
   <include src="e-printFormattedItem.md" />

@@ -8,7 +8,7 @@ def get_multiline_string():
     
 print(get_multiline_string()) 
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 Which word didn't he/she say?
 * "oops"

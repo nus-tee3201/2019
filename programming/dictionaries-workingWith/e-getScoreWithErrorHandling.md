@@ -14,7 +14,7 @@ game1_scores = {'amy': 35, 'betty': 36, 'charlie': 30}
 print(get_score1(game1_scores, 'charlie'))
 print(get_score1(game1_scores, 'brown'))
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 30
 brown is not in the game!

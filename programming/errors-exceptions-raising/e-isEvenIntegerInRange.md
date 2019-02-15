@@ -2,11 +2,11 @@
 
 <tip-box> 
 
-:exclamation: This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.
+{{ icon_important }} This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.
 
 </tip-box>
 
-The function given below checks if a given input is an even  integer in a given range.
+The function given below checks if a given input is an even integer in a given range.
 
 ```python
 def check(number, start, end):
@@ -15,7 +15,6 @@ def check(number, start, end):
 
 Some example inputs and outputs are given below:  
 ```python
-check('x', 'y', 'z')
 check(3, 'y', 'z') # False (3 is not even)
 check(2, 3.4, 5)
 check(2, 3, [])
@@ -25,7 +24,7 @@ check(3, 1, 5)
 check(4, 1, 4) # False ( range 1 to 4 excludes 4)
 check(4, 1, 5)
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 x is an int in range y - z ? Value error: x is not an integer
 3 is an int in range y - z ? No
@@ -91,7 +90,7 @@ Note how the above two functions use two other functions `confirm_is_int` and `c
   [[more examples ...](https://www.poftut.com/python-type-function-examples/)]
   
 **`confirm_range_correct(start, end)`**:
-* Raises a `ValueError` if `end` or `start` are not integers. This behavior is already implemented by the code given below, using two calls to the `confirm_in_int` function.
+* Raises a `ValueError` if `end` or `start` are not integers. This behavior is already implemented by the code given below, using two calls to the `confirm_is_int` function.
 * Raises a `ValueError('end is smaller than start)` if `end` is smaller than `start`. You need to implement this behavior.
 * Partial code:
   ```python

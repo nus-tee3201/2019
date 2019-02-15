@@ -11,9 +11,8 @@ def remove_from_word(text, word):
 ```
 
 Example usage:
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 print('>' + remove_from_word('red-hot-lava', 'red'))
@@ -22,9 +21,8 @@ print('>' + remove_from_word('red-hot-lava', 'lava'))
 print('>' + remove_from_word('red-hot-lava', 'bat'))
 print('>' + remove_from_word('red-hot-lava', '-'))
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 >
@@ -33,10 +31,8 @@ print('>' + remove_from_word('red-hot-lava', '-'))
 >red-hot-lava
 >red
 ```
-  </td>
-</tr>
-</table>
-
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 

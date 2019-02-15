@@ -13,9 +13,8 @@ def print_formatted_item(name, count, width):
 ```
 
 Example usage:
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 w = 25
@@ -23,18 +22,19 @@ print_formatted_item('pens', 2, w)
 print_formatted_item('books[old]', 50, w)
 print_formatted_item('pins[new]', 110, w)
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
+
 ```
 pens.................:  2
 books(old)...........: 50
 pins(new)............:110
 ```
-  </td>
-</tr>
-<tr>
-  <td>
+</span>
+</include>
+
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 w = 20
@@ -43,19 +43,16 @@ print_formatted_item('books[old]', 50, w)
 print_formatted_item('pins[new]', 110, w)
 
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 pens............:  2
 books(old)......: 50
 pins(new).......:110
 ```
-  </td>
-</tr>
-</table>
-
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 

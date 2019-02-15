@@ -9,27 +9,24 @@ def has_all_characters(text, characters):
 ```
 
 Example usage:
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 print(has_all_characters('abccde', ['a', 'c']))
 print(has_all_characters('ab cde', ['a', 'a', ' ']))
 print(has_all_characters('apple', ['a', 'f']))
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 True
 True
 False
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">

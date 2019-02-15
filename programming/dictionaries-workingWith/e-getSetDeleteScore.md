@@ -26,7 +26,7 @@ print(game1_scores)
 delete_score(game1_scores, 'dan')
 print(game1_scores)
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 36
 35

@@ -12,9 +12,8 @@ def is_doctor(name):
 ```
 
 Example usage:
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 print(is_doctor('Dr. Jekyll'))
@@ -27,9 +26,8 @@ print(is_doctor('Jekyll (dr)'))
 print(is_doctor('Mr. Hyde'))
 print(is_doctor('Miss Dr. B.more'))
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</span>
+<span id="output">
 
 ```
 True
@@ -42,9 +40,8 @@ True
 False
 False
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Tips%%">
 

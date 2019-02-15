@@ -8,7 +8,7 @@ def shorten(text):
   
   If text is longer than 10 characters, return the first four characters 
   followed by '..' followed by the last four characters.
-  If text is not longer than 10 characters, returns text.
+  If text is not longer than 10 characters, return text.
   
   Example:
   shorten('1234567890abcd') returns '1234..abcd'

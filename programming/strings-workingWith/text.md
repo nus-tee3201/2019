@@ -11,13 +11,12 @@ H   | i | &nbsp; | t | h | e | r | e | !
 --- |---|--------|---|---|---|---|---|---
 0   | 1 | 2      | 3 | 4 | 5 | 6 | 7 | 8
 
-<tip-box> 
+<box>
 
 {{ icon_example }} The code below shows how to use index and slice notations to get parts of a string.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 s = 'Hi there!'
@@ -25,22 +24,20 @@ print(s[0])
 print(s[-1])
 print(s[3:6])
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 H
 !
 the
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
-:exclamation: Strings are immutable. The following code will not work: `s[0] = 'h'`
+{{ icon_important_big_red }} Strings are immutable. The following code will not work: `s[0] = 'h'`
 
 <panel type="danger" header=":muscle: Exercise: Shorten String" expanded no-close>
   <include src="e-shortenString.md" />
@@ -49,13 +46,12 @@ the
 
 You can **use the `in` and `not in` operator to see if one string is a sub-string of another**.
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Examples of checking for the existence of a sub-string:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate>
+<span id="input">
 
 ```python
 s = 'Hi there!'
@@ -63,26 +59,20 @@ print('Hi' in s)
 print('hi' in s) # matching is case-sensitive
 print('Hello' not in s)
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
 
 ```
 True
 False
 True
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+<include src="tryYourOwn.md" boilerplate var-program="strings-workingWith" />
 
 <panel type="danger" header=":muscle: Exercise: Has All Characters" expanded no-close>
   <include src="e-hasAllCharacters.md" />
