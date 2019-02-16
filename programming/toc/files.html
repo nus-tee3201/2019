@@ -63,9 +63,9 @@
       <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a current">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
@@ -141,7 +141,7 @@
             <div>
               <h3 id="file-paths">File Paths<a class="fa fa-anchor" href="#file-paths"></a></h3>
               <p>A file has a <em>filename</em> and a <em>path</em>. <strong>The <em>path</em> specifies the location of a file on the computer</strong>, as a hierarchy of <em>folders</em> (also called <em>directories</em>).</p>
-              <tip-box>
+              <box>
                 <tabs>
                     <tab header="Windows">
                     <p><span class="fas fa-cube"></span> File <code>C:\photos\2018\home.jpg</code></p>
@@ -150,13 +150,15 @@
                       <li>Path: <code>C:\photos\2018</code> (Windows uses the back slash <code>\</code> as the <em>separator</em> symbol in paths )</li>
                       <li>Folders in the path (<code>C:</code> is called the <em>root folder</em>):
                         <pre><code class="hljs">C: {root}
-  ˪ photos
-      ˪ 2018
+  └── photos
+       └── 2018
 </code></pre>
                       </li>
                     </ul>
-                    <p>❗️ Windows file names and paths are not case sensitive: <code>C:\photos\2018\home.jpg</code> is same as <code>C:\PHOTOS\2018\HOME.JPG</code>.
-                        </p>
+                    <p>
+                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Windows file names and paths are not case sensitive: <code>C:\photos\2018\home.jpg</code> is same as <code>C:\PHOTOS\2018\HOME.JPG</code>.
+                       
+                    </p>
                   </tab>
                     <tab header="OS-X/Linux">
                     <p><span class="fas fa-cube"></span> File <code>/Users/john/home.jpg</code></p>
@@ -165,23 +167,28 @@
                       <li>Path: <code>/Users/john</code> (OS-X/Linux uses the forward slash <code>/</code> as the <em>separator</em> symbol in paths )</li>
                       <li>Folders in the path (the <code>/</code> at the start of the path is considered the <em>root folder</em>):
                         <pre><code class="hljs">/ {root}
-  ˪ Users
-      ˪ john
+    └── Users
+          └── john
 </code></pre>
                       </li>
                     </ul>
-                    <p>❗️ OS-X/Linux file names and paths are case sensitive. <code>/Users/john/home.jpg</code> is NOT the same as <code>/USERS/JOHN/HOME.JPG</code></p>
+                    <p>
+                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> OS-X/Linux file names and paths are case sensitive. <code>/Users/john/home.jpg</code> is NOT the same as <code>/USERS/JOHN/HOME.JPG</code>
+                    </p>
                     <p></p>
                   </tab>
                 </tabs>
-              </tip-box>
+              </box>
               <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
               <tip-box>
-                <p><span class="fas fa-cube"></span> Example code showing how to print/change current working directory</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+                <p><span class="fas fa-cube"></span> This code shows how to print/change current working directory</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
 cwd = os.getcwd() <span class="hljs-comment"># store current working dir</span>
 print(cwd) <span class="hljs-comment"># print current working dir</span>
@@ -190,18 +197,17 @@ print(os.getcwd()) <span class="hljs-comment"># print current working dir</span>
 os.chdir(cwd) <span class="hljs-comment"># change working dir back to original</span>
 print(os.getcwd())
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br><br><br><br> → </td>
-                      <td><br><br><br><br><br>
-                      <pre><code class="hljs">C:\modules\te3201
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">C:\photos\vaction
 C:\temp\python
-C:\modules\te3201
+C:\photos\vaction
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
                 <p>💡 Note how the path <code>'C:\\temp\\python'</code> uses double slash to <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
                 <modal large="" title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
                   <div>
@@ -220,19 +226,19 @@ C:\modules\te3201
                           <tr>
                             <td><code>\'</code></td>
                             <td>single quote</td>
-                            <td><code>print('How\'s Life')</code></td>
+                            <td><code class="hljs inline python">print(<span class="hljs-string">'How\'s Life'</span>)</code></td>
                             <td><code>How's Life?</code></td>
                           </tr>
                           <tr>
                             <td><code>\&quot;</code></td>
                             <td>double quote</td>
-                            <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
+                            <td><code class="hljs inline python">print(<span class="hljs-string">"Say \"wow\""</span>)</code></td>
                             <td><code>Say &quot;wow&quot;</code></td>
                           </tr>
                           <tr>
                             <td><code>\\</code></td>
                             <td>back slash</td>
-                            <td><code>print('files\\text')</code></td>
+                            <td><code class="hljs inline python">print(<span class="hljs-string">'files\\text'</span>)</code></td>
                             <td><code>files\text</code></td>
                           </tr>
                         </tbody>
@@ -253,13 +259,13 @@ C:\modules\te3201
                           <tr>
                             <td><code>\t</code></td>
                             <td>horizontal tab</td>
-                            <td><code>print('aaa\tbbb')</code></td>
+                            <td><code class="hljs inline python">print(<span class="hljs-string">'aaa\tbbb'</span>)</code></td>
                             <td><code>aaa</code> <code></code> <code>bbb</code></td>
                           </tr>
                           <tr>
                             <td><code>\n</code></td>
                             <td>line break</td>
-                            <td><code>print('hi\nthere!')</code></td>
+                            <td><code class="hljs inline python">print(<span class="hljs-string">'hi\nthere!'</span>)</code></td>
                             <td><code>hi</code><br><code>there!</code></td>
                           </tr>
                         </tbody>
@@ -269,15 +275,15 @@ C:\modules\te3201
                 </modal>
               </tip-box>
               <p><strong>A path that specifies all folders starting from the root is an <em>absolute path</em>. A path that is specified relative to the current working directory is a <em>relative</em> path.</strong></p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Assume the current working directory is <code>C:\modules\te3201</code> and you created a new folder inside it named <code>exercises</code> and put a <code>ex.txt</code> file in that folder.</p>
                 <ul>
                   <li>Absolute path of the file: <code>C:\modules\te3201\exercises\ex1.txt</code></li>
                   <li>Relative path of the file: <code>exercises\ex1.txt</code></li>
                 </ul>
-              </tip-box>
+              </box>
               <p>In a path, you can use the dot <code>.</code> as a shorthand to refer to the current working directory. Similarly, <code>..</code> can be used to refer to the parent directory.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> If the current working directory is <code>C:\modules\te3201</code>, you can use any of the following to refer to <code>C:\modules\te3201\exercises\ex1.txt</code>.</p>
                 <ul>
                   <li><code>exercises\ex1.txt</code></li>
@@ -288,14 +294,17 @@ C:\modules\te3201
                 <panel type="seamless" header="%%another example%%">
                   <p><a href="https://automatetheboringstuff.com/images/000032.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000032.jpg" alt="" class="img-fluid"></a></p>
                 </panel>
-              </tip-box>
+              </box>
               <p>You can use <code>os.mkdirs()</code> function to create folders and <code>os.removedirs()</code> to delete folders.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Example code showing how to create/delete directories</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">print(os.getcwd())
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">print(os.getcwd())
 os.makedirs(<span class="hljs-string">'ex\\w1'</span>)
 os.chdir(<span class="hljs-string">'ex\\w1'</span>)
 print(os.getcwd())
@@ -304,48 +313,43 @@ print(os.getcwd())
 os.chdir(<span class="hljs-string">'..'</span>)
 os.removedirs(<span class="hljs-string">'ex\\w1'</span>)
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br><br><br><br> → </td>
-                      <td><br><br><br><br><br>
-                      <pre><code class="hljs">C:\repos\nus-te3201\sample-code
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">C:\repos\nus-te3201\sample-code
 C:\repos\nus-te3201\sample-code\ex\w1
 C:\repos\nus-te3201\sample-code\ex
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
               <p><code>os.path</code> module has many functions that can help with paths. For example, <code>os.paths.join()</code> function can be used to generate file path that matches the current operating system.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Consider the code below:</p>
                 <pre><code class="hljs python">cwd = os.getcwd()
 print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs-string">'w2'</span>))
 </code></pre>
                 <p>If you run it on a Windows computer in the folder <code>C:\modules\te3201</code>, it prints <code>C:\modules\te3201\ex\w2</code>.<br>
                   If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
-              </tip-box>
-              <p>❗️ To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.</p>
-              <tip-box>
+              </box>
+              <p>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.
+              </p>
+              <box>
                 <p><span class="fas fa-cube"></span> contrasting hard-coding the separator vs using <code>os.path.join()</code>:</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>❌ Works only on Windows</th>
-                        <th>✅ Works on both Windows and OS-X</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code>os.makedirs('ex\\w1')</code></td>
-                        <td><code>os.makedirs(os.path.join('ex', 'w1'))</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </tip-box>
+                <ul>
+                  <li>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> (Works only on Windows):<br>
+                    <code>os.makedirs('ex\\w1')</code>
+                  </li>
+                  <li>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font> (Works on both Windows and OS-X):<br>
+                    <code>os.makedirs(os.path.join('ex', 'w1'))</code>
+                  </li>
+                </ul>
+              </box>
               <panel type="danger" header=":muscle: Exercise: Create Directory" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-create-directory"></a></h4>
@@ -399,7 +403,7 @@ check(<span class="hljs-string">'foo'</span>)
 check(<span class="hljs-string">'bar'</span>)
 
 </code></pre>
-                  <p>⤵️ output when run in <a href="http://REPL.it">REPL.it</a></p>
+                  <p><span class="fas fa-arrow-down"></span> output when run in <a href="http://REPL.it">REPL.it</a></p>
                   <pre><code class="hljs">/home/runner
 /home/runner/foo
 /home/runner
@@ -419,16 +423,12 @@ check(<span class="hljs-string">'bar'</span>)
   a c:/foo/bar directory.
   """</span>
   os.makedirs(dir_name)
-  
-  
+
 ...
-  
-  
+
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_current</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-string">"""Print current working directory"""</span>
   print(os.getcwd())
-  
-
 </code></pre>
                   </panel>
                 </div>
@@ -447,28 +447,30 @@ check(<span class="hljs-string">'bar'</span>)
               </ul>
               <tip-box>
                 <p><span class="fas fa-cube"></span> The code below shows how to read from a text file.</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
 f = open(file_path, <span class="hljs-string">'r'</span>) <span class="hljs-comment"># open in read mode</span>
 items = f.read()
 print(items)
 f.close()
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br> → </td>
-                      <td><br><br>
-                      Output (contents of the <code>items.txt</code>):
-                      <pre><code class="hljs">first line
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <p>Output (contents of the <code>items.txt</code>):</p>
+                        <pre><code class="hljs">first line
 second line
 third line
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
                 <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
               </tip-box>
               <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
@@ -482,7 +484,7 @@ print(items) <span class="hljs-comment"># print as a list</span>
   print(i.strip()) <span class="hljs-comment"># use strip() to remove linebreak at the end of each line</span>
 f.close()
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre><code class="hljs">['first line\n', 'second line\n', 'third line\n']
 first line
 second line
@@ -505,8 +507,9 @@ third line
   get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
   """</span>
   <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_stats</span><span class="hljs-params">(contents)</span>:</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_stats</span><span class="hljs-params">(contents)</span>:</span>
   <span class="hljs-string">"""Given a list of lines, return line count and letter count as a dictionary
   
   Trailing line breaks (if any) are not counted for letter count.
@@ -514,18 +517,19 @@ third line
   Example:
   get_stats(['aaa\n', 'bbb']) returns {'lines': 2, 'letters': 6}
   """</span>
-  stats = {}
+  stats = []
   <span class="hljs-comment"># ADD YOUR CODE HERE</span>
   <span class="hljs-keyword">return</span> stats
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analyze_file</span><span class="hljs-params">(filename)</span>:</span> 
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analyze_file</span><span class="hljs-params">(filename)</span>:</span>
   contents_as_list = get_file_content_as_list(filename)
   print(<span class="hljs-string">'lines in file:'</span>, contents_as_list)
-  print(<span class="hljs-string">'stats:'</span>, get_stats(contents_as_list))
-  
+  stats = get_file_stats(contents_as_list)
+  print(<span class="hljs-string">'It has'</span>, stats[<span class="hljs-number">0</span>], <span class="hljs-string">'lines containing'</span>, stats[<span class="hljs-number">1</span>], <span class="hljs-string">'letters'</span>)
+
 analyze_file(<span class="hljs-string">'file1.txt'</span>)
 analyze_file(<span class="hljs-string">'file2.txt'</span>)
-
 </code></pre>
                   <p><code>file1.txt</code> (2 lines, 22 letters):</p>
                   <pre><code class="hljs">aaa bbb ccc
@@ -537,11 +541,11 @@ bb
 ccc
 ddd 
 </code></pre>
-                  <p>⤵️</p>
+                  <p><span class="fas fa-arrow-down"></span></p>
                   <pre><code class="hljs">lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
-stats: {'lines': 2, 'letters': 22}
+It has 2 lines containing 22 letters
 lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
-stats: {'lines': 4, 'letters': 10}
+It has 4 lines containing 10 letters
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Tips%%">
                     <ul>
@@ -563,7 +567,6 @@ stats: {'lines': 4, 'letters': 10}
   lines = f.readlines()
   f.close()
   <span class="hljs-keyword">return</span> lines
-
 </code></pre>
                   </panel>
                 </div>
@@ -573,8 +576,8 @@ stats: {'lines': 4, 'letters': 10}
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
               <h3 id="writing-to-files">Writing to Files<a class="fa fa-anchor" href="#writing-to-files"></a></h3>
-              <p>Similar to reading from a file, writing to a file too is a three step process. One main difference is <strong>the file needs to be opened in <code>write mode</code>.</strong></p>
-              <tip-box>
+              <p><strong>Similar to reading from a file, writing to a file too is a three step process. One main difference is the file needs to be opened in the <em>write mode</em>.</strong></p>
+              <box>
                 <p><span class="fas fa-cube"></span> The code below shows how to write to a text file.</p>
                 <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
 f = open(file_path, <span class="hljs-string">'w'</span>)  <span class="hljs-comment"># open in write mode</span>
@@ -582,7 +585,7 @@ f.write(<span class="hljs-string">'first line\n'</span>)
 f.write(<span class="hljs-string">'second line\n'</span>)
 f.close()
 </code></pre>
-                <p>⤵️ contents of the <code>items.txt</code>:</p>
+                <p><span class="fas fa-arrow-down"></span> contents of the <code>items.txt</code>:</p>
                 <pre><code class="hljs">first line
 second line
 </code></pre>
@@ -590,20 +593,20 @@ second line
                   <li>💡 The <code>'w'</code> argument indicates that the file should be opened in write mode.</li>
                   <li>💡 Unlike the <code>print()</code> function that prints content in a new line every time, the <code>write</code> function does not add an automatic line break at the end. You need to add a <code>\n</code> at each place you want a line break to appear in the file.</li>
                 </ul>
-              </tip-box>
-              <p>Opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened. To preserve original content and add to it, open the file in <em>append mode</em>.</p>
-              <tip-box>
+              </box>
+              <p><strong>To preserve original content and add to it, open the file in <em>append mode</em>.</strong> That is because opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened.</p>
+              <box>
                 <p><span class="fas fa-cube"></span> The code below shows how to append to a file.</p>
                 <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'a'</span>)  <span class="hljs-comment"># open in append mode</span>
 f.write(<span class="hljs-string">'third line\n'</span>)
 f.close()
 </code></pre>
-                <p>⤵️ contents of the <code>items.txt</code>:</p>
+                <p><span class="fas fa-arrow-down"></span> contents of the <code>items.txt</code>:</p>
                 <pre><code class="hljs">first line
 second line
 third line
 </code></pre>
-              </tip-box>
+              </box>
               <panel type="danger" header=":muscle: Exercise: Add Line Numbers" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-add-line-numbers"></a></h4>
@@ -662,7 +665,7 @@ third line
                   <p><code>file2a.txt</code>:</p>
                   <pre><code class="hljs">hang in there
 </code></pre>
-                  <p>⤵️</p>
+                  <p><span class="fas fa-arrow-down"></span></p>
                   <pre><code class="hljs">['1. first line\n', '2. \n', '3. second line\n', '4. third line']
 ['1. hang in there']
 </code></pre>
@@ -689,7 +692,7 @@ third line
             <div>
               <h3 id="csv-files">CSV files<a class="fa fa-anchor" href="#csv-files"></a></h3>
               <p><strong>CSV files are often used as a simple way to save spreadsheet-like data.</strong> Each line in a CSV file represents a row in the spreadsheet, and commas separate the cells in the row. They usually have the <code>.csv</code> extension and can be opened in spreadsheet programs such as Excel or in any text editor.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Here is the content of a simple CSV file <span class="dimmed">(click <a href="deliveries.csv">here</a> to download a copy)</span> and how it looks like when opened in Excel.</p>
                 <table>
                   <tr>
@@ -707,17 +710,17 @@ third line
                     </td>
                   </tr>
                 </table>
-              </tip-box>
+              </box>
               <p>💡 If a value itself contains a comma <span class="dimmed">e.g., <code>Foo, Emily</code></span>, it can be enclosed in double quotes <span class="dimmed">e.g., <code>&quot;Foo, Emily&quot;</code></span>, to prevent it being misinterpreted as multiple values.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> This example shows how to use double quotes to handle commas inside a value:</p>
                 <ul>
                   <li><code>7/11/2017,&quot;Foo, Emily&quot;,5</code> interpreted as three values: <code>7/11/2017</code> and <code>Foo, Emily</code> and <code>5</code></li>
                   <li><code>7/11/2017,Foo, Emily,5</code> interpreted as four values: <code>7/11/2017</code> and <code>Foo</code> and <code>Emily</code> and <code>5</code></li>
                 </ul>
-              </tip-box>
-              <p>Although CSV files are text files that can be read/written using normal file access techniques covered earlier, <strong>Python has an in-built module named <code>csv</code> that provides functions to deal with CSV files more conveniently.</strong> For example, <strong>it provides a way to read a CSV file as a <code>Reader</code> object that knows how to interpret a CSV file.</strong></p>
-              <tip-box>
+              </box>
+              <p><strong>Python has an in-built module named <code>csv</code> that provides functions to deal with CSV files more conveniently</strong>, although CSV files are text files that can be read/written using normal file access techniques covered earlier. For example, Python provides a way to read a CSV file as a <code>Reader</code> object that knows how to interpret a CSV file.</p>
+              <box>
                 <p><span class="fas fa-cube"></span> The code below shows how to use the <code>csv</code> module to read contents of a CSV file named <code>deliveries.csv</code>:</p>
                 <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv 
 
@@ -727,7 +730,7 @@ deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># cre
   print(row)
 deliveries_file.close() <span class="hljs-comment"># close file</span>
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre><code class="hljs">['4/11/2017', 'Alice Bee', '4']
 ['5/11/2017', 'Chris Ding', '12']
 ['5/11/2017', 'Brenda Chew', '13']
@@ -749,10 +752,10 @@ Date: 5/11/2017 	Recipient: Chris Ding 	Quantity: 12
 Date: 5/11/2017 	Recipient: Brenda Chew 	Quantity: 13
 Date: 6/11/2017 	Recipient: Dan Pillai 	Quantity: 5
 </code></pre>
-              </tip-box>
+              </box>
               <p>Note that all values read from a CSV files come as strings. If they are meant to represent other types, you need to convert the string to the correct type first.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> In this example the 3rd value of each row is converted to an int before adding them up.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> In this example the 3rd value of each row is converted to an <code>int</code> before adding them up.</p>
                 <pre><code class="hljs python">deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) 
 deliveries_reader = csv.reader(deliveries_file) 
 total = <span class="hljs-number">0</span>
@@ -763,12 +766,12 @@ total = <span class="hljs-number">0</span>
 print(<span class="hljs-string">'Total quantity delivered:'</span>, total)
 deliveries_file.close()
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre><code class="hljs">Total quantity delivered: 34
 </code></pre>
-              </tip-box>
-              <p><strong>The <code>csv</code> module also provide an easy way to write to CSV files, one row at a time, using a <code>Write</code> object.</strong></p>
-              <tip-box>
+              </box>
+              <p><strong>The <code>csv</code> module also provide an easy way to write to CSV files, one row at a time, using a <code>Writer</code> object.</strong></p>
+              <box>
                 <p><span class="fas fa-cube"></span> The code below writes two rows to the <code>pricelist.csv</code> file.</p>
                 <pre><code class="hljs python">output_file = open(<span class="hljs-string">'pricelist.csv'</span>, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>) <span class="hljs-comment"># open file in write mode</span>
 output_writer = csv.writer(output_file) <span class="hljs-comment"># get a Writer object</span>
@@ -782,102 +785,106 @@ bananas,3,2.0,False
 </code></pre>
                 <ul>
                   <li>💡 You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., <code>output_file = open('pricelist.csv',</code><mark><code>'a',</code></mark><code>newline='')</code></li>
-                  <li>💡 The keyword argument <code>newline=''</code> need to be used when opening a CSV file in Windows. The reasoning behind it is beyond the scope of this book.
+                  <li>💡 The keyword argument <code>newline=''</code> need to be used when opening a CSV file in Windows. The reasoning behind it is too complicated to explain here.
                   </li>
                 </ul>
-              </tip-box>
+              </box>
 
               <panel type="danger" header=":muscle: Exercise: Calcluate GST" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-calculate-gst">Exercise : Calculate GST<a class="fa fa-anchor" href="#exercise-calculate-gst"></a></h4>
                   <p>Suppose there is a CSV file in this format:</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <p><code>itemlist1.csv</code>:</p>
-                        <pre><code class="hljs">item,price
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <p><code>itemlist1.csv</code>:</p>
+                          <pre><code class="hljs">item,price
 book,10.0
 bag,50.0
 &quot;pens, pencils&quot;, 5.0
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td> → </td>
-                        <td>
-                        <div class="table-responsive">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th>item</th>
-                                <th>price</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>book</td>
-                                <td>10.0</td>
-                              </tr>
-                              <tr>
-                                <td>bag</td>
-                                <td>50.0</td>
-                              </tr>
-                              <tr>
-                                <td>pens, pencils</td>
-                                <td>5.0</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>item</th>
+                                  <th>price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>book</td>
+                                  <td>10.0</td>
+                                </tr>
+                                <tr>
+                                  <td>bag</td>
+                                  <td>50.0</td>
+                                </tr>
+                                <tr>
+                                  <td>pens, pencils</td>
+                                  <td>5.0</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <p>Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <p><code>updated_itemlist1.csv</code>:</p>
-                        <pre><code class="hljs">item,price,GST
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <p><code>updated_itemlist1.csv</code>:</p>
+                          <pre><code class="hljs">item,price,GST
 book,10.0,0.7
 bag,50.0,3.5
 &quot;pens, pencils&quot;, 5.0,0.35
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td> → </td>
-                        <td>
-                        <div class="table-responsive">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th>item</th>
-                                <th>price</th>
-                                <th>GST</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>book</td>
-                                <td>10.0</td>
-                                <td>0.7</td>
-                              </tr>
-                              <tr>
-                                <td>bag</td>
-                                <td>50.0</td>
-                                <td>3.5</td>
-                              </tr>
-                              <tr>
-                                <td>pens, pencils</td>
-                                <td>5.0</td>
-                                <td>0.35</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>item</th>
+                                  <th>price</th>
+                                  <th>GST</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>book</td>
+                                  <td>10.0</td>
+                                  <td>0.7</td>
+                                </tr>
+                                <tr>
+                                  <td>bag</td>
+                                  <td>50.0</td>
+                                  <td>3.5</td>
+                                </tr>
+                                <tr>
+                                  <td>pens, pencils</td>
+                                  <td>5.0</td>
+                                  <td>0.35</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <panel type="seamless" header="%%:bulb: Python hints%%">
                     <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
 
@@ -940,7 +947,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
 </footer>
 </div>
 </body>

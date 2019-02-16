@@ -834,6 +834,7 @@
         "exercise-inning-scores": "Exercise: Inning-Scores",
         "exercise-player-stats": "Exercise: Player Stats",
         "exercise-grade-report": "Exercise: Grade Report",
+        "exercise-inventory-report": "Exercise : Inventory Report",
         "dictionaries": "Dictionaries",
         "the-dictionary-data-structure": "The Dictionary Data Structure",
         "working-with-dictionaries": "Working with Dictionaries",
@@ -992,7 +993,9 @@
         "monty-1": "Monty 1",
         "monty-2": "Monty 2",
         "monty-3": "Monty 3",
-        "monty-4": "Monty 4"
+        "monty-4": "Monty 4",
+        "monty-5": "Monty 5",
+        "monty-6": "Monty 6"
       },
       "title": "Python Basics: The Monty Project",
       "footer": "footer.md",
@@ -1052,7 +1055,6 @@
         "exercise-remove-from-word": "Exercise : Remove From Word",
         "exercise-get-part": "Exercise : Get Part",
         "exercise-print-formatted-item": "Exercise : Print Formatted Item",
-        "exercise-inventory-report": "Exercise : Inventory Report",
         "strings": "Strings",
         "string-literals": "String Literals",
         "working-with-strings": "Working with Strings",

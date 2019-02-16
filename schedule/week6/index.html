@@ -78,638 +78,811 @@
         <div>
           <div id="week6-toc">
             <ul>
-              <li><a href="#lists"><strong>Dictionaries</strong></a>
+              <li><a href="#files"><strong>Files</strong></a>
                 <ul>
-                  <li><a href="#the-dictionary-data-structure">The Dictionary Data Structure</a></li>
-                  <li><a href="#working-with-dictionaries">Working with Dictionaries</a></li>
-                  <li><a href="#nested-dictionaries">Nested Dictionaries</a></li>
+                  <li><a href="#file-paths">File Paths</a></li>
+                  <li><a href="#reading-from-files">Reading from Files</a></li>
+                  <li><a href="#writing-to-files">Writing to Files</a></li>
+                  <li><a href="#csv-files">CSV Files</a></li>
                 </ul>
               </li>
             </ul>
           </div>
-          <h1 id="dictionaries">Dictionaries<a class="fa fa-anchor" href="#dictionaries"></a></h1>
+          <h1 id="files">Files<a class="fa fa-anchor" href="#files"></a></h1>
           <div>
-            <h3 id="the-dictionary-data-structure">The Dictionary Data Structure<a class="fa fa-anchor" href="#the-dictionary-data-structure"></a></h3>
-            <p><strong>A <em>dictionary</em> (python type: <code>dict</code>) is a collection of many values that can be indexed by any object type</strong>, unlike lists that are automatically indexed by integers. <strong>Indexes for dictionaries are called <em>keys</em></strong>, and a key with its associated value is called a <em>key-value pair</em>. Python <strong>dictionaries use curly braces notation <code>{ key1: value1, key2: value2, ...}</code></strong>.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> A list containing names of animals <code>['cat', 'dog', 'hen', 'fish']</code></p>
-              <div class="table-responsive">
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Index</th>
-                      <th>Value</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><code>0</code></td>
-                      <td><code>'cat'</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>1</code></td>
-                      <td><code>'dog'</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>2</code></td>
-                      <td><code>'hen'</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>3</code></td>
-                      <td><code>'fish'</code></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p><span class="fas fa-cube"></span> A dictionary containing ages of three people <code>{'john': 12, 'sara': 14.5, 'colin': 13}</code>. <code>john</code>-<code>12</code> is a key-value pair.</p>
-              <div class="table-responsive">
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Key</th>
-                      <th>Value</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><code>'john'</code></td>
-                      <td><code>12</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>'sara'</code></td>
-                      <td><code>14.5</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>'colin'</code></td>
-                      <td><code>13</code></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p><span class="fas fa-cube"></span> A dictionary containing details of a person <code>{'name': 'john', 'age': 14.5, 'sex': 'F', 'citizen': True}</code></p>
-              <div class="table-responsive">
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Key</th>
-                      <th>Value</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><code>'name'</code></td>
-                      <td><code>'john'</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>'age'</code></td>
-                      <td><code>14.5</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>'gender'</code></td>
-                      <td><code>'F'</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>'citizen'</code></td>
-                      <td><code>True</code></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </tip-box>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Some examples of defining dictionaries.</p>
-              <pre><code class="hljs python">friends = {} <span class="hljs-comment"># empty dictionary</span>
-grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
-numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
-is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">'ravi'</span>: <span class="hljs-keyword">True</span>}
-prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-</code></pre>
-            </tip-box>
-            <p>Unlike lists which contain an ordered sequence of items, <strong>dictionaries are not ordered</strong> i.e., we cannot force a key-value pair in a dictionary to be at a specific position <span class="dimmed">e.g., in the example above, there is no guarantee that <code>'bread'</code>:<code>'3.50'</code> pair will be at the first position of the dictionary <code>prices</code> after adding more key-value pairs to it</span>.</p>
-            <panel type="danger" header=":muscle: Exercise: Get Subject Info" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-subject-info">Exercise: Get Subject Info<a class="fa fa-anchor" href="#exercise-get-subject-info"></a></h4>
-                <p>Complete the <code>get_subject_info</code> function below to return a dictionary such that the code produces the given output.</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
-  <span class="hljs-keyword">return</span> {} <span class="hljs-comment"># UPDATE THIS LINE</span>
-  
-print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-keyword">False</span>))
-print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-keyword">True</span>))
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
-{'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
-  <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} 
-  
-print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-keyword">False</span>))
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="working-with-dictionaries">Working with Dictionaries<a class="fa fa-anchor" href="#working-with-dictionaries"></a></h3>
-            <p><strong>You can use keys to access values in a dictionary.</strong></p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Some examples of retrieving values based on the key:</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
-prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-print(type(numbers))
-print(numbers[<span class="hljs-number">1</span>])
-print(prices[<span class="hljs-string">'butter'</span>])
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td><br><br> → </td>
-                    <td><br><br>
-                    <pre><code class="hljs">&lt;class 'dict'&gt;
-one
-5.0
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-              <p><span class="fas fa-cube"></span> Examples of adding, updating, and deleting dictionary entries:</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
-grades[<span class="hljs-string">'CS2103'</span>] = <span class="hljs-string">'B'</span>
-print(<span class="hljs-string">'After adding:'</span>,grades)
-grades[<span class="hljs-string">'TE3201'</span>] = <span class="hljs-string">'A+'</span>
-print(<span class="hljs-string">'After updating:'</span>,grades)
-<span class="hljs-keyword">del</span> grades[<span class="hljs-string">'CS2103'</span>]
-print(<span class="hljs-string">'After deleting:'</span>, grades)
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td><br><br><br> → </td>
-                    <td><br><br><br>
-                    <pre><code class="hljs">After adding: {'TE3201': 'A', 'CS2103': 'B'}
-After updating: {'TE3201': 'A+', 'CS2103': 'B'}
-After deleting: {'TE3201': 'A+'}
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Get Set Delete Score" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-set-delete-score">Exercise: Get, Set, Delete Score<a class="fa fa-anchor" href="#exercise-get-set-delete-score"></a></h4>
-                <p>Complete the three function below such that the code produces the given output.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>get_score(scores, player)</code>: returns the value of the key <code>player</code></li>
-                  <li><code>set_score(scores, player, new_score)</code>: sets the value of the key <code>player</code> to the <code>new_score</code></li>
-                  <li><code>delete_score(scores, player)</code>: deletes the value for key <code>player</code></li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment"># UPDATE HERE!</span>
-    
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE!</span>
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_score</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE!</span>
-  
-game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}
-print(get_score(game1_scores, <span class="hljs-string">'betty'</span>))
-print(get_score(game1_scores, <span class="hljs-string">'amy'</span>))
-set_score(game1_scores, <span class="hljs-string">'charlie'</span>, <span class="hljs-number">5</span>)
-set_score(game1_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">0</span>)
-print(game1_scores)
-delete_score(game1_scores, <span class="hljs-string">'dan'</span>)
-print(game1_scores)
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">36
-35
-{'amy': 35, 'betty': 36, 'charlie': 5, 'dan': 0}
-{'amy': 35, 'betty': 36, 'charlie': 5}
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">return</span> scores[player]
-    
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
-  scores[player] = new_score
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-            <p><strong>Trying to access a value for a non-existent key raises a <code>KeyError</code> exception.</strong></p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> This exampls raises an exception because the key <code>'santa'</code> does not exist in the dictionary <code>is_nice</code>:</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-keyword">True</span>}
-print(is_nice[<span class="hljs-string">'santa'</span>])
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td> → </td>
-                    <td>
-                    <pre><code class="hljs">Traceback (most recent call last):
-  File &quot;python&quot;, line 9, in &lt;module&gt;
-KeyError: 'santa'
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Get Score with Error Handling" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-score-with-error-handling">Exercise: Get Score with Error Handling<a class="fa fa-anchor" href="#exercise-get-score-with-error-handling"></a></h4>
-                <p>Update the <code>get_score1(scores, player)</code> function to handle error situations, as described below.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>get_score1(scores, player)</code>: returns the value of the key <code>player</code>. <mark>Returns an error message if the <code>player</code> is not in <code>scores</code></mark>.</li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">return</span> scores[player] <span class="hljs-comment"># UPDATE HERE!</span>
-    
-game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}
-print(get_score1(game1_scores, <span class="hljs-string">'charlie'</span>))
-print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">30
-brown is not in the game!
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">try</span>:
-    <span class="hljs-keyword">return</span> scores[player]
-  <span class="hljs-keyword">except</span> KeyError:
-    ...
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-            <p><strong>You can use <code>keys()</code> and <code>values()</code> methods to iterate through keys and values of a dictionary, respectively.</strong></p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The code below shows how to iterate through keys/values of a dictionary.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> prices.keys():
-  print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td> → </td>
-                    <td>
-                    <pre><code class="hljs">bread -&gt; 3.5
-butter -&gt; 5.0
-banana -&gt; 0.15
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-<span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> prices.values():
-  print(v)
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td> → </td>
-                    <td>
-                    <pre><code class="hljs">3.5
-5.0
-0.15
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <p>You can <strong>use the <code>sorted()</code> function to sort the keys/values before iterating through them</strong>.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The code below shows how to iterate through keys/values of a dictionary.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(prices.keys()):
-  print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td> → </td>
-                    <td>
-                    <pre><code class="hljs">banana -&gt; 0.15
-bread -&gt; 3.5
-butter -&gt; 5.0
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Print Scorecard" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-print-scorecard">Exercise: Print Scorecard<a class="fa fa-anchor" href="#exercise-print-scorecard"></a></h4>
-                <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>get_team_score(scores)</code>: returns the total of all scores of all players in <code>scores</code>.</li>
-                  <li><code>print_scorecard(scores)</code>: prints scores of each player in the format given, in the alphabetical order of player names.</li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_team_score</span><span class="hljs-params">(scores)</span>:</span>
-  total = <span class="hljs-number">0</span>
-  <span class="hljs-comment">#ADD YOUR CODE HERE!</span>
-  <span class="hljs-keyword">return</span> total
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_scorecard</span><span class="hljs-params">(scores)</span>:</span>
-  <span class="hljs-comment">#pass #REPLACE WITH YOUR CODE!</span>
-
-game2_scores = {<span class="hljs-string">'zac'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'aaron'</span>: <span class="hljs-number">10</span>}
-print_scorecard(game2_scores)
-print(<span class="hljs-string">'total ='</span>, get_team_score(game2_scores))
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">aaron = 10
-betty = 30
-zac = 35
-total = 75
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
-  ...
-  
-<span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> sorted(scores.keys()):
-  ...
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-            <p>As usual, you can <strong>use <code>in</code> and <code>not in</code> to check whether a key or a value is in a dictionary</strong>.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The code below shows how to check if a certain key or a value exists in a dictionary.</p>
-              <table>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-print(<span class="hljs-string">'bread'</span> <span class="hljs-keyword">in</span> prices.keys())
-print(<span class="hljs-string">'sugar'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> prices.keys())
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td> → </td>
-                    <td>
-                    <pre><code class="hljs">
-True
-True
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-                <tr>
-                    <td>
-                    <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-print(<span class="hljs-number">3.5</span> <span class="hljs-keyword">in</span> prices.values())
-print(<span class="hljs-number">6.0</span> <span class="hljs-keyword">in</span> prices.values())
-</code></pre>
-                    <p></p>
-                  </td>
-                    <td> → </td>
-                    <td>
-                    <pre><code class="hljs">
-True
-False
-</code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </tip-box>
-            <panel type="seamless" header="%%:computer: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
-            <panel type="danger" header=":muscle: Exercise: Add Bonus" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-add-bonus">Exercise: Add Bonus<a class="fa fa-anchor" href="#exercise-add-bonus"></a></h4>
-                <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>add_bonus(scores, player, bonus)</code>: adds the <code>bonus</code> to the value of the <code>player</code> if player already exists in <code>scores</code>. Otherwise, adds the <code>player</code> to <code>scores</code> with the value <code>bonus</code>.</li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
-
-
-game3_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}    
-add_bonus(game3_scores, <span class="hljs-string">'amy'</span>, <span class="hljs-number">5</span>)
-add_bonus(game3_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">10</span>)
-print(game3_scores)
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
-  <span class="hljs-keyword">if</span> player <span class="hljs-keyword">in</span> scores.keys():
-    ...
-  <span class="hljs-keyword">else</span>:
-    ...
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="nested-dictionaries">Nested Dictionaries<a class="fa fa-anchor" href="#nested-dictionaries"></a></h3>
-            <p><strong>Dictionaries and lists can be nested in each other to create more complicated data structures.</strong></p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> This dictionary keeps track of assignments of each subject. Note how the value is a list rather than a simple value such as int or string.</p>
-              <pre><code class="hljs python">assignments = {<span class="hljs-string">'TE3201'</span>: [<span class="hljs-string">'do exercises'</span>, <span class="hljs-string">'submit project'</span>],
-               <span class="hljs-string">'CS2103'</span>: [],
-               <span class="hljs-string">'CS3281'</span>: [<span class="hljs-string">'do presentation'</span>]}
-</code></pre>
-              <p>💡 Python ignores line breaks and indentations in the middle of a dictionary/list definition. <span class="dimmed">The intention is to allow you to structure the code into a more readable format (e.g., one key-value pair per line).</span></p>
-              <p>As the values in this dictionary are lists, you can do list operations on them, e.g., <code>append()</code>, <code>len()</code></p>
-              <pre><code class="hljs python">print(<span class="hljs-string">'CS3281 assignments:'</span>, assignments[<span class="hljs-string">'CS3281'</span>])
-
-assignments[<span class="hljs-string">'CS3281'</span>].append(<span class="hljs-string">'study for exams'</span>)
-print(assignments[<span class="hljs-string">'CS3281'</span>])
-
-print(<span class="hljs-string">'How many things to do in TE3201?'</span>, len(assignments[<span class="hljs-string">'TE3201'</span>]))
-
-<span class="hljs-comment"># calculate total assignments</span>
-total = <span class="hljs-number">0</span>
-<span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> assignments.values():
-  total = total + len(a)
-print(<span class="hljs-string">'total tasks to do:'</span>, total)
-</code></pre>
-              <p>⤵️</p>
-              <pre><code class="hljs">CS3281 assignments: ['do presentation']
-['do presentation', 'study for exams']
-How many things to do in TE3201? 2
-total tasks to do: 4
-</code></pre>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Inning-Scores" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-inning-scores">Exercise: Inning-Scores<a class="fa fa-anchor" href="#exercise-inning-scores"></a></h4>
-                <p>Assume the game has three innings and a player can play in 0-3 innings. For each inning, a player will have a inning-score which is an integer <span class="dimmed">e.g., player <code>amy</code> scored <code>5</code>, <code>5</code>, and <code>10</code> for the three innings (in order)</span>.</p>
-                <p>Update the <code>get_detailed_scores</code> functions in the code below such that it returns a dictionary that stores inning scores of each player as a <mark>list of integers for each player</mark>. Inning-scores of each player is given below.</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Player</th>
-                        <th>Scores in different innings</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>amy</td>
-                        <td>5, 5, 10</td>
-                      </tr>
-                      <tr>
-                        <td>betty</td>
-                        <td>10</td>
-                      </tr>
-                      <tr>
-                        <td>charile</td>
-                        <td>(did not play any innings)</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
-  <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: <span class="hljs-number">20</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>} <span class="hljs-comment">#REPLACE WITH YOUR CODE! </span>
-
-print(get_detailed_scores())
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
-  <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
-          ...}
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.</p>
-              <pre><code class="hljs python">friends = {<span class="hljs-string">'john'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'John Doe'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>},
-           <span class="hljs-string">'sara'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Sara Parker'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jun 30'</span>},
-           <span class="hljs-string">'betty'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Betsy Sims'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>}}
-           
-print(friends[<span class="hljs-string">'john'</span>][<span class="hljs-string">'birthday'</span>])
-
-<span class="hljs-comment"># print friends whose birthday is Jan 12</span>
-
-<span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> friends.keys():
-  details = friends[f]
-  <span class="hljs-keyword">if</span> details[<span class="hljs-string">'birthday'</span>] == <span class="hljs-string">'Jan 12'</span>:
-    print(details[<span class="hljs-string">'name'</span>])
-</code></pre>
-              <p>⤵️</p>
-              <pre><code class="hljs">Jan 12
-John Doe
-Betsy Sims
-</code></pre>
-              <p>💡 As <code>friends['john']</code> evaluates to a dictionary, you can use the <code>['birthday']</code> notation to find the birthday of that person.<br>
-                <code>friends['john']['birthday']</code><br>
-                → <code>{'name': 'John Doe', 'birthday': 'Jan 12'}['birthday']</code><br>
-                → <code>'Jan 12'</code></p>
-            </tip-box>
-            <panel type="seamless" header="%%:computer: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-nested?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
-            <panel type="danger" header=":muscle: Exercise: Player Stats" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise-player-stats"></a></h4>
-                <p>Assume in each inning a player gets to bat number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
-                <p>Note how the <code>player_stats</code> dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player <code>amy</code> scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of <code>0*0 + 1*1 + 4*1 + 6*0 = 10</code> for her first inning).</p>
-                <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code> for the given <code>hit_size</code>.<br>
-                  e.g., <code>get_player_hit_count(player_stats, 'amy', 2, 6)</code> should return how many times <code>amy</code>'s hits in her second inning (i.e., <code>inning = 2</code>) scored <code>6</code>s; the return value should be <code>0</code>.</p>
-                <pre><code class="hljs python">player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span>
-                        {<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">5</span>, <span class="hljs-number">4</span>:<span class="hljs-number">0</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's second inning stats</span>
-                        {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">0</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">1</span>}], <span class="hljs-comment"># amy's third inning stats</span>
-                <span class="hljs-string">'betty'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">2</span>, <span class="hljs-number">4</span>:<span class="hljs-number">2</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>}],
-                <span class="hljs-string">'charlie'</span>: []}
-          
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
-  
-print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>))
-print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>))
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">5
-2
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python">
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
-  <span class="hljs-keyword">return</span> player_stats[...][inning<span class="hljs-number">-1</span>][...]
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <panel type="danger" header=":muscle: Exercise: Grade Report" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-grade-report">Exercise: Grade Report<a class="fa fa-anchor" href="#exercise-grade-report"></a></h4>
-                <p>Write a program that reads student grades one entry at a time and print a consolidated grade report at the end. Follow the sample output given below.</p>
-                <pre><code class="hljs">-----------------------------------------------------
-     ~ Welcome to Grade Report System ~
-* Enter one entry at a time in the format NAME GRADE
-* NAME should be one word
-* Enter an empty line to proceed to printing report
------------------------------------------------------
-Student name and grade? amy A
-Student name and grade? ben B
-Student name and grade? ben 
-Invalid input! Entry rejected.
-Student name and grade? ben C D
-Invalid input! Entry rejected.
-Student name and grade? ben A
-Student name and grade? charlie F
-Student name and grade? amy A+
-Student name and grade? amy D
-Student name and grade? 
-============ Grade Report ===============
-amy : A A+ D
-ben : B A
-charlie : F
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Python hints%%">
+            <h3 id="file-paths">File Paths<a class="fa fa-anchor" href="#file-paths"></a></h3>
+            <p>A file has a <em>filename</em> and a <em>path</em>. <strong>The <em>path</em> specifies the location of a file on the computer</strong>, as a hierarchy of <em>folders</em> (also called <em>directories</em>).</p>
+            <box>
+              <tabs>
+                  <tab header="Windows">
+                  <p><span class="fas fa-cube"></span> File <code>C:\photos\2018\home.jpg</code></p>
                   <ul>
-                    <li>use a dictionary of this format to store grades:
-                      <pre><code class="hljs python">{<span class="hljs-string">'amy'</span>: [<span class="hljs-string">'A'</span>, <span class="hljs-string">'A+'</span>, <span class="hljs-string">'D'</span>],
- <span class="hljs-string">'ben'</span>: [<span class="hljs-string">'B'</span>, <span class="hljs-string">'A'</span>],
- <span class="hljs-string">'charlie'</span>: [<span class="hljs-string">'F'</span>]}
+                    <li>Filename: <code>home.jpg</code></li>
+                    <li>Path: <code>C:\photos\2018</code> (Windows uses the back slash <code>\</code> as the <em>separator</em> symbol in paths )</li>
+                    <li>Folders in the path (<code>C:</code> is called the <em>root folder</em>):
+                      <pre><code class="hljs">C: {root}
+  └── photos
+       └── 2018
 </code></pre>
                     </li>
-                    <li>The string method <code>split()</code> can be useful to break the user entry into name and grade.<br>
-                      As you know,<code>'aaa bbb ccc'.split()</code> evaluates to a list <code>['aaa', 'bbb', 'ccc']</code></li>
-                    <li>The string method <code>join()</code> can be useful when printing grades.<br>
-                      As you know, <code>' '.join(['aaa', 'bbb', 'ccc'])</code> evaluates to <code>'aaa bbb ccc'</code></li>
                   </ul>
+                  <p>
+                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Windows file names and paths are not case sensitive: <code>C:\photos\2018\home.jpg</code> is same as <code>C:\PHOTOS\2018\HOME.JPG</code>.
+                     
+                  </p>
+                </tab>
+                  <tab header="OS-X/Linux">
+                  <p><span class="fas fa-cube"></span> File <code>/Users/john/home.jpg</code></p>
+                  <ul>
+                    <li>Filename: <code>home.jpg</code></li>
+                    <li>Path: <code>/Users/john</code> (OS-X/Linux uses the forward slash <code>/</code> as the <em>separator</em> symbol in paths )</li>
+                    <li>Folders in the path (the <code>/</code> at the start of the path is considered the <em>root folder</em>):
+                      <pre><code class="hljs">/ {root}
+    └── Users
+          └── john
+</code></pre>
+                    </li>
+                  </ul>
+                  <p>
+                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> OS-X/Linux file names and paths are case sensitive. <code>/Users/john/home.jpg</code> is NOT the same as <code>/USERS/JOHN/HOME.JPG</code>
+                  </p>
+                  <p></p>
+                </tab>
+              </tabs>
+            </box>
+            <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> This code shows how to print/change current working directory</p>
+              <div>
+                <div></div>
+                <div></div>
+                <table>
+                  <tr>
+                    <td valign="top">
+                      <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+
+cwd = os.getcwd() <span class="hljs-comment"># store current working dir</span>
+print(cwd) <span class="hljs-comment"># print current working dir</span>
+os.chdir(<span class="hljs-string">'C:\\temp\\python'</span>) <span class="hljs-comment"># change dir</span>
+print(os.getcwd()) <span class="hljs-comment"># print current working dir</span>
+os.chdir(cwd) <span class="hljs-comment"># change working dir back to original</span>
+print(os.getcwd())
+</code></pre>
+                    </td>
+                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                    <td valign="bottom">
+                      <pre><code class="hljs">C:\photos\vaction
+C:\temp\python
+C:\photos\vaction
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p>💡 Note how the path <code>'C:\\temp\\python'</code> uses double slash to <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
+              <modal large="" title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
+                <div>
+                  <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em> to include a special character in a string literal</strong> without interpreting it as a special character. Given below are some examples:</p>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Escape Sequence</th>
+                          <th>Meaning</th>
+                          <th>Example</th>
+                          <th>Output</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>\'</code></td>
+                          <td>single quote</td>
+                          <td><code class="hljs inline python">print(<span class="hljs-string">'How\'s Life'</span>)</code></td>
+                          <td><code>How's Life?</code></td>
+                        </tr>
+                        <tr>
+                          <td><code>\&quot;</code></td>
+                          <td>double quote</td>
+                          <td><code class="hljs inline python">print(<span class="hljs-string">"Say \"wow\""</span>)</code></td>
+                          <td><code>Say &quot;wow&quot;</code></td>
+                        </tr>
+                        <tr>
+                          <td><code>\\</code></td>
+                          <td>back slash</td>
+                          <td><code class="hljs inline python">print(<span class="hljs-string">'files\\text'</span>)</code></td>
+                          <td><code>files\text</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:</p>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Escape Sequence</th>
+                          <th>Meaning</th>
+                          <th>Example</th>
+                          <th>Output</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>\t</code></td>
+                          <td>horizontal tab</td>
+                          <td><code class="hljs inline python">print(<span class="hljs-string">'aaa\tbbb'</span>)</code></td>
+                          <td><code>aaa</code> <code></code> <code>bbb</code></td>
+                        </tr>
+                        <tr>
+                          <td><code>\n</code></td>
+                          <td>line break</td>
+                          <td><code class="hljs inline python">print(<span class="hljs-string">'hi\nthere!'</span>)</code></td>
+                          <td><code>hi</code><br><code>there!</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </modal>
+            </tip-box>
+            <p><strong>A path that specifies all folders starting from the root is an <em>absolute path</em>. A path that is specified relative to the current working directory is a <em>relative</em> path.</strong></p>
+            <box>
+              <p><span class="fas fa-cube"></span> Assume the current working directory is <code>C:\modules\te3201</code> and you created a new folder inside it named <code>exercises</code> and put a <code>ex.txt</code> file in that folder.</p>
+              <ul>
+                <li>Absolute path of the file: <code>C:\modules\te3201\exercises\ex1.txt</code></li>
+                <li>Relative path of the file: <code>exercises\ex1.txt</code></li>
+              </ul>
+            </box>
+            <p>In a path, you can use the dot <code>.</code> as a shorthand to refer to the current working directory. Similarly, <code>..</code> can be used to refer to the parent directory.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> If the current working directory is <code>C:\modules\te3201</code>, you can use any of the following to refer to <code>C:\modules\te3201\exercises\ex1.txt</code>.</p>
+              <ul>
+                <li><code>exercises\ex1.txt</code></li>
+                <li><code>.\exercises\ex1.txt</code></li>
+                <li><code>..\te3201\exercises\ex1.txt</code></li>
+                <li><code>..\..\modules\te3201\exercises\ex1.txt</code></li>
+              </ul>
+              <panel type="seamless" header="%%another example%%">
+                <p><a href="https://automatetheboringstuff.com/images/000032.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000032.jpg" alt="" class="img-fluid"></a></p>
+              </panel>
+            </box>
+            <p>You can use <code>os.mkdirs()</code> function to create folders and <code>os.removedirs()</code> to delete folders.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> Example code showing how to create/delete directories</p>
+              <div>
+                <div></div>
+                <div></div>
+                <table>
+                  <tr>
+                    <td valign="top">
+                      <pre><code class="hljs python">print(os.getcwd())
+os.makedirs(<span class="hljs-string">'ex\\w1'</span>)
+os.chdir(<span class="hljs-string">'ex\\w1'</span>)
+print(os.getcwd())
+os.chdir(<span class="hljs-string">'..'</span>) <span class="hljs-comment"># go to parent dir</span>
+print(os.getcwd())
+os.chdir(<span class="hljs-string">'..'</span>)
+os.removedirs(<span class="hljs-string">'ex\\w1'</span>)
+</code></pre>
+                    </td>
+                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                    <td valign="bottom">
+                      <pre><code class="hljs">C:\repos\nus-te3201\sample-code
+C:\repos\nus-te3201\sample-code\ex\w1
+C:\repos\nus-te3201\sample-code\ex
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </box>
+            <p><code>os.path</code> module has many functions that can help with paths. For example, <code>os.paths.join()</code> function can be used to generate file path that matches the current operating system.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> Consider the code below:</p>
+              <pre><code class="hljs python">cwd = os.getcwd()
+print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs-string">'w2'</span>))
+</code></pre>
+              <p>If you run it on a Windows computer in the folder <code>C:\modules\te3201</code>, it prints <code>C:\modules\te3201\ex\w2</code>.<br>
+                If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
+            </box>
+            <p>
+              <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.
+            </p>
+            <box>
+              <p><span class="fas fa-cube"></span> contrasting hard-coding the separator vs using <code>os.path.join()</code>:</p>
+              <ul>
+                <li>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> (Works only on Windows):<br>
+                  <code>os.makedirs('ex\\w1')</code>
+                </li>
+                <li>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font> (Works on both Windows and OS-X):<br>
+                  <code>os.makedirs(os.path.join('ex', 'w1'))</code>
+                </li>
+              </ul>
+            </box>
+            <panel type="danger" header=":muscle: Exercise: Create Directory" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-create-directory"></a></h4>
+                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
+  <span class="hljs-string">"""Create a directory dir_name in the current working directory
+  
+  Example:
+  If the current directory is c:/foo/, create_dir('bar') creates 
+  a c:/foo/bar directory.
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">change_dir</span><span class="hljs-params">(relative_path)</span>:</span>
+  <span class="hljs-string">"""Change to the directory dir_name relative to the current working directory
+  
+  Example:
+  If the current directory is c:/foo/, change_dir('bar') changes 
+  current working directory to c:/foo/bar
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_current</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-string">"""Print current working directory"""</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE </span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">change_to_parent_dir</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-string">"""Change to the parent directry of the current working directory
+  
+  Example:
+  If the current directory is c:/foo/bar, change_to_parent_dir() changes 
+  the working directory to c:/foo/
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(dir_name)</span>:</span>
+  create_dir(dir_name)
+  print_current()
+  change_dir(dir_name)
+  print_current()
+  change_to_parent_dir()
+  print_current()
+  
+check(<span class="hljs-string">'foo'</span>)
+check(<span class="hljs-string">'bar'</span>)
+
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span> output when run in <a href="http://REPL.it">REPL.it</a></p>
+                <pre><code class="hljs">/home/runner
+/home/runner/foo
+/home/runner
+/home/runner
+/home/runner/bar
+/home/runner
+</code></pre>
+                <p></p>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
+  <span class="hljs-string">"""Create a directory dir_name in the current working directory
+  
+  Example:
+  If the current directory is c:/foo/, create_dir('bar') creates 
+  a c:/foo/bar directory.
+  """</span>
+  os.makedirs(dir_name)
+
+...
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_current</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-string">"""Print current working directory"""</span>
+  print(os.getcwd())
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="reading-from-files">Reading from Files<a class="fa fa-anchor" href="#reading-from-files"></a></h3>
+            <p>This section focuses on reading from text-based files (i.e., not binary files).</p>
+            <p><strong>There are three steps to reading files in Python:</strong></p>
+            <ul>
+              <li>Call the <strong><code>open()</code></strong> function to receive a <code>File</code> object.</li>
+              <li>Call the <strong><code>read()</code></strong> method on the <code>File</code> object to receive file content.</li>
+              <li>Close the file by calling the <strong><code>close()</code></strong> method on the <code>File</code> object.</li>
+            </ul>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below shows how to read from a text file.</p>
+              <div>
+                <div></div>
+                <div></div>
+                <table>
+                  <tr>
+                    <td valign="top">
+                      <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'r'</span>) <span class="hljs-comment"># open in read mode</span>
+items = f.read()
+print(items)
+f.close()
+</code></pre>
+                    </td>
+                    <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                    <td valign="bottom">
+                      <p>Output (contents of the <code>items.txt</code>):</p>
+                      <pre><code class="hljs">first line
+second line
+third line
+</code></pre>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
+            </tip-box>
+            <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> The code below shows how to read file content as a list of lines.</p>
+              <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'r'</span>)
+items = f.readlines()
+print(items) <span class="hljs-comment"># print as a list</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> items: <span class="hljs-comment"># print each item</span>
+  print(i.strip()) <span class="hljs-comment"># use strip() to remove linebreak at the end of each line</span>
+f.close()
+</code></pre>
+              <p><span class="fas fa-arrow-down"></span></p>
+              <pre><code class="hljs">['first line\n', 'second line\n', 'third line\n']
+first line
+second line
+third line
+</code></pre>
+              <p>💡 Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code> method.</p>
+            </tip-box>
+            <panel type="danger" header=":muscle: Exercise: File Stats" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-file-stats">Exercise : File Stats<a class="fa fa-anchor" href="#exercise-file-stats"></a></h4>
+                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return content of the file as a list of lines
+  
+  The file is expected to be in the current working directory.
+  The lines in the list contains trailing line breaks.
+  
+  Example:
+  If the a.txt has two lines 'aaa' and 'bbb', 
+  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
+  """</span>
+  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_stats</span><span class="hljs-params">(contents)</span>:</span>
+  <span class="hljs-string">"""Given a list of lines, return line count and letter count as a dictionary
+  
+  Trailing line breaks (if any) are not counted for letter count.
+  Spaces, even trailing spaces, are counted for letter count.
+  Example:
+  get_stats(['aaa\n', 'bbb']) returns {'lines': 2, 'letters': 6}
+  """</span>
+  stats = []
+  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
+  <span class="hljs-keyword">return</span> stats
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analyze_file</span><span class="hljs-params">(filename)</span>:</span>
+  contents_as_list = get_file_content_as_list(filename)
+  print(<span class="hljs-string">'lines in file:'</span>, contents_as_list)
+  stats = get_file_stats(contents_as_list)
+  print(<span class="hljs-string">'It has'</span>, stats[<span class="hljs-number">0</span>], <span class="hljs-string">'lines containing'</span>, stats[<span class="hljs-number">1</span>], <span class="hljs-string">'letters'</span>)
+
+analyze_file(<span class="hljs-string">'file1.txt'</span>)
+analyze_file(<span class="hljs-string">'file2.txt'</span>)
+</code></pre>
+                <p><code>file1.txt</code> (2 lines, 22 letters):</p>
+                <pre><code class="hljs">aaa bbb ccc
+ddd eee fff
+</code></pre>
+                <p><code>file2.txt</code> (4 lines, 10 letters -- note: the <mark>last line has a trailing space</mark>, which adds up to 10 letters):</p>
+                <pre><code class="hljs">a
+bb
+ccc
+ddd 
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre><code class="hljs">lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
+It has 2 lines containing 22 letters
+lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
+It has 4 lines containing 10 letters
+</code></pre>
+                <panel type="seamless" header="%%:bulb: Tips%%">
+                  <ul>
+                    <li><code>strip()</code> removes trailing line breaks but also trailing spaces. <code>replace('\n', '')</code> will remove the trailing line break but will keep the trailing spaces.</li>
+                  </ul>
+                </panel>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return content of the file as a list of lines
+  
+  The file is expected to be in the current working directory.
+  The lines in the list contains trailing line breaks.
+  
+  Example:
+  If the a.txt has two lines 'aaa' and 'bbb', 
+  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
+  """</span>
+  f = open(filename, <span class="hljs-string">'r'</span>)
+  lines = f.readlines()
+  f.close()
+  <span class="hljs-keyword">return</span> lines
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="writing-to-files">Writing to Files<a class="fa fa-anchor" href="#writing-to-files"></a></h3>
+            <p><strong>Similar to reading from a file, writing to a file too is a three step process. One main difference is the file needs to be opened in the <em>write mode</em>.</strong></p>
+            <box>
+              <p><span class="fas fa-cube"></span> The code below shows how to write to a text file.</p>
+              <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'w'</span>)  <span class="hljs-comment"># open in write mode</span>
+f.write(<span class="hljs-string">'first line\n'</span>)
+f.write(<span class="hljs-string">'second line\n'</span>)
+f.close()
+</code></pre>
+              <p><span class="fas fa-arrow-down"></span> contents of the <code>items.txt</code>:</p>
+              <pre><code class="hljs">first line
+second line
+</code></pre>
+              <ul>
+                <li>💡 The <code>'w'</code> argument indicates that the file should be opened in write mode.</li>
+                <li>💡 Unlike the <code>print()</code> function that prints content in a new line every time, the <code>write</code> function does not add an automatic line break at the end. You need to add a <code>\n</code> at each place you want a line break to appear in the file.</li>
+              </ul>
+            </box>
+            <p><strong>To preserve original content and add to it, open the file in <em>append mode</em>.</strong> That is because opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> The code below shows how to append to a file.</p>
+              <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'a'</span>)  <span class="hljs-comment"># open in append mode</span>
+f.write(<span class="hljs-string">'third line\n'</span>)
+f.close()
+</code></pre>
+              <p><span class="fas fa-arrow-down"></span> contents of the <code>items.txt</code>:</p>
+              <pre><code class="hljs">first line
+second line
+third line
+</code></pre>
+            </box>
+            <panel type="danger" header=":muscle: Exercise: Add Line Numbers" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-add-line-numbers"></a></h4>
+                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return content of the file as a list of lines
+  
+  The file is expected to be in the current working directory.
+  The lines in the list contains trailing line breaks.
+  
+  Example:
+  If the a.txt has two lines 'aaa' and 'bbb', 
+  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
+  """</span>
+  f = open(filename, <span class="hljs-string">'r'</span>)
+  lines = f.readlines()
+  f.close()
+  <span class="hljs-keyword">return</span> lines
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
+  <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
+  
+  Example:
+  write_with_line_numbers(['aaa\n', 'bbb'], 'out.txt') writes the following content to out.txt
+  1. aaa
+  2. bbb
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_file</span><span class="hljs-params">(sourcefile, targetfile)</span>:</span>
+  <span class="hljs-string">"""Copy the text in sourcefile to targetfile, but also add line numbers to each line.
+  
+  Example:
+  Assume a.txt has the following text:
+  aaa
+  bbb
+  process_file('a.txt', 'b.txt') results in b.txt having the following text:
+  1. aaa
+  2. bbb
+  """</span>
+  contents = get_file_content_as_list(sourcefile)
+  write_with_line_numbers(contents, targetfile)
+  print(get_file_content_as_list(targetfile))
+  
+process_file(<span class="hljs-string">'file1a.txt'</span>, <span class="hljs-string">'file1b.txt'</span>)
+process_file(<span class="hljs-string">'file2a.txt'</span>, <span class="hljs-string">'file2b.txt'</span>)
+
+</code></pre>
+                <p><code>file1a.txt</code>:</p>
+                <pre><code class="hljs">first line
+
+second line
+third line
+</code></pre>
+                <p><code>file2a.txt</code>:</p>
+                <pre><code class="hljs">hang in there
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre><code class="hljs">['1. first line\n', '2. \n', '3. second line\n', '4. third line']
+['1. hang in there']
+</code></pre>
+                <panel type="seamless" header="%%:bulb: Partial solution%%">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
+  <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
+  
+  Example:
+  write_with_line_numbers(['aaa\n', 'bbb'], 'out.txt') writes the following content to out.txt
+  1. aaa
+  2. bbb
+  """</span>
+  <span class="hljs-keyword">for</span> n,line <span class="hljs-keyword">in</span> enumerate(lines):
+    f.write(str(n+<span class="hljs-number">1</span>) ... ) <span class="hljs-comment"># COMPLETE THIS LINE</span>
+  f.close()
+
+</code></pre>
+                </panel>
+              </div>
+            </panel>
+            <p></p>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h3 id="csv-files">CSV files<a class="fa fa-anchor" href="#csv-files"></a></h3>
+            <p><strong>CSV files are often used as a simple way to save spreadsheet-like data.</strong> Each line in a CSV file represents a row in the spreadsheet, and commas separate the cells in the row. They usually have the <code>.csv</code> extension and can be opened in spreadsheet programs such as Excel or in any text editor.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> Here is the content of a simple CSV file <span class="dimmed">(click <a href="deliveries.csv">here</a> to download a copy)</span> and how it looks like when opened in Excel.</p>
+              <table>
+                <tr>
+                    <td>
+                    <pre><code class="hljs">4/11/2017,Alice Bee,4
+5/11/2017,Chris Ding,12
+5/11/2017,Brenda Chew,13
+6/11/2017,Dan Pillai,5
+</code></pre>
+                    <p></p>
+                  </td>
+                    <td> → </td>
+                    <td>
+                    <p><a href="/2019/files-csv/images/deliveries.png" target="_self"><img src="/2019/files-csv/images/deliveries.png" alt="" class="img-fluid"></a></p>
+                  </td>
+                </tr>
+              </table>
+            </box>
+            <p>💡 If a value itself contains a comma <span class="dimmed">e.g., <code>Foo, Emily</code></span>, it can be enclosed in double quotes <span class="dimmed">e.g., <code>&quot;Foo, Emily&quot;</code></span>, to prevent it being misinterpreted as multiple values.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> This example shows how to use double quotes to handle commas inside a value:</p>
+              <ul>
+                <li><code>7/11/2017,&quot;Foo, Emily&quot;,5</code> interpreted as three values: <code>7/11/2017</code> and <code>Foo, Emily</code> and <code>5</code></li>
+                <li><code>7/11/2017,Foo, Emily,5</code> interpreted as four values: <code>7/11/2017</code> and <code>Foo</code> and <code>Emily</code> and <code>5</code></li>
+              </ul>
+            </box>
+            <p><strong>Python has an in-built module named <code>csv</code> that provides functions to deal with CSV files more conveniently</strong>, although CSV files are text files that can be read/written using normal file access techniques covered earlier. For example, Python provides a way to read a CSV file as a <code>Reader</code> object that knows how to interpret a CSV file.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> The code below shows how to use the <code>csv</code> module to read contents of a CSV file named <code>deliveries.csv</code>:</p>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv 
+
+deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) <span class="hljs-comment"># open file</span>
+deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># create a Reader</span>
+<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader: <span class="hljs-comment"># access each line using the Reader</span>
+  print(row)
+deliveries_file.close() <span class="hljs-comment"># close file</span>
+</code></pre>
+              <p><span class="fas fa-arrow-down"></span></p>
+              <pre><code class="hljs">['4/11/2017', 'Alice Bee', '4']
+['5/11/2017', 'Chris Ding', '12']
+['5/11/2017', 'Brenda Chew', '13']
+['6/11/2017', 'Dan Pillai', '5']
+</code></pre>
+              <p>As you can see, <code>Reader</code> object returns content of a line as a list object with the value of each cell as an item in the list. Replacing the line,</p>
+              <pre><code class="hljs python">...
+print(row)
+...
+</code></pre>
+              <p>... with the following line,</p>
+              <pre><code class="hljs python">...
+print(<span class="hljs-string">'Date:'</span>, row[<span class="hljs-number">0</span>], <span class="hljs-string">'\tRecipient:'</span>, row[<span class="hljs-number">1</span>], <span class="hljs-string">'\tQuantity:'</span>, row[<span class="hljs-number">2</span>] )
+...
+</code></pre>
+              <p>... will give you the output shown below:</p>
+              <pre><code class="hljs">Date: 4/11/2017 	Recipient: Alice Bee 	Quantity: 4
+Date: 5/11/2017 	Recipient: Chris Ding 	Quantity: 12
+Date: 5/11/2017 	Recipient: Brenda Chew 	Quantity: 13
+Date: 6/11/2017 	Recipient: Dan Pillai 	Quantity: 5
+</code></pre>
+            </box>
+            <p>Note that all values read from a CSV files come as strings. If they are meant to represent other types, you need to convert the string to the correct type first.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> In this example the 3rd value of each row is converted to an <code>int</code> before adding them up.</p>
+              <pre><code class="hljs python">deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) 
+deliveries_reader = csv.reader(deliveries_file) 
+total = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
+  <span class="hljs-comment"># convert 3rd cell to an int and add to total</span>
+  total = total + int(row[<span class="hljs-number">2</span>]) 
+
+print(<span class="hljs-string">'Total quantity delivered:'</span>, total)
+deliveries_file.close()
+</code></pre>
+              <p><span class="fas fa-arrow-down"></span></p>
+              <pre><code class="hljs">Total quantity delivered: 34
+</code></pre>
+            </box>
+            <p><strong>The <code>csv</code> module also provide an easy way to write to CSV files, one row at a time, using a <code>Writer</code> object.</strong></p>
+            <box>
+              <p><span class="fas fa-cube"></span> The code below writes two rows to the <code>pricelist.csv</code> file.</p>
+              <pre><code class="hljs python">output_file = open(<span class="hljs-string">'pricelist.csv'</span>, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>) <span class="hljs-comment"># open file in write mode</span>
+output_writer = csv.writer(output_file) <span class="hljs-comment"># get a Writer object</span>
+output_writer.writerow([<span class="hljs-string">'apples'</span>, <span class="hljs-string">'1'</span>, <span class="hljs-string">'1.5'</span>, <span class="hljs-string">'True'</span>]) <span class="hljs-comment"># write one row</span>
+output_writer.writerow([<span class="hljs-string">'bananas'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'2.0'</span>, <span class="hljs-string">'False'</span>]) <span class="hljs-comment"># write another row</span>
+output_file.close() <span class="hljs-comment"># close file</span>
+</code></pre>
+              <p>The <code>pricelist.csv</code> file will now contain:</p>
+              <pre><code class="hljs">apples,1,1.5,True
+bananas,3,2.0,False
+</code></pre>
+              <ul>
+                <li>💡 You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., <code>output_file = open('pricelist.csv',</code><mark><code>'a',</code></mark><code>newline='')</code></li>
+                <li>💡 The keyword argument <code>newline=''</code> need to be used when opening a CSV file in Windows. The reasoning behind it is too complicated to explain here.
+                </li>
+              </ul>
+            </box>
+
+            <panel type="danger" header=":muscle: Exercise: Calcluate GST" expanded="" no-close="">
+              <div>
+                <h4 id="exercise-calculate-gst">Exercise : Calculate GST<a class="fa fa-anchor" href="#exercise-calculate-gst"></a></h4>
+                <p>Suppose there is a CSV file in this format:</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>itemlist1.csv</code>:</p>
+                        <pre><code class="hljs">item,price
+book,10.0
+bag,50.0
+&quot;pens, pencils&quot;, 5.0
+</code></pre>
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>item</th>
+                                <th>price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>book</td>
+                                <td>10.0</td>
+                              </tr>
+                              <tr>
+                                <td>bag</td>
+                                <td>50.0</td>
+                              </tr>
+                              <tr>
+                                <td>pens, pencils</td>
+                                <td>5.0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>updated_itemlist1.csv</code>:</p>
+                        <pre><code class="hljs">item,price,GST
+book,10.0,0.7
+bag,50.0,3.5
+&quot;pens, pencils&quot;, 5.0,0.35
+</code></pre>
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>item</th>
+                                <th>price</th>
+                                <th>GST</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>book</td>
+                                <td>10.0</td>
+                                <td>0.7</td>
+                              </tr>
+                              <tr>
+                                <td>bag</td>
+                                <td>50.0</td>
+                                <td>3.5</td>
+                              </tr>
+                              <tr>
+                                <td>pens, pencils</td>
+                                <td>5.0</td>
+                                <td>0.35</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <panel type="seamless" header="%%:bulb: Python hints%%">
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_GST</span><span class="hljs-params">(source_file, target_file)</span>:</span>
+  <span class="hljs-string">"""Read the data from the CSV file source_file and write 
+  the data, including the calculated GST values, to the CSV file target_file
+  """</span>
+  input_lines = read_csv_lines(source_file)
+  updated_lines = []
+  
+  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
+  
+  write_to_csv_file(updated_lines, target_file)
+   
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read_csv_lines</span><span class="hljs-params">(filename)</span>:</span>
+  <span class="hljs-string">"""Return the values in the csv file (specified by the filename) as a list of lists
+  each list representing a row of the file.
+  
+  Example: If the file file1.csv has the following contents,
+  item,price
+  book,10.0
+  read_csv_lines('file1.csv') returns [['item', 'price']['book', '10.0']]
+  
+  """</span>
+  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+  
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_to_csv_file</span><span class="hljs-params">(lines, filename)</span>:</span>
+  <span class="hljs-string">"""Write the given lines (a list of lists) to the CSV file (specified by filename)
+  
+  Example:
+  write_to_csv_file([['item', 'price', 'GST']['book', '10.0', '0.7']], 'file2.txt')
+  
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+  
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process</span><span class="hljs-params">(source_file, target_file)</span>:</span>
+  
+  calculate_GST(source_file, target_file)
+  print(read_csv_lines(target_file))
+  
+  
+process(<span class="hljs-string">'itemlist1.csv'</span>, <span class="hljs-string">'updated_itemlist1.csv'</span>)
+process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-string">'updated_itemlist2.csv'</span>)
+</code></pre>
                 </panel>
               </div>
             </panel>
@@ -724,7 +897,11 @@ charlie : F
             <div id="main">
               <div class="indented">
                 <ul>
-                  <li><a href="#W6-1">[W6.1] Project Mgt: Scheduling and Tracking <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></li>
+                  <li><a href="#W6-1">[W6.1] IDEs: Basic Features <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></li>
+                </ul>
+                <p></p>
+                <ul>
+                  <li><a href="#W6-2">[W6.2] Project Mgt: Scheduling and Tracking <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></li>
                 </ul>
                 <p></p>
               </div>
@@ -733,12 +910,129 @@ charlie : F
               <panel type="seamless" no-close="" expandable="true" expanded="">
                 <span slot="header" class="card-title">
                   <div>
-                    <p><big> <span class="dimmed">[W6.1]</span> <big><big><strong>Project Mgt: Scheduling and Tracking</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
+                    <p><big> <span class="dimmed">[W6.1]</span> <big><big><strong>IDEs: Basic Features</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1a]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1a]</span></span> <span class="dimmed"><strong><span>Implementation → IDEs →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain IDEs</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Professional software engineers often write code using <em>Integrated Development Environments (IDEs)</em>. IDEs support all development-related work within the same tool.</strong></p>
+                          <p>An IDE generally consists of:</p>
+                          <ul>
+                            <li>A source code editor that includes features such as syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.</li>
+                            <li>A compiler and/or an interpreter (together with other build automation support) that facilitates the compilation/linking/running/deployment of a program.</li>
+                            <li>A debugger that allows the developer to execute the program one step at a time to observe the run-time behavior in order to locate bugs.</li>
+                            <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, simulation of the target runtime platform, and modeling support.</li>
+                          </ul>
+                          <p>Examples of popular IDEs:</p>
+                          <ul>
+                            <li>Java: Eclipse, Intellij IDEA, NetBeans</li>
+                            <li>C#, C++: Visual Studio</li>
+                            <li>Swift: XCode</li>
+                            <li>Python: PyCharm</li>
+                          </ul>
+                          <p>Some Web-based IDEs have appeared in recent times too e.g., Amazon's <a href="https://aws.amazon.com/cloud9/">Cloud9 IDE</a>.</p>
+                          <p>Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these are features available in IDEs?">
+                                  <question>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Syntax error highlighting</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Debugging</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code navigation <span class="dimmed">e.g., to navigate from a method call to the method implementation</span></li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Simulation <span class="dimmed">e.g., run a mobile app in a simulator</span></li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Code analysis <span class="dimmed">e.g. to find unreachable code</span></li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Reverse engineering design/documentation <span class="dimmed">e.g. generate diagrams from code</span></li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Visual programming <span class="dimmed">e.g. Write programs using ‘drag and drop’ actions instead of typing code</span></li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. Syntax assistance <span class="dimmed">e.g., show hints as you type</span></li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation <span class="dimmed">e.g., to generate the code required by simply specifying which component/structure you want to implement</span></li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension <span class="dimmed">i.e., ability add more functionality to the IDE using plugins</span></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>All.</p>
+                                      <p>Explanation: While all of these features may not be present in some IDEs, most do have these features in some form or other.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1b]</span></span> <span class="dimmed"><strong><span>Implementation → IDEs → Debugging →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain debugging</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>Debugging</em> is the process of discovering defects in the program.</strong> Here are some approaches to debugging:</p>
+                          <ul>
+                            <li>
+                              <p>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> -- <strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>. This approach is not recommended due to these reasons.
+                              </p>
+                              <ul>
+                                <li>Incurs extra effort when inserting and removing the print statements.</li>
+                                <li>Unnecessary program modifications increases the risk of introducing errors into the program.</li>
+                                <li>These print statements, if not promptly removed, may even appear unexpectedly in the production version.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              <p>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> -- <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than as a 'quick try') due to these reasons:
+                              </p>
+                              <ul>
+                                <li>It is difficult, time consuming, and error-prone technique.</li>
+                                <li>If you didn't spot the error while writing code, you might not spot the error when reading code too.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              <p>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font> -- <strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+              <p><span id="W6-2"></span></p>
+              <panel type="seamless" no-close="" expandable="true" expanded="">
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W6.2]</span> <big><big><strong>Project Mgt: Scheduling and Tracking</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2a]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Milestones</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
                       <div class="indented">
@@ -787,7 +1081,7 @@ charlie : F
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1b]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2b]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Buffers</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -806,7 +1100,7 @@ charlie : F
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1c]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2c]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Issue Trackers</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
                       <div class="indented">
@@ -832,7 +1126,7 @@ charlie : F
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1d]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2d]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Work Breakdown Structure</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -1022,7 +1316,7 @@ charlie : F
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1e]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2e]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>GANTT Charts</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -1046,7 +1340,7 @@ charlie : F
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1f]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2f]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>PERT Charts</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -1083,7 +1377,7 @@ charlie : F
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1g]</span></span> <span class="dimmed"><strong><span>Project Management → Teamwork →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2g]</span></span> <span class="dimmed"><strong><span>Project Management → Teamwork →
                             </span></strong></span> <strong><big><big><span>Team Structures</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -1148,7 +1442,7 @@ charlie : F
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
 </footer>
 </div>
 </body>

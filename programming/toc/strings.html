@@ -50,7 +50,6 @@
         <a class="nav-link py-1" href="#exercise-remove-from-word">Exercise : Remove From Word&#x200E;</a>
         <a class="nav-link py-1" href="#exercise-get-part">Exercise : Get Part&#x200E;</a>
         <a class="nav-link py-1" href="#exercise-print-formatted-item">Exercise : Print Formatted Item&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-inventory-report">Exercise : Inventory Report&#x200E;</a>
       </nav>
     </nav>
 
@@ -66,9 +65,9 @@
       <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a current">Strings</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
@@ -159,19 +158,19 @@
                       <tr>
                         <td><code>\'</code></td>
                         <td>single quote</td>
-                        <td><code>print('How\'s Life')</code></td>
+                        <td><code class="hljs inline python">print(<span class="hljs-string">'How\'s Life'</span>)</code></td>
                         <td><code>How's Life?</code></td>
                       </tr>
                       <tr>
                         <td><code>\&quot;</code></td>
                         <td>double quote</td>
-                        <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
+                        <td><code class="hljs inline python">print(<span class="hljs-string">"Say \"wow\""</span>)</code></td>
                         <td><code>Say &quot;wow&quot;</code></td>
                       </tr>
                       <tr>
                         <td><code>\\</code></td>
                         <td>back slash</td>
-                        <td><code>print('files\\text')</code></td>
+                        <td><code class="hljs inline python">print(<span class="hljs-string">'files\\text'</span>)</code></td>
                         <td><code>files\text</code></td>
                       </tr>
                     </tbody>
@@ -192,13 +191,13 @@
                       <tr>
                         <td><code>\t</code></td>
                         <td>horizontal tab</td>
-                        <td><code>print('aaa\tbbb')</code></td>
+                        <td><code class="hljs inline python">print(<span class="hljs-string">'aaa\tbbb'</span>)</code></td>
                         <td><code>aaa</code> <code></code> <code>bbb</code></td>
                       </tr>
                       <tr>
                         <td><code>\n</code></td>
                         <td>line break</td>
-                        <td><code>print('hi\nthere!')</code></td>
+                        <td><code class="hljs inline python">print(<span class="hljs-string">'hi\nthere!'</span>)</code></td>
                         <td><code>hi</code><br><code>there!</code></td>
                       </tr>
                     </tbody>
@@ -215,7 +214,7 @@
 
 print(get_string())
 </code></pre>
-                  <p>⤵️</p>
+                  <p><span class="fas fa-arrow-down"></span></p>
                   <pre><code class="hljs">Which word didn't he/she say? [&quot;oops&quot; &quot;ok&quot; &quot;oh?&quot;]
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Tips%%">
@@ -235,33 +234,38 @@ print(get_string())
               </panel>
               <p></p>
               <p>You can <strong>use a pair of triple quotes to indicate a multi-line string literal</strong>.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Here is an example multi-line string that uses triple quotes.</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'''Hi,
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'''Hi,
 How's life?
 bye!
 -me'''</span>)
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br> → </td>
-                      <td><br>
-                      <pre><code class="hljs">Hi,
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Hi,
 How's life?
 bye!
 -me
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_email_body</span><span class="hljs-params">()</span>:</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_email_body</span><span class="hljs-params">()</span>:</span>
   body = <span class="hljs-string">'''This is the first line of the email.
 This is the second line.
 This is the third line.
@@ -270,21 +274,20 @@ This is the third line.
 
 print(get_email_body())
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br><br><br> → </td>
-                      <td><br><br><br><br>
-                      <pre><code class="hljs">This is the first line of the email.
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">This is the first line of the email.
 This is the second line.
 This is the third line.
           - bye!
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
-              <p>It is optional to escape <code>'</code> and <code>&quot;</code> inside a mult-line string within triple quotes e.g., <code>How's life?</code> in the example above.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <p><span class="fas fa-info-circle"></span> It is optional to escape <code>'</code> and <code>&quot;</code> inside a mult-line string within triple quotes e.g., <code>How's life?</code> in the example above.</p>
               <panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-multi-line-string">Exercise : Multi-Line String<a class="fa fa-anchor" href="#exercise-multi-line-string"></a></h4>
@@ -294,7 +297,7 @@ This is the third line.
     
 print(get_multiline_string()) 
 </code></pre>
-                  <p>⤵️</p>
+                  <p><span class="fas fa-arrow-down"></span></p>
                   <pre><code class="hljs">Which word didn't he/she say?
 * &quot;oops&quot;
   * &quot;ok&quot;
@@ -329,8 +332,13 @@ print(get_multiline_string())
 </code></pre>
               </tip-box>
               <p>📎 Vist <a href="https://www.python.org/dev/peps/pep-0257/">this page</a> to learn more about docstrings</p>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-literals?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-literals?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
@@ -369,30 +377,34 @@ print(get_multiline_string())
                   </tbody>
                 </table>
               </div>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> The code below shows how to use index and slice notations to get parts of a string.</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
 print(s[<span class="hljs-number">0</span>])
 print(s[<span class="hljs-number">-1</span>])
 print(s[<span class="hljs-number">3</span>:<span class="hljs-number">6</span>])
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br> → </td>
-                      <td><br><br>
-                      <pre><code class="hljs">H
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">H
 !
 the
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
-              <p>❗️ Strings are immutable. The following code will not work: <code>s[0] = 'h'</code></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <p>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Strings are immutable. The following code will not work: <code>s[0] = 'h'</code>
+              </p>
               <panel type="danger" header=":muscle: Exercise: Shorten String" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-shorten-string">Exercise : Shorten String<a class="fa fa-anchor" href="#exercise-shorten-string"></a></h4>
@@ -402,7 +414,7 @@ the
   
   If text is longer than 10 characters, return the first four characters 
   followed by '..' followed by the last four characters.
-  If text is not longer than 10 characters, returns text.
+  If text is not longer than 10 characters, return text.
   
   Example:
   shorten('1234567890abcd') returns '1234..abcd'
@@ -441,31 +453,38 @@ print(shorten(<span class="hljs-string">'1234567890abcd'</span>))
               </panel>
               <p></p>
               <p>You can <strong>use the <code>in</code> and <code>not in</code> operator to see if one string is a sub-string of another</strong>.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Examples of checking for the existence of a sub-string:</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
 print(<span class="hljs-string">'Hi'</span> <span class="hljs-keyword">in</span> s)
 print(<span class="hljs-string">'hi'</span> <span class="hljs-keyword">in</span> s) <span class="hljs-comment"># matching is case-sensitive</span>
 print(<span class="hljs-string">'Hello'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> s)
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br> → </td>
-                      <td><br><br>
-                      <pre><code class="hljs">True
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">True
 False
 True
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
+                <p></p>
+              </div>
               <panel type="danger" header=":muscle: Exercise: Has All Characters" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-has-all-characters">Exercise : Has All Characters<a class="fa fa-anchor" href="#exercise-has-all-characters"></a></h4>
@@ -475,25 +494,27 @@ True
 
 </code></pre>
                   <p>Example usage:</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <pre><code class="hljs python">print(has_all_characters(<span class="hljs-string">'abccde'</span>, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'c'</span>]))
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python">print(has_all_characters(<span class="hljs-string">'abccde'</span>, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'c'</span>]))
 print(has_all_characters(<span class="hljs-string">'ab cde'</span>, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-string">' '</span>]))
 print(has_all_characters(<span class="hljs-string">'apple'</span>, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'f'</span>]))
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td><br> → </td>
-                        <td><br>
-                        <pre><code class="hljs">True
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">True
 True
 False
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">has_all_characters</span><span class="hljs-params">(text, characters)</span>:</span>
   <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> characters:
@@ -523,65 +544,75 @@ False
                 <li><code>startswith(s)</code>: returns <code>True</code> if the substring <code>s</code> appears at the start of the string</li>
                 <li><code>endswith(s)</code>: returns <code>True</code> if the substring <code>s</code> appears at the end of the string</li>
               </ul>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Examples of string methods mentioned above:</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'Hi there!'</span>.upper())
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'Hi there!'</span>.upper())
 print(<span class="hljs-string">'Hi there!'</span>.lower())
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br> → </td>
-                      <td><br>
-                      <pre><code class="hljs">HI THERE!
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">HI THERE!
 hi there!
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'ABC'</span>.isupper(), <span class="hljs-string">'Abc'</span>.isupper())
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'ABC'</span>.isupper(), <span class="hljs-string">'Abc'</span>.isupper())
 print(<span class="hljs-string">'abc'</span>.islower(), <span class="hljs-string">'Abc'</span>.islower())
 print(<span class="hljs-string">'abc'</span>.isalpha(), <span class="hljs-string">'A12'</span>.isalpha())
 print(<span class="hljs-string">'A23'</span>.isalnum(), <span class="hljs-string">'A+1'</span>.isalnum())
 print(<span class="hljs-string">'123'</span>.isdecimal(), <span class="hljs-string">'A12'</span>.isdecimal())
 print(<span class="hljs-string">' \t\n'</span>.isspace(), <span class="hljs-string">'a b'</span>.isspace())
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br> → </td>
-                      <td><br>
-                      <pre><code class="hljs">True False
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">True False
 True False
 True False
 True False
 True False
 True False
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
 print(s.startswith(<span class="hljs-string">'Hi'</span>), s.startswith(<span class="hljs-string">'hi'</span>))
 print(s.endswith(<span class="hljs-string">'!'</span>), s.endswith(<span class="hljs-string">'?'</span>))
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br> → </td>
-                      <td><br><br>
-                      <pre><code class="hljs">True False
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">True False
 True False
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
               <panel type="danger" header=":muscle: Exercise: Rectify Case" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-rectify-case">Exercise : Rectify Case<a class="fa fa-anchor" href="#exercise-rectify-case"></a></h4>
@@ -596,25 +627,27 @@ True False
 
 </code></pre>
                   <p>Example usage:</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <pre><code class="hljs python">print(rectify_case(<span class="hljs-string">'Mrs. Fox'</span>))
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python">print(rectify_case(<span class="hljs-string">'Mrs. Fox'</span>))
 print(rectify_case(<span class="hljs-string">'MR. FOX'</span>))
 print(rectify_case(<span class="hljs-string">'baby fox'</span>))
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td><br> → </td>
-                        <td><br>
-                        <pre><code class="hljs">Mrs. Fox
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">Mrs. Fox
 mr. fox
 BABY FOX
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python">  <span class="hljs-keyword">if</span> text.isupper(): 
     <span class="hljs-keyword">return</span> text.lower()
@@ -637,10 +670,13 @@ BABY FOX
   <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
 </code></pre>
                   <p>Example usage:</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <pre><code class="hljs python">print(is_doctor(<span class="hljs-string">'Dr. Jekyll'</span>))
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python">print(is_doctor(<span class="hljs-string">'Dr. Jekyll'</span>))
 print(is_doctor(<span class="hljs-string">'DR. Jekyll'</span>))
 print(is_doctor(<span class="hljs-string">'dR. Jekyll'</span>))
 print(is_doctor(<span class="hljs-string">'dr. Jekyll'</span>))
@@ -650,11 +686,10 @@ print(is_doctor(<span class="hljs-string">'Jekyll (dr)'</span>))
 print(is_doctor(<span class="hljs-string">'Mr. Hyde'</span>))
 print(is_doctor(<span class="hljs-string">'Miss Dr. B.more'</span>))
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td><br> → </td>
-                        <td><br>
-                        <pre><code class="hljs">True
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">True
 True
 True
 True
@@ -664,10 +699,10 @@ True
 False
 False
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <panel type="seamless" header="%%:bulb: Tips%%">
                     <p>Convert the <code>name</code> to lower case and match with <code>dr.</code> or <code>(dr)</code> using string methods <code>startswith()</code>/<code>endswith()</code></p>
                   </panel>
@@ -680,29 +715,31 @@ False
               </panel>
               <p></p>
               <p><strong>The <code>find(s)</code> method gives index of <code>s</code> in the string</strong>, if it is found. It returns <code>-1</code> if <code>s</code> is not found.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Examples of the <code>find()</code> method:</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">s = <span class="hljs-string">'Monty Python'</span>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">s = <span class="hljs-string">'Monty Python'</span>
 print(s.find(<span class="hljs-string">'Monty'</span>))
 print(s.find(<span class="hljs-string">'Python'</span>))
 print(s.find(<span class="hljs-string">'Spam'</span>))
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br> → </td>
-                      <td><br><br>
-                      <pre><code class="hljs">0
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">0
 6
 -1
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
               <panel type="danger" header=":muscle: Exercise: Remove From Word" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-remove-from-word">Exercise : Remove From Word<a class="fa fa-anchor" href="#exercise-remove-from-word"></a></h4>
@@ -716,29 +753,31 @@ print(s.find(<span class="hljs-string">'Spam'</span>))
 
 </code></pre>
                   <p>Example usage:</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <pre><code class="hljs python">print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'red'</span>))
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python">print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'red'</span>))
 print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'hot'</span>))
 print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'lava'</span>))
 print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'bat'</span>))
 print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'-'</span>))
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td><br> → </td>
-                        <td><br>
-                        <pre><code class="hljs">&gt;
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">&gt;
 &gt;red-
 &gt;red-hot-
 &gt;red-hot-lava
 &gt;red
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_from_word</span><span class="hljs-params">(text, tail_start_word)</span>:</span>
   tail_start_position = text.find(tail_start_word)
@@ -752,77 +791,83 @@ print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hl
               </panel>
               <p></p>
               <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.</strong></p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Examples of the <code>join()</code> method:</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">', '</span>.join([<span class="hljs-string">'tom'</span>, <span class="hljs-string">'dick'</span>, <span class="hljs-string">'harry'</span>]))
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">print(<span class="hljs-string">', '</span>.join([<span class="hljs-string">'tom'</span>, <span class="hljs-string">'dick'</span>, <span class="hljs-string">'harry'</span>]))
 print(<span class="hljs-string">'-'</span>.join([<span class="hljs-string">'one'</span>, <span class="hljs-string">'to'</span>, <span class="hljs-string">'one'</span>]))
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br> → </td>
-                      <td><br>
-                      <pre><code class="hljs">tom, dick, harry
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">tom, dick, harry
 one-to-one
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
-              <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters">whitespace</tooltip> in the string are used as delimiters.</p>
-              <tip-box>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters">whitespaces</tooltip> in the string are used as delimiters.</p>
+              <box>
                 <p><span class="fas fa-cube"></span> Some examples of using the <code>split()</code> method:</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'hi, how are you?'</span>.split())
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'hi, how are you?'</span>.split())
 print(<span class="hljs-string">'A1\t\tA2\nA3'</span>.split())
 print(<span class="hljs-string">'''Todo:
 1. eat
 2. sleep'''</span>.split(<span class="hljs-string">'\n'</span>)) <span class="hljs-comment"># split into lines</span>
 print(<span class="hljs-string">'1-to-1-talk'</span>.split(<span class="hljs-string">'-'</span>))
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br><br> → </td>
-                      <td><br><br><br>
-                      <pre><code class="hljs">['hi,', 'how', 'are', 'you?']
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">['hi,', 'how', 'are', 'you?']
 ['A1', 'A2', 'A3']
 ['Todo:', '1. eat', '2. sleep']
 ['1', 'to', '1', 'talk']
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
               <p><strong>There are some string methods to help you to strip trailing/leading spaces.</strong></p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Examples of stripping leading/trailing spaces from a string:</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">s = <span class="hljs-string">'  hello  there!  '</span>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">s = <span class="hljs-string">'  hello  there!  '</span>
 print(<span class="hljs-string">'['</span>+ s.strip() + <span class="hljs-string">']'</span>)
 print(<span class="hljs-string">'['</span>+ s.lstrip() + <span class="hljs-string">']'</span>) <span class="hljs-comment">#left side strip</span>
 print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-string">']'</span>) <span class="hljs-comment">#right side strip</span>
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br><br> → </td>
-                      <td><br><br>
-                      <pre><code class="hljs">[hello  there!]
+                      </td>
+                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">[hello  there!]
 [hello  there!  ]
 [  hello  there!]
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
               <panel type="danger" header=":muscle: Exercise: Get Part" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-get-part">Exercise : Get Part<a class="fa fa-anchor" href="#exercise-get-part"></a></h4>
@@ -836,25 +881,27 @@ print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-strin
   <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
 </code></pre>
                   <p>Example usage:</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <pre><code class="hljs python">print(get_part(<span class="hljs-string">' John Doe | Male |    X'</span>, <span class="hljs-number">0</span>))
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python">print(get_part(<span class="hljs-string">' John Doe | Male |    X'</span>, <span class="hljs-number">0</span>))
 print(get_part(<span class="hljs-string">'John Doe | Male |    X'</span>, <span class="hljs-number">2</span>))
 print(get_part(<span class="hljs-string">'Dog|Cat'</span>, <span class="hljs-number">0</span>))
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td><br> → </td>
-                        <td><br>
-                        <pre><code class="hljs">John Doe
+                        </td>
+                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">John Doe
 X
 Dog
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python"><span class="hljs-keyword">return</span> text.split(<span class="hljs-string">'|'</span>)...
 </code></pre>
@@ -863,43 +910,50 @@ Dog
               </panel>
               <p></p>
               <p><strong>The <code>replace()</code> method can replace a character (or a phrase) with another character/phrase</strong>.</p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Some examples of using <code>replace()</code> method:</p>
                 <pre><code class="hljs python">print(<span class="hljs-string">'face to face'</span>.replace(<span class="hljs-string">' '</span>, <span class="hljs-string">'-'</span>))  <span class="hljs-comment"># replace space with a dash</span>
 print(<span class="hljs-string">'1,2,3,4'</span>.replace(<span class="hljs-string">','</span>, <span class="hljs-string">'\t'</span>))  <span class="hljs-comment"># replace comma with a tab</span>
 print(<span class="hljs-string">'Yup, Yup, I agree'</span>.replace(<span class="hljs-string">'Yup'</span>, <span class="hljs-string">'Yes'</span>))
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre><code class="hljs">face-to-face
 1	2	3	4
 Yes, Yes, I agree
 </code></pre>
-              </tip-box>
+              </box>
               <p><strong>There are some string methods to help you to align text.</strong></p>
-              <tip-box>
+              <box>
                 <p><span class="fas fa-cube"></span> Examples of aligning text using string methods:</p>
-                <table>
-                  <tr>
-                      <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'Here:'</span>.rjust(<span class="hljs-number">20</span>, <span class="hljs-string">'&gt;'</span>)) <span class="hljs-comment"># right-justify</span>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'Here:'</span>.rjust(<span class="hljs-number">20</span>, <span class="hljs-string">'&gt;'</span>)) <span class="hljs-comment"># right-justify</span>
 print(<span class="hljs-string">'Price'</span>.ljust(<span class="hljs-number">20</span>, <span class="hljs-string">'='</span>)) <span class="hljs-comment"># left-justify</span>
-print(<span class="hljs-string">'Title'</span>.center(<span class="hljs-number">20</span>, <span class="hljs-string">':'</span>)) <span class="hljs-comment"># center</span>
+print(<span class="hljs-string">'Title'</span>.center(<span class="hljs-number">16</span>, <span class="hljs-string">':'</span>)) <span class="hljs-comment"># center</span>
 </code></pre>
-                      <p></p>
-                    </td>
-                      <td><br> → </td>
-                      <td><br>
-                      <pre><code class="hljs">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Here:
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Here:
 Price===============
-:::::::Title::::::::
+:::::Title::::::
 </code></pre>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-              </tip-box>
-              <panel type="seamless" header="%%:computer: Try your own%%">
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <div>
+                <panel type="seamless" header=":computer: Try your own" minimized="">
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </panel>
+                <p></p>
+              </div>
               <panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded="" no-close="">
                 <div>
                   <h4 id="exercise-print-formatted-item">Exercise : Print Formatted Item<a class="fa fa-anchor" href="#exercise-print-formatted-item"></a></h4>
@@ -915,230 +969,55 @@ Price===============
   print(<span class="hljs-string">''</span>) <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
 </code></pre>
                   <p>Example usage:</p>
-                  <table>
-                    <tr>
-                        <td>
-                        <pre><code class="hljs python">w = <span class="hljs-number">25</span>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python">w = <span class="hljs-number">25</span>
 print_formatted_item(<span class="hljs-string">'pens'</span>, <span class="hljs-number">2</span>, w)
 print_formatted_item(<span class="hljs-string">'books[old]'</span>, <span class="hljs-number">50</span>, w)
 print_formatted_item(<span class="hljs-string">'pins[new]'</span>, <span class="hljs-number">110</span>, w)
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td><br><br> → </td>
-                        <td><br><br>
-                        <pre><code class="hljs">pens.................:  2
+                        </td>
+                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">pens.................:  2
 books(old)...........: 50
 pins(new)............:110
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <pre><code class="hljs python">w = <span class="hljs-number">20</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python">w = <span class="hljs-number">20</span>
 print_formatted_item(<span class="hljs-string">'pens'</span>, <span class="hljs-number">2</span>, w)
 print_formatted_item(<span class="hljs-string">'books[old]'</span>, <span class="hljs-number">50</span>, w)
 print_formatted_item(<span class="hljs-string">'pins[new]'</span>, <span class="hljs-number">110</span>, w)
 
 </code></pre>
-                        <p></p>
-                      </td>
-                        <td><br><br> → </td>
-                        <td><br><br>
-                        <pre><code class="hljs">pens............:  2
+                        </td>
+                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">pens............:  2
 books(old)......: 50
 pins(new).......:110
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_formatted_item</span><span class="hljs-params">(name, count, width)</span>:</span>
   name = name.replace(<span class="hljs-string">'['</span>, <span class="hljs-string">'('</span>).replace(...)
   print(name.ljust(width<span class="hljs-number">-4</span>, <span class="hljs-string">'.'</span>) + ...)
-</code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <panel type="danger" header=":muscle: Exercise: Inventory Report" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-inventory-report">Exercise : Inventory Report<a class="fa fa-anchor" href="#exercise-inventory-report"></a></h4>
-                  <p>Write a function that prints an inventory report like the examples given below, when the report title (a string), print-width (an int), and list of items (as a suitable data structure, e.g., dictionary) is given to the function.</p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Kitchen Inventory Report:</p>
-                    <ul>
-                      <li>Title: Kitchen</li>
-                      <li>Width: 15</li>
-                    </ul>
-                    <table>
-                      <tr>
-                          <td>
-                          <div class="table-responsive">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>Item</th>
-                                  <th>count</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>pots</td>
-                                  <td>5</td>
-                                </tr>
-                                <tr>
-                                  <td>eggs</td>
-                                  <td>100</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <p></p>
-                        </td>
-                          <td> → </td>
-                          <td>
-                          <pre><code class="hljs">###############
-### KITCHEN ###
-###############
-eggs.......:100
-pots.......:  5
-            ---
-total......:105
-            ===
-</code></pre>
-                          <p></p>
-                        </td>
-                      </tr>
-                    </table>
-                  </tip-box>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Bookshop Inventory Report:</p>
-                    <ul>
-                      <li>Title: Book Shop</li>
-                      <li>Width: 25</li>
-                    </ul>
-                    <table>
-                      <tr>
-                          <td>
-                          <div class="table-responsive">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>Item</th>
-                                  <th>count</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>pens</td>
-                                  <td>85</td>
-                                </tr>
-                                <tr>
-                                  <td>books</td>
-                                  <td>3</td>
-                                </tr>
-                                <tr>
-                                  <td>pencils</td>
-                                  <td>22</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <p></p>
-                        </td>
-                          <td> → </td>
-                          <td>
-                          <pre><code class="hljs">#########################
-####### BOOK SHOP #######
-#########################
-books................:  3
-pencils..............: 22
-pens.................: 85
-                      ---
-total................:110
-                      ===
-</code></pre>
-                          <p></p>
-                        </td>
-                      </tr>
-                    </table>
-                  </tip-box>
-                  <ul>
-                    <li>Title should be centered and in upper case.</li>
-                    <li>Items should be in alphabetical order.</li>
-                    <li>Width of the number column is 3. Numbers should be right-justified.</li>
-                  </ul>
-                  <panel type="seamless" header="%%:bulb: (Python) Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
-  print_header(width, title)
-  <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(items.keys()):
-    print_item(k, items[k], width)
-  print_total(calculate_total(items), width)
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_header</span><span class="hljs-params">(width, title)</span>:</span>
-  <span class="hljs-string">""" print the given title in the format of a banner.
-  
-  Example: print_header(10, 'hi')
-  ##########
-  ### HI ###
-  ##########
-  
-  * The title is center aligned and in upper case
-  
-  Arguments:
-  word -- (type:string) the title of the banner
-  width -- (type:int) the width of the banner
-  """</span>
-  print(<span class="hljs-string">'#'</span>*width)
-  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_total</span><span class="hljs-params">(total, width)</span>:</span>
-  <span class="hljs-string">""" print the given total in the following format
-  
-  Example: print_total(5, 12)
-           ---
-  total...:  5
-           ===
-  
-  * The total is right-justified
-  
-  Arguments:
-  total -- (type:int) the total to print
-  width -- (type:int) the width to use for printing
-  """</span>
-  print(<span class="hljs-string">'---'</span>.rjust(width, <span class="hljs-string">' '</span>))
-  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_item</span><span class="hljs-params">(name, count, width)</span>:</span>
-  <span class="hljs-string">""" Print the name and count as a row in the inventory listing.
-  
-  Example: print_item('pins', 2, 12)
-  pins....:  2
-  
-  * The count is right-justified in a column that is 3 characters wide. 
-  
-  Arguments:
-  name -- (type:string) name of the item
-  count -- (type:int) number of items
-  width -- (type:int) the width to use for printing
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment">#  REPLACE WITH YOUR CODE</span>
-
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_total</span><span class="hljs-params">(items)</span>:</span>
-  total = <span class="hljs-number">0</span>
-  <span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> items.values():
-    total = total + v
-  <span class="hljs-keyword">return</span> total  
-  
-print_inventory({<span class="hljs-string">'pots'</span>:<span class="hljs-number">5</span>, <span class="hljs-string">'eggs'</span>:<span class="hljs-number">100</span>}, <span class="hljs-string">'Kitchen'</span>, <span class="hljs-number">15</span>)
-print(<span class="hljs-string">'\n'</span>)
-print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-number">85</span>, <span class="hljs-string">'books'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'pencils'</span>: <span class="hljs-number">22</span>}, <span class="hljs-string">'Book Shop'</span>, <span class="hljs-number">25</span>)
 </code></pre>
                   </panel>
                 </div>
@@ -1155,7 +1034,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
 </footer>
 </div>
 </body>

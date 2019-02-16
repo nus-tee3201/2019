@@ -539,15 +539,17 @@ y
               <box>
                 <p>💡 You can use the list slicing syntax to extract a portion of a string.<br></p>
                 <div>
+                  <div></div>
+                  <div></div>
                   <table>
                     <tr>
-                      <td>
+                      <td valign="top">
                         <pre><code class="hljs python">s = <span class="hljs-string">'abcdefgh'</span>
 print(s[<span class="hljs-number">2</span>:])
 print(s[:<span class="hljs-number">5</span>])
 </code></pre>
                       </td>
-                      <td valign="bottom"><span id="arrow">&nbsp;→&nbsp;</span><br><br></td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
                         <pre><code class="hljs">cdefgh
 abcde
@@ -608,10 +610,234 @@ main()
             </div>
           </panel>
           <panel header="week5" expanded="">
-            <div></div>
+            <div>
+              <h3 id="monty-5">Monty 5<a class="fa fa-anchor" href="#monty-5"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-4">Monty 4 code</a> in the following ways:</p>
+              <ul>
+                <li>Add a <code>done</code> command so that the user can mark a task as done. e.g., <code>done 2</code> marks the task at index 2 as 'done'.</li>
+                <li>Show appropriate error messages if the user gives an invalid index for the <code>done</code> command</li>
+              </ul>
+              <p>A sample output is given below.</p>
+              <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+&gt;&gt;&gt; What can I do for you?
+
+add borrow book
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     [✗] 1. borrow book
+     [✗] 2. read book
+     [✗] 3. return book
+&gt;&gt;&gt; What can I do for you?
+
+done 1
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     [✓] 1. borrow book
+     [✗] 2. read book
+     [✗] 3. return book
+&gt;&gt;&gt; What can I do for you?
+
+done abc
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: abc is not a number
+&gt;&gt;&gt; What can I do for you?
+
+done 5
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: No item at index 5
+&gt;&gt;&gt; What can I do for you?
+
+done 0
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Index must be greater than 0
+&gt;&gt;&gt; What can I do for you?
+
+garbage
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Command not recognized
+&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Are you sure? y/n
+y
+&gt;&gt;&gt; Bye!
+</code></pre>
+              <box>
+                <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
+                <pre><code class="hljs python">tasks = []
+tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-keyword">False</span>])
+print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
+
+<span class="hljs-keyword">if</span> tasks[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]:
+    print(<span class="hljs-string">'✓'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'✗'</span>)
+</code></pre>
+                <p>💡 You can use exceptions to identify and handle errors in the command.</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = read_command()
+            execute_command(command)
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+</code></pre>
+              </box>
+              <panel type="seamless" header="Partial solution">
+                <pre><code class="hljs python">
+items = []
+
+<span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_item_for_index</span><span class="hljs-params">(index_as_string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        index = int(index_as_string.strip())
+    <span class="hljs-keyword">except</span> Exception:
+        <span class="hljs-keyword">raise</span> ValueError(index_as_string + <span class="hljs-string">' is not a number '</span>)
+
+    <span class="hljs-keyword">if</span> index &lt; <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Index must be greater than 0 '</span>)
+
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">return</span> items[index - <span class="hljs-number">1</span>]
+    <span class="hljs-keyword">except</span> IndexError:
+        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'No item at index '</span> + index_as_string)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_item_as_done</span><span class="hljs-params">(user_input)</span>:</span>
+    index_as_string = user_input[<span class="hljs-number">5</span>:]
+    get_item_for_index(index_as_string)[<span class="hljs-number">1</span>] = <span class="hljs-keyword">True</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        terminate()
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:
+        print_items()
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+        add_item(command)
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'done '</span>):
+        mark_item_as_done(command)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = read_command()
+            execute_command(command)
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+
+
+main()
+</code></pre>
+              </panel>
+            </div>
           </panel>
           <panel header="week6" expanded="">
-            <div></div>
+            <div>
+              <h3 id="monty-6">Monty 6<a class="fa fa-anchor" href="#monty-6"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-5">Monty 5 code</a> in the following ways:</p>
+              <ul>
+                <li>Add a <code>help</code> command so that the user can view how to use the app.</li>
+                <li>Improve the formatting of the text displayed to the user to make the user experience nicer.</li>
+              </ul>
+              <p>A sample output is given below.</p>
+              <pre><code class="hljs">*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+&gt;&gt;&gt; What can I do for you?
+
+help
+&gt;&gt;&gt; I'm glad you asked. Here it is:
+==================================================
+Monty can understand the following commands:
+
+  add DESCRIPTION 
+    Adds a task to the list
+    Example: add read book
+  done INDEX
+    Marks the task at INDEX as 'done'
+    Example: done 1
+  exit
+    Exits the application
+  help_info
+    Shows the help_info information
+  list
+    Lists the tasks in the list
+-------------------------------------------------- 
+
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; Task added to the list
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; Task added to the list
+&gt;&gt;&gt; What can I do for you?
+
+done 1
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | read book                  
+  ✗    |   2   | return book                
+--------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+              <box>
+                <p>💡 You can use triple quotes to define a long string such as the help text.</p>
+                <pre><code class="hljs python">help_text =<span class="hljs-string">'''
+long text
+more text
+'''</span>
+</code></pre>
+                <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a>
+              </box>
+              </p>
+              <panel type="seamless" header="Partial solution">
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
+    banner = <span class="hljs-string">'''
+*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+*******************************************************************************************
+'''
+    print(banner.strip(), <span class="hljs-string">'\n'</span>)
+</code></pre>
+            </div>
           </panel>
           <panel header="week7" expanded="">
             <div></div>
@@ -948,7 +1174,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Mon, 11 Feb 2019 14:38:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
 </footer>
 </div>
 </body>
