@@ -11,9 +11,8 @@ This section focuses on reading from text-based files (i.e., not binary files).
 
 {{ icon_example }} The code below shows how to read from a text file.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 ```python
 file_path = os.path.join('data', 'items.txt')
@@ -22,20 +21,19 @@ items = f.read()
 print(items)
 f.close()
 ```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
+</span>
+<span id="output">
+
 Output (contents of the `items.txt`):
 ```
 first line
 second line
 third line
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-:bulb: The `'r'` argument in `open(file_path, 'r')` indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>. 
+:bulb: The `'r'` argument in `open(file_path, 'r')` indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.
 
 </tip-box>
 
@@ -54,7 +52,7 @@ for i in items: # print each item
   print(i.strip()) # use strip() to remove linebreak at the end of each line
 f.close()
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 ['first line\n', 'second line\n', 'third line\n']
 first line

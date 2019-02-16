@@ -2,9 +2,8 @@
 
 Suppose there is a CSV file in this format:
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 `itemlist1.csv`:
 ```
@@ -13,25 +12,21 @@ book,10.0
 bag,50.0
 "pens, pencils", 5.0
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 item|price
  ----|-----
  book|10.0
  bag|50.0
  pens, pencils| 5.0
-
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-align="middle" boilerplate>
+<span id="input">
 
 `updated_itemlist1.csv`:
 ```
@@ -40,20 +35,16 @@ book,10.0,0.7
 bag,50.0,3.5
 "pens, pencils", 5.0,0.35
 ```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+</span>
+<span id="output">
 
 item|price|GST
 ----|-----|---
 book|10.0|0.7
 bag|50.0|3.5
 pens, pencils| 5.0|0.35
-
-  </td>
-</tr>
-</table>
-
+</span>
+</include>
 
 
 <panel type="seamless" header="%%:bulb: Python hints%%">

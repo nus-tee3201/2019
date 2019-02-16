@@ -62,7 +62,7 @@ third line
 hang in there
 ```
 
-:arrow_heading_down: 
+{{ icon_output }}
 
 ```
 ['1. first line\n', '2. \n', '3. second line\n', '4. third line']

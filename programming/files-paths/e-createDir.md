@@ -53,7 +53,7 @@ check('bar')
 
 ```
 
-:arrow_heading_down: output when run in REPL.it
+{{ icon_output }} output when run in REPL.it
 
 ```
 /home/runner
@@ -79,16 +79,12 @@ def create_dir(dir_name):
   a c:/foo/bar directory.
   """
   os.makedirs(dir_name)
-  
-  
+
 ...
-  
-  
+
 def print_current():
   """Print current working directory"""
   print(os.getcwd())
-  
-
 ```
 
 </panel>

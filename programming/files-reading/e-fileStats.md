@@ -14,8 +14,9 @@ def get_file_content_as_list(filename):
   get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
   """
   return [] # REPLACE WITH YOUR CODE
-  
-def get_stats(contents):
+
+
+def get_file_stats(contents):
   """Given a list of lines, return line count and letter count as a dictionary
   
   Trailing line breaks (if any) are not counted for letter count.
@@ -23,18 +24,19 @@ def get_stats(contents):
   Example:
   get_stats(['aaa\n', 'bbb']) returns {'lines': 2, 'letters': 6}
   """
-  stats = {}
+  stats = []
   # ADD YOUR CODE HERE
   return stats
-  
-def analyze_file(filename): 
+
+
+def analyze_file(filename):
   contents_as_list = get_file_content_as_list(filename)
   print('lines in file:', contents_as_list)
-  print('stats:', get_stats(contents_as_list))
-  
+  stats = get_file_stats(contents_as_list)
+  print('It has', stats[0], 'lines containing', stats[1], 'letters')
+
 analyze_file('file1.txt')
 analyze_file('file2.txt')
-
 ```
 
 `file1.txt` (2 lines, 22 letters):
@@ -51,13 +53,13 @@ ccc
 ddd 
 ```
 
-:arrow_heading_down: 
+{{ icon_output }}
 
 ```
 lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
-stats: {'lines': 2, 'letters': 22}
+It has 2 lines containing 22 letters
 lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
-stats: {'lines': 4, 'letters': 10}
+It has 4 lines containing 10 letters
 ```
 
 <panel type="seamless" header="%%:bulb: Tips%%">
@@ -83,7 +85,6 @@ def get_file_content_as_list(filename):
   lines = f.readlines()
   f.close()
   return lines
-
 ```
 
 </panel>
