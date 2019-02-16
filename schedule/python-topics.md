@@ -121,21 +121,6 @@
 <div id="week6">
 <div id="week6-toc">
 
-* [**Dictionaries**](#lists)
-  * [The Dictionary Data Structure](#the-dictionary-data-structure)
-  * [Working with Dictionaries](#working-with-dictionaries)
-  * [Nested Dictionaries](#nested-dictionaries)
-</div>
-
-# Dictionaries
-
-<include src="../programming/dictionaries-intro/text.md" />{{ hr_double }}
-<include src="../programming/dictionaries-workingWith/text.md" />{{ hr_double }}
-<include src="../programming/dictionaries-nested/text.md" />{{ hr_double }}
-</div>
-<div id="week7">
-<div id="week7-toc">
-
 * [**Files**](#files)
   * [File Paths](#file-paths)
   * [Reading from Files](#reading-from-files)
@@ -149,6 +134,21 @@
 <include src="../programming/files-reading/text.md" />{{ hr_double }}
 <include src="../programming/files-writing/text.md" />{{ hr_double }}
 <include src="../programming/files-csv/text.md" />{{ hr_double }}
+</div>
+<div id="week7">
+<div id="week7-toc">
+
+* [**Dictionaries**](#lists)
+  * [The Dictionary Data Structure](#the-dictionary-data-structure)
+  * [Working with Dictionaries](#working-with-dictionaries)
+  * [Nested Dictionaries](#nested-dictionaries)
+</div>
+
+# Dictionaries
+
+<include src="../programming/dictionaries-intro/text.md" />{{ hr_double }}
+<include src="../programming/dictionaries-workingWith/text.md" />{{ hr_double }}
+<include src="../programming/dictionaries-nested/text.md" />{{ hr_double }}
 </div>
 <div id="week8">
 <div id="week8-toc">
