@@ -396,7 +396,7 @@ main()
 
 Enhance the [Monty 5 code]({{ baseUrl }}/programming/toc/monty.html#monty-5) in the following ways:
 * Add a `help` command so that the user can view how to use the app.
-* Improve the formatting of the text displayed to the user to make them look nicer.
+* Improve the formatting of the text displayed to the user to make the user experience nicer.
 
 A sample output is given below.
 
@@ -410,15 +410,16 @@ A sample output is given below.
 *      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
 *                                                                                  __/ |  *
 *                                                                                 |___/   *
-*******************************************************************************************
+******************************************************************************************* 
 
 >>> What can I do for you?
 
 help
+>>> I'm glad you asked. Here it is:
 ==================================================
 Monty can understand the following commands:
 
-  add DESCRIPTION
+  add DESCRIPTION 
     Adds a task to the list
     Example: add read book
   done INDEX
@@ -426,29 +427,33 @@ Monty can understand the following commands:
     Example: done 1
   exit
     Exits the application
-  help
-    Shows the help information
+  help_info
+    Shows the help_info information
   list
     Lists the tasks in the list
---------------------------------------------------
+-------------------------------------------------- 
 
 >>> What can I do for you?
 
 add read book
+>>> Task added to the list
 >>> What can I do for you?
 
 add return book
+>>> Task added to the list
 >>> What can I do for you?
 
 done 1
+>>> Congrats on completing a task! :-)
 >>> What can I do for you?
 
 list
+>>> Here is the list of tasks:
 ==================================================
-STATUS | INDEX | DESCRIPTION
+STATUS | INDEX | DESCRIPTION                
 --------------------------------------------------
-  ✓    |   1   | read book
-  ✗    |   2   | return book
+  ✓    |   1   | read book                  
+  ✗    |   2   | return book                
 --------------------------------------------------
 >>> What can I do for you?
 ```
