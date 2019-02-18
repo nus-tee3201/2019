@@ -49,6 +49,4 @@ prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 
 Unlike lists which contain an ordered sequence of items, **dictionaries are not ordered** i.e., we cannot force a key-value pair in a dictionary to be at a specific position %%e.g., in the example above, there is no guarantee that `'bread'`:`'3.50'` pair will be at the first position of the dictionary `prices` after adding more key-value pairs to it%%.
 
-<panel type="danger" header=":muscle: Exercise: Get Subject Info" expanded no-close>
-  <include src="e-getSubjectInfo.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Get Subject Info" var-file="e-getSubjectInfo.md" />

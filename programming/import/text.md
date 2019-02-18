@@ -52,6 +52,4 @@ for i in range(5):
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Circle Area" expanded no-close>
-  <include src="e-circleArea.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Circle Area" var-file="e-circleArea.md" />

@@ -54,9 +54,7 @@ After deleting: {'TE3201': 'A+'}
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Get Set Delete Score" expanded no-close>
-  <include src="e-getSetDeleteScore.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Get Set Delete Score" var-file="e-getSetDeleteScore.md" />
 
 **Trying to access a value for a non-existent key raises a `KeyError` exception.**
 
@@ -84,9 +82,7 @@ KeyError: 'santa'
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Get Score with Error Handling" expanded no-close>
-  <include src="e-getScoreWithErrorHandling.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Get Score with Error Handling" var-file="e-getScoreWithErrorHandling.md" />
 
 **You can use `keys()` and `values()` methods to iterate through keys and values of a dictionary, respectively.**
 
@@ -161,9 +157,7 @@ butter -> 5.0
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Print Scorecard" expanded no-close>
-  <include src="e-printScorecard.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Print Scorecard" var-file="e-printScorecard.md" />
 
 As usual, you can **use `in` and `not in` to check whether a key or a value is in a dictionary**.
 
@@ -211,6 +205,4 @@ False
 
 <include src="tryYourOwn.md" boilerplate var-program="dictionaries-workingWith" />
 
-<panel type="danger" header=":muscle: Exercise: Add Bonus" expanded no-close>
-  <include src="e-addBonus.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Add Bonus" var-file="e-addBonus.md" />

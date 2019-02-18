@@ -80,12 +80,8 @@ True False
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Rectify Case" expanded no-close>
-  <include src="e-rectifyCase.md" />
-</panel><p/>
-<panel type="danger" header=":muscle: Exercise: Is Doctor" expanded no-close>
-  <include src="e-isDoctor.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Rectify Case" var-file="e-rectifyCase.md" />
+<include src="exercisePanel.md" boilerplate var-title="Is Doctor" var-file="e-isDoctor.md" />
 
 **The `find(s)` method gives index of `s` in the string**, if it is found. It returns `-1` if `s` is not found.
 
@@ -115,9 +111,7 @@ print(s.find('Spam'))
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Remove From Word" expanded no-close>
-  <include src="e-removeFromWord.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Remove From Word" var-file="e-removeFromWord.md" />
 
 **The `join()` method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.**
 
@@ -204,9 +198,7 @@ print('['+ s.rstrip() + ']') #right side strip
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Get Part" expanded no-close>
-  <include src="e-getPart.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Get Part" var-file="e-getPart.md" />
 
 **The `replace()` method can replace a character (or a phrase) with another character/phrase**. 
 
@@ -257,6 +249,4 @@ Price===============
 
 <include src="tryYourOwn.md" boilerplate var-program="strings-methods" />
 
-<panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded no-close>
-  <include src="e-printFormattedItem.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Print Formatted Item" var-file="e-printFormattedItem.md" />
