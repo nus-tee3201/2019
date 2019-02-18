@@ -54,9 +54,7 @@ AA_BB_CC
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Remove Extra Spaces" expanded no-close>
-  <include src="e-removeExtraSpaces.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Remove Extra Spaces" var-file="e-removeExtraSpaces.md" />
 
  
 

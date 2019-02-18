@@ -253,6 +253,4 @@ Something wrong
 :paperclip: **Resources**:
 * [Python built-in exceptions](https://www.tutorialspoint.com/python/standard_exceptions.htm)
 
-<panel type="danger" header=":muscle: Exercise: Enter Integer" expanded no-close>
-  <include src="e-enterInteger.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Enter Integer" var-file="e-enterInteger.md" />

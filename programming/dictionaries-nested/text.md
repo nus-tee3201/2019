@@ -39,9 +39,7 @@ total tasks to do: 4
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Inning-Scores" expanded no-close>
-  <include src="e-inningScores.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Inning-Scores" var-file="e-inningScores.md" />
 
 <box>
 
@@ -77,12 +75,6 @@ Betsy Sims
 
 <include src="tryYourOwn.md" boilerplate var-program="dictionaries-nested" />
 
-<panel type="danger" header=":muscle: Exercise: Player Stats" expanded no-close>
-  <include src="e-playerStats.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Grade Report" expanded no-close>
-  <include src="e-gradeReport.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Inventory Report" expanded no-close>
-  <include src="e-inventoryReport.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Player Stats" var-file="e-playerStats.md" />
+<include src="exercisePanel.md" boilerplate var-title="Grade Report" var-file="e-gradeReport.md" />
+<include src="exercisePanel.md" boilerplate var-title="Inventory Report" var-file="e-inventoryReport.md" />

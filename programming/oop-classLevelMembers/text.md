@@ -103,6 +103,4 @@ yak yak
 :bulb: As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Add Class-Level Members to `Subject` Class" expanded no-close>
-  <include src="e-addClassLevelMembersToSubjectClass.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Add Class-Level Members to `Subject` Class" var-file="e-addClassLevelMembersToSubjectClass.md" />

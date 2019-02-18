@@ -110,6 +110,4 @@ AttributeError: 'Account' object has no attribute '__get_income'...
 :bulb: Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Change Visibility of `School` Class Members" expanded no-close>
-  <include src="e-changeVisibilityOfSchoolClassMembers.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Change Visibility of `School` Class Members" var-file="e-changeVisibilityOfSchoolClassMembers.md" />

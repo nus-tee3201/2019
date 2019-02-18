@@ -95,6 +95,4 @@ print(v1)
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Grader `print_score` function" expanded no-close>
-  <include src="e-grader-printScoreFunction.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Grader `print_score` function" var-file="e-grader-printScoreFunction.md" />

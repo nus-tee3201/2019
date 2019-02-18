@@ -80,9 +80,5 @@ hide_ends2 failed: Not enough items
 
 <include src="tryYourOwn.md" boilerplate var-program="errors-exceptions-raising" />
 
-<panel type="danger" header=":muscle: Exercise: Is Even-Integer in Range" expanded no-close>
-  <include src="e-isEvenIntegerInRange.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded no-close>
-  <include src="e-flexibleWordGame.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Is Even-Integer in Range" var-file="e-isEvenIntegerInRange.md" />
+<include src="exercisePanel.md" boilerplate var-title="Flexible Word Game" var-file="e-flexibleWordGame.md" />

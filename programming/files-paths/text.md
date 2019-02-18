@@ -167,6 +167,4 @@ If your run it on a OS-X computer in the folder `/Users/john`, it prints `/Users
 
 </box>
 
-<panel type="danger" header=":muscle: Exercise: Create Directory" expanded no-close>
-  <include src="e-createDir.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Create Directory" var-file="e-createDir.md" />

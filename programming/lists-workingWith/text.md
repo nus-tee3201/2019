@@ -32,9 +32,7 @@ print(spam)
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Delete Head, Delete Tail" expanded no-close>
-  <include src="e-deleteHead.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Delete Head, Delete Tail" var-file="e-deleteHead.md" />
 
 
 **You can use the _slice_ notation `list_name[start_index:end_index]` to copy a _<tooltip content="a portion of a list">sublist</tooltip>_ into a new list.** If the `start_index` is omitted, it means 'from the beginning of the list'. If the `end_index` is omitted, it means 'till the end of the list'.
@@ -114,9 +112,7 @@ sub list     : ['0a', '1b']
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Get Body" expanded no-close>
-  <include src="e-getBody.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Get Body" var-file="e-getBody.md" />
 
 
 **You can use the `len` function to find the number of items in a list.**
@@ -143,9 +139,7 @@ Length is: 2
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Get Mid" expanded no-close>
-  <include src="e-getMid.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Get Mid" var-file="e-getMid.md" />
 
 **You can use the `+` operator to combine multiple lists into a new list.**
 
@@ -204,9 +198,7 @@ print(walking)
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Expand to Fill" expanded no-close>
-  <include src="e-expandToFill.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Expand to Fill" var-file="e-expandToFill.md" />
 
 **You can use `in` or `not in` to check if an item is in a list**. 
 
@@ -249,9 +241,7 @@ Tea is already in the list
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: XOR" expanded no-close>
-  <include src="e-xor.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="XOR" var-file="e-xor.md" />
 
 **You can traverse through items in a list using the `for item_name in list_name:` notation**.
 
@@ -280,9 +270,7 @@ Do you sell Hamsters?
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Print Card Deck" expanded no-close>
-  <include src="e-printCardDeck.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Print Card Deck" var-file="e-printCardDeck.md" />
 
 **The `enumerate` function can help you easily maintain an iteration counter while traversing a list**.
 
@@ -312,6 +300,4 @@ for i, animal in enumerate(pets):
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: First Quarter" expanded no-close>
-  <include src="e-firstQuarter.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="First Quarter" var-file="e-firstQuarter.md" />

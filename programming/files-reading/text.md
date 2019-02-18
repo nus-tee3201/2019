@@ -63,6 +63,4 @@ third line
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: File Stats" expanded no-close>
-  <include src="e-fileStats.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="File Stats" var-file="e-fileStats.md" />

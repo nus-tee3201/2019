@@ -59,6 +59,4 @@ print_all_products(0,2,3)
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Grader - `calculate_grade` function" expanded no-close>
-  <include src="e-grader-calculateGradeFunction.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Grader - `calculate_grade` function" var-file="e-grader-calculateGradeFunction.md" />

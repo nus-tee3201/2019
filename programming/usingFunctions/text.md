@@ -93,6 +93,4 @@ print('Price after 50% discount is $' + str(discounted_price)) # convert back to
 
 </panel>
 
-<panel type="danger" header=":muscle: Exercise: Length of Names" expanded>
-  <include src="e-lengthOfName.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Length of Names" var-file="e-lengthOfName.md" />

@@ -63,9 +63,7 @@ if name == 'Blue':          # line 1
 print('Done')               # line 5
 ```
 
-<panel type="danger" header=":muscle: Exercise: Even Numbers" expanded>
-  <include src="e-even.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Even Numbers" var-file="e-even.md" />
 
 `if` statements can be <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.
 
@@ -145,9 +143,5 @@ Note that in an `if-elif-else` construct no more than one block (the first one w
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded>
-  <include src="e-grades.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded>
-  <include src="e-gradeAnalyzerExtended.md" />
-</panel>
+<include src="exercisePanel.md" boilerplate var-title="Grade Analyzer" var-file="e-grades.md" />
+<include src="exercisePanel.md" boilerplate var-title="Grade Analyzer (extended)" var-file="e-gradeAnalyzerExtended.md" />

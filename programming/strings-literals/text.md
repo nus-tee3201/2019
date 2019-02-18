@@ -21,9 +21,7 @@ Escape Sequence | Meaning | Example | Output
 
 </div>
 
-<panel type="danger" header=":muscle: Exercise: Escape Sequences" expanded no-close>
-  <include src="e-escapeSequences.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Escape Sequences" var-file="e-escapeSequences.md" />
 
 You can **use a pair of triple quotes to indicate a multi-line string literal**. 
 
@@ -81,9 +79,7 @@ This is the third line.
 
 {{ icon_info }} It is optional to escape `'` and `"` inside a mult-line string within triple quotes e.g., `How's life?` in the example above.
 
-<panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded no-close>
-  <include src="e-multiLineString.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Multi-Line String" var-file="e-multiLineString.md" />
 
 **Triple double-quotes (`"""`) are commonly used to show documentation of code. Such comments are called _docstrings_.**
 

@@ -134,9 +134,5 @@ print(names)
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Anagram Checker" expanded no-close>
-  <include src="e-anagramChecker.md" />
-</panel><p/>
-<panel type="danger" header=":muscle: Exercise: Word Game" expanded no-close>
-  <include src="e-wordGame.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Anagram Checker" var-file="e-anagramChecker.md" />
+<include src="exercisePanel.md" boilerplate var-title="Word Game" var-file="e-wordGame.md" />

@@ -27,9 +27,7 @@ print(everything)
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Countries" expanded no-close>
-  <include src="e-countries.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Countries" var-file="e-countries.md" />
 
 **You can use the notation `list_name[index_of_item]` to access an item of a list.** List indexes start from `0` i.e., the first item in a list has the index `0`.
 
@@ -110,6 +108,4 @@ print(list_of_lists[2][0])
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Get Head, Get Tail" expanded no-close>
-  <include src="e-getHeadTail.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Get Head, Get Tail" var-file="e-getHeadTail.md" />

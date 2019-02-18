@@ -69,15 +69,9 @@ total cows after breeding: 5
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Grader - Add `main` Function" expanded no-close>
-  <include src="e-grader-addMainFunction.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Grader - Restructure the `main` Function" expanded no-close>
-  <include src="e-grader-restructureTheMainFunction.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Grader - Analyze Grades in a Loop" expanded no-close>
-  <include src="e-grader-analyzeInLoop.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Grader - Add `main` Function" var-file="e-grader-addMainFunction.md" />
+<include src="exercisePanel.md" boilerplate var-title="Grader - Restructure the `main` Function" var-file="e-grader-restructureTheMainFunction.md" />
+<include src="exercisePanel.md" boilerplate var-title="Grader - Analyze Grades in a Loop" var-file="e-grader-analyzeInLoop.md" />
 
 
 

@@ -225,6 +225,4 @@ new age: 26
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Swap Ends" expanded no-close>
-  <include src="e-swapEnds.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Swap Ends" var-file="e-swapEnds.md" />

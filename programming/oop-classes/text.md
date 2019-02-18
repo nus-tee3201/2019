@@ -212,6 +212,4 @@ Sun Tzu
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded no-close>
-  <include src="e-createStockItemClass.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Create `StockItem` Class" var-file="e-createStockItemClass.md" />

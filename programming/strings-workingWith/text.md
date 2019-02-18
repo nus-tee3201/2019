@@ -39,9 +39,7 @@ the
 
 {{ icon_important_big_red }} Strings are immutable. The following code will not work: `s[0] = 'h'`
 
-<panel type="danger" header=":muscle: Exercise: Shorten String" expanded no-close>
-  <include src="e-shortenString.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Shorten String" var-file="e-shortenString.md" />
 
 
 You can **use the `in` and `not in` operator to see if one string is a sub-string of another**.
@@ -74,6 +72,4 @@ True
 
 <include src="tryYourOwn.md" boilerplate var-program="strings-workingWith" />
 
-<panel type="danger" header=":muscle: Exercise: Has All Characters" expanded no-close>
-  <include src="e-hasAllCharacters.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Has All Characters" var-file="e-hasAllCharacters.md" />

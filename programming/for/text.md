@@ -54,9 +54,7 @@ while i < 3:
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded no-close>
-  <include src="e-multiplicationTable.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Multiplication Table" var-file="e-multiplicationTable.md" />
 
 **You can use `break` and `continue` in `for` loops as well**, with similar effects as in `while` loops.
 
@@ -98,9 +96,7 @@ print('Grand total of non-negative numbers:', str(total))
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Multiplication Table (Extended)" expanded no-close>
-  <include src="e-multiplicationTableExtended.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Multiplication Table (Extended)" var-file="e-multiplicationTableExtended.md" />
 
 **Loops can be nested.**
 
@@ -124,6 +120,4 @@ for i in range(2, 5):
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Three Dice Throws" expanded no-close>
-  <include src="e-threeDiceThrows.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Three Dice Throws" var-file="e-threeDiceThrows.md" />

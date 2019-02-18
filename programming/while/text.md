@@ -74,12 +74,8 @@ while counter < 3:
 
 </tip-box>
 
-<panel type="danger" type="danger" header=":muscle: Exercise: Vending Machine - Add Loop" expanded no-close>
-  <include src="e-vending-oneCoin.md" />
-</panel>
-<panel type="danger" header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded no-close>
-  <include src="e-vending-multipleCoins.md" />
-</panel><p/>  
+<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Add Loop" var-file="e-vending-oneCoin.md" />
+<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Accept Multiple Coins" var-file="e-vending-multipleCoins.md" />  
 
 **You can use a `break` statement to break out of a loop.**
 
@@ -110,9 +106,7 @@ print('Password correct. You may proceed.')
 
 </panel>
 
-<panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort" expanded no-close>
-  <include src="e-vending-allowAbort.md" />
-</panel><p/> 
+<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Allow Abort" var-file="e-vending-allowAbort.md" /> 
 
 **You can use a `continue` statement to skip the remainder of the current iteration** and go back to the `while` condition.
 
@@ -146,6 +140,4 @@ print('Accepted words: ' + accepted_words)
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Vending Machine - Legit Coins" expanded no-close>
-  <include src="e-vending-legitCoins.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Legit Coins" var-file="e-vending-legitCoins.md" />

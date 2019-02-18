@@ -72,9 +72,7 @@ the name is Dan
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Add `Fish` Class" expanded no-close>
-  <include src="e-addFishClass.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Add `Fish` Class" var-file="e-addFishClass.md" />
 
 **A child class can _override_ a method defined in the parent class.** That way, a child object can change a behavior defined in the parent class.
 
@@ -156,9 +154,7 @@ class Student(Person):
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Add `FlightlessBird` Class" expanded no-close>
-  <include src="e-addFlightlessBirdClass.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Add `FlightlessBird` Class" var-file="e-addFlightlessBirdClass.md" />
 
 
 **Note that all python classes automatically inherits from the built-in class `object`** even if you did not specify it as the parent class. The `object` class has a `__str__()` method that you can ovrride in your classes to customize how the `print` function will print an object of your class.
@@ -195,9 +191,7 @@ Book title: Python for Beginners
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Override `__str__()` Method" expanded no-close>
-  <include src="e-overrideStr.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Override `__str__()` Method" var-file="e-overrideStr.md" />
 
 
 **A class can inherit from multiple classes.** If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.
@@ -285,6 +279,4 @@ As both `Teacher` and `Student` classes have the `print_info()` method, the meth
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Add `SmartPhone` Class" expanded no-close>
-  <include src="e-addSmartPhoneClass.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Add `SmartPhone` Class" var-file="e-addSmartPhoneClass.md" />

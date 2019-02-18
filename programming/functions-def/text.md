@@ -103,6 +103,4 @@ def say_hello():
 
 </panel><p/>
 
-<panel type="danger" header=":muscle: Exercise: Hip Hip Hooray!" expanded no-close>
-  <include src="e-hooray.md" />
-</panel><p/>
+<include src="exercisePanel.md" boilerplate var-title="Hip Hip Hooray!" var-file="e-hooray.md" />
