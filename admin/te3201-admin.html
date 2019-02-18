@@ -92,7 +92,7 @@
           </dropdown>
           <li slot="right" class="nav-link">
             <form class="navbar-form">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
             </form>
           </li>
         </navbar>
@@ -123,7 +123,7 @@
                 <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
                 <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
                 <tip-box>
-                  <panel header="Some less important info in a minimized panel" minimized="">
+                  <panel header="Some less important info in a minimized panel" minimized>
                     <p>Less important info</p>
                     <p></p>
                   </panel>
@@ -292,7 +292,7 @@
           <div class="container">
             <div class="row">
               <div class="col-3">
-                <p><a href="/2019/admin/images/damith.png" target="_self"><img src="/2019/admin/images/damith.png" alt="" class="img-fluid"></a></p>
+                <p><a href="/2019/admin/images/damith.png" target="_self"><img src="/2019/admin/images/damith.png" alt class="img-fluid"></a></p>
               </div>
               <div class="col">
                 <p><strong>Damith Chatura RAJAPAKSE</strong><br>
@@ -399,9 +399,9 @@
             </ul>
           </li>
         </ul>
-        <modal large="" title="Project Increments" id="modal:admin-projectIncrements">
+        <modal large title="Project Increments" id="modal:admin-projectIncrements">
           <p>Missing project increments will be filled up near to the corresponding week.</p>
-          <panel header="week1" expanded="">
+          <panel header="week1" expanded>
             <div>
               <h3 id="monty-1">Monty 1<a class="fa fa-anchor" href="#monty-1"></a></h3>
               <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
@@ -418,7 +418,7 @@ foo
               </panel>
             </div>
           </panel>
-          <panel header="week2" expanded="">
+          <panel header="week2" expanded>
             <div>
               <h3 id="monty-2">Monty 2<a class="fa fa-anchor" href="#monty-2"></a></h3>
               <p>Extend <a href="/2019/programming/toc/monty.html#monty-1">Monty 1 code</a> to work as follows:</p>
@@ -453,7 +453,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
               </panel>
             </div>
           </panel>
-          <panel header="week3" expanded="">
+          <panel header="week3" expanded>
             <div>
               <h3 id="monty-3">Monty 3<a class="fa fa-anchor" href="#monty-3"></a></h3>
               <p>Restructure the <a href="/2019/programming/toc/monty.html#monty-2">Monty 2 code</a> to fit the following structure, while keeping the behavior same as Monty 2.</p>
@@ -503,7 +503,7 @@ main()
               </panel>
             </div>
           </panel>
-          <panel header="week4" expanded="">
+          <panel header="week4" expanded>
             <div>
               <h3 id="monty-4">Monty 4<a class="fa fa-anchor" href="#monty-4"></a></h3>
               <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-3">Monty 3 code</a> to improve the functionality as per the sample output given below.</p>
@@ -609,7 +609,7 @@ main()
               </panel>
             </div>
           </panel>
-          <panel header="week5" expanded="">
+          <panel header="week5" expanded>
             <div>
               <h3 id="monty-5">Monty 5<a class="fa fa-anchor" href="#monty-5"></a></h3>
               <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-4">Monty 4 code</a> in the following ways:</p>
@@ -746,7 +746,7 @@ main()
               </panel>
             </div>
           </panel>
-          <panel header="week6" expanded="">
+          <panel header="week6" expanded>
             <div>
               <h3 id="monty-6">Monty 6<a class="fa fa-anchor" href="#monty-6"></a></h3>
               <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-5">Monty 5 code</a> in the following ways:</p>
@@ -839,19 +839,19 @@ more text
 </code></pre>
             </div>
           </panel>
-          <panel header="week7" expanded="">
+          <panel header="week7" expanded>
             <div></div>
           </panel>
-          <panel header="week8" expanded="">
+          <panel header="week8" expanded>
             <div></div>
           </panel>
-          <panel header="week9" expanded="">
+          <panel header="week9" expanded>
             <div></div>
           </panel>
-          <panel header="week10" expanded="">
+          <panel header="week10" expanded>
             <div></div>
           </panel>
-          <panel header="week11" expanded="">
+          <panel header="week11" expanded>
             <div></div>
           </panel>
         </modal>
@@ -1008,13 +1008,13 @@ list : lists all TODOs
             </ul>
           </li>
         </ul>
-        <modal large="" title="Class diagram example" id="modal:finalSubmission-classDiagram">
+        <modal large title="Class diagram example" id="modal:finalSubmission-classDiagram">
           <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
           <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
         </modal>
-        <modal large="" title="Object diagram example" id="modal:finalSubmission-objectDiagram">
+        <modal large title="Object diagram example" id="modal:finalSubmission-objectDiagram">
           <img src="/2019/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></modal>
-        <modal large="" id="modal:finalSubmission-systemTests">
+        <modal large id="modal:finalSubmission-systemTests">
           <h2 id="sample-system-tests">Sample System Tests<a class="fa fa-anchor" href="#sample-system-tests"></a></h2>
           <p><strong>Test case 1: Launch without prior data</strong></p>
           <ul>
@@ -1025,14 +1025,14 @@ list : lists all TODOs
               </ol>
             </li>
             <li>Steps:
-              <ol screenshot="" here="">
+              <ol screenshot here>
                 <li>Run the app using the command <code>python main.py</code></li>
                 <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br></li>
               </ol>
             </li>
           </ul>
           <p><strong>Test case 2: Add first contact</strong></p>
-          <ul screenshot="" here="">
+          <ul screenshot here>
             <li>Feature being tested : adding of a contact when there are no prior data</li>
             <li>Set up:
               <ol>
@@ -1062,7 +1062,7 @@ list : lists all TODOs
             </li>
           </ul>
         </modal>
-        <modal large="" id="modal:finalSubmission-unitTests">
+        <modal large id="modal:finalSubmission-unitTests">
           <h2 id="sample-unit-tests">Sample Unit Tests<a class="fa fa-anchor" href="#sample-unit-tests"></a></h2>
           <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
           <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
@@ -1174,7 +1174,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

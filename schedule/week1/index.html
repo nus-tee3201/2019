@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -106,7 +106,7 @@
               <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
             </ul>
             <panel type="seamless" header="%%:tv: What is programming (a 2-minute intro from Khan Academy):%%">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             </panel>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
@@ -129,7 +129,7 @@
                 <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)
               </p>
               <panel type="seamless" header=":tv: How to install Python on Windows">
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
             </div>
             <div class="alt-java">
@@ -365,17 +365,20 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Circle Circumference" expanded="">
-              <div>
-                <h4 id="exercise-circle-circumference">Exercise: Circle Circumference<a class="fa fa-anchor" href="#exercise-circle-circumference"></a></h4>
-                <ol>
-                  <li>Declare a variable <code>r</code> to represent the radius of a circle, and assign it value <code>7</code>.</li>
-                  <li>Declare a variable <code>pi</code> to represent PI and assign it <code>3.14</code></li>
-                  <li>Use the above two variables to calculate and the circumference of the circle and assign it to a new variable <code>c</code>.</li>
-                  <li>Show the value of <code>c</code> (which should be <code>43.96</code>).</li>
-                </ol>
-              </div>
-            </panel>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Circle Circumference" expanded no-close>
+                <div>
+                  <h4 id="exercise-circle-circumference">Exercise: Circle Circumference<a class="fa fa-anchor" href="#exercise-circle-circumference"></a></h4>
+                  <ol>
+                    <li>Declare a variable <code>r</code> to represent the radius of a circle, and assign it value <code>7</code>.</li>
+                    <li>Declare a variable <code>pi</code> to represent PI and assign it <code>3.14</code></li>
+                    <li>Use the above two variables to calculate and the circumference of the circle and assign it to a new variable <code>c</code>.</li>
+                    <li>Show the value of <code>c</code> (which should be <code>43.96</code>).</li>
+                  </ol>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <h1 id="python-programs">Python Programs<a class="fa fa-anchor" href="#python-programs"></a></h1>
@@ -497,18 +500,20 @@ print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(dis
               <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
             <panel type="seamless" header="%%:tv: Explanation of a similar Python program%%">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
-            <panel type="danger" header=":muscle: Exercise: Length of Names" expanded="">
-              <div>
-                <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
-                <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
-                <pre><code class="hljs">What is your name?
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Length of Names" expanded no-close>
+                <div>
+                  <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
+                  <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
+                  <pre><code class="hljs">What is your name?
 John Doe
 The length of your name is 8
 </code></pre>
-                <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
-              </div>
-            </panel>
-            <p></p>
+                  <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -526,14 +531,14 @@ The length of your name is 8
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W1-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W1.1]</span> <big><big><strong>SE: Intro</strong></big></big></big> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W1.1a]</span></span> <span class="dimmed"><strong><span>Software Engineering → Introduction →
                             </span></strong></span> <strong><big><big><span>Pros and Cons</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -625,7 +630,7 @@ The length of your name is 8
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> SE vs Civil Engineering">
                                   <question has-input="true">
@@ -786,7 +791,7 @@ foo
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

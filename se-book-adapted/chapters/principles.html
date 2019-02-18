@@ -191,7 +191,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -202,7 +202,7 @@
               <h1 id="principles"><span>Principles</span><a class="fa fa-anchor" href="#principles"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### Single Responsibility Principle<a class='fa fa-anchor' href='#single-responsibility-principle'></a>" expanded="">
+          <panel type="seamless" header="#### Single Responsibility Principle<a class='fa fa-anchor' href='#single-responsibility-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -226,7 +226,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                  <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded>
                     <ul>
                       <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
                       <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
@@ -238,7 +238,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Open-Closed Principle<a class='fa fa-anchor' href='#open-closed-principle'></a>" expanded="">
+          <panel type="seamless" header="#### Open-Closed Principle<a class='fa fa-anchor' href='#open-closed-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -268,7 +268,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
                         <question>
@@ -291,7 +291,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Liskov Substitution Principle<a class='fa fa-anchor' href='#liskov-substitution-principle'></a>" expanded="">
+          <panel type="seamless" header="#### Liskov Substitution Principle<a class='fa fa-anchor' href='#liskov-substitution-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -305,8 +305,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a></sub></p>
                   </div>
                 </tip-box>
-                <p>LSP sounds same as <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-                <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
+                <p>LSP sounds same as <trigger large trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
+                <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
                     <div>
                     <div>
                       <p>
@@ -390,7 +390,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?">
                         <question>
@@ -411,7 +411,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Interface Segregation Principle<a class='fa fa-anchor' href='#interface-segregation-principle'></a>" expanded="">
+          <panel type="seamless" header="#### Interface Segregation Principle<a class='fa fa-anchor' href='#interface-segregation-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -449,7 +449,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Dependency Inversion Principle<a class='fa fa-anchor' href='#dependency-inversion-principle'></a>" expanded="">
+          <panel type="seamless" header="#### Dependency Inversion Principle<a class='fa fa-anchor' href='#dependency-inversion-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -473,7 +473,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle.">
                         <question>
@@ -501,7 +501,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### SOLID Principles<a class='fa fa-anchor' href='#solid-principles'></a>" expanded="">
+          <panel type="seamless" header="#### SOLID Principles<a class='fa fa-anchor' href='#solid-principles'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -538,7 +538,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                            <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded>
                               <ul>
                                 <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
                                 <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
@@ -585,7 +585,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
                                   <question>
@@ -627,8 +627,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                               <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a></sub></p>
                             </div>
                           </tip-box>
-                          <p>LSP sounds same as <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-                          <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
+                          <p>LSP sounds same as <trigger large trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
+                          <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
                               <div>
                               <div>
                                 <p>
@@ -712,7 +712,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?">
                                   <question>
@@ -805,7 +805,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle.">
                                   <question>
@@ -839,7 +839,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Separation of Concerns Principle<a class='fa fa-anchor' href='#separation-of-concerns-principle'></a>" expanded="">
+          <panel type="seamless" header="#### Separation of Concerns Principle<a class='fa fa-anchor' href='#separation-of-concerns-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -922,7 +922,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coupling levels of alternative designs">
                                   <question has-input="true">
@@ -1010,7 +1010,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> correct statement about SoC">
                         <question>
@@ -1032,7 +1032,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Law of Demeter<a class='fa fa-anchor' href='#law-of-demeter'></a>" expanded="">
+          <panel type="seamless" header="#### Law of Demeter<a class='fa fa-anchor' href='#law-of-demeter'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1077,7 +1077,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Examples for LoD">
                         <question has-input="true">
@@ -1139,7 +1139,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### YAGNI Principle<a class='fa fa-anchor' href='#yagni-principle'></a>" expanded="">
+          <panel type="seamless" header="#### YAGNI Principle<a class='fa fa-anchor' href='#yagni-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1157,7 +1157,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded>
                     <ul>
                       <li><a href="https://martinfowler.com/bliki/Yagni.html"><strong>Yagni</strong></a> -- A detailed article explaining YAGNI, written by Martin Fowler.</li>
                     </ul>
@@ -1166,7 +1166,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### DRY Principle<a class='fa fa-anchor' href='#dry-principle'></a>" expanded="">
+          <panel type="seamless" header="#### DRY Principle<a class='fa fa-anchor' href='#dry-principle'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1189,7 +1189,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Brooks' Law<a class='fa fa-anchor' href='#brooks-law'></a>" expanded="">
+          <panel type="seamless" header="#### Brooks' Law<a class='fa fa-anchor' href='#brooks-law'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1207,7 +1207,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Brook’s Law vs school project">
                         <question has-input="true">
@@ -1247,7 +1247,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

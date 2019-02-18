@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -102,7 +102,7 @@
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W12-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W12.1]</span> <big><big><strong>Reuse: APIs, Frameworks, Libraries, Platforms</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
@@ -111,7 +111,7 @@
                 <div class="indented-level1">
                   <br>
                   <p><span class="dimmed"><strong>Reuse</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1a]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -129,7 +129,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1b]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
                             </span></strong></span> <strong><big><big><span>When</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -153,7 +153,7 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Using a cool UI framework">
                                   <question has-input="true">
@@ -185,7 +185,7 @@
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>APIs</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1c]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → APIs →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -206,7 +206,7 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about APIs">
                                   <question>
@@ -248,7 +248,7 @@
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Libraries</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1d]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -276,7 +276,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1e]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
                             </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -302,7 +302,7 @@
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Frameworks</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1f]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -350,7 +350,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1g]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
                             </span></strong></span> <strong><big><big><span>Frameworks vs Libraries</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -376,7 +376,7 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about software frameworks">
                                   <question>
@@ -421,7 +421,7 @@
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Platforms</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.1h]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Platforms →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -457,14 +457,14 @@
                 </div>
               </panel>
               <p><span id="W12-2"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W12.2]</span> <big><big><strong>Cloud Computing</strong></big></big></big> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.2a]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Cloud Computing →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -482,7 +482,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.2b]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Cloud Computing →
                             </span></strong></span> <strong><big><big><span>Iaas, PaaS, and SaaS</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -511,7 +511,7 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Google Calendar in which category?">
                                   <question>
@@ -538,14 +538,14 @@
               </panel>
               <p></p>
               <p><span id="W12-3"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W12.3]</span> <big><big><strong>Revision Control</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.3a]</span></span> <span class="dimmed"><strong><span>Project Management → Revision Control →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -572,11 +572,11 @@
                               <hr>
                             </tab>
                             <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
-                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                               <hr>
                             </tab>
                           </tabs>
-                          <modal large="" title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide">
+                          <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide">
                               <div>
                               <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                             </div>
@@ -595,7 +595,7 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does RCS stand for?">
                                   <question has-input="true">
@@ -645,7 +645,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.3b]</span></span> <span class="dimmed"><strong><span>Project Management → Revision Control →
                             </span></strong></span> <strong><big><big><span>Repositories</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -669,14 +669,14 @@
                               <hr>
                             </tab>
                             <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
-                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                               <hr>
                             </tab>
                           </tabs>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is a repo?">
                                   <question has-input="true">
@@ -694,7 +694,7 @@
               </panel>
               <p></p>
               <p><span id="W12-4"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W12.4]</span> <big><big><strong>Writing Developer Documents</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
@@ -703,7 +703,7 @@
                 <div class="indented-level1">
                   <br>
                   <p><span class="dimmed"><strong>Type of Developer Docs</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4a]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -749,7 +749,7 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about API documentation">
                                   <question>
@@ -773,7 +773,7 @@
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Guideline: Aim for Comprehensibility</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4b]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Guidelines → Aim for Comprehensibility →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -791,7 +791,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4c]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Guidelines → Aim for Comprehensibility →
                             </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -814,7 +814,7 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about documentation">
                                   <question>
@@ -840,7 +840,7 @@
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Guideline: Describe Top-Down</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4d]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Guidelines → Describe Top-Down →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -858,7 +858,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4e]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Guidelines → Describe Top-Down →
                             </span></strong></span> <strong><big><big><span>Why</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -876,7 +876,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4f]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Guidelines → Describe Top-Down →
                             </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -924,7 +924,7 @@
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Guideline: Minimal but Sufficient</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4g]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Guidelines → Minimal but Sufficient →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -946,7 +946,7 @@
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W12.4h]</span></span> <span class="dimmed"><strong><span>Implementation → Documentation → Guidelines → Minimal but Sufficient →
                             </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -981,7 +981,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

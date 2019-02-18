@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -103,7 +103,7 @@
             <p>💡 It is customary to use <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
             <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
             <modal title="CamelCase" id="modal:classes-camelcase">
-              <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt="" class="img-fluid"></a><br></p>
+              <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt class="img-fluid"></a><br></p>
               <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>. <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
               <p><sub>[source: <a href="https://en.wikipedia.org/wiki/Camel_case">Wikipedia</a>]</sub></p>
             </modal>
@@ -262,14 +262,15 @@ Sun Tzu
                 </tr>
               </table>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
-                <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Create `StockItem` Class" expanded no-close>
+                <div>
+                  <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
+                  <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
+                  <table>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
 <span class="hljs-comment"># It should have an attribute: name</span>
 <span class="hljs-comment"># It should have a method: info() </span>
     
@@ -281,19 +282,19 @@ print(b.info())
 b.name = <span class="hljs-string">'Bananas'</span>
 print(b.info())
 </code></pre>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">Item info: Apple
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Item info: Apple
 Apple
 Item info: Bag of Beans
 Item info: Bananas
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
+                      </td>
+                    </tr>
+                  </table>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = ...
@@ -301,10 +302,11 @@ Item info: Bananas
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
     <span class="hljs-keyword">return</span> ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -399,18 +401,19 @@ yak yak
               <p>💡 As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
               </p>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Add Class-Level Members to `Subject` Class" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class"></a></h4>
-                <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
-                <ul>
-                  <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
-                  <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
-                </ul>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Add Class-Level Members to `Subject` Class" expanded no-close>
+                <div>
+                  <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class"></a></h4>
+                  <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
+                  <ul>
+                    <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
+                    <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
+                  </ul>
+                  <table>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
     self.name = name
@@ -431,10 +434,10 @@ print(Subject.limit_reached(<span class="hljs-number">3</span>))
 Subject.total = <span class="hljs-number">100</span>
 print(Subject.limit_reached(<span class="hljs-number">100</span>))
 </code></pre>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">total subjects: 0
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">total subjects: 0
 total subjects: 1
 True
 False
@@ -443,11 +446,11 @@ True
 False
 True
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+                      </td>
+                    </tr>
+                  </table>
+                  <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-comment"># ADD `total` attribute here</span>
   
@@ -463,10 +466,11 @@ True
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
     ... <span class="hljs-comment"># ADD implementation</span>
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -573,14 +577,15 @@ AttributeError: 'Account' object has no attribute '__get_income'...
               <p>💡 Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
               </p>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Change Visibility of `School` Class Members" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members"></a></h4>
-                <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Change Visibility of `School` Class Members" expanded no-close>
+                <div>
+                  <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members"></a></h4>
+                  <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
+                  <table>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
   
   __target = <span class="hljs-number">0.99</span>
   
@@ -595,22 +600,23 @@ s = School(<span class="hljs-number">100000</span>)
 print(s.__budget)
 print(s.__max_expenditure())
 </code></pre>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">0.99
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">0.99
 100000
 99000.0
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <panel type="seamless" header="%%:bulb: Hint%%">
-                  <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                  <panel type="seamless" header="%%:bulb: Hint%%">
+                    <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <h1 id="installing-3rd-party-modules">Installing 3rd Party Modules<a class="fa fa-anchor" href="#installing-3rd-party-modules"></a></h1>
@@ -659,14 +665,16 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
             <ul>
               <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
             </ul>
-            <panel type="danger" header=":muscle: Exercise: Print Errors in Red" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
-                <p>Update a CLI program you have written in the past to print error messages in red color.</p>
-                <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
-              </div>
-            </panel>
-            <p></p>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Print Errors in Red" expanded no-close>
+                <div>
+                  <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
+                  <p>Update a CLI program you have written in the past to print error messages in red color.</p>
+                  <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -683,14 +691,14 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W8-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W8.1]</span> <big><big><strong>OOP: Basics</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1a]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Classes →
                             </span></strong></span> <strong><big><big><span>Basic</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -745,7 +753,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <div>
                                   <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Identify Classes and Objects">
@@ -826,7 +834,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1b]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -848,7 +856,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1c]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Classes →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -966,7 +974,7 @@ Enter command: exit
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which classes are correct?">
                                   <question>
@@ -1038,7 +1046,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1d]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Classes →
                             </span></strong></span> <strong><big><big><span>Class-Level Members</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1070,7 +1078,7 @@ Enter command: exit
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Suitable as a class-level variables">
                                   <question>
@@ -1094,7 +1102,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1e]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Class-Level Members →
                             </span></strong></span> <strong><big><big><span>Class-Level Members</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1117,7 +1125,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1f]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Associations →
                             </span></strong></span> <strong><big><big><span>Basic</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1148,7 +1156,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1g]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1172,7 +1180,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1h]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
                             </span></strong></span> <strong><big><big><span>Labels</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1200,7 +1208,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1i]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
                             </span></strong></span> <strong><big><big><span>Roles</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1280,7 +1288,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1j]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Associations →
                             </span></strong></span> <strong><big><big><span>Multiplicity</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1397,7 +1405,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1k]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
                             </span></strong></span> <strong><big><big><span>Multiplicity</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1435,7 +1443,7 @@ Enter command: exit
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which statement agrees with the  multiplicity shown in this diagram?">
                                   <question>
@@ -1459,7 +1467,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1l]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Associations →
                             </span></strong></span> <strong><big><big><span>Navigability</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1477,7 +1485,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1m]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
                             </span></strong></span> <strong><big><big><span>Navigability</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1531,7 +1539,7 @@ Enter command: exit
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does the navigability given by this diagram mean?">
                                   <question>
@@ -1555,7 +1563,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1n]</span></span> <span class="dimmed"><strong><span>Tools → UML →
                             </span></strong></span> <strong><big><big><span>Object vs Class Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1590,7 +1598,7 @@ Enter command: exit
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which class diagrams match object diagram?">
                                   <question>
@@ -1614,7 +1622,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1o]</span></span> <span class="dimmed"><strong><span>Tools → UML →
                             </span></strong></span> <strong><big><big><span>Notes</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1637,7 +1645,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1p]</span></span> <span class="dimmed"><strong><span>Tools → UML →
                             </span></strong></span> <strong><big><big><span>Constraints</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1664,7 +1672,7 @@ Enter command: exit
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1undefined]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams →
                             </span></strong></span> <strong><big><big><span>Associations as Attributes</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1709,7 +1717,7 @@ Enter command: exit
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

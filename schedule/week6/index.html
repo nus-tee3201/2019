@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -160,7 +160,7 @@ C:\photos\vaction
                 </table>
               </div>
               <p>💡 Note how the path <code>'C:\\temp\\python'</code> uses double slash to <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
-              <modal large="" title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
+              <modal large title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
                 <div>
                   <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em> to include a special character in a string literal</strong> without interpreting it as a special character. Given below are some examples:</p>
                   <div class="table-responsive">
@@ -243,7 +243,7 @@ C:\photos\vaction
                 <li><code>..\..\modules\te3201\exercises\ex1.txt</code></li>
               </ul>
               <panel type="seamless" header="%%another example%%">
-                <p><a href="https://automatetheboringstuff.com/images/000032.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000032.jpg" alt="" class="img-fluid"></a></p>
+                <p><a href="https://automatetheboringstuff.com/images/000032.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000032.jpg" alt class="img-fluid"></a></p>
               </panel>
             </box>
             <p>You can use <code>os.mkdirs()</code> function to create folders and <code>os.removedirs()</code> to delete folders.</p>
@@ -301,11 +301,12 @@ print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs
                 </li>
               </ul>
             </box>
-            <panel type="danger" header=":muscle: Exercise: Create Directory" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-create-directory"></a></h4>
-                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
-                <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Create Directory" expanded no-close>
+                <div>
+                  <h4 id="exercise-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-create-directory"></a></h4>
+                  <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
   <span class="hljs-string">"""Create a directory dir_name in the current working directory
@@ -354,17 +355,17 @@ check(<span class="hljs-string">'foo'</span>)
 check(<span class="hljs-string">'bar'</span>)
 
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span> output when run in <a href="http://REPL.it">REPL.it</a></p>
-                <pre><code class="hljs">/home/runner
+                  <p><span class="fas fa-arrow-down"></span> output when run in <a href="http://REPL.it">REPL.it</a></p>
+                  <pre><code class="hljs">/home/runner
 /home/runner/foo
 /home/runner
 /home/runner
 /home/runner/bar
 /home/runner
 </code></pre>
-                <p></p>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+                  <p></p>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
   <span class="hljs-string">"""Create a directory dir_name in the current working directory
@@ -381,10 +382,11 @@ check(<span class="hljs-string">'bar'</span>)
   <span class="hljs-string">"""Print current working directory"""</span>
   print(os.getcwd())
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -443,11 +445,12 @@ third line
 </code></pre>
               <p>💡 Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code> method.</p>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: File Stats" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-file-stats">Exercise : File Stats<a class="fa fa-anchor" href="#exercise-file-stats"></a></h4>
-                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: File Stats" expanded no-close>
+                <div>
+                  <h4 id="exercise-file-stats">Exercise : File Stats<a class="fa fa-anchor" href="#exercise-file-stats"></a></h4>
+                  <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
   
   The file is expected to be in the current working directory.
@@ -482,29 +485,29 @@ third line
 analyze_file(<span class="hljs-string">'file1.txt'</span>)
 analyze_file(<span class="hljs-string">'file2.txt'</span>)
 </code></pre>
-                <p><code>file1.txt</code> (2 lines, 22 letters):</p>
-                <pre><code class="hljs">aaa bbb ccc
+                  <p><code>file1.txt</code> (2 lines, 22 letters):</p>
+                  <pre><code class="hljs">aaa bbb ccc
 ddd eee fff
 </code></pre>
-                <p><code>file2.txt</code> (4 lines, 10 letters -- note: the <mark>last line has a trailing space</mark>, which adds up to 10 letters):</p>
-                <pre><code class="hljs">a
+                  <p><code>file2.txt</code> (4 lines, 10 letters -- note: the <mark>last line has a trailing space</mark>, which adds up to 10 letters):</p>
+                  <pre><code class="hljs">a
 bb
 ccc
 ddd 
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
 It has 2 lines containing 22 letters
 lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
 It has 4 lines containing 10 letters
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Tips%%">
-                  <ul>
-                    <li><code>strip()</code> removes trailing line breaks but also trailing spaces. <code>replace('\n', '')</code> will remove the trailing line break but will keep the trailing spaces.</li>
-                  </ul>
-                </panel>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+                  <panel type="seamless" header="%%:bulb: Tips%%">
+                    <ul>
+                      <li><code>strip()</code> removes trailing line breaks but also trailing spaces. <code>replace('\n', '')</code> will remove the trailing line break but will keep the trailing spaces.</li>
+                    </ul>
+                  </panel>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
   
   The file is expected to be in the current working directory.
@@ -519,10 +522,11 @@ It has 4 lines containing 10 letters
   f.close()
   <span class="hljs-keyword">return</span> lines
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -558,11 +562,12 @@ second line
 third line
 </code></pre>
             </box>
-            <panel type="danger" header=":muscle: Exercise: Add Line Numbers" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-add-line-numbers"></a></h4>
-                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Add Line Numbers" expanded no-close>
+                <div>
+                  <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-add-line-numbers"></a></h4>
+                  <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
   
   The file is expected to be in the current working directory.
@@ -607,21 +612,21 @@ process_file(<span class="hljs-string">'file1a.txt'</span>, <span class="hljs-st
 process_file(<span class="hljs-string">'file2a.txt'</span>, <span class="hljs-string">'file2b.txt'</span>)
 
 </code></pre>
-                <p><code>file1a.txt</code>:</p>
-                <pre><code class="hljs">first line
+                  <p><code>file1a.txt</code>:</p>
+                  <pre><code class="hljs">first line
 
 second line
 third line
 </code></pre>
-                <p><code>file2a.txt</code>:</p>
-                <pre><code class="hljs">hang in there
+                  <p><code>file2a.txt</code>:</p>
+                  <pre><code class="hljs">hang in there
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">['1. first line\n', '2. \n', '3. second line\n', '4. third line']
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">['1. first line\n', '2. \n', '3. second line\n', '4. third line']
 ['1. hang in there']
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
   <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
   
   Example:
@@ -634,10 +639,11 @@ third line
   f.close()
 
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -657,7 +663,7 @@ third line
                   </td>
                     <td> → </td>
                     <td>
-                    <p><a href="/2019/files-csv/images/deliveries.png" target="_self"><img src="/2019/files-csv/images/deliveries.png" alt="" class="img-fluid"></a></p>
+                    <p><a href="/2019/files-csv/images/deliveries.png" target="_self"><img src="/2019/files-csv/images/deliveries.png" alt class="img-fluid"></a></p>
                   </td>
                 </tr>
               </table>
@@ -741,103 +747,104 @@ bananas,3,2.0,False
               </ul>
             </box>
 
-            <panel type="danger" header=":muscle: Exercise: Calcluate GST" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-calculate-gst">Exercise : Calculate GST<a class="fa fa-anchor" href="#exercise-calculate-gst"></a></h4>
-                <p>Suppose there is a CSV file in this format:</p>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Calcluate GST" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <p><code>itemlist1.csv</code>:</p>
-                        <pre><code class="hljs">item,price
+                  <h4 id="exercise-calculate-gst">Exercise : Calculate GST<a class="fa fa-anchor" href="#exercise-calculate-gst"></a></h4>
+                  <p>Suppose there is a CSV file in this format:</p>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <p><code>itemlist1.csv</code>:</p>
+                          <pre><code class="hljs">item,price
 book,10.0
 bag,50.0
 &quot;pens, pencils&quot;, 5.0
 </code></pre>
-                      </td>
-                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <div class="table-responsive">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th>item</th>
-                                <th>price</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>book</td>
-                                <td>10.0</td>
-                              </tr>
-                              <tr>
-                                <td>bag</td>
-                                <td>50.0</td>
-                              </tr>
-                              <tr>
-                                <td>pens, pencils</td>
-                                <td>5.0</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <p>Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.</p>
-                <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <p><code>updated_itemlist1.csv</code>:</p>
-                        <pre><code class="hljs">item,price,GST
+                        </td>
+                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>item</th>
+                                  <th>price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>book</td>
+                                  <td>10.0</td>
+                                </tr>
+                                <tr>
+                                  <td>bag</td>
+                                  <td>50.0</td>
+                                </tr>
+                                <tr>
+                                  <td>pens, pencils</td>
+                                  <td>5.0</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.</p>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <p><code>updated_itemlist1.csv</code>:</p>
+                          <pre><code class="hljs">item,price,GST
 book,10.0,0.7
 bag,50.0,3.5
 &quot;pens, pencils&quot;, 5.0,0.35
 </code></pre>
-                      </td>
-                      <td valign="middle">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <div class="table-responsive">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th>item</th>
-                                <th>price</th>
-                                <th>GST</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>book</td>
-                                <td>10.0</td>
-                                <td>0.7</td>
-                              </tr>
-                              <tr>
-                                <td>bag</td>
-                                <td>50.0</td>
-                                <td>3.5</td>
-                              </tr>
-                              <tr>
-                                <td>pens, pencils</td>
-                                <td>5.0</td>
-                                <td>0.35</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <panel type="seamless" header="%%:bulb: Python hints%%">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
+                        </td>
+                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>item</th>
+                                  <th>price</th>
+                                  <th>GST</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>book</td>
+                                  <td>10.0</td>
+                                  <td>0.7</td>
+                                </tr>
+                                <tr>
+                                  <td>bag</td>
+                                  <td>50.0</td>
+                                  <td>3.5</td>
+                                </tr>
+                                <tr>
+                                  <td>pens, pencils</td>
+                                  <td>5.0</td>
+                                  <td>0.35</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: Python hints%%">
+                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_GST</span><span class="hljs-params">(source_file, target_file)</span>:</span>
   <span class="hljs-string">"""Read the data from the CSV file source_file and write 
@@ -883,10 +890,11 @@ bag,50.0,3.5
 process(<span class="hljs-string">'itemlist1.csv'</span>, <span class="hljs-string">'updated_itemlist1.csv'</span>)
 process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-string">'updated_itemlist2.csv'</span>)
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -907,14 +915,14 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W6-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W6.1]</span> <big><big><strong>IDEs: Basic Features</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1a]</span></span> <span class="dimmed"><strong><span>Implementation → IDEs →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -946,7 +954,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these are features available in IDEs?">
                                   <question>
@@ -976,7 +984,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.1b]</span></span> <span class="dimmed"><strong><span>Implementation → IDEs → Debugging →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1024,14 +1032,14 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
               </panel>
               <p></p>
               <p><span id="W6-2"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W6.2]</span> <big><big><strong>Project Mgt: Scheduling and Tracking</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2a]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Milestones</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1080,7 +1088,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2b]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Buffers</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1099,7 +1107,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2c]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Issue Trackers</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1113,7 +1121,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                         <div>
                           <p>Keeping track of project tasks <span class="dimmed">(who is doing what, which tasks are ongoing, which tasks are done etc.)</span> is an essential part of project management. In small projects it may be possible to track tasks using simple tools as online spreadsheets or general-purpose/light-weight tasks tracking tools such as Trello. Bigger projects need more sophisticated task tracking tools.</p>
                           <p><strong>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress.</strong> Most online project management software such as GitHub, SourceForge, and BitBucket come with an integrated issue tracker.</p>
-                          <div v-closeable="" alt="Jira screenshot">
+                          <div v-closeable alt="Jira screenshot">
                             <tip-box>
                               <p><span class="fas fa-cube"></span> A screenshot from the Jira Issue tracker software <span class="dimmed">(Jira is part of the BitBucket project management tool suite)</span>:</p>
                               <img src="/2019/book/projectPlanning/issueTrackers/images/xjira.png" height="350">
@@ -1125,7 +1133,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2d]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>Work Breakdown Structure</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1290,7 +1298,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one is not a well-defined task?">
                                   <question>
@@ -1315,7 +1323,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2e]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>GANTT Charts</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1339,7 +1347,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2f]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
                             </span></strong></span> <strong><big><big><span>PERT Charts</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1376,7 +1384,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W6.2g]</span></span> <span class="dimmed"><strong><span>Project Management → Teamwork →
                             </span></strong></span> <strong><big><big><span>Team Structures</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1403,7 +1411,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which team structure is the most suitable for a school project?">
                                   <question>
@@ -1442,7 +1450,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

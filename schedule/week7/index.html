@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -186,30 +186,32 @@ prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.
 </code></pre>
             </box>
             <p>Unlike lists which contain an ordered sequence of items, <strong>dictionaries are not ordered</strong> i.e., we cannot force a key-value pair in a dictionary to be at a specific position <span class="dimmed">e.g., in the example above, there is no guarantee that <code>'bread'</code>:<code>'3.50'</code> pair will be at the first position of the dictionary <code>prices</code> after adding more key-value pairs to it</span>.</p>
-            <panel type="danger" header=":muscle: Exercise: Get Subject Info" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-subject-info">Exercise: Get Subject Info<a class="fa fa-anchor" href="#exercise-get-subject-info"></a></h4>
-                <p>Complete the <code>get_subject_info</code> function below to return a dictionary such that the code produces the given output.</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Get Subject Info" expanded no-close>
+                <div>
+                  <h4 id="exercise-get-subject-info">Exercise: Get Subject Info<a class="fa fa-anchor" href="#exercise-get-subject-info"></a></h4>
+                  <p>Complete the <code>get_subject_info</code> function below to return a dictionary such that the code produces the given output.</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {} <span class="hljs-comment"># UPDATE THIS LINE</span>
   
 print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-keyword">False</span>))
 print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-keyword">True</span>))
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
 {'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} 
   
 print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-keyword">False</span>))
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -267,17 +269,18 @@ After deleting: {'TE3201': 'A+'}
                 </table>
               </div>
             </box>
-            <panel type="danger" header=":muscle: Exercise: Get Set Delete Score" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-set-delete-score">Exercise: Get, Set, Delete Score<a class="fa fa-anchor" href="#exercise-get-set-delete-score"></a></h4>
-                <p>Complete the three function below such that the code produces the given output.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>get_score(scores, player)</code>: returns the value of the key <code>player</code></li>
-                  <li><code>set_score(scores, player, new_score)</code>: sets the value of the key <code>player</code> to the <code>new_score</code></li>
-                  <li><code>delete_score(scores, player)</code>: deletes the value for key <code>player</code></li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Get Set Delete Score" expanded no-close>
+                <div>
+                  <h4 id="exercise-get-set-delete-score">Exercise: Get, Set, Delete Score<a class="fa fa-anchor" href="#exercise-get-set-delete-score"></a></h4>
+                  <p>Complete the three function below such that the code produces the given output.</p>
+                  <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
+                  <ul>
+                    <li><code>get_score(scores, player)</code>: returns the value of the key <code>player</code></li>
+                    <li><code>set_score(scores, player, new_score)</code>: sets the value of the key <code>player</code> to the <code>new_score</code></li>
+                    <li><code>delete_score(scores, player)</code>: deletes the value for key <code>player</code></li>
+                  </ul>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-comment"># UPDATE HERE!</span>
     
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
@@ -295,23 +298,24 @@ print(game1_scores)
 delete_score(game1_scores, <span class="hljs-string">'dan'</span>)
 print(game1_scores)
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">36
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">36
 35
 {'amy': 35, 'betty': 36, 'charlie': 5, 'dan': 0}
 {'amy': 35, 'betty': 36, 'charlie': 5}
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> scores[player]
     
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
   scores[player] = new_score
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>Trying to access a value for a non-existent key raises a <code>KeyError</code> exception.</strong></p>
             <box>
               <p><span class="fas fa-cube"></span> This example raises an exception because the key <code>'santa'</code> does not exist in the dictionary <code>is_nice</code>:</p>
@@ -336,36 +340,38 @@ KeyError: 'santa'
                 </table>
               </div>
             </box>
-            <panel type="danger" header=":muscle: Exercise: Get Score with Error Handling" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-score-with-error-handling">Exercise: Get Score with Error Handling<a class="fa fa-anchor" href="#exercise-get-score-with-error-handling"></a></h4>
-                <p>Update the <code>get_score1(scores, player)</code> function to handle error situations, as described below.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>get_score1(scores, player)</code>: returns the value of the key <code>player</code>. <mark>Returns an error message if the <code>player</code> is not in <code>scores</code></mark>.</li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Get Score with Error Handling" expanded no-close>
+                <div>
+                  <h4 id="exercise-get-score-with-error-handling">Exercise: Get Score with Error Handling<a class="fa fa-anchor" href="#exercise-get-score-with-error-handling"></a></h4>
+                  <p>Update the <code>get_score1(scores, player)</code> function to handle error situations, as described below.</p>
+                  <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
+                  <ul>
+                    <li><code>get_score1(scores, player)</code>: returns the value of the key <code>player</code>. <mark>Returns an error message if the <code>player</code> is not in <code>scores</code></mark>.</li>
+                  </ul>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> scores[player] <span class="hljs-comment"># UPDATE HERE!</span>
     
 game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}
 print(get_score1(game1_scores, <span class="hljs-string">'charlie'</span>))
 print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">30
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">30
 brown is not in the game!
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">try</span>:
     <span class="hljs-keyword">return</span> scores[player]
   <span class="hljs-keyword">except</span> KeyError:
     ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use <code>keys()</code> and <code>values()</code> methods to iterate through keys and values of a dictionary, respectively.</strong></p>
             <box>
               <p><span class="fas fa-cube"></span> The code below shows how to iterate through keys/values of a dictionary.</p>
@@ -437,16 +443,17 @@ butter -&gt; 5.0
                 </table>
               </div>
             </box>
-            <panel type="danger" header=":muscle: Exercise: Print Scorecard" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-print-scorecard">Exercise: Print Scorecard<a class="fa fa-anchor" href="#exercise-print-scorecard"></a></h4>
-                <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>get_team_score(scores)</code>: returns the total of all scores of all players in <code>scores</code>.</li>
-                  <li><code>print_scorecard(scores)</code>: prints scores of each player in the format given, in the alphabetical order of player names.</li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_team_score</span><span class="hljs-params">(scores)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Print Scorecard" expanded no-close>
+                <div>
+                  <h4 id="exercise-print-scorecard">Exercise: Print Scorecard<a class="fa fa-anchor" href="#exercise-print-scorecard"></a></h4>
+                  <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
+                  <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
+                  <ul>
+                    <li><code>get_team_score(scores)</code>: returns the total of all scores of all players in <code>scores</code>.</li>
+                    <li><code>print_scorecard(scores)</code>: prints scores of each player in the format given, in the alphabetical order of player names.</li>
+                  </ul>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_team_score</span><span class="hljs-params">(scores)</span>:</span>
   total = <span class="hljs-number">0</span>
   <span class="hljs-comment">#ADD YOUR CODE HERE!</span>
   <span class="hljs-keyword">return</span> total
@@ -458,23 +465,24 @@ game2_scores = {<span class="hljs-string">'zac'</span>: <span class="hljs-number
 print_scorecard(game2_scores)
 print(<span class="hljs-string">'total ='</span>, get_team_score(game2_scores))
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">aaron = 10
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">aaron = 10
 betty = 30
 zac = 35
 total = 75
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
   ...
   
 <span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> sorted(scores.keys()):
   ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p>As usual, you can <strong>use <code>in</code> and <code>not in</code> to check whether a key or a value is in a dictionary</strong>.</p>
             <box>
               <p><span class="fas fa-cube"></span> The code below shows how to check if a certain key or a value exists in a dictionary.</p>
@@ -520,21 +528,22 @@ False
               </div>
             </box>
             <div>
-              <panel type="seamless" header=":computer: Try your own" minimized="">
+              <panel type="seamless" header=":computer: Try your own" minimized>
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
               <p></p>
             </div>
-            <panel type="danger" header=":muscle: Exercise: Add Bonus" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-add-bonus">Exercise: Add Bonus<a class="fa fa-anchor" href="#exercise-add-bonus"></a></h4>
-                <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
-                <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
-                <ul>
-                  <li><code>add_bonus(scores, player, bonus)</code>: adds the <code>bonus</code> to the value of the <code>player</code> if player already exists in <code>scores</code>. Otherwise, adds the <code>player</code> to <code>scores</code> with the value <code>bonus</code>.</li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Add Bonus" expanded no-close>
+                <div>
+                  <h4 id="exercise-add-bonus">Exercise: Add Bonus<a class="fa fa-anchor" href="#exercise-add-bonus"></a></h4>
+                  <p>Update the functions in the code to behave as described below such that the code produces the output given below the code.</p>
+                  <p>Given the parameter<code>scores</code> is a dictionary of the format <code>{'amy': 35, 'betty': 36, 'charlie': 30}</code> which contains scores of a bunch of players,</p>
+                  <ul>
+                    <li><code>add_bonus(scores, player, bonus)</code>: adds the <code>bonus</code> to the value of the <code>player</code> if player already exists in <code>scores</code>. Otherwise, adds the <code>player</code> to <code>scores</code> with the value <code>bonus</code>.</li>
+                  </ul>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
   <span class="hljs-keyword">pass</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
 
 
@@ -543,20 +552,21 @@ add_bonus(game3_scores, <span class="hljs-string">'amy'</span>, <span class="hlj
 add_bonus(game3_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">10</span>)
 print(game3_scores)
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
   <span class="hljs-keyword">if</span> player <span class="hljs-keyword">in</span> scores.keys():
     ...
   <span class="hljs-keyword">else</span>:
     ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -590,52 +600,54 @@ How many things to do in TE3201? 2
 total tasks to do: 4
 </code></pre>
             </box>
-            <panel type="danger" header=":muscle: Exercise: Inning-Scores" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-inning-scores">Exercise: Inning-Scores<a class="fa fa-anchor" href="#exercise-inning-scores"></a></h4>
-                <p>Assume the game has three innings and a player can play in 0-3 innings. For each inning, a player will have a inning-score which is an integer <span class="dimmed">e.g., player <code>amy</code> scored <code>5</code>, <code>5</code>, and <code>10</code> for the three innings (in order)</span>.</p>
-                <p>Update the <code>get_detailed_scores</code> functions in the code below such that it returns a dictionary that stores inning scores of each player as a <mark>list of integers for each player</mark>. Inning-scores of each player is given below.</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Player</th>
-                        <th>Scores in different innings</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>amy</td>
-                        <td>5, 5, 10</td>
-                      </tr>
-                      <tr>
-                        <td>betty</td>
-                        <td>10</td>
-                      </tr>
-                      <tr>
-                        <td>charile</td>
-                        <td>(did not play any innings)</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Inning-Scores" expanded no-close>
+                <div>
+                  <h4 id="exercise-inning-scores">Exercise: Inning-Scores<a class="fa fa-anchor" href="#exercise-inning-scores"></a></h4>
+                  <p>Assume the game has three innings and a player can play in 0-3 innings. For each inning, a player will have a inning-score which is an integer <span class="dimmed">e.g., player <code>amy</code> scored <code>5</code>, <code>5</code>, and <code>10</code> for the three innings (in order)</span>.</p>
+                  <p>Update the <code>get_detailed_scores</code> functions in the code below such that it returns a dictionary that stores inning scores of each player as a <mark>list of integers for each player</mark>. Inning-scores of each player is given below.</p>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Player</th>
+                          <th>Scores in different innings</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>amy</td>
+                          <td>5, 5, 10</td>
+                        </tr>
+                        <tr>
+                          <td>betty</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td>charile</td>
+                          <td>(did not play any innings)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: <span class="hljs-number">20</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>} <span class="hljs-comment">#REPLACE WITH YOUR CODE! </span>
 
 print(get_detailed_scores())
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
           ...}
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <box>
               <p><span class="fas fa-cube"></span> This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.</p>
               <pre><code class="hljs python">friends = {<span class="hljs-string">'john'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'John Doe'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>},
@@ -662,20 +674,21 @@ Betsy Sims
                 → <code>'Jan 12'</code></p>
             </box>
             <div>
-              <panel type="seamless" header=":computer: Try your own" minimized="">
+              <panel type="seamless" header=":computer: Try your own" minimized>
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-nested?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
               <p></p>
             </div>
-            <panel type="danger" header=":muscle: Exercise: Player Stats" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise-player-stats"></a></h4>
-                <p>Assume in each inning a player gets to bat number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
-                <p>Note how the <code>player_stats</code> dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player <code>amy</code> scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of <code>0*0 + 1*1 + 4*1 + 6*0 = 10</code> for her first inning).</p>
-                <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code> for the given <code>hit_size</code>.<br>
-                  e.g., <code>get_player_hit_count(player_stats, 'amy', 2, 6)</code> should return how many times <code>amy</code>'s hits in her second inning (i.e., <code>inning = 2</code>) scored <code>6</code>s; the return value should be <code>0</code>.</p>
-                <pre><code class="hljs python">player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Player Stats" expanded no-close>
+                <div>
+                  <h4 id="exercise-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise-player-stats"></a></h4>
+                  <p>Assume in each inning a player gets to bat number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
+                  <p>Note how the <code>player_stats</code> dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player <code>amy</code> scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of <code>0*0 + 1*1 + 4*1 + 6*0 = 10</code> for her first inning).</p>
+                  <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code> for the given <code>hit_size</code>.<br>
+                    e.g., <code>get_player_hit_count(player_stats, 'amy', 2, 6)</code> should return how many times <code>amy</code>'s hits in her second inning (i.e., <code>inning = 2</code>) scored <code>6</code>s; the return value should be <code>0</code>.</p>
+                  <pre><code class="hljs python">player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span>
                         {<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">5</span>, <span class="hljs-number">4</span>:<span class="hljs-number">0</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's second inning stats</span>
                         {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">0</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">1</span>}], <span class="hljs-comment"># amy's third inning stats</span>
                 <span class="hljs-string">'betty'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">2</span>, <span class="hljs-number">4</span>:<span class="hljs-number">2</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>}],
@@ -687,23 +700,26 @@ Betsy Sims
 print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>))
 print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>))
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">5
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">5
 2
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python">
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python">
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
   <span class="hljs-keyword">return</span> player_stats[...][inning<span class="hljs-number">-1</span>][...]
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <panel type="danger" header=":muscle: Exercise: Grade Report" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-grade-report">Exercise: Grade Report<a class="fa fa-anchor" href="#exercise-grade-report"></a></h4>
-                <p>Write a program that reads student grades one entry at a time and print a consolidated grade report at the end. Follow the sample output given below.</p>
-                <pre><code class="hljs">-----------------------------------------------------
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grade Report" expanded no-close>
+                <div>
+                  <h4 id="exercise-grade-report">Exercise: Grade Report<a class="fa fa-anchor" href="#exercise-grade-report"></a></h4>
+                  <p>Write a program that reads student grades one entry at a time and print a consolidated grade report at the end. Follow the sample output given below.</p>
+                  <pre><code class="hljs">-----------------------------------------------------
      ~ Welcome to Grade Report System ~
 * Enter one entry at a time in the format NAME GRADE
 * NAME should be one word
@@ -725,62 +741,65 @@ amy : A A+ D
 ben : B A
 charlie : F
 </code></pre>
-                <panel type="seamless" header="%%:bulb: Python hints%%">
-                  <ul>
-                    <li>use a dictionary of this format to store grades:
-                      <pre><code class="hljs python">{<span class="hljs-string">'amy'</span>: [<span class="hljs-string">'A'</span>, <span class="hljs-string">'A+'</span>, <span class="hljs-string">'D'</span>],
+                  <panel type="seamless" header="%%:bulb: Python hints%%">
+                    <ul>
+                      <li>use a dictionary of this format to store grades:
+                        <pre><code class="hljs python">{<span class="hljs-string">'amy'</span>: [<span class="hljs-string">'A'</span>, <span class="hljs-string">'A+'</span>, <span class="hljs-string">'D'</span>],
  <span class="hljs-string">'ben'</span>: [<span class="hljs-string">'B'</span>, <span class="hljs-string">'A'</span>],
  <span class="hljs-string">'charlie'</span>: [<span class="hljs-string">'F'</span>]}
 </code></pre>
-                    </li>
-                    <li>The string method <code>split()</code> can be useful to break the user entry into name and grade.<br>
-                      As you know,<code>'aaa bbb ccc'.split()</code> evaluates to a list <code>['aaa', 'bbb', 'ccc']</code></li>
-                    <li>The string method <code>join()</code> can be useful when printing grades.<br>
-                      As you know, <code>' '.join(['aaa', 'bbb', 'ccc'])</code> evaluates to <code>'aaa bbb ccc'</code></li>
-                  </ul>
-                </panel>
-              </div>
-            </panel>
-            <panel type="danger" header=":muscle: Exercise: Inventory Report" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-inventory-report">Exercise : Inventory Report<a class="fa fa-anchor" href="#exercise-inventory-report"></a></h4>
-                <p>Write a function that prints an inventory report like the examples given below, when the report title (a string), print-width (an int), and list of items (as a suitable data structure, e.g., dictionary) is given to the function.</p>
-                <box>
-                  <p><span class="fas fa-cube"></span> Kitchen Inventory Report:</p>
-                  <ul>
-                    <li>Title: Kitchen</li>
-                    <li>Width: 15</li>
-                  </ul>
-                  <div>
-                    <div></div>
-                    <div></div>
-                    <table>
-                      <tr>
-                        <td valign="top">
-                          <div class="table-responsive">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>Item</th>
-                                  <th>count</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>pots</td>
-                                  <td>5</td>
-                                </tr>
-                                <tr>
-                                  <td>eggs</td>
-                                  <td>100</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </td>
-                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
-                        <td valign="bottom">
-                          <pre><code class="hljs">###############
+                      </li>
+                      <li>The string method <code>split()</code> can be useful to break the user entry into name and grade.<br>
+                        As you know,<code>'aaa bbb ccc'.split()</code> evaluates to a list <code>['aaa', 'bbb', 'ccc']</code></li>
+                      <li>The string method <code>join()</code> can be useful when printing grades.<br>
+                        As you know, <code>' '.join(['aaa', 'bbb', 'ccc'])</code> evaluates to <code>'aaa bbb ccc'</code></li>
+                    </ul>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Inventory Report" expanded no-close>
+                <div>
+                  <h4 id="exercise-inventory-report">Exercise : Inventory Report<a class="fa fa-anchor" href="#exercise-inventory-report"></a></h4>
+                  <p>Write a function that prints an inventory report like the examples given below, when the report title (a string), print-width (an int), and list of items (as a suitable data structure, e.g., dictionary) is given to the function.</p>
+                  <box>
+                    <p><span class="fas fa-cube"></span> Kitchen Inventory Report:</p>
+                    <ul>
+                      <li>Title: Kitchen</li>
+                      <li>Width: 15</li>
+                    </ul>
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <table>
+                        <tr>
+                          <td valign="top">
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Item</th>
+                                    <th>count</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>pots</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>eggs</td>
+                                    <td>100</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                          <td valign="bottom">
+                            <pre><code class="hljs">###############
 ### KITCHEN ###
 ###############
 eggs.......:100
@@ -789,51 +808,51 @@ pots.......:  5
 total......:105
             ===
 </code></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </box>
-                <box>
-                  <p><span class="fas fa-cube"></span> Bookshop Inventory Report:</p>
-                  <ul>
-                    <li>Title: Book Shop</li>
-                    <li>Width: 25</li>
-                  </ul>
-                  <div>
-                    <div></div>
-                    <div></div>
-                    <table>
-                      <tr>
-                        <td valign="top">
-                          <div class="table-responsive">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>Item</th>
-                                  <th>count</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>pens</td>
-                                  <td>85</td>
-                                </tr>
-                                <tr>
-                                  <td>books</td>
-                                  <td>3</td>
-                                </tr>
-                                <tr>
-                                  <td>pencils</td>
-                                  <td>22</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </td>
-                        <td valign="middle">&nbsp;→&nbsp;<br><br></td>
-                        <td valign="bottom">
-                          <pre><code class="hljs">#########################
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </box>
+                  <box>
+                    <p><span class="fas fa-cube"></span> Bookshop Inventory Report:</p>
+                    <ul>
+                      <li>Title: Book Shop</li>
+                      <li>Width: 25</li>
+                    </ul>
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <table>
+                        <tr>
+                          <td valign="top">
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Item</th>
+                                    <th>count</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>pens</td>
+                                    <td>85</td>
+                                  </tr>
+                                  <tr>
+                                    <td>books</td>
+                                    <td>3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>pencils</td>
+                                    <td>22</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle">&nbsp;→&nbsp;<br><br></td>
+                          <td valign="bottom">
+                            <pre><code class="hljs">#########################
 ####### BOOK SHOP #######
 #########################
 books................:  3
@@ -843,18 +862,18 @@ pens.................: 85
 total................:110
                       ===
 </code></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </box>
-                <ul>
-                  <li>Title should be centered and in upper case.</li>
-                  <li>Items should be in alphabetical order.</li>
-                  <li>Width of the number column is 3. Numbers should be right-justified.</li>
-                </ul>
-                <panel type="seamless" header="%%:bulb: (Python) Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </box>
+                  <ul>
+                    <li>Title should be centered and in upper case.</li>
+                    <li>Items should be in alphabetical order.</li>
+                    <li>Width of the number column is 3. Numbers should be right-justified.</li>
+                  </ul>
+                  <panel type="seamless" header="%%:bulb: (Python) Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
   print_header(width, title)
   <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(items.keys()):
     print_item(k, items[k], width)
@@ -923,10 +942,11 @@ print_inventory({<span class="hljs-string">'pots'</span>:<span class="hljs-numbe
 print(<span class="hljs-string">'\n'</span>)
 print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-number">85</span>, <span class="hljs-string">'books'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'pencils'</span>: <span class="hljs-number">22</span>}, <span class="hljs-string">'Book Shop'</span>, <span class="hljs-number">25</span>)
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -943,14 +963,14 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W7-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W7.1]</span> <big><big><strong>Automated Testing of Text UIs</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.1a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1018,10 +1038,10 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Relate testing, test cases, failure, and defect">
-                                  <question has-input="">
+                                  <question has-input>
                                     <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                                   </question>
                                 </panel>
@@ -1032,7 +1052,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.1b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Regression Testing →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1050,7 +1070,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Regression Testing defintion T/F?">
                                   <question>
@@ -1069,7 +1089,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
                               </div>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain regression testing">
-                                  <question has-input="">
+                                  <question has-input>
                                     <p>Explain why and when you would do regression testing in a software project.</p>
                                   </question>
                                 </panel>
@@ -1080,7 +1100,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.1c]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1121,7 +1141,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.1d]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
                             </span></strong></span> <strong><big><big><span>Automated Testing of CLI Apps</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1173,7 +1193,7 @@ Invalid command format: add
                                   <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                                 </li>
                               </ul>
-                              <panel header="" minimized="">
+                              <panel header minimized>
                                 <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span></span>
                                 <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
                                 <pre><code class="hljs sh">java AddressBook &gt; output.txt 
@@ -1226,7 +1246,7 @@ Invalid command format: add
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

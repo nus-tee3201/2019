@@ -112,7 +112,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -171,7 +171,7 @@ SyntaxError: invalid syntax
                 <p><span class="fas fa-cube"></span> Note how REPL Python editor points out the syntax error using a red ❌ in the <em>
                     <tooltip content="the column on the extreme left of the editor">gutter</tooltip>
                   </em> of the editor.</p>
-                <p><a href="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" alt="" class="img-fluid"></a></p>
+                <p><a href="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" alt class="img-fluid"></a></p>
               </tip-box>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -413,7 +413,7 @@ print(get_head2(<span class="hljs-number">2</span>))
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-handling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -423,32 +423,33 @@ print(get_head2(<span class="hljs-number">2</span>))
               <ul>
                 <li><a href="https://www.tutorialspoint.com/python/standard_exceptions.htm">Python built-in exceptions</a></li>
               </ul>
-              <panel type="danger" header=":muscle: Exercise: Enter Integer" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer"></a></h4>
-                  <p>The code below assumes the entered string will always represent an integer.</p>
-                  <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Enter Integer" expanded no-close>
+                  <div>
+                    <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer"></a></h4>
+                    <p>The code below assumes the entered string will always represent an integer.</p>
+                    <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
 print(<span class="hljs-string">'You entered'</span>, value)
 </code></pre>
-                  <p>However, users may not follow that assumption. If the user were to enter a non-integer string, the program crashes. To avoid such crashes, programs need to do <em>input validation</em> i.e., perform checks on inputs to ensure their validity.</p>
-                  <p>Update the above code so that it accepts integers only, and produces the behavior given below.</p>
-                  <pre><code class="hljs">Input an integer: x
+                    <p>However, users may not follow that assumption. If the user were to enter a non-integer string, the program crashes. To avoid such crashes, programs need to do <em>input validation</em> i.e., perform checks on inputs to ensure their validity.</p>
+                    <p>Update the above code so that it accepts integers only, and produces the behavior given below.</p>
+                    <pre><code class="hljs">Input an integer: x
 That is not an integer, try again
 Input an integer: 5.5
 That is not an integer, try again
 Input an integer: 6
 You entered 6
 </code></pre>
-                  <panel type="seamless" header="%%:bulb: Hint%%">
-                    <ul>
-                      <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code>int(s)</code> function</a> raises a <code>ValueError</code> when the string <code>s</code> does not represent an integer.</li>
-                      <li>You can use a <code>while True</code> loop to repeatedly ask for an input until the user enters an integer.
-                      </li>
-                    </ul>
-                  </panel>
+                    <panel type="seamless" header="%%:bulb: Hint%%">
+                      <ul>
+                        <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code>int(s)</code> function</a> raises a <code>ValueError</code> when the string <code>s</code> does not represent an integer.</li>
+                        <li>You can use a <code>while True</code> loop to repeatedly ask for an input until the user enters an integer.
+                        </li>
+                      </ul>
+                    </panel>
 
-                  <panel type="seamless" header="%%:bulb: Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                      <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
   <span class="hljs-keyword">try</span>:
     value = int(input(<span class="hljs-string">'Input an integer:'</span>))
     <span class="hljs-comment"># YOUR CODE HERE! print? break? continue?</span>
@@ -457,10 +458,11 @@ You entered 6
     
 print(<span class="hljs-string">'You entered'</span>, value)
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
@@ -539,24 +541,25 @@ hide_ends2 failed: Not enough items
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
-              <panel type="danger" header=":muscle: Exercise: Is Even-Integer in Range" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-is-even-integer-in-range"></a></h4>
-                  <tip-box>
-                    <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
-                  </tip-box>
-                  <p>The function given below checks if a given input is an even integer in a given range.</p>
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Is Even-Integer in Range" expanded no-close>
+                  <div>
+                    <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-is-even-integer-in-range"></a></h4>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
+                    </tip-box>
+                    <p>The function given below checks if a given input is an even integer in a given range.</p>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
   print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))
 </code></pre>
-                  <p>Some example inputs and outputs are given below:</p>
-                  <pre><code class="hljs python">check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span>
+                    <p>Some example inputs and outputs are given below:</p>
+                    <pre><code class="hljs python">check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span>
 check(<span class="hljs-number">2</span>, <span class="hljs-number">3.4</span>, <span class="hljs-number">5</span>)
 check(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [])
 check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>)
@@ -565,8 +568,8 @@ check(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <s
 check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>) <span class="hljs-comment"># False ( range 1 to 4 excludes 4)</span>
 check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
 </code></pre>
-                  <p><span class="fas fa-arrow-down"></span></p>
-                  <pre><code class="hljs">x is an int in range y - z ? Value error: x is not an integer
+                    <p><span class="fas fa-arrow-down"></span></p>
+                    <pre><code class="hljs">x is an int in range y - z ? Value error: x is not an integer
 3 is an int in range y - z ? No
 2 is an int in range 3.4 - 5 ? Value error: 3.4 is not an integer
 2 is an int in range 3 - [] ? Value error: [] is not an integer
@@ -576,13 +579,13 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
 4 is an int in range 1 - 4 ? No
 4 is an int in range 1 - 5 ? Yes
 </code></pre>
-                  <p>Note how the <code>check</code> function uses an <code>is_even_int_in_range</code> functions whose code and the behavior are given below.</p>
-                  <p><strong><code>is_even_int_in_range(number, start, end)</code></strong>:</p>
-                  <ul>
-                    <li>Returns <code>'Yes'</code> if <code>number</code> is an even integer in the range <code>start</code> to <code>end</code>. Returns <code>'No'</code> otherwise.</li>
-                    <li>Returns an error message if any of the inputs are incorrect.</li>
-                    <li>Code:
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+                    <p>Note how the <code>check</code> function uses an <code>is_even_int_in_range</code> functions whose code and the behavior are given below.</p>
+                    <p><strong><code>is_even_int_in_range(number, start, end)</code></strong>:</p>
+                    <ul>
+                      <li>Returns <code>'Yes'</code> if <code>number</code> is an even integer in the range <code>start</code> to <code>end</code>. Returns <code>'No'</code> otherwise.</li>
+                      <li>Returns an error message if any of the inputs are incorrect.</li>
+                      <li>Code:
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
   <span class="hljs-keyword">try</span>:
     <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):
       <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span>
@@ -591,84 +594,87 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
   <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
     <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
 </code></pre>
-                    </li>
-                  </ul>
-                  <p>Note how the above function uses two other functions <code>is_even_int</code> and <code>is_in_range</code> given below:</p>
-                  <p><strong><code>is_even_int(number)</code></strong>:</p>
-                  <ul>
-                    <li>Returns <code>True</code> if the <code>number</code> is an even integer. <code>False</code> otherwise.</li>
-                    <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
-                    <li>Code:
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span>
+                      </li>
+                    </ul>
+                    <p>Note how the above function uses two other functions <code>is_even_int</code> and <code>is_in_range</code> given below:</p>
+                    <p><strong><code>is_even_int(number)</code></strong>:</p>
+                    <ul>
+                      <li>Returns <code>True</code> if the <code>number</code> is an even integer. <code>False</code> otherwise.</li>
+                      <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+                      <li>Code:
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span>
   confirm_is_int(number)
   <span class="hljs-keyword">return</span> int(number)%<span class="hljs-number">2</span> == <span class="hljs-number">0</span>
 </code></pre>
-                    </li>
-                  </ul>
-                  <p><strong><code>is_in_range(number, start, end)</code></strong>:</p>
-                  <ul>
-                    <li>Returns <code>True</code> if the <code>number</code> is in the range <code>start</code> to <code>end</code> (<mark>including <code>start</code> but excluding <code>end</code></mark>, as per how Python define <em>ranges</em>). <code>False</code> otherwise.</li>
-                    <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer or <code>start</code> and <code>end</code> do not specify a range correctly.</li>
-                    <li>Code:
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+                      </li>
+                    </ul>
+                    <p><strong><code>is_in_range(number, start, end)</code></strong>:</p>
+                    <ul>
+                      <li>Returns <code>True</code> if the <code>number</code> is in the range <code>start</code> to <code>end</code> (<mark>including <code>start</code> but excluding <code>end</code></mark>, as per how Python define <em>ranges</em>). <code>False</code> otherwise.</li>
+                      <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer or <code>start</code> and <code>end</code> do not specify a range correctly.</li>
+                      <li>Code:
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
   confirm_is_int(number)
   confirm_range_correct(start, end)
   <span class="hljs-keyword">return</span> number &gt;= start <span class="hljs-keyword">and</span> number &lt; end
 </code></pre>
-                    </li>
-                  </ul>
-                  <p>Note how the above two functions use two other functions <code>confirm_is_int</code> and <code>confirm_range_correct</code>. Their expected behavior and partial code is given below. <strong>Your job is to complete those two functions</strong>.</p>
-                  <p><strong><code>confirm_is_int(number)</code></strong>:</p>
-                  <ul>
-                    <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
-                    <li>Partial code:
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+                      </li>
+                    </ul>
+                    <p>Note how the above two functions use two other functions <code>confirm_is_int</code> and <code>confirm_range_correct</code>. Their expected behavior and partial code is given below. <strong>Your job is to complete those two functions</strong>.</p>
+                    <p><strong><code>confirm_is_int(number)</code></strong>:</p>
+                    <ul>
+                      <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+                      <li>Partial code:
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
   <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
 </code></pre>
-                    </li>
-                    <li>💡 You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code> is of type <code>type_name</code><br>
-                      e.g., <code>type('x') is not float</code> evaluates to <code>True</code> because <code>'x'</code> is not a <code>float</code>.<br>
-                      [<a href="https://www.poftut.com/python-type-function-examples/">more examples ...</a>]</li>
-                  </ul>
-                  <p><strong><code>confirm_range_correct(start, end)</code></strong>:</p>
-                  <ul>
-                    <li>Raises a <code>ValueError</code> if <code>end</code> or <code>start</code> are not integers. This behavior is already implemented by the code given below, using two calls to the <code>confirm_is_int</code> function.</li>
-                    <li>Raises a <code>ValueError('end is smaller than start)</code> if <code>end</code> is smaller than <code>start</code>. You need to implement this behavior.</li>
-                    <li>Partial code:
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span>
+                      </li>
+                      <li>💡 You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code> is of type <code>type_name</code><br>
+                        e.g., <code>type('x') is not float</code> evaluates to <code>True</code> because <code>'x'</code> is not a <code>float</code>.<br>
+                        [<a href="https://www.poftut.com/python-type-function-examples/">more examples ...</a>]</li>
+                    </ul>
+                    <p><strong><code>confirm_range_correct(start, end)</code></strong>:</p>
+                    <ul>
+                      <li>Raises a <code>ValueError</code> if <code>end</code> or <code>start</code> are not integers. This behavior is already implemented by the code given below, using two calls to the <code>confirm_is_int</code> function.</li>
+                      <li>Raises a <code>ValueError('end is smaller than start)</code> if <code>end</code> is smaller than <code>start</code>. You need to implement this behavior.</li>
+                      <li>Partial code:
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span>
   confirm_is_int(start)
   confirm_is_int(end)
   <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
 </code></pre>
-                    </li>
-                  </ul>
-                  <panel type="seamless" header="%%:bulb: Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+                      </li>
+                    </ul>
+                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
   <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:
     <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-flexible-word-game"></a></h4>
-                  <p>Implement a word game similar to the one you implement in the <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
-                  <ul>
-                    <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
-                  </ul>
-                  <modal large="" title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
-                      <div>
-                      <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
-                      <p>Implement a word game with the following rules:</p>
-                      <ul>
-                        <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
-                        <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
-                        <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
-                        <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
-                      </ul>
-                      <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
-                      <pre><code class="hljs">========================================================
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Flexible Word Game" expanded no-close>
+                  <div>
+                    <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-flexible-word-game"></a></h4>
+                    <p>Implement a word game similar to the one you implement in the <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
+                    <ul>
+                      <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
+                    </ul>
+                    <modal large title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
+                        <div>
+                        <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
+                        <p>Implement a word game with the following rules:</p>
+                        <ul>
+                          <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
+                          <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
+                          <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
+                          <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
+                        </ul>
+                        <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+                        <pre><code class="hljs">========================================================
 Welcome to the WORD GAME
 Give all four-letter words you know, one word at a time
 Enter the word 'end' to exit
@@ -699,15 +705,15 @@ Banned words (in sorted order): puck team
 Thank you for playing the WORD GAME
 ========================================================
 </code></pre>
-                      <p>💡 Implementation suggestions:</p>
-                      <ul>
-                        <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
-                        <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
-                      </ul>
-                    </div>
-                  </modal>
-                  <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
-                  <pre><code class="hljs">========================================================
+                        <p>💡 Implementation suggestions:</p>
+                        <ul>
+                          <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
+                          <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
+                        </ul>
+                      </div>
+                    </modal>
+                    <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+                    <pre><code class="hljs">========================================================
 Welcome to the FLEXIBLE WORD GAME
 Enter the word size (4 to 8): xyz
 That is not a number. Try again
@@ -739,9 +745,10 @@ Banned words (in sorted order): treat
 Thank you for playing the FLEXIBLE WORD GAME
 ========================================================
 </code></pre>
-                </div>
-              </panel>
-              <p></p>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>
@@ -753,7 +760,7 @@ Thank you for playing the FLEXIBLE WORD GAME
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

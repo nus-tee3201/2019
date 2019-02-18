@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -113,18 +113,19 @@ print(everything)
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Countries" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-countries">Exercise : Countries<a class="fa fa-anchor" href="#exercise-countries"></a></h4>
-                <p>Complete the <code>get_countries()</code> function so that it return the list of countries shown on the right.</p>
-                <p>💡 You can follow the example of the <code>get_numbers()</code> function given.</p>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Countries" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-comment"># sample function</span>
+                  <h4 id="exercise-countries">Exercise : Countries<a class="fa fa-anchor" href="#exercise-countries"></a></h4>
+                  <p>Complete the <code>get_countries()</code> function so that it return the list of countries shown on the right.</p>
+                  <p>💡 You can follow the example of the <code>get_numbers()</code> function given.</p>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-comment"># sample function</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_numbers</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
 
@@ -134,19 +135,20 @@ print(everything)
 print(get_numbers())
 print(get_countries())
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">[1, 2, 3]
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">[1, 2, 3]
 ['China', 'India', 'Malaysia', 'Singapore', 'Sri Lanka']
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
-              </div>
-            </panel>
-            <p></p>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use the notation <code>list_name[index_of_item]</code> to access an item of a list.</strong> List indexes start from <code>0</code> i.e., the first item in a list has the index <code>0</code>.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The code below shows how to use indexes to access items in a list.</p>
@@ -215,7 +217,7 @@ print(list_of_lists[<span class="hljs-number">2</span>][<span class="hljs-number
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-access-using-index?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -227,21 +229,22 @@ print(list_of_lists[<span class="hljs-number">2</span>][<span class="hljs-number
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Get Head, Get Tail" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-head-get-tail">Exercise : Get Head, Get Tail<a class="fa fa-anchor" href="#exercise-get-head-get-tail"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>get_head(item_list)</code>: returns the first item of the list received as the <code>item_list</code> parameter.</li>
-                  <li><code>get_tail(item_list)</code>: returns the last item of the list received as the <code>item_list</code> parameter.</li>
-                </ul>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Get Head, Get Tail" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(item_list)</span>:</span>
+                  <h4 id="exercise-get-head-get-tail">Exercise : Get Head, Get Tail<a class="fa fa-anchor" href="#exercise-get-head-get-tail"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>get_head(item_list)</code>: returns the first item of the list received as the <code>item_list</code> parameter.</li>
+                    <li><code>get_tail(item_list)</code>: returns the last item of the list received as the <code>item_list</code> parameter.</li>
+                  </ul>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-comment"># ADD CODE HERE</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_tail</span><span class="hljs-params">(item_list)</span>:</span>
@@ -250,24 +253,25 @@ print(list_of_lists[<span class="hljs-number">2</span>][<span class="hljs-number
 print(get_head([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]))
 print(get_tail([<span class="hljs-string">'a'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3.0</span>]))
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">1
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">1
 3.0
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(item_list)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">return</span> item_list[<span class="hljs-number">0</span>]
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -300,7 +304,7 @@ numbers[<span class="hljs-number">0</span>] = <span class="hljs-number">4</span>
               <p><span class="fas fa-cube"></span> The variable <code>spam</code> is bound to the object reference <code>57207444</code> which is the memory location of the list object <code>[0, 1, 2, 3, 4, 5]</code>. i.e., <code>spam</code> is pointing to the object <code>[0, 1, 2, 3, 4, 5]</code> using the object reference <code>57207444</code>.</p>
               <pre><code class="hljs python">spam = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
 </code></pre>
-              <p><a href="https://automatetheboringstuff.com/images/000081.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000081.jpg" alt="" class="img-fluid"></a><br>
+              <p><a href="https://automatetheboringstuff.com/images/000081.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000081.jpg" alt class="img-fluid"></a><br>
                 <sub>Image credit: <a href="https://automatetheboringstuff.com">AtBSwP</a></sub></p>
             </tip-box>
             <p><strong>When you assign variables as <code>v1 = v2</code>, if <code>v2</code> is pointing to a mutable object, its object reference is copied to <code>v1</code></strong> so that now both <code>v1</code> and <code>v2</code> are pointing to the same object. However, <strong>if <code>v2</code> is pointing to an immutable object, <code>v1 = v2</code> results in each variable pointing to its own copy of the object</strong>.</p>
@@ -308,7 +312,7 @@ numbers[<span class="hljs-number">0</span>] = <span class="hljs-number">4</span>
               <p><span class="fas fa-cube"></span> Continuing with the previous example, <code>cheese = spam</code> results in the object reference stored in <code>spam</code> being copied into the variable <code>cheese</code>. The end result is both variables are now pointing to the same list object.</p>
               <pre><code class="hljs python">cheese = spam
 </code></pre>
-              <p><a href="http://automatetheboringstuff.com/images/000082.jpg" target="_self"><img src="http://automatetheboringstuff.com/images/000082.jpg" alt="" class="img-fluid"></a><br>
+              <p><a href="http://automatetheboringstuff.com/images/000082.jpg" target="_self"><img src="http://automatetheboringstuff.com/images/000082.jpg" alt class="img-fluid"></a><br>
                 <sub>Image credit: <a href="https://automatetheboringstuff.com">AtBSwP</a></sub></p>
               <p>This means any change to the list pointed by <code>cheese</code> will be reflected as a change to the list pointed to by <code>spam</code> (because both are pointing to the same list object!).</p>
               <div>
@@ -331,7 +335,7 @@ cheese is: [0, 'Hello!', 2, 3, 4, 5]
                   </tr>
                 </table>
               </div>
-              <p><a href="http://automatetheboringstuff.com/images/000071.jpg" target="_self"><img src="http://automatetheboringstuff.com/images/000071.jpg" alt="" class="img-fluid"></a><br>
+              <p><a href="http://automatetheboringstuff.com/images/000071.jpg" target="_self"><img src="http://automatetheboringstuff.com/images/000071.jpg" alt class="img-fluid"></a><br>
                 <sub>Image credit: <a href="https://automatetheboringstuff.com">AtBSwP</a></sub></p>
               <p>However, the behavior is different when we do a similar variable assignment and update using integers instead of lists. Because integers are immutable, <code>cheese</code> points to a <em>copy</em> of the integer pointed to by <code>spam</code>, not the same object.</p>
               <div>
@@ -392,7 +396,7 @@ after foo: ['Hi', 2, 3]
                   </tr>
                 </table>
               </div>
-              <modal large="" title="`foo(items)`" id="modal:foo_items-pyTutor">
+              <modal large title="`foo(items)`" id="modal:foo_items-pyTutor">
                 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20foo%28items%29%3A%0A%20%20items%5B0%5D%20%3D%20'Hi'%0A%20%20print%28'inside%20foo%3A',%20items%29%0A%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Afoo%28original%29%0Aprint%28'after%20foo%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
               <p>Contrast the above example with the one below. The <code>bar(items)</code> function assigns a new list to <code>items</code> parameter. That means <code>items</code> is no longer pointing to the list object that was passed in as the argument. After the function is executed, the <code>original</code> list remains the same as before.</p>
               <div>
@@ -422,7 +426,7 @@ after bar: [1, 2, 3]
                   </tr>
                 </table>
               </div>
-              <modal large="" title="`bar(items)`" id="modal:bar_items-pyTutor">
+              <modal large title="`bar(items)`" id="modal:bar_items-pyTutor">
                 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20bar%28items%29%3A%0A%20%20items%20%3D%20%5B'a',%20'b',%20'c'%5D%0A%20%20print%28'inside%20bar%3A',%20items%29%0A%20%20%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Abar%28original%29%0Aprint%28'after%20bar%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
             </tip-box>
             <p>If the argument passed to a function is of an immutable type, the function receives the reference to a <em>copy</em> of the argument. That means the code inside the function is unable to modify the object passed as the argument. However, it can return a new object that is based on the given object copy.</p>
@@ -456,7 +460,7 @@ new age: 26
                   </tr>
                 </table>
               </div>
-              <modal large="" title="`increment(v)`" id="modal:increment_v-pyTutor">
+              <modal large title="`increment(v)`" id="modal:increment_v-pyTutor">
                 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20increment%28v%29%3A%0A%20%20v%20%3D%20v%20%2B%201%0A%20%20return%20v%0A%20%20%0Aage%20%3D%2025%0Anew_age%20%3D%20increment%28age%29%0Aprint%28'age%3A',%20age%29%0Aprint%28'new%20age%3A',%20new_age%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
             </tip-box>
             <panel type="seamless" header="%%:computer: Try your own%%">
@@ -464,22 +468,23 @@ new age: 26
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Swap Ends" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-swap-ends">Exercise : Swap Ends<a class="fa fa-anchor" href="#exercise-swap-ends"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>swap_ends(item_list)</code>: swaps the first and the last items of the <code>item_list</code>. Note that the function should modify the given <code>item_list</code> list, not return a new list.</li>
-                </ul>
-                <p>Notes:</p>
-                <ul>
-                  <li>You can follow the example of <code>set_head(item_list, new_head)</code> function which modifies the given <code>item_list</code> by setting its first element to <code>new_head</code>.</li>
-                  <li><code>pass</code> is a dummy statement that does nothing. We use it here because Python does not accept empty functions. You should replace it with your own implementation of the function.</li>
-                </ul>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_head</span><span class="hljs-params">(item_list, new_head)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Swap Ends" expanded no-close>
+                <div>
+                  <h4 id="exercise-swap-ends">Exercise : Swap Ends<a class="fa fa-anchor" href="#exercise-swap-ends"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>swap_ends(item_list)</code>: swaps the first and the last items of the <code>item_list</code>. Note that the function should modify the given <code>item_list</code> list, not return a new list.</li>
+                  </ul>
+                  <p>Notes:</p>
+                  <ul>
+                    <li>You can follow the example of <code>set_head(item_list, new_head)</code> function which modifies the given <code>item_list</code> by setting its first element to <code>new_head</code>.</li>
+                    <li><code>pass</code> is a dummy statement that does nothing. We use it here because Python does not accept empty functions. You should replace it with your own implementation of the function.</li>
+                  </ul>
+                  <table>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_head</span><span class="hljs-params">(item_list, new_head)</span>:</span>
   item_list[<span class="hljs-number">0</span>] = new_head
   
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">swap_ends</span><span class="hljs-params">(item_list)</span>:</span>
@@ -491,18 +496,19 @@ print(pets)
 swap_ends(pets)
 print(pets)
 </code></pre>
-                    </td>
-                    <td><br><br><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
-                    <td><br><br><br><br><br><br><br><br>
-                      <pre><code class="hljs">['parrot', 'fish', 'dog', 'rock']
+                      </td>
+                      <td><br><br><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
+                      <td><br><br><br><br><br><br><br><br>
+                        <pre><code class="hljs">['parrot', 'fish', 'dog', 'rock']
 ['rock', 'fish', 'dog', 'parrot']
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </panel>
-            <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -530,7 +536,7 @@ print(spam)
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-del?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -542,21 +548,22 @@ print(spam)
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Delete Head, Delete Tail" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-delete-head-delete-tail">Exercise : Delete Head, Delete Tail<a class="fa fa-anchor" href="#exercise-delete-head-delete-tail"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>delete_head(item_list)</code>: deletes the first item in the list passed as <code>item_list</code> parameter.</li>
-                  <li><code>delete_tail(item_list)</code>: deletes the last item in the list passed as <code>item_list</code> parameter.</li>
-                </ul>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Delete Head, Delete Tail" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_head</span><span class="hljs-params">(item_list)</span>:</span>
+                  <h4 id="exercise-delete-head-delete-tail">Exercise : Delete Head, Delete Tail<a class="fa fa-anchor" href="#exercise-delete-head-delete-tail"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>delete_head(item_list)</code>: deletes the first item in the list passed as <code>item_list</code> parameter.</li>
+                    <li><code>delete_tail(item_list)</code>: deletes the last item in the list passed as <code>item_list</code> parameter.</li>
+                  </ul>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_tail</span><span class="hljs-params">(item_list)</span>:</span>
@@ -569,25 +576,26 @@ print(letters)
 delete_tail(letters)
 print(letters)
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">['a', 'b', 'c']
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">['a', 'b', 'c']
 ['b', 'c']
 ['b']
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_head</span><span class="hljs-params">(item_list)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">del</span> item_list[<span class="hljs-number">0</span>]
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use the <em>slice</em> notation <code>list_name[start_index:end_index]</code> to copy a <em>
                   <tooltip content="a portion of a list">sublist</tooltip>
                 </em> into a new list.</strong> If the <code>start_index</code> is omitted, it means 'from the beginning of the list'. If the <code>end_index</code> is omitted, it means 'till the end of the list'.</p>
@@ -623,7 +631,7 @@ print(letters[<span class="hljs-number">1</span>:<span class="hljs-number">-1</s
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-slicing?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -660,7 +668,7 @@ sub list     : ['0a', '1b']
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-slicing?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -672,22 +680,23 @@ sub list     : ['0a', '1b']
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Get Body" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-body">Exercise : Get Body<a class="fa fa-anchor" href="#exercise-get-body"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>get_body(item_list)</code>: returns a sublist of <code>item_list</code> parameter, without the first and the last items.</li>
-                  <li><code>get_without_head(item_list)</code>: returns a sublist of <code>item_list</code> parameter, without the first item.</li>
-                  <li><code>get_without_tail(item_list)</code>: returns a sublist of <code>item_list</code> parameter, without the last item.</li>
-                </ul>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Get Body" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(item_list)</span>:</span>
+                  <h4 id="exercise-get-body">Exercise : Get Body<a class="fa fa-anchor" href="#exercise-get-body"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>get_body(item_list)</code>: returns a sublist of <code>item_list</code> parameter, without the first and the last items.</li>
+                    <li><code>get_without_head(item_list)</code>: returns a sublist of <code>item_list</code> parameter, without the first item.</li>
+                    <li><code>get_without_tail(item_list)</code>: returns a sublist of <code>item_list</code> parameter, without the last item.</li>
+                  </ul>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-comment"># ADD CODE HERE</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_without_head</span><span class="hljs-params">(item_list)</span>:</span>
@@ -700,25 +709,26 @@ print(get_body([<span class="hljs-number">0</span>, <span class="hljs-number">1<
 print(get_without_head([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]))
 print(get_without_tail([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]))
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">[1, 2, 3]
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">[1, 2, 3]
 [1, 2, 3, 4]
 [0, 1, 2, 3]
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_without_head</span><span class="hljs-params">(item_list)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_without_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">return</span> item_list[<span class="hljs-number">1</span>:]
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use the <code>len</code> function to find the number of items in a list.</strong></p>
             <tip-box>
               <div>
@@ -740,46 +750,48 @@ print(<span class="hljs-string">'Length is:'</span>, len(spam))
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Get Mid" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-get-mid">Exercise : Get Mid<a class="fa fa-anchor" href="#exercise-get-mid"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>get_mid(item_list)</code>: returns the middle element of the list <code>item_list</code></li>
-                </ul>
-                <p>💡 follow the example in the code below when defining which element is considered the <code>middle</code> element when the list has an even number of elements.</p>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Get Mid" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_mid</span><span class="hljs-params">(item_list)</span>:</span>
+                  <h4 id="exercise-get-mid">Exercise : Get Mid<a class="fa fa-anchor" href="#exercise-get-mid"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>get_mid(item_list)</code>: returns the middle element of the list <code>item_list</code></li>
+                  </ul>
+                  <p>💡 follow the example in the code below when defining which element is considered the <code>middle</code> element when the list has an even number of elements.</p>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_mid</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">return</span>  <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
 
 print(get_mid([<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]))
 print(get_mid([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]))
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">b
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">b
 3
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
-              </div>
-            </panel>
-            <p></p>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use the <code>+</code> operator to combine multiple lists into a new list.</strong></p>
             <tip-box>
               <div>
@@ -803,7 +815,7 @@ print(friends)
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -832,7 +844,7 @@ print(walking)
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -844,42 +856,44 @@ print(walking)
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Expand to Fill" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-expand-to-fill">Exercise : Expand to Fill<a class="fa fa-anchor" href="#exercise-expand-to-fill"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>expand_to_fill(item_list, length)</code>: returns a list containing a total of <code>length</code> items, where the items are repetitions of the items in the <code>item_list</code>.</li>
-                </ul>
-                <p>💡 hints</p>
-                <ul>
-                  <li>full_repetitions_needed = <code>length</code> <code>//</code> length_of_item_list</li>
-                  <li>return <code>item_list</code> <code>*</code> full_repetitions_needed <code>+</code> portion_of_item_list</li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">expand_to_fill</span><span class="hljs-params">(item_list, length)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Expand to Fill" expanded no-close>
+                <div>
+                  <h4 id="exercise-expand-to-fill">Exercise : Expand to Fill<a class="fa fa-anchor" href="#exercise-expand-to-fill"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>expand_to_fill(item_list, length)</code>: returns a list containing a total of <code>length</code> items, where the items are repetitions of the items in the <code>item_list</code>.</li>
+                  </ul>
+                  <p>💡 hints</p>
+                  <ul>
+                    <li>full_repetitions_needed = <code>length</code> <code>//</code> length_of_item_list</li>
+                    <li>return <code>item_list</code> <code>*</code> full_repetitions_needed <code>+</code> portion_of_item_list</li>
+                  </ul>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">expand_to_fill</span><span class="hljs-params">(item_list, length)</span>:</span>
   <span class="hljs-keyword">return</span>  <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
 
 meals = [<span class="hljs-string">'Rice'</span>, <span class="hljs-string">'Bread'</span>, <span class="hljs-string">'Noodles'</span>]
 print(expand_to_fill(meals, <span class="hljs-number">5</span>))
 print(expand_to_fill(meals, <span class="hljs-number">7</span>))
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">['Rice', 'Bread', 'Noodles', 'Rice', 'Bread']
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">['Rice', 'Bread', 'Noodles', 'Rice', 'Bread']
 ['Rice', 'Bread', 'Noodles', 'Rice', 'Bread', 'Noodles', 'Rice']
 
 </code></pre>
-                <panel type="seamless" header="%%:bulb: partial solution%%">
-                  <pre><code class="hljs python">  ...
+                  <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <pre><code class="hljs python">  ...
   temp = item_list * (length//len(item_list))
   shortfall = length - len(temp)
   <span class="hljs-keyword">if</span> shortfall &gt; <span class="hljs-number">0</span>:
     result = temp + item_list[:shortfall]
   ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use <code>in</code> or <code>not in</code> to check if an item is in a list</strong>.</p>
             <tip-box>
               <div>
@@ -913,7 +927,7 @@ Tea is already in the list
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-in-not-in?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -925,21 +939,22 @@ Tea is already in the list
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: XOR" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-xor">Exercise : XOR<a class="fa fa-anchor" href="#exercise-xor"></a></h4>
-                <p><span class="dimmed"><span class="fas fa-info-circle"></span> In case you didn't know: <em>XOR</em> (short for eXclusive OR) is a logical operation, when applied to two booleans, that outputs <code>True</code> only when inputs differ (one is <code>True</code>, the other is <code>False</code>)</span></p>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>xor(list1, list2, item)</code>: returns <code>True</code> if <code>item</code> is in <ins>only</ins> one of the two lists <code>list1</code> and <code>list2</code>. i.e., returns <code>False</code> if the <code>item</code> is absent from both lists or present in both lists.</li>
-                </ul>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: XOR" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">xor</span><span class="hljs-params">(list1, list2, item)</span>:</span>
+                  <h4 id="exercise-xor">Exercise : XOR<a class="fa fa-anchor" href="#exercise-xor"></a></h4>
+                  <p><span class="dimmed"><span class="fas fa-info-circle"></span> In case you didn't know: <em>XOR</em> (short for eXclusive OR) is a logical operation, when applied to two booleans, that outputs <code>True</code> only when inputs differ (one is <code>True</code>, the other is <code>False</code>)</span></p>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>xor(list1, list2, item)</code>: returns <code>True</code> if <code>item</code> is in <ins>only</ins> one of the two lists <code>list1</code> and <code>list2</code>. i.e., returns <code>False</code> if the <code>item</code> is absent from both lists or present in both lists.</li>
+                  </ul>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">xor</span><span class="hljs-params">(list1, list2, item)</span>:</span>
   <span class="hljs-keyword">return</span>
 
 print(xor([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>], [<span class="hljs-string">'a'</span>, <span class="hljs-string">'c'</span>], <span class="hljs-string">'a'</span>))
@@ -947,25 +962,26 @@ print(xor([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</s
 print(xor([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>], [<span class="hljs-string">'a'</span>, <span class="hljs-string">'c'</span>], <span class="hljs-string">'c'</span>))
 print(xor([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>], [<span class="hljs-string">'a'</span>, <span class="hljs-string">'c'</span>], <span class="hljs-string">'d'</span>))
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">False
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">False
 True
 True
 False
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <panel type="seamless" header="%%:bulb: partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-keyword">return</span> (item <span class="hljs-keyword">in</span> list1 <span class="hljs-keyword">and</span> item <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> list2) <span class="hljs-keyword">or</span> (...)
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-keyword">return</span> (item <span class="hljs-keyword">in</span> list1 <span class="hljs-keyword">and</span> item <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> list2) <span class="hljs-keyword">or</span> (...)
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can traverse through items in a list using the <code>for item_name in list_name:</code> notation</strong>.</p>
             <tip-box>
               <div>
@@ -990,37 +1006,38 @@ Do you sell Hamsters?
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Print Card Deck" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-print-card-deck">Exercise : Print Card Deck<a class="fa fa-anchor" href="#exercise-print-card-deck"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>print_card_deck()</code>: Prints all cards in a deck of regular playing cards, en example of the output (partial) is given below.</li>
-                </ul>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Print Card Deck" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_card_deck</span><span class="hljs-params">()</span>:</span>
+                  <h4 id="exercise-print-card-deck">Exercise : Print Card Deck<a class="fa fa-anchor" href="#exercise-print-card-deck"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>print_card_deck()</code>: Prints all cards in a deck of regular playing cards, en example of the output (partial) is given below.</li>
+                  </ul>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_card_deck</span><span class="hljs-params">()</span>:</span>
   suits = [<span class="hljs-string">'♣'</span>, <span class="hljs-string">'♦'</span>, <span class="hljs-string">'♥'</span>, <span class="hljs-string">'♠'</span>]
   ranks = [<span class="hljs-string">'A'</span>, <span class="hljs-string">'2'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'4'</span>, <span class="hljs-string">'5'</span>, <span class="hljs-string">'6'</span>, <span class="hljs-string">'7'</span>, <span class="hljs-string">'8'</span>, <span class="hljs-string">'9'</span>, <span class="hljs-string">'10'</span>, <span class="hljs-string">'J'</span>, <span class="hljs-string">'Q'</span>, <span class="hljs-string">'K'</span>]
 
 print_card_deck()
 
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">A of ♣
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">A of ♣
 2 of ♣
 3 of ♣
 4 of ♣
@@ -1028,23 +1045,24 @@ print_card_deck()
 6 of ♣
 ...
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <panel type="seamless" header="%%:bulb: Hint%%">
-                  <p>Use two nested <code>for</code> loops to iterate over the two lists.</p>
-                </panel>
-                <panel type="seamless" header="%%:bulb: partial solution%%">
-                  <pre><code class="hljs python">  ...
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: Hint%%">
+                    <p>Use two nested <code>for</code> loops to iterate over the two lists.</p>
+                  </panel>
+                  <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <pre><code class="hljs python">  ...
   <span class="hljs-keyword">for</span> suite <span class="hljs-keyword">in</span> suits:
     <span class="hljs-keyword">for</span> ...:
       print(...)
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>The <code>enumerate</code> function can help you easily maintain an iteration counter while traversing a list</strong>.</p>
             <tip-box>
               <div>
@@ -1069,33 +1087,34 @@ print_card_deck()
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: First Quarter" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-first-quarter">Exercise : First Quarter<a class="fa fa-anchor" href="#exercise-first-quarter"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li>
-                    <p><code>print_dates()</code>: prints the dates of the first four months of the year, in the format given in the sample output.</p>
-                  </li>
-                  <li>
-                    <p>You <mark>must use the given lists <code>months</code> and <code>lengths</code></mark> in your solution.</p>
-                  </li>
-                  <li>
-                    <p>You can use the functions given below:</p>
-                    <ul>
-                      <li><code>generate_number_string(start, end)</code>: Returns a string containing integers from <code>start</code> to <code>end</code> (not inclusive), separated by space.<br>
-                        e.g., <code>generate_number_string(5, 10)</code> → <code>'5 6 7 8 9'</code></li>
-                    </ul>
-                  </li>
-                </ul>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">generate_number_string</span><span class="hljs-params">(start, end)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: First Quarter" expanded no-close>
+                <div>
+                  <h4 id="exercise-first-quarter">Exercise : First Quarter<a class="fa fa-anchor" href="#exercise-first-quarter"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li>
+                      <p><code>print_dates()</code>: prints the dates of the first four months of the year, in the format given in the sample output.</p>
+                    </li>
+                    <li>
+                      <p>You <mark>must use the given lists <code>months</code> and <code>lengths</code></mark> in your solution.</p>
+                    </li>
+                    <li>
+                      <p>You can use the functions given below:</p>
+                      <ul>
+                        <li><code>generate_number_string(start, end)</code>: Returns a string containing integers from <code>start</code> to <code>end</code> (not inclusive), separated by space.<br>
+                          e.g., <code>generate_number_string(5, 10)</code> → <code>'5 6 7 8 9'</code></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">generate_number_string</span><span class="hljs-params">(start, end)</span>:</span>
   number_string = <span class="hljs-string">''</span>
   <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(start, end):
     number_string = number_string + <span class="hljs-string">' '</span> + str(i)
@@ -1108,22 +1127,23 @@ print_card_deck()
 
 print_dates()
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">Jan: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre><code class="hljs">Jan: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 Feb: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
 Mar: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 Apr: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 </code></pre>
-                <panel type="seamless" header="%%:bulb: partial solution%%">
-                  <pre><code class="hljs python">  ...
+                  <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <pre><code class="hljs python">  ...
   <span class="hljs-keyword">for</span> i, month <span class="hljs-keyword">in</span> enumerate(months):
       print( ... + generate_number_string(<span class="hljs-number">1</span>, lengths[i]+<span class="hljs-number">1</span>))
 
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -1152,7 +1172,7 @@ some-simple-words
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -1180,58 +1200,60 @@ some-simple-words
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Remove Extra Spaces" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-remove-extra-spaces">Exercise : Remove Extra Spaces<a class="fa fa-anchor" href="#exercise-remove-extra-spaces"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>remove_extra_spaces(text)</code>: returns a string that is similar to the given string <code>text</code> but with only one space between words if there were multiple spaces before. Also removes leading and trailing spaces.</li>
-                </ul>
-                <p>You may find these built-in string functions useful:</p>
-                <ul>
-                  <li>
-                    <p><code>split()</code>: splits a string into a list of words.<br>
-                      e.g., <code>' quick brown fox'.split()</code> → <code>['quick', 'brown', 'fox']</code><br>
-                      [<a href="https://www.mkyong.com/python/python-how-to-split-a-string/" target="_blank">more about the split() function</a>]</p>
-                  </li>
-                  <li>
-                    <p><code>join(list_of_items)</code>: joins the items in the <code>list_of_items</code> using the given string.<br>
-                      e.g., <code>'-'.join(['a', 'b', 'c'])</code> → <code>'a-b-c'</code></p>
-                  </li>
-                </ul>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Remove Extra Spaces" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_extra_spaces</span><span class="hljs-params">(text)</span>:</span>
+                  <h4 id="exercise-remove-extra-spaces">Exercise : Remove Extra Spaces<a class="fa fa-anchor" href="#exercise-remove-extra-spaces"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>remove_extra_spaces(text)</code>: returns a string that is similar to the given string <code>text</code> but with only one space between words if there were multiple spaces before. Also removes leading and trailing spaces.</li>
+                  </ul>
+                  <p>You may find these built-in string functions useful:</p>
+                  <ul>
+                    <li>
+                      <p><code>split()</code>: splits a string into a list of words.<br>
+                        e.g., <code>' quick brown fox'.split()</code> → <code>['quick', 'brown', 'fox']</code><br>
+                        [<a href="https://www.mkyong.com/python/python-how-to-split-a-string/" target="_blank">more about the split() function</a>]</p>
+                    </li>
+                    <li>
+                      <p><code>join(list_of_items)</code>: joins the items in the <code>list_of_items</code> using the given string.<br>
+                        e.g., <code>'-'.join(['a', 'b', 'c'])</code> → <code>'a-b-c'</code></p>
+                    </li>
+                  </ul>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_extra_spaces</span><span class="hljs-params">(text)</span>:</span>
   <span class="hljs-keyword">return</span>
 
 print(<span class="hljs-string">'['</span> + remove_extra_spaces(<span class="hljs-string">'  aaa bbb   ccc  '</span>) + <span class="hljs-string">']'</span>)
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">[aaa bbb ccc]
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">[aaa bbb ccc]
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: Hint%%">
+                    <p>Split the <code>text</code> into a list of words and join them back using a space (<code>' '.join(...)</code>)</p>
+                  </panel>
                 </div>
-                <panel type="seamless" header="%%:bulb: Hint%%">
-                  <p>Split the <code>text</code> into a list of words and join them back using a space (<code>' '.join(...)</code>)</p>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -1300,7 +1322,7 @@ After sorting ['Dogs', 'Hamsters', 'Parrots', 'Rabbits']
 After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
 </code></pre>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -1337,7 +1359,7 @@ After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -1392,57 +1414,58 @@ print(names)
                 </table>
               </div>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods-mutating?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Anagram Checker" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-anagram-checker">Exercise : Anagram Checker<a class="fa fa-anchor" href="#exercise-anagram-checker"></a></h4>
-                <p>Complete the functions as described below:</p>
-                <ul>
-                  <li><code>is_anagram(word1, word2)</code>: returns <code>True</code> if <code>word1</code> is an anagram of <code>word2</code>(i.e., letters of <code>word1</code> can be rearranged to get <code>word2</code> e.g., <code>ton</code> and <code>not</code> are anagrams).</li>
-                </ul>
-                <p>You may find these built-in functions useful to this exercise:</p>
-                <ul>
-                  <li><code>list(string)</code>: splits a string into a list of letters.<br>
-                    e.g., <code>'quick'.split()</code> → <code>['q', 'u', 'i', 'c', 'k']</code></li>
-                </ul>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Anagram Checker" expanded no-close>
                 <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_anagram</span><span class="hljs-params">(word1, word2)</span>:</span>
+                  <h4 id="exercise-anagram-checker">Exercise : Anagram Checker<a class="fa fa-anchor" href="#exercise-anagram-checker"></a></h4>
+                  <p>Complete the functions as described below:</p>
+                  <ul>
+                    <li><code>is_anagram(word1, word2)</code>: returns <code>True</code> if <code>word1</code> is an anagram of <code>word2</code>(i.e., letters of <code>word1</code> can be rearranged to get <code>word2</code> e.g., <code>ton</code> and <code>not</code> are anagrams).</li>
+                  </ul>
+                  <p>You may find these built-in functions useful to this exercise:</p>
+                  <ul>
+                    <li><code>list(string)</code>: splits a string into a list of letters.<br>
+                      e.g., <code>'quick'.split()</code> → <code>['q', 'u', 'i', 'c', 'k']</code></li>
+                  </ul>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <table>
+                      <tr>
+                        <td valign="top">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_anagram</span><span class="hljs-params">(word1, word2)</span>:</span>
   <span class="hljs-keyword">return</span>  <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
 
 print(is_anagram(<span class="hljs-string">'santa'</span>, <span class="hljs-string">'damith'</span>))
 print(is_anagram(<span class="hljs-string">'santa'</span>, <span class="hljs-string">'satan'</span>))
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">False
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">False
 True
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <panel type="seamless" header="%%:bulb: Hint%%">
-                  <p>Convert each word into a list of letters and sort the letters. If the words are anagrams, sorted letters of one word should be same as the sorted letters of the others.</p>
-                  <p>Example:</p>
-                  <ul>
-                    <li><code>'ton'</code> → convert to list of letters → <code>['t', 'o', 'n']</code> → sort → <code>['n', 'o', 't']</code></li>
-                    <li><code>'not'</code> → convert to list of letters → <code>['n', 'o', 't']</code> → sort → <code>['n', 'o', 't']</code></li>
-                  </ul>
-                </panel>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">letters_sorted</span><span class="hljs-params">(word)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <panel type="seamless" header="%%:bulb: Hint%%">
+                    <p>Convert each word into a list of letters and sort the letters. If the words are anagrams, sorted letters of one word should be same as the sorted letters of the others.</p>
+                    <p>Example:</p>
+                    <ul>
+                      <li><code>'ton'</code> → convert to list of letters → <code>['t', 'o', 'n']</code> → sort → <code>['n', 'o', 't']</code></li>
+                      <li><code>'not'</code> → convert to list of letters → <code>['n', 'o', 't']</code> → sort → <code>['n', 'o', 't']</code></li>
+                    </ul>
+                  </panel>
+                  <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">letters_sorted</span><span class="hljs-params">(word)</span>:</span>
   letters = list(word)
   letters.sort()
   <span class="hljs-keyword">return</span> letters
@@ -1450,22 +1473,24 @@ True
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_anagram</span><span class="hljs-params">(word1, word2)</span>:</span>
   <span class="hljs-keyword">return</span> letters_sorted(word1) == ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-            <panel type="danger" header=":muscle: Exercise: Word Game" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
-                <p>Implement a word game with the following rules:</p>
-                <ul>
-                  <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
-                  <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
-                  <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
-                  <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
-                </ul>
-                <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
-                <pre><code class="hljs">========================================================
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Word Game" expanded no-close>
+                <div>
+                  <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
+                  <p>Implement a word game with the following rules:</p>
+                  <ul>
+                    <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
+                    <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
+                    <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
+                    <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
+                  </ul>
+                  <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+                  <pre><code class="hljs">========================================================
 Welcome to the WORD GAME
 Give all four-letter words you know, one word at a time
 Enter the word 'end' to exit
@@ -1496,14 +1521,15 @@ Banned words (in sorted order): puck team
 Thank you for playing the WORD GAME
 ========================================================
 </code></pre>
-                <p>💡 Implementation suggestions:</p>
-                <ul>
-                  <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
-                  <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
-                </ul>
-              </div>
-            </panel>
-            <p></p>
+                  <p>💡 Implementation suggestions:</p>
+                  <ul>
+                    <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
+                    <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
+                  </ul>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -1520,14 +1546,14 @@ Thank you for playing the WORD GAME
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W4-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W4.1]</span> <big><big><strong>OOP: Objects</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W4.1a]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1580,7 +1606,7 @@ Thank you for playing the WORD GAME
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> statements about OOP">
                                   <question>
@@ -1630,7 +1656,7 @@ Thank you for playing the WORD GAME
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W4.1b]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Objects →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1797,7 +1823,7 @@ Thank you for playing the WORD GAME
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
 
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Describe objects in the given scenario">
@@ -1914,7 +1940,7 @@ Thank you for playing the WORD GAME
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W4.1c]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Objects →
                             </span></strong></span> <strong><big><big><span>Objects as Abstractions</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1927,7 +1953,7 @@ Thank you for playing the WORD GAME
                         <p></p>
                         <div>
                           <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong> i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                          <modal large="" title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction">
+                          <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction">
                               <div>
                               <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                             </div>
@@ -1940,7 +1966,7 @@ Thank you for playing the WORD GAME
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W4.1d]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Objects →
                             </span></strong></span> <strong><big><big><span>Encapsulation Of Objects</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1961,7 +1987,7 @@ Thank you for playing the WORD GAME
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Choose the correct statement.">
                                   <question>
@@ -2108,7 +2134,7 @@ main()
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

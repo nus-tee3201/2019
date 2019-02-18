@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -134,7 +134,7 @@ Nice to meet you.
                         <p>
                           <trigger trigger="click" for="modal:visualizeCallingfunctions"><span class="dimmed">[Visualize execution]</span></trigger>
                         </p>
-                        <modal large="" title="Calling functions" id="modal:visualizeCallingfunctions">
+                        <modal large title="Calling functions" id="modal:visualizeCallingfunctions">
                           <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                       </div>
                     </td>
@@ -143,7 +143,7 @@ Nice to meet you.
               </div>
               <p>Note how the statements inside the function are not executed unless the method is called.</p>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -191,14 +191,15 @@ say_hello()
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Hip Hip Hooray!" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-hip-hip-hooray">Exercise : Hip Hip Hooray<a class="fa fa-anchor" href="#exercise-hip-hip-hooray"></a></h4>
-                <p>Define the missing functions in the code below so that it produces the given output:</p>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Hip Hip Hooray!" expanded no-close>
+                <div>
+                  <h4 id="exercise-hip-hip-hooray">Exercise : Hip Hip Hooray<a class="fa fa-anchor" href="#exercise-hip-hip-hooray"></a></h4>
+                  <p>Define the missing functions in the code below so that it produces the given output:</p>
+                  <table>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
   say_hip()
   say_hip()
   say_horray()
@@ -209,10 +210,10 @@ say_hello()
   
   
 </code></pre>
-                    </td>
-                    <td>&nbsp;→&nbsp;</td>
-                    <td>
-                      <pre><code class="hljs">Hip
+                      </td>
+                      <td>&nbsp;→&nbsp;</td>
+                      <td>
+                        <pre><code class="hljs">Hip
 Hip
 Hooray!
 
@@ -224,12 +225,13 @@ Hip
 Hip
 Hooray!
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </panel>
-            <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -268,7 +270,7 @@ How are you John ?
                         <p>
                           <trigger trigger="click" for="modal:visualizeCallingfunctionswitharguments"><span class="dimmed">[Visualize execution]</span></trigger>
                         </p>
-                        <modal large="" title="Calling functions with arguments" id="modal:visualizeCallingfunctionswitharguments">
+                        <modal large title="Calling functions with arguments" id="modal:visualizeCallingfunctionswitharguments">
                           <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                       </div>
                     </td>
@@ -293,13 +295,13 @@ repeat_hello(<span class="hljs-string">'Penny'</span>, <span class="hljs-number"
 say_hello(<span class="hljs-string">'Sheldon'</span>)
 </code></pre>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
-              <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized="">
+              <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -323,11 +325,12 @@ print(v1)
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Grader `print_score` function" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-grader-print-score-function">Exercise : Grader - <code>print_score</code> Function<a class="fa fa-anchor" href="#exercise-grader-print-score-function"></a></h4>
-                <p>The code below prints the grade based on exam and project score, somewhat similar to <trigger trigger="click" for="modal:printScoreFunction-gradeAnalyzer">a previous exercise you did</trigger>.</p>
-                <pre><code class="hljs python">project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grader `print_score` function" expanded no-close>
+                <div>
+                  <h4 id="exercise-grader-print-score-function">Exercise : Grader - <code>print_score</code> Function<a class="fa fa-anchor" href="#exercise-grader-print-score-function"></a></h4>
+                  <p>The code below prints the grade based on exam and project score, somewhat similar to <trigger trigger="click" for="modal:printScoreFunction-gradeAnalyzer">a previous exercise you did</trigger>.</p>
+                  <pre><code class="hljs python">project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
 exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
 total_score = project_score + exam_score
 print(<span class="hljs-string">'Total:'</span>, total_score)
@@ -346,97 +349,97 @@ print(<span class="hljs-string">'Exam    :'</span>, <span class="hljs-string">'=
 print(<span class="hljs-string">'Total   :'</span>, <span class="hljs-string">'='</span> * (total_score//<span class="hljs-number">5</span>))
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                <p>Read the above code to understand how it works. Do you remember <trigger trigger="click" for="printScoreFunction-operators">the meaning of <code>//</code> operator</trigger> used in the code above?</p>
-                <modal large="" title="%%Programming Basics » Expressions, Data Types, Variables »%%" id="printScoreFunction-operators">
-                    <div>
-                    <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
-                    <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
-                    <div class="table-responsive">
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th style="text-align:center">Operator</th>
-                            <th style="text-align:left">Operation</th>
-                            <th style="text-align:center">Example</th>
-                            <th style="text-align:center">Evaluates to...</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td style="text-align:center"><code>+</code></td>
-                            <td style="text-align:left">Addition</td>
-                            <td style="text-align:center"><code>2 + 2</code></td>
-                            <td style="text-align:center"><code>4</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>-</code></td>
-                            <td style="text-align:left">Subtraction</td>
-                            <td style="text-align:center"><code>5 - 2</code></td>
-                            <td style="text-align:center"><code>3</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>*</code></td>
-                            <td style="text-align:left">Multiplication</td>
-                            <td style="text-align:center"><code>3 * 5</code></td>
-                            <td style="text-align:center"><code>15</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>/</code></td>
-                            <td style="text-align:left">Division</td>
-                            <td style="text-align:center"><code>22 / 8</code></td>
-                            <td style="text-align:center"><code>2.75</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>**</code></td>
-                            <td style="text-align:left">Exponent</td>
-                            <td style="text-align:center"><code>2 ** 3</code></td>
-                            <td style="text-align:center"><code>8</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>%</code></td>
-                            <td style="text-align:left">Modulus/remainder</td>
-                            <td style="text-align:center"><code>22 % 8</code></td>
-                            <td style="text-align:center"><code>6</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>//</code></td>
-                            <td style="text-align:left">Integer division</td>
-                            <td style="text-align:center"><code>22 // 8</code></td>
-                            <td style="text-align:center"><code>2</code></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
-                    <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
+                  <p>Read the above code to understand how it works. Do you remember <trigger trigger="click" for="printScoreFunction-operators">the meaning of <code>//</code> operator</trigger> used in the code above?</p>
+                  <modal large title="%%Programming Basics » Expressions, Data Types, Variables »%%" id="printScoreFunction-operators">
+                      <div>
+                      <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
+                      <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th style="text-align:center">Operator</th>
+                              <th style="text-align:left">Operation</th>
+                              <th style="text-align:center">Example</th>
+                              <th style="text-align:center">Evaluates to...</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="text-align:center"><code>+</code></td>
+                              <td style="text-align:left">Addition</td>
+                              <td style="text-align:center"><code>2 + 2</code></td>
+                              <td style="text-align:center"><code>4</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>-</code></td>
+                              <td style="text-align:left">Subtraction</td>
+                              <td style="text-align:center"><code>5 - 2</code></td>
+                              <td style="text-align:center"><code>3</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>*</code></td>
+                              <td style="text-align:left">Multiplication</td>
+                              <td style="text-align:center"><code>3 * 5</code></td>
+                              <td style="text-align:center"><code>15</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>/</code></td>
+                              <td style="text-align:left">Division</td>
+                              <td style="text-align:center"><code>22 / 8</code></td>
+                              <td style="text-align:center"><code>2.75</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>**</code></td>
+                              <td style="text-align:left">Exponent</td>
+                              <td style="text-align:center"><code>2 ** 3</code></td>
+                              <td style="text-align:center"><code>8</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>%</code></td>
+                              <td style="text-align:left">Modulus/remainder</td>
+                              <td style="text-align:center"><code>22 % 8</code></td>
+                              <td style="text-align:center"><code>6</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>//</code></td>
+                              <td style="text-align:left">Integer division</td>
+                              <td style="text-align:center"><code>22 // 8</code></td>
+                              <td style="text-align:center"><code>2</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
+                      <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
 <span class="hljs-number">22</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
 <span class="hljs-number">30</span>
 </code></pre>
-                    <panel type="seamless" header="%%:tv: Operators%%">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
-                    <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
-                      <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
-                      <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-                    </panel>
-                  </div>
-                </modal>
-                <p>Add a <code>print_score</code> function to the code and replace the following three lines,</p>
-                <pre><code class="hljs python">print(<span class="hljs-string">'Project :'</span>, <span class="hljs-string">'='</span> * (project_score//<span class="hljs-number">5</span>))
+                      <panel type="seamless" header="%%:tv: Operators%%">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
+                      <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
+                        <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
+                        <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                      </panel>
+                    </div>
+                  </modal>
+                  <p>Add a <code>print_score</code> function to the code and replace the following three lines,</p>
+                  <pre><code class="hljs python">print(<span class="hljs-string">'Project :'</span>, <span class="hljs-string">'='</span> * (project_score//<span class="hljs-number">5</span>))
 print(<span class="hljs-string">'Exam    :'</span>, <span class="hljs-string">'='</span> * (exam_score//<span class="hljs-number">5</span>))
 print(<span class="hljs-string">'Total   :'</span>, <span class="hljs-string">'='</span> * (total_score//<span class="hljs-number">5</span>))
 </code></pre>
-                <p>with these three lines,</p>
-                <pre><code class="hljs python">print_score(<span class="hljs-string">'Project :'</span>, project_score)
+                  <p>with these three lines,</p>
+                  <pre><code class="hljs python">print_score(<span class="hljs-string">'Project :'</span>, project_score)
 print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 </code></pre>
-                <p>without changing the external behavior of the program.</p>
-                <modal large="" title="" id="modal:printScoreFunction-gradeAnalyzer">
-                    <div>
-                    <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
-                    <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
-                    <pre><code class="hljs python">Enter project score:
+                  <p>without changing the external behavior of the program.</p>
+                  <modal large title id="modal:printScoreFunction-gradeAnalyzer">
+                      <div>
+                      <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
+                      <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+                      <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
 
 Enter exam score:
@@ -449,24 +452,25 @@ Exam    : ========
 Total   : ==============
 Grade   : A
 </code></pre>
-                    <ul>
-                      <li>Note how the colons (<code>:</code>) are aligned.</li>
-                      <li>Note the extra blank lines in the expected output.</li>
-                      <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
-                      <li>Assume all inputs are positive integers.</li>
-                    </ul>
-                    <p>Grading rules:</p>
-                    <ul>
-                      <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
-                      <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
-                      <li><code>C</code>: at least 40 in total</li>
-                      <li><code>D</code>: otherwise</li>
-                    </ul>
-                  </div>
-                </modal>
-              </div>
-            </panel>
-            <p></p>
+                      <ul>
+                        <li>Note how the colons (<code>:</code>) are aligned.</li>
+                        <li>Note the extra blank lines in the expected output.</li>
+                        <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+                        <li>Assume all inputs are positive integers.</li>
+                      </ul>
+                      <p>Grading rules:</p>
+                      <ul>
+                        <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+                        <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+                        <li><code>C</code>: at least 40 in total</li>
+                        <li><code>D</code>: otherwise</li>
+                      </ul>
+                    </div>
+                  </modal>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -489,7 +493,7 @@ print(<span class="hljs-string">'Player1 response : '</span> + play())
 print(<span class="hljs-string">'Player2 response : '</span> + play())
 </code></pre>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -518,7 +522,7 @@ print_all_products(<span class="hljs-number">2</span>,<span class="hljs-number">
 print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
 </code></pre>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -530,11 +534,12 @@ print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Grader - `calculate_grade` function" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-grader-calculate-grade-function">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function"></a></h4>
-                <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grader - `calculate_grade` function" expanded no-close>
+                <div>
+                  <h4 id="exercise-grader-calculate-grade-function">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function"></a></h4>
+                  <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
 
 project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
@@ -557,8 +562,8 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
-                <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+                  <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+                  <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
     grade = <span class="hljs-string">'A'</span>
 <span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
     grade = <span class="hljs-string">'B'</span>
@@ -567,13 +572,14 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <span class="hljs-keyword">else</span>:
     grade = <span class="hljs-string">'D'</span>
 </code></pre>
-                <p>with the line,</p>
-                <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+                  <p>with the line,</p>
+                  <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
 </code></pre>
-                <p>without changing the external behavior of the program.</p>
-              </div>
-            </panel>
-            <p></p>
+                  <p>without changing the external behavior of the program.</p>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -629,19 +635,20 @@ total cows after breeding: 5
                 </tr>
               </table>
               <div>
-                <panel type="seamless" header=":computer: Try your own" minimized="">
+                <panel type="seamless" header=":computer: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Grader - Add `main` Function" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-grader-add-a-main-function">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function"></a></h4>
-                <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
-                  Here is an example of how the code is likely to look like:</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Add `main` Function" expanded no-close>
+                <div>
+                  <h4 id="exercise-grader-add-a-main-function">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function"></a></h4>
+                  <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
+                    Here is an example of how the code is likely to look like:</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -667,8 +674,8 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                  <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   <span class="hljs-comment"># ...</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -679,12 +686,12 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 
 main()
 </code></pre>
-                <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                <modal large="" title="" id="modal:graderMainFunction-graderCalculateGradeFunction">
-                    <div>
-                    <h4 id="exercise-grader-calculate-grade-function-2">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-2"></a></h4>
-                    <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                  <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
+                  <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
+                      <div>
+                      <h4 id="exercise-grader-calculate-grade-function-2">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-2"></a></h4>
+                      <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
 
 project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
@@ -707,8 +714,8 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                    <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
-                    <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+                      <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
     grade = <span class="hljs-string">'A'</span>
 <span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
     grade = <span class="hljs-string">'B'</span>
@@ -717,20 +724,23 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <span class="hljs-keyword">else</span>:
     grade = <span class="hljs-string">'D'</span>
 </code></pre>
-                    <p>with the line,</p>
-                    <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+                      <p>with the line,</p>
+                      <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
 </code></pre>
-                    <p>without changing the external behavior of the program.</p>
-                  </div>
-                </modal>
-              </div>
-            </panel>
-            <panel type="danger" header=":muscle: Exercise: Grader - Restructure the `main` Function" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-grader-restructure-the-main-function">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function"></a></h4>
-                <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
-                  Restructure the <code>main</code> function so that its code looks as follows:</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                      <p>without changing the external behavior of the program.</p>
+                    </div>
+                  </modal>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Restructure the `main` Function" expanded no-close>
+                <div>
+                  <h4 id="exercise-grader-restructure-the-main-function">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function"></a></h4>
+                  <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
+                    Restructure the <code>main</code> function so that its code looks as follows:</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   <span class="hljs-comment"># ...</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -746,14 +756,14 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 
 main()
 </code></pre>
-                <p>The external behavior of the code should remain as before.</p>
-                <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
-                <modal large="" title="" id="modal:graderRestructureMain-graderMainFunction">
-                    <div>
-                    <h4 id="exercise-grader-add-a-main-function-2">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-2"></a></h4>
-                    <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
-                      Here is an example of how the code is likely to look like:</p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                  <p>The external behavior of the code should remain as before.</p>
+                  <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
+                  <modal large title id="modal:graderRestructureMain-graderMainFunction">
+                      <div>
+                      <h4 id="exercise-grader-add-a-main-function-2">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-2"></a></h4>
+                      <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
+                        Here is an example of how the code is likely to look like:</p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -779,8 +789,8 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                    <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                      <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   <span class="hljs-comment"># ...</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -791,12 +801,12 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 
 main()
 </code></pre>
-                    <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                    <modal large="" title="" id="modal:graderMainFunction-graderCalculateGradeFunction">
-                        <div>
-                        <h4 id="exercise-grader-calculate-grade-function-3">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-3"></a></h4>
-                        <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                      <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
+                      <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
+                          <div>
+                          <h4 id="exercise-grader-calculate-grade-function-3">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-3"></a></h4>
+                          <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
 
 project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
@@ -819,8 +829,8 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                        <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
-                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+                          <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+                          <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
     grade = <span class="hljs-string">'A'</span>
 <span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
     grade = <span class="hljs-string">'B'</span>
@@ -829,21 +839,24 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <span class="hljs-keyword">else</span>:
     grade = <span class="hljs-string">'D'</span>
 </code></pre>
-                        <p>with the line,</p>
-                        <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+                          <p>with the line,</p>
+                          <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
 </code></pre>
-                        <p>without changing the external behavior of the program.</p>
-                      </div>
-                    </modal>
-                  </div>
-                </modal>
-              </div>
-            </panel>
-            <panel type="danger" header=":muscle: Exercise: Grader - Analyze Grades in a Loop" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop<a class="fa fa-anchor" href="#exercise-grader-analyze-grades-in-a-loop"></a></h4>
-                <p>Take the program you wrote in the <trigger trigger="click" for="modal:analyzeGradesInLoop-restructureMain">previous exercise</trigger>. Enhance it to analyze grades in a loop until the user chooses to stop. A sample output is given below:</p>
-                <pre><code class="hljs python">Enter project score: <span class="hljs-number">10</span>
+                          <p>without changing the external behavior of the program.</p>
+                        </div>
+                      </modal>
+                    </div>
+                  </modal>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Analyze Grades in a Loop" expanded no-close>
+                <div>
+                  <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop<a class="fa fa-anchor" href="#exercise-grader-analyze-grades-in-a-loop"></a></h4>
+                  <p>Take the program you wrote in the <trigger trigger="click" for="modal:analyzeGradesInLoop-restructureMain">previous exercise</trigger>. Enhance it to analyze grades in a loop until the user chooses to stop. A sample output is given below:</p>
+                  <pre><code class="hljs python">Enter project score: <span class="hljs-number">10</span>
 Enter exam score: <span class="hljs-number">50</span>
 Total: <span class="hljs-number">60</span>
 Project : ==
@@ -860,12 +873,12 @@ Total   : ===================
 Grade   : A
 Continue y/n? n
 </code></pre>
-                <modal large="" title="" id="modal:analyzeGradesInLoop-restructureMain">
-                    <div>
-                    <h4 id="exercise-grader-restructure-the-main-function-2">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function-2"></a></h4>
-                    <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
-                      Restructure the <code>main</code> function so that its code looks as follows:</p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                  <modal large title id="modal:analyzeGradesInLoop-restructureMain">
+                      <div>
+                      <h4 id="exercise-grader-restructure-the-main-function-2">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function-2"></a></h4>
+                      <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
+                        Restructure the <code>main</code> function so that its code looks as follows:</p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   <span class="hljs-comment"># ...</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -881,14 +894,14 @@ Continue y/n? n
 
 main()
 </code></pre>
-                    <p>The external behavior of the code should remain as before.</p>
-                    <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
-                    <modal large="" title="" id="modal:graderRestructureMain-graderMainFunction">
-                        <div>
-                        <h4 id="exercise-grader-add-a-main-function-3">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-3"></a></h4>
-                        <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
-                          Here is an example of how the code is likely to look like:</p>
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                      <p>The external behavior of the code should remain as before.</p>
+                      <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
+                      <modal large title id="modal:graderRestructureMain-graderMainFunction">
+                          <div>
+                          <h4 id="exercise-grader-add-a-main-function-3">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-3"></a></h4>
+                          <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
+                            Here is an example of how the code is likely to look like:</p>
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -914,8 +927,8 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                        <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                          <p>Move <mark>all the statements that are not inside a function</mark> (i.e., the last 10 statements in the code above) into a new function called <code>main</code>. Given below is the expected structure of the code. The external behavior of the code should remain as before.</p>
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   <span class="hljs-comment"># ...</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
@@ -926,12 +939,12 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 
 main()
 </code></pre>
-                        <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                        <modal large="" title="" id="modal:graderMainFunction-graderCalculateGradeFunction">
-                            <div>
-                            <h4 id="exercise-grader-calculate-grade-function-4">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-4"></a></h4>
-                            <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
-                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+                          <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
+                          <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
+                              <div>
+                              <h4 id="exercise-grader-calculate-grade-function-4">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-4"></a></h4>
+                              <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
 
 project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
@@ -954,8 +967,8 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
-                            <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
-                            <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+                              <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+                              <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
     grade = <span class="hljs-string">'A'</span>
 <span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
     grade = <span class="hljs-string">'B'</span>
@@ -964,19 +977,20 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <span class="hljs-keyword">else</span>:
     grade = <span class="hljs-string">'D'</span>
 </code></pre>
-                            <p>with the line,</p>
-                            <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+                              <p>with the line,</p>
+                              <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
 </code></pre>
-                            <p>without changing the external behavior of the program.</p>
-                          </div>
-                        </modal>
-                      </div>
-                    </modal>
-                  </div>
-                </modal>
-              </div>
-            </panel>
-            <p></p>
+                              <p>without changing the external behavior of the program.</p>
+                            </div>
+                          </modal>
+                        </div>
+                      </modal>
+                    </div>
+                  </modal>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -1001,14 +1015,14 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W3-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W3.1]</span> <big><big><strong>Requirements: Intro</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.1a]</span></span> <span class="dimmed"><strong><span>Requirements → Requirements →
                             </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1039,7 +1053,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.1b]</span></span> <span class="dimmed"><strong><span>Requirements → Requirements →
                             </span></strong></span> <strong><big><big><span>Non-Functional Requirements</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1063,7 +1077,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                               <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                               <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                             </ul>
-                            <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded="">
+                            <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded>
                               <ul>
                                 <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                                 <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
@@ -1085,7 +1099,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> TEAMMATES NFRs">
                                   <question>
@@ -1112,7 +1126,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.1c]</span></span> <span class="dimmed"><strong><span>Requirements → Requirements →
                             </span></strong></span> <strong><big><big><span>Prioritizing Requirements</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1154,7 +1168,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.1d]</span></span> <span class="dimmed"><strong><span>Requirements → Requirements →
                             </span></strong></span> <strong><big><big><span>Quality of Requirements</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1202,14 +1216,14 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                 </div>
               </panel>
               <p><span id="W3-2"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W3.2]</span> <big><big><strong>Gathering Requirements</strong></big></big></big> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.2a]</span></span> <span class="dimmed"><strong><span>Requirements → Gathering Requirements →
                             </span></strong></span> <strong><big><big><span>Brainstorming</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1230,7 +1244,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Characteristic of brainstorming">
                                   <question>
@@ -1253,7 +1267,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.2b]</span></span> <span class="dimmed"><strong><span>Requirements → Gathering Requirements →
                             </span></strong></span> <strong><big><big><span>Product Surveys</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1274,7 +1288,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.2c]</span></span> <span class="dimmed"><strong><span>Requirements → Gathering Requirements →
                             </span></strong></span> <strong><big><big><span>Observation</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1292,7 +1306,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.2d]</span></span> <span class="dimmed"><strong><span>Requirements → Gathering Requirements →
                             </span></strong></span> <strong><big><big><span>User Surveys</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1310,7 +1324,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.2e]</span></span> <span class="dimmed"><strong><span>Requirements → Gathering Requirements →
                             </span></strong></span> <strong><big><big><span>Interviews</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1323,7 +1337,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         <p></p>
                         <div>
                           <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
-                          <popover id="pop:interviews-domainExpert" title="" placement="top">
+                          <popover id="pop:interviews-domainExpert" title placement="top">
                               <div slot="content">
                               <div>
                                 <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed"> e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
@@ -1335,7 +1349,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.2f]</span></span> <span class="dimmed"><strong><span>Requirements → Gathering Requirements →
                             </span></strong></span> <strong><big><big><span>Focus Groups</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1347,7 +1361,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         <p></p>
                         <p></p>
                         <div>
-                          <div v-closeable="" alt="focus group photo" class="non-printable">
+                          <div v-closeable alt="focus group photo" class="non-printable">
                             <p><img src="https://media.defense.gov/2012/Apr/11/2000162334/670/394/0/120403-F-PR861-011.JPG" width="400"><br>
                               <sub>[<a href="http://www.hanscom.af.mil/News/Article-Display/Article/380048/caring-for-people-forum-identifies-issues/">source</a>]</sub></p>
                           </div>
@@ -1355,14 +1369,14 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                           <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement, etc.</p>
                           <panel type="seamless" class="non-printable">
                             <span slot="header"><span><span class="dimmed"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary">tangential</span></span></span></span>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3TwgVQIZPsw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3TwgVQIZPsw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                           </panel>
                         </div>
                         <div></div>
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.2g]</span></span> <span class="dimmed"><strong><span>Requirements → Gathering Requirements →
                             </span></strong></span> <strong><big><big><span>Prototyping</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1387,17 +1401,17 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                           </tip-box>
                           <p><strong>Prototyping can uncover requirements, in particular, those related to <em>how users interact with the system</em>.</strong> UI prototypes are often used in brainstorming sessions, or in meetings with the users to get quick feedback from them.</p>
                           <tip-box>
-                            <panel header="<span class='fas fa-cube'></span> Simple text UI prototype for a primitive CLI (Command Line Interface) Minesweeper:" type="seamless" expanded="">
+                            <panel header="<span class='fas fa-cube'></span> Simple text UI prototype for a primitive CLI (Command Line Interface) Minesweeper:" type="seamless" expanded>
                               <p><img src="/2019/book/gatheringRequirements/prototyping/images/textPrototypeCLI.png" height="320"></p>
                               <p></p>
                               <p></p>
                             </panel>
-                            <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless" expanded="">
+                            <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless" expanded>
                               <p><img src="/2019/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="220"></p>
                               <p></p>
                               <p></p>
                             </panel>
-                            <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless" expanded="">
+                            <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless" expanded>
                               <img src="/2019/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="450">
                               <p><span class="dimmed"><sup>[source: <a href="http://balsamiq.com/products/mockups">http://balsamiq.com/products/mockups</a>]</sup></span></p>
                             </panel>
@@ -1412,7 +1426,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                 </div>
               </panel>
               <p><span id="W3-3"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W3.3]</span> <big><big><strong>Specifying Requirements</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
@@ -1421,7 +1435,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                 <div class="indented-level1">
                   <br>
                   <p><span class="dimmed"><strong>Prose</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3a]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Prose →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1450,7 +1464,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Feature Lists</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3b]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Feature Lists →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1489,7 +1503,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>User Stories</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3c]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → User Stories →
                             </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1522,16 +1536,16 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                           </tip-box>
                           <p></p>
                           <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>, Trello, Google Docs, ...) to manage user stories digitally.</p>
-                          <panel header="%%User stories in use%%" class="non-printable" expanded="">
-                            <panel header="With sticky notes" type="seamless" expanded="">
+                          <panel header="%%User stories in use%%" class="non-printable" expanded>
+                            <panel header="With sticky notes" type="seamless" expanded>
                               <img src="/2019/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
                             </panel>
-                            <panel header="With paper" type="seamless" expanded="">
+                            <panel header="With paper" type="seamless" expanded>
                               <img src="/2019/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
                             </panel>
-                            <panel header="With software" type="seamless" expanded="">
+                            <panel header="With software" type="seamless" expanded>
                               <img src="/2019/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
                             </panel>
@@ -1539,7 +1553,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="Q: Which of these are true about user stories?">
                                   <question>
@@ -1598,7 +1612,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3d]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → User Stories →
                             </span></strong></span> <strong><big><big><span>Details</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1653,7 +1667,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                             <li>Urgency: how soon the feature is needed</li>
                           </ul>
                           <span class="non-printable">
-                            <panel minimized="">
+                            <panel minimized>
                               <span slot="header" class="card-title"><span class="fas fa-cube"></span> More examples <span class="badge badge-pill badge-secondary">tangential</span></span>
                               <p>User stories for a travel website (credit: Mike Cohen)</p>
                               <tip-box>
@@ -1682,7 +1696,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Correct statements about user stories">
                                   <question>
@@ -1711,7 +1725,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3e]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → User Stories →
                             </span></strong></span> <strong><big><big><span>Usage</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1729,7 +1743,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                           </blockquote>
                           <p><strong>User stories differ from <popover content="e.g. a description of the requirements written in prose">traditional requirements specifications</popover> mainly in the level of detail.</strong> User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description of the requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
                           <p><strong>User stories can capture <trigger trigger="click" for="modal:userStoriesUsage-nfr">non-functional requirements</trigger> too</strong> because even NFRs must benefit some stakeholder.</p>
-                          <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:userStoriesUsage-nfr">
+                          <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:userStoriesUsage-nfr">
                               <div>
                               <div></div>
                               <p></p>
@@ -1753,7 +1767,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                                         <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                                         <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                                       </ul>
-                                      <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded="">
+                                      <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded>
                                         <ul>
                                           <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                                           <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
@@ -1775,7 +1789,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                                   </div>
                                   <div>
                                     <div>
-                                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                                         <div>
                                           <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> TEAMMATES NFRs">
                                             <question>
@@ -1861,7 +1875,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                                     <p></p>
                                     <p></p>
                                     <p>A video on GitHub Project Boards:</p>
-                                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                                     <p>
                                       <hr>
                                     </p>
@@ -1904,7 +1918,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                            <panel header="<span class='fas fa-paperclip'></span> Resources" expanded>
                               <ul>
                                 <li><a href="https://www.mountaingoatsoftware.com/blog/non-functional-requirements-as-user-stories">This article by Mike Cohn</a> from MountainGoatSoftware explains how to use user stories to capture NFRs.</li>
                               </ul>
@@ -1916,7 +1930,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Use Cases</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3f]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Use Cases →
                             </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1942,7 +1956,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                           </tip-box>
                           <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
                           <tip-box>
-                            <panel header="<span class='fas fa-cube'></span> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded="">
+                            <panel header="<span class='fas fa-cube'></span> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded>
                               <ul>
                                 <li>System: <popover effect="fade" placement="right" content="Automated Teller Machine">
                                     ATM </popover>
@@ -1994,7 +2008,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3g]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Use Cases →
                             </span></strong></span> <strong><big><big><span>Identifying</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -2071,7 +2085,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="Q: Use case diagram for a ticket vending machine">
                                   <question has-input="false">
@@ -2111,7 +2125,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3h]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Use Cases →
                             </span></strong></span> <strong><big><big><span>Details</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -2351,7 +2365,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <link rel="stylesheet" href="/2019/book/css/common.css">
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> EZ-Link top-up use case">
@@ -2621,7 +2635,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3i]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Use Cases →
                             </span></strong></span> <strong><big><big><span>Usage</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -2659,7 +2673,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Advantages of use cases">
                                   <question>
@@ -2701,7 +2715,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Glossary</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3j]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Glossary →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -2732,7 +2746,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Supplementary Requirements</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W3.3k]</span></span> <span class="dimmed"><strong><span>Requirements → Specifying Requirements → Supplementary Requirements →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -2745,7 +2759,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                         <p></p>
                         <div>
                           <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
-                          <modal large="" title="%%Textbook »%%" id="modal:supplementary-nfr">
+                          <modal large title="%%Textbook »%%" id="modal:supplementary-nfr">
                               <div>
                               <div></div>
                               <p></p>
@@ -2769,7 +2783,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                                         <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                                         <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                                       </ul>
-                                      <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded="">
+                                      <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded>
                                         <ul>
                                           <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                                           <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
@@ -2791,7 +2805,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                                   </div>
                                   <div>
                                     <div>
-                                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                                         <div>
                                           <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> TEAMMATES NFRs">
                                             <question>
@@ -2889,7 +2903,7 @@ main()
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

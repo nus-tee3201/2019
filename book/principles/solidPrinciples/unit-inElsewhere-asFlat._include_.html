@@ -36,7 +36,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                  <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded>
                     <ul>
                       <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
                       <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
@@ -83,7 +83,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
                         <question>
@@ -125,8 +125,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a></sub></p>
                   </div>
                 </tip-box>
-                <p>LSP sounds same as <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-                <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
+                <p>LSP sounds same as <trigger large trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
+                <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
                     <div>
                     <div>
                       <p>
@@ -210,7 +210,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?">
                         <question>
@@ -303,7 +303,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle.">
                         <question>

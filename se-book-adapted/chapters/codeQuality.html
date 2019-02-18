@@ -205,7 +205,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -216,13 +216,13 @@
               <h1 id="code-quality"><span>Code Quality</span><a class="fa fa-anchor" href="#code-quality"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded="">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title">
               <div>
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded="">
+            <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -247,13 +247,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded="">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title">
               <div>
                 <h2 id="guideline-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -370,13 +370,13 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### Avoid Long Methods<a class='fa fa-anchor' href='#avoid-long-methods'></a>" expanded="">
+              <panel type="seamless" header="#### Avoid Long Methods<a class='fa fa-anchor' href='#avoid-long-methods'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -390,7 +390,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Avoid Deep Nesting<a class='fa fa-anchor' href='#avoid-deep-nesting'></a>" expanded="">
+              <panel type="seamless" header="#### Avoid Deep Nesting<a class='fa fa-anchor' href='#avoid-deep-nesting'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -412,7 +412,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Avoid Complicated Expressions<a class='fa fa-anchor' href='#avoid-complicated-expressions'></a>" expanded="">
+              <panel type="seamless" header="#### Avoid Complicated Expressions<a class='fa fa-anchor' href='#avoid-complicated-expressions'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -476,7 +476,7 @@ is_urgent = type_code == URGENT
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Avoid Magic Numbers<a class='fa fa-anchor' href='#avoid-magic-numbers'></a>" expanded="">
+              <panel type="seamless" header="#### Avoid Magic Numbers<a class='fa fa-anchor' href='#avoid-magic-numbers'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -566,7 +566,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Make the Code Obvious<a class='fa fa-anchor' href='#make-the-code-obvious'></a>" expanded="">
+              <panel type="seamless" header="#### Make the Code Obvious<a class='fa fa-anchor' href='#make-the-code-obvious'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -593,13 +593,13 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </panel>
             </panel>
           </panel>
-          <panel type="seamless" expanded="">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title">
               <div>
                 <h2 id="guideline-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -614,7 +614,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                       <div>
                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
                           <question>
@@ -633,7 +633,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                       </div>
                       <div>
                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                          <question has-input="">
+                          <question has-input>
                             <p>What is the aim of using a coding standard? How does it help?</p>
                           </question>
                         </panel>
@@ -643,7 +643,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded="">
+            <panel type="seamless" header="#### Basic<a class='fa fa-anchor' href='#basic'></a>" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -661,7 +661,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                       <div>
                         <div>
                           <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find basic coding standard violations">
@@ -712,13 +712,13 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded="">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title">
               <div>
                 <h2 id="guideline-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline-name-well"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -735,13 +735,13 @@ MAX_SIZE = <span class="hljs-number">10</span>
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### Use Nouns for Things and Verbs for Actions<a class='fa fa-anchor' href='#use-nouns-for-things-and-verbs-for-actions'></a>" expanded="">
+              <panel type="seamless" header="#### Use Nouns for Things and Verbs for Actions<a class='fa fa-anchor' href='#use-nouns-for-things-and-verbs-for-actions'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -808,7 +808,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Use Standard Words<a class='fa fa-anchor' href='#use-standard-words'></a>" expanded="">
+              <panel type="seamless" header="#### Use Standard Words<a class='fa fa-anchor' href='#use-standard-words'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -824,13 +824,13 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               </panel>
             </panel>
           </panel>
-          <panel type="seamless" expanded="">
+          <panel type="seamless" expanded>
             <span slot="header" class="card-title">
               <div>
                 <h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded="">
+            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -847,13 +847,13 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### Do Not Repeat the Obvious<a class='fa fa-anchor' href='#do-not-repeat-the-obvious'></a>" expanded="">
+              <panel type="seamless" header="#### Do Not Repeat the Obvious<a class='fa fa-anchor' href='#do-not-repeat-the-obvious'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -876,7 +876,7 @@ trimInput();
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Write to the Reader<a class='fa fa-anchor' href='#write-to-the-reader'></a>" expanded="">
+              <panel type="seamless" header="#### Write to the Reader<a class='fa fa-anchor' href='#write-to-the-reader'></a>" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -941,7 +941,7 @@ trimInput();
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

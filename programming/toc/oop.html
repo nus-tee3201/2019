@@ -120,7 +120,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -155,7 +155,7 @@
               <p>💡 It is customary to use <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
               <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
               <modal title="CamelCase" id="modal:classes-camelcase">
-                <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt="" class="img-fluid"></a><br></p>
+                <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt class="img-fluid"></a><br></p>
                 <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>. <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
                 <p><sub>[source: <a href="https://en.wikipedia.org/wiki/Camel_case">Wikipedia</a>]</sub></p>
               </modal>
@@ -314,14 +314,15 @@ Sun Tzu
                   </tr>
                 </table>
               </tip-box>
-              <panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
-                  <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
-                  <table>
-                    <tr>
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Create `StockItem` Class" expanded no-close>
+                  <div>
+                    <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
+                    <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
 <span class="hljs-comment"># It should have an attribute: name</span>
 <span class="hljs-comment"># It should have a method: info() </span>
     
@@ -333,19 +334,19 @@ print(b.info())
 b.name = <span class="hljs-string">'Bananas'</span>
 print(b.info())
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">Item info: Apple
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">Item info: Apple
 Apple
 Item info: Bag of Beans
 Item info: Bananas
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                  <panel type="seamless" header="%%:bulb: Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = ...
@@ -353,10 +354,11 @@ Item info: Bananas
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
     <span class="hljs-keyword">return</span> ...
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
@@ -451,18 +453,19 @@ yak yak
                 <p>💡 As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
                 </p>
               </tip-box>
-              <panel type="danger" header=":muscle: Exercise: Add Class-Level Members to `Subject` Class" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class"></a></h4>
-                  <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
-                  <ul>
-                    <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
-                    <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
-                  </ul>
-                  <table>
-                    <tr>
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add Class-Level Members to `Subject` Class" expanded no-close>
+                  <div>
+                    <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class"></a></h4>
+                    <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
+                    <ul>
+                      <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
+                      <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
+                    </ul>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
     self.name = name
@@ -483,10 +486,10 @@ print(Subject.limit_reached(<span class="hljs-number">3</span>))
 Subject.total = <span class="hljs-number">100</span>
 print(Subject.limit_reached(<span class="hljs-number">100</span>))
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">total subjects: 0
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">total subjects: 0
 total subjects: 1
 True
 False
@@ -495,11 +498,11 @@ True
 False
 True
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                  <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-comment"># ADD `total` attribute here</span>
   
@@ -515,10 +518,11 @@ True
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
     ... <span class="hljs-comment"># ADD implementation</span>
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
@@ -625,14 +629,15 @@ AttributeError: 'Account' object has no attribute '__get_income'...
                 <p>💡 Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
                 </p>
               </tip-box>
-              <panel type="danger" header=":muscle: Exercise: Change Visibility of `School` Class Members" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members"></a></h4>
-                  <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
-                  <table>
-                    <tr>
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Change Visibility of `School` Class Members" expanded no-close>
+                  <div>
+                    <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members"></a></h4>
+                    <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
   
   __target = <span class="hljs-number">0.99</span>
   
@@ -647,22 +652,23 @@ s = School(<span class="hljs-number">100000</span>)
 print(s.__budget)
 print(s.__max_expenditure())
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">0.99
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">0.99
 100000
 99000.0
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                  <panel type="seamless" header="%%:bulb: Hint%%">
-                    <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Hint%%">
+                      <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
@@ -729,14 +735,15 @@ the name is Dan
                   </tr>
                 </table>
               </tip-box>
-              <panel type="danger" header=":muscle: Exercise: Add `Fish` Class" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-add-fish-class"></a></h4>
-                  <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
-                  <table>
-                    <tr>
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add `Fish` Class" expanded no-close>
+                  <div>
+                    <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-add-fish-class"></a></h4>
+                    <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
@@ -752,26 +759,27 @@ guppy = Fish(<span class="hljs-string">'Guppy'</span>)
 guppy.info()
 guppy.move()
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">I'm a Tuna
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">I'm a Tuna
 I'm swimming
 I'm a Guppy
 I'm swimming
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                  <panel type="seamless" header="%%:bulb: Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
               <p><strong>A child class can <em>override</em> a method defined in the parent class.</strong> That way, a child object can change a behavior defined in the parent class.</p>
               <tip-box>
                 <p><span class="fas fa-cube"></span> Note how the <code>Student</code> class below overrides the <code>__init__()</code> method and the <code>print_info()</code> method of the parent class <code>Person</code>.</p>
@@ -836,18 +844,19 @@ Ben is learning
                   </tr>
                 </table>
               </tip-box>
-              <panel type="danger" header=":muscle: Exercise: Add `FlightlessBird` Class" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightlessbird-class"></a></h4>
-                  <p>Do the following changes to the given code so that the code below produces the given output:</p>
-                  <ol>
-                    <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
-                    <li>add a <code>FlightlessBird</code> class that inherits from the <code>Bird</code> class, and override the <code>move()</code> method</li>
-                  </ol>
-                  <table>
-                    <tr>
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add `FlightlessBird` Class" expanded no-close>
+                  <div>
+                    <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightlessbird-class"></a></h4>
+                    <p>Do the following changes to the given code so that the code below produces the given output:</p>
+                    <ol>
+                      <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
+                      <li>add a <code>FlightlessBird</code> class that inherits from the <code>Bird</code> class, and override the <code>move()</code> method</li>
+                    </ol>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
@@ -874,29 +883,30 @@ penguin = FlightlessBird(<span class="hljs-string">'Penguin'</span>)
 penguin.info()
 penguin.move()
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">I'm a Crow
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">I'm a Crow
 I have feathers
 I'm flying
 I'm a Penguin
 I have feathers
 I'm waddling
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                  <panel type="seamless" header="%%:bulb: Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
               <p><strong>Note that all python classes automatically inherits from the built-in class <code>object</code></strong> even if you did not specify it as the parent class. The <code>object</code> class has a <code>__str__()</code> method that you can ovrride in your classes to customize how the <code>print</code> function will print an object of your class.</p>
               <tip-box>
                 <p><span class="fas fa-cube"></span> The <code>Book</code> class below overrides the <code>__str__()</code> method so that <code>Book</code> objects can be printed in a specific format.</p>
@@ -924,14 +934,15 @@ print(book)
                   </tr>
                 </table>
               </tip-box>
-              <panel type="danger" header=":muscle: Exercise: Override `__str__()` Method" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-override-str-method"></a></h4>
-                  <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
-                  <table>
-                    <tr>
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Override `__str__()` Method" expanded no-close>
+                  <div>
+                    <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-override-str-method"></a></h4>
+                    <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, age)</span>:</span>
     self.name = name
@@ -942,23 +953,24 @@ print(book)
 print(Person(<span class="hljs-string">'Amy'</span>, <span class="hljs-number">25</span>))
 print(Person(<span class="hljs-string">'Ben'</span>, <span class="hljs-number">26</span>))
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">Amy (25years)
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">Amy (25years)
 Ben (26years)
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                  <panel type="seamless" header="%%:bulb: Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
     <span class="hljs-keyword">return</span> self.name + ...
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
               <p><strong>A class can inherit from multiple classes.</strong> If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.</p>
               <tip-box>
                 <table>
@@ -1027,14 +1039,15 @@ Elsie is grading
                 </table>
                 <p>As both <code>Teacher</code> and <code>Student</code> classes have the <code>print_info()</code> method, the method from the <code>Teacher</code> class will be used as it comes first in the inheritance order <code>(Teacher, Student)</code>; that is why you see <code>Elsie is a teacher</code> in the output instead of <code>Elsie is a student</code>.</p>
               </tip-box>
-              <panel type="danger" header=":muscle: Exercise: Add `SmartPhone` Class" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smartphone-class"></a></h4>
-                  <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
-                  <table>
-                    <tr>
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add `SmartPhone` Class" expanded no-close>
+                  <div>
+                    <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smartphone-class"></a></h4>
+                    <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">take_photo</span><span class="hljs-params">(self)</span>:</span>
     print(<span class="hljs-string">'taking photo'</span>)
@@ -1051,19 +1064,19 @@ iphone.take_photo()
 iphone.make_call()
 iphone.play_game()
 </code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">My model: iPhone
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">My model: iPhone
 taking photo
 making call
 playing game
 </code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                  <panel type="seamless" header="%%:bulb: Partial solution%%">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     ...
@@ -1071,10 +1084,11 @@ playing game
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">play_game</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>
@@ -1086,7 +1100,7 @@ playing game
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

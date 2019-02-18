@@ -187,7 +187,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -198,7 +198,7 @@
               <h1 id="gathering-requirements"><span>Gathering Requirements</span><a class="fa fa-anchor" href="#gathering-requirements"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### Brainstorming<a class='fa fa-anchor' href='#brainstorming'></a>" expanded="">
+          <panel type="seamless" header="#### Brainstorming<a class='fa fa-anchor' href='#brainstorming'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -216,7 +216,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                     <div>
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Characteristic of brainstorming">
                         <question>
@@ -238,7 +238,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### User Surveys<a class='fa fa-anchor' href='#user-surveys'></a>" expanded="">
+          <panel type="seamless" header="#### User Surveys<a class='fa fa-anchor' href='#user-surveys'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -252,7 +252,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Observation<a class='fa fa-anchor' href='#observation'></a>" expanded="">
+          <panel type="seamless" header="#### Observation<a class='fa fa-anchor' href='#observation'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -266,7 +266,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Interviews<a class='fa fa-anchor' href='#interviews'></a>" expanded="">
+          <panel type="seamless" header="#### Interviews<a class='fa fa-anchor' href='#interviews'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -276,7 +276,7 @@
               <p></p>
               <div>
                 <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
-                <popover id="pop:interviews-domainExpert" title="" placement="top">
+                <popover id="pop:interviews-domainExpert" title placement="top">
                     <div slot="content">
                     <div>
                       <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed"> e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
@@ -287,7 +287,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Focus Groups<a class='fa fa-anchor' href='#focus-groups'></a>" expanded="">
+          <panel type="seamless" header="#### Focus Groups<a class='fa fa-anchor' href='#focus-groups'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -296,7 +296,7 @@
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain focus groups</span></span></span></span>
               <p></p>
               <div>
-                <div v-closeable="" alt="focus group photo" class="non-printable">
+                <div v-closeable alt="focus group photo" class="non-printable">
                   <p><img src="https://media.defense.gov/2012/Apr/11/2000162334/670/394/0/120403-F-PR861-011.JPG" width="400"><br>
                     <sub>[<a href="http://www.hanscom.af.mil/News/Article-Display/Article/380048/caring-for-people-forum-identifies-issues/">source</a>]</sub></p>
                 </div>
@@ -304,13 +304,13 @@
                 <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement, etc.</p>
                 <panel type="seamless" class="non-printable">
                   <span slot="header"><span><span class="dimmed"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary">tangential</span></span></span></span>
-                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3TwgVQIZPsw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3TwgVQIZPsw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </panel>
               </div>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Prototyping<a class='fa fa-anchor' href='#prototyping'></a>" expanded="">
+          <panel type="seamless" header="#### Prototyping<a class='fa fa-anchor' href='#prototyping'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -332,17 +332,17 @@
                 </tip-box>
                 <p><strong>Prototyping can uncover requirements, in particular, those related to <em>how users interact with the system</em>.</strong> UI prototypes are often used in brainstorming sessions, or in meetings with the users to get quick feedback from them.</p>
                 <tip-box>
-                  <panel header="<span class='fas fa-cube'></span> Simple text UI prototype for a primitive CLI (Command Line Interface) Minesweeper:" type="seamless" expanded="">
+                  <panel header="<span class='fas fa-cube'></span> Simple text UI prototype for a primitive CLI (Command Line Interface) Minesweeper:" type="seamless" expanded>
                     <p><img src="/2019/book/gatheringRequirements/prototyping/images/textPrototypeCLI.png" height="320"></p>
                     <p></p>
                     <p></p>
                   </panel>
-                  <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless" expanded="">
+                  <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless" expanded>
                     <p><img src="/2019/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="220"></p>
                     <p></p>
                     <p></p>
                   </panel>
-                  <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless" expanded="">
+                  <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless" expanded>
                     <img src="/2019/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="450">
                     <p><span class="dimmed"><sup>[source: <a href="http://balsamiq.com/products/mockups">http://balsamiq.com/products/mockups</a>]</sup></span></p>
                   </panel>
@@ -353,7 +353,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Product Surveys<a class='fa fa-anchor' href='#product-surveys'></a>" expanded="">
+          <panel type="seamless" header="#### Product Surveys<a class='fa fa-anchor' href='#product-surveys'></a>" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -378,7 +378,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -107,7 +107,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -245,18 +245,20 @@ print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(dis
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
               <panel type="seamless" header="%%:tv: Explanation of a similar Python program%%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
-              <panel type="danger" header=":muscle: Exercise: Length of Names" expanded="">
-                <div>
-                  <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
-                  <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
-                  <pre><code class="hljs">What is your name?
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Length of Names" expanded no-close>
+                  <div>
+                    <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
+                    <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
+                    <pre><code class="hljs">What is your name?
 John Doe
 The length of your name is 8
 </code></pre>
-                  <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
-                </div>
-              </panel>
-              <p></p>
+                    <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>
@@ -268,7 +270,7 @@ The length of your name is 8
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

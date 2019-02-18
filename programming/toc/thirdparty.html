@@ -102,7 +102,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -157,14 +157,16 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
               <ul>
                 <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
               </ul>
-              <panel type="danger" header=":muscle: Exercise: Print Errors in Red" expanded="" no-close="">
-                <div>
-                  <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
-                  <p>Update a CLI program you have written in the past to print error messages in red color.</p>
-                  <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
-                </div>
-              </panel>
-              <p></p>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Print Errors in Red" expanded no-close>
+                  <div>
+                    <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
+                    <p>Update a CLI program you have written in the past to print error messages in red color.</p>
+                    <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>
@@ -176,7 +178,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

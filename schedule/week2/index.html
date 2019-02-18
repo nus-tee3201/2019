@@ -64,7 +64,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -293,7 +293,7 @@ Done
                 </div>
               </div>
             </div>
-            <modal large="" title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
+            <modal large title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
               <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p>
               <p>If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to <a href="http://pythontutor.com/visualize.html#mode=edit">PythonTutor.com</a>, copy-paste the above Python code there to see the execution steps.</p>
               <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe>
@@ -305,22 +305,24 @@ Done
     print(<span class="hljs-string">"It's a word"</span>)    <span class="hljs-comment"># line 4</span>
 print(<span class="hljs-string">'Done'</span>)               <span class="hljs-comment"># line 5</span>
 </code></pre>
-            <panel type="danger" header=":muscle: Exercise: Even Numbers" expanded="">
-              <div>
-                <h4 id="exercise-even-numbers">Exercise - Even Numbers<a class="fa fa-anchor" href="#exercise-even-numbers"></a></h4>
-                <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
-                <pre><code class="hljs python">Enter an integer:
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Even Numbers" expanded no-close>
+                <div>
+                  <h4 id="exercise-even-numbers">Exercise - Even Numbers<a class="fa fa-anchor" href="#exercise-even-numbers"></a></h4>
+                  <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
+                  <pre><code class="hljs python">Enter an integer:
 <span class="hljs-number">4</span>
 Even number
 Done
 </code></pre>
-                <pre><code class="hljs python">Enter an integer:
+                  <pre><code class="hljs python">Enter an integer:
 <span class="hljs-number">7</span>
 Done
 </code></pre>
-              </div>
-            </panel>
-            <p></p>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><code>if</code> statements can be <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.</p>
             <pre><code class="hljs python">age = <span class="hljs-number">13</span>
 gender = <span class="hljs-string">'F'</span>
@@ -344,7 +346,7 @@ Girl
 Gender code <span class="hljs-keyword">is</span> F
 Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
 </code></pre>
-            <modal large="" title="Nested blocks" id="modal:nestedIf-pyTutor">
+            <modal large title="Nested blocks" id="modal:nestedIf-pyTutor">
               <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
             <panel type="seamless" header="%%:tv: Using `if`%%">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
@@ -385,11 +387,12 @@ Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded="">
-              <div>
-                <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
-                <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
-                <pre><code class="hljs python">Enter project score:
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grade Analyzer" expanded no-close>
+                <div>
+                  <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
+                  <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+                  <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
 
 Enter exam score:
@@ -402,27 +405,30 @@ Exam    : ========
 Total   : ==============
 Grade   : A
 </code></pre>
-                <ul>
-                  <li>Note how the colons (<code>:</code>) are aligned.</li>
-                  <li>Note the extra blank lines in the expected output.</li>
-                  <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
-                  <li>Assume all inputs are positive integers.</li>
-                </ul>
-                <p>Grading rules:</p>
-                <ul>
-                  <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
-                  <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
-                  <li><code>C</code>: at least 40 in total</li>
-                  <li><code>D</code>: otherwise</li>
-                </ul>
-              </div>
-            </panel>
-            <panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded="">
-              <div>
-                <h4 id="exercise-grade-analyzer-extended">Exercise - Grade Analyzer (Extended)<a class="fa fa-anchor" href="#exercise-grade-analyzer-extended"></a></h4>
-                <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
-                <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
-                <pre><code class="hljs python">Enter project score
+                  <ul>
+                    <li>Note how the colons (<code>:</code>) are aligned.</li>
+                    <li>Note the extra blank lines in the expected output.</li>
+                    <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+                    <li>Assume all inputs are positive integers.</li>
+                  </ul>
+                  <p>Grading rules:</p>
+                  <ul>
+                    <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+                    <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+                    <li><code>C</code>: at least 40 in total</li>
+                    <li><code>D</code>: otherwise</li>
+                  </ul>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Grade Analyzer (extended)" expanded no-close>
+                <div>
+                  <h4 id="exercise-grade-analyzer-extended">Exercise - Grade Analyzer (Extended)<a class="fa fa-anchor" href="#exercise-grade-analyzer-extended"></a></h4>
+                  <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
+                  <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
+                  <pre><code class="hljs python">Enter project score
 <span class="hljs-number">10</span>
 
 Enter exam score
@@ -438,8 +444,10 @@ Exam    : ====
 Total   : ======
 Grade   : NA
 </code></pre>
-              </div>
-            </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -472,7 +480,7 @@ Done
                       <p>
                         <trigger trigger="click" for="modal:visualizeCodewithasimple`if`condition"><span class="dimmed">[Visualize execution]</span></trigger>
                       </p>
-                      <modal large="" title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition">
+                      <modal large title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition">
                         <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                     </div>
                   </td>
@@ -501,11 +509,12 @@ Done
               <panel type="seamless" header="%%:tv: Infinite loops%%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Vending Machine - Add Loop" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-vending-machine-add-loop">Exercise - Vending Machine - Add Loop<a class="fa fa-anchor" href="#exercise-vending-machine-add-loop"></a></h4>
-                <p>The code below simulates a vending machine that asks for a coin and gives out the product and the balance.</p>
-                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Add Loop" expanded no-close>
+                <div>
+                  <h4 id="exercise-vending-machine-add-loop">Exercise - Vending Machine - Add Loop<a class="fa fa-anchor" href="#exercise-vending-machine-add-loop"></a></h4>
+                  <p>The code below simulates a vending machine that asks for a coin and gives out the product and the balance.</p>
+                  <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_value = <span class="hljs-number">0</span>
 
 print(<span class="hljs-string">'Price:'</span>, price)
@@ -516,72 +525,72 @@ print(<span class="hljs-string">'You have entered:'</span>, coin_value)
 print(<span class="hljs-string">'Here is the product'</span>)
 print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
 </code></pre>
-                <p>💡 Note how the above code uses <code>input</code> function with a string argument e.g., <code>input('Enter a coin:')</code> to show the string to the user and read the input from the user at the same time.</p>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python">name = input(<span class="hljs-string">'Input a name:'</span>)
+                  <p>💡 Note how the above code uses <code>input</code> function with a string argument e.g., <code>input('Enter a coin:')</code> to show the string to the user and read the input from the user at the same time.</p>
+                  <table>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python">name = input(<span class="hljs-string">'Input a name:'</span>)
 </code></pre>
-                    </td>
-                    <td>&nbsp;→&nbsp;</td>
-                    <td>
-                      <pre><code class="hljs">Input a name: John
+                      </td>
+                      <td>&nbsp;→&nbsp;</td>
+                      <td>
+                        <pre><code class="hljs">Input a name: John
 </code></pre>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'Input a name:'</span>)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python">print(<span class="hljs-string">'Input a name:'</span>)
 name = input()
 </code></pre>
-                    </td>
-                    <td>&nbsp;→&nbsp;</td>
-                    <td>
-                      <pre><code class="hljs">Input a name:
+                      </td>
+                      <td>&nbsp;→&nbsp;</td>
+                      <td>
+                        <pre><code class="hljs">Input a name:
 John
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <p>💡 Also note how the above code uses <code>print()</code> with two arguments, one an integer and one a string. The <code>print()</code> method can take multiple arguments and the arguments can be of different types. Note that the <mark>output will have a space between each argument</mark>.</p>
-                <table>
-                  <tr>
-                    <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'ABC'</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4.50</span>)
+                      </td>
+                    </tr>
+                  </table>
+                  <p>💡 Also note how the above code uses <code>print()</code> with two arguments, one an integer and one a string. The <code>print()</code> method can take multiple arguments and the arguments can be of different types. Note that the <mark>output will have a space between each argument</mark>.</p>
+                  <table>
+                    <tr>
+                      <td>
+                        <pre><code class="hljs python">print(<span class="hljs-string">'ABC'</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4.50</span>)
 print(<span class="hljs-string">'ABC'</span> + str(<span class="hljs-number">3</span>) + str(<span class="hljs-number">4.50</span>))
 print(<span class="hljs-string">'ABC'</span> + <span class="hljs-string">' '</span> + str(<span class="hljs-number">3</span>) + <span class="hljs-string">' '</span> + str(<span class="hljs-number">4.50</span>))
 </code></pre>
-                    </td>
-                    <td>&nbsp;→&nbsp;</td>
-                    <td>
-                      <pre><code class="hljs">
+                      </td>
+                      <td>&nbsp;→&nbsp;</td>
+                      <td>
+                        <pre><code class="hljs">
 ABC 3 4.50
 ABC34.50
 ABC 3 4.50
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-                <p>Example output from the code:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+                      </td>
+                    </tr>
+                  </table>
+                  <p>Example output from the code:</p>
+                  <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
 Enter a coin: <span class="hljs-number">200</span>
 You have entered: <span class="hljs-number">200</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">100</span>
 </code></pre>
-                <p>As you can see, this code does not consider the case where the inserted coin is less than the price of the product, resulting in the following incorrect behavior.</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+                  <p>As you can see, this code does not consider the case where the inserted coin is less than the price of the product, resulting in the following incorrect behavior.</p>
+                  <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
 Enter a coin: <span class="hljs-number">50</span>
 You have entered: <span class="hljs-number">50</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">-50</span>
 </code></pre>
-                <p>Modify the code to repeat these two lines until the coin entered is enough to pay for the product. Note that you <mark>don't need to add up all the coins entered.</mark> Instead, assume the vending machine can accept only one coin for a purchase and keeps rejecting coins until a big-enough coin is entered.</p>
-                <pre><code class="hljs python">coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+                  <p>Modify the code to repeat these two lines until the coin entered is enough to pay for the product. Note that you <mark>don't need to add up all the coins entered.</mark> Instead, assume the vending machine can accept only one coin for a purchase and keeps rejecting coins until a big-enough coin is entered.</p>
+                  <pre><code class="hljs python">coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
 print(<span class="hljs-string">'You have entered:'</span>, coin_value)
 </code></pre>
-                <p>The output should be something like this:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+                  <p>The output should be something like this:</p>
+                  <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
 Enter a coin: <span class="hljs-number">50</span>
 You have entered: <span class="hljs-number">50</span>
 Enter a coin: <span class="hljs-number">100</span>
@@ -589,13 +598,16 @@ You have entered: <span class="hljs-number">100</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">0</span>
 </code></pre>
-              </div>
-            </panel>
-            <panel type="danger" header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-vending-machine-accept-multiple-coins">Exercise - Vending Machine - Accept Multiple Coins<a class="fa fa-anchor" href="#exercise-vending-machine-accept-multiple-coins"></a></h4>
-                <p>The vending machine you wrote in the previous exercise (an example solution given below) can accept only one coin as the payment. If the coin is not enough, it rejects the coin and request the user to insert a new coin.</p>
-                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+                </div>
+              </panel>
+              <p></p>
+            </div>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Accept Multiple Coins" expanded no-close>
+                <div>
+                  <h4 id="exercise-vending-machine-accept-multiple-coins">Exercise - Vending Machine - Accept Multiple Coins<a class="fa fa-anchor" href="#exercise-vending-machine-accept-multiple-coins"></a></h4>
+                  <p>The vending machine you wrote in the previous exercise (an example solution given below) can accept only one coin as the payment. If the coin is not enough, it rejects the coin and request the user to insert a new coin.</p>
+                  <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_value = <span class="hljs-number">0</span>
 
 print(<span class="hljs-string">'Price:'</span>, price)
@@ -607,8 +619,8 @@ print(<span class="hljs-string">'Price:'</span>, price)
 print(<span class="hljs-string">'Here is the product'</span>)
 print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
 </code></pre>
-                <p>Modify the code so that it can accumulate coins until there is enough to pay for the product. An example output is given below:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+                  <p>Modify the code so that it can accumulate coins until there is enough to pay for the product. An example output is given below:</p>
+                  <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
 Enter a coin: <span class="hljs-number">20</span>
 You have entered: <span class="hljs-number">20</span>
 Enter a coin: <span class="hljs-number">50</span>
@@ -618,17 +630,18 @@ You have entered: <span class="hljs-number">120</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">20</span>
 </code></pre>
-                <panel type="seamless" header=":bulb: see hint">
-                  <pre><code class="hljs python">...
+                  <panel type="seamless" header=":bulb: see hint">
+                    <pre><code class="hljs python">...
 coin_sum = <span class="hljs-number">0</span>
 ...
   coin_sum = coin_sum + coin_value
 ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use a <code>break</code> statement to break out of a loop.</strong></p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The code below uses the <code>break</code> statement to break out of the loop when the password given is <code>abcd</code>. Without the <code>break</code> statement, the loop will repeat forever because the condition in <code>while True:</code> is always <code>True</code>.</p>
@@ -648,11 +661,12 @@ print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
             </tip-box>
             <panel type="seamless" header="%%:tv: `break` inside `while` loops%%">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
-            <panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-vending-machine-allow-abort">Exercise - Vending Machine - Allow Abort<a class="fa fa-anchor" href="#exercise-vending-machine-allow-abort"></a></h4>
-                <p>The vending machine you wrote in the previous exercise (an example solution given below) does not allow the user to abort the purchase and get the money back.</p>
-                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Allow Abort" expanded no-close>
+                <div>
+                  <h4 id="exercise-vending-machine-allow-abort">Exercise - Vending Machine - Allow Abort<a class="fa fa-anchor" href="#exercise-vending-machine-allow-abort"></a></h4>
+                  <p>The vending machine you wrote in the previous exercise (an example solution given below) does not allow the user to abort the purchase and get the money back.</p>
+                  <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_sum = <span class="hljs-number">0</span>
 
 print(<span class="hljs-string">'Price:'</span>, price)
@@ -665,15 +679,15 @@ print(<span class="hljs-string">'Price:'</span>, price)
 print(<span class="hljs-string">'Here is the product'</span>)
 print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
 </code></pre>
-                <p>Modify the code so that the user can abort the purchase by entering <code>0</code> as the coin value:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+                  <p>Modify the code so that the user can abort the purchase by entering <code>0</code> as the coin value:</p>
+                  <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
 Enter a coin: <span class="hljs-number">20</span>
 You have entered: <span class="hljs-number">20</span>
 Enter a coin: <span class="hljs-number">0</span>
 Your balance: <span class="hljs-number">20</span>
 </code></pre>
-                <panel type="seamless" header=":bulb: see hint">
-                  <pre><code class="hljs python">...
+                  <panel type="seamless" header=":bulb: see hint">
+                    <pre><code class="hljs python">...
 is_aborting = <span class="hljs-keyword">False</span>
 ...
   <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
@@ -683,10 +697,11 @@ is_aborting = <span class="hljs-keyword">False</span>
 <span class="hljs-keyword">if</span> is_aborting:
   print(<span class="hljs-string">'Your balance:'</span>, coin_sum)
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use a <code>continue</code> statement to skip the remainder of the current iteration</strong> and go back to the <code>while</code> condition.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The code below is for reading three words from the user and printing all three at the end. It uses the <code>continue</code> statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters).</p>
@@ -712,11 +727,12 @@ print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Vending Machine - Legit Coins" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-vending-machine-legit-coins">Exercise - Vending Machine - Legit Coins<a class="fa fa-anchor" href="#exercise-vending-machine-legit-coins"></a></h4>
-                <p>The vending machine you wrote in the previous exercise (an example solution given below) accepts any value as the coin value. However, coins come in only certain values only.</p>
-                <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Legit Coins" expanded no-close>
+                <div>
+                  <h4 id="exercise-vending-machine-legit-coins">Exercise - Vending Machine - Legit Coins<a class="fa fa-anchor" href="#exercise-vending-machine-legit-coins"></a></h4>
+                  <p>The vending machine you wrote in the previous exercise (an example solution given below) accepts any value as the coin value. However, coins come in only certain values only.</p>
+                  <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_sum = <span class="hljs-number">0</span>
 is_aborting = <span class="hljs-keyword">False</span>
 
@@ -736,8 +752,8 @@ print(<span class="hljs-string">'Price:'</span>, price)
   print(<span class="hljs-string">'Here is the product'</span>)
   print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
 </code></pre>
-                <p>Modify the code so that it accepts coins of value 10, 20, 50, 100 only:</p>
-                <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+                  <p>Modify the code so that it accepts coins of value 10, 20, 50, 100 only:</p>
+                  <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
 Enter a coin: <span class="hljs-number">30</span>
 Coin <span class="hljs-keyword">not</span> recognized
 Enter a coin: <span class="hljs-number">100</span>
@@ -745,17 +761,18 @@ You have entered: <span class="hljs-number">100</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">0</span>
 </code></pre>
-                <panel type="seamless" header=":bulb: see hint">
-                  <pre><code class="hljs python">...
+                  <panel type="seamless" header=":bulb: see hint">
+                    <pre><code class="hljs python">...
 <span class="hljs-keyword">if</span> coin_value != <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> ... :
     ...
     <span class="hljs-keyword">continue</span>
 ...
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -800,11 +817,12 @@ Your balance: <span class="hljs-number">0</span>
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-multiplication-table">Exercise - Multiplication Table<a class="fa fa-anchor" href="#exercise-multiplication-table"></a></h4>
-                <p>Write a program to read in an integer and generate the multiplication table (for <code>1</code> to <code>10</code>) for that number. An example is given below:</p>
-                <pre><code class="hljs python">Enter a number: <span class="hljs-number">7</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Multiplication Table" expanded no-close>
+                <div>
+                  <h4 id="exercise-multiplication-table">Exercise - Multiplication Table<a class="fa fa-anchor" href="#exercise-multiplication-table"></a></h4>
+                  <p>Write a program to read in an integer and generate the multiplication table (for <code>1</code> to <code>10</code>) for that number. An example is given below:</p>
+                  <pre><code class="hljs python">Enter a number: <span class="hljs-number">7</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">1</span> = <span class="hljs-number">7</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">2</span> = <span class="hljs-number">14</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">3</span> = <span class="hljs-number">21</span>
@@ -816,12 +834,13 @@ Your balance: <span class="hljs-number">0</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">9</span> = <span class="hljs-number">63</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">10</span> = <span class="hljs-number">70</span>
 </code></pre>
-                <panel type="seamless" header=":bulb: see hint">
-                  <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  <panel type="seamless" header=":bulb: see hint">
+                    <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>You can use <code>break</code> and <code>continue</code> in <code>for</code> loops as well</strong>, with similar effects as in <code>while</code> loops.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The code below totals the numbers entered by the user. It uses <code>range(5)</code> to limit the number of entries to 5. It uses a <code>break</code> to exit the loop if user hits <kbd>Enter</kbd> without entering a value. It uses a <code>continue</code> statement to skip negative numbers entered by the user.</p>
@@ -854,16 +873,17 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
               </panel>
               <p></p>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Multiplication Table (Extended)" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-multiplication-table-extended">Exercise - Multiplication Table (Extended)<a class="fa fa-anchor" href="#exercise-multiplication-table-extended"></a></h4>
-                <p>Modify the code a program to,</p>
-                <ul>
-                  <li>print multiplication values of up to <code>x 20</code> (not up to <code>x 10</code> as before)</li>
-                  <li>omit squares (i.e. <code>n*n</code>). Note how <code>8 x 8</code> has been omitted in the example below. Recommended: use a <code>continue</code> statement to achieve this.</li>
-                  <li>not print rows that has a value higher than 100. Note how the printing stops after <code>8 x 12 = 96</code> in the example below. Recommended: use a <code>break</code> statement for this.</li>
-                </ul>
-                <pre><code class="hljs python">Enter a number: <span class="hljs-number">8</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Multiplication Table (Extended)" expanded no-close>
+                <div>
+                  <h4 id="exercise-multiplication-table-extended">Exercise - Multiplication Table (Extended)<a class="fa fa-anchor" href="#exercise-multiplication-table-extended"></a></h4>
+                  <p>Modify the code a program to,</p>
+                  <ul>
+                    <li>print multiplication values of up to <code>x 20</code> (not up to <code>x 10</code> as before)</li>
+                    <li>omit squares (i.e. <code>n*n</code>). Note how <code>8 x 8</code> has been omitted in the example below. Recommended: use a <code>continue</code> statement to achieve this.</li>
+                    <li>not print rows that has a value higher than 100. Note how the printing stops after <code>8 x 12 = 96</code> in the example below. Recommended: use a <code>break</code> statement for this.</li>
+                  </ul>
+                  <pre><code class="hljs python">Enter a number: <span class="hljs-number">8</span>
 <span class="hljs-number">8</span> x <span class="hljs-number">1</span> = <span class="hljs-number">8</span>
 <span class="hljs-number">8</span> x <span class="hljs-number">2</span> = <span class="hljs-number">16</span>
 <span class="hljs-number">8</span> x <span class="hljs-number">3</span> = <span class="hljs-number">24</span>
@@ -876,9 +896,10 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
 <span class="hljs-number">8</span> x <span class="hljs-number">11</span> = <span class="hljs-number">88</span>
 <span class="hljs-number">8</span> x <span class="hljs-number">12</span> = <span class="hljs-number">96</span>
 </code></pre>
-              </div>
-            </panel>
-            <p></p>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <p><strong>Loops can be nested.</strong></p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The code below use two nested <code>for</code> loops to print multiplication tables for 2, 3, and 4.</p>
@@ -893,11 +914,12 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
               </panel>
               <p></p>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Three Dice Throws" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-three-dice-throws">Exercise - Three Dice Throws<a class="fa fa-anchor" href="#exercise-three-dice-throws"></a></h4>
-                <p>Write a program to generate all possible results you can get by throwing a <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.</p>
-                <pre><code class="hljs python"><span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Three Dice Throws" expanded no-close>
+                <div>
+                  <h4 id="exercise-three-dice-throws">Exercise - Three Dice Throws<a class="fa fa-anchor" href="#exercise-three-dice-throws"></a></h4>
+                  <p>Write a program to generate all possible results you can get by throwing a <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.</p>
+                  <pre><code class="hljs python"><span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>
 <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>
 <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">3</span>
 <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">4</span>
@@ -907,19 +929,20 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
 <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>
 ...
 </code></pre>
-                <popover id="pop:exerciseThreeDiceThrows-dice" title="" placement="top">
-                    <div slot="content">
-                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br>
-                      <sub>source: wikipedia</sub></p>
-                    <p></p>
-                  </div>
-                </popover>
-                <panel type="seamless" header=":bulb: see hint">
-                  <p>Use three nested <code>for</code> loops.</p>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                  <popover id="pop:exerciseThreeDiceThrows-dice" title placement="top">
+                      <div slot="content">
+                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br>
+                        <sub>source: wikipedia</sub></p>
+                      <p></p>
+                    </div>
+                  </popover>
+                  <panel type="seamless" header=":bulb: see hint">
+                    <p>Use three nested <code>for</code> loops.</p>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -980,22 +1003,24 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
               <p></p>
             </panel>
             <p></p>
-            <panel type="danger" header=":muscle: Exercise: Circle Area" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-circle-area">Exercise - Circle Area<a class="fa fa-anchor" href="#exercise-circle-area"></a></h4>
-                <p>Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.</p>
-                <p>💡 some useful hints:</p>
-                <ul>
-                  <li>Area = PI * radius<sup>2</sup></li>
-                  <li>You can use <code>math.pi</code> as the value of PI.</li>
-                  <li>You can use the built-in function <code>round</code> to round off a number to a specified number of decimal places. e.g., <code>round(1.12345, 2)</code> returns <code>1.12</code></li>
-                </ul>
-                <pre><code class="hljs python">Enter radius: <span class="hljs-number">4.5</span>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Circle Area" expanded no-close>
+                <div>
+                  <h4 id="exercise-circle-area">Exercise - Circle Area<a class="fa fa-anchor" href="#exercise-circle-area"></a></h4>
+                  <p>Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.</p>
+                  <p>💡 some useful hints:</p>
+                  <ul>
+                    <li>Area = PI * radius<sup>2</sup></li>
+                    <li>You can use <code>math.pi</code> as the value of PI.</li>
+                    <li>You can use the built-in function <code>round</code> to round off a number to a specified number of decimal places. e.g., <code>round(1.12345, 2)</code> returns <code>1.12</code></li>
+                  </ul>
+                  <pre><code class="hljs python">Enter radius: <span class="hljs-number">4.5</span>
 Area: <span class="hljs-number">63.61725</span>
 </code></pre>
-              </div>
-            </panel>
-            <p></p>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
           <div>
@@ -1046,7 +1071,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
               </div>
               <hr style="border: 1px dotted #cccccc;">
               <p><span id="W2-1"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W2.1]</span> <big><big><strong>Design Basics</strong></big></big></big> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
@@ -1055,7 +1080,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                 <div class="indented-level1">
                   <br>
                   <p><span class="dimmed"><strong>Introduction</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.1a]</span></span> <span class="dimmed"><strong><span>Design → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1082,7 +1107,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                   </panel>
                   <br>
                   <p><span class="dimmed"><strong>Abstraction</strong></span></p>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.1b]</span></span> <span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1130,14 +1155,14 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                 </div>
               </panel>
               <p><span id="W2-2"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W2.2]</span> <big><big><strong>Models</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.2a]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1153,13 +1178,13 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                           <tip-box>
                             <p><span class="fas fa-cube"></span> A <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
                           </tip-box>
-                          <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
+                          <modal large title="Class diagrams" id="modal:modellingIntro-classDiagram">
                             <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                               <span class="fas fa-cube"></span> An example class diagram:<br></p>
                             <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
                           </modal>
                           <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
-                          <modal large="" title="%%Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%%" id="modal:modellingIntro-abstraction">
+                          <modal large title="%%Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%%" id="modal:modellingIntro-abstraction">
                               <div>
                               <div></div>
                               <p></p>
@@ -1217,7 +1242,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.2b]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Introduction →
                             </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1247,7 +1272,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                               <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
                             </ol>
                           </tip-box>
-                          <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+                          <modal large title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
                             <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                             <div>
                               <tip-box>
@@ -1313,7 +1338,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about models">
                                   <question>
@@ -1351,14 +1376,14 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                 </div>
               </panel>
               <p><span id="W2-3"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
+              <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
                     <p><big> <span class="dimmed">[W2.3]</span> <big><big><strong>Activity Diagrams</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.3a]</span></span> <span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
                             </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1378,7 +1403,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                               <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                             </div>
                           </modal>
-                          <div v-closeable="" alt="">
+                          <div v-closeable alt>
                             <p>An example activity diagram:<br>
                               <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
                               <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
@@ -1388,7 +1413,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.3b]</span></span> <span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
                             </span></strong></span> <strong><big><big><span>Linear Paths</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1414,7 +1439,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which activity diagrams are correct?">
                                   <question>
@@ -1446,7 +1471,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.3c]</span></span> <span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
                             </span></strong></span> <strong><big><big><span>Alternate Paths</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1470,7 +1495,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which activity diagrams are correct?">
                                   <question>
@@ -1505,7 +1530,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.3d]</span></span> <span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
                             </span></strong></span> <strong><big><big><span>Parallel Paths</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
@@ -1529,7 +1554,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                               <div>
                                 <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which activity diagrams are correct?">
                                   <question>
@@ -1559,7 +1584,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.3e]</span></span> <span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
                             </span></strong></span> <strong><big><big><span>Rakes</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1585,7 +1610,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                       </div>
                     </div>
                   </panel>
-                  <panel type="seamless" expanded="">
+                  <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W2.3f]</span></span> <span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
                             </span></strong></span> <strong><big><big><span>Swimlanes</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
@@ -1661,7 +1686,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.18.0</a> at Sat, 16 Feb 2019 09:28:35 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Mon, 18 Feb 2019 06:48:53 GMT</small></div>
 </footer>
 </div>
 </body>

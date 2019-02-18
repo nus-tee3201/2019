@@ -31,7 +31,7 @@
       <div id="main">
         <div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="init"><span>Init</span><a class="fa fa-anchor" href="#init"></a></h4>
@@ -45,7 +45,7 @@
                 <div>
                   <panel header="%%<span class='fas fa-paperclip'></span> Git Overview%%" class="non-printable">
                     <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
-                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     <p></p>
                   </panel>
                   <p></p>
@@ -99,7 +99,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="commit"><span>Commit</span><a class="fa fa-anchor" href="#commit"></a></h4>
@@ -231,7 +231,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                    <panel header="<span class='fas fa-paperclip'></span> Resources" expanded>
                       <ul>
                         <li><a href="https://learngitbranching.js.org/"><strong>Try Git</strong></a> is an online simulation/tutorial of Git basics. You can try its first few steps to solidify what you learned in this LO.</li>
                       </ul>
@@ -242,7 +242,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="ignore"><span>Ignore</span><a class="fa fa-anchor" href="#ignore"></a></h4>
@@ -285,7 +285,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="tag"><span>Tag</span><a class="fa fa-anchor" href="#tag"></a></h4>
@@ -328,7 +328,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="checkout"><span>Checkout</span><a class="fa fa-anchor" href="#checkout"></a></h4>
@@ -399,7 +399,7 @@ index 15b57f7..17f4528 100644
                           <li><code>git diff 0023cdd..fcd6199</code>: shows the changes between the points indicated by by commit hashes</li>
                           <li><code>git diff v1.0..HEAD</code>: shows changes that happened from the commit tagged as <code>v1.0</code> to the most recent commit.</li>
                         </ul>
-                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded>
                           <ul>
                             <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs">Git-Tower Tutorial: Inspecting Changes with Diffs</a></li>
                             <li><a href="https://stackoverflow.com/questions/8640838/how-do-i-navigate-in-the-results-of-diff">How to view the next page of a <code>git</code> command result</a></li>
@@ -410,7 +410,7 @@ index 15b57f7..17f4528 100644
                     </tab>
                   </tabs>
                   <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <trigger trigger="click" for="modal:checkout-stash">stash</trigger> them first to prevent them from being overwritten.</p>
-                  <modal large="" title="%%Extract%%" id="modal:checkout-stash">
+                  <modal large title="%%Extract%%" id="modal:checkout-stash">
                       <div>
                       <div></div>
                       <p></p>
@@ -483,7 +483,7 @@ index 15b57f7..17f4528 100644
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="stash"><span>Stash</span><a class="fa fa-anchor" href="#stash"></a></h4>
@@ -516,7 +516,7 @@ index 15b57f7..17f4528 100644
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="clone"><span>Clone</span><a class="fa fa-anchor" href="#clone"></a></h4>
@@ -556,7 +556,7 @@ index 15b57f7..17f4528 100644
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="pull"><span>Pull</span><a class="fa fa-anchor" href="#pull"></a></h4>
@@ -572,7 +572,7 @@ index 15b57f7..17f4528 100644
                   <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
                   <modal title="**Clone Repository**" id="modal:clone-repository">
                     <div>
-                      <panel type="seamless" expanded="">
+                      <panel type="seamless" expanded>
                         <span slot="header" class="card-title">
                           <div>
                             <p>Clone</p>
@@ -663,7 +663,7 @@ index 15b57f7..17f4528 100644
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="push"><span>Push</span><a class="fa fa-anchor" href="#push"></a></h4>
@@ -766,7 +766,7 @@ index 15b57f7..17f4528 100644
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="branch"><span>Branch</span><a class="fa fa-anchor" href="#branch"></a></h4>
@@ -917,7 +917,7 @@ git checkout feature1
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="merge-conflicts"><span>Merge Conflicts</span><a class="fa fa-anchor" href="#merge-conflicts"></a></h4>
@@ -976,7 +976,7 @@ white
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="create-prs"><span>Create PRs</span><a class="fa fa-anchor" href="#create-prs"></a></h4>
@@ -1042,7 +1042,7 @@ This repo can be used to practice creating PRs.
                   <img src="/2019/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
                   <p></p>
                   <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
-                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded>
                     <ul>
                       <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
                     </ul>
@@ -1053,7 +1053,7 @@ This repo can be used to practice creating PRs.
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="manage-prs"><span>Manage PRs</span><a class="fa fa-anchor" href="#manage-prs"></a></h4>
@@ -1066,7 +1066,7 @@ This repo can be used to practice creating PRs.
                 <p></p>
                 <div>
                   <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [<trigger trigger="click" for="modal:managePrs-createPrs">Tools → Git &amp; GitHub → Create PRs</trigger>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                  <modal large="" title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs">
+                  <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs">
                       <div>
                       <div>
                         <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
@@ -1123,7 +1123,7 @@ This repo can be used to practice creating PRs.
                         <img src="/2019/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
                         <p></p>
                         <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
-                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded>
                           <ul>
                             <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
                           </ul>
@@ -1164,7 +1164,7 @@ git pull origin master
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded="">
+            <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
                   <h4 id="forking-workflow"><span>Forking Workflow</span><a class="fa fa-anchor" href="#forking-workflow"></a></h4>
