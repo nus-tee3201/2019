@@ -33,6 +33,33 @@
     {"src": "se-book-adapted/print.md",
       "searchable": "no"
     },
+    {"glob": "se-book-adapted/chapters/architecture.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/cppToJava.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/designApproaches.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/designPatterns.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/gitAndGithub.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/javaTools.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/junit.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/principles.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/intellij.md",
+      "searchable": "no"
+    },
     {"glob": "book/**/index.md",
       "searchable": "no"
     },
