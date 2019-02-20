@@ -91,7 +91,7 @@ Note how the above two functions use two other functions `confirm_is_int` and `c
   
 **`confirm_range_correct(start, end)`**:
 * Raises a `ValueError` if `end` or `start` are not integers. This behavior is already implemented by the code given below, using two calls to the `confirm_is_int` function.
-* Raises a `ValueError('end is smaller than start)` if `end` is smaller than `start`. You need to implement this behavior.
+* Raises a `ValueError('end is smaller than start')` if `end` is smaller than `start`. You need to implement this behavior.
 * Partial code:
   ```python
   def confirm_range_correct(start, end):
