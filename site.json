@@ -1,6 +1,6 @@
 {
-  "baseUrl": "/cs2103-website",
-  "titlePrefix": "CS2103/T Website",
+  "baseUrl": "/2019",
+  "titlePrefix": "TE3201 Website",
   "ignore": [
     "_site/*",
     ".idea/*",
@@ -15,15 +15,13 @@
   "pages": [
     {"src": "index.md",
       "searchable": "no"},
-    {"glob": "admin/*.md"},
-    {"glob": "admin/gradeBreakdown.md"},
+    {"src": "admin/te3201-admin.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
     {"glob": "schedule/summary.md",
       "searchable": "no"},
     {"glob": "schedule/**/index.md",
       "searchable": "no"},
-    {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
     {"glob": "se-book-adapted/index.md"},
     {"glob": "se-book-adapted/chapters/*.md"},
@@ -35,7 +33,43 @@
     {"src": "se-book-adapted/print.md",
       "searchable": "no"
     },
+    {"glob": "se-book-adapted/chapters/architecture.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/cppToJava.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/designApproaches.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/designPatterns.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/gitAndGithub.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/javaTools.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/junit.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/principles.md",
+      "searchable": "no"
+    },
+    {"glob": "se-book-adapted/chapters/intellij.md",
+      "searchable": "no"
+    },
     {"glob": "book/**/index.md",
+      "searchable": "no"
+    },
+    {"glob": "programming/index.md",
+      "searchable": "yes"
+    },
+    {"glob": "programming/toc/*.md",
+      "searchable": "yes"
+    },
+    {"glob": "coding-standards/**/*.mbd",
       "searchable": "no"
     }
   ],

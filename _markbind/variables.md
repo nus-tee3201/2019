@@ -1,28 +1,30 @@
-<span id="module">CS2103</span>
+<span id="module">TE3201</span>
 
-<span id="module_pair">CS2103/T</span>
+<span id="module_pair">TE3201</span>
 
 <span id="module_name">Software Engineering</span>
 
 <span id="semester">AY1819S2</span>
 
-<span id="period">Jan '19</span>
+<span id="period">2019</span>
 
-<span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
+<span id="module_org">https://github.com/nus-{{ module | lower }}</span>
 
-<span id="module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/{{ module | lower }}-website</span>
+<span id="module_website">https://nus-{{ module | lower }}.github.io/{{ period }}</span>
 
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true</span>
 
 <span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true</span>
 
-<span id="ivle_files">https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db</span>
+<span id="ivle_slides">https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb</span>
 
-<span id="ivle_announcements">https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19</span>
+<span id="ivle_files">https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5</span>
+
+<span id="ivle_announcements">https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9</span>
 
 <span id="bugs_link">{{ module_org | safe }}/forum/issues</span>
 
-<span id="forum_link">{{ module_org | safe }}/forum/issues</span>
+<span id="forum_link">https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a</span>
 
 <span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
 
@@ -106,3 +108,7 @@
 <span id="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 
 <span id="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+
+<span id="home↑"><span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span></span>
+
+<span id="hr_double"><hr style="border-top: 3px double #c5c5c5;"></span>

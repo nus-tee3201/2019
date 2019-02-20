@@ -11,8 +11,7 @@
 
 This website ==uses a star rating system== to indicate the priority level of contents.
 
-{{ embed_topic("moduleExpectations.md#starRatingSystem", "Admin " + icon_embedding + " Module Expectations → Star Rating System", "usingThisWebsite-starRatingSystem") }}
-
+<include src="moduleExpectations.md#starRatingSystem" />
 
 </div>
 <div id="more">

@@ -25,18 +25,12 @@ Given 60% of this module is based on CA, it can appear to be _heavy_. However, *
 <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
 </p>
 
-**Star ratings for Learning Outcomes** (and textbook sections):
+**Star ratings for topics**:
 
 * **One-star topics** {{ one_star }}: The topics you need to learn just to keep up with the module. We recommend you to ==learn these topics if you want to pass the module== (i.e. up to a **C** grade).
 * **Two-stars topics** {{ two_stars }}: Can get you up to a **B+**.
-* **Three-stars topics** {{ three_stars }}: Can get you up to an **A**.
-* **Four-stars topics** {{ four_stars }}: Can be useful for getting an **A+**, tutors positions, and getting into downstream SE modules that have competitive entry requirements (e.g., CS3281&2, CS3217, CS3216). ==Four-star topics are not examinable==. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)
-
-* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }},{{ prereq_four_stars }} are relevant topoics you are expected have learned in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.
-
-**Star ratings for other things** e.g., admin info sections:
-
-* The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. ==Info rated four stars are non-essential and can be ignored== without affecting your ability to follow the module.
+* **Three-stars topics** {{ three_stars }}: Can get you up to an **A+**.
+* **Four-stars topics** {{ four_stars }}: ==Four-star topics are not examinable==. They are for your information only. Omitting them will not affect your grade.
 
 </div>
 </div>
