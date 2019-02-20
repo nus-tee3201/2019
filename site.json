@@ -68,6 +68,9 @@
     },
     {"glob": "programming/toc/*.md",
       "searchable": "yes"
+    },
+    {"glob": "coding-standards/**/*.mbd",
+      "searchable": "no"
     }
   ],
   "enableSearch": true,
