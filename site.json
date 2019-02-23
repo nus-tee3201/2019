@@ -71,5 +71,11 @@
     }
   ],
   "enableSearch": true,
-  "headingIndexingLevel": 5
+  "headingIndexingLevel": 5,
+  "plugins": ["filterTags"],
+  "pluginsContext": {
+   "filterTags" : {
+     "tags": []
+   }
+ }
 }

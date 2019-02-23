@@ -16,7 +16,7 @@ foo
 >>> Bye!
 ```
 
-<panel type="seamless" header="Partial solution">
+<panel header=":fas-battery-quarter: Partial solution" minimized>
 
 ```python
 print('>>> Hello, my name is Monty')
@@ -54,7 +54,7 @@ y
 >>> Bye!
 ```
 
-<panel type="seamless" header="Partial solution">
+<panel header=":fas-battery-quarter: Partial solution" minimized>
 
 ```python
 print('>>> Hello, my name is Monty')
@@ -90,7 +90,7 @@ def main():
 main()
 ```
 
-<panel type="seamless" header="Partial solution">
+<panel header=":fas-battery-quarter: Partial solution" minimized>
 
 ```python
 import sys
@@ -188,7 +188,7 @@ The above technique can be used to extract the item description from an `add` co
 </box>
 
 
-<panel type="seamless" header="Partial solution">
+<panel header=":fas-battery-quarter: Partial solution" minimized>
 
 ```python
 import sys
@@ -330,7 +330,7 @@ def main():
 </box>
 
 
-<panel type="seamless" header="Partial solution">
+<panel header=":fas-battery-quarter: Partial solution" minimized>
 
 ```python
 
@@ -472,7 +472,7 @@ more text
 </box>
 
 
-<panel type="seamless" header="Partial solution">
+<panel header=":fas-battery-quarter: Partial solution" minimized>
 
 ```python
 def print_greeting():
@@ -494,5 +494,176 @@ def print_greeting():
 
 </div>
 {{ hr_double }}
+<div id="monty7">
+
+### Monty 7
+
+Enhance the [Monty 6 code]({{ baseUrl }}/programming/toc/monty.html#monty-6) so that it **saves tasks into a csv file**:
+* The filename can be specified in the code. e.g.,
+  ```python
+  DATA_FILE = 'monty7.csv'
+  ```
+* The format of the file is up to you. Here is an example:
+  ```
+  borrow book,done
+  read book,pending
+  return book,pending
+  ```
+* The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
+  ```python
+   items = []
+   DATA_FILE = 'monty7.csv'
+   
+   
+   def main():
+       load_data(DATA_FILE) # load task data from the file
+       print_greeting()
+       while True:
+           try:
+               command = read_command()
+               execute_command(command)
+               save_data(DATA_FILE, items) # save all tasks in the file
+           except Exception as e:
+               print('>>> SORRY, I could not perform that command. Problem:', e)
+   
+   
+   main()
+  ```
+
+A sample output is given below. Note how Monty is able to show at the very start the three tasks loaded from the file.
+
+```
+*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+>>> What can I do for you?
+
+list
+>>> Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | read book                  
+  ✗    |   3   | return book                
+--------------------------------------------------
+>>> What can I do for you?
+```
+
+<panel header=":fas-battery-quarter: Partial solution" minimized>
+
+Here is the code for loading data from the file.
+```python
+def load_data(filename):
+    data_file = open(filename)
+    deliveries_reader = csv.reader(data_file)
+    for row in deliveries_reader:
+        if not row:
+            continue
+        add_item_from_csv_line(row)
+    data_file.close()
+
+
+def add_item_from_csv_line(values):
+    status = True if values[1] == 'done' else False
+    items.append([values[0], status])  # items is a global variable
+```
+
+Note that `status = True if values[1] == 'done' else False`{.python} is a shortcut syntax. It is equivalent to the code below:
+```
+if values[1] == 'done':
+    status = True
+else:
+    status = False
+```
+</panel>
+<p/>
+
+Given below are some more features you can consider adding at this point (it is ==optional to add them to Monty 7==):
+* **Remove the the need for the user to confirm before exiting Monty.** As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
+  ```
+  >>> What can I do for you?
+  
+  exit
+  >>> Bye!
+  ```
+* **Add a `delete` command** that can delete a task at a specific index.
+  ```
+  list
+  >>> Here is the list of tasks:
+  ==================================================
+  STATUS | INDEX | DESCRIPTION                
+  --------------------------------------------------
+    ✓    |   1   | borrow book                
+    ✗    |   2   | read book                  
+    ✗    |   3   | return book                
+    ✗    |   4   | buy a book                 
+  --------------------------------------------------
+  >>> What can I do for you?
+  
+  delete 4
+  >>> Task deleted from the list
+  >>> What can I do for you?
+  
+  list
+  >>> Here is the list of tasks:
+  ==================================================
+  STATUS | INDEX | DESCRIPTION                
+  --------------------------------------------------
+    ✓    |   1   | borrow book                
+    ✗    |   2   | read book                  
+    ✗    |   3   | return book                
+  --------------------------------------------------
+  ```
+* **Add a `pending` command** that can mark a task as pending (i.e., the opposite of the `done` command).
+  ```
+   >>> What can I do for you?
+   
+   list
+   >>> Here is the list of tasks:
+   ==================================================
+   STATUS | INDEX | DESCRIPTION                
+   --------------------------------------------------
+     ✓    |   1   | borrow book                
+     ✗    |   2   | read book                  
+     ✗    |   3   | return book                
+   --------------------------------------------------
+   >>> What can I do for you?
+   
+   pending 1
+   >>> OK, I have marked that item as pending
+   >>> What can I do for you?
+   
+   list
+   >>> Here is the list of tasks:
+   ==================================================
+   STATUS | INDEX | DESCRIPTION                
+   --------------------------------------------------
+     ✗    |   1   | borrow book                
+     ✗    |   2   | read book                  
+     ✗    |   3   | return book                
+   --------------------------------------------------
+   >>> What can I do for you?
+  ```
+* **Make commands case insensitive and immune to extra leading/trailing spaces**. For example, all these commands should work the same way.
+  ```
+  add read book
+  ADD read book
+  Add read book
+  add    read book
+      add read book
+  ```
+
+</div>
+
+{{ hr_double | safe }}
 
 %%Remaining increments to be added soon.%%

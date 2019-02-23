@@ -711,7 +711,8 @@
         "monty-3": "Monty 3",
         "monty-4": "Monty 4",
         "monty-5": "Monty 5",
-        "monty-6": "Monty 6"
+        "monty-6": "Monty 6",
+        "monty-7": "Monty 7"
       },
       "title": "Python Basics: The Monty Project",
       "footer": "footer.md",
@@ -830,14 +831,7 @@
         "tutorials": "Tutorials",
         "textbook": "Textbook",
         "programming-language": "Programming Language",
-        "project": "Project",
-        "software-to-build": "Software to build",
-        "constraints": "Constraints",
-        "deliverables": "Deliverables",
-        "assessment": "Assessment",
-        "exam": "Exam",
-        "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
-        "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)"
+        "project": "Project"
       },
       "title": "Admin Info",
       "footer": "footer.md",

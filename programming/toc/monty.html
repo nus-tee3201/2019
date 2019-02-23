@@ -39,6 +39,7 @@
       <a class="nav-link py-1" href="#monty-4">Monty 4&#x200E;</a>
       <a class="nav-link py-1" href="#monty-5">Monty 5&#x200E;</a>
       <a class="nav-link py-1" href="#monty-6">Monty 6&#x200E;</a>
+      <a class="nav-link py-1" href="#monty-7">Monty 7&#x200E;</a>
     </nav>
 
   </nav>
@@ -130,7 +131,7 @@ foo
 &gt;&gt;&gt; Your command is: foo
 &gt;&gt;&gt; Bye!
 </code></pre>
-                <panel type="seamless" header="Partial solution">
+                <panel header=":fas-battery-quarter: Partial solution" minimized>
                   <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-comment"># ADD MORE CODE HERE</span>
 </code></pre>
@@ -161,7 +162,7 @@ exit
 y
 &gt;&gt;&gt; Bye!
 </code></pre>
-                <panel type="seamless" header="Partial solution">
+                <panel header=":fas-battery-quarter: Partial solution" minimized>
                   <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
     print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
@@ -189,7 +190,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 
 main()
 </code></pre>
-                <panel type="seamless" header="Partial solution">
+                <panel header=":fas-battery-quarter: Partial solution" minimized>
                   <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
@@ -277,7 +278,7 @@ abcde
                   <p>The above technique can be used to extract the item description from an <code>add</code> command.
                   </p>
                 </box>
-                <panel type="seamless" header="Partial solution">
+                <panel header=":fas-battery-quarter: Partial solution" minimized>
                   <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 items = []
@@ -405,7 +406,7 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
 </code></pre>
                 </box>
-                <panel type="seamless" header="Partial solution">
+                <panel header=":fas-battery-quarter: Partial solution" minimized>
                   <pre><code class="hljs python">
 items = []
 
@@ -535,7 +536,7 @@ more text
                   <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a>
                 </box>
                 </p>
-                <panel type="seamless" header="Partial solution">
+                <panel header=":fas-battery-quarter: Partial solution" minimized>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
     banner = <span class="hljs-string">'''
 *******************************************************************************************
@@ -553,6 +554,168 @@ more text
 </code></pre>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
+              <div id="monty7">
+                <h3 id="monty-7">Monty 7<a class="fa fa-anchor" href="#monty-7"></a></h3>
+                <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-6">Monty 6 code</a> so that it <strong>saves tasks into a csv file</strong>:</p>
+                <ul>
+                  <li>The filename can be specified in the code. e.g.,
+                    <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+</code></pre>
+                  </li>
+                  <li>The format of the file is up to you. Here is an example:
+                    <pre><code class="hljs">borrow book,done
+read book,pending
+return book,pending
+</code></pre>
+                  </li>
+                  <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
+                    <pre><code class="hljs python"> items = []
+ DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+ 
+ 
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
+     print_greeting()
+     <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+         <span class="hljs-keyword">try</span>:
+             command = read_command()
+             execute_command(command)
+             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
+         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+ 
+ 
+ main()
+</code></pre>
+                  </li>
+                </ul>
+                <p>A sample output is given below. Note how Monty is able to show at the very start the three tasks loaded from the file.</p>
+                <pre><code class="hljs">*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | read book                  
+  ✗    |   3   | return book                
+--------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                  <p>Here is the code for loading data from the file.</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+    data_file = open(filename)
+    deliveries_reader = csv.reader(data_file)
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> row:
+            <span class="hljs-keyword">continue</span>
+        add_item_from_csv_line(row)
+    data_file.close()
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span>
+    status = <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span>
+    items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
+</code></pre>
+                  <p>Note that <code class="hljs inline python">status = <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span></code> is a shortcut syntax. It is equivalent to the code below:</p>
+                  <pre><code class="hljs">if values[1] == 'done':
+    status = True
+else:
+    status = False
+</code></pre>
+                </panel>
+                <p />
+                <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
+                <ul>
+                  <li><strong>Remove the the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
+                    <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Bye!
+</code></pre>
+                  </li>
+                  <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.
+                    <pre><code class="hljs">list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | read book                  
+  ✗    |   3   | return book                
+  ✗    |   4   | buy a book                 
+--------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+delete 4
+&gt;&gt;&gt; Task deleted from the list
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | read book                  
+  ✗    |   3   | return book                
+--------------------------------------------------
+</code></pre>
+                  </li>
+                  <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
+                    <pre><code class="hljs"> &gt;&gt;&gt; What can I do for you?
+ 
+ list
+ &gt;&gt;&gt; Here is the list of tasks:
+ ==================================================
+ STATUS | INDEX | DESCRIPTION                
+ --------------------------------------------------
+   ✓    |   1   | borrow book                
+   ✗    |   2   | read book                  
+   ✗    |   3   | return book                
+ --------------------------------------------------
+ &gt;&gt;&gt; What can I do for you?
+ 
+ pending 1
+ &gt;&gt;&gt; OK, I have marked that item as pending
+ &gt;&gt;&gt; What can I do for you?
+ 
+ list
+ &gt;&gt;&gt; Here is the list of tasks:
+ ==================================================
+ STATUS | INDEX | DESCRIPTION                
+ --------------------------------------------------
+   ✗    |   1   | borrow book                
+   ✗    |   2   | read book                  
+   ✗    |   3   | return book                
+ --------------------------------------------------
+ &gt;&gt;&gt; What can I do for you?
+</code></pre>
+                  </li>
+                  <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
+                    <pre><code class="hljs">add read book
+ADD read book
+Add read book
+add    read book
+    add read book
+</code></pre>
+                  </li>
+                </ul>
+              </div>
+              <hr style="border-top: 3px double #c5c5c5;" />
               <p><span class="dimmed">Remaining increments to be added soon.</span></p>
             </div>
           </div>
@@ -561,11 +724,60 @@ more text
     </div>
   </div>
 </div>
-<div id="flex-div"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Wed, 20 Feb 2019 09:30:39 GMT</small></div>
+    <small>This site was built with &lt;a href=&#39;https://markbind.github.io/markbind/&#39;&gt;MarkBind 1.19.0&lt;/a&gt; at Sat, 23 Feb 2019 11:16:11 GMT</small>
+  </div>
 </footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>

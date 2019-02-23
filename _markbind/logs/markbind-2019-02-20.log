@@ -1673,3 +1673,160 @@
 2019-02-20T09:28:52.314Z - info: Rebuilding 673 pages
 2019-02-20T09:30:36.114Z - info: Website generation started at 5:30:32 PM
 2019-02-20T09:30:38.073Z - info: Building assets...
+2019-02-20T09:30:39.977Z - info: Assets built
+2019-02-20T09:30:39.977Z - info: Generating pages...
+2019-02-20T09:31:34.946Z - info: Pages built
+2019-02-20T09:31:45.243Z - info: Website generation complete! Total build time: 72.387s
+2019-02-20T09:31:45.243Z - info: Build success!
+2019-02-20T09:31:45.244Z - info: Generate Site durationMs=72388
+2019-02-20T09:31:45.250Z - info: Site data built
+2019-02-20T09:34:02.591Z - info: Deployed!
+2019-02-20T09:36:28.306Z - info: Website generation started at 5:36:25 PM
+2019-02-20T09:36:30.215Z - info: Building assets...
+2019-02-20T09:36:32.088Z - info: Assets built
+2019-02-20T09:36:32.089Z - info: Generating pages...
+2019-02-20T09:37:27.500Z - info: Pages built
+2019-02-20T09:37:37.663Z - info: Website generation complete! Total build time: 72.378s
+2019-02-20T09:37:37.674Z - info: Generate Site durationMs=72390
+2019-02-20T09:37:38.014Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-20T09:37:38.014Z - info: Press CTRL+C to stop ...
+2019-02-20T09:37:38.040Z - info: Site data built
+2019-02-20T09:47:54.724Z - info: [5:47:54 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\rules.mbdf
+2019-02-20T09:47:55.730Z - info: Rebuilding affected source files
+2019-02-20T09:47:55.732Z - info: Rebuilding 3 pages
+2019-02-20T09:47:56.227Z - info: Pages rebuilt
+2019-02-20T09:47:56.238Z - info: Site data built
+2019-02-20T09:49:49.034Z - info: [5:49:49 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\rules.mbdf
+2019-02-20T09:49:50.036Z - info: Rebuilding affected source files
+2019-02-20T09:49:50.037Z - info: Rebuilding 3 pages
+2019-02-20T09:49:50.325Z - info: Pages rebuilt
+2019-02-20T09:49:50.332Z - info: Site data built
+2019-02-20T09:50:09.446Z - info: [5:50:09 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\rules.mbdf
+2019-02-20T09:50:10.447Z - info: Rebuilding affected source files
+2019-02-20T09:50:10.450Z - info: Rebuilding 3 pages
+2019-02-20T09:50:10.824Z - info: Pages rebuilt
+2019-02-20T09:50:10.831Z - info: Site data built
+2019-02-20T09:52:21.720Z - info: [5:52:21 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\rules.mbdf
+2019-02-20T09:52:22.721Z - info: Rebuilding affected source files
+2019-02-20T09:52:22.722Z - info: Rebuilding 3 pages
+2019-02-20T09:52:23.080Z - info: Pages rebuilt
+2019-02-20T09:52:23.090Z - info: Site data built
+2019-02-20T09:53:18.952Z - info: [5:53:18 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T09:53:19.953Z - info: Rebuilding affected source files
+2019-02-20T09:53:19.956Z - info: Rebuilding 1 pages
+2019-02-20T09:53:20.137Z - info: Pages rebuilt
+2019-02-20T09:53:20.144Z - info: Site data built
+2019-02-20T09:53:48.938Z - info: [5:53:48 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T09:53:49.938Z - info: Rebuilding affected source files
+2019-02-20T09:53:49.940Z - info: Rebuilding 1 pages
+2019-02-20T09:53:50.112Z - info: Pages rebuilt
+2019-02-20T09:53:50.119Z - info: Site data built
+2019-02-20T09:54:19.837Z - info: [5:54:19 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T09:54:20.838Z - info: Rebuilding affected source files
+2019-02-20T09:54:20.839Z - info: Rebuilding 1 pages
+2019-02-20T09:54:20.967Z - info: Pages rebuilt
+2019-02-20T09:54:20.974Z - info: Site data built
+2019-02-20T09:55:28.660Z - info: [5:55:28 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T09:55:29.662Z - info: Rebuilding affected source files
+2019-02-20T09:55:29.663Z - info: Rebuilding 1 pages
+2019-02-20T09:55:29.824Z - info: Pages rebuilt
+2019-02-20T09:55:29.831Z - info: Site data built
+2019-02-20T09:57:55.603Z - info: [5:57:55 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T09:57:56.604Z - info: Rebuilding affected source files
+2019-02-20T09:57:56.605Z - info: Rebuilding 1 pages
+2019-02-20T09:57:56.741Z - info: Pages rebuilt
+2019-02-20T09:57:56.749Z - info: Site data built
+2019-02-20T09:58:31.156Z - info: [5:58:31 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T09:58:32.156Z - info: Rebuilding affected source files
+2019-02-20T09:58:32.157Z - info: Rebuilding 1 pages
+2019-02-20T09:58:32.327Z - info: Pages rebuilt
+2019-02-20T09:58:32.335Z - info: Site data built
+2019-02-20T09:59:34.709Z - info: [5:59:34 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\rules.mbdf
+2019-02-20T09:59:35.712Z - info: Rebuilding affected source files
+2019-02-20T09:59:35.713Z - info: Rebuilding 3 pages
+2019-02-20T09:59:36.081Z - info: Pages rebuilt
+2019-02-20T09:59:36.088Z - info: Site data built
+2019-02-20T10:01:01.168Z - info: [6:01:01 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T10:01:02.170Z - info: Rebuilding affected source files
+2019-02-20T10:01:02.173Z - info: Rebuilding 1 pages
+2019-02-20T10:01:02.288Z - info: Pages rebuilt
+2019-02-20T10:01:02.295Z - info: Site data built
+2019-02-20T10:01:39.719Z - info: Website generation started at 6:01:36 PM
+2019-02-20T10:01:41.655Z - info: Building assets...
+2019-02-20T10:01:43.538Z - info: Assets built
+2019-02-20T10:01:43.539Z - info: Generating pages...
+2019-02-20T10:02:38.577Z - info: Pages built
+2019-02-20T10:02:48.739Z - info: Website generation complete! Total build time: 72.248s
+2019-02-20T10:02:48.751Z - info: Generate Site durationMs=72261
+2019-02-20T10:02:49.093Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-20T10:02:49.093Z - info: Press CTRL+C to stop ...
+2019-02-20T10:02:49.126Z - info: Site data built
+2019-02-20T10:06:55.102Z - info: [6:06:55 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\site.json
+2019-02-20T10:06:56.112Z - info: Assets built
+2019-02-20T10:07:36.127Z - info: [6:07:36 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T10:07:37.132Z - info: Rebuilding affected source files
+2019-02-20T10:07:37.134Z - info: Rebuilding 1 pages
+2019-02-20T10:07:37.332Z - info: Pages rebuilt
+2019-02-20T10:07:37.340Z - info: Site data built
+2019-02-20T10:07:45.104Z - info: [6:07:45 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T10:07:46.104Z - info: Rebuilding affected source files
+2019-02-20T10:07:46.106Z - info: Rebuilding 1 pages
+2019-02-20T10:07:46.308Z - info: Pages rebuilt
+2019-02-20T10:07:46.317Z - info: Site data built
+2019-02-20T10:09:32.064Z - info: Website generation started at 6:09:29 PM
+2019-02-20T10:09:33.949Z - info: Building assets...
+2019-02-20T10:09:35.844Z - info: Assets built
+2019-02-20T10:09:35.845Z - info: Generating pages...
+2019-02-20T10:10:29.466Z - info: Pages built
+2019-02-20T10:10:39.589Z - info: Website generation complete! Total build time: 70.578s
+2019-02-20T10:10:39.602Z - info: Generate Site durationMs=70591
+2019-02-20T10:10:39.947Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-20T10:10:39.947Z - info: Press CTRL+C to stop ...
+2019-02-20T10:10:39.980Z - info: Site data built
+2019-02-20T10:25:11.042Z - info: [6:25:11 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\basic.mbd
+2019-02-20T10:25:11.045Z - info: [6:25:11 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\intermediate.mbd
+2019-02-20T10:25:11.046Z - info: [6:25:11 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\site.json
+2019-02-20T10:25:12.045Z - info: Rebuilding affected source files
+2019-02-20T10:25:12.047Z - info: Rebuilding 2 pages
+2019-02-20T10:25:12.144Z - info: Assets built
+2019-02-20T10:25:12.476Z - info: Pages rebuilt
+2019-02-20T10:25:12.489Z - info: Site data built
+2019-02-20T10:26:27.806Z - info: [6:26:27 PM] Reload for file deletion: C:\repos\nus-te3201\te3201-2019-website\coding-standards\basic.css
+2019-02-20T10:26:28.809Z - info: Assets removed
+2019-02-20T10:26:31.247Z - info: [6:26:31 PM] Reload for file deletion: C:\repos\nus-te3201\te3201-2019-website\coding-standards\intermediate.css
+2019-02-20T10:26:32.248Z - info: Assets removed
+2019-02-20T11:20:03.435Z - info: Website generation started at 7:20:00 PM
+2019-02-20T11:20:05.193Z - info: Building assets...
+2019-02-20T11:20:06.980Z - info: Assets built
+2019-02-20T11:20:06.981Z - info: Generating pages...
+2019-02-20T11:20:59.368Z - info: Pages built
+2019-02-20T11:21:09.350Z - info: Website generation complete! Total build time: 68.905s
+2019-02-20T11:21:09.362Z - info: Generate Site durationMs=68918
+2019-02-20T11:21:09.696Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-20T11:21:09.696Z - info: Press CTRL+C to stop ...
+2019-02-20T11:21:09.725Z - info: Site data built
+2019-02-20T11:36:51.345Z - info: Website generation started at 7:36:48 PM
+2019-02-20T11:36:53.343Z - info: Building assets...
+2019-02-20T11:36:55.138Z - info: Assets built
+2019-02-20T11:36:55.138Z - info: Generating pages...
+2019-02-20T11:38:10.417Z - info: Pages built
+2019-02-20T11:38:25.784Z - info: Website generation complete! Total build time: 97.755s
+2019-02-20T11:38:25.798Z - info: Generate Site durationMs=97770
+2019-02-20T11:38:26.177Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-20T11:38:26.177Z - info: Press CTRL+C to stop ...
+2019-02-20T11:38:26.217Z - info: Site data built
+2019-02-20T11:41:54.016Z - info: [7:41:54 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\coding-standards\java\index.mbd
+2019-02-20T11:41:55.021Z - info: Rebuilding affected source files
+2019-02-20T11:41:55.023Z - info: Rebuilding 1 pages
+2019-02-20T11:41:55.224Z - info: Pages rebuilt
+2019-02-20T11:41:55.233Z - info: Site data built
+2019-02-20T11:45:28.918Z - info: Website generation started at 7:45:25 PM
+2019-02-20T11:45:31.258Z - info: Building assets...
+2019-02-20T11:45:33.514Z - info: Assets built
+2019-02-20T11:45:33.515Z - info: Generating pages...
+2019-02-20T11:46:28.565Z - info: Pages built
+2019-02-20T11:46:38.878Z - info: Website generation complete! Total build time: 73.506s
+2019-02-20T11:46:38.892Z - info: Generate Site durationMs=73521
+2019-02-20T11:46:39.240Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-20T11:46:39.240Z - info: Press CTRL+C to stop ...
+2019-02-20T11:46:39.272Z - info: Site data built
