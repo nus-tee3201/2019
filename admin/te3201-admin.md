@@ -138,7 +138,7 @@ When creating repl.it accounts, please use a username similar to your actual nam
   * Marks breakdown [40 marks]:
     * Midterm submission: [10 marks]
     * Final submission: [30 marks]<br><br>
-* ****Option C (mix of A and B):****
+* ****Option C (a mix of A and B):****
   * Similar to option A, you should submit weekly exercises and project increments.
   * Do the project ~~individually or~~ as a team of 2-3 members.
   * Programming language: Python
@@ -151,11 +151,7 @@ When creating repl.it accounts, please use a username similar to your actual nam
 
 Missing project increments will be filled up near to the corresponding week.
 
-{% for i in range(1, 12) -%}
-<panel header="week{{ i }}" expanded>
-<include src="../programming/monty/monty.mbdf#monty{{ i }}" optional />
-</panel>
-{%- endfor %}
+<include src="../programming/monty/monty.mbdf" />
 
 </modal>
 
@@ -227,12 +223,12 @@ Some suggestions for _additional functionality_:
 
 * **Week 8** (mid-term submission):
   * Deadline: Week 8, Tuesday 6pm
-  * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement)
-    * Submission: demo during lecture in week 8.
+  * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement). If you are taking option A or C, implement at least upto [Monty 5]({{ baseUrl }}/programming/toc/monty.html).
+    * Submission: demo during the lecture in week 8.
   * Documentation:
     * Sections to include:
       * Cover page: Include product name, names of team members
-      * User stories: Give user stories to cover all current and planned future functionalities
+      * User stories: Give user stories to cover all current and planned future features
       * Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.
       * Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.
       * Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.
