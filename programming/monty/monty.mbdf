@@ -498,7 +498,57 @@ def print_greeting():
 
 ### Monty 7
 
-Enhance the [Monty 6 code]({{ baseUrl }}/programming/toc/monty.html#monty-6) so that it **saves tasks into a csv file**:
+Enhance the [Monty 6 code]({{ baseUrl }}/programming/toc/monty.html#monty-6) in the following ways:
+* Monty **saves tasks into a csv file**.
+* **Add a `delete` command** that can delete a task at a specific index.
+
+A sample output is given below. Note the following:
+* Monty is able to show at the very start the three tasks loaded from the file.
+* When item 2 is deleted, the item previously at index 3 moves to position 2.
+
+```
+*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+>>> What can I do for you?
+
+list
+>>> Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | read book                  
+  ✗    |   3   | return book                
+--------------------------------------------------
+>>> What can I do for you?
+
+delete 2
+>>> Task deleted from the list
+>>> What can I do for you?
+
+list
+>>> Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | return book                  
+--------------------------------------------------
+```
+
+<box>
+
+:bulb: here are some tips:
+
 * The filename can be specified in the code. e.g.,
   ```python
   DATA_FILE = 'monty7.csv'
@@ -529,34 +579,7 @@ Enhance the [Monty 6 code]({{ baseUrl }}/programming/toc/monty.html#monty-6) so 
    
    main()
   ```
-
-A sample output is given below. Note how Monty is able to show at the very start the three tasks loaded from the file.
-
-```
-*******************************************************************************************
-*  __          __  _                            _          __  __             _           *
-*  \ \        / / | |                          | |        |  \/  |           | |          *
-*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
-*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
-*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
-*                                                                                  __/ |  *
-*                                                                                 |___/   *
-******************************************************************************************* 
-
->>> What can I do for you?
-
-list
->>> Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | read book                  
-  ✗    |   3   | return book                
---------------------------------------------------
->>> What can I do for you?
-```
+</box>
 
 <panel header=":fas-battery-quarter: Partial solution" minimized>
 
@@ -594,34 +617,6 @@ Given below are some more features you can consider adding at this point (it is 
   
   exit
   >>> Bye!
-  ```
-* **Add a `delete` command** that can delete a task at a specific index.
-  ```
-  list
-  >>> Here is the list of tasks:
-  ==================================================
-  STATUS | INDEX | DESCRIPTION                
-  --------------------------------------------------
-    ✓    |   1   | borrow book                
-    ✗    |   2   | read book                  
-    ✗    |   3   | return book                
-    ✗    |   4   | buy a book                 
-  --------------------------------------------------
-  >>> What can I do for you?
-  
-  delete 4
-  >>> Task deleted from the list
-  >>> What can I do for you?
-  
-  list
-  >>> Here is the list of tasks:
-  ==================================================
-  STATUS | INDEX | DESCRIPTION                
-  --------------------------------------------------
-    ✓    |   1   | borrow book                
-    ✗    |   2   | read book                  
-    ✗    |   3   | return book                
-  --------------------------------------------------
   ```
 * **Add a `pending` command** that can mark a task as pending (i.e., the opposite of the `done` command).
   ```

@@ -384,7 +384,7 @@
               </li>
             </ul>
           </li>
-          <li><strong><strong>Option C (mix of A and B):</strong></strong>
+          <li><strong><strong>Option C (a mix of A and B):</strong></strong>
             <ul>
               <li>Similar to option A, you should submit weekly exercises and project increments.</li>
               <li>Do the project <s>individually or</s> as a team of 2-3 members.</li>
@@ -401,8 +401,10 @@
         </ul>
         <modal large title="Project Increments" id="modal:admin-projectIncrements">
           <p>Missing project increments will be filled up near to the corresponding week.</p>
-          <panel header="week1" expanded>
-            <div>
+          <div>
+            <p>The project below explains how to build a simple chat bot called Monty, adding functionality in small incremental steps.</p>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty1">
               <h3 id="monty-1">Monty 1<a class="fa fa-anchor" href="#monty-1"></a></h3>
               <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
               <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
@@ -417,9 +419,8 @@ foo
 </code></pre>
               </panel>
             </div>
-          </panel>
-          <panel header="week2" expanded>
-            <div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty2">
               <h3 id="monty-2">Monty 2<a class="fa fa-anchor" href="#monty-2"></a></h3>
               <p>Extend <a href="/2019/programming/toc/monty.html#monty-1">Monty 1 code</a> to work as follows:</p>
               <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
@@ -452,9 +453,8 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 </code></pre>
               </panel>
             </div>
-          </panel>
-          <panel header="week3" expanded>
-            <div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty3">
               <h3 id="monty-3">Monty 3<a class="fa fa-anchor" href="#monty-3"></a></h3>
               <p>Restructure the <a href="/2019/programming/toc/monty.html#monty-2">Monty 2 code</a> to fit the following structure, while keeping the behavior same as Monty 2.</p>
               <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
@@ -502,9 +502,8 @@ main()
 </code></pre>
               </panel>
             </div>
-          </panel>
-          <panel header="week4" expanded>
-            <div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty4">
               <h3 id="monty-4">Monty 4<a class="fa fa-anchor" href="#monty-4"></a></h3>
               <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-3">Monty 3 code</a> to improve the functionality as per the sample output given below.</p>
               <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
@@ -608,9 +607,8 @@ main()
 </code></pre>
               </panel>
             </div>
-          </panel>
-          <panel header="week5" expanded>
-            <div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty5">
               <h3 id="monty-5">Monty 5<a class="fa fa-anchor" href="#monty-5"></a></h3>
               <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-4">Monty 4 code</a> in the following ways:</p>
               <ul>
@@ -745,9 +743,8 @@ main()
 </code></pre>
               </panel>
             </div>
-          </panel>
-          <panel header="week6" expanded>
-            <div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty6">
               <h3 id="monty-6">Monty 6<a class="fa fa-anchor" href="#monty-6"></a></h3>
               <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-5">Monty 5 code</a> in the following ways:</p>
               <ul>
@@ -838,44 +835,19 @@ more text
     print(banner.strip(), <span class="hljs-string">'\n'</span>)
 </code></pre>
             </div>
-          </panel>
-          <panel header="week7" expanded>
-            <div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty7">
               <h3 id="monty-7">Monty 7<a class="fa fa-anchor" href="#monty-7"></a></h3>
-              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-6">Monty 6 code</a> so that it <strong>saves tasks into a csv file</strong>:</p>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-6">Monty 6 code</a> in the following ways:</p>
               <ul>
-                <li>The filename can be specified in the code. e.g.,
-                  <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
-</code></pre>
-                </li>
-                <li>The format of the file is up to you. Here is an example:
-                  <pre><code class="hljs">borrow book,done
-read book,pending
-return book,pending
-</code></pre>
-                </li>
-                <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
-                  <pre><code class="hljs python"> items = []
- DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
- 
- 
- <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
-     print_greeting()
-     <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
-         <span class="hljs-keyword">try</span>:
-             command = read_command()
-             execute_command(command)
-             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
-         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
- 
- 
- main()
-</code></pre>
-                </li>
+                <li>Monty <strong>saves tasks into a csv file</strong>.</li>
+                <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
               </ul>
-              <p>A sample output is given below. Note how Monty is able to show at the very start the three tasks loaded from the file.</p>
+              <p>A sample output is given below. Note the following:</p>
+              <ul>
+                <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
+                <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
+              </ul>
               <pre><code class="hljs">*******************************************************************************************
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
@@ -899,7 +871,55 @@ STATUS | INDEX | DESCRIPTION
   ✗    |   3   | return book                
 --------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
+
+delete 2
+&gt;&gt;&gt; Task deleted from the list
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | return book                  
+--------------------------------------------------
 </code></pre>
+              <box>
+                <p>💡 here are some tips:</p>
+                <ul>
+                  <li>The filename can be specified in the code. e.g.,
+                    <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+</code></pre>
+                  </li>
+                  <li>The format of the file is up to you. Here is an example:
+                    <pre><code class="hljs">borrow book,done
+read book,pending
+return book,pending
+</code></pre>
+                  </li>
+                  <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
+                    <pre><code class="hljs python"> items = []
+ DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+ 
+ 
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
+     print_greeting()
+     <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+         <span class="hljs-keyword">try</span>:
+             command = read_command()
+             execute_command(command)
+             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
+         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+ 
+ 
+ main()
+</code></pre>
+                  </li>
+                </ul>
+              </box>
               <panel header=":fas-battery-quarter: Partial solution" minimized>
                 <p>Here is the code for loading data from the file.</p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
@@ -931,34 +951,6 @@ else:
 
 exit
 &gt;&gt;&gt; Bye!
-</code></pre>
-                </li>
-                <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.
-                  <pre><code class="hljs">list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | read book                  
-  ✗    |   3   | return book                
-  ✗    |   4   | buy a book                 
---------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-
-delete 4
-&gt;&gt;&gt; Task deleted from the list
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | read book                  
-  ✗    |   3   | return book                
---------------------------------------------------
 </code></pre>
                 </li>
                 <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
@@ -1003,24 +995,8 @@ add    read book
             </div>
             <hr style="border-top: 3px double #c5c5c5;" />
             <p><span class="dimmed">Remaining increments to be added soon.</span></p>
+          </div>
       </div>
-      </panel>
-      <panel header="week8" expanded="" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <div cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md" include-path="C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf">
-        </div>
-      </panel>
-      <panel header="week9" expanded="" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <div cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md" include-path="C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf">
-        </div>
-      </panel>
-      <panel header="week10" expanded="" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <div cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md" include-path="C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf">
-        </div>
-      </panel>
-      <panel header="week11" expanded="" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <div cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md" include-path="C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf">
-        </div>
-      </panel>
       </modal>
       <h3 id="software-to-build">Software to build</h3>
       <p>You will be building a personal assistant chat-bot software named <em>Monty</em> (<em>Monty</em> is a temporary name; you should give a different name to your own chat bot)</p>
@@ -1122,9 +1098,9 @@ list : lists all TODOs
           <p><strong>Week 8</strong> (mid-term submission):</p>
           <ul>
             <li>Deadline: Week 8, Tuesday 6pm</li>
-            <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement)
+            <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement). If you are taking option A or C, implement at least upto <a href="/2019/programming/toc/monty.html">Monty 5</a>.
               <ul>
-                <li>Submission: demo during lecture in week 8.</li>
+                <li>Submission: demo during the lecture in week 8.</li>
               </ul>
             </li>
             <li>Documentation:
@@ -1132,7 +1108,7 @@ list : lists all TODOs
                 <li>Sections to include:
                   <ul>
                     <li>Cover page: Include product name, names of team members</li>
-                    <li>User stories: Give user stories to cover all current and planned future functionalities</li>
+                    <li>User stories: Give user stories to cover all current and planned future features</li>
                     <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
                     <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
                     <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.</li>
@@ -1342,49 +1318,48 @@ list : lists all TODOs
     </div>
     </p>
   </div>
-  </panel>
-  </modal></br></br>
+</div>
+</modal></br></br></div>
 </div>
 </div>
-</panel>
 </modal></br></br></div>
 </div>
 </div>
 </div>
 </div>
-</panel>
+</div>
 </modal></br></br></div>
 </div>
 </div>
 </div>
 <footer>
   <div class="text-center">
-    <small>This site was built with &lt;a href=&#39;https://markbind.github.io/markbind/&#39;&gt;MarkBind 1.19.0&lt;/a&gt; at Sat, 23 Feb 2019 11:16:11 GMT</small>
+    <small>This site was built with &lt;a href=&#39;https://markbind.github.io/markbind/&#39;&gt;MarkBind 1.19.0&lt;/a&gt; at Sun, 24 Feb 2019 05:13:04 GMT</small>
   </div>
 </footer>
 </div>
-</panel>
+</div>
 </modal>
 </div>
 </div>
 </div>
 </div></code></pre>
 </div>
-</panel>
+</div>
 </modal>
 </div>
 </div>
 </div>
 </div></code></pre>
 </div>
-</panel>
+</div>
 </modal>
 </div>
 </div>
 </div>
 </div></code></pre>
 </div>
-</panel>
+</div>
 </modal>
 </div>
 </div>

@@ -556,40 +556,16 @@ more text
               <hr style="border-top: 3px double #c5c5c5;">
               <div id="monty7">
                 <h3 id="monty-7">Monty 7<a class="fa fa-anchor" href="#monty-7"></a></h3>
-                <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-6">Monty 6 code</a> so that it <strong>saves tasks into a csv file</strong>:</p>
+                <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-6">Monty 6 code</a> in the following ways:</p>
                 <ul>
-                  <li>The filename can be specified in the code. e.g.,
-                    <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
-</code></pre>
-                  </li>
-                  <li>The format of the file is up to you. Here is an example:
-                    <pre><code class="hljs">borrow book,done
-read book,pending
-return book,pending
-</code></pre>
-                  </li>
-                  <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
-                    <pre><code class="hljs python"> items = []
- DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
- 
- 
- <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
-     print_greeting()
-     <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
-         <span class="hljs-keyword">try</span>:
-             command = read_command()
-             execute_command(command)
-             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
-         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
- 
- 
- main()
-</code></pre>
-                  </li>
+                  <li>Monty <strong>saves tasks into a csv file</strong>.</li>
+                  <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
                 </ul>
-                <p>A sample output is given below. Note how Monty is able to show at the very start the three tasks loaded from the file.</p>
+                <p>A sample output is given below. Note the following:</p>
+                <ul>
+                  <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
+                  <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
+                </ul>
                 <pre><code class="hljs">*******************************************************************************************
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
@@ -613,7 +589,55 @@ STATUS | INDEX | DESCRIPTION
   ✗    |   3   | return book                
 --------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
+
+delete 2
+&gt;&gt;&gt; Task deleted from the list
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | return book                  
+--------------------------------------------------
 </code></pre>
+                <box>
+                  <p>💡 here are some tips:</p>
+                  <ul>
+                    <li>The filename can be specified in the code. e.g.,
+                      <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+</code></pre>
+                    </li>
+                    <li>The format of the file is up to you. Here is an example:
+                      <pre><code class="hljs">borrow book,done
+read book,pending
+return book,pending
+</code></pre>
+                    </li>
+                    <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
+                      <pre><code class="hljs python"> items = []
+ DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+ 
+ 
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
+     print_greeting()
+     <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+         <span class="hljs-keyword">try</span>:
+             command = read_command()
+             execute_command(command)
+             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
+         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+ 
+ 
+ main()
+</code></pre>
+                    </li>
+                  </ul>
+                </box>
                 <panel header=":fas-battery-quarter: Partial solution" minimized>
                   <p>Here is the code for loading data from the file.</p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
@@ -645,34 +669,6 @@ else:
 
 exit
 &gt;&gt;&gt; Bye!
-</code></pre>
-                  </li>
-                  <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.
-                    <pre><code class="hljs">list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | read book                  
-  ✗    |   3   | return book                
-  ✗    |   4   | buy a book                 
---------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-
-delete 4
-&gt;&gt;&gt; Task deleted from the list
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | read book                  
-  ✗    |   3   | return book                
---------------------------------------------------
 </code></pre>
                   </li>
                   <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
@@ -743,7 +739,7 @@ add    read book
 </div>
 <footer>
   <div class="text-center">
-    <small>This site was built with &lt;a href=&#39;https://markbind.github.io/markbind/&#39;&gt;MarkBind 1.19.0&lt;/a&gt; at Sat, 23 Feb 2019 11:16:11 GMT</small>
+    <small>This site was built with &lt;a href=&#39;https://markbind.github.io/markbind/&#39;&gt;MarkBind 1.19.0&lt;/a&gt; at Sun, 24 Feb 2019 05:13:04 GMT</small>
   </div>
 </footer>
 </div>
