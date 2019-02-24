@@ -756,7 +756,7 @@ main()
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
 *   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
 *     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
 *      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
 *                                                                                  __/ |  *
@@ -815,9 +815,8 @@ long text
 more text
 '''</span>
 </code></pre>
-                <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a>
+                <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
               </box>
-              </p>
               <panel header=":fas-battery-quarter: Partial solution" minimized>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
     banner = <span class="hljs-string">'''
@@ -825,15 +824,16 @@ more text
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
 *   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
 *     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
 *      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
 *                                                                                  __/ |  *
 *                                                                                 |___/   *
 *******************************************************************************************
-'''
+'''</span>
     print(banner.strip(), <span class="hljs-string">'\n'</span>)
 </code></pre>
+              </panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div id="monty7">
@@ -852,7 +852,7 @@ more text
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
 *   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
 *     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
 *      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
 *                                                                                  __/ |  *
@@ -943,7 +943,7 @@ else:
     status = False
 </code></pre>
               </panel>
-              <p />
+              <p></p>
               <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
               <ul>
                 <li><strong>Remove the the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
@@ -993,21 +993,20 @@ add    read book
                 </li>
               </ul>
             </div>
-            <hr style="border-top: 3px double #c5c5c5;" />
+            <hr style="border-top: 3px double #c5c5c5;">
             <p><span class="dimmed">Remaining increments to be added soon.</span></p>
           </div>
-      </div>
-      </modal>
-      <h3 id="software-to-build">Software to build</h3>
-      <p>You will be building a personal assistant chat-bot software named <em>Monty</em> (<em>Monty</em> is a temporary name; you should give a different name to your own chat bot)</p>
-      <p><strong><em>Basic</em> Functionality</strong>:</p>
-      <ol>
-        <li>
-          <p>Monty interface can be text-based (i.e., no need for a graphical UI)</p>
-        </li>
-        <li>
-          <p>Monty helps with storing and retrieving at least <strong>one type of data</strong> that is useful to the user. Some examples of different types of data (you can pick one or more of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a Monty that deals with TODO items:</p>
-          <pre><code class="hljs">Hi, I'm Monty. How can I help you?
+        </modal>
+        <h3 id="software-to-build">Software to build<a class="fa fa-anchor" href="#software-to-build"></a></h3>
+        <p>You will be building a personal assistant chat-bot software named <em>Monty</em> (<em>Monty</em> is a temporary name; you should give a different name to your own chat bot)</p>
+        <p><strong><em>Basic</em> Functionality</strong>:</p>
+        <ol>
+          <li>
+            <p>Monty interface can be text-based (i.e., no need for a graphical UI)</p>
+          </li>
+          <li>
+            <p>Monty helps with storing and retrieving at least <strong>one type of data</strong> that is useful to the user. Some examples of different types of data (you can pick one or more of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a Monty that deals with TODO items:</p>
+            <pre><code class="hljs">Hi, I'm Monty. How can I help you?
 
 add Return library book
 &gt;&gt;&gt; TODO added: Return library book
@@ -1031,340 +1030,294 @@ list : lists all TODOs
 ...
 
 </code></pre>
-        </li>
-        <li>
-          <p>There is <strong>no need for Monty to be able to understand natural language</strong> sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.</p>
-        </li>
-        <li>
-          <p>Monty should support <strong>adding, deleting, listing, searching</strong> (by keyword) of data items.</p>
-        </li>
-        <li>
-          <p><em>Persistence</em>: The data should be <strong>stored in the hard disk</strong> so that restarting Monty should not cause a loss of data entered in a previous session.</p>
-          <ol>
-            <li>The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>, <code>json</code>, plain text, etc.</li>
-          </ol>
-        </li>
-      </ol>
-      <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
-      <div class="table-responsive">
-        <table class="markbind-table table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th>Team size</th>
-              <th>Total amount of functionality</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1-person</td>
-              <td>3-4 units</td>
-            </tr>
-            <tr>
-              <td>2-persons</td>
-              <td>4-5 units</td>
-            </tr>
-            <tr>
-              <td>3-persons</td>
-              <td>5-6 units</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p><strong><em>Additional</em> Functionality</strong>:</p>
-      <p>Some suggestions for <em>additional functionality</em>:</p>
-      <ul>
-        <li>More attributes for data items e.g., priorities, tags, birthdays</li>
-        <li>Multiple data item types e.g., support saving TODOs, appointments, and deadlines
-          <ul>
-            <li>Support connections between data items e.g., ability to assign a TODO to a contact</li>
-          </ul>
-        </li>
-        <li>Multi-user support e.g., assume the software is installed in a common computer in your office and allow multiple users to interact with it</li>
-        <li>More ways to query data e.g., find contacts that has a birthday in next 2 days, find all TODOs with high priority, etc.</li>
-        <li>Any other feature (get approval from prof before implementing)</li>
-      </ul>
-      <h3 id="constraints">Constraints</h3>
-      <ol>
-        <li>You should not use relational/SQL databases e.g., MySQL</li>
-        <li>The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
-          <ul>
-            <li>If your software needs other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
-          </ul>
-        </li>
-      </ol>
-      <h3 id="deliverables">Deliverables</h3>
-      <ul>
-        <li>
-          <p><strong>Week 8</strong> (mid-term submission):</p>
-          <ul>
-            <li>Deadline: Week 8, Tuesday 6pm</li>
-            <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement). If you are taking option A or C, implement at least upto <a href="/2019/programming/toc/monty.html">Monty 5</a>.
-              <ul>
-                <li>Submission: demo during the lecture in week 8.</li>
-              </ul>
-            </li>
-            <li>Documentation:
-              <ul>
-                <li>Sections to include:
-                  <ul>
-                    <li>Cover page: Include product name, names of team members</li>
-                    <li>User stories: Give user stories to cover all current and planned future features</li>
-                    <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
-                    <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
-                    <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.</li>
-                  </ul>
-                </li>
-                <li>Submission: upload to IVLE as a <code>.docx</code> or <code>.pdf</code> file. File name should contain team member names. e.g., <code>John Doe, Sarah Tan, Viet Ngoc.docx</code></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <p><strong>Week 13</strong> (final submission):</p>
-          <ul>
-            <li>Functionality: all functionality
-              <ul>
-                <li>Submission:
-                  <ul>
-                    <li>Zip up all source files, upload to IVLE as a single <code>.zip</code> file (not <code>.rar</code>). File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
-                    <li>Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced later.</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>Documentation:
-              <ul>
-                <li>Include all content included in mid-term submission. <mark>Refine as per feedback given. Update to match the final product.</mark></li>
-                <li>Add a <strong>class diagram</strong> to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you <em>propose</em> to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">example</trigger>]</li>
-                <li>Add an <strong>object diagram</strong> to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">example</trigger>]</li>
-                <li>Give a sample of <strong>test cases</strong> you would use to test the software.
-                  <ul>
-                    <li>
-                      <tooltip content="if you are a 2-person team, give 4 test cases" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">example</trigger>]
-                    </li>
-                    <li>Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">example</trigger>]</li>
-                  </ul>
-                </li>
-                <li>Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <modal large="" title="Class diagram example" id="modal:finalSubmission-classDiagram" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
-        <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md" />
-      </modal>
-      <modal large="" title="Object diagram example" id="modal:finalSubmission-objectDiagram" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <img src="/2019/book/oopDesign/associations/basic/images/completeStructure.png" height="120" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md" />
-      </modal>
-      <modal large="" id="modal:finalSubmission-systemTests" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <h2 id="sample-system-tests">Sample System Tests</h2>
-        <p><strong>Test case 1: Launch without prior data</strong></p>
-        <ul>
-          <li>Feature being tested : launch of app, without any prior data</li>
-          <li>Set up:
+          </li>
+          <li>
+            <p>There is <strong>no need for Monty to be able to understand natural language</strong> sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.</p>
+          </li>
+          <li>
+            <p>Monty should support <strong>adding, deleting, listing, searching</strong> (by keyword) of data items.</p>
+          </li>
+          <li>
+            <p><em>Persistence</em>: The data should be <strong>stored in the hard disk</strong> so that restarting Monty should not cause a loss of data entered in a previous session.</p>
             <ol>
-              <li>Delete all files in the <code>/data/</code> folder.</li>
+              <li>The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>, <code>json</code>, plain text, etc.</li>
             </ol>
           </li>
-          <li>Steps:
-            <ol screenshot="" here="">
-              <li>Run the app using the command <code>python main.py</code></li>
-              <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md"></li>
-            </ol>
-          </li>
-        </ul>
-        <p><strong>Test case 2: Add first contact</strong></p>
-        <ul screenshot="" here="">
-          <li>Feature being tested : adding of a contact when there are no prior data</li>
-          <li>Set up:
-            <ol>
-              <li>Launch app without any prior data (similar to <code>Test case 1</code> above).</li>
-            </ol>
-          </li>
-          <li>Steps:<div class="table-responsive">
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Input</th>
-                    <th>Expected</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Enter command <code>add</code></td>
-                    <td>app shows error message and show the correct format of the <code>add</code> command</td>
-                  </tr>
-                  <tr>
-                    <td>Enter command<br cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md"> <code>add John Doe</code></td>
-                    <td>app shows list of contacts containing only one person<br cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </li>
-        </ul>
-        <p></br></br></br>
-      </modal>
-      </p>
-      <modal large="" id="modal:finalSubmission-unitTests" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <h2 id="sample-unit-tests">Sample Unit Tests</h2>
-        <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
-        <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
+        </ol>
+        <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
         <div class="table-responsive">
           <table class="markbind-table table table-bordered table-striped">
             <thead>
               <tr>
-                <th><code>current_contacts</code></th>
-                <th><code>new_contact</code></th>
-                <th>Expected <code>current_contacts</code></th>
+                <th>Team size</th>
+                <th>Total amount of functionality</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><code>[]</code></td>
-                <td><code>Person('John')</code></td>
-                <td><code>[Person('John')]</code></td>
+                <td>1-person</td>
+                <td>3-4 units</td>
               </tr>
               <tr>
-                <td><code>[Person('John')]</code></td>
-                <td><code>Person('John')</code></td>
-                <td><code>[Person('John')]</code></td>
+                <td>2-persons</td>
+                <td>4-5 units</td>
               </tr>
               <tr>
-                <td><code>[Person('John')]</code></td>
-                <td><code>Person('Amy')</code></td>
-                <td><code>[Person('John'), Person('Amy')]</code></td>
+                <td>3-persons</td>
+                <td>5-6 units</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </modal>
-      <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted" />
-      <h1 id="assessment">Assessment</h1>
-      <div class="indented" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
+        <p><strong><em>Additional</em> Functionality</strong>:</p>
+        <p>Some suggestions for <em>additional functionality</em>:</p>
         <ul>
-          <li>40% : Project</li>
-          <li>60% : Final Exam</li>
+          <li>More attributes for data items e.g., priorities, tags, birthdays</li>
+          <li>Multiple data item types e.g., support saving TODOs, appointments, and deadlines
+            <ul>
+              <li>Support connections between data items e.g., ability to assign a TODO to a contact</li>
+            </ul>
+          </li>
+          <li>Multi-user support e.g., assume the software is installed in a common computer in your office and allow multiple users to interact with it</li>
+          <li>More ways to query data e.g., find contacts that has a birthday in next 2 days, find all TODOs with high priority, etc.</li>
+          <li>Any other feature (get approval from prof before implementing)</li>
         </ul>
-      </div>
-      <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted" />
-      <h1 id="exam">Exam</h1>
-      <div class="indented" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md">
-        <div cwf="C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md" include-path="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-          <p>There is no midterm.</p>
-          <p>The final exam has two parts:</p>
+        <h3 id="constraints">Constraints<a class="fa fa-anchor" href="#constraints"></a></h3>
+        <ol>
+          <li>You should not use relational/SQL databases e.g., MySQL</li>
+          <li>The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
+            <ul>
+              <li>If your software needs other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
+            </ul>
+          </li>
+        </ol>
+        <h3 id="deliverables">Deliverables<a class="fa fa-anchor" href="#deliverables"></a></h3>
+        <ul>
+          <li>
+            <p><strong>Week 8</strong> (mid-term submission):</p>
+            <ul>
+              <li>Deadline: Week 8, Tuesday 6pm</li>
+              <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement). If you are taking option A or C, implement at least upto <a href="/2019/programming/toc/monty.html">Monty 5</a>.
+                <ul>
+                  <li>Submission: demo during the lecture in week 8.</li>
+                </ul>
+              </li>
+              <li>Documentation:
+                <ul>
+                  <li>Sections to include:
+                    <ul>
+                      <li>Cover page: Include product name, names of team members</li>
+                      <li>User stories: Give user stories to cover all current and planned future features</li>
+                      <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
+                      <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
+                      <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.</li>
+                    </ul>
+                  </li>
+                  <li>Submission: upload to IVLE as a <code>.docx</code> or <code>.pdf</code> file. File name should contain team member names. e.g., <code>John Doe, Sarah Tan, Viet Ngoc.docx</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Week 13</strong> (final submission):</p>
+            <ul>
+              <li>Functionality: all functionality
+                <ul>
+                  <li>Submission:
+                    <ul>
+                      <li>Zip up all source files, upload to IVLE as a single <code>.zip</code> file (not <code>.rar</code>). File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+                      <li>Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced later.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Documentation:
+                <ul>
+                  <li>Include all content included in mid-term submission. <mark>Refine as per feedback given. Update to match the final product.</mark></li>
+                  <li>Add a <strong>class diagram</strong> to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you <em>propose</em> to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]</li>
+                  <li>Add an <strong>object diagram</strong> to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]</li>
+                  <li>Give a sample of <strong>test cases</strong> you would use to test the software.
+                    <ul>
+                      <li>
+                        <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]
+                      </li>
+                      <li>Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]</li>
+                    </ul>
+                  </li>
+                  <li>Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <modal large title="Class diagram example" id="modal:finalSubmission-classDiagram">
+          <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
+          <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
+        </modal>
+        <modal large title="Object diagram example" id="modal:finalSubmission-objectDiagram">
+          <img src="/2019/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></modal>
+        <modal large id="modal:finalSubmission-systemTests">
+          <h2 id="sample-system-tests">Sample System Tests<a class="fa fa-anchor" href="#sample-system-tests"></a></h2>
+          <p><strong>Test case 1: Launch without prior data</strong></p>
           <ul>
-            <li>Part 1: MCQ questions (1 hour, 20 marks)</li>
-            <li>Part 2: Essay questions (1 hour, 20 marks)</li>
+            <li>Feature being tested : launch of app, without any prior data</li>
+            <li>Set up:
+              <ol>
+                <li>Delete all files in the <code>/data/</code> folder.</li>
+              </ol>
+            </li>
+            <li>Steps:
+              <ol screenshot here>
+                <li>Run the app using the command <code>python main.py</code></li>
+                <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br></li>
+              </ol>
+            </li>
           </ul>
-          <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.</p>
-          <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)</h2>
-          <p>Each MCQ question gives you a statement to evaluate.</p>
-          <tip-box cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <p>&lt;span class='fas fa-cube'&gt;&lt;/span&gt; An example statement</p>
-            <blockquote>
-              <p>Testing is a Q&amp;A activity</p>
-            </blockquote>
-          </tip-box>
-          <p>Unless stated otherwise, the meaning of answer options are<br cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <strong><code>A</code></strong>: <code>Agree</code>. If the question has multiple statements, <ins>agree with all of them</ins>.<br cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <strong><code>B</code></strong>: <code>Disagree</code>. If the question has multiple statements, <ins>disagree with at least one of them</ins><br cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <strong><code>C</code></strong>, <strong><code>D</code></strong>, <strong><code>E</code></strong>: Not used</p>
-          <p>Number of questions: 50</p>
-          <div class="full-mode" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <p>Note that you have <strong>slightly more than ½ minute for each question</strong>, which means you need to go through the questions fairly quickly.</p>
+          <p><strong>Test case 2: Add first contact</strong></p>
+          <ul screenshot here>
+            <li>Feature being tested : adding of a contact when there are no prior data</li>
+            <li>Set up:
+              <ol>
+                <li>Launch app without any prior data (similar to <code>Test case 1</code> above).</li>
+              </ol>
+            </li>
+            <li>Steps:<div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Input</th>
+                      <th>Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Enter command <code>add</code></td>
+                      <td>app shows error message and show the correct format of the <code>add</code> command</td>
+                    </tr>
+                    <tr>
+                      <td>Enter command<br> <code>add John Doe</code></td>
+                      <td>app shows list of contacts containing only one person<br></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </modal>
+        <modal large id="modal:finalSubmission-unitTests">
+          <h2 id="sample-unit-tests">Sample Unit Tests<a class="fa fa-anchor" href="#sample-unit-tests"></a></h2>
+          <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
+          <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th><code>current_contacts</code></th>
+                  <th><code>new_contact</code></th>
+                  <th>Expected <code>current_contacts</code></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>[]</code></td>
+                  <td><code>Person('John')</code></td>
+                  <td><code>[Person('John')]</code></td>
+                </tr>
+                <tr>
+                  <td><code>[Person('John')]</code></td>
+                  <td><code>Person('John')</code></td>
+                  <td><code>[Person('John')]</code></td>
+                </tr>
+                <tr>
+                  <td><code>[Person('John')]</code></td>
+                  <td><code>Person('Amy')</code></td>
+                  <td><code>[Person('John'), Person('Amy')]</code></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <p>Given the fast pace required by the paper, to be fair to all students, <strong>you will not be allowed to clarify doubts about questions</strong> (in Part 1) by talking to invigilators.</p>
+        </modal>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="assessment">Assessment<a class="fa fa-anchor" href="#assessment"></a></h1>
+        <div class="indented">
           <ul>
-            <li>If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.</li>
-            <li>If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.</li>
+            <li>40% : Project</li>
+            <li>60% : Final Exam</li>
           </ul>
-          <p><strong>Questions in Part 1 are confidential.</strong> You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.</p>
-          <div class="full-mode" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <p>You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. <strong>Indicate your student number in both OCR forms</strong>.</p>
+        </div>
+        <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+        <h1 id="exam">Exam<a class="fa fa-anchor" href="#exam"></a></h1>
+        <div class="indented">
+          <div>
+            <p>There is no midterm.</p>
+            <p>The final exam has two parts:</p>
+            <ul>
+              <li>Part 1: MCQ questions (1 hour, 20 marks)</li>
+              <li>Part 2: Essay questions (1 hour, 20 marks)</li>
+            </ul>
+            <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.</p>
+            <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)<a class="fa fa-anchor" href="#final-exam-part-1-mcq"></a></h2>
+            <p>Each MCQ question gives you a statement to evaluate.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> An example statement</p>
+              <blockquote>
+                <p>Testing is a Q&amp;A activity</p>
+              </blockquote>
+            </tip-box>
+            <p>Unless stated otherwise, the meaning of answer options are<br>
+              <strong><code>A</code></strong>: <code>Agree</code>. If the question has multiple statements, <ins>agree with all of them</ins>.<br>
+              <strong><code>B</code></strong>: <code>Disagree</code>. If the question has multiple statements, <ins>disagree with at least one of them</ins><br>
+              <strong><code>C</code></strong>, <strong><code>D</code></strong>, <strong><code>E</code></strong>: Not used</p>
+            <p>Number of questions: 50</p>
+            <div class="full-mode">
+              <p>Note that you have <strong>slightly more than ½ minute for each question</strong>, which means you need to go through the questions fairly quickly.</p>
+            </div>
+            <p>Given the fast pace required by the paper, to be fair to all students, <strong>you will not be allowed to clarify doubts about questions</strong> (in Part 1) by talking to invigilators.</p>
+            <ul>
+              <li>If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.</li>
+              <li>If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.</li>
+            </ul>
+            <p><strong>Questions in Part 1 are confidential.</strong> You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.</p>
+            <div class="full-mode">
+              <p>You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. <strong>Indicate your student number in both OCR forms</strong>.</p>
+            </div>
+            <p>Some questions will use <ins>underlines</ins> or <mark>highlighting</mark> to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Consider the statement below:</p>
+              <blockquote>
+                <p>Technique ABC <ins>can</ins> be used to generate more test cases.</p>
+              </blockquote>
+              <p>The word <ins>can</ins> is underlined because the decision you need to make is whether the ABC <em>can or cannot</em> be used to generate more test cases; the decision is not whether ABC can be used to generate <em>more or better</em> test cases.</p>
+            </tip-box>
+            <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the question is Java code.</p>
+            <p><img src="/2019/admin/images/contextTag.png"><br></p>
+            <p><strong>The paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format.
+              However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the exam.</p>
+            <p>💡 <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end. <span class="dimmed"> Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span></p>
+            <p>💡 <strong>Write the answer in the exam paper as well</strong> as marking it in the OCR form. <span class="dimmed"> Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
+            <p>💡 We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time to figure out, you are probably over-thinking it.</p>
+            <box type="success">
+              <p>You will be given a practice exam paper to familiarize yourself with this slightly unusual exam format.
+              </p>
+            </box>
+            <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)<a class="fa fa-anchor" href="#final-exam-part-2-essay"></a></h2>
+            <p>Unlike in part 1, <strong>you can ask invigilators for clarifications</strong> if you found a question to be unclear in part 2.</p>
+            <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
+            <div class="full-mode">
+              <p>[<a href="http://www.comp.nus.edu.sg/~te3201/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202.pdf">Sample paper</a>]
+                [<a href="http://www.comp.nus.edu.sg/~te3201/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202%20(answers).pdf">Answers to the sample paper</a>]</p>
+            </div>
           </div>
-          <p>Some questions will use <ins>underlines</ins> or <mark>highlighting</mark> to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.</p>
-          <tip-box cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <p>&lt;span class='fas fa-cube'&gt;&lt;/span&gt; Consider the statement below:</p>
-            <blockquote>
-              <p>Technique ABC <ins>can</ins> be used to generate more test cases.</p>
-            </blockquote>
-            <p>The word <ins>can</ins> is underlined because the decision you need to make is whether the ABC <em>can or cannot</em> be used to generate more test cases; the decision is not whether ABC can be used to generate <em>more or better</em> test cases.</p>
-          </tip-box>
-          <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the question is Java code.</p>
-          <p><img src="/2019/admin/images/contextTag.png" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md" /><br cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md"></p>
-          <p><strong>The paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format.
-            However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the exam.</p>
-          <p>💡 <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end. <span class="dimmed"> Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span></p>
-          <p>💡 <strong>Write the answer in the exam paper as well</strong> as marking it in the OCR form. <span class="dimmed"> Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
-          <p>💡 We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time to figure out, you are probably over-thinking it.</p>
-          <box type="success" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <p>You will be given a practice exam paper to familiarize yourself with this slightly unusual exam format.
-          </box>
-          </p>
-          <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)</h2>
-          <p>Unlike in part 1, <strong>you can ask invigilators for clarifications</strong> if you found a question to be unclear in part 2.</p>
-          <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
-          <div class="full-mode" cwf="C:\repos\nus-te3201\te3201-2019-website\admin\exams.md">
-            <p>[<a href="http://www.comp.nus.edu.sg/~te3201/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202.pdf">Sample paper</a>]
-              [<a href="http://www.comp.nus.edu.sg/~te3201/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202%20(answers).pdf">Answers to the sample paper</a>]</p>
-          </div>
-          <p></br></br></br></br></p>
         </div>
       </div>
-      <p></br></br>
     </div>
-    </p>
   </div>
 </div>
-</modal></br></br></div>
-</div>
-</div>
-</modal></br></br></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</modal></br></br></div>
-</div>
-</div>
-</div>
+<div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with &lt;a href=&#39;https://markbind.github.io/markbind/&#39;&gt;MarkBind 1.19.0&lt;/a&gt; at Sun, 24 Feb 2019 05:13:04 GMT</small>
-  </div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Sun, 24 Feb 2019 10:21:09 GMT</small></div>
 </footer>
-</div>
-</div>
-</modal>
-</div>
-</div>
-</div>
-</div></code></pre>
-</div>
-</div>
-</modal>
-</div>
-</div>
-</div>
-</div></code></pre>
-</div>
-</div>
-</modal>
-</div>
-</div>
-</div>
-</div></code></pre>
-</div>
-</div>
-</modal>
-</div>
-</div>
-</div>
-</div>
 </div>
 </body>
 <script src="../markbind/js/vue.min.js"></script>

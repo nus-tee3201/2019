@@ -831,7 +831,14 @@
         "tutorials": "Tutorials",
         "textbook": "Textbook",
         "programming-language": "Programming Language",
-        "project": "Project"
+        "project": "Project",
+        "software-to-build": "Software to build",
+        "constraints": "Constraints",
+        "deliverables": "Deliverables",
+        "assessment": "Assessment",
+        "exam": "Exam",
+        "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
+        "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)"
       },
       "title": "Admin Info",
       "footer": "footer.md",
