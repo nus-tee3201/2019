@@ -33,7 +33,7 @@ Bye my friend
   </tab>
 </tabs>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -59,7 +59,7 @@ My age is 25
 <class 'str'>
 <class 'float'>
 ```
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -81,13 +81,13 @@ discounted_price = float(price)*0.5 # convert to float type first
 print('Price after 50% discount is $' + str(discounted_price)) # convert back to string
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel>
 
-<panel type="seamless" header="%%:tv: Explanation of a similar Python program%%">
+<panel type="seamless" header="%%{{ icon_video }} Explanation of a similar Python program%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe>
 

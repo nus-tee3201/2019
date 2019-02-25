@@ -20,13 +20,13 @@ When there are multiple operators in an expression, normal operator precedence a
 >>> (2 + 4) * 5
 30
 ```
-<panel type="seamless" header="%%:tv: Operators%%">
+<panel type="seamless" header="%%{{ icon_video }} Operators%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel>
 
-<panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
+<panel type="seamless" header="%%{{ icon_try }} Try some expressions using an online interactive shell%%">
 
 Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.
 

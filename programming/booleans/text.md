@@ -84,7 +84,7 @@ result = (2 > 5) or (10 < 20) # True
 result = (2 == 2) and (3 != 3) # False
 ```
 
-<panel type="seamless" header="%%:tv: Booleans%%">
+<panel type="seamless" header="%%{{ icon_video }} Booleans%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe>
 

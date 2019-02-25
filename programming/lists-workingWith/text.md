@@ -27,7 +27,7 @@ print(spam)
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Deleting items from a list%%">
+<panel type="seamless" header="%%{{ icon_video }} Deleting items from a list%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=534&end=581&version=11" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
@@ -107,7 +107,7 @@ sub list     : ['0a', '1b']
 </box>
 
 
-<panel type="seamless" header="%%:tv: Accessing multiple items from a list%%">
+<panel type="seamless" header="%%{{ icon_video }} Accessing multiple items from a list%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=317&end=534&version=11" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
@@ -193,7 +193,7 @@ print(walking)
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Length of a list, list concatenation, list replication%%">
+<panel type="seamless" header="%%{{ icon_video }} Length of a list, list concatenation, list replication%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=581&end=635&version=11" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
@@ -236,7 +236,7 @@ Tea is already in the list
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Checking if an item is in a list%%">
+<panel type="seamless" header="%%{{ icon_video }} Checking if an item is in a list%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=675&end=742&version=11" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>

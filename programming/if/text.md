@@ -96,7 +96,7 @@ Age is 13
 
 </modal>
 
-<panel type="seamless" header="%%:tv: Using `if`%%">
+<panel type="seamless" header="%%{{ icon_video }} Using `if`%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
 
@@ -111,7 +111,7 @@ if gender == 'F':
 else:
     print('Not Female')               
 ```
-<panel type="seamless" header="%%:tv: Using `else`%%">
+<panel type="seamless" header="%%{{ icon_video }} Using `else`%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=254&end=336&version=3" frameborder="0" allowfullscreen></iframe>
 
@@ -130,7 +130,7 @@ elif gender == 'O':
 else:
     print('Unrecognized value')             
 ```
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -138,7 +138,7 @@ else:
 
 Note that in an `if-elif-else` construct no more than one block (the first one whose condition is true) will be executed.
 
-<panel type="seamless" header="%%:tv: Using `elif`%%">
+<panel type="seamless" header="%%{{ icon_video }} Using `elif`%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>

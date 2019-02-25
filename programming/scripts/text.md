@@ -24,7 +24,7 @@ Press the {{ fas_play }} button to run the code %%&nbsp;(don't worry about the m
 1. Save the file by choosing `File` → `Save as`. You can give a name such as `hello.py`
 1. `Run` → `Run Module (F5)`. The output will show up in the IDLE shell. 
 
-<panel type="seamless" header="%%:tv: Writing your first Python program%%">
+<panel type="seamless" header="%%{{ icon_video }} Writing your first Python program%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe>
 
@@ -33,7 +33,7 @@ Press the {{ fas_play }} button to run the code %%&nbsp;(don't worry about the m
   </tab>
 </tabs>
 
-<modal title=":tv: Opening IDEL in Windows 10" id="modal:scripts-openIdle">
+<modal title="{{ icon_video }} Opening IDEL in Windows 10" id="modal:scripts-openIdle">
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe>
 

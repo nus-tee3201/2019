@@ -22,7 +22,7 @@ print(everything)
 ```
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Lists%%">
+<panel type="seamless" header="%%{{ icon_video }} Lists%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=11&end=70&version=11" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
@@ -103,7 +103,7 @@ print(list_of_lists[2][0])
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Accessing an item from a list%%">
+<panel type="seamless" header="%%{{ icon_video }} Accessing an item from a list%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=70&end=317&version=11" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>

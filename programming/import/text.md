@@ -37,7 +37,7 @@ for i in range(5):
     print(random.randint(1, 10))
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -47,7 +47,7 @@ for i in range(5):
 
 :bulb: It is common practice to put the `import` statements at the top of the program code.
 
-<panel type="seamless" header="%%:tv: Importing modules%%">
+<panel type="seamless" header="%%{{ icon_video }} Importing modules%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>

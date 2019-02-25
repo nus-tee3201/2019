@@ -24,7 +24,7 @@ In the initial stages you can use an online programming environment to practice 
 
 {{ icon_important_big_red }} We recommend installing the latest Python `3.*` version (not the `2.*` version)
 
-<panel type="seamless" header=":tv: How to install Python on Windows">
+<panel type="seamless" header="{{ icon_video }} How to install Python on Windows">
 
 @[youtube](dX2-V2BocqQ)
 

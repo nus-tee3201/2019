@@ -41,7 +41,7 @@ while i < 3:
   i = i + 1
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -49,7 +49,7 @@ while i < 3:
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Basic `for` statements%%">
+<panel type="seamless" header="%%{{ icon_video }} Basic `for` statements%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
@@ -88,7 +88,7 @@ for n in range (5):
 print('Grand total of non-negative numbers:', str(total))
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -112,7 +112,7 @@ for i in range(2, 5):
     print(i, 'x', j, '=', i*j)
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 

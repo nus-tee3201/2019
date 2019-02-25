@@ -54,7 +54,7 @@ print_all_products(0,2,3)
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Returning values from functions%%">
+<panel type="seamless" header="%%{{ icon_video }} Returning values from functions%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=315&end=462&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>

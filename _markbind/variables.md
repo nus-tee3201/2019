@@ -83,6 +83,7 @@
 <span id="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></span>
 
 <span id="icon_repo">{{ fas_code_branch | safe }}</span>
+<span id="icon_try">:fas-laptop:</span>
 
 
 <span id="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></span>

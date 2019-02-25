@@ -5,7 +5,7 @@
 Points to note:
 * A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).
 
-<panel type="seamless" header="%%:tv: What is programming (a 2-minute intro from Khan Academy):%%">
+<panel type="seamless" header="%%{{ icon_video }} What is programming (a 2-minute intro from Khan Academy):%%">
 
 @[youtube](FCMxA3m_Imc)
 

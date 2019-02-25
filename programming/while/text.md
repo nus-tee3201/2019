@@ -42,7 +42,7 @@ Done
 </table>
 
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -50,7 +50,7 @@ Done
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Basic `while` loops%%">
+<panel type="seamless" header="%%{{ icon_video }} Basic `while` loops%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
@@ -67,7 +67,7 @@ while counter < 3:
 
 :bulb: When using IDLE, if a bug in your code caused it to go into an infinite loop,  you can use `Ctrl + C` to force it to stop executing.
 
-<panel type="seamless" header="%%:tv: Infinite loops%%">
+<panel type="seamless" header="%%{{ icon_video }} Infinite loops%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel>
@@ -93,7 +93,7 @@ while True:
 print('Password correct. You may proceed.')
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -101,7 +101,7 @@ print('Password correct. You may proceed.')
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: `break` inside `while` loops%%">
+<panel type="seamless" header="%%{{ icon_video }} `break` inside `while` loops%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel>
@@ -127,7 +127,7 @@ while count < 3:
 print('Accepted words: ' + accepted_words)
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -135,7 +135,7 @@ print('Accepted words: ' + accepted_words)
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: `continue` inside `while` loops%%">
+<panel type="seamless" header="%%{{ icon_video }} `continue` inside `while` loops%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>

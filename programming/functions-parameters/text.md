@@ -42,7 +42,7 @@ How are you John ?
 </span>
 </include>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
@@ -90,7 +90,7 @@ print(v1)
 
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Function parameters%%">
+<panel type="seamless" header="%%{{ icon_video }} Function parameters%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=199&end=315&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>

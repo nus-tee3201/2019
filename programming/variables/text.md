@@ -46,7 +46,7 @@ You can even use the variable in expressions.
 9.5
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -103,14 +103,14 @@ NameError: name 'Height' is not defined
 5
 ```
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 </panel>
 </tip-box>
 
-<panel type="seamless" header="%%:tv: Variables%%">
+<panel type="seamless" header="%%{{ icon_video }} Variables%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
 

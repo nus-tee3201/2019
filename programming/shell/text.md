@@ -9,7 +9,7 @@
 >>>
 ```
 
-<panel type="seamless" header="%%:tv: Python interactive shell in action:%%">
+<panel type="seamless" header="%%{{ icon_video }} Python interactive shell in action:%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe>
 

@@ -28,13 +28,13 @@ Some operators can be used on strings as well.
 'Bye!!!!!!!!!!'
 ```
 
-<panel type="seamless" header="%%:tv: Data types%%">
+<panel type="seamless" header="%%{{ icon_video }} Data types%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel>
 
-<panel type="seamless" header="%%:computer: Try your own%%">
+<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
 <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&amp;runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
