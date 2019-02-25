@@ -22,6 +22,8 @@ In the initial stages you can use an online programming environment to practice 
 
 **Option 2. install python on your computer**
 
+<span id="install-python">
+
 {{ icon_important_big_red }} We recommend installing the latest Python `3.*` version (not the `2.*` version)
 
 <panel type="seamless" header="{{ icon_video }} How to install Python on Windows">
@@ -29,6 +31,7 @@ In the initial stages you can use an online programming environment to practice 
 @[youtube](dX2-V2BocqQ)
 
 </panel>
+</span>
 
 </div>
 <div class="alt-java">

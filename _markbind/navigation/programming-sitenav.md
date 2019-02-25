@@ -12,6 +12,7 @@
 * [Object-Oriented Programming]({{ baseUrl }}/programming/toc/oop.html)
 * [Appendix A: Installing 3rd Party Modules]({{ baseUrl }}/programming/toc/thirdparty.html)
 * [Appendix B: Unit Testing]({{ baseUrl }}/programming/toc/unittesting.html)
-* [Appendix C: The Monty Project]({{ baseUrl }}/programming/toc/monty.html)
+* [Appendix C: Using an IDE]({{ baseUrl }}/programming/toc/ide.html)
+* [Appendix D: The Monty Project]({{ baseUrl }}/programming/toc/monty.html)
 
 </navigation>

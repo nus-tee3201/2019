@@ -126,6 +126,7 @@
   * [Reading from Files](#reading-from-files)
   * [Writing to Files](#writing-to-files)
   * [CSV Files](#csv-files)
+* [**Using an IDE**](#appendix-c-using-an-ide)
 </div>
 
 # Files
@@ -134,6 +135,9 @@
 <include src="../programming/files-reading/text.md" />{{ hr_double }}
 <include src="../programming/files-writing/text.md" />{{ hr_double }}
 <include src="../programming/files-csv/text.md" />{{ hr_double }}
+
+<include src="../programming/ide/text.md" />{{ hr_double }}
+
 </div>
 <div id="week7">
 <div id="week7-toc">
