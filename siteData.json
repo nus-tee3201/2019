@@ -675,6 +675,18 @@
     },
     {
       "headings": {
+        "appendix-c-using-an-ide": "Appendix C: Using an IDE"
+      },
+      "title": "Python Basics: Using an IDE",
+      "footer": "footer.md",
+      "head": "adminHead.md",
+      "siteNav": "programming-sitenav.md",
+      "pageNav": 4,
+      "src": "programming/toc/ide.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "exercise-countries": "Exercise : Countries",
         "exercise-get-head-get-tail": "Exercise : Get Head, Get Tail",
         "exercise-swap-ends": "Exercise : Swap Ends",

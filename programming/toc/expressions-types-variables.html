@@ -62,7 +62,8 @@
       <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix C: The Monty Project</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/ide.html" class="site-nav__a">Appendix C: Using an IDE</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix D: The Monty Project</a></li>
     </ul>
   </div>
   <div id="site-nav-btn-wrap">
@@ -84,8 +85,8 @@
               <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
               <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
               <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] <span class="fas fa-arrow-circle-left"></span></span></a></li>
               <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
               <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
               <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
@@ -140,7 +141,7 @@
               <ul>
                 <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
               </ul>
-              <panel type="seamless" header="%%:tv: What is programming (a 2-minute intro from Khan Academy):%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> What is programming (a 2-minute intro from Khan Academy):%%">
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
             </div>
@@ -160,12 +161,14 @@
                   </ol>
                 </box>
                 <p><strong>Option 2. install python on your computer</strong></p>
-                <p>
-                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)
-                </p>
-                <panel type="seamless" header=":tv: How to install Python on Windows">
-                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                </panel>
+                <span id="install-python">
+                  <p>
+                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)
+                  </p>
+                  <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> How to install Python on Windows">
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </panel>
+                </span>
               </div>
               <div class="alt-java">
                 <p>Programming in Java requires minimally the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html"><em>Java Development Kit (JDK)</em></a> to be installed in your computer. The JDK includes tools useful for developing and testing programs written in the Java programming language and running on the Java platform.</p>
@@ -183,7 +186,7 @@
 <span class="hljs-number">24</span>
 &gt;&gt;&gt;
 </code></pre>
-              <panel type="seamless" header="%%:tv: Python interactive shell in action:%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Python interactive shell in action:%%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -252,9 +255,9 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
 <span class="hljs-number">30</span>
 </code></pre>
-              <panel type="seamless" header="%%:tv: Operators%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Operators%%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
-              <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
+              <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%">
                 <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
                 <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
               </panel>
@@ -305,9 +308,9 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Bye'</span> + (<span class="hljs-string">'!'</span> * <span class="hljs-number">10</span>)
 <span class="hljs-string">'Bye!!!!!!!!!!'</span>
 </code></pre>
-              <panel type="seamless" header="%%:tv: Data types%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Data types%%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
-              <panel type="seamless" header="%%:computer: Try your own%%">
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%">
                 <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -350,7 +353,7 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span>price - discount
 <span class="hljs-number">9.5</span>
 </code></pre>
-                <panel type="seamless" header="%%:computer: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
                   <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
               <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
@@ -392,10 +395,10 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
 </code></pre>
-                <panel type="seamless" header="%%:computer: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
                   <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
-              <panel type="seamless" header="%%:tv: Variables%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Variables%%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -425,7 +428,7 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Sun, 24 Feb 2019 10:21:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Mon, 25 Feb 2019 06:57:55 GMT</small></div>
 </footer>
 </div>
 </body>

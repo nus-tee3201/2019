@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Python Basics: Installing 3rd Party Libraries</title>
+    <title>TE3201 Website - Python Basics: Using an IDE</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
     <link rel="stylesheet" href="../../markbind/css/font-awesome.min.css" >
@@ -31,10 +31,7 @@
     <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
 
   <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules&#x200E;</a>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#exercise-print-errors-in-red">Exercise : Print Errors In Red&#x200E;</a>
-    </nav>
+    <a class="nav-link py-1" href="#appendix-c-using-an-ide">Appendix C: Using an IDE&#x200E;</a>
 
   </nav>
 </nav>
@@ -52,9 +49,9 @@
       <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a current">Appendix A: Installing 3rd Party Modules</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a">Appendix A: Installing 3rd Party Modules</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a">Appendix B: Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/ide.html" class="site-nav__a">Appendix C: Using an IDE</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/ide.html" class="site-nav__a current">Appendix C: Using an IDE</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a">Appendix D: The Monty Project</a></li>
     </ul>
   </div>
@@ -114,60 +111,50 @@
           </div>
           <div id="main">
             <div>
-              <h1 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a-installing-3rd-party-modules"></a></h1>
-              <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
-              <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
-              <pre><code class="hljs">pip --version
-</code></pre>
-              <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
-                <pre><code class="hljs bash">pip install colorama
-</code></pre>
-                <p>⤵️</p>
-                <pre><code class="hljs">Collecting colorama
-  Downloading colorama-0.3.9-py2.py3-none-any.whl
-Installing collected packages: colorama
-Successfully installed colorama-0.3.9
-</code></pre>
-                <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
-                <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
-
-colorama.init()  <span class="hljs-comment"># one-time initialization</span>
-
-print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
-print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
-print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
-</code></pre>
-                <p>⤵️<br></p>
-                <img src="/2019/thirdparty/images/coloramaOutput.png">
-              </tip-box>
-              <tip-box>
-                <p><strong>💡 Some useful third-party modules:</strong></p>
-                <ul>
-                  <li><a href="https://pypi.python.org/pypi/colorama"><code>colorama</code></a>: For colorizing text printed in the console</li>
-                  <li><a href="https://pypi.python.org/pypi/selenium"><code>selenium</code></a>: For automating the Browser</li>
-                  <li><a href="http://www.magiksys.net/pyzmail/"><code>pyzmail</code></a>: For sending emails</li>
-                  <li><a href="https://www.twilio.com/docs/libraries/python"><code>twilio</code></a>: For sending SMS</li>
-                  <li><a href="https://pythonhosted.org/PyPDF2/"><code>PyPDF2</code></a>: For working with PDF files</li>
-                  <li><a href="https://pypi.python.org/pypi/pyperclip/1.6.0"><code>pyperclip</code></a>: To access the clipboard of the operating system</li>
-                  <li><a href="https://pypi.python.org/pypi/dateparser/0.7.0"><code>dateparser</code></a>: To parse natural language repsentation of dates e.g., <code>in 2 days</code>, <code>tomorrow</code></li>
-                </ul>
-              </tip-box>
-              <p><strong>📎 Resources</strong>:</p>
-              <ul>
-                <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
-              </ul>
-              <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Print Errors in Red" expanded no-close>
-                  <div>
-                    <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
-                    <p>Update a CLI program you have written in the past to print error messages in red color.</p>
-                    <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
-                  </div>
-                </panel>
-                <p></p>
-              </div>
+              <h1 id="appendix-c-using-an-ide">Appendix C: Using an IDE<a class="fa fa-anchor" href="#appendix-c-using-an-ide"></a></h1>
+              <p><strong>There are several Python <trigger trigger="click" for="modal:pythonIde-IDEs">IDEs (Integrated Development Environments)</trigger></strong> that you can use to manage a Python programming project.</p>
+              <modal large title="<span class='fas fa-info-circle'></span> What is an IDE?" id="modal:pythonIde-IDEs">
+                <p><span class="dimmed">Given below is an extract from the SE Textbook (<strong><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a> → Introduction → What</strong>):</span></p>
+                <div>
+                  <p><strong>Professional software engineers often write code using <em>Integrated Development Environments (IDEs)</em>. IDEs support all development-related work within the same tool.</strong></p>
+                  <p>An IDE generally consists of:</p>
+                  <ul>
+                    <li>A source code editor that includes features such as syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.</li>
+                    <li>A compiler and/or an interpreter (together with other build automation support) that facilitates the compilation/linking/running/deployment of a program.</li>
+                    <li>A debugger that allows the developer to execute the program one step at a time to observe the run-time behavior in order to locate bugs.</li>
+                    <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, simulation of the target runtime platform, and modeling support.</li>
+                  </ul>
+                  <p>Examples of popular IDEs:</p>
+                  <ul>
+                    <li>Java: Eclipse, Intellij IDEA, NetBeans</li>
+                    <li>C#, C++: Visual Studio</li>
+                    <li>Swift: XCode</li>
+                    <li>Python: PyCharm</li>
+                  </ul>
+                  <p>Some Web-based IDEs have appeared in recent times too e.g., Amazon's <a href="https://aws.amazon.com/cloud9/">Cloud9 IDE</a>.</p>
+                  <p>Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
+                </div>
+              </modal>
+              <p>If you have not done so already, <trigger trigger="click" for="modal:pythonIde-installingPython">install Python in your Computer.</trigger>
+              </p>
+              <modal large title="Installing Python" id="modal:pythonIde-installingPython">
+                  <div>
+                  <p>
+                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)
+                  </p>
+                  <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> How to install Python on Windows">
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </panel>
+                </div>
+              </modal>
+              <p>The standard Python installation comes with a basic IDE called IDLE. It can be used to write, run, and debug Python code.</p>
+              <p><strong><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> is a more sophisticated IDE that is widely used.</strong> PyCharm has a free community edition. The professional edition too is free for students.</p>
+              <panel header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Installing and setting up PyCharm" expanded>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/0y5XlNeFxNk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+              </panel>
+              <panel header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Debugging in PyCharm" expanded>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/xuTDnFikBhw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+              </panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>

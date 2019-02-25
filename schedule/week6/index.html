@@ -38,8 +38,8 @@
         <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
         <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
         <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-        <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+        <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+        <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
         <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
         <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
@@ -86,6 +86,7 @@
                   <li><a href="#csv-files">CSV Files</a></li>
                 </ul>
               </li>
+              <li><a href="#appendix-c-using-an-ide"><strong>Using an IDE</strong></a></li>
             </ul>
           </div>
           <h1 id="files">Files<a class="fa fa-anchor" href="#files"></a></h1>
@@ -897,6 +898,53 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
             </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
+          <div>
+            <h1 id="appendix-c-using-an-ide">Appendix C: Using an IDE<a class="fa fa-anchor" href="#appendix-c-using-an-ide"></a></h1>
+            <p><strong>There are several Python <trigger trigger="click" for="modal:pythonIde-IDEs">IDEs (Integrated Development Environments)</trigger></strong> that you can use to manage a Python programming project.</p>
+            <modal large title="<span class='fas fa-info-circle'></span> What is an IDE?" id="modal:pythonIde-IDEs">
+              <p><span class="dimmed">Given below is an extract from the SE Textbook (<strong><a href="/2019/se-book-adapted/chapters/ides.html">IDEs</a> → Introduction → What</strong>):</span></p>
+              <div>
+                <p><strong>Professional software engineers often write code using <em>Integrated Development Environments (IDEs)</em>. IDEs support all development-related work within the same tool.</strong></p>
+                <p>An IDE generally consists of:</p>
+                <ul>
+                  <li>A source code editor that includes features such as syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.</li>
+                  <li>A compiler and/or an interpreter (together with other build automation support) that facilitates the compilation/linking/running/deployment of a program.</li>
+                  <li>A debugger that allows the developer to execute the program one step at a time to observe the run-time behavior in order to locate bugs.</li>
+                  <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, simulation of the target runtime platform, and modeling support.</li>
+                </ul>
+                <p>Examples of popular IDEs:</p>
+                <ul>
+                  <li>Java: Eclipse, Intellij IDEA, NetBeans</li>
+                  <li>C#, C++: Visual Studio</li>
+                  <li>Swift: XCode</li>
+                  <li>Python: PyCharm</li>
+                </ul>
+                <p>Some Web-based IDEs have appeared in recent times too e.g., Amazon's <a href="https://aws.amazon.com/cloud9/">Cloud9 IDE</a>.</p>
+                <p>Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
+              </div>
+            </modal>
+            <p>If you have not done so already, <trigger trigger="click" for="modal:pythonIde-installingPython">install Python in your Computer.</trigger>
+            </p>
+            <modal large title="Installing Python" id="modal:pythonIde-installingPython">
+                <div>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)
+                </p>
+                <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> How to install Python on Windows">
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                </panel>
+              </div>
+            </modal>
+            <p>The standard Python installation comes with a basic IDE called IDLE. It can be used to write, run, and debug Python code.</p>
+            <p><strong><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> is a more sophisticated IDE that is widely used.</strong> PyCharm has a free community edition. The professional edition too is free for students.</p>
+            <panel header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Installing and setting up PyCharm" expanded>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/0y5XlNeFxNk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            </panel>
+            <panel header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Debugging in PyCharm" expanded>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/xuTDnFikBhw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            </panel>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
         </div>
       </tab>
       <tab header="<span class='fas fa-graduation-cap'></span> SE Topics">
@@ -1608,7 +1656,7 @@ add    read book
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.19.0</a> at Sun, 24 Feb 2019 10:21:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Mon, 25 Feb 2019 06:57:55 GMT</small></div>
 </footer>
 </div>
 </body>
