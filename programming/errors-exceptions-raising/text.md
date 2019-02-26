@@ -80,5 +80,13 @@ hide_ends2 failed: Not enough items
 
 <include src="tryYourOwn.md" boilerplate var-program="errors-exceptions-raising" />
 
+Here are some commonly used built-in exceptions ([full list](https://docs.python.org/3/library/exceptions.html#concrete-exceptions)) you can raise/handle in your code:
+* `IndexError`: Indicates an index of a sequence (e.g., a list) is out of range.
+* `RuntimeError` : Indicates an error that does not fall under any other category.
+* `ValueError`: Indicates when a function gets argument of correct type but improper value.
+* `ZeroDivisionError` : Indicates an attempt to divide by zero.
+
+It is also possible to define your own _user-defined exceptions_ but that requires more advanced programming techniques. It will be covered elsewhere.
+
 <include src="exercisePanel.md" boilerplate var-title="Is Even-Integer in Range" var-file="e-isEvenIntegerInRange.md" />
 <include src="exercisePanel.md" boilerplate var-title="Flexible Word Game" var-file="e-flexibleWordGame.md" />

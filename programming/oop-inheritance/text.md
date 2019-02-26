@@ -280,3 +280,49 @@ As both `Teacher` and `Student` classes have the `print_info()` method, the meth
 </tip-box>
 
 <include src="exercisePanel.md" boilerplate var-title="Add `SmartPhone` Class" var-file="e-addSmartPhoneClass.md" />
+
+**You need to use inheritance when you create user-defined exceptions because** all such exceptions need to inherit from a built-in `Exception` class.
+
+<box>
+
+{{ icon_example }} In the example below, `EmptyCommandError` and `InvalidCommandError` are user-defined exceptions. The latter has overridden the constructor to take additional parameters.
+
+```python
+class EmptyCommandError(Exception):
+    """Indicates a task has expired."""
+    pass
+
+
+class InvalidCommandError(Exception):
+    """Indicates that the user entered an invalid command"""
+
+    def __init__(self, command, explanation):
+        self.command = command
+        self.explanation = explanation
+
+
+def execute_command(command):
+    if command == '':
+        raise EmptyCommandError()
+    elif len(command) < 4:
+        raise InvalidCommandError(command, "command too short")
+
+
+def process(command):
+    try:
+        execute_command(command)
+    except EmptyCommandError:
+        print('empty command')
+    except InvalidCommandError as e:
+        print('invalid command:', e.command, '->', e.explanation)
+
+
+process('')
+process('HA')
+```
+{{ icon_output }}
+```
+empty command
+invalid command: HA -> command too short
+```
+</box>
