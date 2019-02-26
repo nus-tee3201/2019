@@ -675,6 +675,8 @@
     },
     {
       "headings": {
+        "exercise-setup-a-project-in-pycharm": "Exercise : Setup a Project in PyCharm",
+        "exercise-debug-a-project-in-pycharm": "Exercise : Debug a Project in PyCharm",
         "appendix-c-using-an-ide": "Appendix C: Using an IDE"
       },
       "title": "Python Basics: Using an IDE",

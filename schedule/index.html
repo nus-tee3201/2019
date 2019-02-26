@@ -941,9 +941,71 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
             <panel header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Installing and setting up PyCharm" expanded>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/0y5XlNeFxNk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             </panel>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Setup a Project in PyCharm" expanded no-close>
+                <div>
+                  <h4 id="exercise-setup-a-project-in-pycharm">Exercise : Setup a Project in PyCharm<a class="fa fa-anchor" href="#exercise-setup-a-project-in-pycharm"></a></h4>
+                  <ol>
+                    <li>Install Python and PyCharm if you haven't done so already.</li>
+                    <li>Start PyCharm and click on the <code>Create New Project</code> option.<br>
+                      <a href="/2019/programming/ide/images/createNewProject.png" target="_self"><img src="/2019/programming/ide/images/createNewProject.png" alt class="img-fluid"></a></li>
+                    <li>Create a folder for your project. In the next screen, specify that as the project location.<br>
+                      <a href="/2019/programming/ide/images/specifyProjectLocation.png" target="_self"><img src="/2019/programming/ide/images/specifyProjectLocation.png" alt class="img-fluid"></a></li>
+                    <li>You can accept defaults for the remaining steps.</li>
+                    <li>To add a new file, right-click on project name and choose <code>New</code> → <code>File</code>. Provide a file name in the next screen. E.g., <code>hello.py</code><br>
+                      <a href="/2019/programming/ide/images/addNewFile.png" target="_self"><img src="/2019/programming/ide/images/addNewFile.png" alt class="img-fluid"></a></li>
+                    <li>Type your code in the file.<br>
+                      <a href="/2019/programming/ide/images/editCode.png" target="_self"><img src="/2019/programming/ide/images/editCode.png" alt class="img-fluid"></a><br>
+                      Here is an example:
+                      <pre><code class="hljs python">greeting = <span class="hljs-string">'hello'</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">(name)</span>:</span>
+    message = greeting + <span class="hljs-string">' '</span> + name
+    print(message)
+
+
+print_greeting(<span class="hljs-string">'john'</span>)
+print_greeting(<span class="hljs-string">'jane'</span>)
+</code></pre>
+                    </li>
+                    <li>To run the code, Right-click on project name and choose <code>Run 'filename'</code>.<br>
+                      <a href="/2019/programming/ide/images/runCode.png" target="_self"><img src="/2019/programming/ide/images/runCode.png" alt class="img-fluid"></a></li>
+                    <li>The output will appear in the panel at the bottom of the IDE.<br>
+                      <a href="/2019/programming/ide/images/seeOutput.png" target="_self"><img src="/2019/programming/ide/images/seeOutput.png" alt class="img-fluid"></a></li>
+                  </ol>
+                </div>
+              </panel>
+              <p></p>
+            </div>
             <panel header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Debugging in PyCharm" expanded>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/xuTDnFikBhw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             </panel>
+            <p></p>
+            <div>
+              <panel type="danger" header=":fas-dumbbell: Exercise: Debug a Project in PyCharm" expanded no-close>
+                <div>
+                  <h4 id="exercise-debug-a-project-in-pycharm">Exercise : Debug a Project in PyCharm<a class="fa fa-anchor" href="#exercise-debug-a-project-in-pycharm"></a></h4>
+                  <ol>
+                    <li>Open a project in PyCharm. Go to a project file containing Python code.</li>
+                    <li>To create a breakpoint at a statement, click on the <tooltip content="the area between the statement and the line number"><em>gutter</em></tooltip> next to the line. A red dot should appear to indicate that the breakpoint has been set. <span class="dimmed">You can remove the breakpoint by clicking on the red dot again.</span><br>
+                      <a href="/2019/programming/ide/images/addBreakPoint.png" target="_self"><img src="/2019/programming/ide/images/addBreakPoint.png" alt class="img-fluid"></a></li>
+                    <li>To start debugging, choose <code>Debug</code> instead of <code>Run.</code><br>
+                      <a href="/2019/programming/ide/images/startDebugging.png" target="_self"><img src="/2019/programming/ide/images/startDebugging.png" alt class="img-fluid"></a></li>
+                    <li>The execution will pause at the first breakpoint. Use the debugging buttons to step through the code. You can see the , choose <code>Debug</code> instead of <code>Run</code>. You can see the value of the variables in the <em>debugger</em> Window, in the area below the debugging buttons.<br>
+                      <a href="/2019/programming/ide/images/stepThroughCode.png" target="_self"><img src="/2019/programming/ide/images/stepThroughCode.png" alt class="img-fluid"></a><br>
+                      Useful buttons:<br>
+                      <ul>
+                        <li><code>Step over</code>: executes the statement and moves to the next statement</li>
+                        <li><code>Step in</code>: goes into the function that is called in the current statement.</li>
+                        <li><code>Step out</code>: finish executing the current function and goes back to the code that called the function.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+              </panel>
+              <p></p>
+            </div>
           </div>
           <hr style="border-top: 3px double #c5c5c5;">
         </div>
@@ -1659,7 +1721,7 @@ add    read book
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Mon, 25 Feb 2019 06:57:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Tue, 26 Feb 2019 05:04:34 GMT</small></div>
 </footer>
 </div>
 </body>

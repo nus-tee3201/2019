@@ -15127,3 +15127,11 @@ Missing reference in C:\repos\nus-te3201\te3201-2019-website\programming\ide\tex
 2019-02-25T06:56:36.022Z - info: Site data built
 2019-02-25T06:57:51.436Z - info: Website generation started at 2:57:48 PM
 2019-02-25T06:57:53.429Z - info: Building assets...
+2019-02-25T06:57:55.404Z - info: Assets built
+2019-02-25T06:57:55.405Z - info: Generating pages...
+2019-02-25T06:58:48.512Z - info: Pages built
+2019-02-25T06:58:58.703Z - info: Website generation complete! Total build time: 70.186s
+2019-02-25T06:58:58.703Z - info: Build success!
+2019-02-25T06:58:58.703Z - info: Generate Site durationMs=70186
+2019-02-25T06:58:58.710Z - info: Site data built
+2019-02-25T06:59:31.888Z - info: Deployed!
