@@ -24,8 +24,14 @@ The standard Python installation comes with a basic IDE called IDLE. It can be u
 @[youtube](0y5XlNeFxNk)
 
 </panel>
+
+<include src="exercisePanel.md" boilerplate var-title="Setup a Project in PyCharm" var-file="e-setupPycharmProject.md" />
+
 <panel header="{{ icon_video }} Debugging in PyCharm" expanded>
 
 @[youtube](xuTDnFikBhw)
 
 </panel>
+<p/>
+
+<include src="exercisePanel.md" boilerplate var-title="Debug a Project in PyCharm" var-file="e-debugPycharmProject.md" />
