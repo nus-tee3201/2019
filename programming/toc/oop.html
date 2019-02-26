@@ -1090,6 +1090,46 @@ playing game
                 </panel>
                 <p></p>
               </div>
+              <p><strong>You need to use inheritance when you create user-defined exceptions because</strong> all such exceptions need to inherit from a built-in <code>Exception</code> class.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> In the example below, <code>EmptyCommandError</code> and <code>InvalidCommandError</code> are user-defined exceptions. The latter has overridden the constructor to take additional parameters.</p>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmptyCommandError</span><span class="hljs-params">(Exception)</span>:</span>
+    <span class="hljs-string">"""Indicates a task has expired."""</span>
+    <span class="hljs-keyword">pass</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InvalidCommandError</span><span class="hljs-params">(Exception)</span>:</span>
+    <span class="hljs-string">"""Indicates that the user entered an invalid command"""</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, command, explanation)</span>:</span>
+        self.command = command
+        self.explanation = explanation
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">raise</span> EmptyCommandError()
+    <span class="hljs-keyword">elif</span> len(command) &lt; <span class="hljs-number">4</span>:
+        <span class="hljs-keyword">raise</span> InvalidCommandError(command, <span class="hljs-string">"command too short"</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        execute_command(command)
+    <span class="hljs-keyword">except</span> EmptyCommandError:
+        print(<span class="hljs-string">'empty command'</span>)
+    <span class="hljs-keyword">except</span> InvalidCommandError <span class="hljs-keyword">as</span> e:
+        print(<span class="hljs-string">'invalid command:'</span>, e.command, <span class="hljs-string">'-&gt;'</span>, e.explanation)
+
+
+process(<span class="hljs-string">''</span>)
+process(<span class="hljs-string">'HA'</span>)
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre><code class="hljs">empty command
+invalid command: HA -&gt; command too short
+</code></pre>
+              </box>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>
@@ -1101,7 +1141,7 @@ playing game
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Tue, 26 Feb 2019 05:04:34 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Tue, 26 Feb 2019 08:54:28 GMT</small></div>
 </footer>
 </div>
 </body>

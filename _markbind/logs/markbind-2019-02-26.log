@@ -183,3 +183,68 @@
 2019-02-26T05:01:10.216Z - info: Site data built
 2019-02-26T05:04:31.208Z - info: Website generation started at 1:04:28 PM
 2019-02-26T05:04:33.117Z - info: Building assets...
+2019-02-26T05:04:34.889Z - info: Assets built
+2019-02-26T05:04:34.889Z - info: Generating pages...
+2019-02-26T05:05:25.586Z - info: Pages built
+2019-02-26T05:05:34.883Z - info: Website generation complete! Total build time: 66.603s
+2019-02-26T05:05:34.884Z - info: Build success!
+2019-02-26T05:05:34.884Z - info: Generate Site durationMs=66604
+2019-02-26T05:05:34.890Z - info: Site data built
+2019-02-26T05:06:10.322Z - info: Deployed!
+2019-02-26T08:26:46.874Z - info: Website generation started at 4:26:44 PM
+2019-02-26T08:26:48.661Z - info: Building assets...
+2019-02-26T08:26:50.466Z - info: Assets built
+2019-02-26T08:26:50.467Z - info: Generating pages...
+2019-02-26T08:27:41.372Z - info: Pages built
+2019-02-26T08:27:51.355Z - info: Website generation complete! Total build time: 67.21s
+2019-02-26T08:27:51.368Z - info: Generate Site durationMs=67223
+2019-02-26T08:27:51.712Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-26T08:27:51.712Z - info: Press CTRL+C to stop ...
+2019-02-26T08:27:51.737Z - info: Site data built
+2019-02-26T08:28:30.442Z - info: [4:28:30 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-raising\text.md
+2019-02-26T08:28:31.445Z - info: Rebuilding affected source files
+2019-02-26T08:28:31.447Z - info: Rebuilding 2 pages
+2019-02-26T08:28:32.339Z - info: Pages rebuilt
+2019-02-26T08:28:32.350Z - info: Site data built
+2019-02-26T08:28:32.600Z - info: [4:28:32 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-raising\text.md
+2019-02-26T08:28:33.601Z - info: Rebuilding affected source files
+2019-02-26T08:28:33.602Z - info: Rebuilding 2 pages
+2019-02-26T08:28:34.439Z - info: Pages rebuilt
+2019-02-26T08:28:34.450Z - info: Site data built
+2019-02-26T08:31:43.410Z - info: [4:31:43 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-raising\text.md
+2019-02-26T08:31:44.411Z - info: Rebuilding affected source files
+2019-02-26T08:31:44.413Z - info: Rebuilding 2 pages
+2019-02-26T08:31:45.351Z - info: Pages rebuilt
+2019-02-26T08:31:45.360Z - info: Site data built
+2019-02-26T08:33:37.419Z - info: [4:33:37 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\text.md
+2019-02-26T08:33:38.419Z - info: Rebuilding affected source files
+2019-02-26T08:33:38.421Z - info: Rebuilding 2 pages
+2019-02-26T08:33:39.626Z - info: Pages rebuilt
+2019-02-26T08:33:39.636Z - info: Site data built
+2019-02-26T08:34:38.432Z - info: [4:34:38 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\text.md
+2019-02-26T08:34:39.434Z - info: Rebuilding affected source files
+2019-02-26T08:34:39.435Z - info: Rebuilding 2 pages
+2019-02-26T08:34:40.724Z - info: Pages rebuilt
+2019-02-26T08:34:40.739Z - info: Site data built
+2019-02-26T08:47:13.024Z - info: [4:47:13 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\text.md
+2019-02-26T08:47:14.025Z - info: Rebuilding affected source files
+2019-02-26T08:47:14.027Z - info: Rebuilding 2 pages
+2019-02-26T08:47:15.295Z - info: Pages rebuilt
+2019-02-26T08:47:15.312Z - info: Site data built
+2019-02-26T08:48:32.672Z - info: [4:48:32 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\text.md
+2019-02-26T08:48:33.675Z - info: Rebuilding affected source files
+2019-02-26T08:48:33.677Z - info: Rebuilding 2 pages
+2019-02-26T08:48:34.904Z - info: Pages rebuilt
+2019-02-26T08:48:34.913Z - info: Site data built
+2019-02-26T08:49:23.523Z - info: [4:49:23 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\text.md
+2019-02-26T08:49:24.524Z - info: Rebuilding affected source files
+2019-02-26T08:49:24.527Z - info: Rebuilding 2 pages
+2019-02-26T08:49:25.839Z - info: Pages rebuilt
+2019-02-26T08:49:25.857Z - info: Site data built
+2019-02-26T08:53:10.869Z - info: [4:53:10 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\text.md
+2019-02-26T08:53:11.870Z - info: Rebuilding affected source files
+2019-02-26T08:53:11.871Z - info: Rebuilding 2 pages
+2019-02-26T08:53:13.356Z - info: Pages rebuilt
+2019-02-26T08:53:13.366Z - info: Site data built
+2019-02-26T08:54:25.227Z - info: Website generation started at 4:54:22 PM
+2019-02-26T08:54:26.971Z - info: Building assets...
