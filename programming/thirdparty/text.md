@@ -36,7 +36,7 @@ print(colorama.Style.RESET_ALL + ' Back to normal now')
 ```
 :arrow_heading_down:<br>
 
-<img src="{{baseUrl}}/thirdparty/images/coloramaOutput.png" /></p>
+<img src="{{baseUrl}}/programming/thirdparty/images/coloramaOutput.png" /></p>
 
 </tip-box>
 

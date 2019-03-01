@@ -75,6 +75,8 @@ total................:110
 
 <panel type="seamless" header="%%:bulb: (Python) Partial solution%%">
 
+This exercise requires string formatting methods you learned in an earlier lesson.
+
 ```python
 def print_inventory(items, title, width):
   print_header(width, title)

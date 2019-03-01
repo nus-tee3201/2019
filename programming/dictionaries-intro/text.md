@@ -1,6 +1,6 @@
 ### The Dictionary Data Structure
 
-**A _dictionary_ (python type: `dict`) is a collection of many values that can be indexed by any object type**, unlike lists that are automatically indexed by integers. **Indexes for dictionaries are called _keys_**, and a key with its associated value is called a _key-value pair_. Python **dictionaries use curly braces notation `{ key1: value1, key2: value2, ...}`**.
+**A _dictionary_ (python type: `dict`) is a collection of many values that can be indexed by any object type**, unlike lists that are automatically indexed by integers. **Indexes for dictionaries are called _keys_**, and a key with its associated value is called a _key-value pair_. Python **dictionaries use the curly braces notation `{ key1: value1, key2: value2, ...}`**.
 
 <box>
 
@@ -47,6 +47,6 @@ prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 
 </box>
 
-Unlike lists which contain an ordered sequence of items, **dictionaries are not ordered** i.e., we cannot force a key-value pair in a dictionary to be at a specific position %%e.g., in the example above, there is no guarantee that `'bread'`:`'3.50'` pair will be at the first position of the dictionary `prices` after adding more key-value pairs to it%%.
+Unlike lists which contain an ordered sequence of items, **dictionaries are not ordered** i.e., you cannot force a key-value pair in a dictionary to be at a specific position %%e.g., in the example above, there is no guarantee that `'bread'`:`'3.50'` pair will be at the first position of the dictionary `prices` after adding more key-value pairs to it%%.
 
 <include src="exercisePanel.md" boilerplate var-title="Get Subject Info" var-file="e-getSubjectInfo.md" />

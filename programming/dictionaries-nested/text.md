@@ -11,7 +11,7 @@ assignments = {'TE3201': ['do exercises', 'submit project'],
                'CS2103': [],
                'CS3281': ['do presentation']}
 ```
-:bulb: Python ignores line breaks and indentations in the middle of a dictionary/list definition. %%The intention is to allow you to structure the code into a more readable format (e.g., one key-value pair per line).%%
+:bulb: Python ignores line breaks and indentations in the middle of a dictionary/list definition %%which allows you to structure the code into a more readable format (e.g., one key-value pair per line).%%
 
 As the values in this dictionary are lists, you can do list operations on them, e.g., `append()`, `len()`
 

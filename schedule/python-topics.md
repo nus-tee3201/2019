@@ -157,11 +157,18 @@
 <div id="week8">
 <div id="week8-toc">
 
+* [**Installing 3rd Party Modules**](#appendix-a-installing-3rd-party-modules)
+</div>
+
+<include src="../programming/thirdparty/text.md" />{{ hr_double }}
+</div>
+<div id="week9">
+<div id="week9-toc">
+
 * [**Object-Oriented Programing**](#object-oriented-programming)
   * [Classes](#classes)
   * [Class-Level Members](#class-level-members)
   * [Visibility](#visibility)
-* [**Installing 3rd Party Modules**](#installing-3rd-party-modules)
 </div>
 
 # Object-Oriented Programming
@@ -169,16 +176,13 @@
 <include src="../programming/oop-classes/text.md" />{{ hr_double }}
 <include src="../programming/oop-classLevelMembers/text.md" />{{ hr_double }}
 <include src="../programming/oop-visibility/text.md" />{{ hr_double }}
-
-# Installing 3rd Party Modules
-
-<include src="../programming/thirdparty/text.md" />{{ hr_double }}
 </div>
-<div id="week9">
-<div id="week9-toc">
+<div id="week10">
+<div id="week10-toc">
 
 * [**Object-Oriented Programing - continued**](#object-oriented-programming---continued)
   * [Inheritance](#inheritance)
+* [**Unit Testing**](#appendix-b-unit-testing)
 </div>
 
 # Object-Oriented Programming
@@ -186,14 +190,6 @@
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
 
 <include src="../programming/unittesting/text.md" />{{ hr_double }}
-</div>
-<div id="week10">
-<div id="week10-toc">
-
-
-</div>
-
-
 </div>
 <div id="week11">
 
