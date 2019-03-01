@@ -661,4 +661,92 @@ Given below are some more features you can consider adding at this point (it is 
 
 {{ hr_double }}
 
+<div id="monty8">
+
+### Monty 8
+
+Enhance the [Monty 7 code]({{ baseUrl }}/programming/toc/monty.html#monty-7) to add support for keeping track of deadlines as well as regular todo tasks
+
+Previous behavior:
+* `add buy book`: adds a task `buy book`
+
+Proposed change - replace the above command with the following two:
+* `todo read book`: adds a todo task `read book`
+* `deadline return book by: May 3rd` adds a deadline `return book` which is to be done by `May 3d`.<br>
+  Note: `by:` is a keyword. Anything that comes after it is considered a description of the deadline.
+
+A sample output is given below.
+
+```
+>>> What can I do for you?
+
+list
+>>> Here is the list of tasks:
+============================================================
+STATUS | INDEX | DESCRIPTION                 | DEADLINE
+------------------------------------------------------------
+  ✓    |   1   | borrow book                 | -
+  ✗    |   2   | read book                   | -
+  ✗    |   3   | return book                 | Monday
+------------------------------------------------------------
+>>> What can I do for you?
+
+todo watch movie
+>>> What can I do for you?
+
+deadline submit assignment by: end of May
+>>> What can I do for you?
+
+list
+>>> Here is the list of tasks:
+============================================================
+STATUS | INDEX | DESCRIPTION                 | DEADLINE
+------------------------------------------------------------
+  ✓    |   1   | borrow book                 | -
+  ✗    |   2   | read book                   | -
+  ✗    |   3   | return book                 | Monday
+  ✗    |   4   | watch movie                 | -
+  ✗    |   5   | submit assignment           | end of May
+------------------------------------------------------------
+>>> What can I do for you?
+```
+
+<box>
+
+:bulb: here are some tips:
+
+* One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, `T` and `D` is used to indicate todo items and deadline items, respectively.
+  ```python
+  [
+   {'type': 'T', 'description': 'borrow book', 'is_done': True},
+   {'type': 'T', 'description': 'read book', 'is_done': False},
+   {'type': 'D', 'description': 'return book', 'is_done': False, 'by': 'Monday'}
+  ]
+
+  ```
+* The format of the csv file needs to be updated to store extra values too. Here is an example:
+  ```
+  T,borrow book,done
+  T,read book,pending
+  D,return book,pending,Monday
+  ```
+</box>
+
+<panel header=":fas-battery-quarter: Partial solution" minimized>
+
+Here is the code adding a todo item:
+```python
+command_parts = command.strip().split(' ', 1) # split the command into two: first word and the remainder
+if action == 'todo':
+    items.append({'type': 'T', 'description': command_parts[1], 'is_done': False})
+elif  ...
+```
+
+</panel>
+<p/>
+
+</div>
+
+{{ hr_double }}
+
 %%Remaining increments to be added soon.%%

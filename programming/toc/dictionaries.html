@@ -142,7 +142,7 @@
             <h1 id="dictionaries">Dictionaries<a class="fa fa-anchor" href="#dictionaries"></a></h1>
             <div>
               <h3 id="the-dictionary-data-structure">The Dictionary Data Structure<a class="fa fa-anchor" href="#the-dictionary-data-structure"></a></h3>
-              <p><strong>A <em>dictionary</em> (python type: <code>dict</code>) is a collection of many values that can be indexed by any object type</strong>, unlike lists that are automatically indexed by integers. <strong>Indexes for dictionaries are called <em>keys</em></strong>, and a key with its associated value is called a <em>key-value pair</em>. Python <strong>dictionaries use curly braces notation <code>{ key1: value1, key2: value2, ...}</code></strong>.</p>
+              <p><strong>A <em>dictionary</em> (python type: <code>dict</code>) is a collection of many values that can be indexed by any object type</strong>, unlike lists that are automatically indexed by integers. <strong>Indexes for dictionaries are called <em>keys</em></strong>, and a key with its associated value is called a <em>key-value pair</em>. Python <strong>dictionaries use the curly braces notation <code>{ key1: value1, key2: value2, ...}</code></strong>.</p>
               <box>
                 <p><span class="fas fa-cube"></span> A list containing names of animals <code>['cat', 'dog', 'hen', 'fish']</code></p>
                 <div class="table-responsive">
@@ -233,11 +233,11 @@
                 <pre><code class="hljs python">friends = {} <span class="hljs-comment"># empty dictionary</span>
 grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
 numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
-is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">'ravi'</span>: <span class="hljs-keyword">True</span>}
+is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>, <span class="hljs-string">'ravi'</span>: <span class="hljs-literal">True</span>}
 prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 </code></pre>
               </box>
-              <p>Unlike lists which contain an ordered sequence of items, <strong>dictionaries are not ordered</strong> i.e., we cannot force a key-value pair in a dictionary to be at a specific position <span class="dimmed">e.g., in the example above, there is no guarantee that <code>'bread'</code>:<code>'3.50'</code> pair will be at the first position of the dictionary <code>prices</code> after adding more key-value pairs to it</span>.</p>
+              <p>Unlike lists which contain an ordered sequence of items, <strong>dictionaries are not ordered</strong> i.e., you cannot force a key-value pair in a dictionary to be at a specific position <span class="dimmed">e.g., in the example above, there is no guarantee that <code>'bread'</code>:<code>'3.50'</code> pair will be at the first position of the dictionary <code>prices</code> after adding more key-value pairs to it</span>.</p>
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Get Subject Info" expanded no-close>
                   <div>
@@ -246,8 +246,8 @@ prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {} <span class="hljs-comment"># UPDATE THIS LINE</span>
   
-print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-keyword">False</span>))
-print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-keyword">True</span>))
+print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))
+print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">True</span>))
 </code></pre>
                     <p><span class="fas fa-arrow-down"></span></p>
                     <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
@@ -257,7 +257,7 @@ print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="h
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} 
   
-print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-keyword">False</span>))
+print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))
 </code></pre>
                     </panel>
                   </div>
@@ -377,7 +377,7 @@ print(game1_scores)
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-keyword">True</span>}
+                        <pre><code class="hljs python">is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>}
 print(is_nice[<span class="hljs-string">'santa'</span>])
 </code></pre>
                       </td>
@@ -630,7 +630,7 @@ print(game3_scores)
                <span class="hljs-string">'CS2103'</span>: [],
                <span class="hljs-string">'CS3281'</span>: [<span class="hljs-string">'do presentation'</span>]}
 </code></pre>
-                <p>💡 Python ignores line breaks and indentations in the middle of a dictionary/list definition. <span class="dimmed">The intention is to allow you to structure the code into a more readable format (e.g., one key-value pair per line).</span></p>
+                <p>💡 Python ignores line breaks and indentations in the middle of a dictionary/list definition <span class="dimmed">which allows you to structure the code into a more readable format (e.g., one key-value pair per line).</span></p>
                 <p>As the values in this dictionary are lists, you can do list operations on them, e.g., <code>append()</code>, <code>len()</code></p>
                 <pre><code class="hljs python">print(<span class="hljs-string">'CS3281 assignments:'</span>, assignments[<span class="hljs-string">'CS3281'</span>])
 
@@ -736,17 +736,17 @@ Betsy Sims
                 <panel type="danger" header=":fas-dumbbell: Exercise: Player Stats" expanded no-close>
                   <div>
                     <h4 id="exercise-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise-player-stats"></a></h4>
-                    <p>Assume in each inning a player gets to bat number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
+                    <p>Assume in each inning a player gets to bat a number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
                     <p>Note how the <code>player_stats</code> dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player <code>amy</code> scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of <code>0*0 + 1*1 + 4*1 + 6*0 = 10</code> for her first inning).</p>
-                    <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code> for the given <code>hit_size</code>.<br>
-                      e.g., <code>get_player_hit_count(player_stats, 'amy', 2, 6)</code> should return how many times <code>amy</code>'s hits in her second inning (i.e., <code>inning = 2</code>) scored <code>6</code>s; the return value should be <code>0</code>.</p>
                     <pre><code class="hljs python">player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span>
                         {<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">5</span>, <span class="hljs-number">4</span>:<span class="hljs-number">0</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's second inning stats</span>
                         {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">0</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">1</span>}], <span class="hljs-comment"># amy's third inning stats</span>
                 <span class="hljs-string">'betty'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">2</span>, <span class="hljs-number">4</span>:<span class="hljs-number">2</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>}],
                 <span class="hljs-string">'charlie'</span>: []}
-          
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span>
+</code></pre>
+                    <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code> for the given <code>hit_size</code>.<br>
+                      e.g., <code>get_player_hit_count(player_stats, 'amy', 2, 6)</code> should return how many times <code>amy</code>'s hits in her second inning (i.e., <code>inning = 2</code>) scored <code>6</code>s; the return value should be <code>0</code>.</p>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
   
 print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>))
@@ -925,6 +925,7 @@ total................:110
                       <li>Width of the number column is 3. Numbers should be right-justified.</li>
                     </ul>
                     <panel type="seamless" header="%%:bulb: (Python) Partial solution%%">
+                      <p>This exercise requires string formatting methods you learned in an earlier lesson.</p>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
   print_header(width, title)
   <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(items.keys()):
@@ -1010,7 +1011,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Tue, 26 Feb 2019 08:54:28 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Fri, 01 Mar 2019 16:08:12 GMT</small></div>
 </footer>
 </div>
 </body>

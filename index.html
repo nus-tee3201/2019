@@ -1624,7 +1624,7 @@ return book,pending
  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
      load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
      print_greeting()
-     <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
          <span class="hljs-keyword">try</span>:
              command = read_command()
              execute_command(command)
@@ -1651,10 +1651,10 @@ return book,pending
 
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span>
-    status = <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span>
+    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
     items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
 </code></pre>
-                <p>Note that <code class="hljs inline python">status = <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span></code> is a shortcut syntax. It is equivalent to the code below:</p>
+                <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code> is a shortcut syntax. It is equivalent to the code below:</p>
                 <pre><code class="hljs">if values[1] == 'done':
     status = True
 else:
@@ -1722,7 +1722,7 @@ add    read book
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Tue, 26 Feb 2019 08:54:28 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Fri, 01 Mar 2019 16:08:12 GMT</small></div>
 </footer>
 </div>
 </body>

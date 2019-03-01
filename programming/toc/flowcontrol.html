@@ -154,7 +154,7 @@
               <h3 id="booleans">Booleans<a class="fa fa-anchor" href="#booleans"></a></h3>
               <p><strong>The <code>bool</code> data type is used to represent <tooltip content="i.e. true/false values"><em>boolean</em> values</tooltip></strong>. They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
               <p>The <code>bool</code> data type can hold only two values <code>True</code> and <code>False</code> (case sensitive).</p>
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>type(<span class="hljs-keyword">True</span>)
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>type(<span class="hljs-literal">True</span>)
 &lt;<span class="hljs-class"><span class="hljs-keyword">class</span> '<span class="hljs-title">bool</span>'&gt;
 
 &gt;&gt;&gt; <span class="hljs-title">type</span><span class="hljs-params">(False)</span>
@@ -207,8 +207,8 @@
               <p><span class="fas fa-cube"></span> Here are some examples</p>
               <pre><code class="hljs python">print(<span class="hljs-string">'hello'</span> == <span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># False</span>
 print(<span class="hljs-string">'dog'</span> != <span class="hljs-string">'cat'</span>) <span class="hljs-comment"># True</span>
-print(<span class="hljs-keyword">True</span> == <span class="hljs-keyword">True</span>) <span class="hljs-comment"># True</span>
-print(<span class="hljs-keyword">True</span> != <span class="hljs-keyword">False</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-literal">True</span> == <span class="hljs-literal">True</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-literal">True</span> != <span class="hljs-literal">False</span>) <span class="hljs-comment"># True</span>
 print(<span class="hljs-number">42</span> == <span class="hljs-number">42.0</span>) <span class="hljs-comment"># True (they are different types of numbers, but of same value)</span>
 print(<span class="hljs-number">42</span> == <span class="hljs-string">'42'</span>) <span class="hljs-comment"># False</span>
 print(<span class="hljs-number">42</span> == int(<span class="hljs-string">'42'</span>)) <span class="hljs-comment"># True</span>
@@ -704,7 +704,7 @@ coin_sum = <span class="hljs-number">0</span>
               <p><strong>You can use a <code>break</code> statement to break out of a loop.</strong></p>
               <tip-box>
                 <p><span class="fas fa-cube"></span> The code below uses the <code>break</code> statement to break out of the loop when the password given is <code>abcd</code>. Without the <code>break</code> statement, the loop will repeat forever because the condition in <code>while True:</code> is always <code>True</code>.</p>
-                <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+                <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
   password = input(<span class="hljs-string">'What is the password?'</span>)
   <span class="hljs-keyword">if</span> password == <span class="hljs-string">'abcd'</span>:
     <span class="hljs-keyword">break</span> <span class="hljs-comment"># exit the loop</span>
@@ -747,10 +747,10 @@ Your balance: <span class="hljs-number">20</span>
 </code></pre>
                     <panel type="seamless" header=":bulb: see hint">
                       <pre><code class="hljs python">...
-is_aborting = <span class="hljs-keyword">False</span>
+is_aborting = <span class="hljs-literal">False</span>
 ...
   <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
-    is_aborting = <span class="hljs-keyword">True</span>
+    is_aborting = <span class="hljs-literal">True</span>
     <span class="hljs-keyword">break</span>
 <span class="hljs-meta">... </span>
 <span class="hljs-keyword">if</span> is_aborting:
@@ -793,14 +793,14 @@ print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
                     <p>The vending machine you wrote in the previous exercise (an example solution given below) accepts any value as the coin value. However, coins come in only certain values only.</p>
                     <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_sum = <span class="hljs-number">0</span>
-is_aborting = <span class="hljs-keyword">False</span>
+is_aborting = <span class="hljs-literal">False</span>
 
 print(<span class="hljs-string">'Price:'</span>, price)
 
 <span class="hljs-keyword">while</span> price &gt; coin_sum:
   coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
   <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
-    is_aborting = <span class="hljs-keyword">True</span>
+    is_aborting = <span class="hljs-literal">True</span>
     <span class="hljs-keyword">break</span>
   coin_sum = coin_sum + coin_value
   print(<span class="hljs-string">'You have entered:'</span>, coin_sum)
@@ -1117,7 +1117,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Tue, 26 Feb 2019 08:54:28 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Fri, 01 Mar 2019 16:08:12 GMT</small></div>
 </footer>
 </div>
 </body>

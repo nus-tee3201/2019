@@ -1,0 +1,254 @@
+2019-02-15T14:46:58.137Z - info: Website generation started at 22:46:53
+2019-02-15T14:47:01.468Z - info: Building assets...
+2019-02-15T14:47:03.590Z - info: Assets built
+2019-02-15T14:47:03.591Z - info: Generating pages...
+2019-02-15T14:48:23.265Z - info: Pages built
+2019-02-15T14:48:40.489Z - info: Website generation complete! Total build time: 107.346s
+2019-02-15T14:48:40.498Z - info: Generate Site durationMs=107355
+2019-02-15T14:48:40.523Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-15T14:48:40.523Z - info: Press CTRL+C to stop ...
+2019-02-15T14:48:40.540Z - info: Site data built
+2019-02-15T14:53:48.591Z - info: [22:53:48] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T14:53:49.597Z - info: Rebuilding affected source files
+2019-02-15T14:53:49.602Z - info: Rebuilding 8 pages
+2019-02-15T14:53:55.781Z - info: Pages rebuilt
+2019-02-15T14:53:55.794Z - info: Site data built
+2019-02-15T14:55:16.210Z - info: [22:55:16] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T14:55:17.212Z - info: Rebuilding affected source files
+2019-02-15T14:55:17.220Z - info: Rebuilding 8 pages
+2019-02-15T14:55:23.201Z - info: Pages rebuilt
+2019-02-15T14:55:23.298Z - info: Site data built
+2019-02-15T14:56:46.607Z - info: [22:56:46] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T14:56:47.612Z - info: Rebuilding affected source files
+2019-02-15T14:56:47.614Z - info: Rebuilding 8 pages
+2019-02-15T14:56:53.750Z - info: Pages rebuilt
+2019-02-15T14:56:53.757Z - info: Site data built
+2019-02-15T14:59:52.095Z - info: [22:59:52] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T14:59:53.100Z - info: Rebuilding affected source files
+2019-02-15T14:59:53.110Z - info: Rebuilding 8 pages
+2019-02-15T14:59:59.133Z - info: Pages rebuilt
+2019-02-15T14:59:59.142Z - info: Site data built
+2019-02-15T15:02:22.577Z - info: [23:02:22] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:02:23.579Z - info: Rebuilding affected source files
+2019-02-15T15:02:23.589Z - info: Rebuilding 8 pages
+2019-02-15T15:02:30.146Z - info: Pages rebuilt
+2019-02-15T15:02:30.152Z - info: Site data built
+2019-02-15T15:02:56.465Z - info: [23:02:56] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:02:57.465Z - info: Rebuilding affected source files
+2019-02-15T15:02:57.474Z - info: Rebuilding 8 pages
+2019-02-15T15:03:03.392Z - info: Pages rebuilt
+2019-02-15T15:03:03.405Z - info: Site data built
+2019-02-15T15:04:03.960Z - info: [23:04:03] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:04:04.966Z - info: Rebuilding affected source files
+2019-02-15T15:04:04.983Z - info: Rebuilding 8 pages
+2019-02-15T15:04:11.405Z - info: Pages rebuilt
+2019-02-15T15:04:11.435Z - info: Site data built
+2019-02-15T15:05:32.718Z - info: [23:05:32] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:05:33.721Z - info: Rebuilding affected source files
+2019-02-15T15:05:33.731Z - info: Rebuilding 8 pages
+2019-02-15T15:05:40.677Z - info: Pages rebuilt
+2019-02-15T15:05:40.690Z - info: Site data built
+2019-02-15T15:08:45.211Z - info: [23:08:45] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:08:46.215Z - info: Rebuilding affected source files
+2019-02-15T15:08:46.226Z - info: Rebuilding 8 pages
+2019-02-15T15:08:52.624Z - info: Pages rebuilt
+2019-02-15T15:08:52.642Z - info: Site data built
+2019-02-15T15:11:43.780Z - info: [23:11:43] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:11:44.780Z - info: Rebuilding affected source files
+2019-02-15T15:11:44.798Z - info: Rebuilding 8 pages
+2019-02-15T15:11:51.304Z - info: Pages rebuilt
+2019-02-15T15:11:51.319Z - info: Site data built
+2019-02-15T15:15:17.518Z - info: [23:15:17] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:15:18.526Z - info: Rebuilding affected source files
+2019-02-15T15:15:18.529Z - info: Rebuilding 8 pages
+2019-02-15T15:15:25.439Z - info: Pages rebuilt
+2019-02-15T15:15:25.462Z - info: Site data built
+2019-02-15T15:15:44.200Z - info: [23:15:44] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:15:45.201Z - info: Rebuilding affected source files
+2019-02-15T15:15:45.209Z - info: Rebuilding 8 pages
+2019-02-15T15:15:51.509Z - info: Pages rebuilt
+2019-02-15T15:15:51.516Z - info: Site data built
+2019-02-15T15:17:56.289Z - info: [23:17:56] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:17:57.293Z - info: Rebuilding affected source files
+2019-02-15T15:17:57.295Z - info: Rebuilding 8 pages
+2019-02-15T15:18:06.576Z - info: Pages rebuilt
+2019-02-15T15:18:06.588Z - info: Site data built
+2019-02-15T15:18:21.475Z - info: [23:18:21] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:18:22.481Z - info: Rebuilding affected source files
+2019-02-15T15:18:22.489Z - info: Rebuilding 8 pages
+2019-02-15T15:18:33.957Z - info: Pages rebuilt
+2019-02-15T15:18:33.961Z - info: Site data built
+2019-02-15T15:21:01.482Z - info: [23:21:01] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:21:02.484Z - info: Rebuilding affected source files
+2019-02-15T15:21:02.500Z - info: Rebuilding 8 pages
+2019-02-15T15:21:13.081Z - info: Pages rebuilt
+2019-02-15T15:21:13.204Z - info: Site data built
+2019-02-15T15:26:26.860Z - info: [23:26:26] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:26:27.867Z - info: Rebuilding affected source files
+2019-02-15T15:26:27.867Z - info: Rebuilding 8 pages
+2019-02-15T15:26:37.896Z - info: Pages rebuilt
+2019-02-15T15:26:38.008Z - info: Site data built
+2019-02-15T15:28:14.585Z - info: [23:28:14] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:28:15.593Z - info: Rebuilding affected source files
+2019-02-15T15:28:15.601Z - info: Rebuilding 8 pages
+2019-02-15T15:28:24.793Z - info: Pages rebuilt
+2019-02-15T15:28:24.809Z - info: Site data built
+2019-02-15T15:29:54.566Z - info: [23:29:54] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:29:55.567Z - info: Rebuilding affected source files
+2019-02-15T15:29:55.567Z - info: Rebuilding 8 pages
+2019-02-15T15:30:05.396Z - info: Pages rebuilt
+2019-02-15T15:30:05.412Z - info: Site data built
+2019-02-15T15:31:05.882Z - info: [23:31:05] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
+2019-02-15T15:31:06.886Z - info: Rebuilding affected source files
+2019-02-15T15:31:06.894Z - info: Rebuilding 8 pages
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\common\header.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\booleans\text.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\if\text.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\boilerplates\visualize.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\for\text.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\import\text.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\exit\text.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week2\project-te3201.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week1\project-te3201.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\index.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-intro\text.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\objectReferences\text.md
+2019-02-15T15:31:12.335Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\text.md
+2019-02-15T15:31:12.339Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\methods\text.md
+2019-02-15T15:31:12.339Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\text.md
+2019-02-15T15:31:12.339Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week4\project-te3201.md
+2019-02-15T15:31:12.339Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-02-15T15:31:12.347Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\usingThisWebsite.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\if\e-even.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\if\e-grades.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\if\e-gradeAnalyzerExtended.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\boilerplates\inputOutput.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\boilerplates\tryYourOwn.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\for\e-multiplicationTable.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\for\e-multiplicationTableExtended.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\for\e-threeDiceThrows.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\import\e-circleArea.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\python-topics.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-intro\e-countries.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-intro\e-getHeadTail.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\objectReferences\e-swapEnds.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-deleteHead.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-getBody.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-getMid.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-expandToFill.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-xor.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-printCardDeck.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-workingWith\e-firstQuarter.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\methods\e-removeExtraSpaces.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\e-anagramChecker.md
+2019-02-15T15:31:12.351Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\lists-methods\e-wordGame.md
+2019-02-15T15:31:12.355Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\adminSiteNav-te3201.md
+2019-02-15T15:31:12.359Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\moduleExpectations.md
+2019-02-15T15:31:12.359Z - info: [23:31:12] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\exams.md
+2019-02-15T15:31:16.940Z - info: Pages rebuilt
+2019-02-15T15:31:16.952Z - info: Site data built
+2019-02-15T15:31:17.012Z - info: Rebuilding affected source files
+2019-02-15T15:31:17.044Z - info: Rebuilding 66 pages
+2019-02-15T15:31:40.316Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\index.md
+2019-02-15T15:31:40.316Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\summary.md
+2019-02-15T15:31:40.317Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\se-book-adapted\index.md
+2019-02-15T15:31:40.317Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\dictionaries.md
+2019-02-15T15:31:40.317Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-02-15T15:31:40.317Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\programs\text.md
+2019-02-15T15:31:40.317Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\environment\text.md
+2019-02-15T15:31:40.318Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\shell\text.md
+2019-02-15T15:31:40.318Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\operators\text.md
+2019-02-15T15:31:40.318Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\types\text.md
+2019-02-15T15:31:40.318Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\variables\text.md
+2019-02-15T15:31:40.318Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\scripts\text.md
+2019-02-15T15:31:40.318Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\comments\text.md
+2019-02-15T15:31:40.319Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\usingFunctions\text.md
+2019-02-15T15:31:40.334Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week1\topics.md
+2019-02-15T15:31:40.337Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\while\text.md
+2019-02-15T15:31:40.337Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-def\text.md
+2019-02-15T15:31:40.337Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-parameters\text.md
+2019-02-15T15:31:40.337Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-return\text.md
+2019-02-15T15:31:40.338Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-scope\text.md
+2019-02-15T15:31:40.338Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week3\project-te3201.md
+2019-02-15T15:31:40.338Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-intro\text.md
+2019-02-15T15:31:40.338Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-syntax\text.md
+2019-02-15T15:31:40.338Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-15T15:31:40.338Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-raising\text.md
+2019-02-15T15:31:40.339Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-literals\text.md
+2019-02-15T15:31:40.339Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-workingWith\text.md
+2019-02-15T15:31:40.341Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-methods\text.md
+2019-02-15T15:31:40.342Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-paths\text.md
+2019-02-15T15:31:40.342Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-reading\text.md
+2019-02-15T15:31:40.343Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-writing\text.md
+2019-02-15T15:31:40.343Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-csv\text.md
+2019-02-15T15:31:40.343Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-intro\text.md
+2019-02-15T15:31:40.343Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-workingWith\text.md
+2019-02-15T15:31:40.344Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-nested\text.md
+2019-02-15T15:31:40.344Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-classes\text.md
+2019-02-15T15:31:40.346Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-classLevelMembers\text.md
+2019-02-15T15:31:40.346Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-visibility\text.md
+2019-02-15T15:31:40.347Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\thirdparty\text.md
+2019-02-15T15:31:40.347Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\text.md
+2019-02-15T15:31:40.347Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\unittesting\text.md
+2019-02-15T15:31:40.348Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\se-book-adapted-sitenav.md
+2019-02-15T15:31:40.381Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\errors.md
+2019-02-15T15:31:40.381Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\files.md
+2019-02-15T15:31:40.382Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\expressions-types-variables.md
+2019-02-15T15:31:40.382Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\flowcontrol.md
+2019-02-15T15:31:40.382Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\functions.md
+2019-02-15T15:31:40.382Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\oop.md
+2019-02-15T15:31:40.382Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\programs.md
+2019-02-15T15:31:40.382Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\monty.md
+2019-02-15T15:31:40.383Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\thirdparty.md
+2019-02-15T15:31:40.383Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\lists.md
+2019-02-15T15:31:40.383Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\strings.md
+2019-02-15T15:31:40.383Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\toc\unittesting.md
+2019-02-15T15:31:40.383Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\variables\e-circle.md
+2019-02-15T15:31:40.384Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\usingFunctions\e-lengthOfName.md
+2019-02-15T15:31:40.384Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\while\e-vending-oneCoin.md
+2019-02-15T15:31:40.384Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\while\e-vending-multipleCoins.md
+2019-02-15T15:31:40.385Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\while\e-vending-allowAbort.md
+2019-02-15T15:31:40.385Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\while\e-vending-legitCoins.md
+2019-02-15T15:31:40.385Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-def\e-hooray.md
+2019-02-15T15:31:40.385Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-parameters\e-grader-printScoreFunction.md
+2019-02-15T15:31:40.385Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-return\e-grader-calculateGradeFunction.md
+2019-02-15T15:31:40.386Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-scope\e-grader-addMainFunction.md
+2019-02-15T15:31:40.386Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-scope\e-grader-restructureTheMainFunction.md
+2019-02-15T15:31:40.386Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\functions-scope\e-grader-analyzeInLoop.md
+2019-02-15T15:31:40.386Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\e-enterInteger.md
+2019-02-15T15:31:40.387Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-raising\e-isEvenIntegerInRange.md
+2019-02-15T15:31:40.387Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-raising\e-flexibleWordGame.md
+2019-02-15T15:31:40.387Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-literals\e-escapeSequences.md
+2019-02-15T15:31:40.387Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-literals\e-multiLineString.md
+2019-02-15T15:31:40.387Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-workingWith\e-shortenString.md
+2019-02-15T15:31:40.388Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-workingWith\e-hasAllCharacters.md
+2019-02-15T15:31:40.388Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-methods\e-rectifyCase.md
+2019-02-15T15:31:40.388Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-methods\e-isDoctor.md
+2019-02-15T15:31:40.388Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-methods\e-removeFromWord.md
+2019-02-15T15:31:40.389Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-methods\e-getPart.md
+2019-02-15T15:31:40.389Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\strings-methods\e-printFormattedItem.md
+2019-02-15T15:31:40.389Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-paths\e-createDir.md
+2019-02-15T15:31:40.389Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-reading\e-fileStats.md
+2019-02-15T15:31:40.389Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-writing\e-addLineNumbers.md
+2019-02-15T15:31:40.390Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\files-csv\e-calculateGst.md
+2019-02-15T15:31:40.390Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-intro\e-getSubjectInfo.md
+2019-02-15T15:31:40.390Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-workingWith\e-getSetDeleteScore.md
+2019-02-15T15:31:40.390Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-workingWith\e-getScoreWithErrorHandling.md
+2019-02-15T15:31:40.390Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-workingWith\e-printScorecard.md
+2019-02-15T15:31:40.391Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-workingWith\e-addBonus.md
+2019-02-15T15:31:40.391Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-nested\e-inningScores.md
+2019-02-15T15:31:40.391Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-nested\e-playerStats.md
+2019-02-15T15:31:40.391Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-nested\e-gradeReport.md
+2019-02-15T15:31:40.392Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\dictionaries-nested\e-inventoryReport.md
+2019-02-15T15:31:40.392Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-classes\e-createStockItemClass.md
+2019-02-15T15:31:40.392Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-classLevelMembers\e-addClassLevelMembersToSubjectClass.md
+2019-02-15T15:31:40.392Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-visibility\e-changeVisibilityOfSchoolClassMembers.md
+2019-02-15T15:31:40.392Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\thirdparty\e-printErrorsInRed.md
+2019-02-15T15:31:40.392Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\e-addFishClass.md
+2019-02-15T15:31:40.393Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\e-addFlightlessBirdClass.md
+2019-02-15T15:31:40.393Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\e-overrideStr.md
+2019-02-15T15:31:40.393Z - info: [23:31:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-inheritance\e-addSmartPhoneClass.md
+2019-02-15T15:32:04.926Z - info: Pages rebuilt
+2019-02-15T15:32:04.950Z - info: Site data built
+2019-02-15T15:32:05.176Z - info: Rebuilding affected source files
+2019-02-15T15:32:05.218Z - info: Rebuilding 59 pages

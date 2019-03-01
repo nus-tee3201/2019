@@ -1,0 +1,155 @@
+2019-02-14T14:08:42.265Z - info: Website generation started at 22:08:34
+2019-02-14T14:08:49.253Z - info: Building assets...
+2019-02-14T14:08:52.884Z - info: Assets built
+2019-02-14T14:08:52.885Z - info: Generating pages...
+2019-02-14T14:10:45.294Z - info: Pages built
+2019-02-14T14:11:06.511Z - info: Website generation complete! Total build time: 151.607s
+2019-02-14T14:11:06.527Z - info: Generate Site durationMs=151623
+2019-02-14T14:11:06.555Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-14T14:11:06.555Z - info: Press CTRL+C to stop ...
+2019-02-14T14:11:06.667Z - info: Site data built
+2019-02-14T14:13:48.493Z - info: [22:13:48] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-syntax\text.md
+2019-02-14T14:13:49.497Z - info: Rebuilding affected source files
+2019-02-14T14:13:49.501Z - info: Rebuilding 2 pages
+2019-02-14T14:13:50.317Z - info: Pages rebuilt
+2019-02-14T14:13:50.333Z - info: Site data built
+2019-02-14T14:14:54.441Z - info: [22:14:54] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-syntax\text.md
+2019-02-14T14:14:55.445Z - info: Rebuilding affected source files
+2019-02-14T14:14:55.445Z - info: Rebuilding 2 pages
+2019-02-14T14:14:56.892Z - info: Pages rebuilt
+2019-02-14T14:14:56.924Z - info: Site data built
+2019-02-14T14:15:24.225Z - info: [22:15:24] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-syntax\text.md
+2019-02-14T14:15:25.229Z - info: Rebuilding affected source files
+2019-02-14T14:15:25.229Z - info: Rebuilding 2 pages
+2019-02-14T14:15:26.159Z - info: Pages rebuilt
+2019-02-14T14:15:26.183Z - info: Site data built
+2019-02-14T14:15:39.755Z - info: [22:15:39] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-syntax\text.md
+2019-02-14T14:15:40.763Z - info: Rebuilding affected source files
+2019-02-14T14:15:40.767Z - info: Rebuilding 2 pages
+2019-02-14T14:15:42.123Z - info: Pages rebuilt
+2019-02-14T14:15:42.247Z - info: Site data built
+2019-02-14T14:15:48.675Z - info: [22:15:48] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-syntax\text.md
+2019-02-14T14:15:49.679Z - info: Rebuilding affected source files
+2019-02-14T14:15:49.683Z - info: Rebuilding 2 pages
+2019-02-14T14:15:50.578Z - info: Pages rebuilt
+2019-02-14T14:15:50.594Z - info: Site data built
+2019-02-14T14:18:01.438Z - info: [22:18:01] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:18:02.441Z - info: Rebuilding affected source files
+2019-02-14T14:18:02.445Z - info: Rebuilding 2 pages
+2019-02-14T14:18:03.216Z - info: Pages rebuilt
+2019-02-14T14:18:03.224Z - info: Site data built
+2019-02-14T14:18:26.052Z - info: [22:18:26] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:18:27.058Z - info: Rebuilding affected source files
+2019-02-14T14:18:27.066Z - info: Rebuilding 2 pages
+2019-02-14T14:18:28.126Z - info: Pages rebuilt
+2019-02-14T14:18:28.162Z - info: Site data built
+2019-02-14T14:18:43.636Z - info: [22:18:43] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:18:44.640Z - info: Rebuilding affected source files
+2019-02-14T14:18:44.644Z - info: Rebuilding 2 pages
+2019-02-14T14:18:45.280Z - info: Pages rebuilt
+2019-02-14T14:18:45.296Z - info: Site data built
+2019-02-14T14:20:08.998Z - info: [22:20:08] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:20:10.005Z - info: Rebuilding affected source files
+2019-02-14T14:20:10.009Z - info: Rebuilding 2 pages
+2019-02-14T14:20:11.189Z - info: Pages rebuilt
+2019-02-14T14:20:11.209Z - info: Site data built
+2019-02-14T14:20:39.927Z - info: [22:20:39] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:20:40.932Z - info: Rebuilding affected source files
+2019-02-14T14:20:40.936Z - info: Rebuilding 2 pages
+2019-02-14T14:20:41.696Z - info: Pages rebuilt
+2019-02-14T14:20:41.712Z - info: Site data built
+2019-02-14T14:23:15.445Z - info: [22:23:15] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:23:16.454Z - info: Rebuilding affected source files
+2019-02-14T14:23:16.454Z - info: Rebuilding 2 pages
+2019-02-14T14:23:17.661Z - info: Pages rebuilt
+2019-02-14T14:23:17.669Z - info: Site data built
+2019-02-14T14:23:31.333Z - info: [22:23:31] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:23:32.341Z - info: Rebuilding affected source files
+2019-02-14T14:23:32.345Z - info: Rebuilding 2 pages
+2019-02-14T14:23:33.117Z - info: Pages rebuilt
+2019-02-14T14:23:33.133Z - info: Site data built
+2019-02-14T14:25:09.864Z - info: [22:25:09] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\boilerplates\inputOutput.md
+2019-02-14T14:25:10.873Z - info: Rebuilding affected source files
+2019-02-14T14:25:10.881Z - info: Rebuilding 10 pages
+2019-02-14T14:25:21.628Z - info: Pages rebuilt
+2019-02-14T14:25:21.640Z - info: Site data built
+2019-02-14T14:26:45.020Z - info: [22:26:45] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\boilerplates\inputOutput.md
+2019-02-14T14:26:46.033Z - info: Rebuilding affected source files
+2019-02-14T14:26:46.041Z - info: Rebuilding 10 pages
+2019-02-14T14:26:54.857Z - info: Pages rebuilt
+2019-02-14T14:26:54.873Z - info: Site data built
+2019-02-14T14:27:37.521Z - info: [22:27:37] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:27:38.523Z - info: Rebuilding affected source files
+2019-02-14T14:27:38.527Z - info: Rebuilding 2 pages
+2019-02-14T14:27:39.483Z - info: Pages rebuilt
+2019-02-14T14:27:39.495Z - info: Site data built
+2019-02-14T14:28:59.455Z - info: [22:28:59] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\boilerplates\inputOutput.md
+2019-02-14T14:29:00.461Z - info: Rebuilding affected source files
+2019-02-14T14:29:00.473Z - info: Rebuilding 10 pages
+2019-02-14T14:29:09.343Z - info: Pages rebuilt
+2019-02-14T14:29:09.355Z - info: Site data built
+2019-02-14T14:29:38.972Z - info: [22:29:38] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:29:39.972Z - info: Rebuilding affected source files
+2019-02-14T14:29:39.976Z - info: Rebuilding 2 pages
+2019-02-14T14:29:41.129Z - info: Pages rebuilt
+2019-02-14T14:29:41.141Z - info: Site data built
+2019-02-14T14:29:57.013Z - info: [22:29:57] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:29:58.015Z - info: Rebuilding affected source files
+2019-02-14T14:29:58.019Z - info: Rebuilding 2 pages
+2019-02-14T14:29:58.779Z - info: Pages rebuilt
+2019-02-14T14:29:58.811Z - info: Site data built
+2019-02-14T14:30:22.110Z - info: [22:30:22] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:30:23.115Z - info: Rebuilding affected source files
+2019-02-14T14:30:23.119Z - info: Rebuilding 2 pages
+2019-02-14T14:30:24.160Z - info: Pages rebuilt
+2019-02-14T14:30:24.168Z - info: Site data built
+2019-02-14T14:31:14.620Z - info: [22:31:14] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:31:15.630Z - info: Rebuilding affected source files
+2019-02-14T14:31:15.634Z - info: Rebuilding 2 pages
+2019-02-14T14:31:17.297Z - info: Pages rebuilt
+2019-02-14T14:31:17.313Z - info: Site data built
+2019-02-14T14:31:41.270Z - info: [22:31:41] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-syntax\text.md
+2019-02-14T14:31:42.278Z - info: Rebuilding affected source files
+2019-02-14T14:31:42.278Z - info: Rebuilding 2 pages
+2019-02-14T14:31:43.492Z - info: Pages rebuilt
+2019-02-14T14:31:43.512Z - info: Site data built
+2019-02-14T14:33:05.251Z - info: [22:33:05] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:33:06.256Z - info: Rebuilding affected source files
+2019-02-14T14:33:06.256Z - info: Rebuilding 2 pages
+2019-02-14T14:33:08.544Z - info: Pages rebuilt
+2019-02-14T14:33:08.572Z - info: Site data built
+2019-02-14T14:33:33.195Z - info: [22:33:33] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:33:34.199Z - info: Rebuilding affected source files
+2019-02-14T14:33:34.199Z - info: Rebuilding 2 pages
+2019-02-14T14:33:35.039Z - info: Pages rebuilt
+2019-02-14T14:33:35.055Z - info: Site data built
+2019-02-14T14:34:41.630Z - info: [22:34:41] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:34:42.639Z - info: Rebuilding affected source files
+2019-02-14T14:34:42.643Z - info: Rebuilding 2 pages
+2019-02-14T14:34:43.755Z - info: Pages rebuilt
+2019-02-14T14:34:43.775Z - info: Site data built
+2019-02-14T14:34:52.206Z - info: [22:34:52] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:34:53.211Z - info: Rebuilding affected source files
+2019-02-14T14:34:53.215Z - info: Rebuilding 2 pages
+2019-02-14T14:34:54.027Z - info: Pages rebuilt
+2019-02-14T14:34:54.039Z - info: Site data built
+2019-02-14T14:35:59.587Z - info: [22:35:59] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:36:00.592Z - info: Rebuilding affected source files
+2019-02-14T14:36:00.592Z - info: Rebuilding 2 pages
+2019-02-14T14:36:01.600Z - info: Pages rebuilt
+2019-02-14T14:36:01.604Z - info: Site data built
+2019-02-14T14:36:52.708Z - info: [22:36:52] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:36:53.712Z - info: Rebuilding affected source files
+2019-02-14T14:36:53.716Z - info: Rebuilding 2 pages
+2019-02-14T14:36:55.120Z - info: Pages rebuilt
+2019-02-14T14:36:55.136Z - info: Site data built
+2019-02-14T14:38:08.080Z - info: [22:38:08] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:38:09.082Z - info: Rebuilding affected source files
+2019-02-14T14:38:09.086Z - info: Rebuilding 2 pages
+2019-02-14T14:38:11.085Z - info: Pages rebuilt
+2019-02-14T14:38:11.125Z - info: Site data built
+2019-02-14T14:39:29.993Z - info: [22:39:29] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\errors-exceptions-handling\text.md
+2019-02-14T14:39:31.001Z - info: Rebuilding affected source files
+2019-02-14T14:39:31.001Z - info: Rebuilding 2 pages
+2019-02-14T14:39:32.010Z - info: Pages rebuilt
+2019-02-14T14:39:32.026Z - info: Site data built

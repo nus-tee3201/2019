@@ -446,7 +446,7 @@ y
 </code></pre>
               <panel header=":fas-battery-quarter: Partial solution" minimized>
                 <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
-<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+<span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
     print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
     <span class="hljs-comment"># ADD MORE CODE HERE</span>
 print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
@@ -465,7 +465,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
         command = read_command()
         execute_command(command)
 
@@ -493,7 +493,7 @@ main()
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
         command = read_command()
         execute_command(command)
 
@@ -598,7 +598,7 @@ items = []
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
         command = read_command()
         execute_command(command)
 
@@ -669,7 +669,7 @@ y
               <box>
                 <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
                 <pre><code class="hljs python">tasks = []
-tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-keyword">False</span>])
+tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-literal">False</span>])
 print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
 
 <span class="hljs-keyword">if</span> tasks[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]:
@@ -680,7 +680,7 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
                 <p>💡 You can use exceptions to identify and handle errors in the command.</p>
                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
         <span class="hljs-keyword">try</span>:
             command = read_command()
             execute_command(command)
@@ -711,7 +711,7 @@ items = []
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_item_as_done</span><span class="hljs-params">(user_input)</span>:</span>
     index_as_string = user_input[<span class="hljs-number">5</span>:]
-    get_item_for_index(index_as_string)[<span class="hljs-number">1</span>] = <span class="hljs-keyword">True</span>
+    get_item_for_index(index_as_string)[<span class="hljs-number">1</span>] = <span class="hljs-literal">True</span>
 
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
@@ -731,7 +731,7 @@ items = []
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
         <span class="hljs-keyword">try</span>:
             command = read_command()
             execute_command(command)
@@ -906,7 +906,7 @@ return book,pending
  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
      load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
      print_greeting()
-     <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
          <span class="hljs-keyword">try</span>:
              command = read_command()
              execute_command(command)
@@ -933,10 +933,10 @@ return book,pending
 
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span>
-    status = <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span>
+    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
     items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
 </code></pre>
-                <p>Note that <code class="hljs inline python">status = <span class="hljs-keyword">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-keyword">False</span></code> is a shortcut syntax. It is equivalent to the code below:</p>
+                <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code> is a shortcut syntax. It is equivalent to the code below:</p>
                 <pre><code class="hljs">if values[1] == 'done':
     status = True
 else:
@@ -992,6 +992,83 @@ add    read book
 </code></pre>
                 </li>
               </ul>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty8">
+              <h3 id="monty-8">Monty 8<a class="fa fa-anchor" href="#monty-8"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-7">Monty 7 code</a> to add support for keeping track of deadlines as well as regular todo tasks</p>
+              <p>Previous behavior:</p>
+              <ul>
+                <li><code>add buy book</code>: adds a task <code>buy book</code></li>
+              </ul>
+              <p>Proposed change - replace the above command with the following two:</p>
+              <ul>
+                <li><code>todo read book</code>: adds a todo task <code>read book</code></li>
+                <li><code>deadline return book by: May 3rd</code> adds a deadline <code>return book</code> which is to be done by <code>May 3d</code>.<br>
+                  Note: <code>by:</code> is a keyword. Anything that comes after it is considered a description of the deadline.</li>
+              </ul>
+              <p>A sample output is given below.</p>
+              <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+============================================================
+STATUS | INDEX | DESCRIPTION                 | DEADLINE
+------------------------------------------------------------
+  ✓    |   1   | borrow book                 | -
+  ✗    |   2   | read book                   | -
+  ✗    |   3   | return book                 | Monday
+------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+todo watch movie
+&gt;&gt;&gt; What can I do for you?
+
+deadline submit assignment by: end of May
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+============================================================
+STATUS | INDEX | DESCRIPTION                 | DEADLINE
+------------------------------------------------------------
+  ✓    |   1   | borrow book                 | -
+  ✗    |   2   | read book                   | -
+  ✗    |   3   | return book                 | Monday
+  ✗    |   4   | watch movie                 | -
+  ✗    |   5   | submit assignment           | end of May
+------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+              <box>
+                <p>💡 here are some tips:</p>
+                <ul>
+                  <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline items, respectively.
+                    <pre><code class="hljs python">[
+ {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},
+ {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},
+ {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}
+]
+
+</code></pre>
+                  </li>
+                  <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
+                    <pre><code class="hljs">T,borrow book,done
+T,read book,pending
+D,return book,pending,Monday
+</code></pre>
+                  </li>
+                </ul>
+              </box>
+              <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <p>Here is the code adding a todo item:</p>
+                <pre><code class="hljs python">command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
+<span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:
+    items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})
+<span class="hljs-keyword">elif</span>  ...
+</code></pre>
+              </panel>
+              <p></p>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <p><span class="dimmed">Remaining increments to be added soon.</span></p>
@@ -1316,7 +1393,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Tue, 26 Feb 2019 08:54:28 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.1</a> at Fri, 01 Mar 2019 16:08:12 GMT</small></div>
 </footer>
 </div>
 </body>
