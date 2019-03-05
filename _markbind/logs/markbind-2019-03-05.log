@@ -1,2 +1,37 @@
 2019-03-05T05:09:54.589Z - info: Website generation started at 1:09:51 PM
 2019-03-05T05:09:56.707Z - info: Building assets...
+2019-03-05T05:09:58.681Z - info: Assets built
+2019-03-05T05:09:58.682Z - info: Generating pages...
+2019-03-05T05:10:53.624Z - info: Pages built
+2019-03-05T05:11:03.649Z - info: Website generation complete! Total build time: 72.22s
+2019-03-05T05:11:03.649Z - info: Build success!
+2019-03-05T05:11:03.649Z - info: Generate Site durationMs=72221
+2019-03-05T05:11:03.656Z - info: Site data built
+2019-03-05T05:11:42.481Z - info: Deployed!
+2019-03-05T08:23:58.505Z - info: Website generation started at 4:23:55 PM
+2019-03-05T08:24:00.527Z - info: Building assets...
+2019-03-05T08:24:02.520Z - info: Assets built
+2019-03-05T08:24:02.520Z - info: Generating pages...
+2019-03-05T08:24:55.379Z - info: Pages built
+2019-03-05T08:25:05.111Z - info: Website generation complete! Total build time: 69.915s
+2019-03-05T08:25:05.123Z - info: Generate Site durationMs=69927
+2019-03-05T08:25:05.462Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-03-05T08:25:05.462Z - info: Press CTRL+C to stop ...
+2019-03-05T08:25:05.492Z - info: Site data built
+2019-03-05T08:30:27.248Z - info: [4:30:27 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\index.md
+2019-03-05T08:30:28.261Z - info: Rebuilding affected source files
+2019-03-05T08:30:28.264Z - info: Rebuilding 2 pages
+2019-03-05T08:30:30.181Z - info: Pages rebuilt
+2019-03-05T08:30:30.192Z - info: Site data built
+2019-03-05T08:30:44.100Z - info: Website generation started at 4:30:40 PM
+2019-03-05T08:30:46.272Z - info: Building assets...
+2019-03-05T08:30:48.223Z - info: Assets built
+2019-03-05T08:30:48.224Z - info: Generating pages...
+2019-03-05T08:31:44.425Z - info: Pages built
+2019-03-05T08:31:55.485Z - info: Website generation complete! Total build time: 74.991s
+2019-03-05T08:31:55.499Z - info: Generate Site durationMs=75006
+2019-03-05T08:31:55.847Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-03-05T08:31:55.847Z - info: Press CTRL+C to stop ...
+2019-03-05T08:31:55.877Z - info: Site data built
+2019-03-05T08:49:52.149Z - info: Website generation started at 4:49:48 PM
+2019-03-05T08:49:54.483Z - info: Building assets...

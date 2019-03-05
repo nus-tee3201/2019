@@ -146,7 +146,21 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
             <div id="main">
               <div class="indented">
                 <ul>
-                  <li><a href="#W8-1">[W8.1] Other QA Techniques <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></li>
+                  <li>
+                    <p><a href="#W8-1">[W8.1] Types of Testing <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></p>
+                  </li>
+                  <li>
+                    <p><a href="#W8-2">[W8.2] Test Case Design <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></p>
+                  </li>
+                  <li>
+                    <p><a href="#W8-3">[W8.3] Equivalence Partitioning <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></p>
+                  </li>
+                  <li>
+                    <p><a href="#W8-4">[W8.4] Boundary Value Analysis <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></p>
+                  </li>
+                  <li>
+                    <p><a href="#W8-5">[W8.5] Other QA Techniques <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></p>
+                  </li>
                 </ul>
                 <p></p>
               </div>
@@ -155,12 +169,1128 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
               <panel type="seamless" no-close expandable="true" expanded>
                 <span slot="header" class="card-title">
                   <div>
-                    <p><big> <span class="dimmed">[W8.1]</span> <big><big><strong>Other QA Techniques</strong></big></big></big> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    <p><big> <span class="dimmed">[W8.1]</span> <big><big><strong>Types of Testing</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <br>
+                  <p><span class="dimmed"><strong>Developer Testing</strong></span></p>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain developer testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+                            </span></strong></span> <strong><big><big><span>Why</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for early developer testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
+                          <ul>
+                            <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also be due to multiple inter-related bugs.</li>
+                            <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification <span class="dimmed">i.e. a faulty design or faulty requirements</span>.</li>
+                            <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
+                            <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
+                          </ul>
+                          <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
+                          <blockquote>
+                            <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
+                          </blockquote>
+                          <img src="/2019/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+                          <p></p>
+                          <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> implications of developers testing their own code">
+                                  <question has-input="true">
+                                    <p>Discuss pros and cons of developers testing their own code.</p>
+                                    <div slot="answer">
+                                      <p>Pros:</p>
+                                      <ul>
+                                        <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
+                                        <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
+                                        <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
+                                        <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
+                                      </ul>
+                                      <p>Cons:</p>
+                                      <ul>
+                                        <li>A developer may subconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
+                                        <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
+                                        <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
+                                        <li>A developer may lack the testing expertise.</li>
+                                      </ul>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Cost of bug fixing over time">
+                                  <question>
+                                    <p>The cost of fixing a bug goes down as we reach the product release.</p>
+                                    <ul radio-group="37242" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>False. The cost goes up over time.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Why early testing?">
+                                  <question has-input="true">
+                                    <p>Explain why early testing by developers is important.</p>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>Unit Testing</strong></span></p>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1c]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain unit testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>Unit testing</em> : testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly.</strong></p>
+                          <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
+                            <div class="alt-java">
+                              <div>
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+    
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
+    
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//a unit test for Foo#read() method</span>
+    }
+    
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span>
+    }  
+    
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span>
+    }
+}
+</code></pre>
+                              </div>
+                            </div>
+                            <div class="alt-python">
+                              <div>
+                                <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
+      <span class="hljs-comment"># ...</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span>
+      <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span>
+      <span class="hljs-comment"># a unit test for read() method</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span>
+      <span class="hljs-comment"># a unit tests for write(string) method</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
+      <span class="hljs-comment"># another unit tests for write(string) method</span>
+</code></pre>
+                              </div>
+                            </div>
+                          </tip-box>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-paperclip'></span> Resources">
+                              <p><strong>Side readings:</strong></p>
+                              <ul>
+                                <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> -
+                                  A short article about what makes a good unit test.</li>
+                                <li><a href="http://avandeursen.com/2014/02/22/gotofail-security/">Learning from Apple’s #gotofail Security Bug</a> -
+                                  How unit testing (and other good coding practices) could have prevented a major security bug.</li>
+                              </ul>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>Integration Testing</strong></span></p>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1d]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Integration Testing →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div>
+                          <p>
+                            <panel src="/2019/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/2019/book/testing/testingTypes/unitTesting/what"></panel>
+                          </p>
+                        </div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain integration testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the actual <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
+                          </tip-box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>System Testing</strong></span></p>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1e]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → System Testing →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain system testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
+                          <p>System testing is typically done by a testing team (also called a QA team).</p>
+                          <p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully' having pushed beyond its limits.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
+                            <pre><code class="hljs">Test case: load a web page that is too big
+* Input: load a web page containing more than 5000 characters. 
+* Expected behavior: abort the loading of the page and show a meaningful error message. 
+</code></pre>
+                            <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
+                          </tip-box>
+                          <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
+                          <ul>
+                            <li><em>Performance testing</em> – to ensure the system responds quickly.</li>
+                            <li><em>Load testing</em> (also called <em>stress testing</em> or <em>scalability testing</em>) – to ensure the system can work under heavy load.</li>
+                            <li><em>Security testing</em> – to test how secure the system is.</li>
+                            <li><em>Compatibility testing, interoperability testing</em> – to check whether the system can work with other systems.</li>
+                            <li><em>Usability testing</em> – to test how easy it is to use the system.</li>
+                            <li><em>Portability testing</em> – to test whether the system works on different platforms.</li>
+                          </ul>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>Acceptance Testing</strong></span></p>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1f]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Acceptance Testing →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain acceptance testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>): test the delivered system to ensure it meets the user requirements.</strong></p>
+                          <p>Acceptance tests give an assurance to the customer that the system does what it is intended to do. Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification. Successful completion of UAT is often a prerequisite to the project sign-off.</p>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1g]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Acceptance Testing →
+                            </span></strong></span> <strong><big><big><span>Acceptance vs System Testing</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the differences between system testing and acceptance testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>Acceptance testing comes after system testing. Similar to system testing, acceptance testing involves testing the whole system.</p>
+                          <p>Some differences between system testing and acceptance testing:</p>
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="text-align:left">System Testing</th>
+                                  <th style="text-align:left">Acceptance Testing</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:left">Done against the system specification</td>
+                                  <td style="text-align:left">Done against the requirements specification</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:left">Done by testers of the project team</td>
+                                  <td style="text-align:left">Done by a team that represents the customer</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:left">Done on the development environment or a test bed</td>
+                                  <td style="text-align:left">Done on the deployment site or on a close simulation of the deployment site</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:left">Both negative and positive test cases</td>
+                                  <td style="text-align:left">More focus on positive test cases</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <p><span class="dimmed">Note: <em>negative</em> test cases: cases where the SUT is not expected to work normally e.g. incorrect inputs; <em>positive</em> test cases: cases where the SUT is expected to work normally</span></p>
+                          <tip-box>
+                            <p><strong>Requirement Specification vs System Specification</strong></p>
+                            <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th style="text-align:left">Requirements Specification</th>
+                                    <th style="text-align:left">System Specification</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td style="text-align:left">limited to how the system behaves in normal working conditions</td>
+                                    <td style="text-align:left">can also include details on how it will fail gracefully when pushed beyond limits, how to recover, etc. specification</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:left">written in terms of problems that need to be solved (e.g. provide a method to locate an email quickly)</td>
+                                    <td style="text-align:left">written in terms of how the system solve those problems (e.g. explain the email search feature)</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:left">specifies the interface available for intended end-users</td>
+                                    <td style="text-align:left">could contain additional APIs not available for end-users (for the use of developers/testers)</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <p>However, <strong>in many cases one document serves as both a requirement specification and a system specification.</strong></p>
+                          </tip-box>
+                          <p><strong>Passing system tests does not necessarily mean passing acceptance testing.</strong> Some examples:</p>
+                          <ul>
+                            <li>The system might work on the testbed environments but might not work the same way in the deployment environment, due to subtle differences between the two environments.</li>
+                            <li>The system might conform to the system specification but could fail to solve the problem it was supposed to solve for the user, due to flaws in the system design.</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about system testing and acceptance testing.">
+                                  <question>
+                                    <p>Choose the correct statements about system testing and acceptance testing.</p>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. System testing can include testing for non-functional qualities.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Acceptance testing typically has more user involvement than system testing.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
+                                      <p>Explanation:</p>
+                                      <p>(b) is correct because system testing can aim to cover all specified behaviors and can even go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
+                                      <p>(f) is incorrect because it is possible for a system to pass system tests but fail acceptance tests.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>Alpha/Beta Testing</strong></span></p>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1h]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Alpha/Beta Testing →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain alpha and beta testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</strong></p>
+                          <p><strong><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</strong></p>
+                          <p>An <em>open beta release</em> is the release of not-yet-production-quality-but-almost-there software to the general population. For example, Google’s Gmail was in 'beta' for many years before the label was finally removed.</p>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p><span id="W8-2"></span></p>
+              <panel type="seamless" no-close expandable="true" expanded>
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W8.2]</span> <big><big><strong>Test Case Design</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
                   <panel type="seamless" expanded>
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Introduction →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.2a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Introduction →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for deliberate test case design</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
+                            <ul>
+                              <li>Add an item to an empty collection.</li>
+                              <li>Add an item when there is one item in the collection.</li>
+                              <li>Add an item when there are 2, 3, .... n items in the collection.</li>
+                              <li>Add an item that has an English, a French, a Spanish, ... word.</li>
+                              <li>Add an item that is the same as an existing item.</li>
+                              <li>Add an item immediately after adding another item.</li>
+                              <li>Add an item immediately after system startup.</li>
+                              <li>...</li>
+                            </ul>
+                            <p>Exhaustive testing of this operation can take many more test cases.</p>
+                          </tip-box>
+                          <blockquote>
+                            <p>Program testing can be used to show the presence of bugs, but never to show their absence!<br>
+                              <sub>--Edsger Dijkstra</sub></p>
+                          </blockquote>
+                          <div id="e-and-e">
+                            <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
+                            <ul>
+                              <li>
+                                <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
+                              </li>
+                              <li>
+                                <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
+                              </li>
+                            </ul>
+                            <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Test cases for `TriangleDetector`">
+                                  <question has-input="true">
+                                    <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software. Two sample test cases are given below.</p>
+                                    <pre><code class="hljs">C:\&gt; java TriangleDetector
+Enter side 1: 34
+Enter side 2: 34
+Enter side 3: 32
+Can this be a triangle?:  Yes
+Enter side 1:
+</code></pre>
+                                    <p>Sample test cases,</p>
+                                    <pre><code class="hljs">34,34,34: Yes
+0, any valid, any valid: No
+</code></pre>
+                                    <div slot="answer">
+                                      <p>In addition to obvious test cases such as</p>
+                                      <ul>
+                                        <li>sum of two sides == third,</li>
+                                        <li>sum of two sides &lt; third ...</li>
+                                      </ul>
+                                      <p>We may also devise some interesting test cases such as the ones depicted below.</p>
+                                      <p>Note that their applicability depends on the context in which the software is operating.</p>
+                                      <ul>
+                                        <li>Non-integer number, negative numbers, <code>0</code>, numbers formatted differently (e.g. <code>13F</code>), very large numbers (e.g. <code>MAX_INT</code>), numbers with many decimal places, empty string, ...</li>
+                                        <li>Check many triangles one after the other (will the system run out of memory?)</li>
+                                        <li><kbd>Backspace</kbd>, <kbd>tab</kbd>, <kbd>CTRL+C</kbd> , …</li>
+                                        <li>Introduce a long delay between entering data (will the program be affected by, say the screensaver?), minimize and restore window during the operation, hibernate the system in the middle of a calculation, start with invalid inputs (the system may perform error handling differently for the very first test case), …</li>
+                                        <li>Test on different locale.</li>
+                                      </ul>
+                                      <p>The main point to note is how difficult it is to test exhaustively, even on a trivial system.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Exhaustive testing in Minesweeper">
+                                  <question has-input="true">
+                                    <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
+                                    <div slot="answer">
+                                      <p>Consider this sequence of test cases:</p>
+                                      <ul>
+                                        <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
+                                        <li>Test case 2. Start Minesweeper. Activate <code>newGame()</code>. Activate <code>newGame()</code> again and see if it works.</li>
+                                        <li>Test case 3. Start Minesweeper. Activate <code>newGame()</code> three times consecutively and see if it works.</li>
+                                        <li>…</li>
+                                        <li>Test case 267. Start Minesweeper. Activate <code>newGame()</code> 267 times consecutively and see if it works.</li>
+                                      </ul>
+                                      <p>Well, you get the idea. Exhaustive testing of <code>newGame()</code> is not practical.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about E&E of testing">
+                                  <question>
+                                    <p>Improving efficiency and effectiveness of test case design can,</p>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. improve the quality of the SUT.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. save money.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. save time spent on test execution.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. save effort on writing and maintaining tests.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(a)(b)(c)(d)(e)(f)</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.2b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain exploratory testing and scripted testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
+                          <ol>
+                            <li>
+                              <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
+                            </li>
+                            <li>
+                              <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
+                            </li>
+                          </ol>
+                          <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
+                            <blockquote>
+                              <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
+                                But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                            </blockquote>
+                          </tip-box>
+                          <tip-box>
+                            <p>💡 <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
+                          </tip-box>
+                          <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
+                            <div>
+                              <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
+                            </div>
+                          </modal>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> statements about exploratory and scripted testing">
+                                  <question>
+                                    <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                                    <ul radio-group="db31a" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>A) False</p>
+                                      <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which testing technique is better?">
+                                  <question>
+                                    <p>Which testing technique is better?</p>
+                                    <ul radio-group="9fd35" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> a. error guessing</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> b. bug hunting</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> c. attack-based testing</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(e)</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Explain the concept of exploratory testing using Minesweeper as an example.">
+                                  <question has-input="true">
+                                    <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
+                                    <div slot="answer">
+                                      <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.2c]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+                            </span></strong></span> <strong><big><big><span>When</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the choice between exploratory testing and scripted testing</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>Which approach is better – <strong>scripted or exploratory? A mix is better.</strong></p>
+                          <p><strong>The success of exploratory testing depends on the tester’s prior experience and intuition.</strong> Exploratory testing should be done by experienced testers, using a clear strategy/plan/framework. Ad-hoc exploratory testing by unskilled or inexperienced testers without a clear strategy is not recommended for real-world non-trivial systems. While <strong>exploratory testing may allow us to detect some problems in a relatively short time, it is not prudent to use exploratory testing as the sole means of testing a critical system</strong>.</p>
+                          <p><strong>Scripted testing is more systematic, and hence, likely to discover more bugs given sufficient time</strong>, while exploratory testing would aid in quick error discovery, especially if the tester has a lot of experience in testing similar systems.</p>
+                          <blockquote>
+                            <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations benefit from a mix of scripted and exploratory approaches.
+                              --<trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
+                            </p>
+                          </blockquote>
+                          <modal id="modal:ExploratoryWhen-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
+                            <div>
+                              <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
+                            </div>
+                          </modal>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which is better?">
+                                  <question>
+                                    <p>Scripted testing is better than exploratory testing.</p>
+                                    <ul radio-group="7d3ff" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> True</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> False</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>B) False</p>
+                                      <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.2d]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Introduction →
+                            </span></strong></span> <strong><big><big><span>Black Box vs Glass Box</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain black box and glass box test case design</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
+                          <ul>
+                            <li>
+                              <p><strong><em>Black-box</em> (aka <em>specification-based or responsibility-based</em>) approach</strong>: test cases are designed exclusively based on the SUT’s specified external behavior.</p>
+                            </li>
+                            <li>
+                              <p><strong><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach</strong>: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</p>
+                            </li>
+                            <li>
+                              <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
+                            </li>
+                          </ul>
+                          <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> %%Black-box and white-box testing%%">
+                            <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
+                            <tabs>
+                                <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Black-box vs White-box testing">
+                                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                                <p>
+                                  <hr>
+                                </p>
+                              </tab>
+                                <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Black-box testing example">
+                                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                                <p>
+                                  <hr>
+                                </p>
+                              </tab>
+                                <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> White-box testing example">
+                                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                                <p>
+                                  <hr>
+                                </p>
+                              </tab>
+                            </tabs>
+                          </panel>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p><span id="W8-3"></span></p>
+              <panel type="seamless" no-close expandable="true" expanded>
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W8.3]</span> <big><big><strong>Equivalence Partitioning</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.3a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Equivalence Partitions →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain equivalence partitions</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>Consider the testing of the following operation.</p>
+                          <tip-box>
+                            <div id="isValidMonth">
+                              <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                            </div>
+                          </tip-box>
+                          <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
+                          <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
+                            <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
+                          <tip-box type="definition">
+                            <div>
+                              <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
+                            </div>
+                          </tip-box>
+                          <p><strong>By dividing possible inputs into equivalence partitions we can,</strong></p>
+                          <ul>
+                            <li><strong>avoid testing too many inputs from one partition.</strong> Testing too many inputs from the same partition is unlikely to find new bugs. This increases the efficiency of testing by reducing redundant test cases.</li>
+                            <li><strong>ensure all partitions are tested.</strong> Missing partitions can result in bugs going unnoticed. This increases the effectiveness of testing by increasing the chance of finding bugs.</li>
+                          </ul>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.3b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Equivalence Partitions →
+                            </span></strong></span> <strong><big><big><span>Basic</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can apply EP for pure functions</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> These could be EPs for the <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
+                            <ul>
+                              <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
+                              <li>[1 … 12] : the range that produces <code>true</code></li>
+                              <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
+                            </ul>
+                          </tip-box>
+                          <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
+                              <div slot="content">
+                              <div>
+                                <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                              </div>
+                            </div>
+                          </popover>
+                          <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
+                            <p>Example EPs for <code>s</code>:</p>
+                            <ul>
+                              <li>zero-length strings</li>
+                              <li>string containing whitespaces</li>
+                              <li>...</li>
+                            </ul>
+                            <p>Example EPs for <code>n</code>:</p>
+                            <ul>
+                              <li><code>0</code></li>
+                              <li>negative values</li>
+                              <li>...</li>
+                            </ul>
+                          </tip-box>
+                          <p>An EP may not have adjacent values.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the method <code>isPrime(int i): boolean</code> that returns true if <code>i</code> is a prime number.</p>
+                            <p>EPs for <code>i</code>:</p>
+                            <ul>
+                              <li>prime numbers</li>
+                              <li>non-prime numbers</li>
+                            </ul>
+                          </tip-box>
+                          <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
+                          </tip-box>
+                          <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
+                            <ul>
+                              <li>[1 … 12] : the range that produces <code>true</code></li>
+                              <li>[all other integers] : the range that produces <code>false</code></li>
+                            </ul>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Some more examples:</p>
+                            <table class="table">
+                              <tr>
+                                <th>Specification</th>
+                                <th>Equivalence partitions</th>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p><code>isValidFlag(String s): boolean</code><br>
+                                    Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
+                                </td>
+                                <td>
+                                  <p>[<code>&quot;F&quot;</code>] [<code>&quot;T&quot;</code>] [<code>&quot;D&quot;</code>] [<code>&quot;f&quot;</code>, <code>&quot;t&quot;</code>, <code>&quot;d&quot;</code>] [any other string][null]</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p><code>squareRoot(String s): int</code><br>
+                                    Pre-conditions: s represents a positive integer<br>
+                                    Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
+                                </td>
+                                <td>
+                                  <p>[<code>s</code> is not a valid number] [<code>s</code> is a negative integer] [<code>s</code> has an integer square root] [<code>s</code> does not have an integer square root]</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </tip-box>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> EPs for `isValidName` method">
+                                  <question>
+                                    <p>Consider this SUT:</p>
+                                    <tip-box>
+                                      <p><code>isValidName (String s): boolean</code></p>
+                                      <p>Description: returns true if <code>s</code> is not <code>null</code> and not longer than 50 characters.</p>
+                                    </tip-box>
+                                    <p>A. Which one of these is least likely to be an equivalence partition for the parameter s of the isValidName method given below?</p>
+                                    <ul radio-group="4c6ed" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> a. null.</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> b. strings having more than 50 characters.</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> c. strings having 50 or fewer characters.</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> d. strings consisting of numbers instead of letters.</label></li>
+                                    </ul>
+                                    <p>B. If you had to choose 3 test cases from the 4 given below, which one will you leave out based on the EP technique?</p>
+                                    <ul radio-group="f35e9" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> a. A string that is 50 characters long</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> b. A string that is 51 characters long</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> c. A string that is 40 characters long</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> d. null</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>A. (d)</p>
+                                      <p>Explanation: The description does not mention anything about the content of the string. Therefore, the method is unlikely to behave differently for strings consisting of numbers.</p>
+                                      <p>B. (a) or (c)</p>
+                                      <p>Explanation: both belong to the same EP</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.3c]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Equivalence Partitions →
+                            </span></strong></span> <strong><big><big><span>Intermediate</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can apply EP for OOP methods</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
+                          <ul>
+                            <li>the target object of the method call</li>
+                            <li>input parameters of the method call</li>
+                            <li>other data/objects accessed by the method such as global variables. This category may not be applicable if using the black box approach (because the test case designer using the black box approach will not know how the method is implemented)</li>
+                          </ul>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider this method in the <code>DataStack</code> class:
+                              <code>push(Object o): boolean</code></p>
+                            <ul>
+                              <li>Adds o to the top of the stack if the stack is not full.</li>
+                              <li>returns <code>true</code> if the push operation was a success.</li>
+                              <li>throws
+                                <ul>
+                                  <li><code>MutabilityException</code> if the global flag <code>FREEZE==true</code>.</li>
+                                  <li><code>InvalidValueException</code> if o is null.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <p>EPs:</p>
+                            <ul>
+                              <li><code>DataStack</code> object: [full] [not full]</li>
+                              <li><code>o</code>: [null] [not null]</li>
+                              <li><code>FREEZE</code>: [true][false]</li>
+                            </ul>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
+                            <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
+                            <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
+                            <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently based on the game state. Therefore, the equivalence partitions are:</p>
+                            <ul>
+                              <li><code>PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
+                              <li><code>READY</code> : a new minefield has been created and waiting for player’s first move</li>
+                              <li><code>IN_PLAY</code> : the current minefield is already in use</li>
+                              <li><code>WON</code>, <code>LOST</code> : let us assume the <code>newGame</code> behaves the same way for these two values</li>
+                            </ul>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent valid inputs.</p>
+                            <ul>
+                              <li><code>Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
+                              <li><code>x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(we assume a minefield size of WxH)</span></li>
+                              <li><code>y</code>: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
+                              <li><code>Cell</code> at <code>(x,y)</code>: <strong>HIDDEN</strong>, MARKED, CLEARED</li>
+                            </ul>
+                          </tip-box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p><span id="W8-4"></span></p>
+              <panel type="seamless" no-close expandable="true" expanded>
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W8.4]</span> <big><big><strong>Boundary Value Analysis</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.4a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Boundary Value Analysis →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain boundary value analysis</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
+                          </tip-box>
+                          <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
+                          <p>Boundary values are sometimes called <em>corner cases</em>.</p>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What BVA recommends">
+                                  <question>
+                                    <p>Boundary value analysis recommends testing <em>only</em> values that reside on the equivalence class boundary.</p>
+                                    <ul radio-group="f8ff4" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> True</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> False</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>False</p>
+                                      <p>Explanation: It does not recommend testing <em>only</em> those values <em>on</em> the boundary. It merely suggests that values on and around a boundary are more likely to cause errors.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.4b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Boundary Value Analysis →
+                            </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can apply boundary value analysis</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the cost of each test case.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Some examples:</p>
+                            <table class="table">
+                              <tr>
+                                <th>Equivalence partition</th>
+                                <th>Some possible boundary values</th>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>[1-12]</p>
+                                </td>
+                                <td>
+                                  <p>0,1,2, 11,12,13</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>[MIN_INT, 0]<br>
+                                    <span class="dimmed">(MIN_INT is the minimum possible integer value allowed by the environment)</span></p>
+                                </td>
+                                <td>
+                                  <p>MIN_INT, MIN_INT+1, -1, 0 , 1</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>[any non-null String]</p>
+                                </td>
+                                <td>
+                                  <p>Empty String, a String of maximum possible length</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>[prime numbers]<br>
+                                    [“F”]<br>
+                                    [“A”, “D”, “X”]</p>
+                                </td>
+                                <td>
+                                  <p>No specific boundary<br>
+                                    No specific boundary<br>
+                                    No specific boundary</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p>[non-empty Stack]<br>
+                                    <span class="dimmed">(we assume a fixed size stack)</span></p>
+                                </td>
+                                <td>
+                                  <p>Stack with: one element, two elements, no empty spaces, only one empty space</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </tip-box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p><span id="W8-5"></span></p>
+              <panel type="seamless" no-close expandable="true" expanded>
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W8.5]</span> <big><big><strong>Other QA Techniques</strong></big></big></big> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <panel type="seamless" expanded>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.5a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -179,7 +1309,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
                     </div>
                   </panel>
                   <panel type="seamless" expanded>
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Code Reviews →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.5b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Code Reviews →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -252,7 +1382,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
                     </div>
                   </panel>
                   <panel type="seamless" expanded>
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1c]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Static Analysis →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.5c]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Static Analysis →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -285,7 +1415,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
                     </div>
                   </panel>
                   <panel type="seamless" expanded>
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1d]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Formal Verification →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.5d]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Formal Verification →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -353,7 +1483,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.2</a> at Tue, 05 Mar 2019 05:09:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.2</a> at Tue, 05 Mar 2019 08:49:56 GMT</small></div>
 </footer>
 </div>
 </body>
