@@ -1,8 +1,8 @@
 ### Class-Level Members
 
-**Attributes initialized inside a class but outside of its methods are considered class-level attributes** (attributes are also called _data_ or _variables_) i.e., they are shared among all objects of that class whereas attributed initialized inside the `__init__()` method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the `ClassName.` syntax.
+**Attributes initialized inside a class but outside of its methods are considered class-level attributes** (attributes are also called _data_ or _variables_) i.e., they are shared among all objects of that class whereas attributes initialized inside the `__init__()` method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the `ClassName.` syntax.
 
-<tip-box> 
+<box> 
 
 {{ icon_example }} The `Student` class below has one class-level attribute `total_students`. As it is meant to track the total number of `Student` objects created, it is incremented in the `__init__()` method. `course_count` and `name` are instance-level attributes.
 
@@ -30,7 +30,7 @@ print('total students:', Student.total_students)
 print('total students:', ben.total_students) 
 print('Ben course count:', ben.course_count)
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 total students: 1
 total students: 1
@@ -39,40 +39,40 @@ total students: 2
 total students: 2
 Ben course count: 0
 ```
-</tip-box>
+</box>
 
 **It is possible to have class-level methods too.** A class-level method definition should be annotated using a `@classmethod` annotation. In addition, **a class-level method's first parameter should be `cls` which represents the class itself** %%(similar to instance level methods' first parameter needing to be `self`)%%.
 
-<tip-box> 
+<box> 
 
 {{ icon_example }} The `Printer` class below has a class-level attribute `enabled` and class-level methods `enable()` and `disable()`.
 
 ```python
 class Printer:
-  
+
   enabled = True
-  
+
   def __init__(self, new_text):
     self.text = new_text
-  
+
   def print_text(self):
     if Printer.enabled:
       print(self.text)
-    
+
   @classmethod
   def disable(cls):
-    Printer.enabled = False
+    cls.enabled = False  # cls here is same as Printer
     print('All Printers disabled')
-  
+
   @classmethod
   def enable(cls):
-    Printer.enabled = True
+    cls.enabled = True
     print('All Printers enabled')
 ```
 The code below uses the class-level method to enable/disable printing for all `Printer` objects.
-<table> 
-<tr>
-  <td>
+
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 Printer.disable()
@@ -85,9 +85,8 @@ Printer.enable()
 p1.print_text()
 p2.print_text()
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
 ```
 All Printers disabled
@@ -95,12 +94,10 @@ All Printers enabled
 blah blah
 yak yak
 ```
-
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 :bulb: As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
-</tip-box>
+</box>
 
 <include src="exercisePanel.md" boilerplate var-title="Add Class-Level Members to `Subject` Class" var-file="e-addClassLevelMembersToSubjectClass.md" />

@@ -17,7 +17,7 @@ After that, to install a third-party module (or _packages_ as they are sometimes
 ```bash
 pip install colorama
 ```
-:arrow_heading_down:
+{{ icon_output }}
 ```
 Collecting colorama
   Downloading colorama-0.3.9-py2.py3-none-any.whl
@@ -34,7 +34,7 @@ print(colorama.Fore.YELLOW + ' Some yellow text')
 print(colorama.Fore.BLUE + colorama.Back.WHITE + ' Some blue text in a white background')
 print(colorama.Style.RESET_ALL + ' Back to normal now')
 ```
-:arrow_heading_down:<br>
+{{ icon_output }}<br>
 
 <img src="{{baseUrl}}/programming/thirdparty/images/coloramaOutput.png" /></p>
 
@@ -53,7 +53,7 @@ print(colorama.Style.RESET_ALL + ' Back to normal now')
 
 </tip-box>
 
-**:paperclip: Resources**:
+**{{ icon_resource }} Resources**:
 * [More about installing 3rd-party modules](https://automatetheboringstuff.com/appendixa/)
 
 <include src="exercisePanel.md" boilerplate var-title="Print Errors in Red" var-file="e-printErrorsInRed.md" />
