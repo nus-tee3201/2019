@@ -226,8 +226,7 @@ Some suggestions for _additional functionality_:
 * **Week 8** (mid-term submission):
   * Deadline: Week 8, Tuesday 6pm
   * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement). If you are taking option A or C, implement at least upto [Monty 5]({{ baseUrl }}/programming/toc/monty.html).
-    * Submission: demo during the lecture in week 8.<br>
-      Timing of week 8 lecture: [6-7pm: project demos] [7-8pm: normal lecture] [8-9.30pm: project demos]. Demo order: _first come, first served_.
+    * Submission: demo during the lecture in week 8.
   * Documentation:
     * Sections to include:
       * Cover page: Include product name, names of team members
@@ -236,6 +235,17 @@ Some suggestions for _additional functionality_:
       * Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.
       * Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.
     * Submission: upload to IVLE as a `.docx` or `.pdf` file. File name should contain team member names. e.g., `John Doe, Sarah Tan, Viet Ngoc.docx`
+<div class="indented-level3">
+
+<box type="info">
+
+Please try to be present for one of the two demo slots on the day to demo your project to me.
+* Timing: [6-7pm: project demos] [7-8pm: normal lecture] [8-9.30pm: project demos]
+* Demo order: _first come, first served_.
+
+Normally, I would give my feedback for the midterm project document on week 9-10. If you don't intend to attend the lectures on those weeks, please bring a printout of your project document to your project demo so that I can give feedback on it the same day.
+</box>
+</div>
 </div>
 
 * **Week 13** (final submission):
