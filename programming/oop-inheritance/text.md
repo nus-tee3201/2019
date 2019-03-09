@@ -8,11 +8,12 @@ class ChildClassName(ParentClassName):
   # statements of the class
 ```
 
-<tip-box> 
+<box>
 
-<table> 
-<tr>
-  <td>
+{{ icon_example }} Consider the `Person` class below:
+
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 class Person:
@@ -25,26 +26,19 @@ class Person:
 amy = Person('Amy')
 amy.print_info()
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
 ```
 My name is Amy
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-{{ icon_example }} Note how the `Teacher` class below inherits from the `Person` class given above. Observe how,
- * a `Teacher` object can use the `print_info()` method defined in the parent class.
- * the statement `dan = Teacher('Dan')` invokes the `__init__()` method defined in the parent class too.
- * the statement `print('the name is', dan.name)` is accessing the attribute `name` from a `Teacher` object although the attribute is defined in the parent class.
- * the method `teach` accesses the attribute `name` using `self.name` although the attribute is defined in teh parent class.
+The `Teacher` class below inherits from the `Person` class given above.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 class Teacher(Person):
@@ -57,32 +51,34 @@ dan.print_info()
 dan.teach()
 print('the name is', dan.name)
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
 ```
 My name is Dan
 Dan is teaching
 the name is Dan
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+Observe how,
+ * a `Teacher` object can use the `print_info()` method defined in the parent class.
+ * the statement `dan = Teacher('Dan')` invokes the `__init__()` method defined in the parent class too.
+ * the statement `print('the name is', dan.name)` is accessing the attribute `name` from a `Teacher` object although the attribute is defined in the parent class.
+ * the method `teach` accesses the attribute `name` using `self.name` although the attribute is defined in teh parent class.
+</box>
 
 <include src="exercisePanel.md" boilerplate var-title="Add `Fish` Class" var-file="e-addFishClass.md" />
 
 **A child class can _override_ a method defined in the parent class.** That way, a child object can change a behavior defined in the parent class.
 
-<tip-box> 
+<box> 
 
 {{ icon_example }} Note how the `Student` class below overrides the `__init__()` method and the `print_info()` method of the parent class `Person`.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 class Student(Person):
@@ -100,24 +96,21 @@ ben = Student('Ben', 'A12345')
 ben.print_info()
 ben.learn()
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
 ```
 Ben is a student
 Ben is learning
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 When overriding methods, you can reuse the parent's definition of the same method using the `super().` prefix.
 
-<tip-box> 
-
+<box> 
 
 ```python
 class Person:
@@ -126,46 +119,41 @@ class Person:
 ```
 {{ icon_example }} Given that `Person` class has the initializer method given above, the following two versions of the `Student` class are equivalent.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-arrow=" = " boilerplate> 
+<span id="input">
 
-Override without reusing parent's method :arrow_heading_down:
+Override without reusing parent's method
 ```python
 class Student(Person):
   def __init__(self, name, matric):
     self.name = name
     self.matric = matric
 ```
-  </td>
-  <td valign="bottom">&nbsp;=&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
-Override but reuse parent's method :arrow_heading_down:
+Override but reuse parent's method
 ```python
 class Student(Person):
   def __init__(self, name, matric):
     super().__init__(name) # reuse parent's method
     self.matric = matric
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 <include src="exercisePanel.md" boilerplate var-title="Add `FlightlessBird` Class" var-file="e-addFlightlessBirdClass.md" />
 
-
 **Note that all python classes automatically inherits from the built-in class `object`** even if you did not specify it as the parent class. The `object` class has a `__str__()` method that you can ovrride in your classes to customize how the `print` function will print an object of your class.
 
-<tip-box> 
+<box> 
 
 {{ icon_example }} The `Book` class below overrides the `__str__()` method so that `Book` objects can be printed in a specific format.
 
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 class Book:
@@ -178,31 +166,26 @@ class Book:
 book = Book('Python for Beginners')
 print(book)
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
 ```
 Book title: Python for Beginners
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-</tip-box>
+</box>
 
 <include src="exercisePanel.md" boilerplate var-title="Override `__str__()` Method" var-file="e-overrideStr.md" />
 
 
 **A class can inherit from multiple classes.** If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.
 
-<tip-box> 
+<box> 
 
-
-
-<table> 
-<tr>
-  <td>
+<include src="inputOutput.md" var-arrow="" boilerplate> 
+<span id="input">
 
 ```python
 class Person:
@@ -222,9 +205,8 @@ class Teacher(Person):
     print(self.name, 'is a teacher')
     
 ```
-  </td>
-  <td valign="bottom">&nbsp;&nbsp;<br><br></td>
-  <td>
+</span>
+<span id="output">
 
 ```python
 class Student(Person):
@@ -244,11 +226,10 @@ class TeachingAssistant(Teacher, Student):
   def grade(self):
     print(self.name, 'is grading')
 ```
-  </td>
-  </tr>
-</table>
+</span>
+</include>
 
-{{ icon_example }} The `TeachingAssistant` class above inherits from both `Student` class and the `Parent` class both of which inherit from the `Person` class. That means a `TeachingAssistant` object can use methods from classes `object`, `Person`, `Student`, `Teacher`, and `TeachingAssistant`.
+{{ icon_example }} The `TeachingAssistant` class above inherits from both `Student` class and the `Teacher` class both of which inherit from the `Person` class. That means a `TeachingAssistant` object can use methods from classes `object`, `Person`, `Student`, `Teacher`, and `TeachingAssistant`.
 
 <table>
   <tr>
@@ -277,7 +258,7 @@ Elsie is grading
 
 As both `Teacher` and `Student` classes have the `print_info()` method, the method from the `Teacher` class will be used as it comes first in the inheritance order `(Teacher, Student)`; that is why you see `Elsie is a teacher` in the output instead of `Elsie is a student`.
 
-</tip-box>
+</box>
 
 <include src="exercisePanel.md" boilerplate var-title="Add `SmartPhone` Class" var-file="e-addSmartPhoneClass.md" />
 

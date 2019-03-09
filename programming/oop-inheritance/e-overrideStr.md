@@ -2,9 +2,8 @@
 
 Override the `__str()__` of the `Person` class so that the code below produces the given output.
 
-<table>
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 class Person:
@@ -18,17 +17,15 @@ class Person:
 print(Person('Amy', 25))
 print(Person('Ben', 26))
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom"> 
+</span>
+<span id="output">
 
 ```
 Amy (25years)
 Ben (26years)
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 

@@ -158,29 +158,35 @@
 <div id="week8-toc">
 
 * [**Installing 3rd Party Modules**](#appendix-a-installing-3rd-party-modules)
+
+* [**Object-Oriented Programing - Part I**](#object-oriented-programming)
+  * [Classes](#classes)
 </div>
 
 <include src="../programming/thirdparty/text.md" />{{ hr_double }}
+
+# Object-Oriented Programming
+
+<include src="../programming/oop-classes/text.md" />{{ hr_double }}
+
 </div>
 <div id="week9">
 <div id="week9-toc">
 
-* [**Object-Oriented Programing**](#object-oriented-programming)
-  * [Classes](#classes)
+* [**Object-Oriented Programing - Part II**](#object-oriented-programming)
   * [Class-Level Members](#class-level-members)
   * [Visibility](#visibility)
 </div>
 
 # Object-Oriented Programming
 
-<include src="../programming/oop-classes/text.md" />{{ hr_double }}
 <include src="../programming/oop-classLevelMembers/text.md" />{{ hr_double }}
 <include src="../programming/oop-visibility/text.md" />{{ hr_double }}
 </div>
 <div id="week10">
 <div id="week10-toc">
 
-* [**Object-Oriented Programing - continued**](#object-oriented-programming---continued)
+* [**Object-Oriented Programing - Part III**](#object-oriented-programming---continued)
   * [Inheritance](#inheritance)
 * [**Unit Testing**](#appendix-b-unit-testing)
 </div>

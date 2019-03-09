@@ -2,9 +2,8 @@
 
 Add a `SmartPhone` class to inherits from the `Camera` class and the `Phone` class so that the code below produces the given output.
 
-<table>
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 class Camera:
@@ -24,9 +23,8 @@ iphone.take_photo()
 iphone.make_call()
 iphone.play_game()
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom"> 
+</span>
+<span id="output">
 
 ```
 My model: iPhone
@@ -34,9 +32,8 @@ taking photo
 making call
 playing game
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 

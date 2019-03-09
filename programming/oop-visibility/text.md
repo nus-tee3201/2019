@@ -2,7 +2,7 @@
 
 The _encapsulation_ aspect of OOP requires that an object should only allow controlled access to its members. For example, it should be able to make some of its attributes visible to other object while keeping others hidden. As a consequence of Python's aim to be a very flexible and versatile language, it does not enforce encapsulation as strictly as some other OOP languages. However, it recommends some conventions, if followed, will maintain a reasonable level of encapsulation in objects.
 
-* **_Private_ members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., `__foo`, `__bar_()`) cannot be accessed using its name by code outside the class.** These are 
+* **_Private_ members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., `__foo`, `__bar_()`) cannot be accessed using its name by code outside the class.** 
 
 * **_Protected_ members: a name prefixed with a single underscore (e.g. `_foo`, `_bar()`) are -- by convention -- should not be accessed by code outside of the owner class** as they are not meant to be part of the object's public interface.
 
@@ -35,10 +35,10 @@ class Account:
   def __get_income(self):   # private
     return self.__balance + 100
 ```
-:white_check_mark: The following code works fine because the members being accessed are public.
-<table> 
-<tr>
-  <td>
+{{ icon_tick_green }} The following code works fine because the members being accessed are public.
+
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 print('currency:', Account.currency)
@@ -46,23 +46,21 @@ a = Account('Adam', 100)
 print('status:', a.status)
 print('info:', a.get_info())
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
 ```
 currency: $
 status: OK
 info: ['OK']
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-:exclamation: The following code works too. But they access protected members which is ==not a recommended practice==.
-<table> 
-<tr>
-  <td>
+{{ icon_important_big_red }} The following code works too. But they access protected members which is ==not a recommended practice==.
+
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 print('minimum allowed:', Account._min) 
@@ -70,23 +68,18 @@ a = Account('Adam', 100)
 print('owner:', a._owner) 
 print('more info:', a._get_more_info())
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</span>
+<span id="output">
 
 ```
 minimum allowed: 10.0
 owner: Adam
 more info: ['OK', 'Adam']
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
-:x: The following code will not work because they try to access private members.
-<table> 
-<tr>
-  <td>
+{{ icon_x_read }} The following code will not work because they try to access private members.
 
 ```python
 print('maximum allowed:', Account.__max) # error
@@ -94,18 +87,12 @@ a = Account('Adam', 100)
 print('balance:', a.__balance) # error
 print('income:', a.__get_income()) # error
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
-
+{{ icon_output }}
 ```
 AttributeError: type object 'Account' has no attribute '__max'...
 AttributeError: 'Account' object has no attribute '__balance'...
 AttributeError: 'Account' object has no attribute '__get_income'...
 ```
-  </td>
-</tr>
-</table>
 
 :bulb: Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
 </tip-box>

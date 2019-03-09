@@ -4,9 +4,8 @@ Do the following changes to the given code so that the code below produces the g
 1. update the `info()` method of the `Bird` to call the same method from the parent class
 1. add a `FlightlessBird` class that inherits from the `Bird` class, and override the `move()` method 
 
-<table>
-<tr>
-  <td>
+<include src="inputOutput.md" boilerplate> 
+<span id="input">
 
 ```python
 class Animal:
@@ -36,9 +35,8 @@ penguin = FlightlessBird('Penguin')
 penguin.info()
 penguin.move()
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom"> 
+</span>
+<span id="output">
 
 ```
 I'm a Crow
@@ -48,9 +46,8 @@ I'm a Penguin
 I have feathers
 I'm waddling
 ```
-  </td>
-</tr>
-</table>
+</span>
+</include>
 
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 
