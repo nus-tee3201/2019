@@ -119,7 +119,7 @@ You may choose one of these two options. You can switch between the options any 
   * To be done using Python.
   * You are also expected to,
     * submit <tooltip content="more than 60% of exercises">most</tooltip> of the weekly programming exercises (on repl.it) within two weeks of the corresponding lecture %%e.g., submit week 2 exercises before week 4 lecture%%
-    * submit weekly <trigger trigger="click" for="modal:admin-projectIncrements">project increments</trigger> within two weeks of the corresponding lecture for the first 8 weeks.
+    * submit weekly <trigger trigger="click" for="modal:admin-projectIncrements">project increments</trigger> within two weeks of the corresponding lecture for the first 8 weeks i.e., up to Monty 9. Monty 10 onwards are optional but you can use them as guidance for your own project.
   * Marks breakdown [40 marks]:
     * ==Weekly exercises [5 marks]==
     * ==Weekly project increments [5 marks]==
@@ -143,7 +143,7 @@ When creating repl.it accounts, please use a username similar to your actual nam
   * Do the project ~~individually or~~ as a team of 2-3 members.
   * Programming language: Python
   * Marks breakdown [40 marks]:
-    * ==Weekly exercises  +  Weekly project increments [5 marks]==
+    * ==Weekly exercises  +  Weekly project increments [5 marks]== (similar to option A)
     * Midterm submission: [10 marks]
     * Final submission: [25 marks]
 
@@ -221,10 +221,13 @@ Some suggestions for _additional functionality_:
 
 ### Deliverables
 
+<div id="midterm-submission-info">
+
 * **Week 8** (mid-term submission):
   * Deadline: Week 8, Tuesday 6pm
   * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement). If you are taking option A or C, implement at least upto [Monty 5]({{ baseUrl }}/programming/toc/monty.html).
-    * Submission: demo during the lecture in week 8.
+    * Submission: demo during the lecture in week 8.<br>
+      Timing of week 8 lecture: [6-7pm: project demos] [7-8pm: normal lecture] [8-9.30pm: project demos]. Demo order: _first come, first served_.
   * Documentation:
     * Sections to include:
       * Cover page: Include product name, names of team members
@@ -233,6 +236,7 @@ Some suggestions for _additional functionality_:
       * Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.
       * Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.
     * Submission: upload to IVLE as a `.docx` or `.pdf` file. File name should contain team member names. e.g., `John Doe, Sarah Tan, Viet Ngoc.docx`
+</div>
 
 * **Week 13** (final submission):
   * Functionality: all functionality
