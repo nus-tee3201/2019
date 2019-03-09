@@ -2328,3 +2328,72 @@
 2019-03-09T06:17:55.682Z - info: Site data built
 2019-03-09T06:28:49.697Z - info: Website generation started at 2:28:46 PM
 2019-03-09T06:28:51.622Z - info: Building assets...
+2019-03-09T06:28:53.549Z - info: Assets built
+2019-03-09T06:28:53.549Z - info: Generating pages...
+2019-03-09T06:29:47.332Z - info: Pages built
+2019-03-09T06:29:57.356Z - info: Website generation complete! Total build time: 70.761s
+2019-03-09T06:29:57.356Z - info: Build success!
+2019-03-09T06:29:57.356Z - info: Generate Site durationMs=70762
+2019-03-09T06:29:57.363Z - info: Site data built
+2019-03-09T06:30:32.207Z - info: Deployed!
+2019-03-09T08:52:38.160Z - info: Website generation started at 4:52:35 PM
+2019-03-09T08:52:40.014Z - info: Building assets...
+2019-03-09T08:52:41.897Z - info: Assets built
+2019-03-09T08:52:41.898Z - info: Generating pages...
+2019-03-09T08:53:34.765Z - info: Pages built
+2019-03-09T08:53:44.725Z - info: Website generation complete! Total build time: 69.583s
+2019-03-09T08:53:44.737Z - info: Generate Site durationMs=69595
+2019-03-09T08:53:45.062Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-03-09T08:53:45.062Z - info: Press CTRL+C to stop ...
+2019-03-09T08:53:45.097Z - info: Site data built
+2019-03-09T08:53:45.535Z - info: [4:53:45 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-03-09T08:53:46.894Z - info: Rebuilding affected source files
+2019-03-09T08:53:46.896Z - info: Rebuilding 1 pages
+2019-03-09T08:53:52.335Z - info: Pages rebuilt
+2019-03-09T08:53:52.379Z - info: Site data built
+2019-03-09T08:53:59.898Z - info: [4:53:59 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-03-09T08:54:00.899Z - info: Rebuilding affected source files
+2019-03-09T08:54:00.899Z - info: Rebuilding 1 pages
+2019-03-09T08:54:01.262Z - info: Pages rebuilt
+2019-03-09T08:54:01.279Z - info: Site data built
+2019-03-09T08:56:19.500Z - info: [4:56:19 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-03-09T08:56:19.507Z - info: [4:56:19 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week8\project-te3201.md
+2019-03-09T08:56:20.516Z - info: Rebuilding affected source files
+2019-03-09T08:56:20.520Z - info: Rebuilding 2 pages
+2019-03-09T08:56:20.660Z - error:  Error: No such segment 'midterm-submission-info' in file: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+Missing reference in C:\repos\nus-te3201\te3201-2019-website\schedule\week8\project-te3201.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:308:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:357:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:357:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:374:43)
+2019-03-09T08:56:21.257Z - info: Pages rebuilt
+2019-03-09T08:56:21.270Z - info: Site data built
+2019-03-09T08:56:39.059Z - info: [4:56:39 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-03-09T08:56:40.070Z - info: Rebuilding affected source files
+2019-03-09T08:56:40.071Z - info: Rebuilding 2 pages
+2019-03-09T08:56:40.670Z - info: Pages rebuilt
+2019-03-09T08:56:40.679Z - info: Site data built
+2019-03-09T08:57:27.182Z - info: [4:57:27 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week8\project-te3201.md
+2019-03-09T08:57:28.196Z - info: Rebuilding affected source files
+2019-03-09T08:57:28.198Z - info: Rebuilding 1 pages
+2019-03-09T08:57:28.521Z - info: Pages rebuilt
+2019-03-09T08:57:28.530Z - info: Site data built
+2019-03-09T09:00:50.244Z - info: [5:00:50 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\evidence\javaTools.md
+2019-03-09T09:00:51.245Z - info: Rebuilding affected source files
+2019-03-09T09:00:51.245Z - info: Rebuilding 0 pages
+2019-03-09T09:00:51.246Z - info: Pages rebuilt
+2019-03-09T09:00:51.252Z - info: Site data built
+2019-03-09T09:02:19.536Z - info: Website generation started at 5:02:16 PM
+2019-03-09T09:02:21.985Z - info: Building assets...
