@@ -1071,6 +1071,57 @@ D,return book,pending,Monday
               <p></p>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty9">
+              <h3 id="monty-9">Monty 9<a class="fa fa-anchor" href="#monty-9"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-8">Monty 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
+              <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <p>Here is the code for an example <code>ToDo</code> class:</p>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
+        self.description = description
+        self.is_done = status
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_string</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">""" Return the details of todo object as a string"""</span>
+        status = <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span>
+        <span class="hljs-keyword">return</span> status.center(<span class="hljs-number">6</span>) + <span class="hljs-string">' '</span> + <span class="hljs-string">'   -'</span>.ljust(<span class="hljs-number">13</span>) + self.description
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_csv</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">""" Return the details of todo object as a list,
+        suitable to be stored in a csv file.
+        """</span>
+        <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]
+</code></pre>
+                <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+    data_file = open(filename)
+    deliveries_reader = csv.reader(data_file)
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
+        <span class="hljs-keyword">if</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'T'</span>:
+            items.append(ToDo(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>))
+        <span class="hljs-keyword">elif</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'D'</span>:
+            items.append(Deadline(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>, row[<span class="hljs-number">3</span>]))
+    data_file.close()
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_data</span><span class="hljs-params">(filename, items_to_save)</span>:</span>
+    output_file = open(filename, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>)
+    output_writer = csv.writer(output_file)
+    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items_to_save:
+        output_writer.writerow(item.as_csv())
+    output_file.close()
+</code></pre>
+              </panel>
+              <p></p>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
             <p><span class="dimmed">Remaining increments to be added soon.</span></p>
           </div>
         </modal>
@@ -1393,7 +1444,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.2</a> at Tue, 05 Mar 2019 08:49:56 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.19.2</a> at Sat, 09 Mar 2019 06:28:53 GMT</small></div>
 </footer>
 </div>
 </body>

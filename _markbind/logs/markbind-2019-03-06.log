@@ -1,0 +1,100 @@
+2019-03-06T04:21:27.345Z - info: Website generation started at 12:21:23 PM
+2019-03-06T04:21:29.604Z - info: Building assets...
+2019-03-06T04:21:31.927Z - info: Assets built
+2019-03-06T04:21:31.927Z - info: Generating pages...
+2019-03-06T04:22:42.941Z - info: Pages built
+2019-03-06T04:22:55.906Z - info: Website generation complete! Total build time: 92.702s
+2019-03-06T04:22:55.929Z - info: Generate Site durationMs=92725
+2019-03-06T04:22:56.327Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-03-06T04:22:56.327Z - info: Press CTRL+C to stop ...
+2019-03-06T04:22:56.368Z - info: Site data built
+2019-03-06T04:23:46.940Z - info: [12:23:46 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:23:47.944Z - info: Rebuilding affected source files
+2019-03-06T04:23:47.947Z - info: Rebuilding 15 pages
+2019-03-06T04:23:51.046Z - info: Pages rebuilt
+2019-03-06T04:23:51.057Z - info: Site data built
+2019-03-06T04:23:56.924Z - info: [12:23:56 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:23:57.924Z - info: Rebuilding affected source files
+2019-03-06T04:23:57.927Z - info: Rebuilding 15 pages
+2019-03-06T04:24:00.711Z - info: Pages rebuilt
+2019-03-06T04:24:00.728Z - info: Site data built
+2019-03-06T04:24:18.235Z - info: [12:24:18 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:24:19.236Z - info: Rebuilding affected source files
+2019-03-06T04:24:19.243Z - info: Rebuilding 15 pages
+2019-03-06T04:24:22.403Z - info: Pages rebuilt
+2019-03-06T04:24:22.418Z - info: Site data built
+2019-03-06T04:24:51.566Z - info: [12:24:51 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:24:52.567Z - info: Rebuilding affected source files
+2019-03-06T04:24:52.572Z - info: Rebuilding 15 pages
+2019-03-06T04:24:55.707Z - info: Pages rebuilt
+2019-03-06T04:24:55.718Z - info: Site data built
+2019-03-06T04:25:05.853Z - info: [12:25:05 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:25:06.854Z - info: Rebuilding affected source files
+2019-03-06T04:25:06.858Z - info: Rebuilding 15 pages
+2019-03-06T04:25:09.836Z - info: Pages rebuilt
+2019-03-06T04:25:09.849Z - info: Site data built
+2019-03-06T04:26:00.559Z - info: [12:26:00 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:26:01.561Z - info: Rebuilding affected source files
+2019-03-06T04:26:01.564Z - info: Rebuilding 15 pages
+2019-03-06T04:26:04.625Z - info: Pages rebuilt
+2019-03-06T04:26:04.634Z - info: Site data built
+2019-03-06T04:27:52.720Z - info: [12:27:52 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:27:53.721Z - info: Rebuilding affected source files
+2019-03-06T04:27:53.726Z - info: Rebuilding 15 pages
+2019-03-06T04:27:56.766Z - info: Pages rebuilt
+2019-03-06T04:27:56.777Z - info: Site data built
+2019-03-06T04:28:29.199Z - info: [12:28:29 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:28:30.201Z - info: Rebuilding affected source files
+2019-03-06T04:28:30.206Z - info: Rebuilding 15 pages
+2019-03-06T04:28:33.378Z - info: Pages rebuilt
+2019-03-06T04:28:33.391Z - info: Site data built
+2019-03-06T04:29:22.321Z - info: [12:29:22 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:29:23.323Z - info: Rebuilding affected source files
+2019-03-06T04:29:23.327Z - info: Rebuilding 15 pages
+2019-03-06T04:29:26.347Z - info: Pages rebuilt
+2019-03-06T04:29:26.360Z - info: Site data built
+2019-03-06T04:29:42.673Z - info: [12:29:42 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:29:43.676Z - info: Rebuilding affected source files
+2019-03-06T04:29:43.679Z - info: Rebuilding 15 pages
+2019-03-06T04:29:46.686Z - info: Pages rebuilt
+2019-03-06T04:29:46.696Z - info: Site data built
+2019-03-06T04:33:08.709Z - info: [12:33:08 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:33:09.709Z - info: Rebuilding affected source files
+2019-03-06T04:33:09.712Z - info: Rebuilding 15 pages
+2019-03-06T04:33:12.763Z - info: Pages rebuilt
+2019-03-06T04:33:12.774Z - info: Site data built
+2019-03-06T04:33:42.377Z - info: [12:33:42 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:33:43.377Z - info: Rebuilding affected source files
+2019-03-06T04:33:43.381Z - info: Rebuilding 15 pages
+2019-03-06T04:33:46.429Z - info: Pages rebuilt
+2019-03-06T04:33:46.441Z - info: Site data built
+2019-03-06T04:34:13.799Z - info: [12:34:13 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:34:14.800Z - info: Rebuilding affected source files
+2019-03-06T04:34:14.803Z - info: Rebuilding 15 pages
+2019-03-06T04:34:17.738Z - info: Pages rebuilt
+2019-03-06T04:34:17.750Z - info: Site data built
+2019-03-06T04:34:33.139Z - info: [12:34:33 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:34:34.142Z - info: Rebuilding affected source files
+2019-03-06T04:34:34.145Z - info: Rebuilding 15 pages
+2019-03-06T04:34:37.138Z - info: Pages rebuilt
+2019-03-06T04:34:37.150Z - info: Site data built
+2019-03-06T04:35:33.974Z - info: [12:35:33 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:35:34.976Z - info: Rebuilding affected source files
+2019-03-06T04:35:34.979Z - info: Rebuilding 15 pages
+2019-03-06T04:35:37.896Z - info: Pages rebuilt
+2019-03-06T04:35:37.907Z - info: Site data built
+2019-03-06T04:36:39.151Z - info: [12:36:39 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\_markbind\navigation\programming-sitenav.md
+2019-03-06T04:36:40.153Z - info: Rebuilding affected source files
+2019-03-06T04:36:40.155Z - info: Rebuilding 15 pages
+2019-03-06T04:36:43.159Z - info: Pages rebuilt
+2019-03-06T04:36:43.171Z - info: Site data built
+2019-03-06T04:46:21.268Z - info: Website generation started at 12:46:16 PM
+2019-03-06T04:46:23.643Z - info: Building assets...
+2019-03-06T04:46:25.846Z - info: Assets built
+2019-03-06T04:46:25.847Z - info: Generating pages...
+2019-03-06T04:47:25.095Z - info: Pages built
+2019-03-06T04:47:35.934Z - info: Website generation complete! Total build time: 78.974s
+2019-03-06T04:47:35.947Z - info: Generate Site durationMs=78988
+2019-03-06T04:47:36.298Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-03-06T04:47:36.298Z - info: Press CTRL+C to stop ...
+2019-03-06T04:47:36.328Z - info: Site data built

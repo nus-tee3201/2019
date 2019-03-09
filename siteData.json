@@ -727,7 +727,8 @@
         "monty-5": "Monty 5",
         "monty-6": "Monty 6",
         "monty-7": "Monty 7",
-        "monty-8": "Monty 8"
+        "monty-8": "Monty 8",
+        "monty-9": "Monty 9"
       },
       "title": "Python Basics: The Monty Project",
       "footer": "footer.md",
