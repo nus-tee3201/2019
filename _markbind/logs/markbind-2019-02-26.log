@@ -1,0 +1,29 @@
+2019-02-26T15:04:36.511Z - info: Website generation started at 23:04:29
+2019-02-26T15:04:41.131Z - info: Building assets...
+2019-02-26T15:04:43.902Z - info: Assets built
+2019-02-26T15:04:43.902Z - info: Generating pages...
+2019-02-26T15:06:26.703Z - info: Pages built
+2019-02-26T15:06:47.706Z - info: Website generation complete! Total build time: 138.231s
+2019-02-26T15:06:47.718Z - info: Generate Site durationMs=138243
+2019-02-26T15:06:47.838Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-26T15:06:47.838Z - info: Press CTRL+C to stop ...
+2019-02-26T15:06:47.862Z - info: Site data built
+2019-02-26T15:09:27.690Z - info: [23:09:27] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\ide\images\addBreakPoint.png
+2019-02-26T15:09:27.760Z - info: [23:09:27] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\ide\images\addBreakPoint.png
+2019-02-26T15:09:28.718Z - info: Assets built
+2019-02-26T15:09:57.963Z - info: [23:09:57] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\ide\images\stepThroughCode.png
+2019-02-26T15:09:58.099Z - info: [23:09:58] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\ide\images\stepThroughCode.png
+2019-02-26T15:09:58.997Z - info: Assets built
+2019-02-26T15:10:37.734Z - info: Website generation started at 23:10:32
+2019-02-26T15:10:42.843Z - info: Building assets...
+2019-02-26T15:10:44.960Z - info: Assets built
+2019-02-26T15:10:44.960Z - info: Generating pages...
+2019-02-26T15:12:22.282Z - info: Pages built
+2019-02-26T15:12:42.901Z - info: Website generation complete! Total build time: 130.537s
+2019-02-26T15:12:42.917Z - info: Generate Site durationMs=130553
+2019-02-26T15:12:42.950Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-02-26T15:12:42.950Z - info: Press CTRL+C to stop ...
+2019-02-26T15:12:42.970Z - info: Site data built
+2019-02-26T15:20:32.157Z - info: [23:20:32] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\ide\images\stepThroughCode.png
+2019-02-26T15:20:32.287Z - info: [23:20:32] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\ide\images\stepThroughCode.png
+2019-02-26T15:20:33.176Z - info: Assets built
