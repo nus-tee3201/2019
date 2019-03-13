@@ -70,12 +70,20 @@
       "searchable": "yes"
     }
   ],
-  "enableSearch": true,
-  "headingIndexingLevel": 5,
-  "plugins": ["filterTags"],
+  "enableSearch": false,
+  "plugins": ["algolia","filterTags"],
   "pluginsContext": {
-   "filterTags" : {
-     "tags": []
-   }
+    "algolia": {
+      "apiKey": "29bf21caddc74372e5c75f9a557715ec", 
+      "indexName": "te3201_2019", 
+      "algoliaOptions": {
+        "hitsPerPage": 10,
+        "facetFilters": [["tags:admin", "tags:programming", "tags:se-book-adapted"]]
+      }, 
+      "debug": false 
+    },
+    "filterTags" : {
+      "tags": []
+    }
  }
 }
