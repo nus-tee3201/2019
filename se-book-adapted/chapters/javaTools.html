@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -32,7 +33,7 @@
   <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
     <a class="nav-link py-1" href="#java">Java&#x200E;</a>
     <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#varargs">Varargs &#x200E;</a>
+      <a class="nav-link py-1" href="#varargs">Varargs&#x200E;</a>
       <a class="nav-link py-1" href="#javafx-basic">JavaFX: Basic&#x200E;</a>
       <a class="nav-link py-1" href="#streams-basic">Streams: Basic&#x200E;</a>
     </nav>
@@ -183,7 +184,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -194,7 +195,7 @@
               <h1 id="java"><span>Java</span><a class="fa fa-anchor" href="#java"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### Varargs <a class='fa fa-anchor' href='#varargs'></a>" expanded>
+          <panel type="seamless" header="#### Varargs " expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -212,7 +213,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### JavaFX: Basic<a class='fa fa-anchor' href='#javafx-basic'></a>" expanded>
+          <panel type="seamless" header="#### JavaFX: Basic" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -929,7 +930,7 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Streams: Basic<a class='fa fa-anchor' href='#streams-basic'></a>" expanded>
+          <panel type="seamless" header="#### Streams: Basic" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -978,7 +979,7 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -989,8 +990,21 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

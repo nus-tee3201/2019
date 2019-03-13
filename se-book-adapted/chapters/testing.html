@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -209,7 +210,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -226,7 +227,7 @@
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+            <panel type="seamless" header="#### What" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -317,7 +318,7 @@
                   <h3 id="unit-testing"><span>Unit Testing</span><a class="fa fa-anchor" href="#unit-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -412,7 +413,7 @@
                   <h3 id="integration-testing"><span>Integration Testing</span><a class="fa fa-anchor" href="#integration-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -436,7 +437,7 @@
                   <h3 id="system-testing"><span>System Testing</span><a class="fa fa-anchor" href="#system-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -476,7 +477,7 @@
                   <h3 id="alpha-and-beta-testing"><span>Alpha and Beta Testing</span><a class="fa fa-anchor" href="#alpha-and-beta-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -499,7 +500,7 @@
                   <h3 id="dogfooding"><span>Dogfooding</span><a class="fa fa-anchor" href="#dogfooding"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -539,7 +540,7 @@
                   <h3 id="developer-testing"><span>Developer Testing</span><a class="fa fa-anchor" href="#developer-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -553,7 +554,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Why<a class='fa fa-anchor' href='#why'></a>" expanded>
+              <panel type="seamless" header="#### Why" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -636,7 +637,7 @@
                   <h3 id="exploratory-vs-scripted-testing"><span>Exploratory vs Scripted Testing</span><a class="fa fa-anchor" href="#exploratory-vs-scripted-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -721,7 +722,7 @@
                   </div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### When<a class='fa fa-anchor' href='#when'></a>" expanded>
+              <panel type="seamless" header="#### When" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -774,7 +775,7 @@
                   <h3 id="acceptance-testing"><span>Acceptance Testing</span><a class="fa fa-anchor" href="#acceptance-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -789,7 +790,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Acceptance vs System Testing<a class='fa fa-anchor' href='#acceptance-vs-system-testing'></a>" expanded>
+              <panel type="seamless" header="#### Acceptance vs System Testing" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -900,7 +901,7 @@
                   <h3 id="regression-testing"><span>Regression Testing</span><a class="fa fa-anchor" href="#regression-testing"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -952,7 +953,7 @@
                 <h2 id="test-automation"><span>Test Automation</span><a class="fa fa-anchor" href="#test-automation"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+            <panel type="seamless" header="#### What" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -989,7 +990,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Automated Testing of CLI Apps<a class='fa fa-anchor' href='#automated-testing-of-cli-apps'></a>" expanded>
+            <panel type="seamless" header="#### Automated Testing of CLI Apps" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1083,7 +1084,7 @@ Invalid command format: add
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1094,8 +1095,21 @@ Invalid command format: add
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
@@ -42,7 +43,7 @@
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                        <h4 id="what"><span>What</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -72,7 +73,7 @@
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="late-and-one-time-vs-early-and-frequent"><span>Late-and-One-Time vs Early-and-Frequent</span><a class="fa fa-anchor" href="#late-and-one-time-vs-early-and-frequent"></a></h4>
+                        <h4 id="late-and-one-time-vs-early-and-frequent"><span>Late-and-One-Time vs Early-and-Frequent</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -105,7 +106,7 @@
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="big-bang-vs-incremental-integration"><span>Big-Bang vs Incremental Integration</span><a class="fa fa-anchor" href="#big-bang-vs-incremental-integration"></a></h4>
+                        <h4 id="big-bang-vs-incremental-integration"><span>Big-Bang vs Incremental Integration</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -159,7 +160,7 @@
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="top-down-vs-bottom-up-integration"><span>Top-Down vs Bottom-Up Integration</span><a class="fa fa-anchor" href="#top-down-vs-bottom-up-integration"></a></h4>
+                        <h4 id="top-down-vs-bottom-up-integration"><span>Top-Down vs Bottom-Up Integration</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -263,7 +264,7 @@
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                        <h4 id="what"><span>What</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -331,7 +332,7 @@
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="continuous-integration-and-continuous-deployment"><span>Continuous Integration and Continuous Deployment</span><a class="fa fa-anchor" href="#continuous-integration-and-continuous-deployment"></a></h4>
+                        <h4 id="continuous-integration-and-continuous-deployment"><span>Continuous Integration and Continuous Deployment</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -404,8 +405,21 @@
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

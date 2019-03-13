@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -117,7 +118,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                <searchbar placeholder="Search" algolia menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -431,7 +432,7 @@ print(get_head2(<span class="hljs-number">2</span>))
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Enter Integer" expanded no-close>
                   <div>
-                    <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer"></a></h4>
+                    <h4 id="exercise-enter-integer">Exercise : Enter Integer</h4>
                     <p>The code below assumes the entered string will always represent an integer.</p>
                     <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
 print(<span class="hljs-string">'You entered'</span>, value)
@@ -563,7 +564,7 @@ hide_ends2 failed: Not enough items
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Is Even-Integer in Range" expanded no-close>
                   <div>
-                    <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-is-even-integer-in-range"></a></h4>
+                    <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range</h4>
                     <tip-box>
                       <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
                     </tip-box>
@@ -671,14 +672,14 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Flexible Word Game" expanded no-close>
                   <div>
-                    <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-flexible-word-game"></a></h4>
+                    <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game</h4>
                     <p>Implement a word game similar to the one you implement in the <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
                     <ul>
                       <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
                     </ul>
                     <modal large title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
                         <div>
-                        <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
+                        <h4 id="exercise-word-game">Exercise : Word Game</h4>
                         <p>Implement a word game with the following rules:</p>
                         <ul>
                           <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
@@ -773,7 +774,7 @@ Thank you for playing the FLEXIBLE WORD GAME
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -784,8 +785,21 @@ Thank you for playing the FLEXIBLE WORD GAME
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

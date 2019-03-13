@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -222,7 +223,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -245,7 +246,7 @@
                   <h3 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -270,7 +271,7 @@
                   <h3 id="classes"><span>Classes</span><a class="fa fa-anchor" href="#classes"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -463,7 +464,7 @@
                   <h3 id="associations"><span>Associations</span><a class="fa fa-anchor" href="#associations"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -483,7 +484,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Navigability<a class='fa fa-anchor' href='#navigability'></a>" expanded>
+              <panel type="seamless" header="#### Navigability" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -557,7 +558,7 @@
                   </div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Roles<a class='fa fa-anchor' href='#roles'></a>" expanded>
+              <panel type="seamless" header="#### Roles" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -633,7 +634,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Labels<a class='fa fa-anchor' href='#labels'></a>" expanded>
+              <panel type="seamless" header="#### Labels" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -657,7 +658,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Multiplicity<a class='fa fa-anchor' href='#multiplicity'></a>" expanded>
+              <panel type="seamless" header="#### Multiplicity" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -722,7 +723,7 @@
                   <h3 id="dependencies"><span>Dependencies</span><a class="fa fa-anchor" href="#dependencies"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -749,7 +750,7 @@
                   <h3 id="associations-as-attributes"><span>Associations as Attributes</span><a class="fa fa-anchor" href="#associations-as-attributes"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -781,7 +782,7 @@
                   <h3 id="class-level-members"><span>Class-Level Members</span><a class="fa fa-anchor" href="#class-level-members"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -807,7 +808,7 @@
                   <h3 id="composition"><span>Composition</span><a class="fa fa-anchor" href="#composition"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -836,7 +837,7 @@
                   <h3 id="aggregation"><span>Aggregation</span><a class="fa fa-anchor" href="#aggregation"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -887,7 +888,7 @@
                   <h3 id="class-inheritance"><span>Class Inheritance</span><a class="fa fa-anchor" href="#class-inheritance"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -917,7 +918,7 @@
                 <h2 id="object-diagrams"><span>Object Diagrams</span><a class="fa fa-anchor" href="#object-diagrams"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Introduction<a class='fa fa-anchor' href='#introduction'></a>" expanded>
+            <panel type="seamless" header="#### Introduction" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -935,7 +936,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Objects<a class='fa fa-anchor' href='#objects'></a>" expanded>
+            <panel type="seamless" header="#### Objects" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1004,7 +1005,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Associations<a class='fa fa-anchor' href='#associations'></a>" expanded>
+            <panel type="seamless" header="#### Associations" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1036,7 +1037,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                   <h3 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+              <panel type="seamless" header="#### What" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -1069,7 +1070,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                   <h3 id="basic-notations"><span>Basic Notations</span><a class="fa fa-anchor" href="#basic-notations"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" header="#### Linear Paths<a class='fa fa-anchor' href='#linear-paths'></a>" expanded>
+              <panel type="seamless" header="#### Linear Paths" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -1123,7 +1124,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                   </div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Alternate Paths<a class='fa fa-anchor' href='#alternate-paths'></a>" expanded>
+              <panel type="seamless" header="#### Alternate Paths" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -1178,7 +1179,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                   </div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Parallel Paths<a class='fa fa-anchor' href='#parallel-paths'></a>" expanded>
+              <panel type="seamless" header="#### Parallel Paths" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -1228,7 +1229,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                   </div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Rakes<a class='fa fa-anchor' href='#rakes'></a>" expanded>
+              <panel type="seamless" header="#### Rakes" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -1250,7 +1251,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" header="#### Swimlanes<a class='fa fa-anchor' href='#swimlanes'></a>" expanded>
+              <panel type="seamless" header="#### Swimlanes" expanded>
                 <div class="indented">
                   <span class="badge badge-light">
                     <span><span class="dimmed">
@@ -1277,7 +1278,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                 <h2 id="notes"><span>Notes</span><a class="fa fa-anchor" href="#notes"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Notes<a class='fa fa-anchor' href='#notes'></a>" expanded>
+            <panel type="seamless" header="#### Notes" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1296,7 +1297,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Constraints<a class='fa fa-anchor' href='#constraints'></a>" expanded>
+            <panel type="seamless" header="#### Constraints" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1322,7 +1323,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                 <h2 id="miscellaneous"><span>Miscellaneous</span><a class="fa fa-anchor" href="#miscellaneous"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Object vs Class Diagrams<a class='fa fa-anchor' href='#object-vs-class-diagrams'></a>" expanded>
+            <panel type="seamless" header="#### Object vs Class Diagrams" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1386,7 +1387,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1397,8 +1398,21 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -35,7 +36,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="activity-diagrams-basic"><span>Activity Diagrams - Basic</span><a class="fa fa-anchor" href="#activity-diagrams-basic"></a></h4>
+                  <h4 id="activity-diagrams-basic"><span>Activity Diagrams - Basic</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -117,7 +118,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="activity-diagrams-intermediate"><span>Activity Diagrams - Intermediate</span><a class="fa fa-anchor" href="#activity-diagrams-intermediate"></a></h4>
+                  <h4 id="activity-diagrams-intermediate"><span>Activity Diagrams - Intermediate</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -141,7 +142,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="sequence-diagrams-basic"><span>Sequence Diagrams - Basic</span><a class="fa fa-anchor" href="#sequence-diagrams-basic"></a></h4>
+                  <h4 id="sequence-diagrams-basic"><span>Sequence Diagrams - Basic</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -239,7 +240,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="sequence-diagrams-intermediate"><span>Sequence Diagrams - Intermediate</span><a class="fa fa-anchor" href="#sequence-diagrams-intermediate"></a></h4>
+                  <h4 id="sequence-diagrams-intermediate"><span>Sequence Diagrams - Intermediate</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -337,7 +338,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="sequence-diagrams-advanced"><span>Sequence Diagrams - Advanced</span><a class="fa fa-anchor" href="#sequence-diagrams-advanced"></a></h4>
+                  <h4 id="sequence-diagrams-advanced"><span>Sequence Diagrams - Advanced</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -358,7 +359,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="use-case-diagrams"><span>Use Case Diagrams</span><a class="fa fa-anchor" href="#use-case-diagrams"></a></h4>
+                  <h4 id="use-case-diagrams"><span>Use Case Diagrams</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -381,7 +382,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="timing-diagrams"><span>Timing Diagrams</span><a class="fa fa-anchor" href="#timing-diagrams"></a></h4>
+                  <h4 id="timing-diagrams"><span>Timing Diagrams</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -406,7 +407,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="interaction-overview-diagrams"><span>Interaction Overview Diagrams</span><a class="fa fa-anchor" href="#interaction-overview-diagrams"></a></h4>
+                  <h4 id="interaction-overview-diagrams"><span>Interaction Overview Diagrams</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -431,7 +432,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="communication-diagrams"><span>Communication Diagrams</span><a class="fa fa-anchor" href="#communication-diagrams"></a></h4>
+                  <h4 id="communication-diagrams"><span>Communication Diagrams</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -456,7 +457,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="state-machine-diagrams"><span>State Machine Diagrams</span><a class="fa fa-anchor" href="#state-machine-diagrams"></a></h4>
+                  <h4 id="state-machine-diagrams"><span>State Machine Diagrams</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -504,8 +505,21 @@
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

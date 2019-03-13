@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -206,7 +207,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -223,7 +224,7 @@
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+            <panel type="seamless" header="#### What" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -329,7 +330,7 @@
                 <h2 id="objects"><span>Objects</span><a class="fa fa-anchor" href="#objects"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+            <panel type="seamless" header="#### What" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -609,7 +610,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Objects as Abstractions<a class='fa fa-anchor' href='#objects-as-abstractions'></a>" expanded>
+            <panel type="seamless" header="#### Objects as Abstractions" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -631,7 +632,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Encapsulation Of Objects<a class='fa fa-anchor' href='#encapsulation-of-objects'></a>" expanded>
+            <panel type="seamless" header="#### Encapsulation Of Objects" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -681,7 +682,7 @@
                 <h2 id="classes"><span>Classes</span><a class="fa fa-anchor" href="#classes"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+            <panel type="seamless" header="#### What" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -813,7 +814,7 @@ Enter command: exit
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Class Level Members<a class='fa fa-anchor' href='#class-level-members'></a>" expanded>
+            <panel type="seamless" header="#### Class Level Members" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -872,7 +873,7 @@ Enter command: exit
                 <h2 id="associations"><span>Associations</span><a class="fa fa-anchor" href="#associations"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+            <panel type="seamless" header="#### What" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -893,13 +894,13 @@ Enter command: exit
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In our example, as some <code>Course</code> objects can have associations with some <code>Student</code> objects, we can view it as an association between the <code>Course</code> class and the <code>Student</code> class.</p>
                   </tip-box>
-                  <h5 id="implementing-associations">Implementing associations<a class="fa fa-anchor" href="#implementing-associations"></a></h5>
+                  <h5 id="implementing-associations">Implementing associations</h5>
                   <p><strong>We use instance level variables to implement associations.</strong></p>
                 </div>
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Navigability<a class='fa fa-anchor' href='#navigability'></a>" expanded>
+            <panel type="seamless" header="#### Navigability" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -913,7 +914,7 @@ Enter command: exit
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Multiplicity<a class='fa fa-anchor' href='#multiplicity'></a>" expanded>
+            <panel type="seamless" header="#### Multiplicity" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -926,7 +927,7 @@ Enter command: exit
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The multiplicity of the association between <code>Course</code> objects and <code>Student</code> objects tells you how many <code>Course</code> objects can be associated with one <code>Student</code> object and vice versa.</p>
                   </tip-box>
-                  <h5 id="implementing-multiplicity">Implementing multiplicity<a class="fa fa-anchor" href="#implementing-multiplicity"></a></h5>
+                  <h5 id="implementing-multiplicity">Implementing multiplicity</h5>
                   <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
@@ -1026,7 +1027,7 @@ Enter command: exit
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Dependencies<a class='fa fa-anchor' href='#dependencies'></a>" expanded>
+            <panel type="seamless" header="#### Dependencies" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1039,7 +1040,7 @@ Enter command: exit
                   <tip-box>
                     <p><span class="fas fa-cube"></span> A <code>Course</code> object can have a dependency on a <code>Registrar</code> object to obtain the maximum number of students it can support.</p>
                   </tip-box>
-                  <h5 id="implementing-dependencies">Implementing dependencies<a class="fa fa-anchor" href="#implementing-dependencies"></a></h5>
+                  <h5 id="implementing-dependencies">Implementing dependencies</h5>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
                     <div class="alt-java">
@@ -1076,7 +1077,7 @@ Enter command: exit
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Composition<a class='fa fa-anchor' href='#composition'></a>" expanded>
+            <panel type="seamless" header="#### Composition" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1093,7 +1094,7 @@ Enter command: exit
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The ‘sub-folder’ association between <code>Folder</code> objects is a composition type association. That means if the <code>Folder</code> object <code>foo</code> is a sub folder of <code>Folder</code> object <code>bar</code>, <code>bar</code> cannot be a sub-folder of <code>foo</code>.</p>
                   </tip-box>
-                  <h5 id="implementing-composition">Implementing composition<a class="fa fa-anchor" href="#implementing-composition"></a></h5>
+                  <h5 id="implementing-composition">Implementing composition</h5>
                   <p><strong>Composition is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the ‘whole’ object.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, the <code>Email</code> has a composition type relationship with the <code>Subject</code> class, in the sense that the subject is part of the email.</p>
@@ -1116,7 +1117,7 @@ Enter command: exit
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Aggregation<a class='fa fa-anchor' href='#aggregation'></a>" expanded>
+            <panel type="seamless" header="#### Aggregation" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1129,7 +1130,7 @@ Enter command: exit
                   <tip-box>
                     <p><span class="fas fa-cube"></span> <code>SportsClub</code> can act as a <em>container</em> for <code>Person</code> objects who are members of the club. <code>Person</code> objects can survive without a <code>SportsClub</code> object.</p>
                   </tip-box>
-                  <h5 id="implementing-aggregation">Implementing aggregation<a class="fa fa-anchor" href="#implementing-aggregation"></a></h5>
+                  <h5 id="implementing-aggregation">Implementing aggregation</h5>
                   <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code> a object who is the leader of the team.</p>
@@ -1165,7 +1166,7 @@ Enter command: exit
                 <h2 id="inheritance"><span>Inheritance</span><a class="fa fa-anchor" href="#inheritance"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+            <panel type="seamless" header="#### What" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1234,7 +1235,7 @@ Enter command: exit
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Overriding<a class='fa fa-anchor' href='#overriding'></a>" expanded>
+            <panel type="seamless" header="#### Overriding" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1282,7 +1283,7 @@ Enter command: exit
                               </span></strong></span></p>
                         <div id="title-and-body">
                           <div>
-                            <h4 id="overloading"><span>Overloading</span><a class="fa fa-anchor" href="#overloading"></a></h4>
+                            <h4 id="overloading"><span>Overloading</span></h4>
                           </div>
                           <div id="main">
                             <div>
@@ -1365,7 +1366,7 @@ Enter command: exit
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Overloading<a class='fa fa-anchor' href='#overloading'></a>" expanded>
+            <panel type="seamless" header="#### Overloading" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1430,7 +1431,7 @@ Enter command: exit
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1441,8 +1442,21 @@ Enter command: exit
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

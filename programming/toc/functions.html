@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -124,7 +125,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                <searchbar placeholder="Search" algolia menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -250,7 +251,7 @@ say_hello()
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Hip Hip Hooray!" expanded no-close>
                   <div>
-                    <h4 id="exercise-hip-hip-hooray">Exercise : Hip Hip Hooray<a class="fa fa-anchor" href="#exercise-hip-hip-hooray"></a></h4>
+                    <h4 id="exercise-hip-hip-hooray">Exercise : Hip Hip Hooray</h4>
                     <p>Define the missing functions in the code below so that it produces the given output:</p>
                     <table>
                       <tr>
@@ -384,7 +385,7 @@ print(v1)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Grader `print_score` function" expanded no-close>
                   <div>
-                    <h4 id="exercise-grader-print-score-function">Exercise : Grader - <code>print_score</code> Function<a class="fa fa-anchor" href="#exercise-grader-print-score-function"></a></h4>
+                    <h4 id="exercise-grader-print-score-function">Exercise : Grader - <code>print_score</code> Function</h4>
                     <p>The code below prints the grade based on exam and project score, somewhat similar to <trigger trigger="click" for="modal:printScoreFunction-gradeAnalyzer">a previous exercise you did</trigger>.</p>
                     <pre><code class="hljs python">project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
 exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
@@ -493,7 +494,7 @@ print_score(<span class="hljs-string">'Total   :'</span>, total_score)
                     <p>without changing the external behavior of the program.</p>
                     <modal large title id="modal:printScoreFunction-gradeAnalyzer">
                         <div>
-                        <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
+                        <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer</h4>
                         <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
                         <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
@@ -593,7 +594,7 @@ print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Grader - `calculate_grade` function" expanded no-close>
                   <div>
-                    <h4 id="exercise-grader-calculate-grade-function">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function"></a></h4>
+                    <h4 id="exercise-grader-calculate-grade-function">Exercise : Grader - <code>calculate_grade</code> Function</h4>
                     <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
@@ -701,7 +702,7 @@ total cows after breeding: 5
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Add `main` Function" expanded no-close>
                   <div>
-                    <h4 id="exercise-grader-add-a-main-function">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function"></a></h4>
+                    <h4 id="exercise-grader-add-a-main-function">Exercise : Grader - Add a <code>main</code> Function</h4>
                     <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
                       Here is an example of how the code is likely to look like:</p>
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
@@ -745,7 +746,7 @@ main()
                     <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
                     <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
                         <div>
-                        <h4 id="exercise-grader-calculate-grade-function-2">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-2"></a></h4>
+                        <h4 id="exercise-grader-calculate-grade-function-2">Exercise : Grader - <code>calculate_grade</code> Function</h4>
                         <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
@@ -793,7 +794,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Restructure the `main` Function" expanded no-close>
                   <div>
-                    <h4 id="exercise-grader-restructure-the-main-function">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function"></a></h4>
+                    <h4 id="exercise-grader-restructure-the-main-function">Exercise : Grader - Restructure the <code>main</code> Function</h4>
                     <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
                       Restructure the <code>main</code> function so that its code looks as follows:</p>
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
@@ -816,7 +817,7 @@ main()
                     <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
                     <modal large title id="modal:graderRestructureMain-graderMainFunction">
                         <div>
-                        <h4 id="exercise-grader-add-a-main-function-2">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-2"></a></h4>
+                        <h4 id="exercise-grader-add-a-main-function-2">Exercise : Grader - Add a <code>main</code> Function</h4>
                         <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
                           Here is an example of how the code is likely to look like:</p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
@@ -860,7 +861,7 @@ main()
                         <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
                         <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
                             <div>
-                            <h4 id="exercise-grader-calculate-grade-function-3">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-3"></a></h4>
+                            <h4 id="exercise-grader-calculate-grade-function-3">Exercise : Grader - <code>calculate_grade</code> Function</h4>
                             <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
                             <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
@@ -910,7 +911,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Analyze Grades in a Loop" expanded no-close>
                   <div>
-                    <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop<a class="fa fa-anchor" href="#exercise-grader-analyze-grades-in-a-loop"></a></h4>
+                    <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop</h4>
                     <p>Take the program you wrote in the <trigger trigger="click" for="modal:analyzeGradesInLoop-restructureMain">previous exercise</trigger>. Enhance it to analyze grades in a loop until the user chooses to stop. A sample output is given below:</p>
                     <pre><code class="hljs python">Enter project score: <span class="hljs-number">10</span>
 Enter exam score: <span class="hljs-number">50</span>
@@ -931,7 +932,7 @@ Continue y/n? n
 </code></pre>
                     <modal large title id="modal:analyzeGradesInLoop-restructureMain">
                         <div>
-                        <h4 id="exercise-grader-restructure-the-main-function-2">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function-2"></a></h4>
+                        <h4 id="exercise-grader-restructure-the-main-function-2">Exercise : Grader - Restructure the <code>main</code> Function</h4>
                         <p>Take the <trigger trigger="click" for="modal:graderRestructureMain-graderMainFunction">a grader you wrote in the previous exercise</trigger>.
                           Restructure the <code>main</code> function so that its code looks as follows:</p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
@@ -954,7 +955,7 @@ main()
                         <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
                         <modal large title id="modal:graderRestructureMain-graderMainFunction">
                             <div>
-                            <h4 id="exercise-grader-add-a-main-function-3">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-3"></a></h4>
+                            <h4 id="exercise-grader-add-a-main-function-3">Exercise : Grader - Add a <code>main</code> Function</h4>
                             <p>Take the <trigger trigger="click" for="modal:graderMainFunction-graderCalculateGradeFunction">a grader you wrote in the previous exercise</trigger>.
                               Here is an example of how the code is likely to look like:</p>
                             <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
@@ -998,7 +999,7 @@ main()
                             <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
                             <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
                                 <div>
-                                <h4 id="exercise-grader-calculate-grade-function-4">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-4"></a></h4>
+                                <h4 id="exercise-grader-calculate-grade-function-4">Exercise : Grader - <code>calculate_grade</code> Function</h4>
                                 <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
                                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
@@ -1058,7 +1059,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1069,8 +1070,21 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

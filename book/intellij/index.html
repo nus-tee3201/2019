@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
@@ -34,7 +35,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="project-setup"><span>Project Setup</span><a class="fa fa-anchor" href="#project-setup"></a></h4>
+                  <h4 id="project-setup"><span>Project Setup</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -43,7 +44,7 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time<a class="fa fa-anchor" href="#running-intellij-idea-for-the-first-time"></a></h5>
+                  <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time</h5>
                   <tabs>
                       <tab header="<span class='far fa-file-alt'></span>">
                       <ul>
@@ -62,7 +63,7 @@
                       </p>
                     </tab>
                   </tabs>
-                  <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA<a class="fa fa-anchor" href="#importing-a-project-to-intellij-idea"></a></h5>
+                  <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </div>
                 <div></div>
@@ -73,7 +74,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="code-navigation"><span>Code Navigation</span><a class="fa fa-anchor" href="#code-navigation"></a></h4>
+                  <h4 id="code-navigation"><span>Code Navigation</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -105,7 +106,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="productivity-shortcuts"><span>Productivity Shortcuts</span><a class="fa fa-anchor" href="#productivity-shortcuts"></a></h4>
+                  <h4 id="productivity-shortcuts"><span>Productivity Shortcuts</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -127,7 +128,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="debugging-basic"><span>Debugging: Basic</span><a class="fa fa-anchor" href="#debugging-basic"></a></h4>
+                  <h4 id="debugging-basic"><span>Debugging: Basic</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -152,7 +153,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="refactoring"><span>Refactoring</span><a class="fa fa-anchor" href="#refactoring"></a></h4>
+                  <h4 id="refactoring"><span>Refactoring</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -190,8 +191,21 @@
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

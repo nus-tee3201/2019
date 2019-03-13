@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
     
     
@@ -34,11 +35,11 @@
               </span></strong></span></p>
         <div id="title-and-body">
           <div>
-            <h4 id="methods"><span>Methods</span><a class="fa fa-anchor" href="#methods"></a></h4>
+            <h4 id="methods"><span>Methods</span></h4>
           </div>
           <div id="main">
             <div>
-              <h5 id="defining-methods">Defining methods<a class="fa fa-anchor" href="#defining-methods"></a></h5>
+              <h5 id="defining-methods">Defining methods</h5>
               <div class="indented">
                 <p>Here’s an example of adding more methods to a class:</p>
                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintTwice</span> </span>{
@@ -72,12 +73,12 @@ Polly likes crackers
                   </div>
                 </modal>
                 <p>Similar to the <code>main</code> method, the <code>printTwice</code> method is <code>public</code> <span class="dimmed">(i.e., it can be invoked from other classes)</span> <code>static</code> and <code>void</code>.</p>
-                <h5 id="parameters">Parameters<a class="fa fa-anchor" href="#parameters"></a></h5>
+                <h5 id="parameters">Parameters</h5>
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>A method can specify <em>parameters</em>.</strong> The <code>printTwice</code> method above specifies a parameter of <code>String</code> type. The <code>main</code> method passes the <em>argument</em> <code>&quot;Polly likes crackers&quot;</code> to that parameter.</p>
                 <p><strong>The value provided as an argument must have the same type as the parameter.</strong> Sometimes Java can convert an argument from one type to another automatically. For example, if the method requires a <code>double</code>, you can invoke it with an <code>int</code> argument <code>5</code> and Java will automatically convert the argument to the equivalent value of type double <code>5.0</code>.</p>
                 <p><strong>Because variables only exist inside the methods where they are defined, they are often called <em>local</em> variables.</strong> Parameters and other variables declared inside a method only exist inside their own methods. Inside <code>main</code>, there is no such thing as <code>s</code>. If you try to use it there, you’ll get a compiler error. Similarly, inside <code>printTwice</code> there is no such thing as <code>sentence</code>. That variable belongs to <code>main</code>.</p>
               </div>
-              <h5 id="return-statements"><code>return</code> statements<a class="fa fa-anchor" href="#return-statements"></a></h5>
+              <h5 id="return-statements"><code>return</code> statements</h5>
               <div class="indented">
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>The <code>return</code> statement allows you to terminate a method before you reach the end of it</strong>:</p>
                 <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printLogarithm</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
@@ -104,7 +105,7 @@ Polly likes crackers
 }
 </code></pre>
               </div>
-              <h5 id="overloading">Overloading<a class="fa fa-anchor" href="#overloading"></a></h5>
+              <h5 id="overloading">Overloading</h5>
               <div class="indented">
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>Java methods can be <em>overloaded</em>.</strong> If two methods do the same thing, it is natural to give them the same name. Having more than one method with the same name is called overloading, and it is legal in Java as long as each version takes different parameters.</p>
                 <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
@@ -116,7 +117,7 @@ Polly likes crackers
 }
 </code></pre>
               </div>
-              <h5 id="recursion">Recursion<a class="fa fa-anchor" href="#recursion"></a></h5>
+              <h5 id="recursion">Recursion</h5>
               <div class="indented">
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>Methods can be <em>recursive</em>.</strong> Here is an example in which the <code>nLines</code> method calls itself recursively:</p>
                 <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">nLines</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
@@ -244,8 +245,21 @@ B : 3.5
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 </html>

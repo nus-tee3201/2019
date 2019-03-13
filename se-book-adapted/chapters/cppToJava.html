@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -280,7 +281,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -291,7 +292,7 @@
               <h1 id="c-to-java"><span>C++ to Java</span><a class="fa fa-anchor" href="#c-to-java"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### About this Book Chapter<a class='fa fa-anchor' href='#about-this-book-chapter'></a>" expanded>
+          <panel type="seamless" header="#### About this Book Chapter" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -322,7 +323,7 @@
                 <h2 id="the-java-world"><span>The Java World</span><a class="fa fa-anchor" href="#the-java-world"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What is Java?<a class='fa fa-anchor' href='#what-is-java'></a>" expanded>
+            <panel type="seamless" header="#### What is Java?" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -345,7 +346,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### How Java Works<a class='fa fa-anchor' href='#how-java-works'></a>" expanded>
+            <panel type="seamless" header="#### How Java Works" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -362,7 +363,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Java Editions<a class='fa fa-anchor' href='#java-editions'></a>" expanded>
+            <panel type="seamless" header="#### Java Editions" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -398,7 +399,7 @@
                 <h2 id="getting-started"><span>Getting Started</span><a class="fa fa-anchor" href="#getting-started"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Installation<a class='fa fa-anchor' href='#installation'></a>" expanded>
+            <panel type="seamless" header="#### Installation" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -413,7 +414,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### HelloWorld<a class='fa fa-anchor' href='#helloworld'></a>" expanded>
+            <panel type="seamless" header="#### HelloWorld" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -473,7 +474,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Compiling Programs<a class='fa fa-anchor' href='#compiling-programs'></a>" expanded>
+            <panel type="seamless" header="#### Compiling Programs" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -503,7 +504,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Running Programs<a class='fa fa-anchor' href='#running-programs'></a>" expanded>
+            <panel type="seamless" header="#### Running Programs" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -567,7 +568,7 @@
                 <h2 id="data-types"><span>Data Types</span><a class="fa fa-anchor" href="#data-types"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Primitive Data Types<a class='fa fa-anchor' href='#primitive-data-types'></a>" expanded>
+            <panel type="seamless" header="#### Primitive Data Types" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -609,7 +610,7 @@ System.out.println(<span class="hljs-string">"Hello "</span> + name + <span clas
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Variables<a class='fa fa-anchor' href='#variables'></a>" expanded>
+            <panel type="seamless" header="#### Variables" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -662,7 +663,7 @@ done
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Operators<a class='fa fa-anchor' href='#operators'></a>" expanded>
+            <panel type="seamless" header="#### Operators" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -871,7 +872,7 @@ System.out.println(hour * <span class="hljs-number">60</span> + minute);
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Arrays<a class='fa fa-anchor' href='#arrays'></a>" expanded>
+            <panel type="seamless" header="#### Arrays" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -933,7 +934,7 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
 </code></pre>
                     <p><small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></p>
                   </blockquote>
-                  <h5 id="passing-arguments-to-a-program">Passing arguments to a program<a class="fa fa-anchor" href="#passing-arguments-to-a-program"></a></h5>
+                  <h5 id="passing-arguments-to-a-program">Passing arguments to a program</h5>
                   <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> The <code>args</code> parameter of the <code>main</code> method is an array of Strings containing command line arguments supplied (if any) when running the program.</p>
                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -1024,7 +1025,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 <h2 id="control-flow"><span>Control Flow</span><a class="fa fa-anchor" href="#control-flow"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Branching<a class='fa fa-anchor' href='#branching'></a>" expanded>
+            <panel type="seamless" header="#### Branching" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1033,7 +1034,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use branching</span></span></span></span>
                 <p></p>
                 <div>
-                  <h5 id="if-else-statements"><code>if-else</code> statements<a class="fa fa-anchor" href="#if-else-statements"></a></h5>
+                  <h5 id="if-else-statements"><code>if-else</code> statements</h5>
                   <div class="indented">
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> Java supports the usual forms of <code>if</code> statements:</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
@@ -1072,7 +1073,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
     System.out.println(<span class="hljs-string">"x is odd"</span>);
 </code></pre>
                   </div>
-                  <h5 id="switch-statements"><code>switch</code> statements<a class="fa fa-anchor" href="#switch-statements"></a></h5>
+                  <h5 id="switch-statements"><code>switch</code> statements</h5>
                   <div class="indented">
                     <p>The <code>switch</code> statement can have a number of possible execution paths. A <code>switch</code> works with the <code>byte</code>, <code>short</code>, <code>char</code>, and <code>int</code> primitive data types. It also works with enums, <code>String</code>.</p>
                     <p>Here is an example <span class="dimmed">(adapted from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>)</span>:</p>
@@ -1251,7 +1252,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Methods<a class='fa fa-anchor' href='#methods'></a>" expanded>
+            <panel type="seamless" header="#### Methods" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1260,7 +1261,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use methods</span></span></span></span>
                 <p></p>
                 <div>
-                  <h5 id="defining-methods">Defining methods<a class="fa fa-anchor" href="#defining-methods"></a></h5>
+                  <h5 id="defining-methods">Defining methods</h5>
                   <div class="indented">
                     <p>Here’s an example of adding more methods to a class:</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintTwice</span> </span>{
@@ -1294,12 +1295,12 @@ Polly likes crackers
                       </div>
                     </modal>
                     <p>Similar to the <code>main</code> method, the <code>printTwice</code> method is <code>public</code> <span class="dimmed">(i.e., it can be invoked from other classes)</span> <code>static</code> and <code>void</code>.</p>
-                    <h5 id="parameters">Parameters<a class="fa fa-anchor" href="#parameters"></a></h5>
+                    <h5 id="parameters">Parameters</h5>
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>A method can specify <em>parameters</em>.</strong> The <code>printTwice</code> method above specifies a parameter of <code>String</code> type. The <code>main</code> method passes the <em>argument</em> <code>&quot;Polly likes crackers&quot;</code> to that parameter.</p>
                     <p><strong>The value provided as an argument must have the same type as the parameter.</strong> Sometimes Java can convert an argument from one type to another automatically. For example, if the method requires a <code>double</code>, you can invoke it with an <code>int</code> argument <code>5</code> and Java will automatically convert the argument to the equivalent value of type double <code>5.0</code>.</p>
                     <p><strong>Because variables only exist inside the methods where they are defined, they are often called <em>local</em> variables.</strong> Parameters and other variables declared inside a method only exist inside their own methods. Inside <code>main</code>, there is no such thing as <code>s</code>. If you try to use it there, you’ll get a compiler error. Similarly, inside <code>printTwice</code> there is no such thing as <code>sentence</code>. That variable belongs to <code>main</code>.</p>
                   </div>
-                  <h5 id="return-statements"><code>return</code> statements<a class="fa fa-anchor" href="#return-statements"></a></h5>
+                  <h5 id="return-statements"><code>return</code> statements</h5>
                   <div class="indented">
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>The <code>return</code> statement allows you to terminate a method before you reach the end of it</strong>:</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printLogarithm</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
@@ -1326,7 +1327,7 @@ Polly likes crackers
 }
 </code></pre>
                   </div>
-                  <h5 id="overloading">Overloading<a class="fa fa-anchor" href="#overloading"></a></h5>
+                  <h5 id="overloading">Overloading</h5>
                   <div class="indented">
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>Java methods can be <em>overloaded</em>.</strong> If two methods do the same thing, it is natural to give them the same name. Having more than one method with the same name is called overloading, and it is legal in Java as long as each version takes different parameters.</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
@@ -1338,7 +1339,7 @@ Polly likes crackers
 }
 </code></pre>
                   </div>
-                  <h5 id="recursion">Recursion<a class="fa fa-anchor" href="#recursion"></a></h5>
+                  <h5 id="recursion">Recursion</h5>
                   <div class="indented">
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>Methods can be <em>recursive</em>.</strong> Here is an example in which the <code>nLines</code> method calls itself recursively:</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">nLines</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
@@ -1453,7 +1454,7 @@ B : 3.5
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Loops<a class='fa fa-anchor' href='#loops'></a>" expanded>
+            <panel type="seamless" header="#### Loops" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1462,7 +1463,7 @@ B : 3.5
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use loops</span></span></span></span>
                 <p></p>
                 <div>
-                  <h5 id="while-loops"><code>while</code> loops<a class="fa fa-anchor" href="#while-loops"></a></h5>
+                  <h5 id="while-loops"><code>while</code> loops</h5>
                   <div class="indented">
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> Here is an example while loop:</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">countdown</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
@@ -1474,7 +1475,7 @@ B : 3.5
 }
 </code></pre>
                   </div>
-                  <h5 id="for-loops"><code>for</code> loops<a class="fa fa-anchor" href="#for-loops"></a></h5>
+                  <h5 id="for-loops"><code>for</code> loops</h5>
                   <div class="indented">
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <code>for</code> loops have the form:</p>
                     <pre><code class="hljs">for (initializer; condition; update) {
@@ -1489,7 +1490,7 @@ B : 3.5
 }
 </code></pre>
                   </div>
-                  <h5 id="do-while-loops"><code>do-while</code> loops<a class="fa fa-anchor" href="#do-while-loops"></a></h5>
+                  <h5 id="do-while-loops"><code>do-while</code> loops</h5>
                   <div class="indented">
                     <p>The <code>while</code> and <code>for</code> statements are <em>pretest</em> loops; that is, they test the condition first and at the beginning of each pass through the loop. Java also provides a <em>posttest</em> loop: the <code>do-while</code> statement. This type of loop is useful when you need to run the body of the loop at least once.</p>
                     <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>)</span>:</p>
@@ -1504,7 +1505,7 @@ B : 3.5
 }
 </code></pre>
                   </div>
-                  <h5 id="break-and-continue"><code>break</code> and <code>continue</code><a class="fa fa-anchor" href="#break-and-continue"></a></h5>
+                  <h5 id="break-and-continue"><code>break</code> and <code>continue</code></h5>
                   <div class="indented">
                     <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> <strong>A <code>break</code> statement exits the current loop</strong>.</p>
                     <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>)</span>:</p>
@@ -1541,7 +1542,7 @@ B : 3.5
 </code></pre>
                     <p><small>[<a href="https://repl.it/@seedu/Demo-Continue">Try the above code on Repl.it</a>]</small></p>
                   </div>
-                  <h5 id="enhanced-for-loops">Enhanced <code>for</code> loops<a class="fa fa-anchor" href="#enhanced-for-loops"></a></h5>
+                  <h5 id="enhanced-for-loops">Enhanced <code>for</code> loops</h5>
                   <div class="indented">
                     <p>Since traversing arrays is so common, Java provides an alternative for-loop syntax that makes the code more compact. For example, consider a for loop that displays the elements of an array on separate lines:</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; values.length; i++) {
@@ -1682,7 +1683,7 @@ A-:4.5
                 <h2 id="java-objects"><span>Java Objects</span><a class="fa fa-anchor" href="#java-objects"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Using Java Objects<a class='fa fa-anchor' href='#using-java-objects'></a>" expanded>
+            <panel type="seamless" header="#### Using Java Objects" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1692,7 +1693,7 @@ A-:4.5
                 <p></p>
                 <div>
                   <p>Java is an &quot;object-oriented&quot; language, which means that it uses objects to represent data and provide methods related to them. Object types are called <em>classes</em> e.g., you can use <code>String</code> objects in Java and those objects belong to the <code>String</code> class.</p>
-                  <h5 id="importing">importing<a class="fa fa-anchor" href="#importing"></a></h5>
+                  <h5 id="importing">importing</h5>
                   <div class="indented">
                     <p>Java comes with many inbuilt classes which are organized into <em>packages</em>. Here are some examples:</p>
                     <div class="table-responsive">
@@ -1733,7 +1734,7 @@ A-:4.5
                     </box>
                     <p>💡 You might wonder why we can use the <code>System</code> class without importing it. <code>System</code> belongs to <strong>the <code>java.lang</code> package, which is imported automatically</strong>.</p>
                   </div>
-                  <h5 id="new-operator"><code>new</code> operator<a class="fa fa-anchor" href="#new-operator"></a></h5>
+                  <h5 id="new-operator"><code>new</code> operator</h5>
                   <div class="indented">
                     <p><strong>To create a new object, you have to use the <code>new</code> operator</strong></p>
                     <box>
@@ -1784,7 +1785,7 @@ A-:4.5
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Instance Members<a class='fa fa-anchor' href='#instance-members'></a>" expanded>
+            <panel type="seamless" header="#### Instance Members" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1879,7 +1880,7 @@ java.awt.Rectangle[x=0,y=0,width=8,height=10]
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Passing Objects<a class='fa fa-anchor' href='#passing-objects'></a>" expanded>
+            <panel type="seamless" header="#### Passing Objects" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -1916,7 +1917,7 @@ java.awt.Rectangle[x=0,y=0,width=8,height=10]
                     <p>The return type of this method is <code>Point</code>. The last line creates a new <code>Point</code> object and returns a reference to it.
                     </p>
                   </box>
-                  <h5 id="null-and-nullpointerexception"><code>null</code> and <code>NullPointerException</code><a class="fa fa-anchor" href="#null-and-nullpointerexception"></a></h5>
+                  <h5 id="null-and-nullpointerexception"><code>null</code> and <code>NullPointerException</code></h5>
                   <div class="indented">
                     <p><strong><code>null</code> is a special value that means &quot;no object&quot;</strong>. You can assign null to a variable to indicate that the variable is 'empty' at the moment. However, if you try to use a null value, either by accessing an attribute or invoking a method, Java throws a <code>NullPointerException</code>.</p>
                     <box>
@@ -2051,7 +2052,7 @@ null
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Garbage Collection<a class='fa fa-anchor' href='#garbage-collection'></a>" expanded>
+            <panel type="seamless" header="#### Garbage Collection" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -2077,7 +2078,7 @@ spot = <span class="hljs-keyword">null</span>;
                 <h2 id="java-classes"><span>Java Classes</span><a class="fa fa-anchor" href="#java-classes"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Defining Classes<a class='fa fa-anchor' href='#defining-classes'></a>" expanded>
+            <panel type="seamless" header="#### Defining Classes" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -2106,7 +2107,7 @@ spot = <span class="hljs-keyword">null</span>;
                   <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
                   <p>The code should be in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
                   <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the hour, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside the <code>Time</code> class.</p>
-                  <h5 id="constructos">Constructos<a class="fa fa-anchor" href="#constructos"></a></h5>
+                  <h5 id="constructos">Constructos</h5>
                   <div class="indented">
                     <p>The syntax for <tooltip content="special methods that construct the object and initialize the instance variables">constructors</tooltip> is similar to that of other methods, except:</p>
                     <ul>
@@ -2141,7 +2142,7 @@ spot = <span class="hljs-keyword">null</span>;
 </code></pre>
                     </box>
                   </div>
-                  <h5 id="this-keyword"><code>this</code> keyword<a class="fa fa-anchor" href="#this-keyword"></a></h5>
+                  <h5 id="this-keyword"><code>this</code> keyword</h5>
                   <div class="indented">
                     <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the current object.</strong> You can use <code>this</code> the same way you use the name of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>, and you can’t make an assignment to it.</p>
                     <box>
@@ -2166,7 +2167,7 @@ spot = <span class="hljs-keyword">null</span>;
 
 </code></pre>
                     </box>
-                    <h5 id="instance-methods">Instance methods<a class="fa fa-anchor" href="#instance-methods"></a></h5>
+                    <h5 id="instance-methods">Instance methods</h5>
                     <p><strong>You can add methods to a class which can then be used from the objects of that class.</strong> These <em>instance</em> methods do not have the <code>static</code> keyword in the method signature. Instance methods can access attributes of the class.</p>
                     <box>
                       <p><span class="fas fa-cube"></span> Here's how you can add a method to the <code>Time</code> class to get the number of seconds passed till midnight.</p>
@@ -2262,7 +2263,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Getters and Setters<a class='fa fa-anchor' href='#getters-and-setters'></a>" expanded>
+            <panel type="seamless" header="#### Getters and Setters" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -2384,7 +2385,7 @@ radius : 0.0
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Class-Level Members<a class='fa fa-anchor' href='#class-level-members'></a>" expanded>
+            <panel type="seamless" header="#### Class-Level Members" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -2574,7 +2575,7 @@ max radius used so far : 12.0
                 <h2 id="some-useful-classes"><span>Some Useful Classes</span><a class="fa fa-anchor" href="#some-useful-classes"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Java API<a class='fa fa-anchor' href='#java-api'></a>" expanded>
+            <panel type="seamless" header="#### Java API" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -2592,7 +2593,7 @@ max radius used so far : 12.0
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### The String Class<a class='fa fa-anchor' href='#the-string-class'></a>" expanded>
+            <panel type="seamless" header="#### The String Class" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -2606,7 +2607,7 @@ max radius used so far : 12.0
                     <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
                     </p>
                   </modal>
-                  <h5 id="find-characters-of-a-string">Find characters of a string<a class="fa fa-anchor" href="#find-characters-of-a-string"></a></h5>
+                  <h5 id="find-characters-of-a-string">Find characters of a string</h5>
                   <div class="indented">
                     <p>Strings provide a method named <code>charAt</code>, which extracts a character. It returns a <code>char</code>, a primitive type that stores an individual character (as opposed to strings of them).</p>
                     <pre><code class="hljs java">String fruit = <span class="hljs-string">"banana"</span>;
@@ -2617,7 +2618,7 @@ max radius used so far : 12.0
                     <pre><code class="hljs java"><span class="hljs-keyword">char</span>[] fruitChars = fruit.toCharArray()
 </code></pre>
                   </div>
-                  <h5 id="change-a-string-to-upper-lower-case">Change a string to upper/lower case<a class="fa fa-anchor" href="#change-a-string-to-upper-lower-case"></a></h5>
+                  <h5 id="change-a-string-to-upper-lower-case">Change a string to upper/lower case</h5>
                   <div class="indented">
                     <p>Strings provide methods, <code>toUpperCase</code> and <code>toLowerCase</code>, that convert from uppercase to lowercase and back.</p>
                     <box>
@@ -2638,7 +2639,7 @@ s.toUpperCase(); <span class="hljs-comment">// no effect</span>
 s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
 </code></pre>
                   </div>
-                  <h5 id="replacing-parts-of-a-string">Replacing parts of a string<a class="fa fa-anchor" href="#replacing-parts-of-a-string"></a></h5>
+                  <h5 id="replacing-parts-of-a-string">Replacing parts of a string</h5>
                   <div class="indented">
                     <p>Another useful method is <code>replace</code>, which finds and replaces instances of one string within another.</p>
                     <box>
@@ -2652,7 +2653,7 @@ System.out.println(text);
 </code></pre>
                     </box>
                   </div>
-                  <h5 id="accessing-substrings">Accessing substrings<a class="fa fa-anchor" href="#accessing-substrings"></a></h5>
+                  <h5 id="accessing-substrings">Accessing substrings</h5>
                   <div class="indented">
                     <p>The <code>substring</code> method returns a new string that copies letters from an existing string, starting at the given index.</p>
                     <ul>
@@ -2667,7 +2668,7 @@ System.out.println(text);
                       <li><code>&quot;banana&quot;.substring(6, 6)</code> <span class="fas fa-arrow-right"></span> <code>&quot;&quot;</code></li>
                     </ul>
                   </div>
-                  <h5 id="searching-within-strings">Searching within strings<a class="fa fa-anchor" href="#searching-within-strings"></a></h5>
+                  <h5 id="searching-within-strings">Searching within strings</h5>
                   <div class="indented">
                     <p>The <code>indexOf</code> method searches for a single character (or a substring) in a string and returns the index of the first occurrence. The method returns <code>-1</code> if there are no occurrences.</p>
                     <ul>
@@ -2677,7 +2678,7 @@ System.out.println(text);
                       <li><code>&quot;banana&quot;.indexOf(&quot;nan&quot;)</code> <span class="fas fa-arrow-right"></span> <code>2</code> <span class="dimmed">searches for the substring <code>&quot;nan&quot;</code></span></li>
                     </ul>
                   </div>
-                  <h5 id="comparing-strings">Comparing Strings<a class="fa fa-anchor" href="#comparing-strings"></a></h5>
+                  <h5 id="comparing-strings">Comparing Strings</h5>
                   <div class="indented">
                     <p>To compare two strings, it may be tempting to use the == and != operators.</p>
                     <pre><code class="hljs java">String name1 = <span class="hljs-string">"Alan Turing"</span>;
@@ -2721,7 +2722,7 @@ System.out.println(s1.equalsIgnoreCase(s2)); <span class="hljs-comment">//true</
                       <li><code>endsWith</code>: checks if one string has the other as a substring at the <em>end</em> e.g., <code>Crab</code> and <code>ab</code></li>
                     </ul>
                   </div>
-                  <h5 id="printing-special-characters-line-breaks-tabs">Printing special characters (line breaks, tabs, ...)<a class="fa fa-anchor" href="#printing-special-characters-line-breaks-tabs"></a></h5>
+                  <h5 id="printing-special-characters-line-breaks-tabs">Printing special characters (line breaks, tabs, ...)</h5>
                   <div class="indented">
                     <p>You can embed a special character <span class="dimmed">e.g., line break, tab, backspace, etc.</span> in a string using an <em>escape sequence</em>.</p>
                     <div class="table-responsive">
@@ -2792,7 +2793,7 @@ Second line
 </code></pre>
                     </box>
                   </div>
-                  <h5 id="string-formatting">String formatting<a class="fa fa-anchor" href="#string-formatting"></a></h5>
+                  <h5 id="string-formatting">String formatting</h5>
                   <div class="indented">
                     <p>Sometimes programs need to create strings that are formatted a certain way. <code>String.format</code> takes a format specifier followed by a sequence of values and returns a new string formatted as specified.</p>
                     <box>
@@ -2880,7 +2881,7 @@ FRIES: 0.50
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Wrapper Classes for Primitive Types<a class='fa fa-anchor' href='#wrapper-classes-for-primitive-types'></a>" expanded>
+            <panel type="seamless" header="#### Wrapper Classes for Primitive Types" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -2971,7 +2972,7 @@ System.out.println(i);
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### The Arrays Class<a class='fa fa-anchor' href='#the-arrays-class'></a>" expanded>
+            <panel type="seamless" header="#### The Arrays Class" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -3087,7 +3088,7 @@ System.out.println(Arrays.toString(c));
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### The Scanner Class<a class='fa fa-anchor' href='#the-scanner-class'></a>" expanded>
+            <panel type="seamless" header="#### The Scanner Class" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -3336,7 +3337,7 @@ Bye!
                 <h2 id="inheritance"><span>Inheritance</span><a class="fa fa-anchor" href="#inheritance"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Inheritance (Basic)<a class='fa fa-anchor' href='#inheritance-basic'></a>" expanded>
+            <panel type="seamless" header="#### Inheritance (Basic)" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -3397,7 +3398,7 @@ Bye!
 </code></pre>
                     </box>
                     <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code> and a method to set it.</p>
-                    <h5 id="accessing-superclass-members">Accessing Superclass Members<a class="fa fa-anchor" href="#accessing-superclass-members"></a></h5>
+                    <h5 id="accessing-superclass-members">Accessing Superclass Members</h5>
                     <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
                     <box>
                       <p><span class="fas fa-cube"></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
@@ -3427,7 +3428,7 @@ Printed in Subclass
 </code></pre>
                       <p>Within <code>Subclass</code>, the simple name <code>printMethod()</code> refers to the one declared in <code>Subclass</code>, which overrides the one in <code>Superclass</code>. So, to refer to <code>printMethod()</code> inherited from <code>Superclass</code>, <code>Subclass</code> must use a qualified name, using <code>super</code> as shown. Compiling and executing <code>Subclass</code> prints the following:</p>
                     </box>
-                    <h5 id="subclass-constructors">Subclass Constructors<a class="fa fa-anchor" href="#subclass-constructors"></a></h5>
+                    <h5 id="subclass-constructors">Subclass Constructors</h5>
                     <p><strong>A subclass constructor can invoke the superclass constructor.</strong> Invocation of a superclass constructor must be the first line in the subclass constructor.
                       The syntax for calling a superclass constructor is <code>super()</code> <span class="dimmed">(which invokes the no-argument constructor of the superclass)</span> or <code>super(parameter list)</code> <span class="dimmed">(to invoke the superclass constructor with a matching parameter list)</span>.</p>
                     <box>
@@ -3439,7 +3440,7 @@ Printed in Subclass
 </code></pre>
                     </box>
                     <p>Note: If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. If the superclass does not have a no-argument constructor, you will get a compile-time error. <code>Object</code> does have such a constructor, so if <code>Object</code> is the only superclass, there is no problem.</p>
-                    <h5 id="access-modifiers-simplified">Access Modifiers (simplified)<a class="fa fa-anchor" href="#access-modifiers-simplified"></a></h5>
+                    <h5 id="access-modifiers-simplified">Access Modifiers (simplified)</h5>
                     <p><strong>Access level modifiers determine whether other classes can use a particular field or invoke a particular method.</strong> Given below is a simplified version of Java access modifiers, <mark>assuming you have not yet started placing your classes in different packages</mark> i.e., all classes are places in the root level. A full explanation of access modifiers is given in a later topic.</p>
                     <p>There are two levels of access control:</p>
                     <ol>
@@ -3559,7 +3560,7 @@ Postponed to Nov 18th
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### The Object Class<a class='fa fa-anchor' href='#the-object-class'></a>" expanded>
+            <panel type="seamless" header="#### The Object Class" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -3569,7 +3570,7 @@ Postponed to Nov 18th
                 <p></p>
                 <div>
                   <p>As you know, all Java objects inherit from the <code>Object</code> class. Let us look at some of the useful methods in the <code>Object</code> class that can be used by other classes.</p>
-                  <h5 id="the-tostring-method">The <code>toString</code> method<a class="fa fa-anchor" href="#the-tostring-method"></a></h5>
+                  <h5 id="the-tostring-method">The <code>toString</code> method</h5>
                   <div class="indented">
                     <p><strong>Every class inherits a <code>toString</code> method from the <code>Object</code> class that is used by Java to get a string representation of the object</strong> <span class="dimmed">e.g., for printing</span>. By default it simply returns the type of the object and its address (in hexadecimal).</p>
                     <box>
@@ -3611,7 +3612,7 @@ Postponed to Nov 18th
                     </box>
                     <p>💡 <code>@Override</code> is an optional annotation you can use to indicate that the method is overriding a method from the parent class.</p>
                   </div>
-                  <h5 id="the-equals-method">The <code>equals</code> method<a class="fa fa-anchor" href="#the-equals-method"></a></h5>
+                  <h5 id="the-equals-method">The <code>equals</code> method</h5>
                   <div class="indented">
                     <p><strong>There are two ways to check whether values are equal: the <code>==</code> operator and the <code>equals</code> method. With objects you can use either one, but they are not the same.</strong></p>
                     <ul>
@@ -3790,7 +3791,7 @@ do by: Postponed to Nov 18th
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Interfaces<a class='fa fa-anchor' href='#interfaces'></a>" expanded>
+            <panel type="seamless" header="#### Interfaces" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -3859,7 +3860,7 @@ do by: Postponed to Nov 18th
                             </span></strong></span></p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="constants"><span>Constants</span><a class="fa fa-anchor" href="#constants"></a></h4>
+                          <h4 id="constants"><span>Constants</span></h4>
                         </div>
                         <div id="main">
                           <div>
@@ -3998,7 +3999,7 @@ Person of name James Cook
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Polymorhism<a class='fa fa-anchor' href='#polymorhism'></a>" expanded>
+            <panel type="seamless" header="#### Polymorhism" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -4286,7 +4287,7 @@ Spot: Woof
                                           </span></strong></span></p>
                                     <div id="title-and-body">
                                       <div>
-                                        <h4 id="automated-testing-of-cli-apps"><span>Automated Testing of CLI Apps</span><a class="fa fa-anchor" href="#automated-testing-of-cli-apps"></a></h4>
+                                        <h4 id="automated-testing-of-cli-apps"><span>Automated Testing of CLI Apps</span></h4>
                                       </div>
                                       <div id="main">
                                         <div>
@@ -4433,7 +4434,7 @@ Invalid command format: add
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Abstract Classes and Methods<a class='fa fa-anchor' href='#abstract-classes-and-methods'></a>" expanded>
+            <panel type="seamless" header="#### Abstract Classes and Methods" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -4627,7 +4628,7 @@ Rectangle of area 16
                 <h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What are Exceptions?<a class='fa fa-anchor' href='#what-are-exceptions'></a>" expanded>
+            <panel type="seamless" header="#### What are Exceptions?" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -4672,7 +4673,7 @@ Rectangle of area 16
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### How to use Exceptions<a class='fa fa-anchor' href='#how-to-use-exceptions'></a>" expanded>
+            <panel type="seamless" header="#### How to use Exceptions" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5001,7 +5002,7 @@ Too many dimensions: 3x4x5
                 <h2 id="generics"><span>Generics</span><a class="fa fa-anchor" href="#generics"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### What are Generics?<a class='fa fa-anchor' href='#what-are-generics'></a>" expanded>
+            <panel type="seamless" header="#### What are Generics?" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5062,7 +5063,7 @@ Too many dimensions: 3x4x5
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### How to use Generics<a class='fa fa-anchor' href='#how-to-use-generics'></a>" expanded>
+            <panel type="seamless" header="#### How to use Generics" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5182,7 +5183,7 @@ Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPa
                 <h2 id="collections"><span>Collections</span><a class="fa fa-anchor" href="#collections"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### The Collections Framework<a class='fa fa-anchor' href='#the-collections-framework'></a>" expanded>
+            <panel type="seamless" header="#### The Collections Framework" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5237,7 +5238,7 @@ Pair&lt;String, String&gt;  p2 = <span class="hljs-keyword">new</span> OrderedPa
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### The ArrayList Class<a class='fa fa-anchor' href='#the-arraylist-class'></a>" expanded>
+            <panel type="seamless" header="#### The ArrayList Class" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5476,7 +5477,7 @@ The total is: 27
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### The HashMap Class<a class='fa fa-anchor' href='#the-hashmap-class'></a>" expanded>
+            <panel type="seamless" header="#### The HashMap Class" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5624,7 +5625,7 @@ Wednesday =&gt; 2
                 <h2 id="miscellaneous-topics"><span>Miscellaneous Topics</span><a class="fa fa-anchor" href="#miscellaneous-topics"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### Enums<a class='fa fa-anchor' href='#enums'></a>" expanded>
+            <panel type="seamless" header="#### Enums" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5709,7 +5710,7 @@ Green indicates low priority
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Packages<a class='fa fa-anchor' href='#packages'></a>" expanded>
+            <panel type="seamless" header="#### Packages" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -5864,7 +5865,7 @@ Green indicates low priority
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### File Access<a class='fa fa-anchor' href='#file-access'></a>" expanded>
+            <panel type="seamless" header="#### File Access" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -6048,7 +6049,7 @@ T | 1 | join sports club
                 </div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Access Modifiers<a class='fa fa-anchor' href='#access-modifiers'></a>" expanded>
+            <panel type="seamless" header="#### Access Modifiers" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -6139,7 +6140,7 @@ T | 1 | join sports club
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Constants<a class='fa fa-anchor' href='#constants'></a>" expanded>
+            <panel type="seamless" header="#### Constants" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -6163,7 +6164,7 @@ T | 1 | join sports club
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### Casting<a class='fa fa-anchor' href='#casting'></a>" expanded>
+            <panel type="seamless" header="#### Casting" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -6271,7 +6272,7 @@ Integer x = (Integer)o;
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" header="#### JAR Files<a class='fa fa-anchor' href='#jar-files'></a>" expanded>
+            <panel type="seamless" header="#### JAR Files" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -6339,7 +6340,7 @@ Integer x = (Integer)o;
                 <h2 id="practice-projects"><span>Practice Projects</span><a class="fa fa-anchor" href="#practice-projects"></a></h2>
               </div>
             </span>
-            <panel type="seamless" header="#### TaskManager<a class='fa fa-anchor' href='#taskmanager'></a>" expanded>
+            <panel type="seamless" header="#### TaskManager" expanded>
               <div class="indented">
                 <span class="badge badge-light">
                   <span><span class="dimmed">
@@ -6349,7 +6350,7 @@ Integer x = (Integer)o;
                 <p></p>
                 <div>
                   <p>In this practice project, you will create a small <code>TaskManager</code> program that can store a list of tasks. It is a <tooltip content="Command Line Interface i.e., no Graphical User Interface">CLI</tooltip> program. You will start with a very simple version (aka TaskManager Level 1) and grow its functionality in small steps.</p>
-                  <h4 id="taskmanager-level-1">TaskManager Level 1<a class="fa fa-anchor" href="#taskmanager-level-1"></a></h4>
+                  <h4 id="taskmanager-level-1">TaskManager Level 1</h4>
                   <div>
                     <p>In this first version of the TaskManager, the task list is not saved to the disk <span class="dimmed">i.e., the task list does not persist between multiple runs of the program</span></p>
                     <p>Here is an example output: <span class="fas fa-arrow-down"></span></p>
@@ -6445,7 +6446,7 @@ Bye!
                     </div>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-2">TaskManager Level 2<a class="fa fa-anchor" href="#taskmanager-level-2"></a></h4>
+                  <h4 id="taskmanager-level-2">TaskManager Level 2</h4>
                   <div>
                     <p>Enhance your TaskManager program in the following ways.</p>
                     <p><strong>A. Add support for two types of tasks:</strong></p>
@@ -6502,7 +6503,7 @@ Bye!
                               </span></strong></span></p>
                         <div id="title-and-body">
                           <div>
-                            <h4 id="automated-testing-of-cli-apps"><span>Automated Testing of CLI Apps</span><a class="fa fa-anchor" href="#automated-testing-of-cli-apps"></a></h4>
+                            <h4 id="automated-testing-of-cli-apps"><span>Automated Testing of CLI Apps</span></h4>
                           </div>
                           <div id="main">
                             <div>
@@ -6641,7 +6642,7 @@ Invalid command format: add
                     </panel>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-3">TaskManager Level 3<a class="fa fa-anchor" href="#taskmanager-level-3"></a></h4>
+                  <h4 id="taskmanager-level-3">TaskManager Level 3</h4>
                   <div>
                     <p>Enhance the TaskManager to print an error message if a command is missing parts. Use exceptions so that error detection and printing of error message happen at different places of code and the error information is passed between the two places using an Exception object.</p>
                     <p>Here is an example output: <span class="fas fa-arrow-down"></span></p>
@@ -6703,7 +6704,7 @@ Invalid command format: add
                     </panel>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-4">TaskManager Level 4<a class="fa fa-anchor" href="#taskmanager-level-4"></a></h4>
+                  <h4 id="taskmanager-level-4">TaskManager Level 4</h4>
                   <div>
                     <p>Enhance the TaskManager in the following ways:</p>
                     <ol>
@@ -6788,7 +6789,7 @@ Invalid command format: add
                     </panel>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-5">TaskManager Level 5<a class="fa fa-anchor" href="#taskmanager-level-5"></a></h4>
+                  <h4 id="taskmanager-level-5">TaskManager Level 5</h4>
                   <div>
                     <p><strong>Enhance the TaskManager to store tasks in a text file</strong> between runs:</p>
                     <ol>
@@ -6826,7 +6827,7 @@ T | 1 | join sports club
                     </panel>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-6">TaskManager Level 6<a class="fa fa-anchor" href="#taskmanager-level-6"></a></h4>
+                  <h4 id="taskmanager-level-6">TaskManager Level 6</h4>
                   <div>
                     <p><strong>Refactor the TaskManager to have classes such as the below</strong> so that your code is more Object-Oriented:</p>
                     <ol>
@@ -6943,7 +6944,7 @@ ui.showToUser(taskListDescription);
                     </panel>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-7">TaskManager Level 7<a class="fa fa-anchor" href="#taskmanager-level-7"></a></h4>
+                  <h4 id="taskmanager-level-7">TaskManager Level 7</h4>
                   <div>
                     <p><strong>Add JUnit tests</strong> for some of the methods in your code.</p>
                     <panel type="seamless" header="Partial solution">
@@ -6976,12 +6977,12 @@ ui.showToUser(taskListDescription);
                     </panel>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-8">TaskManager Level 8<a class="fa fa-anchor" href="#taskmanager-level-8"></a></h4>
+                  <h4 id="taskmanager-level-8">TaskManager Level 8</h4>
                   <div>
                     <p>Move the classes in your TaskManager into a package. For example, assuming your name in John Doe, you can move it to a pacakge <code>johndoe.tojava.taskmanager</code>. Optionally, you can add sub-packages too.</p>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-9">TaskManager Level 9<a class="fa fa-anchor" href="#taskmanager-level-9"></a></h4>
+                  <h4 id="taskmanager-level-9">TaskManager Level 9</h4>
                   <div>
                     <p>Add javadoc comments to all non-trivial public classes and methods. Follow the format of the <em>minimal</em> javadoc comment examples given below.</p>
                     <p>
@@ -6989,17 +6990,17 @@ ui.showToUser(taskListDescription);
                     </p>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-10">TaskManager Level 10<a class="fa fa-anchor" href="#taskmanager-level-10"></a></h4>
+                  <h4 id="taskmanager-level-10">TaskManager Level 10</h4>
                   <div>
                     <p>Ensure the code follows the <strong><em>basic</em> rules</strong> (optional to apply intermediate/advanced rules) specified in the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>.</p>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-11">TaskManager Level 11<a class="fa fa-anchor" href="#taskmanager-level-11"></a></h4>
+                  <h4 id="taskmanager-level-11">TaskManager Level 11</h4>
                   <div>
                     <p>Add some assertions (i.e., Java <code>assert</code>s, not JUnit assertions) to your code.</p>
                   </div>
                   <hr>
-                  <h4 id="taskmanager-level-12">TaskManager Level 12<a class="fa fa-anchor" href="#taskmanager-level-12"></a></h4>
+                  <h4 id="taskmanager-level-12">TaskManager Level 12</h4>
                   <div>
                     <p>Package your TaskManager as a JAR file.</p>
                   </div>
@@ -7017,7 +7018,7 @@ ui.showToUser(taskListDescription);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -7028,8 +7029,21 @@ ui.showToUser(taskListDescription);
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

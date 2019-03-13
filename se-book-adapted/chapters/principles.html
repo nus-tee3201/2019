@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -191,7 +192,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -202,7 +203,7 @@
               <h1 id="principles"><span>Principles</span><a class="fa fa-anchor" href="#principles"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### Single Responsibility Principle<a class='fa fa-anchor' href='#single-responsibility-principle'></a>" expanded>
+          <panel type="seamless" header="#### Single Responsibility Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -238,7 +239,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Open-Closed Principle<a class='fa fa-anchor' href='#open-closed-principle'></a>" expanded>
+          <panel type="seamless" header="#### Open-Closed Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -291,7 +292,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Liskov Substitution Principle<a class='fa fa-anchor' href='#liskov-substitution-principle'></a>" expanded>
+          <panel type="seamless" header="#### Liskov Substitution Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -318,7 +319,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="substitutability"><span>Substitutability</span><a class="fa fa-anchor" href="#substitutability"></a></h4>
+                        <h4 id="substitutability"><span>Substitutability</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -411,7 +412,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Interface Segregation Principle<a class='fa fa-anchor' href='#interface-segregation-principle'></a>" expanded>
+          <panel type="seamless" header="#### Interface Segregation Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -449,7 +450,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Dependency Inversion Principle<a class='fa fa-anchor' href='#dependency-inversion-principle'></a>" expanded>
+          <panel type="seamless" header="#### Dependency Inversion Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -501,7 +502,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### SOLID Principles<a class='fa fa-anchor' href='#solid-principles'></a>" expanded>
+          <panel type="seamless" header="#### SOLID Principles" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -519,7 +520,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="single-responsibility-principle"><span>Single Responsibility Principle</span><a class="fa fa-anchor" href="#single-responsibility-principle"></a></h4>
+                        <h4 id="single-responsibility-principle"><span>Single Responsibility Principle</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -560,7 +561,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="open-closed-principle"><span>Open-Closed Principle</span><a class="fa fa-anchor" href="#open-closed-principle"></a></h4>
+                        <h4 id="open-closed-principle"><span>Open-Closed Principle</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -618,7 +619,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="liskov-substitution-principle"><span>Liskov Substitution Principle</span><a class="fa fa-anchor" href="#liskov-substitution-principle"></a></h4>
+                        <h4 id="liskov-substitution-principle"><span>Liskov Substitution Principle</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -640,7 +641,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                                     </span></strong></span></p>
                               <div id="title-and-body">
                                 <div>
-                                  <h4 id="substitutability"><span>Substitutability</span><a class="fa fa-anchor" href="#substitutability"></a></h4>
+                                  <h4 id="substitutability"><span>Substitutability</span></h4>
                                 </div>
                                 <div id="main">
                                   <div>
@@ -743,7 +744,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="interface-segregation-principle"><span>Interface Segregation Principle</span><a class="fa fa-anchor" href="#interface-segregation-principle"></a></h4>
+                        <h4 id="interface-segregation-principle"><span>Interface Segregation Principle</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -786,7 +787,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="dependency-inversion-principle"><span>Dependency Inversion Principle</span><a class="fa fa-anchor" href="#dependency-inversion-principle"></a></h4>
+                        <h4 id="dependency-inversion-principle"><span>Dependency Inversion Principle</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -839,7 +840,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Separation of Concerns Principle<a class='fa fa-anchor' href='#separation-of-concerns-principle'></a>" expanded>
+          <panel type="seamless" header="#### Separation of Concerns Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -878,7 +879,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                        <h4 id="what"><span>What</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -904,7 +905,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                        <h4 id="what"><span>What</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -990,7 +991,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                        <h4 id="what"><span>What</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -1032,7 +1033,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Law of Demeter<a class='fa fa-anchor' href='#law-of-demeter'></a>" expanded>
+          <panel type="seamless" header="#### Law of Demeter" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1139,7 +1140,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### YAGNI Principle<a class='fa fa-anchor' href='#yagni-principle'></a>" expanded>
+          <panel type="seamless" header="#### YAGNI Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1166,7 +1167,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### DRY Principle<a class='fa fa-anchor' href='#dry-principle'></a>" expanded>
+          <panel type="seamless" header="#### DRY Principle" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1189,7 +1190,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Brooks' Law<a class='fa fa-anchor' href='#brooks-law'></a>" expanded>
+          <panel type="seamless" header="#### Brooks' Law" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1247,7 +1248,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1258,8 +1259,21 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

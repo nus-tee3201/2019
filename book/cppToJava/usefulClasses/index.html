@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -35,7 +36,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="java-api"><span>Java API</span><a class="fa fa-anchor" href="#java-api"></a></h4>
+                  <h4 id="java-api"><span>Java API</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -58,7 +59,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="the-string-class"><span>The <code>String</code> Class</span><a class="fa fa-anchor" href="#the-string-class"></a></h4>
+                  <h4 id="the-string-class"><span>The <code>String</code> Class</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -72,7 +73,7 @@
                     <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
                     </p>
                   </modal>
-                  <h5 id="find-characters-of-a-string">Find characters of a string<a class="fa fa-anchor" href="#find-characters-of-a-string"></a></h5>
+                  <h5 id="find-characters-of-a-string">Find characters of a string</h5>
                   <div class="indented">
                     <p>Strings provide a method named <code>charAt</code>, which extracts a character. It returns a <code>char</code>, a primitive type that stores an individual character (as opposed to strings of them).</p>
                     <pre><code class="hljs java">String fruit = <span class="hljs-string">"banana"</span>;
@@ -83,7 +84,7 @@
                     <pre><code class="hljs java"><span class="hljs-keyword">char</span>[] fruitChars = fruit.toCharArray()
 </code></pre>
                   </div>
-                  <h5 id="change-a-string-to-upper-lower-case">Change a string to upper/lower case<a class="fa fa-anchor" href="#change-a-string-to-upper-lower-case"></a></h5>
+                  <h5 id="change-a-string-to-upper-lower-case">Change a string to upper/lower case</h5>
                   <div class="indented">
                     <p>Strings provide methods, <code>toUpperCase</code> and <code>toLowerCase</code>, that convert from uppercase to lowercase and back.</p>
                     <box>
@@ -104,7 +105,7 @@ s.toUpperCase(); <span class="hljs-comment">// no effect</span>
 s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
 </code></pre>
                   </div>
-                  <h5 id="replacing-parts-of-a-string">Replacing parts of a string<a class="fa fa-anchor" href="#replacing-parts-of-a-string"></a></h5>
+                  <h5 id="replacing-parts-of-a-string">Replacing parts of a string</h5>
                   <div class="indented">
                     <p>Another useful method is <code>replace</code>, which finds and replaces instances of one string within another.</p>
                     <box>
@@ -118,7 +119,7 @@ System.out.println(text);
 </code></pre>
                     </box>
                   </div>
-                  <h5 id="accessing-substrings">Accessing substrings<a class="fa fa-anchor" href="#accessing-substrings"></a></h5>
+                  <h5 id="accessing-substrings">Accessing substrings</h5>
                   <div class="indented">
                     <p>The <code>substring</code> method returns a new string that copies letters from an existing string, starting at the given index.</p>
                     <ul>
@@ -133,7 +134,7 @@ System.out.println(text);
                       <li><code>&quot;banana&quot;.substring(6, 6)</code> <span class="fas fa-arrow-right"></span> <code>&quot;&quot;</code></li>
                     </ul>
                   </div>
-                  <h5 id="searching-within-strings">Searching within strings<a class="fa fa-anchor" href="#searching-within-strings"></a></h5>
+                  <h5 id="searching-within-strings">Searching within strings</h5>
                   <div class="indented">
                     <p>The <code>indexOf</code> method searches for a single character (or a substring) in a string and returns the index of the first occurrence. The method returns <code>-1</code> if there are no occurrences.</p>
                     <ul>
@@ -143,7 +144,7 @@ System.out.println(text);
                       <li><code>&quot;banana&quot;.indexOf(&quot;nan&quot;)</code> <span class="fas fa-arrow-right"></span> <code>2</code> <span class="dimmed">searches for the substring <code>&quot;nan&quot;</code></span></li>
                     </ul>
                   </div>
-                  <h5 id="comparing-strings">Comparing Strings<a class="fa fa-anchor" href="#comparing-strings"></a></h5>
+                  <h5 id="comparing-strings">Comparing Strings</h5>
                   <div class="indented">
                     <p>To compare two strings, it may be tempting to use the == and != operators.</p>
                     <pre><code class="hljs java">String name1 = <span class="hljs-string">"Alan Turing"</span>;
@@ -187,7 +188,7 @@ System.out.println(s1.equalsIgnoreCase(s2)); <span class="hljs-comment">//true</
                       <li><code>endsWith</code>: checks if one string has the other as a substring at the <em>end</em> e.g., <code>Crab</code> and <code>ab</code></li>
                     </ul>
                   </div>
-                  <h5 id="printing-special-characters-line-breaks-tabs">Printing special characters (line breaks, tabs, ...)<a class="fa fa-anchor" href="#printing-special-characters-line-breaks-tabs"></a></h5>
+                  <h5 id="printing-special-characters-line-breaks-tabs">Printing special characters (line breaks, tabs, ...)</h5>
                   <div class="indented">
                     <p>You can embed a special character <span class="dimmed">e.g., line break, tab, backspace, etc.</span> in a string using an <em>escape sequence</em>.</p>
                     <div class="table-responsive">
@@ -258,7 +259,7 @@ Second line
 </code></pre>
                     </box>
                   </div>
-                  <h5 id="string-formatting">String formatting<a class="fa fa-anchor" href="#string-formatting"></a></h5>
+                  <h5 id="string-formatting">String formatting</h5>
                   <div class="indented">
                     <p>Sometimes programs need to create strings that are formatted a certain way. <code>String.format</code> takes a format specifier followed by a sequence of values and returns a new string formatted as specified.</p>
                     <box>
@@ -351,7 +352,7 @@ FRIES: 0.50
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="wrapper-classes-for-primitive-types"><span>Wrapper Classes for Primitive Types</span><a class="fa fa-anchor" href="#wrapper-classes-for-primitive-types"></a></h4>
+                  <h4 id="wrapper-classes-for-primitive-types"><span>Wrapper Classes for Primitive Types</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -447,7 +448,7 @@ System.out.println(i);
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="the-arrays-class"><span>The <code>Arrays</code> class</span><a class="fa fa-anchor" href="#the-arrays-class"></a></h4>
+                  <h4 id="the-arrays-class"><span>The <code>Arrays</code> class</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -568,7 +569,7 @@ System.out.println(Arrays.toString(c));
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="the-scanner-class"><span>The <code>Scanner</code> class</span><a class="fa fa-anchor" href="#the-scanner-class"></a></h4>
+                  <h4 id="the-scanner-class"><span>The <code>Scanner</code> class</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -825,8 +826,21 @@ Bye!
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

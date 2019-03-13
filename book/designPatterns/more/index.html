@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -35,7 +36,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="combining-design-patterns"><span>Combining Design Patterns</span><a class="fa fa-anchor" href="#combining-design-patterns"></a></h4>
+                  <h4 id="combining-design-patterns"><span>Combining Design Patterns</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -92,7 +93,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="other-design-patterns"><span>Other Design Patterns</span><a class="fa fa-anchor" href="#other-design-patterns"></a></h4>
+                  <h4 id="other-design-patterns"><span>Other Design Patterns</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -128,7 +129,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="using-design-patterns"><span>Using Design Patterns</span><a class="fa fa-anchor" href="#using-design-patterns"></a></h4>
+                  <h4 id="using-design-patterns"><span>Using Design Patterns</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -157,7 +158,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="other-types-of-patterns"><span>Other Types of Patterns</span><a class="fa fa-anchor" href="#other-types-of-patterns"></a></h4>
+                  <h4 id="other-types-of-patterns"><span>Other Types of Patterns</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -204,7 +205,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="design-patterns-vs-design-principles"><span>Design Patterns vs Design Principles</span><a class="fa fa-anchor" href="#design-patterns-vs-design-principles"></a></h4>
+                  <h4 id="design-patterns-vs-design-principles"><span>Design Patterns vs Design Principles</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -233,8 +234,21 @@
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

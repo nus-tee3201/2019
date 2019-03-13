@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
     
     
@@ -34,7 +35,7 @@
               </span></strong></span></p>
         <div id="title-and-body">
           <div>
-            <h4 id="arrays"><span>Arrays</span><a class="fa fa-anchor" href="#arrays"></a></h4>
+            <h4 id="arrays"><span>Arrays</span></h4>
           </div>
           <div id="main">
             <div>
@@ -91,7 +92,7 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
 </code></pre>
                 <p><small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></p>
               </blockquote>
-              <h5 id="passing-arguments-to-a-program">Passing arguments to a program<a class="fa fa-anchor" href="#passing-arguments-to-a-program"></a></h5>
+              <h5 id="passing-arguments-to-a-program">Passing arguments to a program</h5>
               <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> The <code>args</code> parameter of the <code>main</code> method is an array of Strings containing command line arguments supplied (if any) when running the program.</p>
               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -188,8 +189,21 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 </html>

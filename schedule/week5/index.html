@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
@@ -64,7 +65,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          <searchbar placeholder="Search" algolia menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -389,7 +390,7 @@ print(get_head2(<span class="hljs-number">2</span>))
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Enter Integer" expanded no-close>
                 <div>
-                  <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer"></a></h4>
+                  <h4 id="exercise-enter-integer">Exercise : Enter Integer</h4>
                   <p>The code below assumes the entered string will always represent an integer.</p>
                   <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
 print(<span class="hljs-string">'You entered'</span>, value)
@@ -521,7 +522,7 @@ hide_ends2 failed: Not enough items
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Is Even-Integer in Range" expanded no-close>
                 <div>
-                  <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-is-even-integer-in-range"></a></h4>
+                  <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range</h4>
                   <tip-box>
                     <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
                   </tip-box>
@@ -629,14 +630,14 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Flexible Word Game" expanded no-close>
                 <div>
-                  <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-flexible-word-game"></a></h4>
+                  <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game</h4>
                   <p>Implement a word game similar to the one you implement in the <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
                   <ul>
                     <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
                   </ul>
                   <modal large title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
                       <div>
-                      <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
+                      <h4 id="exercise-word-game">Exercise : Word Game</h4>
                       <p>Implement a word game with the following rules:</p>
                       <ul>
                         <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
@@ -791,7 +792,7 @@ Thank you for playing the FLEXIBLE WORD GAME
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Escape Sequences" expanded no-close>
                 <div>
-                  <h4 id="exercise-escape-sequences">Exercise : Escape Sequences<a class="fa fa-anchor" href="#exercise-escape-sequences"></a></h4>
+                  <h4 id="exercise-escape-sequences">Exercise : Escape Sequences</h4>
                   <p>Modify the <code>get_string()</code> function so that the code prints the given output.<br>
                     Note that these words are separated by tabs, not normal spaces:<code>&quot;oops&quot;</code><span class="dimmed">{tab here}</span><code>&quot;ok&quot;</code><span class="dimmed">{tab here}</span><code>&quot;oh?&quot;</code></p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_string</span><span class="hljs-params">()</span>:</span>
@@ -877,7 +878,7 @@ This is the third line.
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Multi-Line String" expanded no-close>
                 <div>
-                  <h4 id="exercise-multi-line-string">Exercise : Multi-Line String<a class="fa fa-anchor" href="#exercise-multi-line-string"></a></h4>
+                  <h4 id="exercise-multi-line-string">Exercise : Multi-Line String</h4>
                   <p>Modify the <code>get_multiline_string()</code> function so that the code prints the given output exactly as given.<br></p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_multiline_string</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-string">''</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE</span>
@@ -996,7 +997,7 @@ the
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Shorten String" expanded no-close>
                 <div>
-                  <h4 id="exercise-shorten-string">Exercise : Shorten String<a class="fa fa-anchor" href="#exercise-shorten-string"></a></h4>
+                  <h4 id="exercise-shorten-string">Exercise : Shorten String</h4>
                   <p>Complete the function given below, to behave as described by its docstring.</p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">shorten</span><span class="hljs-params">(text)</span>:</span>
   <span class="hljs-string">""" Return a 10-character version of the string if it is longer.
@@ -1078,7 +1079,7 @@ True
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Has All Characters" expanded no-close>
                 <div>
-                  <h4 id="exercise-has-all-characters">Exercise : Has All Characters<a class="fa fa-anchor" href="#exercise-has-all-characters"></a></h4>
+                  <h4 id="exercise-has-all-characters">Exercise : Has All Characters</h4>
                   <p>Complete the function given below so that it returns <code>True</code> if <code>text</code> has all the characters in the list <code>characters</code>.</p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">has_all_characters</span><span class="hljs-params">(text, characters)</span>:</span>
   <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
@@ -1208,7 +1209,7 @@ True False
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Rectify Case" expanded no-close>
                 <div>
-                  <h4 id="exercise-rectify-case">Exercise : Rectify Case<a class="fa fa-anchor" href="#exercise-rectify-case"></a></h4>
+                  <h4 id="exercise-rectify-case">Exercise : Rectify Case</h4>
                   <p>Complete the <code>rectify_case(text)</code> function given below, to behave as follows:</p>
                   <ul>
                     <li>If <code>text</code> is all upper case, return <code>text</code> in lower case</li>
@@ -1254,7 +1255,7 @@ BABY FOX
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Is Doctor" expanded no-close>
                 <div>
-                  <h4 id="exercise-is-doctor">Exercise : Is Doctor<a class="fa fa-anchor" href="#exercise-is-doctor"></a></h4>
+                  <h4 id="exercise-is-doctor">Exercise : Is Doctor</h4>
                   <p>Complete the <code>is_doctor(name)</code> function to return <code>True</code> for the following cases:</p>
                   <ul>
                     <li>If <code>name</code> has a <code>Dr.</code> at the start</li>
@@ -1339,7 +1340,7 @@ print(s.find(<span class="hljs-string">'Spam'</span>))
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Remove From Word" expanded no-close>
                 <div>
-                  <h4 id="exercise-remove-from-word">Exercise : Remove From Word<a class="fa fa-anchor" href="#exercise-remove-from-word"></a></h4>
+                  <h4 id="exercise-remove-from-word">Exercise : Remove From Word</h4>
                   <p>Complete the <code>remove_from_word(text, word)</code> function given below, to behave as follows:</p>
                   <ul>
                     <li>If <code>word</code> is found in <code>text</code>, return <code>text</code> minus the <code>word</code> (its first appearance) and any characters that appears after the <code>word</code></li>
@@ -1469,7 +1470,7 @@ print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-strin
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Get Part" expanded no-close>
                 <div>
-                  <h4 id="exercise-get-part">Exercise : Get Part<a class="fa fa-anchor" href="#exercise-get-part"></a></h4>
+                  <h4 id="exercise-get-part">Exercise : Get Part</h4>
                   <p>Complete the <code>get_part(text, index)</code> function given below, to behave as follows:</p>
                   <ol>
                     <li>Split <code>text</code> using <code>|</code> as the delimiter</li>
@@ -1557,7 +1558,7 @@ Price===============
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Print Formatted Item" expanded no-close>
                 <div>
-                  <h4 id="exercise-print-formatted-item">Exercise : Print Formatted Item<a class="fa fa-anchor" href="#exercise-print-formatted-item"></a></h4>
+                  <h4 id="exercise-print-formatted-item">Exercise : Print Formatted Item</h4>
                   <p>Complete the <code>print_formatted_item(name, count, width)</code> function given below, to behave as follows:</p>
                   <ul>
                     <li>Print <code>name</code> and <code>count</code> in the format <code>name.................: count</code></li>
@@ -2020,7 +2021,7 @@ more text
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -2031,8 +2032,21 @@ more text
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

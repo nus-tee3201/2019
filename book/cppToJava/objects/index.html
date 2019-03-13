@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -35,7 +36,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="using-java-objects"><span>Using Java Objects</span><a class="fa fa-anchor" href="#using-java-objects"></a></h4>
+                  <h4 id="using-java-objects"><span>Using Java Objects</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -45,7 +46,7 @@
                 <p></p>
                 <div>
                   <p>Java is an &quot;object-oriented&quot; language, which means that it uses objects to represent data and provide methods related to them. Object types are called <em>classes</em> e.g., you can use <code>String</code> objects in Java and those objects belong to the <code>String</code> class.</p>
-                  <h5 id="importing">importing<a class="fa fa-anchor" href="#importing"></a></h5>
+                  <h5 id="importing">importing</h5>
                   <div class="indented">
                     <p>Java comes with many inbuilt classes which are organized into <em>packages</em>. Here are some examples:</p>
                     <div class="table-responsive">
@@ -86,7 +87,7 @@
                     </box>
                     <p>💡 You might wonder why we can use the <code>System</code> class without importing it. <code>System</code> belongs to <strong>the <code>java.lang</code> package, which is imported automatically</strong>.</p>
                   </div>
-                  <h5 id="new-operator"><code>new</code> operator<a class="fa fa-anchor" href="#new-operator"></a></h5>
+                  <h5 id="new-operator"><code>new</code> operator</h5>
                   <div class="indented">
                     <p><strong>To create a new object, you have to use the <code>new</code> operator</strong></p>
                     <box>
@@ -142,7 +143,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="instance-members"><span>Instance Members</span><a class="fa fa-anchor" href="#instance-members"></a></h4>
+                  <h4 id="instance-members"><span>Instance Members</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -242,7 +243,7 @@ java.awt.Rectangle[x=0,y=0,width=8,height=10]
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="passing-objects-around"><span>Passing Objects Around</span><a class="fa fa-anchor" href="#passing-objects-around"></a></h4>
+                  <h4 id="passing-objects-around"><span>Passing Objects Around</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -279,7 +280,7 @@ java.awt.Rectangle[x=0,y=0,width=8,height=10]
                     <p>The return type of this method is <code>Point</code>. The last line creates a new <code>Point</code> object and returns a reference to it.
                     </p>
                   </box>
-                  <h5 id="null-and-nullpointerexception"><code>null</code> and <code>NullPointerException</code><a class="fa fa-anchor" href="#null-and-nullpointerexception"></a></h5>
+                  <h5 id="null-and-nullpointerexception"><code>null</code> and <code>NullPointerException</code></h5>
                   <div class="indented">
                     <p><strong><code>null</code> is a special value that means &quot;no object&quot;</strong>. You can assign null to a variable to indicate that the variable is 'empty' at the moment. However, if you try to use a null value, either by accessing an attribute or invoking a method, Java throws a <code>NullPointerException</code>.</p>
                     <box>
@@ -419,7 +420,7 @@ null
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="garbage-collection"><span>Garbage Collection</span><a class="fa fa-anchor" href="#garbage-collection"></a></h4>
+                  <h4 id="garbage-collection"><span>Garbage Collection</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -453,8 +454,21 @@ spot = <span class="hljs-keyword">null</span>;
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

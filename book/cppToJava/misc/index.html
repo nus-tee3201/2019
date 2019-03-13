@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -35,7 +36,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="enums"><span>Enums</span><a class="fa fa-anchor" href="#enums"></a></h4>
+                  <h4 id="enums"><span>Enums</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -125,7 +126,7 @@ Green indicates low priority
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="packages"><span>Packages</span><a class="fa fa-anchor" href="#packages"></a></h4>
+                  <h4 id="packages"><span>Packages</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -285,7 +286,7 @@ Green indicates low priority
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="access-modifiers"><span>Access Modifiers</span><a class="fa fa-anchor" href="#access-modifiers"></a></h4>
+                  <h4 id="access-modifiers"><span>Access Modifiers</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -381,7 +382,7 @@ Green indicates low priority
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="constants"><span>Constants</span><a class="fa fa-anchor" href="#constants"></a></h4>
+                  <h4 id="constants"><span>Constants</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -410,7 +411,7 @@ Green indicates low priority
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="casting"><span>Casting</span><a class="fa fa-anchor" href="#casting"></a></h4>
+                  <h4 id="casting"><span>Casting</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -523,7 +524,7 @@ Integer x = (Integer)o;
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="file-access"><span>File Access</span><a class="fa fa-anchor" href="#file-access"></a></h4>
+                  <h4 id="file-access"><span>File Access</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -712,7 +713,7 @@ T | 1 | join sports club
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="using-jar-files"><span>Using JAR Files</span><a class="fa fa-anchor" href="#using-jar-files"></a></h4>
+                  <h4 id="using-jar-files"><span>Using JAR Files</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -788,8 +789,21 @@ T | 1 | join sports club
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

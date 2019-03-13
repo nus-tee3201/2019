@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
@@ -34,7 +35,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="brainstorming"><span>Brainstorming</span><a class="fa fa-anchor" href="#brainstorming"></a></h4>
+                  <h4 id="brainstorming"><span>Brainstorming</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -79,7 +80,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="user-surveys"><span>User Surveys</span><a class="fa fa-anchor" href="#user-surveys"></a></h4>
+                  <h4 id="user-surveys"><span>User Surveys</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -98,7 +99,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="observation"><span>Observation</span><a class="fa fa-anchor" href="#observation"></a></h4>
+                  <h4 id="observation"><span>Observation</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -117,7 +118,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="interviews"><span>Interviews</span><a class="fa fa-anchor" href="#interviews"></a></h4>
+                  <h4 id="interviews"><span>Interviews</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -143,7 +144,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="focus-groups"><span>Focus Groups</span><a class="fa fa-anchor" href="#focus-groups"></a></h4>
+                  <h4 id="focus-groups"><span>Focus Groups</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -171,7 +172,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="prototyping"><span>Prototyping</span><a class="fa fa-anchor" href="#prototyping"></a></h4>
+                  <h4 id="prototyping"><span>Prototyping</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -219,7 +220,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="product-surveys"><span>Product Surveys</span><a class="fa fa-anchor" href="#product-surveys"></a></h4>
+                  <h4 id="product-surveys"><span>Product Surveys</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -251,8 +252,21 @@
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

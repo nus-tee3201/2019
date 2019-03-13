@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -134,7 +135,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                <searchbar placeholder="Search" algolia menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -182,7 +183,7 @@ print(everything)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Countries" expanded no-close>
                   <div>
-                    <h4 id="exercise-countries">Exercise : Countries<a class="fa fa-anchor" href="#exercise-countries"></a></h4>
+                    <h4 id="exercise-countries">Exercise : Countries</h4>
                     <p>Complete the <code>get_countries()</code> function so that it return the list of countries shown on the right.</p>
                     <p>💡 You can follow the example of the <code>get_numbers()</code> function given.</p>
                     <div>
@@ -298,7 +299,7 @@ print(list_of_lists[<span class="hljs-number">2</span>][<span class="hljs-number
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Get Head, Get Tail" expanded no-close>
                   <div>
-                    <h4 id="exercise-get-head-get-tail">Exercise : Get Head, Get Tail<a class="fa fa-anchor" href="#exercise-get-head-get-tail"></a></h4>
+                    <h4 id="exercise-get-head-get-tail">Exercise : Get Head, Get Tail</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>get_head(item_list)</code>: returns the first item of the list received as the <code>item_list</code> parameter.</li>
@@ -537,7 +538,7 @@ new age: 26
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Swap Ends" expanded no-close>
                   <div>
-                    <h4 id="exercise-swap-ends">Exercise : Swap Ends<a class="fa fa-anchor" href="#exercise-swap-ends"></a></h4>
+                    <h4 id="exercise-swap-ends">Exercise : Swap Ends</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>swap_ends(item_list)</code>: swaps the first and the last items of the <code>item_list</code>. Note that the function should modify the given <code>item_list</code> list, not return a new list.</li>
@@ -617,7 +618,7 @@ print(spam)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Delete Head, Delete Tail" expanded no-close>
                   <div>
-                    <h4 id="exercise-delete-head-delete-tail">Exercise : Delete Head, Delete Tail<a class="fa fa-anchor" href="#exercise-delete-head-delete-tail"></a></h4>
+                    <h4 id="exercise-delete-head-delete-tail">Exercise : Delete Head, Delete Tail</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>delete_head(item_list)</code>: deletes the first item in the list passed as <code>item_list</code> parameter.</li>
@@ -749,7 +750,7 @@ sub list     : ['0a', '1b']
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Get Body" expanded no-close>
                   <div>
-                    <h4 id="exercise-get-body">Exercise : Get Body<a class="fa fa-anchor" href="#exercise-get-body"></a></h4>
+                    <h4 id="exercise-get-body">Exercise : Get Body</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>get_body(item_list)</code>: returns a sublist of <code>item_list</code> parameter, without the first and the last items.</li>
@@ -826,7 +827,7 @@ print(<span class="hljs-string">'Length is:'</span>, len(spam))
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Get Mid" expanded no-close>
                   <div>
-                    <h4 id="exercise-get-mid">Exercise : Get Mid<a class="fa fa-anchor" href="#exercise-get-mid"></a></h4>
+                    <h4 id="exercise-get-mid">Exercise : Get Mid</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>get_mid(item_list)</code>: returns the middle element of the list <code>item_list</code></li>
@@ -925,7 +926,7 @@ print(walking)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Expand to Fill" expanded no-close>
                   <div>
-                    <h4 id="exercise-expand-to-fill">Exercise : Expand to Fill<a class="fa fa-anchor" href="#exercise-expand-to-fill"></a></h4>
+                    <h4 id="exercise-expand-to-fill">Exercise : Expand to Fill</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>expand_to_fill(item_list, length)</code>: returns a list containing a total of <code>length</code> items, where the items are repetitions of the items in the <code>item_list</code>.</li>
@@ -1008,7 +1009,7 @@ Tea is already in the list
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: XOR" expanded no-close>
                   <div>
-                    <h4 id="exercise-xor">Exercise : XOR<a class="fa fa-anchor" href="#exercise-xor"></a></h4>
+                    <h4 id="exercise-xor">Exercise : XOR</h4>
                     <p><span class="dimmed"><span class="fas fa-info-circle"></span> In case you didn't know: <em>XOR</em> (short for eXclusive OR) is a logical operation, when applied to two booleans, that outputs <code>True</code> only when inputs differ (one is <code>True</code>, the other is <code>False</code>)</span></p>
                     <p>Complete the functions as described below:</p>
                     <ul>
@@ -1082,7 +1083,7 @@ Do you sell Hamsters?
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Print Card Deck" expanded no-close>
                   <div>
-                    <h4 id="exercise-print-card-deck">Exercise : Print Card Deck<a class="fa fa-anchor" href="#exercise-print-card-deck"></a></h4>
+                    <h4 id="exercise-print-card-deck">Exercise : Print Card Deck</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>print_card_deck()</code>: Prints all cards in a deck of regular playing cards, en example of the output (partial) is given below.</li>
@@ -1163,7 +1164,7 @@ print_card_deck()
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: First Quarter" expanded no-close>
                   <div>
-                    <h4 id="exercise-first-quarter">Exercise : First Quarter<a class="fa fa-anchor" href="#exercise-first-quarter"></a></h4>
+                    <h4 id="exercise-first-quarter">Exercise : First Quarter</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li>
@@ -1276,7 +1277,7 @@ some-simple-words
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Remove Extra Spaces" expanded no-close>
                   <div>
-                    <h4 id="exercise-remove-extra-spaces">Exercise : Remove Extra Spaces<a class="fa fa-anchor" href="#exercise-remove-extra-spaces"></a></h4>
+                    <h4 id="exercise-remove-extra-spaces">Exercise : Remove Extra Spaces</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>remove_extra_spaces(text)</code>: returns a string that is similar to the given string <code>text</code> but with only one space between words if there were multiple spaces before. Also removes leading and trailing spaces.</li>
@@ -1490,7 +1491,7 @@ print(names)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Anagram Checker" expanded no-close>
                   <div>
-                    <h4 id="exercise-anagram-checker">Exercise : Anagram Checker<a class="fa fa-anchor" href="#exercise-anagram-checker"></a></h4>
+                    <h4 id="exercise-anagram-checker">Exercise : Anagram Checker</h4>
                     <p>Complete the functions as described below:</p>
                     <ul>
                       <li><code>is_anagram(word1, word2)</code>: returns <code>True</code> if <code>word1</code> is an anagram of <code>word2</code>(i.e., letters of <code>word1</code> can be rearranged to get <code>word2</code> e.g., <code>ton</code> and <code>not</code> are anagrams).</li>
@@ -1547,7 +1548,7 @@ True
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Word Game" expanded no-close>
                   <div>
-                    <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
+                    <h4 id="exercise-word-game">Exercise : Word Game</h4>
                     <p>Implement a word game with the following rules:</p>
                     <ul>
                       <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
@@ -1607,7 +1608,7 @@ Thank you for playing the WORD GAME
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1618,8 +1619,21 @@ Thank you for playing the WORD GAME
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

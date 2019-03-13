@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
     
     
@@ -34,7 +35,7 @@
               </span></strong></span></p>
         <div id="title-and-body">
           <div>
-            <h4 id="inheritance-basics"><span>Inheritance (Basics)</span><a class="fa fa-anchor" href="#inheritance-basics"></a></h4>
+            <h4 id="inheritance-basics"><span>Inheritance (Basics)</span></h4>
           </div>
           <div id="main">
             <div>
@@ -90,7 +91,7 @@
 </code></pre>
                 </box>
                 <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code> and a method to set it.</p>
-                <h5 id="accessing-superclass-members">Accessing Superclass Members<a class="fa fa-anchor" href="#accessing-superclass-members"></a></h5>
+                <h5 id="accessing-superclass-members">Accessing Superclass Members</h5>
                 <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
                 <box>
                   <p><span class="fas fa-cube"></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
@@ -120,7 +121,7 @@ Printed in Subclass
 </code></pre>
                   <p>Within <code>Subclass</code>, the simple name <code>printMethod()</code> refers to the one declared in <code>Subclass</code>, which overrides the one in <code>Superclass</code>. So, to refer to <code>printMethod()</code> inherited from <code>Superclass</code>, <code>Subclass</code> must use a qualified name, using <code>super</code> as shown. Compiling and executing <code>Subclass</code> prints the following:</p>
                 </box>
-                <h5 id="subclass-constructors">Subclass Constructors<a class="fa fa-anchor" href="#subclass-constructors"></a></h5>
+                <h5 id="subclass-constructors">Subclass Constructors</h5>
                 <p><strong>A subclass constructor can invoke the superclass constructor.</strong> Invocation of a superclass constructor must be the first line in the subclass constructor.
                   The syntax for calling a superclass constructor is <code>super()</code> <span class="dimmed">(which invokes the no-argument constructor of the superclass)</span> or <code>super(parameter list)</code> <span class="dimmed">(to invoke the superclass constructor with a matching parameter list)</span>.</p>
                 <box>
@@ -132,7 +133,7 @@ Printed in Subclass
 </code></pre>
                 </box>
                 <p>Note: If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. If the superclass does not have a no-argument constructor, you will get a compile-time error. <code>Object</code> does have such a constructor, so if <code>Object</code> is the only superclass, there is no problem.</p>
-                <h5 id="access-modifiers-simplified">Access Modifiers (simplified)<a class="fa fa-anchor" href="#access-modifiers-simplified"></a></h5>
+                <h5 id="access-modifiers-simplified">Access Modifiers (simplified)</h5>
                 <p><strong>Access level modifiers determine whether other classes can use a particular field or invoke a particular method.</strong> Given below is a simplified version of Java access modifiers, <mark>assuming you have not yet started placing your classes in different packages</mark> i.e., all classes are places in the root level. A full explanation of access modifiers is given in a later topic.</p>
                 <p>There are two levels of access control:</p>
                 <ol>
@@ -265,8 +266,21 @@ Postponed to Nov 18th
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 </html>

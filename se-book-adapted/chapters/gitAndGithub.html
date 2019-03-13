@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -194,7 +195,7 @@
               </dropdown>
               <li slot="right" class="nav-link">
                 <form class="navbar-form">
-                  <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
                 </form>
               </li>
             </navbar>
@@ -205,7 +206,7 @@
               <h1 id="git-and-github"><span>Git and Github</span><a class="fa fa-anchor" href="#git-and-github"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### Init<a class='fa fa-anchor' href='#init'></a>" expanded>
+          <panel type="seamless" header="#### Init" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -268,7 +269,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Commit<a class='fa fa-anchor' href='#commit'></a>" expanded>
+          <panel type="seamless" header="#### Commit" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -406,7 +407,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Ignore<a class='fa fa-anchor' href='#ignore'></a>" expanded>
+          <panel type="seamless" header="#### Ignore" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -444,7 +445,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Tag<a class='fa fa-anchor' href='#tag'></a>" expanded>
+          <panel type="seamless" header="#### Tag" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -482,7 +483,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Checkout<a class='fa fa-anchor' href='#checkout'></a>" expanded>
+          <panel type="seamless" header="#### Checkout" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -569,7 +570,7 @@ index 15b57f7..17f4528 100644
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="stash"><span>Stash</span><a class="fa fa-anchor" href="#stash"></a></h4>
+                        <h4 id="stash"><span>Stash</span></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -632,7 +633,7 @@ index 15b57f7..17f4528 100644
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Stash<a class='fa fa-anchor' href='#stash'></a>" expanded>
+          <panel type="seamless" header="#### Stash" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -660,7 +661,7 @@ index 15b57f7..17f4528 100644
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Clone<a class='fa fa-anchor' href='#clone'></a>" expanded>
+          <panel type="seamless" header="#### Clone" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -695,7 +696,7 @@ index 15b57f7..17f4528 100644
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Pull<a class='fa fa-anchor' href='#pull'></a>" expanded>
+          <panel type="seamless" header="#### Pull" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -797,7 +798,7 @@ index 15b57f7..17f4528 100644
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Push<a class='fa fa-anchor' href='#push'></a>" expanded>
+          <panel type="seamless" header="#### Push" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -895,7 +896,7 @@ index 15b57f7..17f4528 100644
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Branch<a class='fa fa-anchor' href='#branch'></a>" expanded>
+          <panel type="seamless" header="#### Branch" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1041,7 +1042,7 @@ git checkout feature1
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Merge Conflicts<a class='fa fa-anchor' href='#merge-conflicts'></a>" expanded>
+          <panel type="seamless" header="#### Merge Conflicts" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1095,7 +1096,7 @@ white
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Create PRs<a class='fa fa-anchor' href='#create-prs'></a>" expanded>
+          <panel type="seamless" header="#### Create PRs" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1167,7 +1168,7 @@ This repo can be used to practice creating PRs.
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Manage PRs<a class='fa fa-anchor' href='#manage-prs'></a>" expanded>
+          <panel type="seamless" header="#### Manage PRs" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1273,7 +1274,7 @@ git pull origin master
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Forking Workflow<a class='fa fa-anchor' href='#forking-workflow'></a>" expanded>
+          <panel type="seamless" header="#### Forking Workflow" expanded>
             <div class="indented">
               <span class="badge badge-light">
                 <span><span class="dimmed">
@@ -1338,7 +1339,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1349,8 +1350,21 @@ git pull origin master
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

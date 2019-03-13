@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -35,7 +36,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
+                  <h4 id="introduction"><span>Introduction</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -65,7 +66,7 @@
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="use-nouns-for-things-and-verbs-for-actions"><span>Use Nouns for Things and Verbs for Actions</span><a class="fa fa-anchor" href="#use-nouns-for-things-and-verbs-for-actions"></a></h4>
+                        <h4 id="use-nouns-for-things-and-verbs-for-actions"><span>Use Nouns for Things and Verbs for Actions</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -137,7 +138,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="use-standard-words"><span>Use Standard Words</span><a class="fa fa-anchor" href="#use-standard-words"></a></h4>
+                        <h4 id="use-standard-words"><span>Use Standard Words</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -167,7 +168,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="use-name-to-explain"><span>Use Name to Explain</span><a class="fa fa-anchor" href="#use-name-to-explain"></a></h4>
+                        <h4 id="use-name-to-explain"><span>Use Name to Explain</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -269,7 +270,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="not-too-long-not-too-short"><span>Not Too Long, Not Too Short</span><a class="fa fa-anchor" href="#not-too-long-not-too-short"></a></h4>
+                        <h4 id="not-too-long-not-too-short"><span>Not Too Long, Not Too Short</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -288,7 +289,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title">
                       <div>
-                        <h4 id="avoid-misleading-names"><span>Avoid Misleading Names</span><a class="fa fa-anchor" href="#avoid-misleading-names"></a></h4>
+                        <h4 id="avoid-misleading-names"><span>Avoid Misleading Names</span></h4>
                       </div>
                     </span>
                     <div class="indented">
@@ -380,8 +381,21 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

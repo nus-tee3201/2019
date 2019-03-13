@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -35,7 +36,7 @@
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="defining-classes"><span>Defining Classes</span><a class="fa fa-anchor" href="#defining-classes"></a></h4>
+                  <h4 id="defining-classes"><span>Defining Classes</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -64,7 +65,7 @@
                   <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
                   <p>The code should be in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
                   <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the hour, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside the <code>Time</code> class.</p>
-                  <h5 id="constructos">Constructos<a class="fa fa-anchor" href="#constructos"></a></h5>
+                  <h5 id="constructos">Constructos</h5>
                   <div class="indented">
                     <p>The syntax for <tooltip content="special methods that construct the object and initialize the instance variables">constructors</tooltip> is similar to that of other methods, except:</p>
                     <ul>
@@ -99,7 +100,7 @@
 </code></pre>
                     </box>
                   </div>
-                  <h5 id="this-keyword"><code>this</code> keyword<a class="fa fa-anchor" href="#this-keyword"></a></h5>
+                  <h5 id="this-keyword"><code>this</code> keyword</h5>
                   <div class="indented">
                     <p><strong>The <code>this</code> keyword is a reference variable in Java that refers to the current object.</strong> You can use <code>this</code> the same way you use the name of any other object. For example, you can read and write the instance variables of <code>this</code>, and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>, and you can’t make an assignment to it.</p>
                     <box>
@@ -124,7 +125,7 @@
 
 </code></pre>
                     </box>
-                    <h5 id="instance-methods">Instance methods<a class="fa fa-anchor" href="#instance-methods"></a></h5>
+                    <h5 id="instance-methods">Instance methods</h5>
                     <p><strong>You can add methods to a class which can then be used from the objects of that class.</strong> These <em>instance</em> methods do not have the <code>static</code> keyword in the method signature. Instance methods can access attributes of the class.</p>
                     <box>
                       <p><span class="fas fa-cube"></span> Here's how you can add a method to the <code>Time</code> class to get the number of seconds passed till midnight.</p>
@@ -225,7 +226,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="getters-and-setters"><span>Getters and setters</span><a class="fa fa-anchor" href="#getters-and-setters"></a></h4>
+                  <h4 id="getters-and-setters"><span>Getters and setters</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -352,7 +353,7 @@ radius : 0.0
             <panel type="seamless" expanded>
               <span slot="header" class="card-title">
                 <div>
-                  <h4 id="class-level-members"><span>Class-Level Members</span><a class="fa fa-anchor" href="#class-level-members"></a></h4>
+                  <h4 id="class-level-members"><span>Class-Level Members</span></h4>
                 </div>
               </span>
               <div class="indented">
@@ -550,8 +551,21 @@ max radius used so far : 12.0
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

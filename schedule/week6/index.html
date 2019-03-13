@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
@@ -64,7 +65,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          <searchbar placeholder="Search" algolia menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -305,7 +306,7 @@ print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Create Directory" expanded no-close>
                 <div>
-                  <h4 id="exercise-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-create-directory"></a></h4>
+                  <h4 id="exercise-create-directory">Exercise : Create Directory</h4>
                   <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
                   <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
@@ -449,7 +450,7 @@ third line
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: File Stats" expanded no-close>
                 <div>
-                  <h4 id="exercise-file-stats">Exercise : File Stats<a class="fa fa-anchor" href="#exercise-file-stats"></a></h4>
+                  <h4 id="exercise-file-stats">Exercise : File Stats</h4>
                   <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
@@ -566,7 +567,7 @@ third line
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Add Line Numbers" expanded no-close>
                 <div>
-                  <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-add-line-numbers"></a></h4>
+                  <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers</h4>
                   <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
@@ -751,7 +752,7 @@ bananas,3,2.0,False
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Calcluate GST" expanded no-close>
                 <div>
-                  <h4 id="exercise-calculate-gst">Exercise : Calculate GST<a class="fa fa-anchor" href="#exercise-calculate-gst"></a></h4>
+                  <h4 id="exercise-calculate-gst">Exercise : Calculate GST</h4>
                   <p>Suppose there is a CSV file in this format:</p>
                   <div>
                     <div></div>
@@ -943,7 +944,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Setup a Project in PyCharm" expanded no-close>
                 <div>
-                  <h4 id="exercise-setup-a-project-in-pycharm">Exercise : Setup a Project in PyCharm<a class="fa fa-anchor" href="#exercise-setup-a-project-in-pycharm"></a></h4>
+                  <h4 id="exercise-setup-a-project-in-pycharm">Exercise : Setup a Project in PyCharm</h4>
                   <ol>
                     <li>Install Python and PyCharm if you haven't done so already.</li>
                     <li>Start PyCharm and click on the <code>Create New Project</code> option.<br>
@@ -984,7 +985,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Debug a Project in PyCharm" expanded no-close>
                 <div>
-                  <h4 id="exercise-debug-a-project-in-pycharm">Exercise : Debug a Project in PyCharm<a class="fa fa-anchor" href="#exercise-debug-a-project-in-pycharm"></a></h4>
+                  <h4 id="exercise-debug-a-project-in-pycharm">Exercise : Debug a Project in PyCharm</h4>
                   <ol>
                     <li>Open a project in PyCharm. Go to a project file containing Python code.</li>
                     <li>To create a breakpoint at a statement, click on the <tooltip content="the area between the statement and the line number"><em>gutter</em></tooltip> next to the line. A red dot should appear to indicate that the breakpoint has been set. <span class="dimmed">You can remove the breakpoint by clicking on the red dot again.</span><br>
@@ -1718,7 +1719,7 @@ add    read book
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1729,8 +1730,21 @@ add    read book
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

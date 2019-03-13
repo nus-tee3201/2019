@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     
     
@@ -64,7 +65,7 @@
       </dropdown>
       <li slot="right" class="nav-link">
         <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          <searchbar placeholder="Search" algolia menu-align-right></searchbar>
         </form>
       </li>
     </navbar>
@@ -308,7 +309,7 @@ print(<span class="hljs-string">'Done'</span>)               <span class="hljs-c
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Even Numbers" expanded no-close>
                 <div>
-                  <h4 id="exercise-even-numbers">Exercise - Even Numbers<a class="fa fa-anchor" href="#exercise-even-numbers"></a></h4>
+                  <h4 id="exercise-even-numbers">Exercise - Even Numbers</h4>
                   <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
                   <pre><code class="hljs python">Enter an integer:
 <span class="hljs-number">4</span>
@@ -390,7 +391,7 @@ Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Grade Analyzer" expanded no-close>
                 <div>
-                  <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
+                  <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer</h4>
                   <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
                   <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
@@ -425,7 +426,7 @@ Grade   : A
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Grade Analyzer (extended)" expanded no-close>
                 <div>
-                  <h4 id="exercise-grade-analyzer-extended">Exercise - Grade Analyzer (Extended)<a class="fa fa-anchor" href="#exercise-grade-analyzer-extended"></a></h4>
+                  <h4 id="exercise-grade-analyzer-extended">Exercise - Grade Analyzer (Extended)</h4>
                   <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
                   <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
                   <pre><code class="hljs python">Enter project score
@@ -512,7 +513,7 @@ Done
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Add Loop" expanded no-close>
                 <div>
-                  <h4 id="exercise-vending-machine-add-loop">Exercise - Vending Machine - Add Loop<a class="fa fa-anchor" href="#exercise-vending-machine-add-loop"></a></h4>
+                  <h4 id="exercise-vending-machine-add-loop">Exercise - Vending Machine - Add Loop</h4>
                   <p>The code below simulates a vending machine that asks for a coin and gives out the product and the balance.</p>
                   <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_value = <span class="hljs-number">0</span>
@@ -605,7 +606,7 @@ Your balance: <span class="hljs-number">0</span>
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Accept Multiple Coins" expanded no-close>
                 <div>
-                  <h4 id="exercise-vending-machine-accept-multiple-coins">Exercise - Vending Machine - Accept Multiple Coins<a class="fa fa-anchor" href="#exercise-vending-machine-accept-multiple-coins"></a></h4>
+                  <h4 id="exercise-vending-machine-accept-multiple-coins">Exercise - Vending Machine - Accept Multiple Coins</h4>
                   <p>The vending machine you wrote in the previous exercise (an example solution given below) can accept only one coin as the payment. If the coin is not enough, it rejects the coin and request the user to insert a new coin.</p>
                   <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_value = <span class="hljs-number">0</span>
@@ -664,7 +665,7 @@ print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Allow Abort" expanded no-close>
                 <div>
-                  <h4 id="exercise-vending-machine-allow-abort">Exercise - Vending Machine - Allow Abort<a class="fa fa-anchor" href="#exercise-vending-machine-allow-abort"></a></h4>
+                  <h4 id="exercise-vending-machine-allow-abort">Exercise - Vending Machine - Allow Abort</h4>
                   <p>The vending machine you wrote in the previous exercise (an example solution given below) does not allow the user to abort the purchase and get the money back.</p>
                   <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_sum = <span class="hljs-number">0</span>
@@ -730,7 +731,7 @@ print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Legit Coins" expanded no-close>
                 <div>
-                  <h4 id="exercise-vending-machine-legit-coins">Exercise - Vending Machine - Legit Coins<a class="fa fa-anchor" href="#exercise-vending-machine-legit-coins"></a></h4>
+                  <h4 id="exercise-vending-machine-legit-coins">Exercise - Vending Machine - Legit Coins</h4>
                   <p>The vending machine you wrote in the previous exercise (an example solution given below) accepts any value as the coin value. However, coins come in only certain values only.</p>
                   <pre><code class="hljs python">price = <span class="hljs-number">100</span>
 coin_sum = <span class="hljs-number">0</span>
@@ -820,7 +821,7 @@ Your balance: <span class="hljs-number">0</span>
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Multiplication Table" expanded no-close>
                 <div>
-                  <h4 id="exercise-multiplication-table">Exercise - Multiplication Table<a class="fa fa-anchor" href="#exercise-multiplication-table"></a></h4>
+                  <h4 id="exercise-multiplication-table">Exercise - Multiplication Table</h4>
                   <p>Write a program to read in an integer and generate the multiplication table (for <code>1</code> to <code>10</code>) for that number. An example is given below:</p>
                   <pre><code class="hljs python">Enter a number: <span class="hljs-number">7</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">1</span> = <span class="hljs-number">7</span>
@@ -876,7 +877,7 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Multiplication Table (Extended)" expanded no-close>
                 <div>
-                  <h4 id="exercise-multiplication-table-extended">Exercise - Multiplication Table (Extended)<a class="fa fa-anchor" href="#exercise-multiplication-table-extended"></a></h4>
+                  <h4 id="exercise-multiplication-table-extended">Exercise - Multiplication Table (Extended)</h4>
                   <p>Modify the code a program to,</p>
                   <ul>
                     <li>print multiplication values of up to <code>x 20</code> (not up to <code>x 10</code> as before)</li>
@@ -917,7 +918,7 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Three Dice Throws" expanded no-close>
                 <div>
-                  <h4 id="exercise-three-dice-throws">Exercise - Three Dice Throws<a class="fa fa-anchor" href="#exercise-three-dice-throws"></a></h4>
+                  <h4 id="exercise-three-dice-throws">Exercise - Three Dice Throws</h4>
                   <p>Write a program to generate all possible results you can get by throwing a <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.</p>
                   <pre><code class="hljs python"><span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>
 <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>
@@ -1006,7 +1007,7 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
             <div>
               <panel type="danger" header=":fas-dumbbell: Exercise: Circle Area" expanded no-close>
                 <div>
-                  <h4 id="exercise-circle-area">Exercise - Circle Area<a class="fa fa-anchor" href="#exercise-circle-area"></a></h4>
+                  <h4 id="exercise-circle-area">Exercise - Circle Area</h4>
                   <p>Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.</p>
                   <p>💡 some useful hints:</p>
                   <ul>
@@ -1192,7 +1193,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                                     </span></strong></span></p>
                               <div id="title-and-body">
                                 <div>
-                                  <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                                  <h4 id="what"><span>What</span></h4>
                                 </div>
                                 <div id="main">
                                   <div>
@@ -1686,7 +1687,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1697,8 +1698,21 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

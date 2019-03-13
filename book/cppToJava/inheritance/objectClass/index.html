@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
     
     
@@ -34,12 +35,12 @@
               </span></strong></span></p>
         <div id="title-and-body">
           <div>
-            <h4 id="the-object-class"><span>The <code>Object</code> Class</span><a class="fa fa-anchor" href="#the-object-class"></a></h4>
+            <h4 id="the-object-class"><span>The <code>Object</code> Class</span></h4>
           </div>
           <div id="main">
             <div>
               <p>As you know, all Java objects inherit from the <code>Object</code> class. Let us look at some of the useful methods in the <code>Object</code> class that can be used by other classes.</p>
-              <h5 id="the-tostring-method">The <code>toString</code> method<a class="fa fa-anchor" href="#the-tostring-method"></a></h5>
+              <h5 id="the-tostring-method">The <code>toString</code> method</h5>
               <div class="indented">
                 <p><strong>Every class inherits a <code>toString</code> method from the <code>Object</code> class that is used by Java to get a string representation of the object</strong> <span class="dimmed">e.g., for printing</span>. By default it simply returns the type of the object and its address (in hexadecimal).</p>
                 <box>
@@ -81,7 +82,7 @@
                 </box>
                 <p>💡 <code>@Override</code> is an optional annotation you can use to indicate that the method is overriding a method from the parent class.</p>
               </div>
-              <h5 id="the-equals-method">The <code>equals</code> method<a class="fa fa-anchor" href="#the-equals-method"></a></h5>
+              <h5 id="the-equals-method">The <code>equals</code> method</h5>
               <div class="indented">
                 <p><strong>There are two ways to check whether values are equal: the <code>==</code> operator and the <code>equals</code> method. With objects you can use either one, but they are not the same.</strong></p>
                 <ul>
@@ -273,8 +274,21 @@ do by: Postponed to Nov 18th
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 </html>

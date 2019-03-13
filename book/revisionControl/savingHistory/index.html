@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
     
     
@@ -34,13 +35,13 @@
               </span></strong></span></p>
         <div id="title-and-body">
           <div>
-            <h4 id="saving-history"><span>Saving History</span><a class="fa fa-anchor" href="#saving-history"></a></h4>
+            <h4 id="saving-history"><span>Saving History</span></h4>
           </div>
           <div id="main">
             <div>
-              <h5 id="tracking-and-ignoring">Tracking and Ignoring<a class="fa fa-anchor" href="#tracking-and-ignoring"></a></h5>
+              <h5 id="tracking-and-ignoring">Tracking and Ignoring</h5>
               <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such as temporary log files created during the build/test process should not be revision-controlled.</p>
-              <h5 id="staging-and-committing">Staging and Committing<a class="fa fa-anchor" href="#staging-and-committing"></a></h5>
+              <h5 id="staging-and-committing">Staging and Committing</h5>
               <tabs>
                   <tab header="<span class='far fa-file-alt'></span>">
                   <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
@@ -56,7 +57,7 @@
                   </p>
                 </tab>
               </tabs>
-              <h5 id="identifying-points-in-history">Identifying Points in History<a class="fa fa-anchor" href="#identifying-points-in-history"></a></h5>
+              <h5 id="identifying-points-in-history">Identifying Points in History</h5>
               <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated <mark>hash</mark></strong> e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
               <p><strong>We can <mark>tag</mark> a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
             </div>
@@ -76,8 +77,21 @@
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 </html>

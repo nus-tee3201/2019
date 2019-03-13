@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
     <link rel="stylesheet" href="../../markbind/css/site-nav.css">
     <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -125,7 +126,7 @@
             </dropdown>
             <li slot="right" class="nav-link">
               <form class="navbar-form">
-                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+                <searchbar placeholder="Search" algolia menu-align-right></searchbar>
               </form>
             </li>
           </navbar>
@@ -326,7 +327,7 @@ Sun Tzu
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Create `StockItem` Class" expanded no-close>
                   <div>
-                    <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
+                    <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class</h4>
                     <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
                     <table>
                       <tr>
@@ -467,7 +468,7 @@ yak yak
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Add Class-Level Members to `Subject` Class" expanded no-close>
                   <div>
-                    <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class"></a></h4>
+                    <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class</h4>
                     <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
                     <ul>
                       <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
@@ -639,7 +640,7 @@ AttributeError: 'Account' object has no attribute '__get_income'...
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Change Visibility of `School` Class Members" expanded no-close>
                   <div>
-                    <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members"></a></h4>
+                    <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members</h4>
                     <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
                     <table>
                       <tr>
@@ -753,7 +754,7 @@ the name is Dan
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Add `Fish` Class" expanded no-close>
                   <div>
-                    <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-add-fish-class"></a></h4>
+                    <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class</h4>
                     <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
                     <div>
                       <div></div>
@@ -870,7 +871,7 @@ Ben is learning
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Add `FlightlessBird` Class" expanded no-close>
                   <div>
-                    <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightlessbird-class"></a></h4>
+                    <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class</h4>
                     <p>Do the following changes to the given code so that the code below produces the given output:</p>
                     <ol>
                       <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
@@ -966,7 +967,7 @@ print(book)
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Override `__str__()` Method" expanded no-close>
                   <div>
-                    <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-override-str-method"></a></h4>
+                    <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method</h4>
                     <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
                     <div>
                       <div></div>
@@ -1079,7 +1080,7 @@ Elsie is grading
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Add `SmartPhone` Class" expanded no-close>
                   <div>
-                    <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smartphone-class"></a></h4>
+                    <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class</h4>
                     <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
                     <div>
                       <div></div>
@@ -1181,7 +1182,7 @@ invalid command: HA -&gt; command too short
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Mon, 11 Mar 2019 15:33:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1192,8 +1193,21 @@ invalid command: HA -&gt; command too short
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/2019'
-    const enableSearch = true
+    const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 </html>
