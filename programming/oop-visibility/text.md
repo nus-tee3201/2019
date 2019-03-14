@@ -79,7 +79,7 @@ more info: ['OK', 'Adam']
 </span>
 </include>
 
-{{ icon_x_read }} The following code will not work because they try to access private members.
+{{ icon_x_red }} The following code will not work because they try to access private members.
 
 ```python
 print('maximum allowed:', Account.__max) # error
