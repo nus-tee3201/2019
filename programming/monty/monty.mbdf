@@ -811,4 +811,145 @@ def save_data(filename, items_to_save):
 
 {{ hr_double }}
 
+<div id="monty10">
+
+### Monty 10
+
+Enhance the [Monty 9 code]({{ baseUrl }}/programming/toc/monty.html#monty-9) to extract the following classes:
+
+* `UserInterface`: an object of this class can be used to handle reading input from the user and showing output back to the user.
+* `StorageManager`: an object of this class can be used to read data from the data file and write data back to the data file.
+* `TaskManager`: an object of this class will hold the list of `Task`/`Deadline` objects and will execute commands.
+
+
+
+<panel header=":fas-battery-quarter: Partial solution" minimized>
+
+Here's the main part of the code that illustrates how these objects can work together:
+```python
+def main():
+    # create a UserInterface object and show the greeting
+    ui = UserInterface()
+    ui.show_greeting()
+
+    # create a StorageManager object
+    storage = StorageManager('data.csv')
+
+    # create a TaskManager object and load data
+    task_manager = TaskManager(storage)
+    task_manager.load_data()
+
+    while True:
+        try:
+            command = ui.read_command()
+            execute_command(command, task_manager, ui)
+            task_manager.save_data()
+        except Exception as e:
+            ui.display('SORRY, I could not perform that command. Problem:' + str(e))
+
+
+main()
+```
+
+Here's a partial `execute_command` function:
+
+```python
+def execute_command(command_parts, task_manager, ui):
+    if action == 'exit':
+        ui.display('Bye!')
+        sys.exit()
+    elif action == 'list':
+        message = task_manager.get_items_as_table()
+        ui.display(message)
+    elif action == 'todo':
+        message = task_manager.add_item(ToDo(command_parts[1], False))
+        ui.display(message)
+    ...
+```
+
+</panel>
+<p/>
+
+**Optional feature to consider:** add a `progress` command that shows how many tasks/deadlines were marked as _done_ during a session so far. Here is an example output:
+```
+>>> What can I do for you?
+
+list
+>>> Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✗    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+>>> What can I do for you?
+
+progress
+>>> Progress for this session: todos 0 deadlines 0
+>>> What can I do for you?
+
+done 2
+>>> Congrats on completing a task! :-)
+>>> What can I do for you?
+
+progress
+>>> Progress for this session: todos 1 deadlines 0
+>>> What can I do for you?
+
+done 3
+>>> Congrats on completing a task! :-)
+>>> What can I do for you?
+
+progress
+>>> Progress for this session: todos 1 deadlines 1
+>>> What can I do for you?
+
+pending 2
+>>> OK, I have marked that item as pending
+>>> What can I do for you?
+
+progress
+>>> Progress for this session: todos 0 deadlines 1
+>>> What can I do for you?
+
+list
+>>> Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✓    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+>>> What can I do for you?
+```
+
+
+<panel header=":fas-battery-quarter: Partial solution" minimized>
+
+A class-level variable in the `ToDo` class can be used to track the number of todo tasks marked as _done_ in a session.
+
+```python
+class ToDo:
+
+    progress = 0  # class-level variable
+
+    def __init__(self, description, status):
+        self.description = description
+        self.is_done = status
+
+    def mark_as_done(self):
+        if not self.is_done: # increment progress if needed
+            ToDo.progress = ToDo.progress + 1
+        self.is_done = True
+```
+
+</panel>
+<p/>
+
+</div>
+
+{{ hr_double }}
+
 %%Remaining increments to be added soon.%%

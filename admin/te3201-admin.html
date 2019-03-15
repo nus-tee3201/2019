@@ -1123,6 +1123,126 @@ D,return book,pending,Monday
               <p></p>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty10">
+              <h3 id="monty-10">Monty 10<a class="fa fa-anchor" href="#monty-10"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-9">Monty 9 code</a> to extract the following classes:</p>
+              <ul>
+                <li><code>UserInterface</code>: an object of this class can be used to handle reading input from the user and showing output back to the user.</li>
+                <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
+                <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
+              </ul>
+              <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <p>Here's the main part of the code that illustrates how these objects can work together:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
+    ui = UserInterface()
+    ui.show_greeting()
+
+    <span class="hljs-comment"># create a StorageManager object</span>
+    storage = StorageManager(<span class="hljs-string">'data.csv'</span>)
+
+    <span class="hljs-comment"># create a TaskManager object and load data</span>
+    task_manager = TaskManager(storage)
+    task_manager.load_data()
+
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = ui.read_command()
+            execute_command(command, task_manager, ui)
+            task_manager.save_data()
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            ui.display(<span class="hljs-string">'SORRY, I could not perform that command. Problem:'</span> + str(e))
+
+
+main()
+</code></pre>
+                <p>Here's a partial <code>execute_command</code> function:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
+    <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
+        ui.display(<span class="hljs-string">'Bye!'</span>)
+        sys.exit()
+    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'list'</span>:
+        message = task_manager.get_items_as_table()
+        ui.display(message)
+    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'todo'</span>:
+        message = task_manager.add_item(ToDo(command_parts[<span class="hljs-number">1</span>], <span class="hljs-literal">False</span>))
+        ui.display(message)
+    ...
+</code></pre>
+              </panel>
+              <p></p>
+              <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
+              <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✗    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 0 deadlines 0
+&gt;&gt;&gt; What can I do for you?
+
+done 2
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 1 deadlines 0
+&gt;&gt;&gt; What can I do for you?
+
+done 3
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 1 deadlines 1
+&gt;&gt;&gt; What can I do for you?
+
+pending 2
+&gt;&gt;&gt; OK, I have marked that item as pending
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 0 deadlines 1
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✓    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+              <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+
+    progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
+        self.description = description
+        self.is_done = status
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_done: <span class="hljs-comment"># increment progress if needed</span>
+            ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
+        self.is_done = <span class="hljs-literal">True</span>
+</code></pre>
+              </panel>
+              <p></p>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
             <p><span class="dimmed">Remaining increments to be added soon.</span></p>
           </div>
         </modal>
@@ -1458,7 +1578,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Wed, 13 Mar 2019 10:59:07 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Fri, 15 Mar 2019 14:55:08 GMT</small></div>
 </footer>
 </div>
 </body>
