@@ -11,12 +11,13 @@
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 1.21.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website - Home</title>
     <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
     <link rel="stylesheet" href="markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="markbind/css/font-awesome.min.css" >
-    <link rel="stylesheet" href="markbind/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="markbind/fontawesome/css/all.min.css" >
+    <link rel="stylesheet" href="markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="markbind/css/github.min.css">
     <link rel="stylesheet" href="markbind/css/markbind.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -42,8 +43,8 @@
         <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
         <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
         <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-        <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-        <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+        <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+        <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
         <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
         <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
@@ -72,300 +73,324 @@
   </div>
   <div class="website-content" id="main">
     <div>
-      <p><span style="float:left"><span><a href="/2019/schedule/week7/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week9/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
-      <h1 id="week-8-mar-11">Week 8 <small><small><span class="dimmed">[Mar 11]</span></small></small><a class="fa fa-anchor" href="#week-8-mar-11"></a></h1>
+      <p><span style="float:left"><span><a href="/2019/schedule/week8/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week10/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
+      <h1 id="week-9-mar-18">Week 9 <small><small><span class="dimmed">[Mar 18]</span></small></small><a class="fa fa-anchor" href="#week-9-mar-18"></a></h1>
       <div></div>
       <tabs>
         <tab header="<span class='fas fa-code'></span> Programming Topics">
           <div>
-            <div id="week8-toc">
+            <div id="week9-toc">
               <ul>
-                <li>
-                  <p><a href="#appendix-a-installing-3rd-party-modules"><strong>Installing 3rd Party Modules</strong></a></p>
-                </li>
-                <li>
-                  <p><a href="#object-oriented-programming"><strong>Object-Oriented Programing - Part I</strong></a></p>
+                <li><a href="#object-oriented-programming"><strong>Object-Oriented Programing - Part II</strong></a>
                   <ul>
-                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#class-level-members">Class-Level Members</a></li>
+                    <li><a href="#visibility">Visibility</a></li>
                   </ul>
                 </li>
               </ul>
             </div>
+            <h1 id="object-oriented-programming">Object-Oriented Programming<a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
             <div>
-              <h1 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a-installing-3rd-party-modules"></a></h1>
-              <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
-              <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
-              <pre><code class="hljs">pip --version
+              <h3 id="class-level-members">Class-Level Members<a class="fa fa-anchor" href="#class-level-members"></a></h3>
+              <p><strong>Attributes initialized inside a class but outside of its methods are considered class-level attributes</strong> (attributes are also called <em>data</em> or <em>variables</em>) i.e., they are shared among all objects of that class whereas attributes initialized inside the <code>__init__()</code> method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the <code>ClassName.</code> syntax.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects created, it is incremented in the <code>__init__()</code> method. <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
+  
+  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span>
+    self.name = student_name <span class="hljs-comment"># instance-level attribute</span>
+    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span>
+    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span>
 </code></pre>
-              <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
-                <pre><code class="hljs bash">pip install colorama
+                <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
+                <ul>
+                  <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
+                  <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
+                </ul>
+                <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
+print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span>
+print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span>
+print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)
+
+ben = Student(<span class="hljs-string">"Ben"</span>)
+print(<span class="hljs-string">'total students:'</span>, Student.total_students)
+print(<span class="hljs-string">'total students:'</span>, ben.total_students) 
+print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
 </code></pre>
                 <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">Collecting colorama
-  Downloading colorama-0.3.9-py2.py3-none-any.whl
-Installing collected packages: colorama
-Successfully installed colorama-0.3.9
+                <pre><code class="hljs">total students: 1
+total students: 1
+Amy course count: 0
+total students: 2
+total students: 2
+Ben course count: 0
 </code></pre>
-                <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
-                <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
+              </box>
+              <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong> <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
 
-colorama.init()  <span class="hljs-comment"># one-time initialization</span>
+  enabled = <span class="hljs-literal">True</span>
 
-print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
-print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
-print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span>
+    self.text = new_text
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">if</span> Printer.enabled:
+      print(self.text)
+
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span>
+    cls.enabled = <span class="hljs-literal">False</span>  <span class="hljs-comment"># cls here is same as Printer</span>
+    print(<span class="hljs-string">'All Printers disabled'</span>)
+
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span>
+    cls.enabled = <span class="hljs-literal">True</span>
+    print(<span class="hljs-string">'All Printers enabled'</span>)
 </code></pre>
-                <p><span class="fas fa-arrow-down"></span><br></p>
-                <img src="/2019/programming/thirdparty/images/coloramaOutput.png">
-              </tip-box>
-              <tip-box>
-                <p><strong>💡 Some useful third-party modules:</strong></p>
-                <ul>
-                  <li><a href="https://pypi.python.org/pypi/colorama"><code>colorama</code></a>: For colorizing text printed in the console</li>
-                  <li><a href="https://pypi.python.org/pypi/selenium"><code>selenium</code></a>: For automating the Browser</li>
-                  <li><a href="http://www.magiksys.net/pyzmail/"><code>pyzmail</code></a>: For sending emails</li>
-                  <li><a href="https://www.twilio.com/docs/libraries/python"><code>twilio</code></a>: For sending SMS</li>
-                  <li><a href="https://pythonhosted.org/PyPDF2/"><code>PyPDF2</code></a>: For working with PDF files</li>
-                  <li><a href="https://pypi.python.org/pypi/pyperclip/1.6.0"><code>pyperclip</code></a>: To access the clipboard of the operating system</li>
-                  <li><a href="https://pypi.python.org/pypi/dateparser/0.7.0"><code>dateparser</code></a>: To parse natural language repsentation of dates e.g., <code>in 2 days</code>, <code>tomorrow</code></li>
-                </ul>
-              </tip-box>
-              <p><strong><span class="fas fa-paperclip"></span> Resources</strong>:</p>
-              <ul>
-                <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
-              </ul>
+                <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <pre><code class="hljs python">Printer.disable()
+p1 = Printer(<span class="hljs-string">'blah blah'</span>)
+p2 = Printer(<span class="hljs-string">'yak yak'</span>)
+p1.print_text() <span class="hljs-comment"># will not print</span>
+p2.print_text() <span class="hljs-comment"># will not print</span>
+
+Printer.enable() 
+p1.print_text()
+p2.print_text()
+</code></pre>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">All Printers disabled
+All Printers enabled
+blah blah
+yak yak
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>💡 As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
+                </p>
+              </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Print Errors in Red" expanded no-close>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add Class-Level Members to `Subject` Class" expanded no-close>
                   <div>
-                    <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red</h4>
-                    <p>Update a CLI program you have written in the past to print error messages in red color.</p>
-                    <p>💡 Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
+                    <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class</h4>
+                    <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
+                    <ul>
+                      <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
+                      <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
+                    </ul>
+                    <table>
+                      <tr>
+                        <td>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
+    self.name = name
+    self.code = code
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.code, <span class="hljs-string">':'</span>, self.name)
+    
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) 
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+print(Subject.limit_reached(<span class="hljs-number">1</span>))
+print(Subject.limit_reached(<span class="hljs-number">2</span>))
+s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+print(Subject.limit_reached(<span class="hljs-number">2</span>))
+print(Subject.limit_reached(<span class="hljs-number">3</span>))
+Subject.total = <span class="hljs-number">100</span>
+print(Subject.limit_reached(<span class="hljs-number">100</span>))
+</code></pre>
+                        </td>
+                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                        <td valign="bottom">
+                          <pre><code class="hljs">total subjects: 0
+total subjects: 1
+True
+False
+total subjects: 2
+True
+False
+True
+</code></pre>
+                        </td>
+                      </tr>
+                    </table>
+                    <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+  
+  <span class="hljs-comment"># ADD `total` attribute here</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
+    self.name = name
+    self.code = code
+    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.code, <span class="hljs-string">':'</span>, self.name)
+    
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
+    ... <span class="hljs-comment"># ADD implementation</span>
+</code></pre>
+                    </panel>
                   </div>
                 </panel>
                 <p></p>
               </div>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
-            <h1 id="object-oriented-programming">Object-Oriented Programming<a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
             <div>
-              <h3 id="classes">Classes<a class="fa fa-anchor" href="#classes"></a></h3>
-              <p><strong>You can define your own <em>classes</em> (i.e., object types)</strong> in Python, which can then be used alongside the built-in classes such as <code>list</code>, <code>int</code>, <code>str</code>, etc.</p>
-              <p>The syntax for defining a class:</p>
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span>:</span>
-  <span class="hljs-comment"># &lt;statement-1&gt;</span>
-  .
-  .
-  .
-  <span class="hljs-comment"># &lt;statement-N&gt;</span>
+              <h3 id="visibility">Visibility<a class="fa fa-anchor" href="#visibility"></a></h3>
+              <p>The <em>encapsulation</em> aspect of OOP requires that an object should only allow controlled access to its members. For example, it should be able to make some of its attributes visible to other object while keeping others hidden. As a consequence of Python's aim to be a very flexible and versatile language, it does not enforce encapsulation as strictly as some other OOP languages. However, it recommends some conventions, if followed, will maintain a reasonable level of encapsulation in objects.</p>
+              <ul>
+                <li>
+                  <p><strong><em>Private</em> members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., <code>__foo</code>, <code>__bar_()</code>) cannot be accessed using its name by code outside the class.</strong></p>
+                </li>
+                <li>
+                  <p><strong><em>Protected</em> members: a name prefixed with a single underscore (e.g. <code>_foo</code>, <code>_bar()</code>) are -- by convention -- should not be accessed by code outside of the owner class</strong> as they are not meant to be part of the object's public interface.</p>
+                </li>
+                <li>
+                  <p><strong><em>Public</em> members: other members are considered public and OK to be accessed by code outside the class.</strong></p>
+                </li>
+              </ul>
+              <tip-box>
+                <p><span class="fas fa-cube"></span> Consider the <code>Account</code> class below.</p>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
+  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span>
+  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span>
+  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span>
+    self.__balance = amount <span class="hljs-comment"># private</span>
+    self._owner = person    <span class="hljs-comment"># protected</span>
+    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span>
+    <span class="hljs-keyword">return</span> [self.status]
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span>
+    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span>
+    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span>
+    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span>
 </code></pre>
-              <p>💡 It is customary to use <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
-              <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
-              <modal title="CamelCase" id="modal:classes-camelcase">
-                <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt class="img-fluid"></a><br></p>
-                <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>. <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
-                <p><sub>[source: <a href="https://en.wikipedia.org/wiki/Camel_case">Wikipedia</a>]</sub></p>
-              </modal>
-              <box>
-                <p><span class="fas fa-cube"></span> The code below defines a class named <code>Employee</code>, creates two employee objects, and prints the class/type of each object.</p>
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># an empty class</span>
-
-john = Employee() <span class="hljs-comment"># create an Employee object</span>
-print(type(john)) <span class="hljs-comment"># print type of the john object</span>
-alice = Employee()
-print(type(alice))
-</code></pre>
-                <p><span class="fas fa-arrow-down"></span> <span class="dimmed">Note how the type of each object is given as <code>&lt;class 'Employee'&gt;</code> i.e., a class with name <code>Employee</code>.</span></p>
-                <pre><code class="hljs">&lt;class 'Employee'&gt;
-&lt;class 'Employee'&gt;
-</code></pre>
-              </box>
-              <p><strong>You can add methods to the class by defining them inside the class definition.</strong> Note that a method of a class always take <code>self</code> as the first parameter. <code>self</code> refers to the object itself. When calling the method, there is no need to supply an argument for the <code>self</code> parameter as the target object is implicitly taken as the argument for that parameter.</p>
-              <box>
-                <p><span class="fas fa-cube"></span> Consider the code below:</p>
+                <p><span style="color:green"><span class="fas fa-check"></span></span> The following code works fine because the members being accessed are public.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Pen</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, text)</span>:</span>
-    print(<span class="hljs-string">'writing:'</span>, text)
-    
-p = Pen()
-p.write(<span class="hljs-string">'It was a dark night ...'</span>)
+                        <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'status:'</span>, a.status)
+print(<span class="hljs-string">'info:'</span>, a.get_info())
 </code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">writing: It was a dark night ...
+                        <pre><code class="hljs">currency: $
+status: OK
+info: ['OK']
 </code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <p><code>write(self, text)</code> method is called as <code>p.write('It was a dark night ...')</code>.<br>
-                  This is how the arguments are matched with the parameters:</p>
-                <ul>
-                  <li><code>self</code> → <code>p</code></li>
-                  <li><code>text</code> → <code>'It was a dark night ...'</code></li>
-                </ul>
-              </box>
-              <p><strong>You can specify how to initialize an object of a class by defining an <code>__init__()</code> method in the class.</strong> Here are the important things to note about the <code>__init__()</code> method:</p>
-              <ol>
-                <li>There are two underscores in front and two behind the word <code>init</code>.<br>
-                  <span style="color:red"><span class="fas fa-times"></span></span> <code>_init_(self)</code><br>
-                  <span style="color:green"><span class="fas fa-check"></span></span> <code>__init__(self)</code></li>
-                <li>It will be called every time you create an instance of the class.</li>
-                <li>If it has parameters, you need to provide arguments for those parameters when you instantiate an object of that class.</li>
-              </ol>
-              <box>
-                <p><span class="fas fa-cube"></span> This example shows an <code>__init__</code> method added to a <code>Person</code> class.</p>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The following code works too. But they access protected members which is <mark>not a recommended practice</mark>.
+                </p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
-    print(name, <span class="hljs-string">'initialized!'</span>)
-    
-tom = Person(<span class="hljs-string">'Tom'</span>)
+                        <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'owner:'</span>, a._owner) 
+print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
 </code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">Tom initialized!
+                        <pre><code class="hljs">minimum allowed: 10.0
+owner: Adam
+more info: ['OK', 'Adam']
 </code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
-              </box>
-              <p><strong>An object can have <em>attributes</em></strong> i.e., values attached to the object, just as an object can have methods. Attributes and methods of an object can be accessed using the <code>objectname.</code> syntax, as you did with objects of built-in classes.</p>
-              <box>
-                <p><span class="fas fa-cube"></span> This example shows accessing the <code>get_age()</code> method and the <code>birthday</code> attribute of an object <code>x</code>.</p>
-                <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <pre><code class="hljs python">print(x.get_age())
-print(x.birthday)
-</code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs">12
-01/11/2000
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </box>
-              <p><strong>The code within a class needs to use the <code>self.</code> to refer to its own attributes and methods.</strong> Furthermore, the best place to initialize attributes is the <code>__init__()</code> method.</p>
-              <box>
-                <p><span class="fas fa-cube"></span> Note how the <code>__init__()</code> method of the <code>Book</code> class initializes its two attributes and calls another of its own methods i.e., <code>self.describe()</code>.</p>
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, book_title, book_author)</span>:</span>
-    self.title = book_title <span class="hljs-comment"># initialize attribute title</span>
-    self.author = book_author <span class="hljs-comment"># initialize attribute author</span>
-    self.describe() <span class="hljs-comment"># call another method of the class</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-comment"># print attributes of the object</span>
-    print(<span class="hljs-string">'Book info:'</span>, self.title, <span class="hljs-string">'/by'</span>, self.author) 
-    
-book1 = Book(<span class="hljs-string">'The Jungle Book'</span>, <span class="hljs-string">'Leo Tolstoy'</span>)
-book2 = Book(<span class="hljs-string">'The Art of War'</span>, <span class="hljs-string">'Sun Tzu'</span>)
-
-print()  <span class="hljs-comment"># print a blank line</span>
-print(<span class="hljs-string">'Title:'</span>, book1.title) 
-print(<span class="hljs-string">'Author:'</span>, book1.author)
-book1.describe()
+                <p><span style="color:red"><span class="fas fa-times"></span></span> The following code will not work because they try to access private members.</p>
+                <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span>
+print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span>
 </code></pre>
                 <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">Book info: The Jungle Book /by Leo Tolstoy
-Book info: The Art of War /by Sun Tzu
-
-Title: The Jungle Book
-Author: Leo Tolstoy
-Book info: The Jungle Book /by Leo Tolstoy
+                <pre><code class="hljs">AttributeError: type object 'Account' has no attribute '__max'...
+AttributeError: 'Account' object has no attribute '__balance'...
+AttributeError: 'Account' object has no attribute '__get_income'...
 </code></pre>
-              </box>
-              <p><strong>You can get your classes to work with each other.</strong></p>
-              <box>
-                <p><span class="fas fa-cube"></span> In this example we define a <code>ReadingList</code> class that can store a list of <code>Book</code> objects.</p>
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReadingList</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, initial_list)</span>:</span>
-    self.books = initial_list
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_book</span><span class="hljs-params">(self, book)</span>:</span>
-    self.books.append(book)
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show_authors</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">for</span> b <span class="hljs-keyword">in</span> self.books:
-      print(b.author)
-      
-my_list = ReadingList([book1]) <span class="hljs-comment"># book1 defined in a previous example </span>
-my_list.add_book(book2) <span class="hljs-comment"># book2 defined in a previous example</span>
-my_list.show_authors()
-</code></pre>
-                <p><span class="fas fa-arrow-down"></span></p>
-                <pre><code class="hljs">Leo Tolstoy
-Sun Tzu
-</code></pre>
-              </box>
+                <p>💡 Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
+                </p>
+              </tip-box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Create `StockItem` Class" expanded no-close>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Change Visibility of `School` Class Members" expanded no-close>
                   <div>
-                    <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class</h4>
-                    <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
+                    <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members</h4>
+                    <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
                     <table>
                       <tr>
                         <td>
-                          <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
-<span class="hljs-comment"># It should have an attribute: name</span>
-<span class="hljs-comment"># It should have a method: info() </span>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
+  
+  __target = <span class="hljs-number">0.99</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span>
+    self.__budget = capital
     
-a = StockItem(<span class="hljs-string">'Apple'</span>)
-print(a.info())
-print(a.name)
-b = StockItem(<span class="hljs-string">'Bag of Beans'</span>)
-print(b.info())
-b.name = <span class="hljs-string">'Bananas'</span>
-print(b.info())
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> self.__budget * School.__target
+    
+print(School.__target)
+s = School(<span class="hljs-number">100000</span>)
+print(s.__budget)
+print(s.__max_expenditure())
 </code></pre>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
-                          <pre><code class="hljs">Item info: Apple
-Apple
-Item info: Bag of Beans
-Item info: Bananas
+                          <pre><code class="hljs">0.99
+100000
+99000.0
 </code></pre>
                         </td>
                       </tr>
                     </table>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
-    self.name = ...
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">return</span> ...
-</code></pre>
+                    <panel type="seamless" header="%%:bulb: Hint%%">
+                      <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
                     </panel>
                   </div>
                 </panel>
@@ -381,152 +406,883 @@ Item info: Bananas
               <div id="main">
                 <div class="indented">
                   <ul>
-                    <li><a href="#W8-1">[W8.1] OOP: Basics <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></li>
+                    <li><a href="#W9-1">[W9.1] OOP: Basics <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></li>
                   </ul>
                   <p></p>
                 </div>
                 <hr style="border: 1px dotted #cccccc;">
-                <p><span id="W8-1"></span></p>
+                <p><span id="W9-1"></span></p>
                 <panel type="seamless" no-close expandable="true" expanded>
                   <span slot="header" class="card-title">
                     <div>
-                      <p><big> <span class="dimmed">[W8.1]</span> <big><big><strong>OOP: Basics</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                      <p><big> <span class="dimmed">[W9.1]</span> <big><big><strong>OOP: Basics</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </div>
                   </span>
                   <div class="indented-level1">
                     <panel type="seamless" expanded>
-                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W8.1a]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Classes →
-                              </span></strong></span> <strong><big><big><span>Basic</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1a]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Introduction →
+                              </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                       <div>
                         <div class="indented">
                           <div></div>
                           <p></p>
-                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the relationship between classes and objects </span></span></span></span></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/identify class diagrams</span></span></span></span></p>
                           <p></p>
                           <p></p>
                           <p></p>
                           <div>
-                            <p><strong>Writing an OOP program is essentially writing instructions that the computer uses to,</strong></p>
-                            <ol>
-                              <li><strong>create the virtual world of object network, and</strong></li>
-                              <li><strong>provide it the inputs to produce the outcome we want.</strong></li>
-                            </ol>
-                            <p><strong>A <mark><em>class</em></mark> contains instructions for creating a specific kind of objects</strong>. It turns out sometimes multiple objects have the same behavior because they are of the <em>same kind</em>. Instructions for creating a one kind (or ‘class’) of objects can be done once and that same instructions can be used to <tooltip content="i.e. create"><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
+                            <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
                             <tip-box>
-                              <p><span class="fas fa-cube"></span> Classes and objects in an example scenario</p>
-                              <p>Consider the example of writing an OOP program to calculate the average age of Adam, Beth, Charlie, and Daisy.</p>
-                              <p>Instructions for creating objects <code>Adam</code>, <code>Beth</code>, <code>Charlie</code>, and <code>Daisy</code> will be very similar because they are all of the same kind : they all represent ‘persons’ with the same interface, the same kind of data (i.e. <code>name</code>, <code>DoB</code>, etc.), and the same kind of behavior (i.e. <code>getAge(Date)</code>, <code>getName()</code>, etc.). Therefore, we can have a class called <code>Person</code> containing instructions on how to create <code>Person</code> objects and use that class to instantiate objects <code>Adam</code>, <code>Beth</code>, <code>Charlie</code>, and <code>Daisy</code>.</p>
-                              <p>Similarly, we need classes <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> classes to instantiate one each of <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> objects.</p>
+                              <p><span class="fas fa-cube"></span> An example class diagram:</p>
+                              <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1b]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Classes →
+                              </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can draw UML classes</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p>The basic UML notations used to represent a <em>class</em>:<br></p>
+                            <img src="/2019/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
+                            <p></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> A <code>Table</code> class shown in UML notation:</p>
+                              <img src="/2019/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
+                              <p></p>
+                              <panel type="seamless" header="The equivalent code">
+                                <table>
+                                  <tr>
+                                      <td>
+                                      <p>Java <span class="fas fa-arrow-down"></span></p>
+                                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
+    
+    Integer number;
+    Chair[] chairs = <span class="hljs-keyword">null</span>;
+    
+    <span class="hljs-function">Integer <span class="hljs-title">getNumber</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setNumber</span><span class="hljs-params">(Integer n)</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                                      <p></p>
+                                    </td>
+                                      <td valign="bottom">  <br><br></td>
+                                      <td valign="bottom">
+                                      <p>Python <span class="fas fa-arrow-down"></span></p>
+                                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.number = <span class="hljs-number">0</span>
+    self.chairs = []
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_number</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-comment"># ...</span>
+  
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span><span class="hljs-params">(self, n)</span>:</span>
+    <span class="hljs-comment"># ...</span>
+    
+</code></pre>
+                                      <p></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </panel>
+                            </tip-box>
+                            <p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand. 'Attributes' always appear above the 'Operations' compartment. All operations should be in one compartment rather than each operation in a separate compartment. Same goes for attributes.</p>
+                            <tip-box>
+                              <img src="/2019/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
+                            <p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language used. Here are some common visibilities and how they are indicated in a class diagram:</p>
+                            <ul>
+                              <li><code>+</code> : public</li>
+                              <li><code>-</code> : private</li>
+                              <li><code>#</code> : protected</li>
+                              <li><code>~</code> : package private</li>
+                            </ul>
+                            <panel type="seamless" header="How visibilities map to programming language features">
                               <div class="table-responsive">
                                 <table class="markbind-table table table-bordered table-striped">
                                   <thead>
                                     <tr>
-                                      <th>Class</th>
-                                      <th>Objects</th>
+                                      <th>visibility</th>
+                                      <th>Java</th>
+                                      <th>Python</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td><code>Person</code></td>
-                                      <td>objects representing Adam, Beth, Charlie, Daisy</td>
+                                      <td><code>-</code> private</td>
+                                      <td><code>private</code></td>
+                                      <td>at least two leading underscores (and at most one trailing underscores) in the name</td>
                                     </tr>
                                     <tr>
-                                      <td><code>AgeList</code></td>
-                                      <td>an object to represent the age list</td>
+                                      <td><code>#</code> protected</td>
+                                      <td><code>protected</code></td>
+                                      <td>one leading underscore in the name</td>
                                     </tr>
                                     <tr>
-                                      <td><code>Calculator</code></td>
-                                      <td>an object to do the calculations</td>
+                                      <td><code>+</code> public</td>
+                                      <td><code>public</code></td>
+                                      <td>all other cases</td>
                                     </tr>
                                     <tr>
-                                      <td><code>Main</code></td>
-                                      <td>an object to represent you who manages the whole operation</td>
+                                      <td><code>~</code> package private</td>
+                                      <td>default visibility</td>
+                                      <td>not applicable</td>
                                     </tr>
                                   </tbody>
                                 </table>
                               </div>
+                              <p></p>
+                            </panel>
+                            <p></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> <code>Table</code> class with visibilities shown:</p>
+                              <img src="/2019/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
+                              <p></p>
                             </tip-box>
                           </div>
                           <div>
                             <div>
                               <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
                                 <div>
-                                  <div>
-                                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Identify Classes and Objects">
-                                      <question>
-                                        <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use?</p>
-                                        <tip-box>
-                                           
-                                          A customer (name: John) gave a cheque to the Cashier (name: Peter) to pay for the LoTR and GoT books he bought.
-                                        </tip-box>
-                                        <div slot="answer">
-                                          <div class="table-responsive">
-                                            <table class="markbind-table table table-bordered table-striped">
-                                              <thead>
-                                                <tr>
-                                                  <th>Class</th>
-                                                  <th>Objects</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td><code>Customer</code></td>
-                                                  <td><code>john</code></td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>Book</code></td>
-                                                  <td><code>LoTR</code>, <code>GoT</code></td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>Cheque</code></td>
-                                                  <td><code>checqueJohnGave</code></td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>Cashier</code></td>
-                                                  <td><code>peter</code></td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                      </question>
-                                    </panel>
-                                  </div>
-                                  <div>
-                                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Classes for CityConnect app">
-                                      <question has-input="true">
-                                        <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
-                                        <pre><code class="hljs">Welcome to CityConnect!
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which classes are correct?">
+                                    <question>
+                                      <p>Which of these follow the correct UML notation?</p>
+                                      <img src="/2019/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
+                                      <p></p>
+                                      <ul class="task-list">
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 2</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 3</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 5</li>
+                                      </ul>
+                                      <div slot="answer">
+                                        <ol>
+                                          <li>Incorrect : <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
+                                          <li>Incorrect : All attributes should be inside the same compartment.</li>
+                                          <li>Correct</li>
+                                          <li>Correct : Both <em>Attributes</em> and <em>Methods</em> compartments can be omitted.</li>
+                                          <li>Correct : The <em>Attributes</em> and <em>Methods</em> compartments can be empty.</li>
+                                        </ol>
+                                      </div>
+                                    </question>
+                                  </panel>
+                                </div>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Car class">
+                                    <question>
+                                      <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
+                                      <div class="alt-java">
+                                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
 
-Enter command: addroute Clementi BuonaVista 12
-Route from Clementi to BuonaVista with distance 12km added
+    Engine engine;
+    <span class="hljs-keyword">private</span> List&lt;Wheel&gt; wheels = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">public</span> String model;
 
-Enter command: getdistance Clementi BuonaVista
-Distance from Clementi to BuonaVista is 12
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
+        move(speed);
+    }
 
-Enter command: getdistance Clementi JurongWest
-No route exists from Clementi to JurongWest!
-
-Enter command: addroute Clementi JurongWest 24
-Route from Clementi to JurongWest with distance 24km added
-
-Enter command: getdistance Clementi JurongWest
-Distance from Clementi to JurongWest is 24
-
-Enter command: exit
-
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">move</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
+        ...
+    }
+}
 </code></pre>
-                                        <p>What classes would you have in your code if you write your program based on the OOP paradigm?</p>
-                                        <div slot="hint">
-                                          <p>One class you can have is <code>Route</code></p>
-                                        </div>
-                                      </question>
-                                    </panel>
-                                  </div>
+                                      </div>
+                                      <div class="alt-python">
+                                        <p>💡 You may omit <code>self</code> from method signatures in the class diagram.</p>
+                                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
+    self._engine = <span class="hljs-literal">None</span> <span class="hljs-comment"># type: Engine</span>
+    self.__wheels = []  <span class="hljs-comment"># type: a list of Wheel objects</span>
+    self.model = model  <span class="hljs-comment"># type: string</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, speed)</span>:</span> <span class="hljs-comment"># speed is an int</span>
+      self.move(speed)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span>
+      <span class="hljs-keyword">pass</span>
+</code></pre>
+                                      </div>
+                                    </question>
+                                  </panel>
                                 </div>
                               </panel>
                             </div>
                           </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1c]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Classes →
+                              </span></strong></span> <strong><big><big><span>Class-Level Members</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain class-level members</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p>While all objects of a class has the same attributes, each object has its own copy of the attribute value.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> All <code>Person</code> objects have the <code>Name</code> attribute but the value of that attribute varies between <code>Person</code> objects.</p>
+                            </tip-box>
+                            <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class. Such <strong>variables whose value is shared by all instances of a class are called <mark><em>class-level attributes</em></mark></strong>.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> The attribute <code>totalPersons</code> should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code> object.</p>
+                            </tip-box>
+                            <p>Similarly, when a normal method is being called, a message is being sent to the receiving object and the result may depend on the receiving object.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> Sending the <code>getName()</code> message to <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to the <code>Beth</code> object gets the response <code>&quot;Beth&quot;</code>.</p>
+                            </tip-box>
+                            <p>However, there can be methods related to a specific class but not suitable for sending message to a specific object of that class. Such <strong>methods that are called using the class instead of a specific instance are called <mark><em>class-level methods</em></mark></strong>.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not know about the total number of <code>Person</code> objects</span>.</p>
+                            </tip-box>
+                            <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code> to identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
+                          </div>
+                          <div>
+                            <div>
+                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Suitable as a class-level variables">
+                                    <question>
+                                      <p>Which of these are suitable as class-level variables?</p>
+                                      <ul class="task-list">
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pac Man game, Class: <code>Player</code>, variable: <code>totalScore</code></li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: <code>Course</code>, variable: <code>totalStudents</code></li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
+                                      </ul>
+                                      <div slot="answer">
+                                        <p>(c)</p>
+                                        <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance level as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
+                                      </div>
+                                    </question>
+                                  </panel>
+                                </div>
+                              </panel>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1d]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Class-Level Members →
+                              </span></strong></span> <strong><big><big><span>Class-Level Members</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret class-level members in class diagrams</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In the class below, <code>totalStudents</code> attribute and the <code>getTotalStudents</code> method are class-level.</p>
+                              <img src="/2019/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
+                              <p></p>
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1e]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Associations →
+                              </span></strong></span> <strong><big><big><span>Basic</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain associations</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> Suppose an OOP program for managing a learning management system creates an object structure to represent the related objects. In that object structure we can expect to have associations between a<code>Course</code> object that represents a specific course and <code>Student</code> objects that represents students taking that course.</p>
+                            </tip-box>
+                            <p><strong>Associations in an object structure can change over time</strong>.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> To continue the previous example, the associations between a <code>Course</code> object and <code>Student</code> objects can change as students enroll in the module or drop the module over time.</p>
+                            </tip-box>
+                            <p><strong>Associations among objects can be generalized as associations between the corresponding classes too.</strong></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In our example, as some <code>Course</code> objects can have associations with some <code>Student</code> objects, we can view it as an association between the <code>Course</code> class and the <code>Student</code> class.</p>
+                            </tip-box>
+                            <h5 id="implementing-associations">Implementing associations</h5>
+                            <p><strong>We use instance level variables to implement associations.</strong></p>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1f]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
+                              </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret simple associations in a class diagram</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p>We use a solid line to show an association between two classes.</p>
+                            <img src="/2019/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
+                            <p></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
+                                <img src="/2019/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1g]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
+                              </span></strong></span> <strong><big><big><span>Labels</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/use association labels in class diagrams</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p><strong><em>Association labels</em> describe the meaning of the association.</strong> The arrow head indicates the direction in which the label is to be read.</p>
+                            <img src="/2019/book/uml/classDiagrams/associations/labels/images/notation.png" width="400">
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In this example, the same association is described using two different labels.</p>
+                              <img src="/2019/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
+                              <p></p>
+                              <ul>
+                                <li>Diagram on the left: <code>Admin</code> class is associated with <code>Student</code> class because an <code>Admin</code> object <em>uses</em> a <code>Student</code> object.</li>
+                                <li>Diagram on the right: <code>Admin</code> class is associated with <code>Student</code> class because a <code>Student</code> object is <em>used by</em> an <code>Admin</code> object.</li>
+                              </ul>
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1h]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
+                              </span></strong></span> <strong><big><big><span>Roles</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/use association roles in class diagrams</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p>
+                            <img src="/2019/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and <code>wife</code>.</p>
+                              <img src="/2019/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
+                              <p></p>
+                              <p>Note how the variable names match closely with the association roles.</p>
+                              <table>
+                                <tr>
+                                    <td valign="top">
+                                    <p>Java <span class="fas fa-arrow-down"></span></p>
+                                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+    Woman wife;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span></span>{
+    Man husband;
+}
+</code></pre>
+                                    <p></p>
+                                  </td>
+                                    <td>  <br><br></td>
+                                    <td valign="top">
+                                    <p>Python <span class="fas fa-arrow-down"></span></p>
+                                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.wife = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Woman object</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span>:</span>
+   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+     self.husband = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Man object</span>
+</code></pre>
+                                    <p></p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </tip-box>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> The role of <code>Student</code> objects in this association is <code>charges</code> <span class="dimmed">(i.e. Admin is in charge of students)</span></p>
+                              <img src="/2019/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
+                              <p></p>
+                              <table>
+                                <tr>
+                                    <td valign="top">
+                                    <p>Java <span class="fas fa-arrow-down"></span></p>
+                                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
+    List&lt;Student&gt; charges;
+}
+</code></pre>
+                                    <p></p>
+                                  </td>
+                                    <td>  <br><br></td>
+                                    <td valign="top">
+                                    <p>Python <span class="fas fa-arrow-down"></span></p>
+                                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.charges = [] <span class="hljs-comment"># list of Student objects</span>
+</code></pre>
+                                    <p></p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1i]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Associations →
+                              </span></strong></span> <strong><big><big><span>Multiplicity</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of multiplicity</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p><strong><em>Multiplicity</em> is the aspect of an OOP solution that dictates how many objects take part in each association.</strong></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> The multiplicity of the association between <code>Course</code> objects and <code>Student</code> objects tells you how many <code>Course</code> objects can be associated with one <code>Student</code> object and vice versa.</p>
+                            </tip-box>
+                            <h5 id="implementing-multiplicity">Implementing multiplicity</h5>
+                            <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
+                              <div>
+                                <div class="alt-java">
+                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+    Minefield minefield;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span></span>{
+    ...
+}
+</code></pre>
+                                </div>
+                                <div class="alt-python">
+                                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
+    self.minefield = minefield
+    
+  <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+  <span class="hljs-comment"># ...</span>
+</code></pre>
+                                </div>
+                              </div>
+                            </tip-box>
+                            <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class will always have a <code>ConfigGenerator</code> object, provided the variable is not set to null at some point.</p>
+                              <div class="alt-java">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
+    ...
+}
+</code></pre>
+                              </div>
+                              <div class="alt-python">
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.config_gen = ConfigGenerator()
+</code></pre>
+                              </div>
+                            </tip-box>
+                            <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In the code below, the <code>Foo</code> class has a variable to hold a <code>Bar</code> object and vice versa <span class="dimmed">i.e., each object can have an association with an object of the other type</span>.</p>
+                              <div class="alt-java">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+    Bar bar;
+    <span class="hljs-comment">//...</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
+    Foo foo;
+    <span class="hljs-comment">//...</span>
+}
+
+</code></pre>
+                              </div>
+                              <div class="alt-python">
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, bar)</span>:</span>
+    self.bar = bar;
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, foo)</span>:</span>
+    self.foo = foo;
+    
+</code></pre>
+                              </div>
+                            </tip-box>
+                            <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+                            <tip-box>
+                              <div class="alt-java">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    Cell[][] cell;
+    ...
+}
+</code></pre>
+                              </div>
+                              <div class="alt-python">
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.cells = {<span class="hljs-number">1</span>:[], <span class="hljs-number">2</span>:[], <span class="hljs-number">3</span>:[]}
+</code></pre>
+                              </div>
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1j]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
+                              </span></strong></span> <strong><big><big><span>Multiplicity</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain what is the multiplicity of an association</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
+                            <p></p>
+                            <p>Commonly used multiplicities:</p>
+                            <ul>
+                              <li><code>0..1</code> : <em>optional</em>, can be linked to 0 or 1 objects</li>
+                              <li><code>1</code> : <em>compulsory</em>, must be linked to one object at all times.</li>
+                              <li><code>*</code> : can be linked to 0 or more objects.</li>
+                              <li><code>n..m</code> : the number of linked objects must be <code>n</code> to <code>m</code> inclusive</li>
+                            </ul>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code> object</p>
+                              <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300">
+                            </tip-box>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> In the diagram below,</p>
+                              <ul>
+                                <li>Each student must be supervised by exactly one professor. i.e. There cannot be a student who doesn't have a supervisor or has multiple supervisors.</li>
+                                <li>A professor cannot supervise more than 5 students but can have no students to supervise.</li>
+                                <li>An admin can handle any number of professors and any number of students, including none.</li>
+                                <li>A professor/student can be handled by any number of admins, including none.</li>
+                              </ul>
+                              <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70">
+                            </tip-box>
+                          </div>
+                          <div>
+                            <div>
+                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which statement agrees with the  multiplicity shown in this diagram?">
+                                    <question>
+                                      <img src="/2019/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
+                                      <p></p>
+                                      <ul class="task-list">
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An <code>Item</code> object must be linked 1,2,3 or 4 <code>Unit</code> objects.</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
+                                      </ul>
+                                      <div slot="answer">
+                                        <p>(c)(d)</p>
+                                      </div>
+                                    </question>
+                                  </panel>
+                                </div>
+                              </panel>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1k]</span></span> <span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Associations →
+                              </span></strong></span> <strong><big><big><span>Navigability</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of navigability</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1l]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Associations →
+                              </span></strong></span> <strong><big><big><span>Navigability</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret association navigabilities in class diagrams</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p><strong>We use arrow heads to indication the navigability of an association.</strong></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> <code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p>
+                              <img src="/2019/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
+                              <div>
+                                <div class="alt-java">
+                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+    Minefield minefield;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span></span>{
+    ...
+}
+</code></pre>
+                                </div>
+                                <div class="alt-python">
+                                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
+    self.minefield = minefield
+    
+  <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+  <span class="hljs-comment"># ...</span>
+</code></pre>
+                                </div>
+                              </div>
+                              <p><span class="fas fa-cube"></span> Here is an example of a bidirectional navigability; each class is aware of the other.</p>
+                              <p></p>
+                              <img src="/2019/book/uml/classDiagrams/associations/navigability/images/manDog.png" height="40">
+                              <p></p>
+                            </tip-box>
+                            <p><strong>Navigability can be shown in class diagrams as well as object diagrams</strong>.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> According to this object diagram the given <code>Logic</code> object is associated with and aware of two <code>MineField</code> objects.</p>
+                              <img src="/2019/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80">
+                            </tip-box>
+                          </div>
+                          <div>
+                            <div>
+                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does the navigability given by this diagram mean?">
+                                    <question>
+                                      <img src="/2019/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
+                                      <p></p>
+                                      <ul radio-group="3d146" class="radio-list">
+                                        <li class="radio-list-item"><label><input class="radio-list-input" name="3d146" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                                        <li class="radio-list-item"><label><input class="radio-list-input" name="3d146" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                                        <li class="radio-list-item"><label><input class="radio-list-input" name="3d146" type="radio"> c. Depends on the programming language</label></li>
+                                      </ul>
+                                      <div slot="answer">
+                                        <p>(a)</p>
+                                        <p>Explanation: The diagram indicates that <code>Unit</code> object should know about the <code>Item</code> object. In the implementation, the <code>Unit</code> object will hold a <code>Unit</code> object in one of its variables.</p>
+                                      </div>
+                                    </question>
+                                  </panel>
+                                </div>
+                              </panel>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1m]</span></span> <span class="dimmed"><strong><span>Tools → UML →
+                              </span></strong></span> <strong><big><big><span>Object vs Class Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can distinguish between class diagrams and object diagrams</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
+                            <ul>
+                              <li>Shows objects instead of classes:
+                                <ul>
+                                  <li>Instance name may be shown</li>
+                                  <li>There is a <code>:</code> before the class name</li>
+                                  <li>Instance and class names are underlined</li>
+                                </ul>
+                              </li>
+                              <li>Methods are omitted</li>
+                              <li>Multiplicities are omitted</li>
+                            </ul>
+                            <p>Furthermore, <strong>multiple object diagrams can correspond to a single class diagram</strong>.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
+                              <img src="/2019/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
+                              <p></p>
+                              <img src="/2019/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
+                              <p></p>
+                            </tip-box>
+                          </div>
+                          <div>
+                            <div>
+                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which class diagrams match object diagram?">
+                                    <question>
+                                      <p>Which of these class diagrams match the given object diagram?</p>
+                                      <img src="/2019/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
+                                      <p></p>
+                                      <ul class="task-list">
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                                      </ul>
+                                      <div slot="answer">
+                                        <p>(a) (b)</p>
+                                        <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
+                                      </div>
+                                    </question>
+                                  </panel>
+                                </div>
+                              </panel>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1n]</span></span> <span class="dimmed"><strong><span>Tools → UML →
+                              </span></strong></span> <strong><big><big><span>Notes</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use UML notes</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p><strong>UML notes can augment UML diagrams with additional information.</strong> These notes can be shown connected to a particular element in the diagram or can be shown without a connection. The diagram below shows examples of both.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> Example:</p>
+                              <img src="/2019/book/uml/notes/notes/images/adminProfessor.png" height="120">
+                              <p></p>
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1o]</span></span> <span class="dimmed"><strong><span>Tools → UML →
+                              </span></strong></span> <strong><big><big><span>Constraints</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div>
+                            <p>
+                              <panel src="/2019/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Notes%%" popup-url="/2019/book/uml/notes/notes"></panel>
+                            </p>
+                          </div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can specify constraints in UML diagrams</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p><strong>A <em>constraint</em> can be given inside a note, within curly braces</strong>. Natural language or a formal notation such as <em>OCL (Object Constraint Language)</em> may be used to specify constraints.</p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> Example:</p>
+                              <img src="/2019/book/uml/notes/constraints/images/playerTurn.png" height="120">
+                              <p></p>
+                            </tip-box>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" expanded>
+                      <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W9.1p]</span></span> <span class="dimmed"><strong><span>Tools → UML → Class Diagrams →
+                              </span></strong></span> <strong><big><big><span>Associations as Attributes</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                      <div>
+                        <div class="indented">
+                          <div></div>
+                          <p></p>
+                          <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can show an association as an attribute</span></span></span></span></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <div>
+                            <p><strong>An association can be shown as an attribute instead of a line.</strong></p>
+                            <p>Association multiplicities and the default value too can be shown as part of the attribute using the following notation. Both are optional.</p>
+                            <p><code>name: type [multiplicity] = default value</code></p>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> The diagram below depicts a multi-player <em>Square Game</em> being played on a board comprising of 100 squares. Each of the squares may be occupied with any number of pieces, each belonging to a certain player.</p>
+                              <p>A <code>Piece</code> may or may not be on a <code>Square</code>. Note how that association can be replaced by an <code>isOn</code> attribute of the <code>Piece</code> class. The <code>isOn</code> attribute can either be <code>null</code> or hold a reference to a <code>Square</code> object, matching the <code>0..1</code> multiplicity of the association it replaces. The default value is <code>null</code>.</p>
+                              <img src="/2019/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
+                              <p></p>
+                              <p>The association that a <code>Board</code> has 100 <code>Sqaure</code>s can be shown in either of these two ways:</p>
+                              <img src="/2019/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
+                              <p></p>
+                            </tip-box>
+                          </div>
+                          <div></div>
                         </div>
                       </div>
                     </panel>
@@ -539,94 +1295,125 @@ Enter command: exit
         </tab>
         <tab header="<span class='fas fa-drafting-compass'></span> Project">
           <div>
-            <panel header="Admin » Midterm Project Submission">
-              <div>
-                <ul>
-                  <li><strong>Week 8</strong> (mid-term submission):
-                    <ul>
-                      <li>Deadline: Week 8, Tuesday 6pm</li>
-                      <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement). If you are taking option A or C, implement at least upto <a href="/2019/programming/toc/monty.html">Monty 5</a>.
-                        <ul>
-                          <li>Submission: demo during the lecture in week 8.</li>
-                        </ul>
-                      </li>
-                      <li>Documentation:
-                        <ul>
-                          <li>Sections to include:
-                            <ul>
-                              <li>Cover page: Include product name, names of team members</li>
-                              <li>User stories: Give user stories to cover all current and planned future features</li>
-                              <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
-                              <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
-                              <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.</li>
-                            </ul>
-                          </li>
-                          <li>Submission: upload to IVLE as a <code>.docx</code> or <code>.pdf</code> file. File name should contain team member names. e.g., <code>John Doe, Sarah Tan, Viet Ngoc.docx</code></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <div class="indented-level3">
-                  <box type="info">
-                    <p>Please try to be present for one of the two demo slots on the day to demo your project to me.</p>
-                    <ul>
-                      <li>Timing: [6-7pm: project demos] [7-8pm: normal lecture] [8-9.30pm: project demos]</li>
-                      <li>Demo order: <em>first come, first served</em>.</li>
-                    </ul>
-                    <p>Normally, I would give my feedback for the midterm project document on week 9-10. If you don't intend to attend the lectures on those weeks, please bring a printout of your project document to your project demo so that I can give feedback on it the same day.
-                    </p>
-                  </box>
-                </div>
-              </div>
-            </panel>
-            <p></p>
+            <box type="info">
+              <p><strong>Note fo those taking project option A or C</strong>: Monty 10 onwards are optional but we recommend you use them as project guidance i.e., try to do something similar in your own project.
+              </p>
+            </box>
             <div>
-              <h3 id="monty-9">Monty 9<a class="fa fa-anchor" href="#monty-9"></a></h3>
-              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-8">Monty 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
+              <h3 id="monty-10">Monty 10<a class="fa fa-anchor" href="#monty-10"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-9">Monty 9 code</a> to extract the following classes:</p>
+              <ul>
+                <li><code>UserInterface</code>: an object of this class can be used to handle reading input from the user and showing output back to the user.</li>
+                <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
+                <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
+              </ul>
               <panel header=":fas-battery-quarter: Partial solution" minimized>
-                <p>Here is the code for an example <code>ToDo</code> class:</p>
+                <p>Here's the main part of the code that illustrates how these objects can work together:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
+    ui = UserInterface()
+    ui.show_greeting()
+
+    <span class="hljs-comment"># create a StorageManager object</span>
+    storage = StorageManager(<span class="hljs-string">'data.csv'</span>)
+
+    <span class="hljs-comment"># create a TaskManager object and load data</span>
+    task_manager = TaskManager(storage)
+    task_manager.load_data()
+
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = ui.read_command()
+            execute_command(command, task_manager, ui)
+            task_manager.save_data()
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            ui.display(<span class="hljs-string">'SORRY, I could not perform that command. Problem:'</span> + str(e))
+
+
+main()
+</code></pre>
+                <p>Here's a partial <code>execute_command</code> function:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
+    <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
+        ui.display(<span class="hljs-string">'Bye!'</span>)
+        sys.exit()
+    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'list'</span>:
+        message = task_manager.get_items_as_table()
+        ui.display(message)
+    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'todo'</span>:
+        message = task_manager.add_item(ToDo(command_parts[<span class="hljs-number">1</span>], <span class="hljs-literal">False</span>))
+        ui.display(message)
+    ...
+</code></pre>
+              </panel>
+              <p></p>
+              <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
+              <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✗    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 0 deadlines 0
+&gt;&gt;&gt; What can I do for you?
+
+done 2
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 1 deadlines 0
+&gt;&gt;&gt; What can I do for you?
+
+done 3
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 1 deadlines 1
+&gt;&gt;&gt; What can I do for you?
+
+pending 2
+&gt;&gt;&gt; OK, I have marked that item as pending
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 0 deadlines 1
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✓    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+              <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
                 <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+
+    progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
 
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
         self.description = description
         self.is_done = status
 
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_done: <span class="hljs-comment"># increment progress if needed</span>
+            ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
         self.is_done = <span class="hljs-literal">True</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span>
-        self.is_done = <span class="hljs-literal">False</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_string</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-string">""" Return the details of todo object as a string"""</span>
-        status = <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span>
-        <span class="hljs-keyword">return</span> status.center(<span class="hljs-number">6</span>) + <span class="hljs-string">' '</span> + <span class="hljs-string">'   -'</span>.ljust(<span class="hljs-number">13</span>) + self.description
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_csv</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-string">""" Return the details of todo object as a list,
-        suitable to be stored in a csv file.
-        """</span>
-        <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]
-</code></pre>
-                <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
-    data_file = open(filename)
-    deliveries_reader = csv.reader(data_file)
-    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
-        <span class="hljs-keyword">if</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'T'</span>:
-            items.append(ToDo(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>))
-        <span class="hljs-keyword">elif</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'D'</span>:
-            items.append(Deadline(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>, row[<span class="hljs-number">3</span>]))
-    data_file.close()
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_data</span><span class="hljs-params">(filename, items_to_save)</span>:</span>
-    output_file = open(filename, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>)
-    output_writer = csv.writer(output_file)
-    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items_to_save:
-        output_writer.writerow(item.as_csv())
-    output_file.close()
 </code></pre>
               </panel>
               <p></p>
@@ -642,7 +1429,7 @@ Enter command: exit
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Fri, 15 Mar 2019 14:55:08 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.21.0</a> at Mon, 18 Mar 2019 12:34:53 GMT</small></div>
 </footer>
 </div>
 </body>
