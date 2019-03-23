@@ -952,4 +952,62 @@ class ToDo:
 
 {{ hr_double }}
 
+<div id="monty11">
+
+### Monty 11
+
+Enhance the [Monty 10 code]({{ baseUrl }}/programming/toc/monty.html#monty-10) to make the `Deadline` class inherit from the `ToDo` class:
+
+
+
+<panel header=":fas-battery-quarter: Partial solution" minimized>
+
+
+```python
+class ToDo:
+
+    TYPE_KEY = 'T'
+
+    def __init__(self, description, status):
+        self.description = description
+        self.is_done = status
+
+    def mark_as_done(self):
+        self.is_done = True
+
+    def mark_as_pending(self):
+        self.is_done = False
+
+    def __status_as_icon(self):
+        return '✓' if self.is_done else '✗'
+
+    def __str__(self):
+        return '(' + self.__status_as_icon() + ') ' + self.description
+
+    # more code ...
+
+
+class Deadline (ToDo):
+
+    TYPE_KEY = 'D'
+
+    def __init__(self, description, status, by):
+        super().__init__(description, status)
+        self.by = by
+
+    def __str__(self):
+        return super().__str__() + ' [by: ' + self.by + ']'
+
+```
+
+Note:
+* There no need for the `Deadline` class to implement methods such as `mark_as_done` because it inherits those methods from the parent class.
+* Note how the `Deadline` class overrides some methods (e.g., `__init__`) but uses the parent class method inside the overridden method (e.g., `__init__` method of the `Deadline` class calls the `super().__init__()` method.
+
+</panel>
+
+</div>
+
+{{ hr_double }}
+
 %%Remaining increments to be added soon.%%

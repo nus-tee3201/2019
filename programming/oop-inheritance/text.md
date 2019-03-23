@@ -66,7 +66,7 @@ Observe how,
  * a `Teacher` object can use the `print_info()` method defined in the parent class.
  * the statement `dan = Teacher('Dan')` invokes the `__init__()` method defined in the parent class too.
  * the statement `print('the name is', dan.name)` is accessing the attribute `name` from a `Teacher` object although the attribute is defined in the parent class.
- * the method `teach` accesses the attribute `name` using `self.name` although the attribute is defined in teh parent class.
+ * the method `teach` accesses the attribute `name` using `self.name` although the attribute is defined in the parent class.
 </box>
 
 <include src="exercisePanel.md" boilerplate var-title="Add `Fish` Class" var-file="e-addFishClass.md" />
