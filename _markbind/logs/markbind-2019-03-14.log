@@ -1,0 +1,14 @@
+2019-03-14T14:08:58.913Z - info: Website generation started at 22:08:53
+2019-03-14T14:09:02.324Z - info: Building assets...
+2019-03-14T14:09:04.422Z - info: Assets built
+2019-03-14T14:09:04.423Z - info: Generating pages...
+2019-03-14T14:10:22.507Z - info: Pages built
+2019-03-14T14:10:39.878Z - info: Website generation complete! Total build time: 106.263s
+2019-03-14T14:10:40.020Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-03-14T14:10:40.021Z - info: Press CTRL+C to stop ...
+2019-03-14T14:10:40.092Z - info: Site data built
+2019-03-14T14:17:37.725Z - info: [22:17:37] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\oop-visibility\text.md
+2019-03-14T14:17:38.730Z - info: Rebuilding affected source files
+2019-03-14T14:17:38.731Z - info: Rebuilding 2 pages
+2019-03-14T14:17:40.094Z - info: Pages rebuilt
+2019-03-14T14:17:40.098Z - info: Site data built

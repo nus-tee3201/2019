@@ -11,13 +11,12 @@
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.21.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website - Admin Info</title>
     <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
     <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../markbind/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../markbind/css/github.min.css">
     <link rel="stylesheet" href="../markbind/css/markbind.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -277,7 +276,7 @@
                   </li>
                   <li>
                     <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
-                      <img src="/2019/book/about//2019/book/about/images/chromeSaveAsPdf.png"></p>
+                      <img src="/2019/book/about/images/chromeSaveAsPdf.png"></p>
                   </li>
                 </ol>
               </div>
@@ -1244,6 +1243,53 @@ list
               <p></p>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
+            <div id="monty11">
+              <h3 id="monty-11">Monty 11<a class="fa fa-anchor" href="#monty-11"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-10">Monty 10 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
+              <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+
+    TYPE_KEY = <span class="hljs-string">'T'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
+        self.description = description
+        self.is_done = status
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__status_as_icon</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'('</span> + self.__status_as_icon() + <span class="hljs-string">') '</span> + self.description
+
+    <span class="hljs-comment"># more code ...</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-params">(ToDo)</span>:</span>
+
+    TYPE_KEY = <span class="hljs-string">'D'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status, by)</span>:</span>
+        super().__init__(description, status)
+        self.by = by
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> super().__str__() + <span class="hljs-string">' [by: '</span> + self.by + <span class="hljs-string">']'</span>
+
+</code></pre>
+                <p>Note:</p>
+                <ul>
+                  <li>There no need for the <code>Deadline</code> class to implement methods such as <code>mark_as_done</code> because it inherits those methods from the parent class.</li>
+                  <li>Note how the <code>Deadline</code> class overrides some methods (e.g., <code>__init__</code>) but uses the parent class method inside the overridden method (e.g., <code>__init__</code> method of the <code>Deadline</code> class calls the <code>super().__init__()</code> method.</li>
+                </ul>
+              </panel>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
             <p><span class="dimmed">Remaining increments to be added soon.</span></p>
           </div>
         </modal>
@@ -1579,7 +1625,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.21.0</a> at Mon, 18 Mar 2019 12:34:53 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Sat, 23 Mar 2019 04:07:06 GMT</small></div>
 </footer>
 </div>
 </body>

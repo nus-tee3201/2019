@@ -11,13 +11,12 @@
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.21.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TE3201 Website - Textbook Chapter : Software Architecture</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../markbind/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="../../markbind/css/github.min.css">
     <link rel="stylesheet" href="../../markbind/css/markbind.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -241,9 +240,9 @@
                     <p><span class="fas fa-cube"></span> A possible architecture for a <em>Minesweeper</em> game</p>
                     <table>
                       <tr>
-                        <td><img src="/2019/book/architecture/introduction/what//2019/book/architecture/introduction/what/images/minesweeper.png" height="220"></td>
+                        <td><img src="/2019/book/architecture/introduction/what/images/minesweeper.png" height="220"></td>
                         <td width="10px"></td>
-                        <td><img src="/2019/book/architecture/introduction/what//2019/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></td>
+                        <td><img src="/2019/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></td>
                       </tr>
                     </table>
                     <p></p>
@@ -368,7 +367,7 @@
                   </ul>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Consider the two architecture diagrams of the same software given below. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the Logic component is no longer captured.</p>
-                    <img src="/2019/book/architecture/architectureDiagrams/drawing//2019/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
+                    <img src="/2019/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
                     <p></p>
                   </tip-box>
                 </div>
@@ -426,10 +425,10 @@
                   <p></p>
                   <div>
                     <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
-                    <img src="/2019/book/architecture/architecturalStyles/nTier/what//2019/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
+                    <img src="/2019/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
                     <tip-box>
                       <p><span class="fas fa-cube"></span> Operating systems and network communication software often use n-tier style.
-                        <img src="/2019/book/architecture/architecturalStyles/nTier/what//2019/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                        <img src="/2019/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
                     </tip-box>
                     <p></p>
                   </div>
@@ -453,11 +452,11 @@
                   <p></p>
                   <div>
                     <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed applications.</p>
-                    <img src="/2019/book/architecture/architecturalStyles/clientServer/what//2019/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
+                    <img src="/2019/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
                     <p></p>
                     <tip-box>
                       <p><span class="fas fa-cube"></span> The online game and the Web application below uses the client-server style.</p>
-                      <img src="/2019/book/architecture/architecturalStyles/clientServer/what//2019/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200">
+                      <img src="/2019/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200">
                     </tip-box>
                   </div>
                   <div></div>
@@ -480,10 +479,10 @@
                   <p></p>
                   <div>
                     <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong> Task queuing, ordering, undo etc. are handled by the dispatcher.</p>
-                    <img src="/2019/book/architecture/architecturalStyles/transactionProcessing/what//2019/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
+                    <img src="/2019/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
                     <tip-box>
                       <p><span class="fas fa-cube"></span> In this example from a Banking system, transactions are generated by the terminals used by <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
-                      <img src="/2019/book/architecture/architecturalStyles/transactionProcessing/what//2019/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120">
+                      <img src="/2019/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120">
                     </tip-box>
                   </div>
                   <div></div>
@@ -508,7 +507,7 @@
                     <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and XML is used as the language of communication between service providers and service users.</p>
                     <tip-box>
                       <p><span class="fas fa-cube"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards. Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA architecture, their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
-                      <img src="/2019/book/architecture/architecturalStyles/serviceOriented/what//2019/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                      <img src="/2019/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
                       <p></p>
                     </tip-box>
                   </div>
@@ -532,10 +531,10 @@
                   <p></p>
                   <div>
                     <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong> This architectural style is often used in GUIs.</p>
-                    <img src="/2019/book/architecture/architecturalStyles/eventDriven/what//2019/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" width="450">
+                    <img src="/2019/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" width="450">
                     <tip-box>
                       <p><span class="fas fa-cube"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can be transmitted to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
-                      <img src="/2019/book/architecture/architecturalStyles/eventDriven/what//2019/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" width="450">
+                      <img src="/2019/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" width="450">
                     </tip-box>
                   </div>
                   <div></div>
@@ -637,7 +636,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.21.0</a> at Mon, 18 Mar 2019 12:34:53 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.20.0</a> at Sat, 23 Mar 2019 04:07:06 GMT</small></div>
 </footer>
 </div>
 </body>
