@@ -1,99 +1,11 @@
-2019-03-15T14:04:23.827Z - info: Website generation started at 22:04:17
-2019-03-15T14:04:30.562Z - info: Building assets...
-2019-03-15T14:04:33.862Z - info: Assets built
-2019-03-15T14:04:33.862Z - info: Generating pages...
-2019-03-15T14:06:58.251Z - info: Pages built
-2019-03-15T14:07:26.716Z - info: Website generation complete! Total build time: 188.753s
-2019-03-15T14:07:26.752Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
-2019-03-15T14:07:26.752Z - info: Press CTRL+C to stop ...
-2019-03-15T14:07:26.765Z - info: Site data built
-2019-03-15T14:08:01.021Z - info: [22:08:01] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:08:02.025Z - info: Rebuilding affected source files
-2019-03-15T14:08:02.041Z - info: Rebuilding 12 pages
-2019-03-15T14:08:12.702Z - info: Pages rebuilt
-2019-03-15T14:08:12.726Z - info: Site data built
-2019-03-15T14:17:09.898Z - info: [22:17:09] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:17:10.909Z - info: Rebuilding affected source files
-2019-03-15T14:17:10.909Z - info: Rebuilding 12 pages
-2019-03-15T14:17:20.531Z - info: Pages rebuilt
-2019-03-15T14:17:20.543Z - info: Site data built
-2019-03-15T14:20:40.161Z - info: [22:20:40] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:20:41.170Z - info: Rebuilding affected source files
-2019-03-15T14:20:41.182Z - info: Rebuilding 12 pages
-2019-03-15T14:20:52.523Z - info: Pages rebuilt
-2019-03-15T14:20:52.531Z - info: Site data built
-2019-03-15T14:22:27.958Z - info: [22:22:27] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:22:28.968Z - info: Rebuilding affected source files
-2019-03-15T14:22:28.980Z - info: Rebuilding 12 pages
-2019-03-15T14:22:38.835Z - info: Pages rebuilt
-2019-03-15T14:22:38.842Z - info: Site data built
-2019-03-15T14:23:00.346Z - info: [22:23:00] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:23:01.350Z - info: Rebuilding affected source files
-2019-03-15T14:23:01.354Z - info: Rebuilding 12 pages
-2019-03-15T14:23:10.420Z - info: Pages rebuilt
-2019-03-15T14:23:10.432Z - info: Site data built
-2019-03-15T14:26:41.365Z - info: [22:26:41] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:26:42.371Z - info: Rebuilding affected source files
-2019-03-15T14:26:42.371Z - info: Rebuilding 12 pages
-2019-03-15T14:26:52.054Z - info: Pages rebuilt
-2019-03-15T14:26:52.066Z - info: Site data built
-2019-03-15T14:28:30.583Z - info: [22:28:30] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:28:31.596Z - info: Rebuilding affected source files
-2019-03-15T14:28:31.608Z - info: Rebuilding 12 pages
-2019-03-15T14:28:43.140Z - info: Pages rebuilt
-2019-03-15T14:28:43.253Z - info: Site data built
-2019-03-15T14:29:19.687Z - info: [22:29:19] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:29:20.696Z - info: Rebuilding affected source files
-2019-03-15T14:29:20.700Z - info: Rebuilding 12 pages
-2019-03-15T14:29:29.899Z - info: Pages rebuilt
-2019-03-15T14:29:29.911Z - info: Site data built
-2019-03-15T14:31:23.279Z - info: [22:31:23] Reload for file add: C:\repos\nus-te3201\te3201-2019-website\schedule\week9\project-te3201.md
-2019-03-15T14:31:24.282Z - warn: Rebuilding all source files
-2019-03-15T14:31:27.207Z - info: Assets removed
-2019-03-15T14:31:27.207Z - info: Generating pages...
-2019-03-15T14:33:49.356Z - info: [22:33:49] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week9\project-te3201.md
-2019-03-15T14:33:49.748Z - info: [22:33:49] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week9\project-te3201.md
-2019-03-15T14:33:53.525Z - info: Rebuilding affected source files
-2019-03-15T14:33:53.529Z - info: Rebuilding 1 pages
-2019-03-15T14:33:59.687Z - info: Pages rebuilt
-2019-03-15T14:33:59.855Z - info: Site data built
-2019-03-15T14:34:00.253Z - info: Pages built
-2019-03-15T14:35:27.389Z - info: [22:35:27] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\week9\project-te3201.md
-2019-03-15T14:35:28.395Z - info: Rebuilding affected source files
-2019-03-15T14:35:28.399Z - info: Rebuilding 1 pages
-2019-03-15T14:35:29.566Z - info: Pages rebuilt
-2019-03-15T14:35:29.570Z - info: Site data built
-2019-03-15T14:36:01.021Z - info: [22:36:01] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:36:02.025Z - info: Rebuilding affected source files
-2019-03-15T14:36:02.029Z - info: Rebuilding 13 pages
-2019-03-15T14:36:18.079Z - info: Pages rebuilt
-2019-03-15T14:36:18.095Z - info: Site data built
-2019-03-15T14:42:08.702Z - info: [22:42:08] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:42:09.710Z - info: Rebuilding affected source files
-2019-03-15T14:42:09.726Z - info: Rebuilding 13 pages
-2019-03-15T14:42:24.238Z - info: Pages rebuilt
-2019-03-15T14:42:24.253Z - info: Site data built
-2019-03-15T14:45:36.821Z - info: [22:45:36] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\programming\monty\monty.mbdf
-2019-03-15T14:45:37.829Z - info: Rebuilding affected source files
-2019-03-15T14:45:37.841Z - info: Rebuilding 13 pages
-2019-03-15T14:45:52.483Z - info: Pages rebuilt
-2019-03-15T14:45:52.498Z - info: Site data built
-2019-03-15T14:50:48.098Z - info: Website generation started at 22:50:43
-2019-03-15T14:50:53.494Z - info: Building assets...
-2019-03-15T14:50:57.030Z - info: Assets built
-2019-03-15T14:50:57.030Z - info: Generating pages...
-2019-03-15T14:53:21.756Z - info: Pages built
-2019-03-15T14:54:00.718Z - info: Website generation complete! Total build time: 197.177s
-2019-03-15T14:54:00.719Z - info: Build success!
-2019-03-15T14:54:00.732Z - info: Site data built
-2019-03-15T14:54:09.999Z - error: fatal: unable to access 'https://github.com/nus-te3201/2019.git/': Couldn't resolve host 'github.com'
-
-2019-03-15T14:55:00.033Z - info: Website generation started at 22:54:54
-2019-03-15T14:55:03.488Z - info: Building assets...
-2019-03-15T14:55:08.040Z - info: Assets built
-2019-03-15T14:55:08.041Z - info: Generating pages...
-2019-03-15T14:57:05.282Z - info: Pages built
-2019-03-15T14:57:37.116Z - info: Website generation complete! Total build time: 162.987s
-2019-03-15T14:57:37.116Z - info: Build success!
-2019-03-15T14:57:37.162Z - info: Site data built
-2019-03-15T14:58:14.857Z - info: Deployed!
+2019-03-15T11:12:59.983Z - info: Website generation started at 7:12:56 PM
+2019-03-15T11:13:02.660Z - info: Building assets...
+2019-03-15T11:13:04.871Z - info: Assets built
+2019-03-15T11:13:04.871Z - info: Generating pages...
+2019-03-15T11:14:01.134Z - info: Pages built
+2019-03-15T11:14:11.954Z - info: Website generation complete! Total build time: 75.917s
+2019-03-15T11:14:12.332Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-03-15T11:14:12.332Z - info: Press CTRL+C to stop ...
+2019-03-15T11:14:12.349Z - info: Site data built
+2019-03-15T11:40:30.858Z - info: [7:40:30 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\site.json
+2019-03-15T11:40:31.873Z - info: Assets built

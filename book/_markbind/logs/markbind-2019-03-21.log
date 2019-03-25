@@ -1,0 +1,10 @@
+2019-03-21T04:14:25.388Z - info: Website generation started at 12:14:25 PM
+2019-03-21T04:14:31.342Z - info: Building assets...
+2019-03-21T04:14:45.763Z - info: Assets built
+2019-03-21T04:14:45.764Z - info: Generating pages...
+2019-03-21T04:15:32.544Z - info: Pages built
+2019-03-21T04:15:41.913Z - info: Website generation complete! Total build time: 76.535s
+2019-03-21T04:15:42.278Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\book\_site" at http://127.0.0.1:8080
+2019-03-21T04:15:42.278Z - info: Press CTRL+C to stop ...
+2019-03-21T04:15:42.350Z - info: Site data built
+2019-03-21T04:23:36.122Z - info: Deployed!

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 1.22.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - C++ to Java: Some Useful Classes: The Arrays Class</title>
+    <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css" >
+    <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
+    
+    
+    
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="content-wrapper">
+  <div>
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
+    <div class="website-content">
+      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use the Arrays class</span></span></span></span></p>
+      <p></p>
+      <p></p>
+      <div>
+        <div></div>
+        <p></p>
+        <p><span class="dimmed"><strong><span>C++ to Java → Some Useful Classes →
+              </span></strong></span></p>
+        <div id="title-and-body">
+          <div>
+            <h4 id="the-arrays-class"><span>The <code>Arrays</code> class</span></h4>
+          </div>
+          <div id="main">
+            <div>
+              <p><strong><a href="https://docs.oracle.com/javase/9/docs/api/java/util/Arrays.html"><code>java.util.Arrays</code></a> provides methods for working with arrays.</strong> One of them, <code>toString</code>, returns a string representation of an array. It also provides a <code>copyOf</code> that copies an array.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Using <code>Arrays.copyOf</code> and <code>Arrays.toString</code>:</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>};
+
+<span class="hljs-keyword">int</span>[] b = Arrays.copyOf(a, <span class="hljs-number">3</span>); <span class="hljs-comment">// copy first three elements</span>
+System.out.println(Arrays.toString(b));
+
+<span class="hljs-keyword">int</span>[] c = Arrays.copyOf(a, a.length); <span class="hljs-comment">// copy all elements</span>
+System.out.println(Arrays.toString(c));
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre><code class="hljs">[1, 2, 3]
+[1, 2, 3, 4]
+</code></pre>
+              </box>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `filterEmails` method">
+                        <question>
+                          <p>Implement the following two methods in the code below to produce the given output.</p>
+                          <ul>
+                            <li><strong><code>filterEmailsfilterEmails(String[] items): String[]</code></strong>
+                              <ul>
+                                <li><code>items</code> is an array of strings each of which may be an email address or some other random string</li>
+                                <li>Returns a <code>String[]</code> containing email addresses that were in <code>items</code>. Any string containing <code>@</code> is considered as an email.<br>
+                                  <code>[&quot;aaa@bbb&quot;, &quot;xyz&quot;]</code> <span class="fas fa-arrow-right"></span> <code>[&quot;aaa@bbb&quot;]</code></li>
+                              </ul>
+                            </li>
+                            <li><strong><code>printItems(String[] items)</code></strong>
+                              <ul>
+                                <li>Prints <code>items</code> in the standard array format. e.g., <code>[&quot;aaa&quot;, &quot;bbb&quot;]</code> <span class="fas fa-arrow-right"></span> <code>[aaa, bbb]</code></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
+        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printItems</span><span class="hljs-params">(String[] items)</span></span>{
+        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{}));
+        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"abc"</span>}));
+        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"adam@example.com"</span>, <span class="hljs-string">"aab"</span>, <span class="hljs-string">"john@example.com"</span>, <span class="hljs-string">"some@"</span>}));
+        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"xyz"</span>, <span class="hljs-string">"@bee.com"</span>, <span class="hljs-string">"aab"</span>}));
+    }
+}
+</code></pre>
+                          <p><span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs">[]
+[]
+[adam@example.com, john@example.com, some@]
+[@bee.com]
+
+</code></pre>
+                          <div slot="hint">
+                            <ul>
+                              <li><strong><code>filterEmailsfilterEmails(String[] items): String[]</code></strong>
+                                <ol>
+                                  <li>create a new array (say <code>emails</code>) of the same size as <code>items</code></li>
+                                  <li>go through the elements in the <code>items</code> and add to <code>emails</code> if the element contains <code>@</code> (you can use the <code>contains</code> method of the <code>String</code> class here)</li>
+                                  <li>Use <code>Arrays.copyOf</code> method to return the filled part of <code>emails</code>.</li>
+                                </ol>
+                              </li>
+                              <li><strong><code>printItems(String[] items)</code></strong>
+                                <ul>
+                                  <li>💡 You can use the <code>Arrays.toString()</code> method for this.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <panel type="seamless" header="Partial solution">
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
+    String[] results = <span class="hljs-keyword">new</span> String[items.length];
+    <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(String item: items){
+        <span class="hljs-keyword">if</span> (item.contains(<span class="hljs-string">"@"</span>)){
+           <span class="hljs-comment">//...</span>
+        }
+    }
+    <span class="hljs-keyword">return</span> Arrays.copyOf(results, matchCount);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printItems</span><span class="hljs-params">(String[] items)</span></span>{
+    System.out.println(Arrays.toString(items));
+}
+</code></pre>
+                            </panel>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script src="../../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+    const enableSearch = false
+</script>
+<script src="../../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
+<script src="../../../../../markbind/layouts/default/scripts.js"></script>
+</html>

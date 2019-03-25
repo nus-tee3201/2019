@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 1.22.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Website - Reuse: Frameworks: Frameworks vs Libraries</title>
+    <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css" >
+    <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+    <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
+    
+    
+    
+    <link rel="icon" href="/2019/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <div id="content-wrapper">
+  <div>
+    <link rel="stylesheet" href="/2019/book/css/textbook.css">
+    <div class="website-content">
+      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can differentiate between frameworks and libraries</span></span></span></span></p>
+      <p></p>
+      <p></p>
+      <div>
+        <div></div>
+        <p></p>
+        <p><span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
+              </span></strong></span></p>
+        <div id="title-and-body">
+          <div>
+            <h4 id="frameworks-vs-libraries"><span>Frameworks vs Libraries</span></h4>
+          </div>
+          <div id="main">
+            <div>
+              <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
+              <ul>
+                <li>
+                  <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
+                    <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
+                </li>
+                <li>
+                  <p><strong>Your code calls the library code while the framework code calls your code.</strong>
+                    <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span> In the case of libraries, your code calls libraries.</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about software frameworks">
+                      <question>
+                        <p>Choose correct statements about software frameworks.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
+                          <p>Explanation: While both libraries and frameworks are reuse mechanisms, and both more concrete than principles and patterns, libraries differ from frameworks in some key ways. One of them is the ‘inversion of control’ used by frameworks but not libraries. Furthermore, frameworks do not have to be bigger than libraries all the time.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which are frameworks?">
+                      <question>
+                        <p>Which one of these are frameworks ?</p>
+                        <ul radio-group="58823" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> a. JUnit</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> b. Eclipse</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> c. Drupal</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> d. Ruby on Rails</label></li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(a)(b)(c)(d)</p>
+                          <p>Explanation: These are frameworks.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script src="../../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/2019'
+    const enableSearch = false
+</script>
+<script src="../../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "29bf21caddc74372e5c75f9a557715ec",
+        indexName: "te3201_2019",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
+<script src="../../../../../markbind/layouts/default/scripts.js"></script>
+</html>
