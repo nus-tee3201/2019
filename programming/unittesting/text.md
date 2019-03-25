@@ -1,4 +1,4 @@
-# Appendix B: Unit Testing
+# Appendix D: Unit Testing
 
 The built-in module `unittest` supports automation of unit testing in an object-oriented way.
 

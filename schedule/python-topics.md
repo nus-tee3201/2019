@@ -126,7 +126,7 @@
   * [Reading from Files](#reading-from-files)
   * [Writing to Files](#writing-to-files)
   * [CSV Files](#csv-files)
-* [**Using an IDE**](#appendix-c-using-an-ide)
+* [**Using an IDE**](#appendix-b-using-an-ide)
 </div>
 
 # Files
@@ -188,13 +188,16 @@
 
 * [**Object-Oriented Programing - Part III**](#object-oriented-programming---continued)
   * [Inheritance](#inheritance)
-* [**Unit Testing**](#appendix-b-unit-testing)
+* [**Organizing Python Code**](#appendix-c-organizing-python-code)
+* [**Unit Testing**](#appendix-d-unit-testing)
 </div>
 
 # Object-Oriented Programming
 
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
 
+<include src="../programming/organizing/text.md" />{{ hr_double }}
+  
 <include src="../programming/unittesting/text.md" />{{ hr_double }}
 </div>
 <div id="week11">

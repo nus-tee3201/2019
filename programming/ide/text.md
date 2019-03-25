@@ -1,4 +1,4 @@
-# Appendix C: Using an IDE
+# Appendix B: Using an IDE
 
 **There are several Python <trigger trigger="click" for="modal:pythonIde-IDEs">IDEs (Integrated Development Environments)</trigger>** that you can use to manage a Python programming project.
 

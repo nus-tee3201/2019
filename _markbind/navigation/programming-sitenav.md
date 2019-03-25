@@ -13,8 +13,9 @@
 * ------------------------------------------------------------------------
 * %%**Appendices**%%
 * [**A.** Installing 3rd Party Modules]({{ baseUrl }}/programming/toc/thirdparty.html)
-* [**B.** Unit Testing]({{ baseUrl }}/programming/toc/unittesting.html)
-* [**C.** Using an IDE]({{ baseUrl }}/programming/toc/ide.html)
-* [**D.** The Monty Project]({{ baseUrl }}/programming/toc/monty.html)
+* [**B.** Using an IDE]({{ baseUrl }}/programming/toc/ide.html)
+* [**C.** Organizing Python Code]({{ baseUrl }}/programming/toc/organizing.html)
+* [**D.** Unit Testing]({{ baseUrl }}/programming/toc/unittesting.html)
+* [**E.** The Monty Project]({{ baseUrl }}/programming/toc/monty.html)
 
 </navigation>
