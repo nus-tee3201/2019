@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="MarkBind 1.22.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Python Basics: Unit Testing</title>
+    <title>TE3201 Website - Python Basics: Organizing Python Code</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
@@ -33,7 +33,7 @@
     <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
 
   <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#appendix-d-unit-testing">Appendix D: Unit Testing&#x200E;</a>
+    <a class="nav-link py-1" href="#appendix-c-organizing-python-code">Appendix C: Organizing Python Code&#x200E;</a>
 
   </nav>
 </nav>
@@ -57,8 +57,8 @@
       <li style="margin-top: 10px"><span class="dimmed"><strong>Appendices</strong></span></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a current"><strong>D.</strong> Unit Testing</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/organizing.html" class="site-nav__a current"><strong>C.</strong> Organizing Python Code</a></li>
+      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
       <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
     </ul>
   </div>
@@ -118,98 +118,114 @@
           </div>
           <div id="main">
             <div>
-              <h1 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing"></a></h1>
-              <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
-              <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
-              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span>
-  <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span>
-  <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_same_person</span><span class="hljs-params">(person, keyword)</span>:</span>
-  <span class="hljs-string">"""Return True if the parameter 'person' (type: dictionary)
-  contains a key 'name' whose value contains the 
-  parameter 'keyword' (type: string)
-  e.g., 
-  * is_same_person({'name': 'jackie'}, 'jack') returns True
-  * is_same_person({'name': 'jackie'}, 'jackie-chan') returns False
-  """</span>
-  <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]
+              <h1 id="appendix-c-organizing-python-code">Appendix C: Organizing Python Code<a class="fa fa-anchor" href="#appendix-c-organizing-python-code"></a></h1>
+              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code>import</code> it first.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Consider the following two files residing in the same directory.</p>
+                <p><code>[project_root]/student.py</code>:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+    print(name, <span class="hljs-string">'is a student'</span>)
 </code></pre>
-              <p>This is how we can write some unit tests for the two functions.</p>
-              <pre><code class="hljs python"><span class="hljs-keyword">import</span> search, unittest
+                <p><code>[project_root]/course.py</code>:</p>
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
 
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_is_same_person</span><span class="hljs-params">(self)</span>:</span>
-    jack = {<span class="hljs-string">'name'</span>:<span class="hljs-string">'jack'</span>}
-    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'jack'</span>))
-    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ack'</span>))
-    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ac'</span>))
-    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'j'</span>))
-    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'k'</span>))
-    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'jackie'</span>))
-    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'blackjack'</span>))
-    self.assertFalse(search.is_same_person({<span class="hljs-string">'name'</span>: <span class="hljs-string">'x'</span>, <span class="hljs-string">'other'</span>: <span class="hljs-string">'jack'</span>}, <span class="hljs-string">'jack'</span>))
-    <span class="hljs-keyword">with</span> self.assertRaises(KeyError):
-      search.is_same_person({}, <span class="hljs-string">'jack'</span>)
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_first_name</span><span class="hljs-params">(self)</span>:</span>
-    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy'</span>), <span class="hljs-string">'Amy'</span>)
-    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Bernice'</span>), <span class="hljs-string">'Amy'</span>)
-    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)
-    <span class="hljs-keyword">with</span> self.assertRaises(IndexError):
-      search.get_first_name(<span class="hljs-string">''</span>)
-
-<span class="hljs-comment"># activate the test runner      </span>
-unittest.main()
+student.describe(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-              <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
-              <pre><code class="hljs">...
-----------------------------------------------------------------------
-Ran 2 tests in 0.019s
-
-OK
+                <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
+              </box>
+              <p><strong>You can organize files into sub-directories too.</strong></p>
+              <box>
+                <p><span class="fas fa-cube"></span> Consider the following two files.</p>
+                <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span>
+    print(list(text))
 </code></pre>
-              <p>Things to note:</p>
-              <ul>
-                <li>A class containing unit tests should inherit from <code>unittest.TestCase</code></li>
-                <li>Names of functions containing test code should start with <code>test</code> e.g., <code>test_is_same_person()</code></li>
-                <li>These methods (inherited from the parent class) can be used to compare actual with the expected value:
-                  <ul>
-                    <li><code>assertTrue(actual)</code> : test passes if <code>actual == True</code></li>
-                    <li><code>assertFalse(actual)</code> : test passes if <code>actual == False</code></li>
-                    <li><code>assertEquals(actual, expected)</code> : test passes if <code>actual == expected</code></li>
-                    <li><code>with self.assertRaises(Exception):</code> passes if the code block it contains raises the specified exception.</li>
-                  </ul>
-                </li>
-              </ul>
-              <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
-              <pre><code class="hljs python">self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)
+                <p><code>[project_root]/course.py</code>:</p>
+                <pre><code class="hljs python"><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc 
+
+misc.print_as_list(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-              <p>the output will be something like this:</p>
-              <pre><code class="hljs">F.
-======================================================================
-FAIL: test_get_first_name (__main__.TestSearch)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File &quot;main.py&quot;, line 19, in test_get_first_name
-    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')
-AssertionError: 'Amy' != 'Foo'
-- Amy
-+ Foo
+                <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
+              </box>
+              <p>When you import a module, Python will interpret and execute any code in it.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
+                <p><code>[project_root]/student.py</code>:</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+    print(name, <span class="hljs-string">'is a student'</span>)
 
-
-----------------------------------------------------------------------
-Ran 2 tests in 0.001s
-
-FAILED (failures=1)
+describe(<span class="hljs-string">'Betty'</span>)
 </code></pre>
-              <p>📎 Resources:</p>
-              <ul>
-                <li>More on unit testing: <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
-                <li>Unit testing in the PyCharm IDE: <a href="https://www.youtube.com/watch?v=-VzJvNLooj4">https://www.youtube.com/watch?v=-VzJvNLooj4</a></li>
-              </ul>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/course.py</code>:</p>
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+
+student.describe(<span class="hljs-string">'Adam'</span>)
+</code></pre>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Betty is a student
+Adam is a student
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Notice how the output contains <code>Betty is a student</code>. That is because the line <code>describe('Betty')</code> in <code>student.py</code> is being executed as the <code>student</code> module is being imported.</p>
+              </box>
+              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> In the code below, the <code>student</code> module can be executed to get the following output.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/student.py</code>:</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+    print(name, <span class="hljs-string">'is a student'</span>)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    describe(<span class="hljs-string">'Betty'</span>)
+</code></pre>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Betty is a student
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>When the <code>student</code> module is imported to another module, <code>describe('Betty')</code> line is no longer executed.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/course.py</code>:</p>
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+
+student.describe(<span class="hljs-string">'Adam'</span>)
+</code></pre>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Adam is a student
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>

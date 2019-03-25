@@ -1010,4 +1010,24 @@ Note:
 
 {{ hr_double }}
 
+<div id="monty12">
+
+### Monty 12
+
+Enhance the [Monty 11 code]({{ baseUrl }}/programming/toc/monty.html#monty-11) to divide the source code into multiple files (e.g., `todo.py`, `deadline.py`, etc.).
+
+</div>
+
+{{ hr_double }}
+
+<div id="monty13">
+
+### Monty 13
+
+Add some unit tests to [Monty 12 code]({{ baseUrl }}/programming/toc/monty.html#monty-12).
+
+</div>
+
+{{ hr_double }}
+
 %%Remaining increments to be added soon.%%
