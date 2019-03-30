@@ -10,6 +10,7 @@
 * [Files]({{ baseUrl }}/programming/toc/files.html)
 * [Dictionaries]({{ baseUrl }}/programming/toc/dictionaries.html)
 * [Object-Oriented Programming]({{ baseUrl }}/programming/toc/oop.html)
+* [GUIs]({{ baseUrl }}/programming/toc/gui.html)
 * ------------------------------------------------------------------------
 * %%**Appendices**%%
 * [**A.** Installing 3rd Party Modules]({{ baseUrl }}/programming/toc/thirdparty.html)

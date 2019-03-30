@@ -202,6 +202,9 @@
 </div>
 <div id="week11">
 
+# GUIs
+
+<include src="../programming/gui/text.md" />{{ hr_double }}
 
 </div>
 <div id="week12">
