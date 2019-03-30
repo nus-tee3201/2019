@@ -77,7 +77,152 @@
     <div></div>
     <tabs>
       <tab header="<span class='fas fa-code'></span> Programming Topics">
-        <div></div>
+        <div>
+          <h1 id="guis">GUIs<a class="fa fa-anchor" href="#guis"></a></h1>
+          <div>
+            <h3 id="gui-basics">GUI Basics<a class="fa fa-anchor" href="#gui-basics"></a></h3>
+            <box type="warning">
+              <p>Writing <em>Graphical User Interfaces (GUIs)</em> is relatively more complicated than writing regular code. Here, we give a very small peek into GUI programming in Python.
+              </p>
+            </box>
+            <p><strong>There are different frameworks that you can use to write Python graphical user interfaces (GUIs)</strong> <span class="dimmed">e.g., Tkinter, KIVY, PyQT, WxPython</span>. The one we'll be using here is Tkinter, which is a way to use the popular Tk GUI framework <tooltip content="Tk can be used via other languages too">via Python</tooltip>.</p>
+            <p><strong>Tkinter comes with the Python installation</strong>; you can start writing Tkinter GUIs right away without having to install anything extra.</p>
+            <p>Here is the code for the simplest GUI:</p>
+            <div>
+              <div></div>
+              <div></div>
+              <table>
+                <tr>
+                  <td valign="top">
+                    <pre><code class="hljs python"><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
+
+<span class="hljs-comment"># create a Window</span>
+window = Tk()
+
+<span class="hljs-comment"># set Window title</span>
+window.title(<span class="hljs-string">'Hello World!'</span>)
+
+<span class="hljs-comment"># start the Window</span>
+window.mainloop()
+</code></pre>
+                  </td>
+                  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                  <td valign="bottom">
+                    <img src="/2019/programming/gui/images/helloworld.png"></td>
+                </tr>
+              </table>
+            </div>
+            <p></p>
+            <p><strong>A GUI typically contains <tooltip content="elements on a GUI such as buttons, labels, text boxes are called _widgets_"><em>widgets</em></tooltip>.</strong> The example GUI below not only has some widgets but also has some dynamic behavior i.e., clicking the button increments the displayed number by the amount in the text box.</p>
+            <div>
+              <div></div>
+              <div></div>
+              <table>
+                <tr>
+                  <td valign="top">
+                    <img src="/2019/programming/gui/images/increment1.png"></td>
+                  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                  <td valign="bottom">
+                    <img src="/2019/programming/gui/images/increment2.png"></td>
+                </tr>
+              </table>
+            </div>
+            <p></p>
+            <p>Here's the full code for the above example:</p>
+            <pre><code class="hljs python"><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
+
+<span class="hljs-comment"># create a window</span>
+window = Tk()
+window.title(<span class="hljs-string">'Increment!'</span>)
+window.geometry(<span class="hljs-string">'250x150'</span>)
+
+<span class="hljs-comment"># create a label</span>
+label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))
+label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)
+
+<span class="hljs-comment"># create a text box</span>
+textbox = Entry(window, width=<span class="hljs-number">2</span>)
+textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)
+textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)
+
+
+<span class="hljs-comment"># define a function to be called when the button is clicked</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span>
+    label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment"># get int value of the label text</span>
+    textbox_value = int(textbox.get())  <span class="hljs-comment"># get int value of the textbox text</span>
+    label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment"># set label text to the sum of above two</span>
+
+
+<span class="hljs-comment"># add a button, bind it to the function</span>
+button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)
+button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)
+
+<span class="hljs-comment"># start the window</span>
+window.mainloop()
+</code></pre>
+            <p>Let's go through the code to see how it works.</p>
+            <ul>
+              <li>
+                <pre><code class="hljs python">window.geometry(<span class="hljs-string">'250x150'</span>)
+</code></pre>
+                <p>Sets the size of the Window.</p>
+                <p></p>
+                <p></p>
+              </li>
+              <li>
+                <pre><code class="hljs python">label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))
+label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)
+</code></pre>
+                <ul>
+                  <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_labels.php"><em>Label</em> widget</a></strong> to show the current total. Sets its value to <code>0</code>. Sets the font to <code>Arial Bold</code> and font size to <code>50</code>.</li>
+                  <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <tooltip content="i.e., where widgets are placed">layout</tooltip> of the GUI</a>. In this case we are using a <tooltip content="It places the widgets in a 2-dimensional table, which consists of a number of rows and columns. The position of a widget is defined by a row and a column number."><em>grid</em> approach</tooltip>. This statement places the label at <code>0,0</code> cell of the grid.<p></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <pre><code class="hljs python">textbox = Entry(window, width=<span class="hljs-number">2</span>)
+textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)
+textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)
+</code></pre>
+                <ul>
+                  <li><strong>Creates an <a href="https://www.python-course.eu/tkinter_entry_widgets.php"><em>Entry</em> widget</a></strong> for the user to enter the increment size. Sets its width to <code>2</code> characters.</li>
+                  <li>Places it at the <code>0,1</code> cell <span class="dimmed">(i.e., first column, 2nd row)</span>.</li>
+                  <li>Sets the initial value of the widget to <code>2</code>. The value it placed at the <code>0</code>th character position.<p></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span>
+    label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment">#1</span>
+    textbox_value = int(textbox.get())  <span class="hljs-comment">#2</span>
+    label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment">#3</span>
+</code></pre>
+                <p><strong>Creats a function to be called when the button is clicked.</strong> It will increment the value shown in the label by the amount shown in the entry widget.</p>
+                <ul>
+                  <li><span class="dimmed">#1</span>: Reads the <code>text</code> property of the label widget and converts it to an <code>int</code></li>
+                  <li><span class="dimmed">#2</span>: Reads the value of the entry widget and converts it to an <code>int</code></li>
+                  <li><span class="dimmed">#3</span>: Sums the two values, converts the sum into a <code>str</code>, and sets it as the value of the label widget.<p></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <pre><code class="hljs python">button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)
+button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)
+</code></pre>
+                <ul>
+                  <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_buttons.php"><em>Button</em> widget</a></strong> for the user to click. Sets its display text to <code>Add</code>. Sets its command to the function <code>button_clicked</code> i.e., when the button is clicked, the specified function will be called.</li>
+                  <li>Places the button in the <code>1,1</code> cell of the grid.</li>
+                </ul>
+              </li>
+            </ul>
+            <p><span class="fas fa-paperclip"></span> Resources:</p>
+            <ul>
+              <li><a href="https://techsore.com/best-python-gui/">Best Python GUI Framework/Toolkits 2019</a></li>
+              <li><a href="https://www.python-course.eu/python_tkinter.php">Python Tkinter Course</a> from <a href="http://python-course.eu">python-course.eu</a></li>
+            </ul>
+          </div>
+          <hr style="border-top: 3px double #c5c5c5;">
+        </div>
       </tab>
       <tab header="<span class='fas fa-graduation-cap'></span> SE Topics">
         <div>
@@ -1527,7 +1672,128 @@ Enter side 1:
         </div>
       </tab>
       <tab header="<span class='fas fa-drafting-compass'></span> Project">
-        <div></div>
+        <div>
+          <div>
+            <h3 id="monty-14">Monty 14<a class="fa fa-anchor" href="#monty-14"></a></h3>
+            <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-13">Monty 13 code</a> to integrate it with the skeletal GUI given below.</p>
+            <p>Notes about the given version of the GUI:</p>
+            <ul>
+              <li>The GUI shows the list of tasks all the time.</li>
+              <li>It initializes with some dummy data.</li>
+              <li>It only supports an <code>add</code> command and a <code>help</code> command.</li>
+            </ul>
+            <p>Here are some screenshots of the GUI:<br>
+              <img src="/2019/programming/monty/images/gui-start.png"></p>
+            <p></p>
+            <img src="/2019/programming/monty/images/gui-later.png">
+            <p></p>
+            <panel type="seamless" header="Skeletal GUI code">
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
+<span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
+
+<span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GUI</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, task_manager)</span>:</span>
+        self.task_manager = task_manager
+        self.window = Tk()
+        self.window.geometry(<span class="hljs-string">'800x700'</span>)  <span class="hljs-comment"># set Window size</span>
+        self.window.title(<span class="hljs-string">'Monty'</span>)  <span class="hljs-comment"># set Window title</span>
+
+        self.input_box = Entry(self.window)  <span class="hljs-comment"># create an input box</span>
+        self.input_box.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, fill=<span class="hljs-string">'x'</span>)  <span class="hljs-comment"># make the input box fill the width of the Window</span>
+        self.input_box.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, self.command_entered)  <span class="hljs-comment"># bind the command_entered function to the Enter key</span>
+        self.input_box.focus()  <span class="hljs-comment"># set focus to the input box</span>
+
+        <span class="hljs-comment"># add a text area to show the chat history</span>
+        self.history_area = Text(self.window, width=<span class="hljs-string">"50"</span>)
+        self.history_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=LEFT, fill=<span class="hljs-string">"y"</span>)
+        self.output_font = (<span class="hljs-string">'Courier New'</span>, <span class="hljs-number">12</span>)
+        self.history_area.tag_configure(<span class="hljs-string">'error_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
+        self.history_area.tag_configure(<span class="hljs-string">'success_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
+        self.history_area.tag_configure(<span class="hljs-string">'normal_format'</span>, font=self.output_font)
+
+        <span class="hljs-comment"># add a text area to show the list of tasks</span>
+        self.list_area = Text(self.window)
+        self.list_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=RIGHT, fill=<span class="hljs-string">"both"</span>)
+        self.list_area.tag_configure(<span class="hljs-string">'normal_format'</span>,  font=self.output_font)
+        self.list_area.tag_configure(<span class="hljs-string">'pending_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
+        self.list_area.tag_configure(<span class="hljs-string">'done_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
+
+        <span class="hljs-comment"># show the welcome message and the list of tasks</span>
+        self.update_chat_history(<span class="hljs-string">'start'</span>, <span class="hljs-string">'Welcome to Monty!'</span>, <span class="hljs-string">'success_format'</span>)
+        self.update_task_list(self.task_manager.items)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_chat_history</span><span class="hljs-params">(self, command, response, status_format)</span>:</span>
+        <span class="hljs-string">"""
+        status_format: indicates which color to use for the status message
+          can be 'error_format', 'success_format', or 'normal_format'
+        """</span>
+        current_time = datetime.datetime.now().strftime(<span class="hljs-string">"%H:%M:%S"</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'-'</span> * <span class="hljs-number">40</span> + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'&gt;&gt;&gt; '</span> + response + <span class="hljs-string">'\n'</span>, status_format)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'You said: '</span> + command + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, current_time + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_task_list</span><span class="hljs-params">(self, tasks)</span>:</span>
+        self.list_area.delete(<span class="hljs-string">'1.0'</span>, END)  <span class="hljs-comment"># clear the list area</span>
+        <span class="hljs-keyword">for</span> i, task <span class="hljs-keyword">in</span> enumerate(tasks):
+            <span class="hljs-keyword">if</span> task[<span class="hljs-number">1</span>]:
+                icon = <span class="hljs-string">'✓'</span>
+                output_format = <span class="hljs-string">'done_format'</span>
+            <span class="hljs-keyword">else</span>:
+                icon = <span class="hljs-string">'✗'</span>
+                output_format = <span class="hljs-string">'pending_format'</span>
+            self.list_area.insert(END, icon + <span class="hljs-string">' '</span> + str(i+<span class="hljs-number">1</span>) + <span class="hljs-string">' '</span> + task[<span class="hljs-number">0</span>] + <span class="hljs-string">'\n'</span>, output_format)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_input_box</span><span class="hljs-params">(self)</span>:</span>
+        self.input_box.delete(<span class="hljs-number">0</span>, END)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">command_entered</span><span class="hljs-params">(self, event)</span>:</span>
+        command = <span class="hljs-literal">None</span>
+        <span class="hljs-keyword">try</span>:
+            command = self.input_box.get()
+            <span class="hljs-keyword">if</span> command.strip().lower() == <span class="hljs-string">'exit'</span>:
+                sys.exit()
+            output = self.task_manager.execute_command(command)
+            self.update_chat_history(command, output, <span class="hljs-string">'success_format'</span>)
+            self.update_task_list(self.task_manager.items)
+            self.clear_input_box()
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            self.update_chat_history(command, str(e) + <span class="hljs-string">'\n'</span> + self.task_manager.get_help(), <span class="hljs-string">'error_format'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span><span class="hljs-params">(self)</span>:</span>
+        self.window.mainloop()
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.items = [
+            [<span class="hljs-string">'task 1'</span>, <span class="hljs-literal">True</span>],
+            [<span class="hljs-string">'task 2'</span>, <span class="hljs-literal">False</span>],
+            [<span class="hljs-string">'task 3'</span>, <span class="hljs-literal">True</span>]
+        ]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_help</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'help:\n...'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(self, command)</span>:</span>
+        <span class="hljs-keyword">if</span> command == <span class="hljs-string">'help'</span>:
+            <span class="hljs-keyword">return</span> self.get_help()
+        <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+            self.items.append([command[<span class="hljs-number">4</span>:], <span class="hljs-literal">False</span>])
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'task added'</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
+
+
+GUI(TaskManager()).start()
+</code></pre>
+            </panel>
+          </div>
+        </div>
       </tab>
     </tabs>
   </div>
@@ -1535,7 +1801,7 @@ Enter side 1:
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 25 Mar 2019 12:03:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Sat, 30 Mar 2019 10:58:51 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -1301,7 +1301,127 @@ list
               <p>Add some unit tests to <a href="/2019/programming/toc/monty.html#monty-12">Monty 12 code</a>.</p>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
-            <p><span class="dimmed">Remaining increments to be added soon.</span></p>
+            <div id="monty14">
+              <h3 id="monty-14">Monty 14<a class="fa fa-anchor" href="#monty-14"></a></h3>
+              <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-13">Monty 13 code</a> to integrate it with the skeletal GUI given below.</p>
+              <p>Notes about the given version of the GUI:</p>
+              <ul>
+                <li>The GUI shows the list of tasks all the time.</li>
+                <li>It initializes with some dummy data.</li>
+                <li>It only supports an <code>add</code> command and a <code>help</code> command.</li>
+              </ul>
+              <p>Here are some screenshots of the GUI:<br>
+                <img src="/2019/programming/monty/images/gui-start.png"></p>
+              <p></p>
+              <img src="/2019/programming/monty/images/gui-later.png">
+              <p></p>
+              <panel type="seamless" header="Skeletal GUI code">
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
+<span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
+
+<span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GUI</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, task_manager)</span>:</span>
+        self.task_manager = task_manager
+        self.window = Tk()
+        self.window.geometry(<span class="hljs-string">'800x700'</span>)  <span class="hljs-comment"># set Window size</span>
+        self.window.title(<span class="hljs-string">'Monty'</span>)  <span class="hljs-comment"># set Window title</span>
+
+        self.input_box = Entry(self.window)  <span class="hljs-comment"># create an input box</span>
+        self.input_box.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, fill=<span class="hljs-string">'x'</span>)  <span class="hljs-comment"># make the input box fill the width of the Window</span>
+        self.input_box.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, self.command_entered)  <span class="hljs-comment"># bind the command_entered function to the Enter key</span>
+        self.input_box.focus()  <span class="hljs-comment"># set focus to the input box</span>
+
+        <span class="hljs-comment"># add a text area to show the chat history</span>
+        self.history_area = Text(self.window, width=<span class="hljs-string">"50"</span>)
+        self.history_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=LEFT, fill=<span class="hljs-string">"y"</span>)
+        self.output_font = (<span class="hljs-string">'Courier New'</span>, <span class="hljs-number">12</span>)
+        self.history_area.tag_configure(<span class="hljs-string">'error_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
+        self.history_area.tag_configure(<span class="hljs-string">'success_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
+        self.history_area.tag_configure(<span class="hljs-string">'normal_format'</span>, font=self.output_font)
+
+        <span class="hljs-comment"># add a text area to show the list of tasks</span>
+        self.list_area = Text(self.window)
+        self.list_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=RIGHT, fill=<span class="hljs-string">"both"</span>)
+        self.list_area.tag_configure(<span class="hljs-string">'normal_format'</span>,  font=self.output_font)
+        self.list_area.tag_configure(<span class="hljs-string">'pending_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
+        self.list_area.tag_configure(<span class="hljs-string">'done_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
+
+        <span class="hljs-comment"># show the welcome message and the list of tasks</span>
+        self.update_chat_history(<span class="hljs-string">'start'</span>, <span class="hljs-string">'Welcome to Monty!'</span>, <span class="hljs-string">'success_format'</span>)
+        self.update_task_list(self.task_manager.items)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_chat_history</span><span class="hljs-params">(self, command, response, status_format)</span>:</span>
+        <span class="hljs-string">"""
+        status_format: indicates which color to use for the status message
+          can be 'error_format', 'success_format', or 'normal_format'
+        """</span>
+        current_time = datetime.datetime.now().strftime(<span class="hljs-string">"%H:%M:%S"</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'-'</span> * <span class="hljs-number">40</span> + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'&gt;&gt;&gt; '</span> + response + <span class="hljs-string">'\n'</span>, status_format)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'You said: '</span> + command + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, current_time + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_task_list</span><span class="hljs-params">(self, tasks)</span>:</span>
+        self.list_area.delete(<span class="hljs-string">'1.0'</span>, END)  <span class="hljs-comment"># clear the list area</span>
+        <span class="hljs-keyword">for</span> i, task <span class="hljs-keyword">in</span> enumerate(tasks):
+            <span class="hljs-keyword">if</span> task[<span class="hljs-number">1</span>]:
+                icon = <span class="hljs-string">'✓'</span>
+                output_format = <span class="hljs-string">'done_format'</span>
+            <span class="hljs-keyword">else</span>:
+                icon = <span class="hljs-string">'✗'</span>
+                output_format = <span class="hljs-string">'pending_format'</span>
+            self.list_area.insert(END, icon + <span class="hljs-string">' '</span> + str(i+<span class="hljs-number">1</span>) + <span class="hljs-string">' '</span> + task[<span class="hljs-number">0</span>] + <span class="hljs-string">'\n'</span>, output_format)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_input_box</span><span class="hljs-params">(self)</span>:</span>
+        self.input_box.delete(<span class="hljs-number">0</span>, END)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">command_entered</span><span class="hljs-params">(self, event)</span>:</span>
+        command = <span class="hljs-literal">None</span>
+        <span class="hljs-keyword">try</span>:
+            command = self.input_box.get()
+            <span class="hljs-keyword">if</span> command.strip().lower() == <span class="hljs-string">'exit'</span>:
+                sys.exit()
+            output = self.task_manager.execute_command(command)
+            self.update_chat_history(command, output, <span class="hljs-string">'success_format'</span>)
+            self.update_task_list(self.task_manager.items)
+            self.clear_input_box()
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            self.update_chat_history(command, str(e) + <span class="hljs-string">'\n'</span> + self.task_manager.get_help(), <span class="hljs-string">'error_format'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span><span class="hljs-params">(self)</span>:</span>
+        self.window.mainloop()
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.items = [
+            [<span class="hljs-string">'task 1'</span>, <span class="hljs-literal">True</span>],
+            [<span class="hljs-string">'task 2'</span>, <span class="hljs-literal">False</span>],
+            [<span class="hljs-string">'task 3'</span>, <span class="hljs-literal">True</span>]
+        ]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_help</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'help:\n...'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(self, command)</span>:</span>
+        <span class="hljs-keyword">if</span> command == <span class="hljs-string">'help'</span>:
+            <span class="hljs-keyword">return</span> self.get_help()
+        <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+            self.items.append([command[<span class="hljs-number">4</span>:], <span class="hljs-literal">False</span>])
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'task added'</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
+
+
+GUI(TaskManager()).start()
+</code></pre>
+              </panel>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
           </div>
         </modal>
         <h3 id="software-to-build">Software to build<a class="fa fa-anchor" href="#software-to-build"></a></h3>
@@ -1636,7 +1756,7 @@ list : lists all TODOs
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 25 Mar 2019 12:03:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Sat, 30 Mar 2019 10:58:51 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -278,3 +278,10 @@ Missing reference in C:\repos\nus-te3201\te3201-2019-website\programming\toc\org
 2019-03-25T12:01:10.066Z - info: Site data built
 2019-03-25T12:03:31.378Z - info: Website generation started at 8:03:25 PM
 2019-03-25T12:03:34.975Z - info: Building assets...
+2019-03-25T12:03:37.794Z - info: Assets built
+2019-03-25T12:03:37.794Z - info: Generating pages...
+2019-03-25T12:05:10.692Z - info: Pages built
+2019-03-25T12:05:29.358Z - info: Website generation complete! Total build time: 123.822s
+2019-03-25T12:05:29.359Z - info: Build success!
+2019-03-25T12:05:29.369Z - info: Site data built
+2019-03-25T12:06:36.712Z - info: Deployed!
