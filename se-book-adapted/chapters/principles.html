@@ -1,203 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-122519234-1');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter : Principles</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    <link rel="stylesheet" href="../../markbind/css/site-nav.css">
-    <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <link rel="icon" href="/2019/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-122519234-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Textbook Chapter : Principles</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2019/book/css/textbook.css">
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="app">
-    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
-
-  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#principles">Principles&#x200E;</a>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#single-responsibility-principle">Single Responsibility Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#open-closed-principle">Open-Closed Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#liskov-substitution-principle">Liskov Substitution Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#interface-segregation-principle">Interface Segregation Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#dependency-inversion-principle">Dependency Inversion Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#solid-principles">SOLID Principles&#x200E;</a>
-      <a class="nav-link py-1" href="#separation-of-concerns-principle">Separation of Concerns Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#law-of-demeter">Law of Demeter&#x200E;</a>
-      <a class="nav-link py-1" href="#yagni-principle">YAGNI Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#dry-principle">DRY Principle&#x200E;</a>
-      <a class="nav-link py-1" href="#brooks-law">Brooks' Law&#x200E;</a>
-    </nav>
-
-  </nav>
-</nav>
-
-<div id="flex-body">
-  <div id="site-nav">
-    <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark">
+        <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+        <dropdown text="Schedule" class="nav-link algolia-no-index">
+          <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+          <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+          <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+          <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+          <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+          <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+          <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+          <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+          <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+          <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+          <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        </dropdown>
+        <dropdown text="Textbook" class="nav-link algolia-no-index">
+          <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <dropdown text="Links" class="nav-link algolia-no-index">
+          <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+          <ul class="px-3 site-nav-list">
+            <li class="mt-2"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn">Supplementary
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Requirements</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Design</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Project Management</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">Supplementary
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="site-nav-btn-wrap">
-    <div id="site-nav-btn">
-      <div class="menu-top-bar"></div>
-      <div class="menu-middle-bar"></div>
-      <div class="menu-bottom-bar"></div>
-    </div>
-  </div>
-  <div id="page-content">
-    <div id="page-nav-content-wrapper">
+      </nav>
       <div id="content-wrapper">
         <link rel="stylesheet" href="/2019/book/css/textbook.css">
         <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
         <div class="website-content">
-          <div>
-            <navbar placement="top" type="inverse" class="temp-navbar">
-              <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-              <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-              <dropdown text="Schedule" class="nav-link temp-dropdown">
-                <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-                <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-                <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-                <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-                <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-                <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-                <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-                <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-                <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-                <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-                <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-                <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-                <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-              </dropdown>
-              <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-              <dropdown text="Textbook" class="nav-link temp-dropdown">
-                <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-                <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-              </dropdown>
-              <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-              <div class="nav-link temp-dropdown-placeholder">Links</div>
-              <dropdown text="Links" class="nav-link temp-dropdown">
-                <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-                <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-              </dropdown>
-              <li slot="right" class="nav-link">
-                <form class="navbar-form">
-                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-                </form>
-              </li>
-            </navbar>
-          </div>
           <p><span class="dimmed"><strong><span></span></strong></span></p>
           <div id="title">
             <div>
@@ -270,9 +244,9 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP" class="algolia-no-index">
                         <question>
                           <p>Which of these is closest to the meaning of the open-closed principle?</p>
                           <ul radio-group="6906e" class="radio-list">
@@ -308,11 +282,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                   </div>
                 </tip-box>
                 <p>LSP sounds same as <trigger large trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-                <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
+                <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability" class="algolia-no-index">
                     <div>
                     <div>
                       <p>
-                        <panel src="/2019/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Paradigms → Object Oriented Programming → Inheritance → What%%" popup-url="/2019/book/oop/inheritance/what"></panel>
+                        <panel src="/2019/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Paradigms → Object Oriented Programming → Inheritance → What%%" popup-url="/2019/book/oop/inheritance/what" class="algolia-no-index"></panel>
                       </p>
                     </div>
                     <p></p>
@@ -358,7 +332,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     <li><code>Admin</code> class follows LSP because it fulfills <code>Payroll</code>’s expectation of <code>Staff</code> objects (i.e. it works for all positive values). Substituting <code>Admin</code> objects for Staff objects will not break the <code>Payroll</code> class functionality.</li>
                     <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially break the <code>Payroll</code> class functionality.</li>
                   </ul>
-                  <panel type="seamless" header="%%Another example%%">
+                  <panel type="seamless" header="%%Another example%%" class="algolia-no-index">
                     <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
                     <img src="/2019/book/principles/liskovSubstitutionPrinciple//2019/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                     <p></p>
@@ -392,9 +366,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?" class="algolia-no-index">
                         <question>
                           <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
                           <ul radio-group="55ada" class="radio-list">
@@ -475,9 +449,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle.">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle." class="algolia-no-index">
                         <question>
                           <p>Which of these statements is true about the Dependency Inversion Principle.</p>
                           <ul class="task-list">
@@ -513,7 +487,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               <p></p>
               <div>
                 <p>The five OOP principles given below are known as <em>SOLID Principles</em> (an acronym made up of the first letter of each principle):</p>
-                <panel type="seamless" header="**S**ingle Responsibility Principle (SRP)">
+                <panel type="seamless" header="**S**ingle Responsibility Principle (SRP)" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -554,7 +528,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     </div>
                   </div>
                 </panel>
-                <panel type="seamless" header="**O**pen-Closed Principle (OCP)">
+                <panel type="seamless" header="**O**pen-Closed Principle (OCP)" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -587,9 +561,9 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP" class="algolia-no-index">
                                   <question>
                                     <p>Which of these is closest to the meaning of the open-closed principle?</p>
                                     <ul radio-group="6906e" class="radio-list">
@@ -612,7 +586,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     </div>
                   </div>
                 </panel>
-                <panel type="seamless" header="**L**iskov Substitution Principle (LSP)">
+                <panel type="seamless" header="**L**iskov Substitution Principle (LSP)" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -630,11 +604,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                             </div>
                           </tip-box>
                           <p>LSP sounds same as <trigger large trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-                          <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
+                          <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability" class="algolia-no-index">
                               <div>
                               <div>
                                 <p>
-                                  <panel src="/2019/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Paradigms → Object Oriented Programming → Inheritance → What%%" popup-url="/2019/book/oop/inheritance/what"></panel>
+                                  <panel src="/2019/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Paradigms → Object Oriented Programming → Inheritance → What%%" popup-url="/2019/book/oop/inheritance/what" class="algolia-no-index"></panel>
                                 </p>
                               </div>
                               <p></p>
@@ -680,7 +654,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                               <li><code>Admin</code> class follows LSP because it fulfills <code>Payroll</code>’s expectation of <code>Staff</code> objects (i.e. it works for all positive values). Substituting <code>Admin</code> objects for Staff objects will not break the <code>Payroll</code> class functionality.</li>
                               <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially break the <code>Payroll</code> class functionality.</li>
                             </ul>
-                            <panel type="seamless" header="%%Another example%%">
+                            <panel type="seamless" header="%%Another example%%" class="algolia-no-index">
                               <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
                               <img src="/2019/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                               <p></p>
@@ -714,9 +688,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?" class="algolia-no-index">
                                   <question>
                                     <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
                                     <ul radio-group="55ada" class="radio-list">
@@ -737,7 +711,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     </div>
                   </div>
                 </panel>
-                <panel type="seamless" header="**I**nterface Segregation Principle (ISP)">
+                <panel type="seamless" header="**I**nterface Segregation Principle (ISP)" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -780,7 +754,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     </div>
                   </div>
                 </panel>
-                <panel type="seamless" header="**D**ependency Inversion Principle (DIP)">
+                <panel type="seamless" header="**D**ependency Inversion Principle (DIP)" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -807,9 +781,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle.">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle." class="algolia-no-index">
                                   <question>
                                     <p>Which of these statements is true about the Dependency Inversion Principle.</p>
                                     <ul class="task-list">
@@ -864,7 +838,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
                   </ul>
                 </tip-box>
-                <p><strong>Applying <tooltip content="Separation of Concerns">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+                <p><strong>Applying <tooltip content="Separation of Concerns" class="algolia-no-index">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
                 <tip-box>
                   <p><span class="fas fa-cube"></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the security is implemented.</p>
                 </tip-box>
@@ -872,7 +846,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                 <tip-box>
                   <p><span class="fas fa-cube"></span> The <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
                 </tip-box>
-                <modal title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:soc-nTier">
+                <modal title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:soc-nTier" class="algolia-no-index">
                     <div>
                     <div></div>
                     <p></p>
@@ -898,7 +872,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   </div>
                 </modal>
                 <p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
-                <modal title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="soc-coupling">
+                <modal title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="soc-coupling" class="algolia-no-index">
                     <div>
                     <div></div>
                     <p></p>
@@ -924,9 +898,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                         </div>
                         <div>
                           <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coupling levels of alternative designs">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coupling levels of alternative designs" class="algolia-no-index">
                                   <question has-input="true">
                                     <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                                     <tip-box>
@@ -940,7 +914,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                 </panel>
                               </div>
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> regressions and coupling.">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> regressions and coupling." class="algolia-no-index">
                                   <question has-input="true">
                                     <p>Explain the link (if any) between regressions and coupling.</p>
                                     <div slot="answer">
@@ -950,17 +924,17 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                 </panel>
                               </div>
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coupling and testability">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coupling and testability" class="algolia-no-index">
                                   <question has-input="true">
-                                    <p>Discuss the relationship between coupling and <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                                    <p>Discuss the relationship between coupling and <tooltip content="a measure of how easily a given component can be tested" class="algolia-no-index">testability</tooltip>.</p>
                                     <div slot="answer">
-                                      <p>Coupling decreases testability because if the <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                      <p>Coupling decreases testability because if the <tooltip content="Software Under Test" class="algolia-no-index">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                                     </div>
                                   </question>
                                 </panel>
                               </div>
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about coupling">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about coupling" class="algolia-no-index">
                                   <question>
                                     <p>Choose the correct statements.</p>
                                     <ul class="task-list">
@@ -984,7 +958,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     </div>
                   </div>
                 </modal>
-                <modal title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="soc-cohesion">
+                <modal title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="soc-cohesion" class="algolia-no-index">
                     <div>
                     <div></div>
                     <p></p>
@@ -1012,9 +986,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> correct statement about SoC">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> correct statement about SoC" class="algolia-no-index">
                         <question>
                           <p>“Only the GUI class should interact with the user. The GUI class should only concern itself with user interactions”. This statement follows from,</p>
                           <ul class="task-list">
@@ -1062,7 +1036,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   <li>The object <code>O</code> itself</li>
                   <li>Objects passed as parameters of <code>m</code></li>
                   <li>Objects created/instantiated in <code>m</code> (directly or indirectly)</li>
-                  <li>Objects from the <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
+                  <li>Objects from the <tooltip content="objects that are held by instance variables of" class="algolia-no-index">direct association of</tooltip> <code>O</code></li>
                 </ul>
                 <tip-box>
                   <p><span class="fas fa-cube"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code> is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
@@ -1079,9 +1053,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Examples for LoD">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Examples for LoD" class="algolia-no-index">
                         <question has-input="true">
                           <p>Explain the Law of Demeter using code examples. You are to make up your own code examples. Take Minesweeper as the basis for your code examples.</p>
                           <div slot="answer">
@@ -1099,7 +1073,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> LoD violation?">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> LoD violation?" class="algolia-no-index">
                         <question>
                           <p>This violates Law of Demeter.</p>
                           <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
@@ -1119,7 +1093,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Odd one out">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Odd one out" class="algolia-no-index">
                         <question>
                           <p>Pick the odd one out.</p>
                           <ul class="task-list">
@@ -1209,9 +1183,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
               <div>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Brook’s Law vs school project">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Brook’s Law vs school project" class="algolia-no-index">
                         <question has-input="true">
                           <p>Do the Brook’s Law apply to a school project? Justify.</p>
                           <div slot="answer">
@@ -1221,7 +1195,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one is related to Brook's law">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one is related to Brook's law" class="algolia-no-index">
                         <question>
                           <p>Which one of these (all attributed to Fred Brooks, the author of the famous SE book <em>The Mythical Man-Month</em>), is called the Brook’s law?</p>
                           <ul class="task-list">
@@ -1243,15 +1217,34 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </panel>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#principles">Principles&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#single-responsibility-principle">Single Responsibility Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#open-closed-principle">Open-Closed Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#liskov-substitution-principle">Liskov Substitution Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#interface-segregation-principle">Interface Segregation Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#dependency-inversion-principle">Dependency Inversion Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#solid-principles">SOLID Principles&#x200E;</a>
+              <a class="nav-link py-1" href="#separation-of-concerns-principle">Separation of Concerns Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#law-of-demeter">Law of Demeter&#x200E;</a>
+              <a class="nav-link py-1" href="#yagni-principle">YAGNI Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#dry-principle">DRY Principle&#x200E;</a>
+              <a class="nav-link py-1" href="#brooks-law">Brooks' Law&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+    </footer>
   </div>
-</div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 01 Apr 2019 12:19:01 GMT</small></div>
-</footer>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -1259,22 +1252,28 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>

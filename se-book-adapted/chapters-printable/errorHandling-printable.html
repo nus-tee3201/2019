@@ -1,130 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter [Printable] : Error Handling</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Textbook Chapter [Printable] : Error Handling</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
-    <div id="content-wrapper">
-  <link rel="stylesheet" href="/2019/book/css/textbook.css">
-  <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
-  <link rel="stylesheet" href="/2019/book/css/print.css">
-  <div class="website-content">
-    <div id="title">
-      <div>
-        <h1 id="error-handling"><span>Error Handling</span><a class="fa fa-anchor" href="#error-handling"></a></h1>
-      </div>
-    </div>
-    <div>
-      <p><small><span class="dimmed"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
-    </div>
-    <p>
-      <div>
-        <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
-      </div>
-    </p>
-    <div class="indented-less">
-      <div class="indented-less">
-        <h4 id="what">What <span class="badge badge-light"><small><small>
-                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span></h4>
-        <div class="indented-less">
-          <div>
-            <blockquote>
-              <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p>
-      <div>
-        <h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions"></a></h2>
-      </div>
-    </p>
-    <div class="indented-less">
-      <div class="indented-less">
-        <h4 id="what-2">What <span class="badge badge-light"><small><small>
-                <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span></h4>
-        <div class="indented-less">
-          <div>
-            <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
-            <tip-box type="definition">
-              <div>
-                <p><strong>Exception</strong>:</p>
-                <blockquote>
-                  <p>The term <em>exception</em> is shorthand for the phrase &quot;exceptional event.&quot; An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
-                </blockquote>
-              </div>
-            </tip-box>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Examples:</p>
-              <ul>
-                <li>A network connection encounters a timeout due to a slow server.</li>
-                <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
-              </ul>
-            </tip-box>
-          </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="how">How <span class="badge badge-light"><small><small>
-                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span></h4>
-        <div class="indented-less">
-          <div>
-            <p><strong>Most languages allow code that encountered an &quot;exceptional&quot; situation to encapsulate details of the situation in an <em>Exception</em> object and <em>throw</em>/<em>raise</em> that object so that another piece of code can <em>catch</em> it and deal with it.</strong> This is especially useful when the code that encountered the unusual situation does not know how to deal with it.</p>
-            <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
-            <div class="indented">
-              <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
-              <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
-              <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p>
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <link rel="stylesheet" href="/2019/book/css/textbook.css">
+        <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
+        <link rel="stylesheet" href="/2019/book/css/print.css">
+        <div class="website-content">
+          <div id="title">
+            <div>
+              <h1 id="error-handling"><span>Error Handling</span><a class="fa fa-anchor" href="#error-handling"></a></h1>
             </div>
-            <p>Advantages of exception handling in this way:</p>
-            <ul>
-              <li>The ability to propagate error information through the call stack.</li>
-              <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
-            </ul>
           </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="when">When <span class="badge badge-light"><small><small>
-                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </small></small></span></h4>
-        <div class="indented-less">
           <div>
-            <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+            <p><small><span class="dimmed"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
+          </div>
+          <p>
+            <div>
+              <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
+            </div>
+          </p>
+          <div class="indented-less">
+            <div class="indented-less">
+              <h4 id="what">What <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </small></small></span></h4>
+              <div class="indented-less">
+                <div>
+                  <blockquote>
+                    <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            <div>
+              <h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions"></a></h2>
+            </div>
+          </p>
+          <div class="indented-less">
+            <div class="indented-less">
+              <h4 id="what-2">What <span class="badge badge-light"><small><small>
+                      <font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </small></small></span></h4>
+              <div class="indented-less">
+                <div>
+                  <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Exception</strong>:</p>
+                      <blockquote>
+                        <p>The term <em>exception</em> is shorthand for the phrase &quot;exceptional event.&quot; An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
+                      </blockquote>
+                    </div>
+                  </tip-box>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Examples:</p>
+                    <ul>
+                      <li>A network connection encounters a timeout due to a slow server.</li>
+                      <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
+                    </ul>
+                  </tip-box>
+                </div>
+              </div>
+            </div>
+            <div class="indented-less">
+              <h4 id="how">How <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </small></small></span></h4>
+              <div class="indented-less">
+                <div>
+                  <p><strong>Most languages allow code that encountered an &quot;exceptional&quot; situation to encapsulate details of the situation in an <em>Exception</em> object and <em>throw</em>/<em>raise</em> that object so that another piece of code can <em>catch</em> it and deal with it.</strong> This is especially useful when the code that encountered the unusual situation does not know how to deal with it.</p>
+                  <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
+                  <div class="indented">
+                    <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
+                    <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred" class="algolia-no-index"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
+                    <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p>
+                  </div>
+                  <p>Advantages of exception handling in this way:</p>
+                  <ul>
+                    <li>The ability to propagate error information through the call stack.</li>
+                    <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="indented-less">
+              <h4 id="when">When <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </small></small></span></h4>
+              <div class="indented-less">
+                <div>
+                  <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+    </footer>
   </div>
-</div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 01 Apr 2019 12:19:01 GMT</small></div>
-</footer>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -132,22 +135,28 @@
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>

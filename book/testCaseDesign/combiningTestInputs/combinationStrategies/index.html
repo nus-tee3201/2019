@@ -1,345 +1,349 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Test Case Design: Combining Test Inputs: Test Input Combination Strategies</title>
-    <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-    
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Test Case Design: Combining Test Inputs: Test Input Combination Strategies</title>
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
-    <div id="content-wrapper">
-  <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <div class="website-content">
-      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain some basic test input combination strategies</span></span></span></span></p>
-      <p></p>
-      <p></p>
-      <div>
-        <div></div>
-        <p></p>
-        <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
-              </span></strong></span></p>
-        <div id="title-and-body">
-          <div>
-            <h4 id="test-input-combination-strategies"><span>Test Input Combination Strategies</span></h4>
-          </div>
-          <div id="main">
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div>
+          <link rel="stylesheet" href="/2019/book/css/textbook.css">
+          <div class="website-content">
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain some basic test input combination strategies</span></span></span></span></p>
+            <p></p>
+            <p></p>
             <div>
-              <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
-                <p>SUT: <code>foo(p1 char, p2 int, p3 boolean)</code></p>
-                <p>Values to test:</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th style="text-align:center">Input</th>
-                        <th style="text-align:center">Values</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="text-align:center">p1</td>
-                        <td style="text-align:center">a, b, c</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">p2</td>
-                        <td style="text-align:center">1, 2, 3</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">p3</td>
-                        <td style="text-align:center">T, F</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="test-input-combination-strategies"><span>Test Input Combination Strategies</span></h4>
                 </div>
-              </tip-box>
-              <p><strong>The <em>all combinations</em> strategy generates test cases for each unique combination of test inputs.</strong></p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> the strategy generates 3x3x2=18 test cases</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th style="text-align:center">Test Case</th>
-                        <th style="text-align:center">p1</th>
-                        <th style="text-align:center">p2</th>
-                        <th style="text-align:center">p3</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">...</td>
-                        <td style="text-align:center">...</td>
-                        <td style="text-align:center">...</td>
-                        <td style="text-align:center">...</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">18</td>
-                        <td style="text-align:center">c</td>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </tip-box>
-              <p><strong>The <em>at least once</em> strategy includes each test input at least once.</strong></p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> this strategy generates 3 test cases.</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th style="text-align:center">Test Case</th>
-                        <th style="text-align:center">p1</th>
-                        <th style="text-align:center">p2</th>
-                        <th style="text-align:center">p3</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">b</td>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">c</td>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">VV/IV</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p>VV/IV = Any Valid Value / Any Invalid Value</p>
-              </tip-box>
-              <p><strong>The <em>all pairs</em> strategy creates test cases so that for any given pair of inputs, all combinations between them are tested.</strong> It is based on the observations that a bug is rarely the result of more than two interacting factors. The resulting number of test cases is lower than the <em>all combinations</em> strategy, but higher than the <em>at least once</em> approach.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> this strategy generates 9 test cases:</p>
-                <panel type="seamless" header="see steps">
-                  <p>Let's first consider inputs p1 and p2:</p>
-                  <div class="table-responsive">
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th style="text-align:center">Input</th>
-                          <th style="text-align:center">Values</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td style="text-align:center">p1</td>
-                          <td style="text-align:center">a, b, c</td>
-                        </tr>
-                        <tr>
-                          <td style="text-align:center">p2</td>
-                          <td style="text-align:center">1, 2, 3</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <div id="main">
+                  <div>
+                    <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
+                      <p>SUT: <code>foo(p1 char, p2 int, p3 boolean)</code></p>
+                      <p>Values to test:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th style="text-align:center">Input</th>
+                              <th style="text-align:center">Values</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="text-align:center">p1</td>
+                              <td style="text-align:center">a, b, c</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">p2</td>
+                              <td style="text-align:center">1, 2, 3</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">p3</td>
+                              <td style="text-align:center">T, F</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p><strong>The <em>all combinations</em> strategy generates test cases for each unique combination of test inputs.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> the strategy generates 3x3x2=18 test cases</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th style="text-align:center">Test Case</th>
+                              <th style="text-align:center">p1</th>
+                              <th style="text-align:center">p2</th>
+                              <th style="text-align:center">p3</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">...</td>
+                              <td style="text-align:center">...</td>
+                              <td style="text-align:center">...</td>
+                              <td style="text-align:center">...</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">18</td>
+                              <td style="text-align:center">c</td>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p><strong>The <em>at least once</em> strategy includes each test input at least once.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> this strategy generates 3 test cases.</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th style="text-align:center">Test Case</th>
+                              <th style="text-align:center">p1</th>
+                              <th style="text-align:center">p2</th>
+                              <th style="text-align:center">p3</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">b</td>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">c</td>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">VV/IV</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p>VV/IV = Any Valid Value / Any Invalid Value</p>
+                    </tip-box>
+                    <p><strong>The <em>all pairs</em> strategy creates test cases so that for any given pair of inputs, all combinations between them are tested.</strong> It is based on the observations that a bug is rarely the result of more than two interacting factors. The resulting number of test cases is lower than the <em>all combinations</em> strategy, but higher than the <em>at least once</em> approach.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> this strategy generates 9 test cases:</p>
+                      <panel type="seamless" header="see steps" class="algolia-no-index">
+                        <p>Let's first consider inputs p1 and p2:</p>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th style="text-align:center">Input</th>
+                                <th style="text-align:center">Values</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="text-align:center">p1</td>
+                                <td style="text-align:center">a, b, c</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">p2</td>
+                                <td style="text-align:center">1, 2, 3</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p>These values can generate <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),..." class="algolia-no-index">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+                        <p>Next, let's consider p1 and p3.</p>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th style="text-align:center">Input</th>
+                                <th style="text-align:center">Values</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="text-align:center">p1</td>
+                                <td style="text-align:center">a, b, c</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">p3</td>
+                                <td style="text-align:center">T, F</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p>These values can generate <tooltip content="(a,T)(a,F)(b,T)(b,F),..." class="algolia-no-index">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+                        <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
+                        <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
+                      </panel>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th style="text-align:center">Test Case</th>
+                              <th style="text-align:center">p1</th>
+                              <th style="text-align:center">p2</th>
+                              <th style="text-align:center">p3</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">4</td>
+                              <td style="text-align:center">b</td>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">5</td>
+                              <td style="text-align:center">b</td>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">6</td>
+                              <td style="text-align:center">b</td>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">7</td>
+                              <td style="text-align:center">c</td>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">8</td>
+                              <td style="text-align:center">c</td>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">9</td>
+                              <td style="text-align:center">c</td>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th style="text-align:center">Test Case</th>
+                              <th style="text-align:center">p1</th>
+                              <th style="text-align:center">p2</th>
+                              <th style="text-align:center">p3</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">1</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">a</td>
+                              <td style="text-align:center">2</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">b</td>
+                              <td style="text-align:center">3</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">4</td>
+                              <td style="text-align:center">b</td>
+                              <td style="text-align:center">VV/IV</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">5</td>
+                              <td style="text-align:center">c</td>
+                              <td style="text-align:center">VV/IV</td>
+                              <td style="text-align:center">T</td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center">6</td>
+                              <td style="text-align:center">c</td>
+                              <td style="text-align:center">VV/IV</td>
+                              <td style="text-align:center">F</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p><strong>The <em>random</em> strategy generates test cases using one of the other strategies and then pick a subset randomly</strong> (presumably because the original set of test cases is too big).</p>
+                    <p><strong>There are other strategies that can be used too.</strong></p>
                   </div>
-                  <p>These values can generate <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
-                  <p>Next, let's consider p1 and p3.</p>
-                  <div class="table-responsive">
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th style="text-align:center">Input</th>
-                          <th style="text-align:center">Values</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td style="text-align:center">p1</td>
-                          <td style="text-align:center">a, b, c</td>
-                        </tr>
-                        <tr>
-                          <td style="text-align:center">p3</td>
-                          <td style="text-align:center">T, F</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <p>These values can generate <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
-                  <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
-                  <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
-                </panel>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th style="text-align:center">Test Case</th>
-                        <th style="text-align:center">p1</th>
-                        <th style="text-align:center">p2</th>
-                        <th style="text-align:center">p3</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">4</td>
-                        <td style="text-align:center">b</td>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">5</td>
-                        <td style="text-align:center">b</td>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">6</td>
-                        <td style="text-align:center">b</td>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">7</td>
-                        <td style="text-align:center">c</td>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">8</td>
-                        <td style="text-align:center">c</td>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">9</td>
-                        <td style="text-align:center">c</td>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div></div>
                 </div>
-              </tip-box>
-              <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> Testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th style="text-align:center">Test Case</th>
-                        <th style="text-align:center">p1</th>
-                        <th style="text-align:center">p2</th>
-                        <th style="text-align:center">p3</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">1</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">a</td>
-                        <td style="text-align:center">2</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">b</td>
-                        <td style="text-align:center">3</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">4</td>
-                        <td style="text-align:center">b</td>
-                        <td style="text-align:center">VV/IV</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">5</td>
-                        <td style="text-align:center">c</td>
-                        <td style="text-align:center">VV/IV</td>
-                        <td style="text-align:center">T</td>
-                      </tr>
-                      <tr>
-                        <td style="text-align:center">6</td>
-                        <td style="text-align:center">c</td>
-                        <td style="text-align:center">VV/IV</td>
-                        <td style="text-align:center">F</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </tip-box>
-              <p><strong>The <em>random</em> strategy generates test cases using one of the other strategies and then pick a subset randomly</strong> (presumably because the original set of test cases is too big).</p>
-              <p><strong>There are other strategies that can be used too.</strong></p>
+              </div>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
 <script src="../../../../markbind/js/vue-strap.min.js"></script>
@@ -347,22 +351,28 @@
 <script src="../../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
+
 </html>

@@ -1,145 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-122519234-1');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Python Basics: Flow Control</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    <link rel="stylesheet" href="../../markbind/css/site-nav.css">
-    <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-    <link rel="stylesheet" href="/2019/css/main.css">
-    <link rel="stylesheet" href="/2019/css/admin.css">
-    <link rel="icon" href="/2019/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-122519234-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Python Basics: Flow Control</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2019/css/main.css">
+  <link rel="stylesheet" href="/2019/css/admin.css">
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="app">
-    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
-
-  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#program-flow-control">Program Flow Control&#x200E;</a>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#booleans">Booleans&#x200E;</a>
-      <a class="nav-link py-1" href="#if-statements">if Statements&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-even-numbers">Exercise - Even Numbers&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-grade-analyzer">Exercise - Grade Analyzer&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-grade-analyzer-extended">Exercise - Grade Analyzer (Extended)&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#while-statements">while Statements&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-vending-machine-add-loop">Exercise - Vending Machine - Add Loop&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-vending-machine-accept-multiple-coins">Exercise - Vending Machine - Accept Multiple Coins&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-vending-machine-allow-abort">Exercise - Vending Machine - Allow Abort&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-vending-machine-legit-coins">Exercise - Vending Machine - Legit Coins&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#for-statements">for Statements&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-multiplication-table">Exercise - Multiplication Table&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-multiplication-table-extended">Exercise - Multiplication Table (Extended)&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-three-dice-throws">Exercise - Three Dice Throws&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#importing-modules">Importing Modules&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-circle-area">Exercise - Circle Area&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#early-termination">Early Termination&#x200E;</a>
-    </nav>
-
-  </nav>
-</nav>
-
-<div id="flex-body">
-  <div id="site-nav">
-    <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a current">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/gui.html" class="site-nav__a">GUIs</a></li>
-      <li style="margin-top: 10px">
-        <hr>
-      </li>
-      <li style="margin-top: 10px"><span class="dimmed"><strong>Appendices</strong></span></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
-    </ul>
-  </div>
-  <div id="site-nav-btn-wrap">
-    <div id="site-nav-btn">
-      <div class="menu-top-bar"></div>
-      <div class="menu-middle-bar"></div>
-      <div class="menu-bottom-bar"></div>
-    </div>
-  </div>
-  <div id="page-content">
-    <div id="page-nav-content-wrapper">
-      <div id="content-wrapper">
-        <div>
-          <navbar placement="top" type="inverse" class="temp-navbar">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-            <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-            <dropdown text="Schedule" class="nav-link temp-dropdown">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-            </dropdown>
-            <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-            <dropdown text="Textbook" class="nav-link temp-dropdown">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-            <div class="nav-link temp-dropdown-placeholder">Links</div>
-            <dropdown text="Links" class="nav-link temp-dropdown">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-            </dropdown>
-            <li slot="right" class="nav-link">
-              <form class="navbar-form">
-                <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-              </form>
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark">
+        <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+        <dropdown text="Schedule" class="nav-link algolia-no-index">
+          <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+          <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+          <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+          <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+          <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+          <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+          <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+          <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+          <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+          <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+          <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        </dropdown>
+        <dropdown text="Textbook" class="nav-link algolia-no-index">
+          <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <dropdown text="Links" class="nav-link algolia-no-index">
+          <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+          <ul class="px-3 site-nav-list">
+            <li class="mt-2"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a current">Program Flow Control</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/gui.html" class="site-nav__a">GUIs</a></li>
+            <li class="mt-2">
+              <hr>
             </li>
-          </navbar>
+            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
+            <li class="mt-2"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+          </ul>
         </div>
+      </nav>
+      <div id="content-wrapper">
         <div class="website-content" id="main">
           <div id="toc">
             <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a></span></p>
@@ -160,7 +120,7 @@
             <h1 id="program-flow-control">Program Flow Control<a class="fa fa-anchor" href="#program-flow-control"></a></h1>
             <div>
               <h3 id="booleans">Booleans<a class="fa fa-anchor" href="#booleans"></a></h3>
-              <p><strong>The <code>bool</code> data type is used to represent <tooltip content="i.e. true/false values"><em>boolean</em> values</tooltip></strong>. They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
+              <p><strong>The <code>bool</code> data type is used to represent <tooltip content="i.e. true/false values" class="algolia-no-index"><em>boolean</em> values</tooltip></strong>. They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
               <p>The <code>bool</code> data type can hold only two values <code>True</code> and <code>False</code> (case sensitive).</p>
               <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>type(<span class="hljs-literal">True</span>)
 &lt;<span class="hljs-class"><span class="hljs-keyword">class</span> '<span class="hljs-title">bool</span>'&gt;
@@ -319,7 +279,7 @@ print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</spa
               <pre><code class="hljs python">result = (<span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">or</span> (<span class="hljs-number">10</span> &lt; <span class="hljs-number">20</span>) <span class="hljs-comment"># True</span>
 result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</span>) <span class="hljs-keyword">and</span> (<span class="hljs-number">3</span> != <span class="hljs-number">3</span>) <span class="hljs-comment"># False</span>
 </code></pre>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Booleans%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Booleans%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -360,7 +320,7 @@ Done
                   </div>
                 </div>
               </div>
-              <modal large title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
+              <modal large title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor" class="algolia-no-index">
                 <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p>
                 <p>If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to <a href="http://pythontutor.com/visualize.html#mode=edit">PythonTutor.com</a>, copy-paste the above Python code there to see the execution steps.</p>
                 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe>
@@ -390,7 +350,7 @@ Done
                 </panel>
                 <p></p>
               </div>
-              <p><code>if</code> statements can be <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.</p>
+              <p><code>if</code> statements can be <tooltip content="one _if_ statement within another" class="algolia-no-index">nested</tooltip>, using deeper indentation.</p>
               <pre><code class="hljs python">age = <span class="hljs-number">13</span>
 gender = <span class="hljs-string">'F'</span>
 <span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">12</span>) <span class="hljs-keyword">and</span> (age &lt; <span class="hljs-number">20</span>):          
@@ -413,21 +373,21 @@ Girl
 Gender code <span class="hljs-keyword">is</span> F
 Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
 </code></pre>
-              <modal large title="Nested blocks" id="modal:nestedIf-pyTutor">
+              <modal large title="Nested blocks" id="modal:nestedIf-pyTutor" class="algolia-no-index">
                 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Using `if`%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Using `if`%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
               <p></p>
-              <p>If a situation has only two <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities <span class="dimmed">e.g. if we assume the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
+              <p>If a situation has only two <tooltip content="no more than one of them can be true at any time" class="algolia-no-index">mutually exclusive</tooltip> possibilities <span class="dimmed">e.g. if we assume the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
               <p><span class="fas fa-cube"></span> In the example below, the entire <code>else</code> block will be skipped if the <code>if</code> condition is true.</p>
               <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
     print(<span class="hljs-string">'Female'</span>)
 <span class="hljs-keyword">else</span>:
     print(<span class="hljs-string">'Not Female'</span>)               
 </code></pre>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Using `else`%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Using `else`%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=254&end=336&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -443,13 +403,13 @@ Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
 <span class="hljs-keyword">else</span>:
     print(<span class="hljs-string">'Unrecognized value'</span>)             
 </code></pre>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
               <p></p>
               <p>Note that in an <code>if-elif-else</code> construct no more than one block (the first one whose condition is true) will be executed.</p>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Using `elif`%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Using `elif`%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -547,19 +507,19 @@ Done
                         <p>
                           <trigger trigger="click" for="modal:visualizeCodewithasimple`if`condition"><span class="dimmed">[Visualize execution]</span></trigger>
                         </p>
-                        <modal large title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition">
+                        <modal large title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition" class="algolia-no-index">
                           <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                       </div>
                     </td>
                   </tr>
                 </table>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Basic `while` loops%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Basic `while` loops%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -573,7 +533,7 @@ Done
     print(<span class="hljs-string">'Hello'</span>)
 </code></pre>
                 <p>💡 When using IDLE, if a bug in your code caused it to go into an infinite loop, you can use <code>Ctrl + C</code> to force it to stop executing.</p>
-                <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Infinite loops%%">
+                <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Infinite loops%%" class="algolia-no-index">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
               </tip-box>
               <div>
@@ -697,7 +657,7 @@ You have entered: <span class="hljs-number">120</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">20</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <pre><code class="hljs python">...
 coin_sum = <span class="hljs-number">0</span>
 ...
@@ -720,13 +680,13 @@ coin_sum = <span class="hljs-number">0</span>
     print(<span class="hljs-string">'Password incorrect. Try again.'</span>)
 print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> `break` inside `while` loops%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> `break` inside `while` loops%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Allow Abort" expanded no-close>
@@ -753,7 +713,7 @@ You have entered: <span class="hljs-number">20</span>
 Enter a coin: <span class="hljs-number">0</span>
 Your balance: <span class="hljs-number">20</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <pre><code class="hljs python">...
 is_aborting = <span class="hljs-literal">False</span>
 ...
@@ -783,13 +743,13 @@ count = <span class="hljs-number">0</span>
   count = count + <span class="hljs-number">1</span>
 print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> `continue` inside `while` loops%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> `continue` inside `while` loops%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -828,7 +788,7 @@ You have entered: <span class="hljs-number">100</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">0</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <pre><code class="hljs python">...
 <span class="hljs-keyword">if</span> coin_value != <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> ... :
     ...
@@ -873,13 +833,13 @@ Your balance: <span class="hljs-number">0</span>
   print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
   i = i + <span class="hljs-number">1</span>
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Basic `for` statements%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Basic `for` statements%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -901,7 +861,7 @@ Your balance: <span class="hljs-number">0</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">9</span> = <span class="hljs-number">63</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">10</span> = <span class="hljs-number">70</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
                     </panel>
                   </div>
@@ -934,7 +894,7 @@ Your balance: <span class="hljs-number">0</span>
 
 print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, str(total))
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -975,7 +935,7 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
   <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>):
     print(i, <span class="hljs-string">'x'</span>, j, <span class="hljs-string">'='</span>, i*j)
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -996,14 +956,14 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
 <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>
 ...
 </code></pre>
-                    <popover id="pop:exerciseThreeDiceThrows-dice" title placement="top">
+                    <popover id="pop:exerciseThreeDiceThrows-dice" title placement="top" class="algolia-no-index">
                         <div slot="content">
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br>
                           <sub>source: wikipedia</sub></p>
                         <p></p>
                       </div>
                     </popover>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <p>Use three nested <code>for</code> loops.</p>
                     </panel>
                   </div>
@@ -1058,14 +1018,14 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
     print(random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>))
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
               <p>💡 It is common practice to put the <code>import</code> statements at the top of the program code.</p>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Importing modules%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Importing modules%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -1106,28 +1066,61 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):
     print(math.factorial(i+<span class="hljs-number">1</span>)) <span class="hljs-comment"># use i+1 because i starts from 0</span>
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-factorials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Early termination%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Early termination%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=155&end=223&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
           </div>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#program-flow-control">Program Flow Control&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#booleans">Booleans&#x200E;</a>
+              <a class="nav-link py-1" href="#if-statements">if Statements&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-even-numbers">Exercise - Even Numbers&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-grade-analyzer">Exercise - Grade Analyzer&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-grade-analyzer-extended">Exercise - Grade Analyzer (Extended)&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#while-statements">while Statements&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-vending-machine-add-loop">Exercise - Vending Machine - Add Loop&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-vending-machine-accept-multiple-coins">Exercise - Vending Machine - Accept Multiple Coins&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-vending-machine-allow-abort">Exercise - Vending Machine - Allow Abort&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-vending-machine-legit-coins">Exercise - Vending Machine - Legit Coins&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#for-statements">for Statements&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-multiplication-table">Exercise - Multiplication Table&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-multiplication-table-extended">Exercise - Multiplication Table (Extended)&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-three-dice-throws">Exercise - Three Dice Throws&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#importing-modules">Importing Modules&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-circle-area">Exercise - Circle Area&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#early-termination">Early Termination&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+    </footer>
   </div>
-</div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 01 Apr 2019 12:19:01 GMT</small></div>
-</footer>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -1135,22 +1128,28 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>

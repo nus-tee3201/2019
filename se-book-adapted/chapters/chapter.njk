@@ -1,5 +1,6 @@
 {% macro add_front_matter(topic) %}
 title: "Textbook Chapter : {{ topic.heading }}"
+header: header.md
 footer: footer.md
 siteNav: se-book-adapted-sitenav.md
 pageNav: 4
@@ -66,6 +67,7 @@ head: bookHead.md
 {% macro show_chapter(chapter) %}
 <frontmatter>
 title: {{ chapter.heading }}
+header: header.md
 </frontmatter>
 
 {% set level_location =  "../../book/" + chapter.name %}
@@ -73,8 +75,6 @@ title: {{ chapter.heading }}
 <link rel="stylesheet" href="{{baseUrl}}/se-book-adapted/css/te3201.css">
 
 <div class="website-content">
-
-<include src="../../common/header.md" />
 
 %%**<include src="{{ level_location }}/../path.md" inline />**%%
 

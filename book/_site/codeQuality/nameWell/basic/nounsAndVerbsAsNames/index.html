@@ -1,108 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Coding Best Practices: [Practice] Nouns and Verbs as Names</title>
-    <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../../../../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/layouts/default/styles.css">
-    
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Coding Best Practices: [Practice] Nouns and Verbs as Names</title>
+  <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/layouts/default/styles.css">
+
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
-    <div id="content-wrapper">
-  <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <div class="website-content">
-      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></span></p>
-      <p></p>
-      <p></p>
-      <div>
-        <div></div>
-        <p></p>
-        <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Basic →
-              </span></strong></span></p>
-        <div id="title-and-body">
-          <div>
-            <h4 id="use-nouns-for-things-and-verbs-for-actions"><span>Use Nouns for Things and Verbs for Actions</span></h4>
-          </div>
-          <div id="main">
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div>
+          <link rel="stylesheet" href="/2019/book/css/textbook.css">
+          <div class="website-content">
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></span></p>
+            <p></p>
+            <p></p>
             <div>
-              <blockquote>
-                <p><span class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns. <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
-              </blockquote>
-              <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
-              <tip-box>
-                <p>Examples:</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Name for a</th>
-                        <th>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                        </th>
-                        <th>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Class</td>
-                        <td><code>CheckLimit</code></td>
-                        <td><code>LimitChecker</code></td>
-                      </tr>
-                      <tr>
-                        <td>method</td>
-                        <td><code>result()</code></td>
-                        <td><code>calculate()</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Basic →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="use-nouns-for-things-and-verbs-for-actions"><span>Use Nouns for Things and Verbs for Actions</span></h4>
                 </div>
-              </tip-box>
-              <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> Examples:</p>
-                <div class="alt-java">
-                  <p>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                  </p>
-                  <pre><code class="hljs java">Person student;
+                <div id="main">
+                  <div>
+                    <blockquote>
+                      <p><span class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns. <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
+                    </blockquote>
+                    <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
+                    <tip-box>
+                      <p>Examples:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>Name for a</th>
+                              <th>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                              </th>
+                              <th>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Class</td>
+                              <td><code>CheckLimit</code></td>
+                              <td><code>LimitChecker</code></td>
+                            </tr>
+                            <tr>
+                              <td>method</td>
+                              <td><code>result()</code></td>
+                              <td><code>calculate()</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Examples:</p>
+                      <div class="alt-java">
+                        <p>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                        </p>
+                        <pre><code class="hljs java">Person student;
 ArrayList&lt;Person&gt; students;
 </code></pre>
-                </div>
-                <div class="alt-python">
-                  <p>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                  </p>
-                  <pre><code class="hljs python">name = <span class="hljs-string">'Jim'</span>
+                      </div>
+                      <div class="alt-python">
+                        <p>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+                        </p>
+                        <pre><code class="hljs python">name = <span class="hljs-string">'Jim'</span>
 names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]
 </code></pre>
+                      </div>
+                    </tip-box>
+                  </div>
+                  <div></div>
                 </div>
-              </tip-box>
+              </div>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 <script src="../../../../../../markbind/js/vue.min.js"></script>
 <script src="../../../../../../markbind/js/vue-strap.min.js"></script>
@@ -110,22 +114,28 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
 <script src="../../../../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../../../../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../../../../../markbind/layouts/default/scripts.js"></script>
+
 </html>

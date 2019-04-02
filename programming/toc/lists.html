@@ -1,148 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-122519234-1');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Python Basics: Lists</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    <link rel="stylesheet" href="../../markbind/css/site-nav.css">
-    <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-    <link rel="stylesheet" href="/2019/css/main.css">
-    <link rel="stylesheet" href="/2019/css/admin.css">
-    <link rel="icon" href="/2019/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-122519234-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Python Basics: Lists</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2019/css/main.css">
+  <link rel="stylesheet" href="/2019/css/admin.css">
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="app">
-    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
-
-  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#lists">Lists&#x200E;</a>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#the-list-data-structure">The List Data Structure&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-countries">Exercise : Countries&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-get-head-get-tail">Exercise : Get Head, Get Tail&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#object-references">Object References&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-swap-ends">Exercise : Swap Ends&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#working-with-lists">Working with Lists&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-delete-head-delete-tail">Exercise : Delete Head, Delete Tail&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-get-body">Exercise : Get Body&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-get-mid">Exercise : Get Mid&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-expand-to-fill">Exercise : Expand to Fill&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-xor">Exercise : XOR&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-print-card-deck">Exercise : Print Card Deck&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-first-quarter">Exercise : First Quarter&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#methods">Methods&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-remove-extra-spaces">Exercise : Remove Extra Spaces&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#list-methods">List Methods&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#exercise-anagram-checker">Exercise : Anagram Checker&#x200E;</a>
-        <a class="nav-link py-1" href="#exercise-word-game">Exercise : Word Game&#x200E;</a>
-      </nav>
-    </nav>
-
-  </nav>
-</nav>
-
-<div id="flex-body">
-  <div id="site-nav">
-    <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a current">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/gui.html" class="site-nav__a">GUIs</a></li>
-      <li style="margin-top: 10px">
-        <hr>
-      </li>
-      <li style="margin-top: 10px"><span class="dimmed"><strong>Appendices</strong></span></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
-    </ul>
-  </div>
-  <div id="site-nav-btn-wrap">
-    <div id="site-nav-btn">
-      <div class="menu-top-bar"></div>
-      <div class="menu-middle-bar"></div>
-      <div class="menu-bottom-bar"></div>
-    </div>
-  </div>
-  <div id="page-content">
-    <div id="page-nav-content-wrapper">
-      <div id="content-wrapper">
-        <div>
-          <navbar placement="top" type="inverse" class="temp-navbar">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-            <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-            <dropdown text="Schedule" class="nav-link temp-dropdown">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-            </dropdown>
-            <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-            <dropdown text="Textbook" class="nav-link temp-dropdown">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-            <div class="nav-link temp-dropdown-placeholder">Links</div>
-            <dropdown text="Links" class="nav-link temp-dropdown">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-            </dropdown>
-            <li slot="right" class="nav-link">
-              <form class="navbar-form">
-                <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-              </form>
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark">
+        <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+        <dropdown text="Schedule" class="nav-link algolia-no-index">
+          <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+          <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+          <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+          <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+          <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+          <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+          <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+          <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+          <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+          <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+          <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        </dropdown>
+        <dropdown text="Textbook" class="nav-link algolia-no-index">
+          <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <dropdown text="Links" class="nav-link algolia-no-index">
+          <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+          <ul class="px-3 site-nav-list">
+            <li class="mt-2"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/lists.html" class="site-nav__a current">Lists</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/gui.html" class="site-nav__a">GUIs</a></li>
+            <li class="mt-2">
+              <hr>
             </li>
-          </navbar>
+            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
+            <li class="mt-2"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+          </ul>
         </div>
+      </nav>
+      <div id="content-wrapper">
         <div class="website-content" id="main">
           <div id="toc">
             <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a></span></p>
@@ -178,7 +135,7 @@ print(everything)
 [[], ['apple', 'banana', 'orange'], [0, 3.4, 'High', True]]
 </code></pre>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Lists%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Lists%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=11&end=70&version=11" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -287,14 +244,14 @@ print(list_of_lists[<span class="hljs-number">2</span>][<span class="hljs-number
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-access-using-index?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Accessing an item from a list%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Accessing an item from a list%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=70&end=317&version=11" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -333,7 +290,7 @@ print(get_tail([<span class="hljs-string">'a'</span>, <span class="hljs-number">
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:bulb: Partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">return</span> item_list[<span class="hljs-number">0</span>]
 </code></pre>
@@ -466,7 +423,7 @@ after foo: ['Hi', 2, 3]
                     </tr>
                   </table>
                 </div>
-                <modal large title="`foo(items)`" id="modal:foo_items-pyTutor">
+                <modal large title="`foo(items)`" id="modal:foo_items-pyTutor" class="algolia-no-index">
                   <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20foo%28items%29%3A%0A%20%20items%5B0%5D%20%3D%20'Hi'%0A%20%20print%28'inside%20foo%3A',%20items%29%0A%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Afoo%28original%29%0Aprint%28'after%20foo%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                 <p>Contrast the above example with the one below. The <code>bar(items)</code> function assigns a new list to <code>items</code> parameter. That means <code>items</code> is no longer pointing to the list object that was passed in as the argument. After the function is executed, the <code>original</code> list remains the same as before.</p>
                 <div>
@@ -496,7 +453,7 @@ after bar: [1, 2, 3]
                     </tr>
                   </table>
                 </div>
-                <modal large title="`bar(items)`" id="modal:bar_items-pyTutor">
+                <modal large title="`bar(items)`" id="modal:bar_items-pyTutor" class="algolia-no-index">
                   <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20bar%28items%29%3A%0A%20%20items%20%3D%20%5B'a',%20'b',%20'c'%5D%0A%20%20print%28'inside%20bar%3A',%20items%29%0A%20%20%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Abar%28original%29%0Aprint%28'after%20bar%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
               </tip-box>
               <p>If the argument passed to a function is of an immutable type, the function receives the reference to a <em>copy</em> of the argument. That means the code inside the function is unable to modify the object passed as the argument. However, it can return a new object that is based on the given object copy.</p>
@@ -530,10 +487,10 @@ new age: 26
                     </tr>
                   </table>
                 </div>
-                <modal large title="`increment(v)`" id="modal:increment_v-pyTutor">
+                <modal large title="`increment(v)`" id="modal:increment_v-pyTutor" class="algolia-no-index">
                   <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20increment%28v%29%3A%0A%20%20v%20%3D%20v%20%2B%201%0A%20%20return%20v%0A%20%20%0Aage%20%3D%2025%0Anew_age%20%3D%20increment%28age%29%0Aprint%28'age%3A',%20age%29%0Aprint%28'new%20age%3A',%20new_age%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
               </tip-box>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/objectReferences?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
@@ -606,14 +563,14 @@ print(spam)
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-del?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Deleting items from a list%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Deleting items from a list%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=534&end=581&version=11" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -657,7 +614,7 @@ print(letters)
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:bulb: Partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">del</span> item_list[<span class="hljs-number">0</span>]
 </code></pre>
@@ -667,7 +624,7 @@ print(letters)
                 <p></p>
               </div>
               <p><strong>You can use the <em>slice</em> notation <code>list_name[start_index:end_index]</code> to copy a <em>
-                    <tooltip content="a portion of a list">sublist</tooltip>
+                    <tooltip content="a portion of a list" class="algolia-no-index">sublist</tooltip>
                   </em> into a new list.</strong> If the <code>start_index</code> is omitted, it means 'from the beginning of the list'. If the <code>end_index</code> is omitted, it means 'till the end of the list'.</p>
               <tip-box>
                 <p><span class="fas fa-cube"></span> Some example of slicing to get a sub list:</p>
@@ -701,7 +658,7 @@ print(letters[<span class="hljs-number">1</span>:<span class="hljs-number">-1</s
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-slicing?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -738,14 +695,14 @@ sub list     : ['0a', '1b']
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-slicing?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Accessing multiple items from a list%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Accessing multiple items from a list%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=317&end=534&version=11" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -790,7 +747,7 @@ print(get_without_tail([<span class="hljs-number">0</span>, <span class="hljs-nu
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:bulb: Partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_without_head</span><span class="hljs-params">(item_list)</span>:</span>
   <span class="hljs-keyword">return</span> item_list[<span class="hljs-number">1</span>:]
 </code></pre>
@@ -820,7 +777,7 @@ print(<span class="hljs-string">'Length is:'</span>, len(spam))
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -885,7 +842,7 @@ print(friends)
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -914,14 +871,14 @@ print(walking)
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Length of a list, list concatenation, list replication%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Length of a list, list concatenation, list replication%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=581&end=635&version=11" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -951,7 +908,7 @@ print(expand_to_fill(meals, <span class="hljs-number">7</span>))
 ['Rice', 'Bread', 'Noodles', 'Rice', 'Bread', 'Noodles', 'Rice']
 
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <panel type="seamless" header="%%:bulb: partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python">  ...
   temp = item_list * (length//len(item_list))
   shortfall = length - len(temp)
@@ -997,14 +954,14 @@ Tea is already in the list
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-in-not-in?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Checking if an item is in a list%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Checking if an item is in a list%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=675&end=742&version=11" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -1044,7 +1001,7 @@ False
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <panel type="seamless" header="%%:bulb: partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python"><span class="hljs-keyword">return</span> (item <span class="hljs-keyword">in</span> list1 <span class="hljs-keyword">and</span> item <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> list2) <span class="hljs-keyword">or</span> (...)
 </code></pre>
                     </panel>
@@ -1076,7 +1033,7 @@ Do you sell Hamsters?
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -1119,10 +1076,10 @@ print_card_deck()
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Hint%%">
+                    <panel type="seamless" header="%%:bulb: Hint%%" class="algolia-no-index">
                       <p>Use two nested <code>for</code> loops to iterate over the two lists.</p>
                     </panel>
-                    <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <panel type="seamless" header="%%:bulb: partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python">  ...
   <span class="hljs-keyword">for</span> suite <span class="hljs-keyword">in</span> suits:
     <span class="hljs-keyword">for</span> ...:
@@ -1157,7 +1114,7 @@ print_card_deck()
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-len-plus-star-for?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -1203,7 +1160,7 @@ Feb: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
 Mar: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 Apr: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: partial solution%%">
+                    <panel type="seamless" header="%%:bulb: partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python">  ...
   <span class="hljs-keyword">for</span> i, month <span class="hljs-keyword">in</span> enumerate(months):
       print( ... + generate_number_string(<span class="hljs-number">1</span>, lengths[i]+<span class="hljs-number">1</span>))
@@ -1242,7 +1199,7 @@ some-simple-words
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -1270,7 +1227,7 @@ some-simple-words
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -1317,7 +1274,7 @@ print(<span class="hljs-string">'['</span> + remove_extra_spaces(<span class="hl
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Hint%%">
+                    <panel type="seamless" header="%%:bulb: Hint%%" class="algolia-no-index">
                       <p>Split the <code>text</code> into a list of words and join them back using a space (<code>' '.join(...)</code>)</p>
                     </panel>
                   </div>
@@ -1392,7 +1349,7 @@ After sorting ['Dogs', 'Hamsters', 'Parrots', 'Rabbits']
 After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
 </code></pre>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -1429,19 +1386,19 @@ After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/lists-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> List methods%%">
+              <panel type="seamless" header="%%<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> List methods%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9IxxW7428A?rel=0&showinfo=0&start=11&end=666&version=11" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
               <p></p>
-              <p>Note that <strong>some methods <tooltip content="changes the value(s) of the object">mutates</tooltip> the object while other methods don't</strong>.</p>
+              <p>Note that <strong>some methods <tooltip content="changes the value(s) of the object" class="algolia-no-index">mutates</tooltip> the object while other methods don't</strong>.</p>
               <tip-box>
                 <p><span class="fas fa-cube"></span> In the example below, <code>lower()</code> (a <em>non-mutating</em> method) returns a new string that is in lower case while the original string remains unchanged. However, <code>sort()</code> (a <em>mutating</em> method) changes the list object it is attached to (and does not return anything).</p>
                 <div>
@@ -1484,7 +1441,7 @@ print(names)
                   </table>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods-mutating?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -1526,7 +1483,7 @@ True
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Hint%%">
+                    <panel type="seamless" header="%%:bulb: Hint%%" class="algolia-no-index">
                       <p>Convert each word into a list of letters and sort the letters. If the words are anagrams, sorted letters of one word should be same as the sorted letters of the others.</p>
                       <p>Example:</p>
                       <ul>
@@ -1534,7 +1491,7 @@ True
                         <li><code>'not'</code> → convert to list of letters → <code>['n', 'o', 't']</code> → sort → <code>['n', 'o', 't']</code></li>
                       </ul>
                     </panel>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:bulb: Partial solution%%" class="algolia-no-index">
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">letters_sorted</span><span class="hljs-params">(word)</span>:</span>
   letters = list(word)
   letters.sort()
@@ -1605,15 +1562,51 @@ Thank you for playing the WORD GAME
           </div>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#lists">Lists&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#the-list-data-structure">The List Data Structure&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-countries">Exercise : Countries&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-get-head-get-tail">Exercise : Get Head, Get Tail&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#object-references">Object References&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-swap-ends">Exercise : Swap Ends&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#working-with-lists">Working with Lists&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-delete-head-delete-tail">Exercise : Delete Head, Delete Tail&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-get-body">Exercise : Get Body&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-get-mid">Exercise : Get Mid&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-expand-to-fill">Exercise : Expand to Fill&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-xor">Exercise : XOR&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-print-card-deck">Exercise : Print Card Deck&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-first-quarter">Exercise : First Quarter&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#methods">Methods&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-remove-extra-spaces">Exercise : Remove Extra Spaces&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#list-methods">List Methods&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#exercise-anagram-checker">Exercise : Anagram Checker&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-word-game">Exercise : Word Game&#x200E;</a>
+              </nav>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+    </footer>
   </div>
-</div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 01 Apr 2019 12:19:01 GMT</small></div>
-</footer>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -1621,22 +1614,28 @@ Thank you for playing the WORD GAME
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>

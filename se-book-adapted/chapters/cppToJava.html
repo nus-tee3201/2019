@@ -1,292 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-122519234-1');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter : C++ to Java</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    <link rel="stylesheet" href="../../markbind/css/site-nav.css">
-    <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <link rel="icon" href="/2019/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-122519234-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Textbook Chapter : C++ to Java</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2019/book/css/textbook.css">
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="app">
-    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
-
-  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#c-to-java">C++ to Java&#x200E;</a>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#about-this-book-chapter">About this Book Chapter&#x200E;</a>
-    </nav>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#the-java-world">The Java World&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#what-is-java">What is Java?&#x200E;</a>
-        <a class="nav-link py-1" href="#how-java-works">How Java Works&#x200E;</a>
-        <a class="nav-link py-1" href="#java-editions">Java Editions&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#getting-started">Getting Started&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#installation">Installation&#x200E;</a>
-        <a class="nav-link py-1" href="#helloworld">HelloWorld&#x200E;</a>
-        <a class="nav-link py-1" href="#compiling-programs">Compiling Programs&#x200E;</a>
-        <a class="nav-link py-1" href="#running-programs">Running Programs&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#data-types">Data Types&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#primitive-data-types">Primitive Data Types&#x200E;</a>
-        <a class="nav-link py-1" href="#variables">Variables&#x200E;</a>
-        <a class="nav-link py-1" href="#operators">Operators&#x200E;</a>
-        <a class="nav-link py-1" href="#arrays">Arrays&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#control-flow">Control Flow&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#branching">Branching&#x200E;</a>
-        <a class="nav-link py-1" href="#methods">Methods&#x200E;</a>
-        <a class="nav-link py-1" href="#loops">Loops&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#java-objects">Java Objects&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#using-java-objects">Using Java Objects&#x200E;</a>
-        <a class="nav-link py-1" href="#instance-members">Instance Members&#x200E;</a>
-        <a class="nav-link py-1" href="#passing-objects">Passing Objects&#x200E;</a>
-        <a class="nav-link py-1" href="#garbage-collection">Garbage Collection&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#java-classes">Java Classes&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#defining-classes">Defining Classes&#x200E;</a>
-        <a class="nav-link py-1" href="#getters-and-setters">Getters and Setters&#x200E;</a>
-        <a class="nav-link py-1" href="#class-level-members">Class-Level Members&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#some-useful-classes">Some Useful Classes&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#java-api">Java API&#x200E;</a>
-        <a class="nav-link py-1" href="#the-string-class">The String Class&#x200E;</a>
-        <a class="nav-link py-1" href="#wrapper-classes-for-primitive-types">Wrapper Classes for Primitive Types&#x200E;</a>
-        <a class="nav-link py-1" href="#the-arrays-class">The Arrays Class&#x200E;</a>
-        <a class="nav-link py-1" href="#the-scanner-class">The Scanner Class&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#inheritance">Inheritance&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#inheritance-basic">Inheritance (Basic)&#x200E;</a>
-        <a class="nav-link py-1" href="#the-object-class">The Object Class&#x200E;</a>
-        <a class="nav-link py-1" href="#interfaces">Interfaces&#x200E;</a>
-        <a class="nav-link py-1" href="#polymorhism">Polymorhism&#x200E;</a>
-        <a class="nav-link py-1" href="#abstract-classes-and-methods">Abstract Classes and Methods&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#exceptions">Exceptions&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#what-are-exceptions">What are Exceptions?&#x200E;</a>
-        <a class="nav-link py-1" href="#how-to-use-exceptions">How to use Exceptions&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#generics">Generics&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#what-are-generics">What are Generics?&#x200E;</a>
-        <a class="nav-link py-1" href="#how-to-use-generics">How to use Generics&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#collections">Collections&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#the-collections-framework">The Collections Framework&#x200E;</a>
-        <a class="nav-link py-1" href="#the-arraylist-class">The ArrayList Class&#x200E;</a>
-        <a class="nav-link py-1" href="#the-hashmap-class">The HashMap Class&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#miscellaneous-topics">Miscellaneous Topics&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#enums">Enums&#x200E;</a>
-        <a class="nav-link py-1" href="#packages">Packages&#x200E;</a>
-        <a class="nav-link py-1" href="#file-access">File Access&#x200E;</a>
-        <a class="nav-link py-1" href="#access-modifiers">Access Modifiers&#x200E;</a>
-        <a class="nav-link py-1" href="#constants">Constants&#x200E;</a>
-        <a class="nav-link py-1" href="#casting">Casting&#x200E;</a>
-        <a class="nav-link py-1" href="#jar-files">JAR Files&#x200E;</a>
-      </nav>
-      <a class="nav-link py-1" href="#practice-projects">Practice Projects&#x200E;</a>
-      <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-        <a class="nav-link py-1" href="#taskmanager">TaskManager&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-1">TaskManager Level 1&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-2">TaskManager Level 2&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-3">TaskManager Level 3&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-4">TaskManager Level 4&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-5">TaskManager Level 5&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-6">TaskManager Level 6&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-7">TaskManager Level 7&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-8">TaskManager Level 8&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-9">TaskManager Level 9&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-10">TaskManager Level 10&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-11">TaskManager Level 11&#x200E;</a>
-        <a class="nav-link py-1" href="#taskmanager-level-12">TaskManager Level 12&#x200E;</a>
-      </nav>
-    </nav>
-
-  </nav>
-</nav>
-
-<div id="flex-body">
-  <div id="site-nav">
-    <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark">
+        <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+        <dropdown text="Schedule" class="nav-link algolia-no-index">
+          <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+          <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+          <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+          <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+          <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+          <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+          <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+          <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+          <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+          <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+          <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        </dropdown>
+        <dropdown text="Textbook" class="nav-link algolia-no-index">
+          <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <dropdown text="Links" class="nav-link algolia-no-index">
+          <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+          <ul class="px-3 site-nav-list">
+            <li class="mt-2"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn">Supplementary
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Requirements</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Design</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Project Management</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">Supplementary
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="site-nav-btn-wrap">
-    <div id="site-nav-btn">
-      <div class="menu-top-bar"></div>
-      <div class="menu-middle-bar"></div>
-      <div class="menu-bottom-bar"></div>
-    </div>
-  </div>
-  <div id="page-content">
-    <div id="page-nav-content-wrapper">
+      </nav>
       <div id="content-wrapper">
         <link rel="stylesheet" href="/2019/book/css/textbook.css">
         <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
         <div class="website-content">
-          <div>
-            <navbar placement="top" type="inverse" class="temp-navbar">
-              <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-              <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-              <dropdown text="Schedule" class="nav-link temp-dropdown">
-                <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-                <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-                <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-                <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-                <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-                <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-                <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-                <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-                <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-                <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-                <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-                <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-                <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-              </dropdown>
-              <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-              <dropdown text="Textbook" class="nav-link temp-dropdown">
-                <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-                <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-              </dropdown>
-              <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-              <div class="nav-link temp-dropdown-placeholder">Links</div>
-              <dropdown text="Links" class="nav-link temp-dropdown">
-                <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-                <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-              </dropdown>
-              <li slot="right" class="nav-link">
-                <form class="navbar-form">
-                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-                </form>
-              </li>
-            </navbar>
-          </div>
           <p><span class="dimmed"><strong><span></span></strong></span></p>
           <div id="title">
             <div>
@@ -356,7 +241,7 @@
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how Java works at a higher-level</span></span></span></span>
                 <p></p>
                 <div>
-                  <p><strong>Java is both <tooltip content="generates machine code from source code before executing the program"><em>compiled</em></tooltip> and <tooltip content="the interpreter executes the program directly, one statement at a time"><em>interpreted</em></tooltip>.</strong> Instead of translating programs directly into machine language, the Java compiler generates <em>byte code</em>. Byte code is <em>portable</em>, so it is possible to compile a Java program on one machine, transfer the byte code to another machine, and run the byte code on the other machine. That’s why Java is considered a <em>platform independent technology</em>, aka <em>WORA</em> (Write Once Run Anywhere). The interpreter that runs byte code is called a “Java Virtual Machine” (JVM).</p>
+                  <p><strong>Java is both <tooltip content="generates machine code from source code before executing the program" class="algolia-no-index"><em>compiled</em></tooltip> and <tooltip content="the interpreter executes the program directly, one statement at a time" class="algolia-no-index"><em>interpreted</em></tooltip>.</strong> Instead of translating programs directly into machine language, the Java compiler generates <em>byte code</em>. Byte code is <em>portable</em>, so it is possible to compile a Java program on one machine, transfer the byte code to another machine, and run the byte code on the other machine. That’s why Java is considered a <em>platform independent technology</em>, aka <em>WORA</em> (Write Once Run Anywhere). The interpreter that runs byte code is called a “Java Virtual Machine” (JVM).</p>
                   <blockquote>
                     <p><strong>Java technology is both a <em>programming language</em> and a <em>platform</em>.</strong> The Java programming language is a high-level object-oriented language that has a particular syntax and style. A Java platform is a particular environment in which Java programming language applications run. <small>--<a href="https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html">Oracle</a></small></p>
                   </blockquote>
@@ -447,7 +332,7 @@
                   <p><code>System.out.println</code> displays results on the screen.</p>
                   <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> Some similarities:</p>
                   <ul>
-                    <li>Java programs are made up of class and method definitions, and <tooltip content="A _method_ is a named sequence of statements">methods</tooltip> are made up of <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
+                    <li>Java programs are made up of class and method definitions, and <tooltip content="A _method_ is a named sequence of statements" class="algolia-no-index">methods</tooltip> are made up of <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
                     <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
                     <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
                     <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -457,7 +342,7 @@
                     <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
                     <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
                   </ul>
-                  <popover id="pop:helloWorld-statement" title="Statements" placement="top">
+                  <popover id="pop:helloWorld-statement" title="Statements" placement="top" class="algolia-no-index">
                       <div slot="content">
                       <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                       <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
@@ -489,7 +374,7 @@
                     <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code>
                   </p>
                   <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
-                  <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
+                  <popover id="pop:compiling-errors" title="Compile-time errors" placement="top" class="algolia-no-index">
                       <div slot="content">
                       <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                       <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
@@ -523,7 +408,7 @@
                     <li><code>java</code> in the command above refers to the Java interpreter installed in your computer.</li>
                     <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
                   </ul>
-                  <p>When you run a Java program, you can encounter a <tooltip content="so-called because it does not appear until after the program has started running">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
+                  <p>When you run a Java program, you can encounter a <tooltip content="so-called because it does not appear until after the program has started running" class="algolia-no-index">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
                     <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
@@ -543,10 +428,10 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Run HelloWorld">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Run HelloWorld" class="algolia-no-index">
                             <question>
                               <ul>
                                 <li>Install Java in your Computer, if you haven't done so already.</li>
@@ -904,7 +789,7 @@ values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double
 </code></pre>
                     <p><small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></p>
                   </blockquote>
-                  <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> The <code>[]</code> operator selects elements from an array. Array elements <tooltip content="i.e., the index of the first element is 0, not 1">indices start from 0</tooltip>.</p>
+                  <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> The <code>[]</code> operator selects elements from an array. Array elements <tooltip content="i.e., the index of the first element is 0, not 1" class="algolia-no-index">indices start from 0</tooltip>.</p>
                   <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 
 System.out.println(<span class="hljs-string">"The first element is "</span> + counts[<span class="hljs-number">0</span>]);
@@ -963,10 +848,10 @@ System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-n
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Compare names">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Compare names" class="algolia-no-index">
                             <question>
                               <p>Write a Java program that takes two command line arguments and prints <code>true</code> or <code>false</code> to indicate if the two arguments have the same value. Follow the sample output given below.</p>
                               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
@@ -997,7 +882,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                                   <li>The two command line arguments can be accessed inside the <code>main</code> method using <code>args[0]</code> and <code>args[1]</code>.</li>
                                   <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code>&quot;foo&quot; + x == y</code> vs <code>&quot;foo&quot; + (x == y)</code></li>
                                 </ul>
-                                <panel type="seamless" header="partial solution">
+                                <panel type="seamless" header="partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       String first = args[<span class="hljs-number">0</span>];
@@ -1120,10 +1005,10 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Greeter">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Greeter" class="algolia-no-index">
                             <question>
                               <p>Write a Java program that takes several command line arguments that describe a person or a family | and prints out a greeting. The parameters can be one of two formats.</p>
                               <div class="table-responsive">
@@ -1181,7 +1066,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                           </panel>
                         </div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Grade Helper">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Grade Helper" class="algolia-no-index">
                             <question>
                               <p>Write a Java program that takes a letter grade e.g., <code>A+</code> as a command line argument and prints the CAP value for that grade.</p>
                               <p>💡 Use a <code>switch</code> statement in your code.</p>
@@ -1285,7 +1170,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
 Polly likes crackers
 </code></pre>
                     <p>By convention, method names should be named in the <trigger trigger="click" for="modal:javaMethods_camelCase"><em>camelCase</em></trigger> format.</p>
-                    <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase">
+                    <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase" class="algolia-no-index">
                         <div>
                         <blockquote>
                           <pic src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" width="200" alt="camelCase"></pic>
@@ -1364,10 +1249,10 @@ Polly likes crackers
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `getGradeCap` Method">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `getGradeCap` Method" class="algolia-no-index">
                             <question>
                               <p>Add the following method to the class given below.</p>
                               <ul>
@@ -1571,10 +1456,10 @@ B : 3.5
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `getMultipleGradeCaps` Method">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `getMultipleGradeCaps` Method" class="algolia-no-index">
                             <question>
                               <p>Add the following method to the class given below.</p>
                               <ul>
@@ -1716,7 +1601,7 @@ A-:4.5
                     <p><strong>Before using a class in your code, you need to <code>import</code> the class.</strong> <code>import</code> statements appear at the top of the code.</p>
                     <box>
                       <p><span class="fas fa-cube"></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
-                      <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
+                      <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top" class="algolia-no-index">
                           <div slot="content">
                           <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units to the right and <code>y</code> units up from the origin.
                               </p>
@@ -1747,10 +1632,10 @@ A-:4.5
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> create `Rectangle` objects">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> create `Rectangle` objects" class="algolia-no-index">
                             <question>
                               <p>Update the code below to create a new <code>Rectangle</code> object as described in the code comments, to produce the given output.</p>
                               <ul>
@@ -1807,7 +1692,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y + <sp
                     <pre><code class="hljs">3, 4, 25
 </code></pre>
                   </box>
-                  <p><strong>You can <tooltip content="i.e., change/modify"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
+                  <p><strong>You can <tooltip content="i.e., change/modify" class="algolia-no-index"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
                   <box>
                     <p><span class="fas fa-cube"></span> This example changes the x value of the <code>Point</code> object to <code>5</code>.</p>
                     <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
@@ -1834,10 +1719,10 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> use `Rectangle` objects">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> use `Rectangle` objects" class="algolia-no-index">
                             <question>
                               <p>Update the code below as described in code comments, to produce the given output.</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Rectangle;
@@ -1991,10 +1876,10 @@ p3: 3, 2
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> pass objects to `move` method">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> pass objects to `move` method" class="algolia-no-index">
                             <question>
                               <p>Add a method <code>move(Point p, Rectangle r)</code> to the code below, to produce the given output. The behavior of the method is as follows:</p>
                               <ul>
@@ -2105,12 +1990,12 @@ spot = <span class="hljs-keyword">null</span>;
 }
 </code></pre>
                   </box>
-                  <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
+                  <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`" class="algolia-no-index">PascalCase</tooltip> format for class names</strong>.</p>
                   <p>The code should be in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
-                  <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the hour, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside the <code>Time</code> class.</p>
+                  <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables." class="algolia-no-index">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the hour, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside the <code>Time</code> class.</p>
                   <h5 id="constructos">Constructos</h5>
                   <div class="indented">
-                    <p>The syntax for <tooltip content="special methods that construct the object and initialize the instance variables">constructors</tooltip> is similar to that of other methods, except:</p>
+                    <p>The syntax for <tooltip content="special methods that construct the object and initialize the instance variables" class="algolia-no-index">constructors</tooltip> is similar to that of other methods, except:</p>
                     <ul>
                       <li>The name of the constructor is the same as the name of the class.</li>
                       <li>The keyword <code>static</code> is omitted.</li>
@@ -2185,10 +2070,10 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> define a `Circle` class">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> define a `Circle` class" class="algolia-no-index">
                             <question>
                               <p>Define a <code>Circle</code> class so that the code given below produces the given output. The nature of the class is a follows:</p>
                               <ul>
@@ -2303,10 +2188,10 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> add getters/setters to the `Circle` class">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> add getters/setters to the `Circle` class" class="algolia-no-index">
                             <question>
                               <p>Consider the <code>Circle</code> class below:</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
@@ -2475,10 +2360,10 @@ radius : 0.0
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> add getMaxRadius to the `Circle` class">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> add getMaxRadius to the `Circle` class" class="algolia-no-index">
                             <question>
                               <p>Consider the <code>Circle</code> class below:</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
@@ -2604,7 +2489,7 @@ max radius used so far : 12.0
                 <p></p>
                 <div>
                   <p>String is a built-in Java class that you <trigger trigger="click" for="modal:stringClass-javaLang">can use without importing</trigger>. Given below are some useful String methods:</p>
-                  <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top">
+                  <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top" class="algolia-no-index">
                     <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
                     </p>
                   </modal>
@@ -2634,7 +2519,7 @@ System.out.println(upperName);
 ALAN TURING
 </code></pre>
                     </box>
-                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip content="once created, cannot be modified"><em>immutable</em></tooltip></strong>. For example, when you invoke <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to <code>&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
+                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip content="once created, cannot be modified" class="algolia-no-index"><em>immutable</em></tooltip></strong>. For example, when you invoke <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to <code>&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
                     <pre><code class="hljs java">String s = <span class="hljs-string">"Ada"</span>;
 s.toUpperCase(); <span class="hljs-comment">// no effect</span>
 s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
@@ -2828,10 +2713,10 @@ Second line
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `printPrice` method">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `printPrice` method" class="algolia-no-index">
                             <question>
                               <p>Implement the <code>printPrice</code> method in the code below to produce the given output. Its behavior:</p>
                               <ul>
@@ -2925,10 +2810,10 @@ System.out.println(i);
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `printTotalScore` method">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `printTotalScore` method" class="algolia-no-index">
                             <question>
                               <p>Implement the <code>printTotalScore</code> method in the code below to produce the given output. Its behavior:</p>
                               <ul>
@@ -3001,10 +2886,10 @@ System.out.println(Arrays.toString(c));
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `filterEmails` method">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> `filterEmails` method" class="algolia-no-index">
                             <question>
                               <p>Implement the following two methods in the code below to produce the given output.</p>
                               <ul>
@@ -3062,7 +2947,7 @@ System.out.println(Arrays.toString(c));
                                     </ul>
                                   </li>
                                 </ul>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
     String[] results = <span class="hljs-keyword">new</span> String[items.length];
     <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;
@@ -3135,10 +3020,10 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> find total expenditure">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> find total expenditure" class="algolia-no-index">
                             <question>
                               <p>Write a program to ask the user for a description of overseas expenses (presumably, the user has just returned from an overseas trip) and calculate the total in local currency.</p>
                               <ul>
@@ -3183,7 +3068,7 @@ System.out.println(Arrays.toString(words));
                               <div slot="hint">
                                 <p>💡 You can use <code>String.format(&quot;%.2f&quot;, doubleValue)</code> to format <code>doubleValue</code> to two decimal points.<br>
                                   e.g., <code>String.format(&quot;%.2f&quot;, 1.3334)</code> <span class="fas fa-arrow-right"></span> <code>1.33</code></p>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -3226,7 +3111,7 @@ System.out.println(Arrays.toString(words));
                           </panel>
                         </div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 1 - **Create a CLI**">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 1 - **Create a CLI**" class="algolia-no-index">
                             <div id="body">
                               <div id="main">
                                 <p>In this first version of the TaskManager, the task list is not saved to the disk <span class="dimmed">i.e., the task list does not persist between multiple runs of the program</span></p>
@@ -3275,7 +3160,7 @@ Bye!
                                   <li>and so on ...</li>
                                 </ol>
                                 <div slot="hint">
-                                  <panel type="seamless" header="Partial solution">
+                                  <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                     <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -3400,7 +3285,7 @@ Bye!
                     </box>
                     <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code> and a method to set it.</p>
                     <h5 id="accessing-superclass-members">Accessing Superclass Members</h5>
-                    <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
+                    <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable" class="algolia-no-index">hidden field</tooltip> (although hiding fields is discouraged).</p>
                     <box>
                       <p><span class="fas fa-cube"></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
@@ -3466,10 +3351,10 @@ Printed in Subclass
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> inherit the `Task` class">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> inherit the `Task` class" class="algolia-no-index">
                             <question>
                               <p>Background: Suppose we are creating a software to manage various tasks a person has to do. Two types of such tasks are,</p>
                               <ul>
@@ -3668,10 +3553,10 @@ true
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> override the `toString` method">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> override the `toString` method" class="algolia-no-index">
                             <question>
                               <p>Suppose you have the following classes <code>Task</code>, <code>Todo</code>, <code>Deadline</code>:</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
@@ -3853,7 +3738,7 @@ do by: Postponed to Nov 18th
                     </ol>
                   </box>
                   <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-                  <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants">
+                  <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants" class="algolia-no-index">
                       <div>
                       <div></div>
                       <p></p>
@@ -3903,10 +3788,10 @@ do by: Postponed to Nov 18th
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print `Printable` items">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print `Printable` items" class="algolia-no-index">
                             <question>
                               <p>The <code>Main</code> class below passes a list of <code>Printable</code> objects (i.e., objects that implement the <code>Printable</code> interface) for another method to be printed.</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -3985,7 +3870,7 @@ Person of name James Cook
     <span class="hljs-comment">// todo: add missing methods</span>
 }
 </code></pre>
-                              <panel type="seamless" header="Partial solution">
+                              <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
     <span class="hljs-comment">//...</span>
 }
@@ -4028,7 +3913,7 @@ Person of name James Cook
                     <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-                    <panel type="seamless" header="%%The `Cat` class%%">
+                    <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -4066,7 +3951,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                    <panel type="seamless" header="%%The `Dog` class%%">
+                    <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -4100,7 +3985,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                    <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%">
+                    <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -4149,10 +4034,10 @@ Spot: Woof
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print shape area">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print shape area" class="algolia-no-index">
                             <question>
                               <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
                               <p>Add the missing variables/methods to the code below so that it produces the output given.</p>
@@ -4207,7 +4092,7 @@ Spot: Woof
 }
 </code></pre>
                               <p>💡 You may use an array of size 100 to store the shapes.</p>
-                              <panel type="seamless" header="Partial solution">
+                              <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
@@ -4226,10 +4111,10 @@ Spot: Woof
                           </panel>
                         </div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 2 - **Use Inheritance**">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 2 - **Use Inheritance**" class="algolia-no-index">
                             <div id="body">
                               <p>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main" class="algolia-no-index"></panel>
                               </p>
                               <p><span class="dimmed">This exercise continues from the <code>TaskManager Level1</code> exercise quoted above.</span></p>
                               <div id="main">
@@ -4280,7 +4165,7 @@ Spot: Woof
                                   <li>Use polymorphism to store both types of tasks in an array of <code>Task</code> type and use one loop to print both types of tasks.</li>
                                 </ul>
                                 <p><strong>B. Add support for <trigger trigger="click" for="modal:taskManagerLevel2-testingClis">semi-automated regression testing using input/output redirection</trigger></strong>.</p>
-                                <modal large title="Textbook »" id="modal:taskManagerLevel2-testingClis">
+                                <modal large title="Textbook »" id="modal:taskManagerLevel2-testingClis" class="algolia-no-index">
                                     <div>
                                     <div></div>
                                     <p></p>
@@ -4301,7 +4186,7 @@ Spot: Woof
                                           <ol>
                                             <li>
                                               <p>Store the test input in the text file <code>input.txt</code>.</p>
-                                              <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless">
+                                              <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless" class="algolia-no-index">
                                                 <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -4309,7 +4194,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                                             </li>
                                             <li>
                                               <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                                              <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless">
+                                              <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
                                                 <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -4332,7 +4217,7 @@ Invalid command format: add
                                                   <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                                                 </li>
                                               </ul>
-                                              <panel header minimized>
+                                              <panel header minimized class="algolia-no-index">
                                                 <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span></span>
                                                 <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
                                                 <pre><code class="hljs sh">java AddressBook &gt; output.txt 
@@ -4356,7 +4241,7 @@ Invalid command format: add
                                           </ol>
                                           <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
                                           <div>
-                                            <popover id="pop:cli" placement="top">
+                                            <popover id="pop:cli" placement="top" class="algolia-no-index">
                                               <div slot="content">
                                                 <div>
                                                   <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
@@ -4370,7 +4255,7 @@ Invalid command format: add
                                     </div>
                                   </div>
                                 </modal>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -4511,10 +4396,10 @@ Invalid command format: add
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print area with abstract `Shape`">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> print area with abstract `Shape`" class="algolia-no-index">
                             <question>
                               <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -4588,7 +4473,7 @@ Rectangle of area 16
 }
 </code></pre>
                               <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-                              <panel type="seamless" header="Partial solution">
+                              <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
@@ -4600,9 +4485,9 @@ Rectangle of area 16
                           </panel>
                         </div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about abstract classes">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about abstract classes" class="algolia-no-index">
                             <question>
-                              <p>Choose the correct statements about Java abstract classes and <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
+                              <p>Choose the correct statements about Java abstract classes and <tooltip content="classes that are not abstract" class="algolia-no-index">concrete classes</tooltip>.</p>
                               <ul class="task-list">
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A concrete class can contain an abstract method.</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An abstract class can contain concrete methods.</li>
@@ -4777,7 +4662,7 @@ Rectangle of area 16
                       <p>The class of the exception object indicates the type of exception thrown. The exception object can contain further information about the error, including an error message.</p>
                     </li>
                   </ul>
-                  <p><strong>You can use the <code>throw</code> statement to throw an exception.</strong> The throw statement requires a <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class.">throwable</tooltip> object as the argument.</p>
+                  <p><strong>You can use the <code>throw</code> statement to throw an exception.</strong> The throw statement requires a <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class." class="algolia-no-index">throwable</tooltip> object as the argument.</p>
                   <box>
                     <p><span class="fas fa-cube"></span> Here's an example of a <code>throw</code> statement.</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
@@ -4824,10 +4709,10 @@ Rectangle of area 16
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> parse rectangle descriptor">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> parse rectangle descriptor" class="algolia-no-index">
                             <question>
                               <p>The <code>Main</code> class below parses a string descriptor of a rectangle of the format <code>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code>&quot;3x4&quot;</code></span> and prints the area of the rectangle.</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -4893,7 +4778,7 @@ WIDTH or HEIGHT is missing: 3x
 WIDTH or HEIGHT is missing: 3
 Too many dimensions: 3x4x5
 </code></pre>
-                              <panel type="seamless" header="Partial solution">
+                              <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
@@ -4920,11 +4805,11 @@ Too many dimensions: 3x4x5
                           </panel>
                         </div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 3 - **Use exceptions**">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 3 - **Use exceptions**" class="algolia-no-index">
                             <div id="body">
                               <p>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main" class="algolia-no-index"></panel>
                               </p>
                               <p><span class="dimmed">This exercise continues from the <code>TaskManager Level 1-2</code> exercises quoted above.</span></p>
                               <div id="main">
@@ -4950,7 +4835,7 @@ Too many dimensions: 3x4x5
                                   <li>Throw a new <code>TaskManagerException</code> object when you detect some necessary information is missing in the command.</li>
                                   <li>Catch that exception somewhere else and print the message inside the exception object.</li>
                                 </ul>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManagerException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TaskManagerException</span><span class="hljs-params">(String message)</span> </span>{
         <span class="hljs-keyword">super</span>(message);
@@ -5321,10 +5206,10 @@ After clearing: []
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Numbers list">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Numbers list" class="algolia-no-index">
                             <question>
                               <p>Add the missing methods to the class given below so that it produces the output given.</p>
                               <p>💡 Use an <code>ArrayList</code> to store the numbers.</p>
@@ -5378,12 +5263,12 @@ The total is: 27
                           </panel>
                         </div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 4 - **Use `Collections`**">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 4 - **Use `Collections`**" class="algolia-no-index">
                             <div id="body">
                               <p>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main" class="algolia-no-index"></panel>
                               </p>
                               <p><span class="dimmed">This exercise continues from the <code>TaskManager Level 1-3</code> exercises quoted above.</span></p>
                               <div id="main">
@@ -5423,7 +5308,7 @@ The total is: 27
                                 <ul>
                                   <li>Move the <code>isDone</code> variable to the <code>Task</code> class and provide a <code>setDone(boolean)</code> method.</li>
                                 </ul>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -5551,10 +5436,10 @@ Number of keys after clearing: 0
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Weekly roster">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Weekly roster" class="algolia-no-index">
                             <question>
                               <p>The class given below keeps track of how many people signup to attend an event on each day of the week. Add the missing methods so that it produces the output given.</p>
                               <p>💡 Use an <code>HashMap</code> to store the number of entries for each day.</p>
@@ -5661,10 +5546,10 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> show priority color">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> show priority color" class="algolia-no-index">
                             <question>
                               <p>Define an enumeration named <code>Priority</code>. Add the missing <code>describe</code> method to the code below so that it produces the output given.</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -5739,9 +5624,9 @@ Green indicates low priority
                   <box>
                     <p><span class="fas fa-cube"></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
                   </box>
-                  <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+                  <p><strong>To use a public <tooltip content="types contained in the package" class="algolia-no-index">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
                   <ol>
-                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
+                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`" class="algolia-no-index">fully qualified name</tooltip></strong> to refer to the member</li>
                     <li><strong>Import</strong> the package or the specific package member</li>
                   </ol>
                   <box>
@@ -5795,7 +5680,7 @@ Green indicates low priority
     }
 }
 </code></pre>
-                    <panel type="seamless" header="`Foramtter` class">
+                    <panel type="seamless" header="`Foramtter` class" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
@@ -5839,19 +5724,19 @@ Green indicates low priority
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 8 - **Use packages**">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 8 - **Use packages**" class="algolia-no-index">
                             <div id="body">
                               <p>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel4._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L4" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel5._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L5" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel6._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L6" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel7._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L7" minimized fragment="main"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel4._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L4" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel5._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L5" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel6._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L6" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel7._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L7" minimized fragment="main" class="algolia-no-index"></panel>
                               </p>
                               <p><span class="dimmed">This exercise continues from the <code>TaskManager Level 1-7</code> exercises quoted above.</span></p>
                               <div id="main">
@@ -5993,16 +5878,16 @@ second line
                 </div>
                 <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 5 - **Store data in a file**">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 5 - **Store data in a file**" class="algolia-no-index">
                             <div id="body">
                               <p>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel4._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L4" minimized fragment="main"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel4._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L4" minimized fragment="main" class="algolia-no-index"></panel>
                               </p>
                               <p><span class="dimmed">This exercise continues from the <code>TaskManager Level 1-4</code> exercises quoted above.</span></p>
                               <div id="main">
@@ -6021,7 +5906,7 @@ T | 1 | join sports club
                                   <li>Load all tasks in the text file to the memory (i.e., convert to <code>Task</code> objects) at the start up of TaskManager. You can assume the data are in a predetermined file <span class="dimmed">e.g., <code>data/tasks.txt</code></span>.</li>
                                   <li>Save all tasks to the text file every time there is a change to the data. <span class="dimmed">Alternatively, you can introduce a new command to save tasks to the text file.</span></li>
                                 </ol>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <p>Here's an example method for loading data from the text file. Use this method at the start of your main method to load the tasks from the text file.</p>
                                   <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> List&lt;Task&gt; <span class="hljs-title">getTasksFromFile</span><span class="hljs-params">()</span> </span>{
         List&lt;Task&gt; loadedTasks = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
@@ -6086,16 +5971,16 @@ T | 1 | join sports club
                           <tr>
                             <th>Modifier</th>
                             <th>
-                              <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
+                              <tooltip content="whether the class itself has access to the member defined by the access level" class="algolia-no-index">Class</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
+                              <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member" class="algolia-no-index">Package</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
+                              <tooltip content="whether subclasses of the class declared outside this package have access to the member" class="algolia-no-index">Subclass</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether all classes have access to the member">World</tooltip>
+                              <tooltip content="whether all classes have access to the member" class="algolia-no-index">World</tooltip>
                             </th>
                           </tr>
                         </thead>
@@ -6303,23 +6188,23 @@ Integer x = (Integer)o;
                     </panel>
                   </div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
                       <div>
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 12 - **Package as a JAR file**">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> TaskManager Level 12 - **Package as a JAR file**" class="algolia-no-index">
                             <div id="body">
                               <p>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel4._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L4" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel5._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L5" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel6._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L6" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel7._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L7" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel8._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L8" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel9._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L9" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel10._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L10" minimized fragment="main"></panel>
-                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel11._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L11" minimized fragment="main"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel1._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L1" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel2._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L2" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel3._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L3" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel4._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L4" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel5._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L5" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel6._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L6" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel7._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L7" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel8._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L8" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel9._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L9" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel10._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L10" minimized fragment="main" class="algolia-no-index"></panel>
+                                <panel type="seamless" src="/2019/book/cppToJava/project/taskManager/q-taskManagerLevel11._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> TM-L11" minimized fragment="main" class="algolia-no-index"></panel>
                               </p>
                               <p><span class="dimmed">This exercise continues from the <code>TaskManager Level 1-11</code> exercises quoted above.</span></p>
                               <div id="main">
@@ -6350,7 +6235,7 @@ Integer x = (Integer)o;
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use Java to create a small app from scratch</span></span></span></span>
                 <p></p>
                 <div>
-                  <p>In this practice project, you will create a small <code>TaskManager</code> program that can store a list of tasks. It is a <tooltip content="Command Line Interface i.e., no Graphical User Interface">CLI</tooltip> program. You will start with a very simple version (aka TaskManager Level 1) and grow its functionality in small steps.</p>
+                  <p>In this practice project, you will create a small <code>TaskManager</code> program that can store a list of tasks. It is a <tooltip content="Command Line Interface i.e., no Graphical User Interface" class="algolia-no-index">CLI</tooltip> program. You will start with a very simple version (aka TaskManager Level 1) and grow its functionality in small steps.</p>
                   <h4 id="taskmanager-level-1">TaskManager Level 1</h4>
                   <div>
                     <p>In this first version of the TaskManager, the task list is not saved to the disk <span class="dimmed">i.e., the task list does not persist between multiple runs of the program</span></p>
@@ -6399,7 +6284,7 @@ Bye!
                       <li>and so on ...</li>
                     </ol>
                     <div slot="hint">
-                      <panel type="seamless" header="Partial solution">
+                      <panel type="seamless" header="Partial solution" class="algolia-no-index">
                         <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -6496,7 +6381,7 @@ Bye!
                       <li>Use polymorphism to store both types of tasks in an array of <code>Task</code> type and use one loop to print both types of tasks.</li>
                     </ul>
                     <p><strong>B. Add support for <trigger trigger="click" for="modal:taskManagerLevel2-testingClis">semi-automated regression testing using input/output redirection</trigger></strong>.</p>
-                    <modal large title="Textbook »" id="modal:taskManagerLevel2-testingClis">
+                    <modal large title="Textbook »" id="modal:taskManagerLevel2-testingClis" class="algolia-no-index">
                         <div>
                         <div></div>
                         <p></p>
@@ -6517,7 +6402,7 @@ Bye!
                               <ol>
                                 <li>
                                   <p>Store the test input in the text file <code>input.txt</code>.</p>
-                                  <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless">
+                                  <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless" class="algolia-no-index">
                                     <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -6525,7 +6410,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                                 </li>
                                 <li>
                                   <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                                  <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless">
+                                  <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
                                     <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -6548,7 +6433,7 @@ Invalid command format: add
                                       <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                                     </li>
                                   </ul>
-                                  <panel header minimized>
+                                  <panel header minimized class="algolia-no-index">
                                     <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span></span>
                                     <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
                                     <pre><code class="hljs sh">java AddressBook &gt; output.txt 
@@ -6572,7 +6457,7 @@ Invalid command format: add
                               </ol>
                               <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
                               <div>
-                                <popover id="pop:cli" placement="top">
+                                <popover id="pop:cli" placement="top" class="algolia-no-index">
                                   <div slot="content">
                                     <div>
                                       <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
@@ -6586,7 +6471,7 @@ Invalid command format: add
                         </div>
                       </div>
                     </modal>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -6667,7 +6552,7 @@ Invalid command format: add
                       <li>Throw a new <code>TaskManagerException</code> object when you detect some necessary information is missing in the command.</li>
                       <li>Catch that exception somewhere else and print the message inside the exception object.</li>
                     </ul>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManagerException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TaskManagerException</span><span class="hljs-params">(String message)</span> </span>{
         <span class="hljs-keyword">super</span>(message);
@@ -6743,7 +6628,7 @@ Invalid command format: add
                     <ul>
                       <li>Move the <code>isDone</code> variable to the <code>Task</code> class and provide a <code>setDone(boolean)</code> method.</li>
                     </ul>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -6807,7 +6692,7 @@ T | 1 | join sports club
                       <li>Load all tasks in the text file to the memory (i.e., convert to <code>Task</code> objects) at the start up of TaskManager. You can assume the data are in a predetermined file <span class="dimmed">e.g., <code>data/tasks.txt</code></span>.</li>
                       <li>Save all tasks to the text file every time there is a change to the data. <span class="dimmed">Alternatively, you can introduce a new command to save tasks to the text file.</span></li>
                     </ol>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <p>Here's an example method for loading data from the text file. Use this method at the start of your main method to load the tasks from the text file.</p>
                       <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> List&lt;Task&gt; <span class="hljs-title">getTasksFromFile</span><span class="hljs-params">()</span> </span>{
         List&lt;Task&gt; loadedTasks = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
@@ -6879,7 +6764,7 @@ ui.showToUser(taskListDescription);
                         <p>Note: As a result of the above, you will have to convert most of the static methods in the <code>TaskManager</code> class to non-static methods, which is more OO.</p>
                       </li>
                     </ol>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span> </span>{
 
     <span class="hljs-keyword">private</span> Storage storage;
@@ -6948,7 +6833,7 @@ ui.showToUser(taskListDescription);
                   <h4 id="taskmanager-level-7">TaskManager Level 7</h4>
                   <div>
                     <p><strong>Add JUnit tests</strong> for some of the methods in your code.</p>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.Test;
 
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> junit.framework.TestCase.assertEquals;
@@ -6987,7 +6872,7 @@ ui.showToUser(taskListDescription);
                   <div>
                     <p>Add javadoc comments to all non-trivial public classes and methods. Follow the format of the <em>minimal</em> javadoc comment examples given below.</p>
                     <p>
-                      <panel type="seamless" src="/2019/book/documentation/tools/javaDoc/how/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Documentation <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tools → JavaDoc → How" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> JavaDoc/How" fragment="main"></panel>
+                      <panel type="seamless" src="/2019/book/documentation/tools/javaDoc/how/unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Documentation <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tools → JavaDoc → How" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> JavaDoc/How" fragment="main" class="algolia-no-index"></panel>
                     </p>
                   </div>
                   <hr>
@@ -7013,15 +6898,123 @@ ui.showToUser(taskListDescription);
           </panel>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#c-to-java">C++ to Java&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#about-this-book-chapter">About this Book Chapter&#x200E;</a>
+            </nav>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#the-java-world">The Java World&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#what-is-java">What is Java?&#x200E;</a>
+                <a class="nav-link py-1" href="#how-java-works">How Java Works&#x200E;</a>
+                <a class="nav-link py-1" href="#java-editions">Java Editions&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#getting-started">Getting Started&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#installation">Installation&#x200E;</a>
+                <a class="nav-link py-1" href="#helloworld">HelloWorld&#x200E;</a>
+                <a class="nav-link py-1" href="#compiling-programs">Compiling Programs&#x200E;</a>
+                <a class="nav-link py-1" href="#running-programs">Running Programs&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#data-types">Data Types&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#primitive-data-types">Primitive Data Types&#x200E;</a>
+                <a class="nav-link py-1" href="#variables">Variables&#x200E;</a>
+                <a class="nav-link py-1" href="#operators">Operators&#x200E;</a>
+                <a class="nav-link py-1" href="#arrays">Arrays&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#control-flow">Control Flow&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#branching">Branching&#x200E;</a>
+                <a class="nav-link py-1" href="#methods">Methods&#x200E;</a>
+                <a class="nav-link py-1" href="#loops">Loops&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#java-objects">Java Objects&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#using-java-objects">Using Java Objects&#x200E;</a>
+                <a class="nav-link py-1" href="#instance-members">Instance Members&#x200E;</a>
+                <a class="nav-link py-1" href="#passing-objects">Passing Objects&#x200E;</a>
+                <a class="nav-link py-1" href="#garbage-collection">Garbage Collection&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#java-classes">Java Classes&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#defining-classes">Defining Classes&#x200E;</a>
+                <a class="nav-link py-1" href="#getters-and-setters">Getters and Setters&#x200E;</a>
+                <a class="nav-link py-1" href="#class-level-members">Class-Level Members&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#some-useful-classes">Some Useful Classes&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#java-api">Java API&#x200E;</a>
+                <a class="nav-link py-1" href="#the-string-class">The String Class&#x200E;</a>
+                <a class="nav-link py-1" href="#wrapper-classes-for-primitive-types">Wrapper Classes for Primitive Types&#x200E;</a>
+                <a class="nav-link py-1" href="#the-arrays-class">The Arrays Class&#x200E;</a>
+                <a class="nav-link py-1" href="#the-scanner-class">The Scanner Class&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#inheritance">Inheritance&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#inheritance-basic">Inheritance (Basic)&#x200E;</a>
+                <a class="nav-link py-1" href="#the-object-class">The Object Class&#x200E;</a>
+                <a class="nav-link py-1" href="#interfaces">Interfaces&#x200E;</a>
+                <a class="nav-link py-1" href="#polymorhism">Polymorhism&#x200E;</a>
+                <a class="nav-link py-1" href="#abstract-classes-and-methods">Abstract Classes and Methods&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#exceptions">Exceptions&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#what-are-exceptions">What are Exceptions?&#x200E;</a>
+                <a class="nav-link py-1" href="#how-to-use-exceptions">How to use Exceptions&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#generics">Generics&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#what-are-generics">What are Generics?&#x200E;</a>
+                <a class="nav-link py-1" href="#how-to-use-generics">How to use Generics&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#collections">Collections&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#the-collections-framework">The Collections Framework&#x200E;</a>
+                <a class="nav-link py-1" href="#the-arraylist-class">The ArrayList Class&#x200E;</a>
+                <a class="nav-link py-1" href="#the-hashmap-class">The HashMap Class&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#miscellaneous-topics">Miscellaneous Topics&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#enums">Enums&#x200E;</a>
+                <a class="nav-link py-1" href="#packages">Packages&#x200E;</a>
+                <a class="nav-link py-1" href="#file-access">File Access&#x200E;</a>
+                <a class="nav-link py-1" href="#access-modifiers">Access Modifiers&#x200E;</a>
+                <a class="nav-link py-1" href="#constants">Constants&#x200E;</a>
+                <a class="nav-link py-1" href="#casting">Casting&#x200E;</a>
+                <a class="nav-link py-1" href="#jar-files">JAR Files&#x200E;</a>
+              </nav>
+              <a class="nav-link py-1" href="#practice-projects">Practice Projects&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#taskmanager">TaskManager&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-1">TaskManager Level 1&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-2">TaskManager Level 2&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-3">TaskManager Level 3&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-4">TaskManager Level 4&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-5">TaskManager Level 5&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-6">TaskManager Level 6&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-7">TaskManager Level 7&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-8">TaskManager Level 8&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-9">TaskManager Level 9&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-10">TaskManager Level 10&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-11">TaskManager Level 11&#x200E;</a>
+                <a class="nav-link py-1" href="#taskmanager-level-12">TaskManager Level 12&#x200E;</a>
+              </nav>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+    </footer>
   </div>
-</div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 01 Apr 2019 12:19:01 GMT</small></div>
-</footer>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -7029,22 +7022,28 @@ ui.showToUser(taskListDescription);
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>

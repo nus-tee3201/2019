@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - C++ to Java: Objects: Getters and Setters</title>
-    <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
-    
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - C++ to Java: Objects: Getters and Setters</title>
+  <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
+
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
-    <div id="content-wrapper">
-  <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <div class="website-content">
-      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use class-level members</span></span></span></span></p>
-      <p></p>
-      <p></p>
-      <div>
-        <div></div>
-        <p></p>
-        <p><span class="dimmed"><strong><span>C++ to Java → Classes →
-              </span></strong></span></p>
-        <div id="title-and-body">
-          <div>
-            <h4 id="class-level-members"><span>Class-Level Members</span></h4>
-          </div>
-          <div id="main">
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div>
+          <link rel="stylesheet" href="/2019/book/css/textbook.css">
+          <div class="website-content">
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use class-level members</span></span></span></span></p>
+            <p></p>
+            <p></p>
             <div>
-              <p>The content below is an extract from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>, with slight adaptations.</p>
-              <div class="indented">
-                <p>When a number of objects are created from the same class blueprint, they each have their own distinct copies of instance variables. In the case of a <code>Bicycle</code> class, the instance variables are gear, and speed. Each Bicycle object has its own values for these variables, stored in different memory locations.</p>
-                <p><strong>Sometimes, you want to have variables that are common to all objects. This is accomplished with the <code>static</code> modifier.</strong> Fields that have the <code>static</code> modifier in their declaration are called <em>static fields</em> or <em>class variables</em>. They are associated with the class, rather than with any object. Every instance of the class shares a class variable, which is in one fixed location in memory. Any object can change the value of a class variable, but class variables can also be manipulated without creating an instance of the class.</p>
-                <box>
-                  <p><span class="fas fa-cube"></span> Suppose you want to create a number of Bicycle objects and assign each a serial number, beginning with 1 for the first object. This ID number is unique to each object and is therefore an instance variable. At the same time, you need a field to keep track of how many <code>Bicycle</code> objects have been created so that you know what ID to assign to the next one. Such a field is not related to any individual object, but to the class as a whole. For this you need a class variable, numberOfBicycles, as follows:</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>C++ to Java → Classes →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="class-level-members"><span>Class-Level Members</span></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>The content below is an extract from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>, with slight adaptations.</p>
+                    <div class="indented">
+                      <p>When a number of objects are created from the same class blueprint, they each have their own distinct copies of instance variables. In the case of a <code>Bicycle</code> class, the instance variables are gear, and speed. Each Bicycle object has its own values for these variables, stored in different memory locations.</p>
+                      <p><strong>Sometimes, you want to have variables that are common to all objects. This is accomplished with the <code>static</code> modifier.</strong> Fields that have the <code>static</code> modifier in their declaration are called <em>static fields</em> or <em>class variables</em>. They are associated with the class, rather than with any object. Every instance of the class shares a class variable, which is in one fixed location in memory. Any object can change the value of a class variable, but class variables can also be manipulated without creating an instance of the class.</p>
+                      <box>
+                        <p><span class="fas fa-cube"></span> Suppose you want to create a number of Bicycle objects and assign each a serial number, beginning with 1 for the first object. This ID number is unique to each object and is therefore an instance variable. At the same time, you need a field to keep track of how many <code>Bicycle</code> objects have been created so that you know what ID to assign to the next one. Such a field is not related to any individual object, but to the class as a whole. For this you need a class variable, numberOfBicycles, as follows:</p>
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -59,14 +62,14 @@
         ...
 }
 </code></pre>
-                </box>
-                <p><strong><em>Class variables</em> are referenced by the class name itself</strong>, as in <code>Bicycle.numberOfBicycles</code> This makes it clear that they are class variables.</p>
-                <p>The Java programming language supports static methods as well as static variables. Static methods, which have the <code>static</code> modifier in their declarations, should be invoked with the class name, without the need for creating an instance of the class, as in <code>ClassName.methodName(args)</code></p>
-                <p><strong>The <code>static</code> modifier, in combination with the <code>final</code> modifier, is also used to define constants.</strong> The final modifier indicates that the value of this field cannot change.For example, the following variable declaration defines a constant named PI, whose value is an approximation of pi (the ratio of the circumference of a circle to its diameter):
-                  <code>static final double PI = 3.141592653589793;</code></p>
-                <box>
-                  <p><span class="fas fa-cube"></span> Here is an example with class-level variables and class-level methods:</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+                      </box>
+                      <p><strong><em>Class variables</em> are referenced by the class name itself</strong>, as in <code>Bicycle.numberOfBicycles</code> This makes it clear that they are class variables.</p>
+                      <p>The Java programming language supports static methods as well as static variables. Static methods, which have the <code>static</code> modifier in their declarations, should be invoked with the class name, without the need for creating an instance of the class, as in <code>ClassName.methodName(args)</code></p>
+                      <p><strong>The <code>static</code> modifier, in combination with the <code>final</code> modifier, is also used to define constants.</strong> The final modifier indicates that the value of this field cannot change.For example, the following variable declaration defines a constant named PI, whose value is an approximation of pi (the ratio of the circumference of a circle to its diameter):
+                        <code>static final double PI = 3.141592653589793;</code></p>
+                      <box>
+                        <p><span class="fas fa-cube"></span> Here is an example with class-level variables and class-level methods:</p>
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -108,25 +111,25 @@
 
 }
 </code></pre>
-                </box>
-              </div>
-              <tip-box>
-                <p>💡 Explanation of <strong><code>System.out.println(...)</code></strong>:</p>
-                <ul>
-                  <li><code>out</code> is a class-level public attribute of the <code>System</code> class.</li>
-                  <li><code>println</code> is a instance level method of the <code>out</code> object.</li>
-                </ul>
-              </tip-box>
-            </div>
-            <div>
-              <div>
-                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+                      </box>
+                    </div>
+                    <tip-box>
+                      <p>💡 Explanation of <strong><code>System.out.println(...)</code></strong>:</p>
+                      <ul>
+                        <li><code>out</code> is a class-level public attribute of the <code>System</code> class.</li>
+                        <li><code>println</code> is a instance level method of the <code>out</code> object.</li>
+                      </ul>
+                    </tip-box>
+                  </div>
                   <div>
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> add getMaxRadius to the `Circle` class">
-                        <question>
-                          <p>Consider the <code>Circle</code> class below:</p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
+                        <div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> add getMaxRadius to the `Circle` class" class="algolia-no-index">
+                              <question>
+                                <p>Consider the <code>Circle</code> class below:</p>
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> x;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> y;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> radius;
@@ -171,11 +174,11 @@
     }
 }
 </code></pre>
-                          <p>Update it as follows so that code given below produces the given output.</p>
-                          <ul>
-                            <li>Add a class-level <code>getMaxRadius</code> method that returns the maximum radius that has been used in all <code>Circle</code> objects created thus far.</li>
-                          </ul>
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <p>Update it as follows so that code given below produces the given output.</p>
+                                <ul>
+                                  <li>Add a class-level <code>getMaxRadius</code> method that returns the maximum radius that has been used in all <code>Circle</code> objects created thus far.</li>
+                                </ul>
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         Circle c = <span class="hljs-keyword">new</span> Circle();
         System.out.println(<span class="hljs-string">"max radius used so far : "</span> + Circle.getMaxRadius());
@@ -188,28 +191,31 @@
     }
 }
 </code></pre>
-                          <p><span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs">max radius used so far : 0.0
+                                <p><span class="fas fa-arrow-down"></span></p>
+                                <pre><code class="hljs">max radius used so far : 0.0
 max radius used so far : 10.0
 max radius used so far : 10.0
 max radius used so far : 12.0
 </code></pre>
-                          <div slot="hint">
-                            <p>You can use a <code>static</code> variable <code>maxRadius</code> to track the maximum value used for the <code>radius</code> attribute so far.</p>
-                            <p>Partial solution:</p>
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
+                                <div slot="hint">
+                                  <p>You can use a <code>static</code> variable <code>maxRadius</code> to track the maximum value used for the <code>radius</code> attribute so far.</p>
+                                  <p>Partial solution:</p>
+                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
     <span class="hljs-keyword">this</span>.radius = Math.max(radius, <span class="hljs-number">0</span>);
     <span class="hljs-keyword">if</span> (maxRadius &lt; <span class="hljs-keyword">this</span>.radius){
         <span class="hljs-comment">// ...</span>
     }
 }
 </code></pre>
+                                </div>
+                              </question>
+                            </panel>
                           </div>
-                        </question>
+                        </div>
                       </panel>
                     </div>
                   </div>
-                </panel>
+                </div>
               </div>
             </div>
           </div>
@@ -217,8 +223,6 @@ max radius used so far : 12.0
       </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 <script src="../../../../../markbind/js/vue.min.js"></script>
 <script src="../../../../../markbind/js/vue-strap.min.js"></script>
@@ -226,22 +230,28 @@ max radius used so far : 12.0
 <script src="../../../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../../../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../../../../markbind/layouts/default/scripts.js"></script>
+
 </html>

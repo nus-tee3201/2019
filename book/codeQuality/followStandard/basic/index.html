@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Code Quality: [Guideline] Follow a Standard: Basic</title>
-    <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-    
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Code Quality: [Guideline] Follow a Standard: Basic</title>
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
-    <div id="content-wrapper">
-  <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <div class="website-content">
-      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span></span></span></span></p>
-      <p></p>
-      <p></p>
-      <div>
-        <div></div>
-        <p></p>
-        <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
-              </span></strong></span></p>
-        <div id="title-and-body">
-          <div>
-            <h4 id="basic"><span>Basic</span></h4>
-          </div>
-          <div id="main">
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div>
+          <link rel="stylesheet" href="/2019/book/css/textbook.css">
+          <div class="website-content">
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span></span></span></span></p>
+            <p></p>
+            <p></p>
             <div>
-              <div class="alt-java">
-                <p>Learn <em>basic</em> guidelines of the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard (by OSS-Generic)</a></p>
-              </div>
-              <div class="alt-python">
-                <p>Sample coding standard: <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="basic"><span>Basic</span></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <div class="alt-java">
+                      <p>Learn <em>basic</em> guidelines of the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard (by OSS-Generic)</a></p>
+                    </div>
+                    <div class="alt-python">
+                      <p>Sample coding standard: <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></p>
+                    </div>
+                  </div>
                   <div>
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find basic coding standard violations">
-                        <question>
-                          <p>Consider the code given below:</p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable class="algolia-no-index">
+                        <div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find basic coding standard violations" class="algolia-no-index">
+                              <question>
+                                <p>Consider the code given below:</p>
+                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;
@@ -80,21 +83,24 @@
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }
 }
 </code></pre>
-                          <p>In what ways the code violate the <em>basic</em> guidelines (i.e., those marked with one ⭐️) of the OSS-Generic Java Coding Standard given <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">here</a>?</p>
-                          <div slot="hint">
-                            <p>Here are three:</p>
-                            <ul>
-                              <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
-                              <li>method name <code>printingDescription()</code> should be named as <code>printDescription()</code></li>
-                              <li>boolean variable <code>important</code> should be named to sound boolean e.g., <code>isImportant</code></li>
-                            </ul>
-                            <p>There are many more.</p>
+                                <p>In what ways the code violate the <em>basic</em> guidelines (i.e., those marked with one ⭐️) of the OSS-Generic Java Coding Standard given <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">here</a>?</p>
+                                <div slot="hint">
+                                  <p>Here are three:</p>
+                                  <ul>
+                                    <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
+                                    <li>method name <code>printingDescription()</code> should be named as <code>printDescription()</code></li>
+                                    <li>boolean variable <code>important</code> should be named to sound boolean e.g., <code>isImportant</code></li>
+                                  </ul>
+                                  <p>There are many more.</p>
+                                </div>
+                              </question>
+                            </panel>
                           </div>
-                        </question>
+                        </div>
                       </panel>
                     </div>
                   </div>
-                </panel>
+                </div>
               </div>
             </div>
           </div>
@@ -102,8 +108,6 @@
       </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
 <script src="../../../../markbind/js/vue-strap.min.js"></script>
@@ -111,22 +115,28 @@
 <script src="../../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
+
 </html>

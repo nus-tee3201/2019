@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Object Oriented Programming: Inheritance: Abstract Classes</title>
-    <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-    
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Object Oriented Programming: Inheritance: Abstract Classes</title>
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
-    <div id="content-wrapper">
-  <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <div class="website-content">
-      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can implement abstract classes</span></span></span></span></p>
-      <p></p>
-      <p></p>
-      <div>
-        <div></div>
-        <p></p>
-        <p><span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
-              </span></strong></span></p>
-        <div id="title-and-body">
-          <div>
-            <h4 id="abstract-classes-and-methods"><span>Abstract Classes and Methods</span></h4>
-          </div>
-          <div id="main">
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div>
+          <link rel="stylesheet" href="/2019/book/css/textbook.css">
+          <div class="website-content">
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can implement abstract classes</span></span></span></span></p>
+            <p></p>
+            <p></p>
             <div>
-              <box type="definition">
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
+                    </span></strong></span></p>
+              <div id="title-and-body">
                 <div>
-                  <p><strong>Abstract Class</strong>: A class declared as an <em>abstract class</em> cannot be instantiated, but they can be subclassed.</p>
+                  <h4 id="abstract-classes-and-methods"><span>Abstract Classes and Methods</span></h4>
                 </div>
-              </box>
-              <p><strong>You can use declare a class as abstract when a class is merely a representation of commonalities among its subclasses</strong> in which case it does not make sense to instantiate objects of that class.</p>
-              <box>
-                <p><span class="fas fa-cube"></span> The <code>Animal</code> class that exist as a generalization of its subclasses <code>Cat</code>, <code>Dog</code>, <code>Horse</code>, <code>Tiger</code> etc. can be declared as abstract because it does not make sense to instantiate an <code>Animal</code> object.</p>
-              </box>
-              <box type="definition">
-                <div>
-                  <p><strong>Abstract Method</strong>: An <em>abstract method</em> is a method signature without a method implementation.</p>
+                <div id="main">
+                  <div>
+                    <box type="definition">
+                      <div>
+                        <p><strong>Abstract Class</strong>: A class declared as an <em>abstract class</em> cannot be instantiated, but they can be subclassed.</p>
+                      </div>
+                    </box>
+                    <p><strong>You can use declare a class as abstract when a class is merely a representation of commonalities among its subclasses</strong> in which case it does not make sense to instantiate objects of that class.</p>
+                    <box>
+                      <p><span class="fas fa-cube"></span> The <code>Animal</code> class that exist as a generalization of its subclasses <code>Cat</code>, <code>Dog</code>, <code>Horse</code>, <code>Tiger</code> etc. can be declared as abstract because it does not make sense to instantiate an <code>Animal</code> object.</p>
+                    </box>
+                    <box type="definition">
+                      <div>
+                        <p><strong>Abstract Method</strong>: An <em>abstract method</em> is a method signature without a method implementation.</p>
+                      </div>
+                    </box>
+                    <box>
+                      <p><span class="fas fa-cube"></span> The <code>move</code> method of the <code>Animal</code> class is likely to be an abstract method as it is not possible to implement a <code>move</code> method at the <code>Animal</code> class level to fit all subclasses <span class="dimmed">because each animal type can move in a different way</span>.</p>
+                    </box>
+                    <p><strong>A class that has an abstract method becomes an abstract class</strong> because the class definition is incomplete (due to the missing method body) and it is not possible to create objects using an incomplete class definition.</p>
+                    <p>Even <strong>a class that does not have any abstract methods <em>can</em> be declared as an abstract class.</strong></p>
+                  </div>
+                  <div></div>
                 </div>
-              </box>
-              <box>
-                <p><span class="fas fa-cube"></span> The <code>move</code> method of the <code>Animal</code> class is likely to be an abstract method as it is not possible to implement a <code>move</code> method at the <code>Animal</code> class level to fit all subclasses <span class="dimmed">because each animal type can move in a different way</span>.</p>
-              </box>
-              <p><strong>A class that has an abstract method becomes an abstract class</strong> because the class definition is incomplete (due to the missing method body) and it is not possible to create objects using an incomplete class definition.</p>
-              <p>Even <strong>a class that does not have any abstract methods <em>can</em> be declared as an abstract class.</strong></p>
+              </div>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
 <script src="../../../../markbind/js/vue-strap.min.js"></script>
@@ -75,22 +79,28 @@
 <script src="../../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
+
 </html>

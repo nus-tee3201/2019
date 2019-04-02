@@ -1,238 +1,230 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Combined Exercises</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    <link rel="stylesheet" href="../../markbind/css/site-nav.css">
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Combined Exercises</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark">
+        <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+        <dropdown text="Schedule" class="nav-link algolia-no-index">
+          <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+          <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+          <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+          <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+          <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+          <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+          <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+          <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+          <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+          <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+          <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        </dropdown>
+        <dropdown text="Textbook" class="nav-link algolia-no-index">
+          <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <dropdown text="Links" class="nav-link algolia-no-index">
+          <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
     <div id="flex-body">
-  <div id="site-nav">
-    <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Requirements</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Design</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Project Management</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Supplementary
-          <i class="dropdown-btn-icon rotate-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container dropdown-container-open">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a current">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="site-nav-btn-wrap">
-    <div id="site-nav-btn">
-      <div class="menu-top-bar"></div>
-      <div class="menu-middle-bar"></div>
-      <div class="menu-bottom-bar"></div>
-    </div>
-  </div>
-  <div id="page-content">
-    <div id="content-wrapper">
-      <link rel="stylesheet" href="/2019/book/css/textbook.css">
-      <div>
-        <navbar placement="top" type="inverse" class="temp-navbar">
-          <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-          <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-          <dropdown text="Schedule" class="nav-link temp-dropdown">
-            <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-            <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-            <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-            <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-            <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-            <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-            <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-            <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-            <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-            <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-            <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-            <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-            <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-          </dropdown>
-          <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-          <dropdown text="Textbook" class="nav-link temp-dropdown">
-            <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-            <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-          </dropdown>
-          <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-          <div class="nav-link temp-dropdown-placeholder">Links</div>
-          <dropdown text="Links" class="nav-link temp-dropdown">
-            <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-            <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-          </dropdown>
-          <li slot="right" class="nav-link">
-            <form class="navbar-form">
-              <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-            </form>
-          </li>
-        </navbar>
-      </div>
-      <div class="website-content">
-        <h2 id="combined-exercises">Combined Exercises<a class="fa fa-anchor" href="#combined-exercises"></a></h2>
-        <p>Here are some exercises that combine multiple topics.</p>
-        <div>
-          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Choose the correct statement about requirements." expanded>
-            <panel header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Prerequisites" minimized>
-              <panel src="/2019/book/requirements/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Introduction%%"></panel>
-              <panel src="/2019/book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Non-Functional Requirements%%"></panel>
-              <panel src="/2019/book/gatheringRequirements/prototyping/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Gathering Requirements: Prototyping%%"></panel>
-            </panel>
-            <p></p>
-            <question>
-              Choose the correct statement
-              <ul radio-group="bbce9" class="radio-list">
-                <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> a. A non-functional requirement is a requirement that hasn’t been fully implemented yet.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> b. Functional requirements are always more important than non-functional ones.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> c. In a green field project, one must start by studying the existing product.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> d. Prototyping can be used to discover as well as record requirements.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> e. Users know how the product should be. They just don’t know how to communicate it to us.</label></li>
-              </ul>
-              <div slot="answer">
-                <ul radio-group="6ac57" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" checked name="6ac57" type="radio"> d. Prototyping can be used to discover as well as record requirements.</label></li>
-                </ul>
-                <p>Explanation:</p>
-                <ul>
-                  <li>Functional requirements are not <em>always</em> more important.</li>
-                  <li>Greenfield projects do not have existing products.</li>
-                  <li>Users can inform us about the present. They may not be able to envision the future. (It’s not the consumers’ job to know what they want --Steve Jobs).</li>
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+          <ul class="px-3 site-nav-list">
+            <li class="mt-2"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
                 </ul>
               </div>
-            </question>
-          </panel>
-        </div>
-        <div>
-          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one of these is the most useful to describe a workflow?" expanded>
-            <panel header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Prerequisites" expandable minimized>
-              <panel src="/2019/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Class Diagrams"></panel>
-              <panel src="/2019/book/modeling/modelingStructures/objectDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Object Diagrams"></panel>
-              <panel src="/2019/book/modeling/modelingBehaviors/activityDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Activity Diagrams"></panel>
-              <panel src="/2019/book/modeling/modelingBehaviors/stateMachineDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: State Machine Diagrams"></panel>
-              <panel src="/2019/book/modeling/modelingBehaviors/useCaseDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Use Case Diagrams"></panel>
-            </panel>
-            <p></p>
-            <question>
-              Which one of these is the most useful to model a workflow?
-              <ul radio-group="ced10" class="radio-list">
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> a. class diagram</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> b. object diagram</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> c. activity diagram</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> d. state machine diagram</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> e. use case diagram</label></li>
-              </ul>
-              <div slot="answer">
-                <ul radio-group="f2e41" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" checked name="f2e41" type="radio"> c. activity diagram</label></li>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
                 </ul>
               </div>
-            </question>
-          </panel>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Supplementary
+                <i class="dropdown-btn-icon rotate-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container dropdown-container-open">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a current">Combined Exercises</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="content-wrapper">
+        <link rel="stylesheet" href="/2019/book/css/textbook.css">
+        <div class="website-content">
+          <h2 id="combined-exercises">Combined Exercises<a class="fa fa-anchor" href="#combined-exercises"></a></h2>
+          <p>Here are some exercises that combine multiple topics.</p>
+          <div>
+            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Choose the correct statement about requirements." expanded>
+              <panel header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Prerequisites" minimized class="algolia-no-index">
+                <panel src="/2019/book/requirements/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Introduction%%" class="algolia-no-index"></panel>
+                <panel src="/2019/book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Requirements: Non-Functional Requirements%%" class="algolia-no-index"></panel>
+                <panel src="/2019/book/gatheringRequirements/prototyping/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Gathering Requirements: Prototyping%%" class="algolia-no-index"></panel>
+              </panel>
+              <p></p>
+              <question>
+                Choose the correct statement
+                <ul radio-group="bbce9" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> a. A non-functional requirement is a requirement that hasn’t been fully implemented yet.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> b. Functional requirements are always more important than non-functional ones.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> c. In a green field project, one must start by studying the existing product.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> d. Prototyping can be used to discover as well as record requirements.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="bbce9" type="radio"> e. Users know how the product should be. They just don’t know how to communicate it to us.</label></li>
+                </ul>
+                <div slot="answer">
+                  <ul radio-group="6ac57" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="6ac57" type="radio"> d. Prototyping can be used to discover as well as record requirements.</label></li>
+                  </ul>
+                  <p>Explanation:</p>
+                  <ul>
+                    <li>Functional requirements are not <em>always</em> more important.</li>
+                    <li>Greenfield projects do not have existing products.</li>
+                    <li>Users can inform us about the present. They may not be able to envision the future. (It’s not the consumers’ job to know what they want --Steve Jobs).</li>
+                  </ul>
+                </div>
+              </question>
+            </panel>
+          </div>
+          <div>
+            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one of these is the most useful to describe a workflow?" expanded>
+              <panel header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Prerequisites" expandable minimized class="algolia-no-index">
+                <panel src="/2019/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Class Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2019/book/modeling/modelingStructures/objectDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Structures: Object Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2019/book/modeling/modelingBehaviors/activityDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Activity Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2019/book/modeling/modelingBehaviors/stateMachineDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: State Machine Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2019/book/modeling/modelingBehaviors/useCaseDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span>%% Modeling: Modeling Behaviors: Use Case Diagrams" class="algolia-no-index"></panel>
+              </panel>
+              <p></p>
+              <question>
+                Which one of these is the most useful to model a workflow?
+                <ul radio-group="ced10" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> a. class diagram</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> b. object diagram</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> c. activity diagram</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> d. state machine diagram</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> e. use case diagram</label></li>
+                </ul>
+                <div slot="answer">
+                  <ul radio-group="f2e41" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="f2e41" type="radio"> c. activity diagram</label></li>
+                  </ul>
+                </div>
+              </question>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -240,22 +232,28 @@
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>

@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Coding Best Practices: [Practice] Make the Code Obvious</title>
-    <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../../../../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../../../../../markbind/layouts/default/styles.css">
-    
-    
-    
-    <link rel="icon" href="/2019/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Coding Best Practices: [Practice] Make the Code Obvious</title>
+  <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../../../../../markbind/layouts/default/styles.css">
+
+
+
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body>
-<div id="app">
-    <div id="content-wrapper">
-  <div>
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <div class="website-content">
-      <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span></span></span></span></p>
-      <p></p>
-      <p></p>
-      <div>
-        <div></div>
-        <p></p>
-        <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
-              </span></strong></span></p>
-        <div id="title-and-body">
-          <div>
-            <h4 id="make-the-code-obvious"><span>Make the Code Obvious</span></h4>
-          </div>
-          <div id="main">
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div>
+          <link rel="stylesheet" href="/2019/book/css/textbook.css">
+          <div class="website-content">
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span></span></span></span></p>
+            <p></p>
+            <p></p>
             <div>
-              <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
-              <ul>
-                <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
-                <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
-                <li>[<code>Java</code>, <code>Python</code>] Use <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
-              </ul>
-              <modal title="More about enumerations" id="modal:obviousCode-enums">
-                <ul>
-                  <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
-                  <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
-                </ul>
-              </modal>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="make-the-code-obvious"><span>Make the Code Obvious</span></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
+                    <ul>
+                      <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
+                      <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
+                      <li>[<code>Java</code>, <code>Python</code>] Use <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
+                    </ul>
+                    <modal title="More about enumerations" id="modal:obviousCode-enums" class="algolia-no-index">
+                      <ul>
+                        <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
+                        <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
+                      </ul>
+                    </modal>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 <script src="../../../../../../markbind/js/vue.min.js"></script>
 <script src="../../../../../../markbind/js/vue-strap.min.js"></script>
@@ -68,22 +72,28 @@
 <script src="../../../../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../../../../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../../../../../markbind/layouts/default/scripts.js"></script>
+
 </html>

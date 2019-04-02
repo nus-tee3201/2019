@@ -1,206 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-122519234-1');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Textbook Chapter : Git and Github</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    <link rel="stylesheet" href="../../markbind/css/site-nav.css">
-    <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-    <link rel="stylesheet" href="/2019/book/css/textbook.css">
-    <link rel="icon" href="/2019/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-122519234-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Textbook Chapter : Git and Github</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2019/book/css/textbook.css">
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="app">
-    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
-
-  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#git-and-github">Git and Github&#x200E;</a>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#init">Init&#x200E;</a>
-      <a class="nav-link py-1" href="#commit">Commit&#x200E;</a>
-      <a class="nav-link py-1" href="#ignore">Ignore&#x200E;</a>
-      <a class="nav-link py-1" href="#tag">Tag&#x200E;</a>
-      <a class="nav-link py-1" href="#checkout">Checkout&#x200E;</a>
-      <a class="nav-link py-1" href="#stash">Stash&#x200E;</a>
-      <a class="nav-link py-1" href="#clone">Clone&#x200E;</a>
-      <a class="nav-link py-1" href="#pull">Pull&#x200E;</a>
-      <a class="nav-link py-1" href="#push">Push&#x200E;</a>
-      <a class="nav-link py-1" href="#branch">Branch&#x200E;</a>
-      <a class="nav-link py-1" href="#merge-conflicts">Merge Conflicts&#x200E;</a>
-      <a class="nav-link py-1" href="#create-prs">Create PRs&#x200E;</a>
-      <a class="nav-link py-1" href="#manage-prs">Manage PRs&#x200E;</a>
-      <a class="nav-link py-1" href="#forking-workflow">Forking Workflow&#x200E;</a>
-    </nav>
-
-  </nav>
-</nav>
-
-<div id="flex-body">
-  <div id="site-nav">
-    <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark">
+        <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+        <dropdown text="Schedule" class="nav-link algolia-no-index">
+          <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+          <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+          <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+          <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+          <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+          <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+          <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+          <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+          <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+          <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+          <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        </dropdown>
+        <dropdown text="Textbook" class="nav-link algolia-no-index">
+          <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <dropdown text="Links" class="nav-link algolia-no-index">
+          <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+          <ul class="px-3 site-nav-list">
+            <li class="mt-2"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn">Supplementary
+                <i class="dropdown-btn-icon">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="site-nav-list">
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
+                  <li class="mt-2"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Requirements</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Design</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Project Management</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">Supplementary
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="/2019/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="site-nav-btn-wrap">
-    <div id="site-nav-btn">
-      <div class="menu-top-bar"></div>
-      <div class="menu-middle-bar"></div>
-      <div class="menu-bottom-bar"></div>
-    </div>
-  </div>
-  <div id="page-content">
-    <div id="page-nav-content-wrapper">
+      </nav>
       <div id="content-wrapper">
         <link rel="stylesheet" href="/2019/book/css/textbook.css">
         <link rel="stylesheet" href="/2019/se-book-adapted/css/te3201.css">
         <div class="website-content">
-          <div>
-            <navbar placement="top" type="inverse" class="temp-navbar">
-              <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-              <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-              <dropdown text="Schedule" class="nav-link temp-dropdown">
-                <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-                <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-                <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-                <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-                <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-                <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-                <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-                <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-                <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-                <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-                <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-                <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-                <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-              </dropdown>
-              <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-              <dropdown text="Textbook" class="nav-link temp-dropdown">
-                <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-                <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-              </dropdown>
-              <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-              <div class="nav-link temp-dropdown-placeholder">Links</div>
-              <dropdown text="Links" class="nav-link temp-dropdown">
-                <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-                <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-                <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-              </dropdown>
-              <li slot="right" class="nav-link">
-                <form class="navbar-form">
-                  <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-                </form>
-              </li>
-            </navbar>
-          </div>
           <p><span class="dimmed"><strong><span></span></strong></span></p>
           <div id="title">
             <div>
@@ -216,7 +187,7 @@
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can create a local Git repo</span></span></span></span>
               <p></p>
               <div>
-                <panel header="%%<span class='fas fa-paperclip'></span> Git Overview%%" class="non-printable">
+                <panel header="%%<span class='fas fa-paperclip'></span> Git Overview%%" class="non-printable algolia-no-index">
                   <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   <p></p>
@@ -237,7 +208,7 @@
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>Open a Git Bash Terminal.</p>
                       <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p>
@@ -296,7 +267,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
                       <pre><code class="hljs sh">git status
@@ -339,7 +310,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
                       <pre><code class="hljs sh">git add fruits.txt
@@ -370,7 +341,7 @@ git status
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
                       <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
@@ -428,7 +399,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
                       <pre><code class="hljs">temp.txt
@@ -467,7 +438,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>To add a tag to the current commit as <code>v1.0</code>,</p>
                       <pre><code class="hljs">git tag –a v1.0
@@ -503,7 +474,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
 </code></pre>
@@ -544,7 +515,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>The <code>diff</code> command can be used to view the differences between two points of the history.</p>
                       <ul>
@@ -563,7 +534,7 @@ index 15b57f7..17f4528 100644
                   </tab>
                 </tabs>
                 <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <trigger trigger="click" for="modal:checkout-stash">stash</trigger> them first to prevent them from being overwritten.</p>
-                <modal large title="%%Extract%%" id="modal:checkout-stash">
+                <modal large title="%%Extract%%" id="modal:checkout-stash" class="algolia-no-index">
                     <div>
                     <div></div>
                     <p></p>
@@ -583,7 +554,7 @@ index 15b57f7..17f4528 100644
                                 <hr>
                               </p>
                             </tab>
-                              <tab header="CLI">
+                              <tab header="CLI" class="algolia-no-index">
                               <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                               <p>
                                 <hr>
@@ -613,7 +584,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>Use the <code>checkout &lt;commit-identifier&gt;</code> command to change the working directory to the state it was in at a specific past commit.</p>
                       <ul>
@@ -651,7 +622,7 @@ index 15b57f7..17f4528 100644
                       <hr>
                     </p>
                   </tab>
-                    <tab header="CLI">
+                    <tab header="CLI" class="algolia-no-index">
                     <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                     <p>
                       <hr>
@@ -685,7 +656,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>You can use the <code>clone</code> command to clone a repo.</p>
                       <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -708,7 +679,7 @@ index 15b57f7..17f4528 100644
               <div>
                 <p>Clone the sample repo as explained in <trigger for="modal:clone-repository" trigger="click">[Textbook <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Tools → Git &amp; GitHub → Clone]</trigger>.</p>
                 <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-                <modal title="**Clone Repository**" id="modal:clone-repository">
+                <modal title="**Clone Repository**" id="modal:clone-repository" class="algolia-no-index">
                   <div>
                     <panel type="seamless" expanded>
                       <span slot="header" class="card-title">
@@ -735,7 +706,7 @@ index 15b57f7..17f4528 100644
                             </div>
                             <hr>
                           </tab>
-                          <tab header="CLI">
+                          <tab header="CLI" class="algolia-no-index">
                             <div>
                               <p>You can use the <code>clone</code> command to clone a repo.</p>
                               <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -766,7 +737,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>Use the <code>reset</code> command to delete commits at the tip of the revision history.</p>
                       <pre><code class="hljs">git reset --hard HEAD~2
@@ -788,7 +759,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p><code>git pull origin</code></p>
                     </div>
@@ -814,7 +785,7 @@ index 15b57f7..17f4528 100644
                   </li>
                   <li>
                     <p>Fork the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
-                    <panel type="seamless" header="%%How to fork a repo?%%">
+                    <panel type="seamless" header="%%How to fork a repo?%%" class="algolia-no-index">
                       <p>Navigate to the on GitHub and click on the <img src="/2019/book/gitAndGithub/push//2019/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                       <p></p>
                     </panel>
@@ -839,7 +810,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>Use the command <code>git push origin master</code>. Enter Github username and password when prompted.</p>
                     </div>
@@ -881,13 +852,13 @@ index 15b57f7..17f4528 100644
                     </ol>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <ol>
                       <li>Navigate to the folder containing the local repo.</li>
                       <li>Set the new remote repo as a <em>remote</em> of the local repo.<br>
                         command: <code>git remote add {remote_name} {remote_repo_url}</code><br>
                         e.g., <code>git remote add origin https://github.com/johndoe/foobar.git</code></li>
-                      <li>Push to the new remote the usual way. You can use the <code>-u</code> flag to inform Git that you wish to <tooltip content="i.e., remember which branch in the remote repo corresponds to which branch in the local repo">track</tooltip> the branch.<br>
+                      <li>Push to the new remote the usual way. You can use the <code>-u</code> flag to inform Git that you wish to <tooltip content="i.e., remember which branch in the remote repo corresponds to which branch in the local repo" class="algolia-no-index">track</tooltip> the branch.<br>
                         e.g., <code>git push -u origin master</code></li>
                     </ol>
                     <hr>
@@ -915,7 +886,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <pre><code class="hljs">git status
 </code></pre>
@@ -939,7 +910,7 @@ index 15b57f7..17f4528 100644
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>You can use the <code>branch</code> command to create a new branch and the <code>checkout</code> command to switch to a specific branch.</p>
                       <pre><code class="hljs">git branch feature1
@@ -963,7 +934,7 @@ git checkout feature1
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <pre><code class="hljs">git checkout master
 </code></pre>
@@ -985,7 +956,7 @@ git checkout feature1
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <pre><code class="hljs">git merge master
 </code></pre>
@@ -1004,7 +975,7 @@ git checkout feature1
                     <p>Right-click on the <code>feature1</code> branch and choose <code>Merge...</code>.</p>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <pre><code class="hljs">git merge feature1
 </code></pre>
                     <hr>
@@ -1030,7 +1001,7 @@ git checkout feature1
                     </div>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <div>
                       <p>Use the <code>--no-ff</code> switch (short for <em>no fast forward</em>):</p>
                       <pre><code class="hljs">git merge --no-ff add-countries
@@ -1121,7 +1092,7 @@ This repo can be used to practice creating PRs.
                     <p></p>
                     <hr>
                   </tab>
-                  <tab header="CLI">
+                  <tab header="CLI" class="algolia-no-index">
                     <pre><code class="hljs">git push origin add-intro
 </code></pre>
                     <hr>
@@ -1179,7 +1150,7 @@ This repo can be used to practice creating PRs.
               <p></p>
               <div>
                 <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [<trigger trigger="click" for="modal:managePrs-createPrs">Tools → Git &amp; GitHub → Create PRs</trigger>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs">
+                <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs" class="algolia-no-index">
                     <div>
                     <div>
                       <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
@@ -1197,7 +1168,7 @@ This repo can be used to practice creating PRs.
                           <p></p>
                           <hr>
                         </tab>
-                        <tab header="CLI">
+                        <tab header="CLI" class="algolia-no-index">
                           <pre><code class="hljs">git push origin add-intro
 </code></pre>
                           <hr>
@@ -1334,15 +1305,37 @@ git pull origin master
           </panel>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#git-and-github">Git and Github&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#init">Init&#x200E;</a>
+              <a class="nav-link py-1" href="#commit">Commit&#x200E;</a>
+              <a class="nav-link py-1" href="#ignore">Ignore&#x200E;</a>
+              <a class="nav-link py-1" href="#tag">Tag&#x200E;</a>
+              <a class="nav-link py-1" href="#checkout">Checkout&#x200E;</a>
+              <a class="nav-link py-1" href="#stash">Stash&#x200E;</a>
+              <a class="nav-link py-1" href="#clone">Clone&#x200E;</a>
+              <a class="nav-link py-1" href="#pull">Pull&#x200E;</a>
+              <a class="nav-link py-1" href="#push">Push&#x200E;</a>
+              <a class="nav-link py-1" href="#branch">Branch&#x200E;</a>
+              <a class="nav-link py-1" href="#merge-conflicts">Merge Conflicts&#x200E;</a>
+              <a class="nav-link py-1" href="#create-prs">Create PRs&#x200E;</a>
+              <a class="nav-link py-1" href="#manage-prs">Manage PRs&#x200E;</a>
+              <a class="nav-link py-1" href="#forking-workflow">Forking Workflow&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+    </footer>
   </div>
-</div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 01 Apr 2019 12:19:01 GMT</small></div>
-</footer>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -1350,22 +1343,28 @@ git pull origin master
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>

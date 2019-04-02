@@ -1,134 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-122519234-1');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 1.22.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Website - Python Basics: The Monty Project</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css" >
-    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css" >
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-    <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-    <link rel="stylesheet" href="../../markbind/css/site-nav.css">
-    <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-    <link rel="stylesheet" href="/2019/css/main.css">
-    <link rel="stylesheet" href="/2019/css/admin.css">
-    <link rel="icon" href="/2019/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-122519234-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Python Basics: The Monty Project</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2019/css/main.css">
+  <link rel="stylesheet" href="/2019/css/admin.css">
+  <link rel="icon" href="/2019/favicon.ico">
 </head>
+
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
-<div id="app">
-    <nav id="page-nav" class="navbar navbar-light bg-transparent slim-scroll">
-
-  <nav class="nav nav-pills flex-column my-0 small" style="flex-wrap: nowrap;">
-    <a class="nav-link py-1" href="#the-monty-project">The Monty Project&#x200E;</a>
-    <nav class="nav nav-pills flex-column my-0" style="margin-left: 5%; flex-wrap: nowrap;">
-      <a class="nav-link py-1" href="#monty-1">Monty 1&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-2">Monty 2&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-3">Monty 3&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-4">Monty 4&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-5">Monty 5&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-6">Monty 6&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-7">Monty 7&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-8">Monty 8&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-9">Monty 9&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-10">Monty 10&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-11">Monty 11&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-12">Monty 12&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-13">Monty 13&#x200E;</a>
-      <a class="nav-link py-1" href="#monty-14">Monty 14&#x200E;</a>
-    </nav>
-
-  </nav>
-</nav>
-
-<div id="flex-body">
-  <div id="site-nav">
-    <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/gui.html" class="site-nav__a">GUIs</a></li>
-      <li style="margin-top: 10px">
-        <hr>
-      </li>
-      <li style="margin-top: 10px"><span class="dimmed"><strong>Appendices</strong></span></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
-      <li style="margin-top: 10px"><a href="/2019/programming/toc/monty.html" class="site-nav__a current"><strong>E.</strong> The Monty Project</a></li>
-    </ul>
-  </div>
-  <div id="site-nav-btn-wrap">
-    <div id="site-nav-btn">
-      <div class="menu-top-bar"></div>
-      <div class="menu-middle-bar"></div>
-      <div class="menu-bottom-bar"></div>
-    </div>
-  </div>
-  <div id="page-content">
-    <div id="page-nav-content-wrapper">
-      <div id="content-wrapper">
-        <div>
-          <navbar placement="top" type="inverse" class="temp-navbar">
-            <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
-            <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-            <dropdown text="Schedule" class="nav-link temp-dropdown">
-              <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
-              <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
-              <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-              <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
-              <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
-              <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
-              <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-              <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
-              <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-              <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
-              <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-              <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
-              <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
-            </dropdown>
-            <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-            <dropdown text="Textbook" class="nav-link temp-dropdown">
-              <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
-              <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
-            </dropdown>
-            <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-            <div class="nav-link temp-dropdown-placeholder">Links</div>
-            <dropdown text="Links" class="nav-link temp-dropdown">
-              <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-              <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
-              <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
-            </dropdown>
-            <li slot="right" class="nav-link">
-              <form class="navbar-form">
-                <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-              </form>
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark">
+        <a slot="brand" href="/2019/index.html" title="Home" class="navbar-brand">TE3201 <small>2019</small></a>
+        <dropdown text="Schedule" class="nav-link algolia-no-index">
+          <li><a href="/2019/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
+          <li><a href="/2019/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
+          <li><a href="/2019/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
+          <li><a href="/2019/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 11] </span></a></li>
+          <li><a href="/2019/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 18] </span></a></li>
+          <li><a href="/2019/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 25] </span></a></li>
+          <li><a href="/2019/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
+          <li><a href="/2019/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
+          <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
+          <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+          <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+        </dropdown>
+        <dropdown text="Textbook" class="nav-link algolia-no-index">
+          <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2019/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2019/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <dropdown text="Links" class="nav-link algolia-no-index">
+          <li><a href="https://ivle.nus.edu.sg/v1/forum/forum.aspx?ForumID=59412bb2-6f68-4deb-89de-02bd5699644a" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~damithch/" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructor</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/announcement/default.aspx?AnnID=13365da0-86dd-44c7-a7fd-8251ebf85ef9" target="_blank" class="dropdown-item"><span class="fas fa-bullhorn"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=871a2f0d-e2cc-490a-844d-f87ce16e4ecb" target="_blank" class="dropdown-item"><span class="far fa-images"></span> Lecture Notes</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=9e7ee646-5135-4468-9878-56a366684607&WorkbinID=7939dfa4-a393-40a1-b453-93001a88dc59&FolderID=27f02d89-5d67-4198-aea2-b4e5514b17e5" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+          <ul class="px-3 site-nav-list">
+            <li class="mt-2"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/functions.html" class="site-nav__a">Functions</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/lists.html" class="site-nav__a">Lists</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/errors.html" class="site-nav__a">Error Handling</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/strings.html" class="site-nav__a">Strings</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/files.html" class="site-nav__a">Files</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/gui.html" class="site-nav__a">GUIs</a></li>
+            <li class="mt-2">
+              <hr>
             </li>
-          </navbar>
+            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
+            <li class="mt-2"><a href="/2019/programming/toc/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
+            <li class="mt-2"><a href="/2019/programming/toc/monty.html" class="site-nav__a current"><strong>E.</strong> The Monty Project</a></li>
+          </ul>
         </div>
+      </nav>
+      <div id="content-wrapper">
         <div class="website-content" id="main">
           <div id="toc">
             <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a></span></p>
@@ -147,7 +118,7 @@ foo
 &gt;&gt;&gt; Your command is: foo
 &gt;&gt;&gt; Bye!
 </code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-comment"># ADD MORE CODE HERE</span>
 </code></pre>
@@ -178,7 +149,7 @@ exit
 y
 &gt;&gt;&gt; Bye!
 </code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
     print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
@@ -206,7 +177,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 
 main()
 </code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
@@ -294,7 +265,7 @@ abcde
                   <p>The above technique can be used to extract the item description from an <code>add</code> command.
                   </p>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 items = []
@@ -422,7 +393,7 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
 </code></pre>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <pre><code class="hljs python">
 items = []
 
@@ -551,7 +522,7 @@ more text
 </code></pre>
                   <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
     banner = <span class="hljs-string">'''
 *******************************************************************************************
@@ -654,7 +625,7 @@ return book,pending
                     </li>
                   </ul>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code for loading data from the file.</p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
@@ -794,7 +765,7 @@ D,return book,pending,Monday
                     </li>
                   </ul>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code adding a todo item:</p>
                   <pre><code class="hljs python">command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
 <span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:
@@ -808,7 +779,7 @@ D,return book,pending,Monday
               <div id="monty9">
                 <h3 id="monty-9">Monty 9<a class="fa fa-anchor" href="#monty-9"></a></h3>
                 <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-8">Monty 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code for an example <code>ToDo</code> class:</p>
                   <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
@@ -864,7 +835,7 @@ D,return book,pending,Monday
                   <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
                   <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
                 </ul>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here's the main part of the code that illustrates how these objects can work together:</p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
@@ -957,7 +928,7 @@ list
     ------------------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
                   <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
@@ -979,7 +950,7 @@ list
               <div id="monty11">
                 <h3 id="monty-11">Monty 11<a class="fa fa-anchor" href="#monty-11"></a></h3>
                 <p>Enhance the <a href="/2019/programming/toc/monty.html#monty-10">Monty 10 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     TYPE_KEY = <span class="hljs-string">'T'</span>
@@ -1047,7 +1018,7 @@ list
                 <p></p>
                 <img src="/2019/programming/monty/images/gui-later.png">
                 <p></p>
-                <panel type="seamless" header="Skeletal GUI code">
+                <panel type="seamless" header="Skeletal GUI code" class="algolia-no-index">
                   <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
 <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
 
@@ -1158,15 +1129,37 @@ GUI(TaskManager()).start()
           </div>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#the-monty-project">The Monty Project&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#monty-1">Monty 1&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-2">Monty 2&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-3">Monty 3&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-4">Monty 4&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-5">Monty 5&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-6">Monty 6&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-7">Monty 7&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-8">Monty 8&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-9">Monty 9&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-10">Monty 10&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-11">Monty 11&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-12">Monty 12&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-13">Monty 13&#x200E;</a>
+              <a class="nav-link py-1" href="#monty-14">Monty 14&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+    </footer>
   </div>
-</div>
-<div id="flex-div"></div>
-<footer>
-  <div class="text-center">
-    <small>This site was built with <a href="https://markbind.org/">MarkBind 1.22.0</a> at Mon, 01 Apr 2019 12:19:01 GMT</small></div>
-</footer>
-</div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
@@ -1174,22 +1167,28 @@ GUI(TaskManager()).start()
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/2019'
-    const enableSearch = false
+  const baseUrl = '/2019'
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
-    function initAlgolia() {
-      docsearch({
-        apiKey: "29bf21caddc74372e5c75f9a557715ec",
-        indexName: "te3201_2019",
-        inputSelector: "#algolia-search-input",
-        algoliaOptions: {"hitsPerPage":10,"facetFilters":[["tags:admin","tags:programming","tags:se-book-adapted"]]},
-        debug: false,
-      });
-    }
-    MarkBind.afterSetup(initAlgolia);
-  </script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
+
 </html>
