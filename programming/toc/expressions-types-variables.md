@@ -1,12 +1,11 @@
 <frontmatter>
 title: "Python Basics: Expressions, Data Types, Variables"
+header: header.md
 footer: footer.md
 head: adminHead.md
 siteNav: programming-sitenav.md
 pageNav: 4
 </frontmatter>
-
-<include src="../../common/header.md" />
 
 <div class="website-content" id="main">
 <div id="toc">

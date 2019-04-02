@@ -1,11 +1,10 @@
 <frontmatter>
 title: "Admin Info"
+header: header.md
 footer: footer.md
 head: adminHead.md
 siteNav: adminSiteNav-te3201.md
 </frontmatter>
-
-<include src="../common/header.md" />
 
 <div class="website-content" id="main">
 

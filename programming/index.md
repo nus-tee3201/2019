@@ -1,11 +1,10 @@
 <frontmatter>
 title: "Programming Basics (with Python)"
+header: header.md
 footer: footer.md
 head: adminHead.md
 siteNav: programming-sitenav.md
 </frontmatter>
-
-<include src="../common/header.md" />
 
 <div class="website-content" id="main">
 
