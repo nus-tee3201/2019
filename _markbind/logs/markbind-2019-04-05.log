@@ -1,0 +1,25 @@
+2019-04-05T04:36:54.201Z - info: Website generation started at 12:36:47 PM
+2019-04-05T04:36:59.592Z - info: Building assets...
+2019-04-05T04:37:04.315Z - info: Assets built
+2019-04-05T04:37:04.316Z - info: Generating pages...
+2019-04-05T04:38:54.070Z - info: Pages built
+2019-04-05T04:39:16.454Z - info: Website generation complete! Total build time: 149.092s
+2019-04-05T04:39:16.896Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-04-05T04:39:16.896Z - info: Press CTRL+C to stop ...
+2019-04-05T04:39:16.919Z - info: Site data built
+2019-04-05T04:42:05.856Z - info: [12:42:05 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\book\about\usage.md
+2019-04-05T04:42:06.858Z - info: Rebuilding affected source files
+2019-04-05T04:42:06.861Z - info: Rebuilding 1 pages
+2019-04-05T04:42:07.913Z - info: Pages rebuilt
+2019-04-05T04:42:07.929Z - info: Site data built
+2019-04-05T06:58:14.238Z - info: Website generation started at 2:58:08 PM
+2019-04-05T06:58:18.584Z - info: Building assets...
+2019-04-05T06:58:22.234Z - info: Assets built
+2019-04-05T06:58:22.234Z - info: Generating pages...
+2019-04-05T06:59:59.363Z - info: Pages built
+2019-04-05T07:00:16.970Z - info: Website generation complete! Total build time: 128.207s
+2019-04-05T07:00:17.340Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-04-05T07:00:17.340Z - info: Press CTRL+C to stop ...
+2019-04-05T07:00:17.376Z - info: Site data built
+2019-04-05T09:24:41.407Z - info: Website generation started at 5:24:35 PM
+2019-04-05T09:24:46.177Z - info: Building assets...

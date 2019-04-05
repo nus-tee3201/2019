@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="generator" content="MarkBind 2.1.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter [Printable] : Git and Github</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -216,10 +216,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   </tabs>
                   <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which the commits go on by default.</p>
                   <p>Do some changes to <code>fruits.txt</code> (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps you followed before. You should end up with something like this.</p>
-                  <img src="/2019/book/gitAndGithub/commit//2019/book/gitAndGithub/commit/images/sourcetree_6.png" height="180">
+                  <img src="/2019/book/gitAndGithub/commit/images/sourcetree_6.png" height="180">
                   <p></p>
                   <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p>
-                  <img src="/2019/book/gitAndGithub/commit//2019/book/gitAndGithub/commit/images/sourcetree_7.png" height="150">
+                  <img src="/2019/book/gitAndGithub/commit/images/sourcetree_7.png" height="150">
                   <p></p>
                 </div>
               </div>
@@ -580,7 +580,7 @@ index 15b57f7..17f4528 100644
                     <li>
                       <p>Fork the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
                       <panel type="seamless" header="%%How to fork a repo?%%" class="algolia-no-index">
-                        <p>Navigate to the on GitHub and click on the <img src="/2019/book/gitAndGithub/push//2019/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
+                        <p>Navigate to the on GitHub and click on the <img src="/2019/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                         <p></p>
                       </panel>
                       <p></p>
@@ -615,16 +615,16 @@ index 15b57f7..17f4528 100644
                   <ol>
                     <li>
                       <p>Login to your GitHub account and choose to create a new Repo. <br>
-                        <img src="/2019/book/gitAndGithub/push//2019/book/gitAndGithub/push/images/createNewRemoteRepo.png" width="150"></p>
+                        <img src="/2019/book/gitAndGithub/push/images/createNewRemoteRepo.png" width="150"></p>
                     </li>
                     <li>
                       <p>In the next screen, provide a name for your repo but keep the <code>Initialize this repo ...</code> tick box unchecked.<br>
-                        <img src="/2019/book/gitAndGithub/push//2019/book/gitAndGithub/push/images/fillNewRepoInfo.png" width="600"></p>
+                        <img src="/2019/book/gitAndGithub/push/images/fillNewRepoInfo.png" width="600"></p>
                     </li>
                     <li>
                       <p>Note the URL of the repo. It will be of the form <code>https://github.com/{your_user_name}/{repo_name}.git</code><br>
                         e.g., <code>https://github.com/johndoe/foobar.git</code><br>
-                        <img src="/2019/book/gitAndGithub/push//2019/book/gitAndGithub/push/images/newRepoUrl.png" width="450"></p>
+                        <img src="/2019/book/gitAndGithub/push/images/newRepoUrl.png" width="450"></p>
                     </li>
                   </ol>
                   <p>Next, you can push the existing local repo to the new remote repo as follows:</p>
@@ -638,11 +638,11 @@ index 15b57f7..17f4528 100644
                             <li><code>Remote name</code>: the name you want to assign to the remote repo. Recommended <code>origin</code></li>
                             <li><code>URL/path</code>: the URL of your repo (ending in <code>.git</code>) that you collected earlier.</li>
                             <li><code>Username</code>: your GitHub username<br>
-                              <img src="/2019/book/gitAndGithub/push//2019/book/gitAndGithub/push/images/fillRemoteInfoForSourceTree.png" width="450"></li>
+                              <img src="/2019/book/gitAndGithub/push/images/fillRemoteInfoForSourceTree.png" width="450"></li>
                           </ul>
                         </li>
                         <li>Now you can push your repo to the new remote the usual way.<br>
-                          <img src="/2019/book/gitAndGithub/push//2019/book/gitAndGithub/push/images/pushToRemote.png" width="470"></li>
+                          <img src="/2019/book/gitAndGithub/push/images/pushToRemote.png" width="470"></li>
                       </ol>
                       <hr>
                     </tab>
@@ -733,11 +733,11 @@ git checkout feature1
                     </tab>
                   </tabs>
                   <p><strong>4. Add a commit to the master branch.</strong> Let’s imagine it’s a bug fix.</p>
-                  <img src="/2019/book/gitAndGithub/branch//2019/book/gitAndGithub/branch/images/sourcetree_4.png" height="100">
+                  <img src="/2019/book/gitAndGithub/branch/images/sourcetree_4.png" height="100">
                   <p></p>
                   <p><strong>5. Switch back to the <code>feature1</code> branch</strong> <span class="dimmed">(similar to step 3)</span>.</p>
                   <p><strong>6. Merge the <code>master</code> branch to the <code>feature1</code> branch</strong>, giving an end-result like the below. Also note how Git has created a <em>merge commit</em>.</p>
-                  <img src="/2019/book/gitAndGithub/branch//2019/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
+                  <img src="/2019/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
                   <p></p>
                   <tabs>
                     <tab header="SourceTree">
@@ -758,7 +758,7 @@ git checkout feature1
                   <p><strong>7. Add another commit to the <code>feature1</code> branch.</strong></p>
                   <p><strong>8. Switch to the <code>master</code> branch and add one more commit.</strong></p>
                   <p><strong>9. Merge <code>feature1</code> to the master branch</strong>, giving and end-result like this:</p>
-                  <img src="/2019/book/gitAndGithub/branch//2019/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
+                  <img src="/2019/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
                   <p></p>
                   <tabs>
                     <tab header="SourceTree">
@@ -772,13 +772,13 @@ git checkout feature1
                     </tab>
                   </tabs>
                   <p><strong>10. Create a new branch called <code>add-countries</code>, switch to it, and add some commits to it</strong> <span class="dimmed">(similar to steps 1-2 above)</span>. You should have something like this now:</p>
-                  <img src="/2019/book/gitAndGithub/branch//2019/book/gitAndGithub/branch/images/addCountriesBranchBeforeMerging.png" height="80">
+                  <img src="/2019/book/gitAndGithub/branch/images/addCountriesBranchBeforeMerging.png" height="80">
                   <p></p>
                   <p><strong>11. Go back to the <code>master</code> branch and merge the <code>add-countries</code> branch onto the <code>master</code> branch</strong> <span class="dimmed">(similar to steps 8-9 above)</span>. While you might expect to see something like the below,</p>
-                  <img src="/2019/book/gitAndGithub/branch//2019/book/gitAndGithub/branch/images/addCountriesBranchNoFastForward.png" height="100">
+                  <img src="/2019/book/gitAndGithub/branch/images/addCountriesBranchNoFastForward.png" height="100">
                   <p></p>
                   <p>... you are likely to see something like this instead:</p>
-                  <img src="/2019/book/gitAndGithub/branch//2019/book/gitAndGithub/branch/images/addCountriesBranchAfterMerging.png" height="80">
+                  <img src="/2019/book/gitAndGithub/branch/images/addCountriesBranchAfterMerging.png" height="80">
                   <p></p>
                   <p>That is because <strong>Git does a <mark><em>fast forward</em> merge</mark> if possible</strong>. Seeing that the <code>master</code> branch has not changed since you started the <code>add-countries</code> branch, Git has decided it is simpler to just put the commits of the <code>add-countries</code> branch in front of the <code>master</code> branch, without going into the trouble of creating an extra merge commit.</p>
                   <p><strong>It is possible to force Git to create a merge commit even if fast forwarding is possible.</strong></p>
@@ -811,7 +811,7 @@ git checkout feature1
                 <div>
                   <p><strong>1. Start a branch named <code>fix1</code> in a local repo. Create a commit</strong> that adds a line with some text to one of the files.</p>
                   <p><strong>2. Switch back to <code>master</code> branch. Create a commit with a conflicting change</strong> i.e. it adds a line with some different text in the exact location the previous line was added.</p>
-                  <img src="/2019/book/gitAndGithub/mergeConflicts//2019/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
+                  <img src="/2019/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
                   <p></p>
                   <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
                   <pre><code class="hljs">COLORS
@@ -870,7 +870,7 @@ This repo can be used to practice creating PRs.
                   <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
                   <tabs>
                     <tab header="SourceTree">
-                      <img src="/2019/book/gitAndGithub/createPRs//2019/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
+                      <img src="/2019/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                       <p></p>
                       <hr>
                     </tab>
@@ -882,23 +882,23 @@ This repo can be used to practice creating PRs.
                   </tabs>
                   <p><strong>4. Create a Pull Request from the <code>add-intro</code> branch in your fork to the <code>master</code> branch of the same fork</strong> (i.e. <code>your-user-name/samplerepo-pr-practice</code>, not <code>se-edu/samplerepo-pr-practice</code>), as described below.</p>
                   <p>4a. Go to the GitHub page of your fork (i.e. <code>https://github.com/{your_username}/samplerepo-pr-practice</code>), click on the <code>Pull Requests</code> tab, and then click on <code>New Pull Request</code> button.</p>
-                  <img src="/2019/book/gitAndGithub/createPRs//2019/book/gitAndGithub/createPRs/images/createPrButton.png" width="800">
+                  <img src="/2019/book/gitAndGithub/createPRs/images/createPrButton.png" width="800">
                   <p></p>
                   <p>4b. Select <code>base fork</code> and <code>head fork</code> as follows:</p>
                   <ul>
                     <li><code>base fork</code>: your own fork (i.e. <code>{your user name}/samplerepo-pr-practice</code>, <mark>NOT <code>se-edu/samplerepo-pr-practice</code></mark>)</li>
                     <li><code>head fork</code>: your own fork.</li>
                   </ul>
-                  <img src="/2019/book/gitAndGithub/createPRs//2019/book/gitAndGithub/createPRs/images/selectBase.png" width="800">
+                  <img src="/2019/book/gitAndGithub/createPRs/images/selectBase.png" width="800">
                   <p></p>
                   <tip-box type="info">
                     <p>The <em>base fork</em> is where changes should be applied. The <em>head fork</em> contains the changes you would like to be applied.</p>
                   </tip-box>
                   <p>4c. (1) Set the base branch to <code>master</code> and head branch to <code>add-intro</code>, (2) confirm the <em>diff</em> contains the changes you propose to merge in this PR <span class="dimmed">(i.e. confirm that you did not accidentally include extra commits in the branch)</span>, and (3) click the <code>Create pull request</code> button.</p>
-                  <img src="/2019/book/gitAndGithub/createPRs//2019/book/gitAndGithub/createPRs/images/checkDiff.png" width="800">
+                  <img src="/2019/book/gitAndGithub/createPRs/images/checkDiff.png" width="800">
                   <p></p>
                   <p>4d. (1) Set PR name, (2) set PR description, and (3) Click the <code>Create pull request</code> button.</p>
-                  <img src="/2019/book/gitAndGithub/createPRs//2019/book/gitAndGithub/createPRs/images/setPrName.png" width="600">
+                  <img src="/2019/book/gitAndGithub/createPRs/images/setPrName.png" width="600">
                   <p></p>
                   <tip-box type="important">
                     <p>A common newbie mistake when creating branch-based PRs is to mix commits of one PR with another. To learn how to avoid that mistake, you are encouraged to continue and create another PR as explained below.
@@ -910,7 +910,7 @@ This repo can be used to practice creating PRs.
                     <p>When creating the new branch, it is very important that you switch back to the <code>master</code> branch first. If not, the new branch will be created off the current branch <code>add-intro</code>. And that is how you end up having commits of the first PR in the second PR as well.</p>
                   </tip-box>
                   <p><strong>6. Add a commit in the <code>add-summary</code> branch</strong> that adds a <em>Summary</em> section to the <code>README.md</code>, in exactly the same place you added the <em>Introduction</em> section earlier.</p>
-                  <img src="/2019/book/gitAndGithub/createPRs//2019/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
+                  <img src="/2019/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
                   <p></p>
                   <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
                   <panel header="<span class='fas fa-paperclip'></span> Resources" expanded>
@@ -995,18 +995,18 @@ This repo can be used to practice creating PRs.
                     </div>
                   </modal>
                   <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span class="fas fa-plus-square"></span></span> icon that appears on the left margin. That should create a text box for you to enter your comment.</p>
-                  <img src="/2019/book/gitAndGithub/managePRs//2019/book/gitAndGithub/managePRs/images/startReview.png" width="800">
+                  <img src="/2019/book/gitAndGithub/managePRs/images/startReview.png" width="800">
                   <p></p>
                   <p>1b. Enter some dummy comment and click on <code>Start a review</code> button.</p>
-                  <img src="/2019/book/gitAndGithub/managePRs//2019/book/gitAndGithub/managePRs/images/addComment.png" width="800">
+                  <img src="/2019/book/gitAndGithub/managePRs/images/addComment.png" width="800">
                   <p></p>
                   <p>1c. Add a few more comments in other places of the code.</p>
                   <p>1d. Click on the <code>Review Changes</code> button, enter an overall comment, and click on the <code>Submit review</code> button.</p>
-                  <img src="/2019/book/gitAndGithub/managePRs//2019/book/gitAndGithub/managePRs/images/submitReview.png" width="500">
+                  <img src="/2019/book/gitAndGithub/managePRs/images/submitReview.png" width="500">
                   <p></p>
                   <p><strong>2. Update the PR</strong> to simulate revising the code based on reviewer comments. Add some more commits to the <code>add-intro</code> branch and push the new commits to the fork. Observe how the PR is updated automatically to reflect the new code.</p>
                   <p><strong>3. Merge the PR.</strong> Go to the GitHub page of the respective PR, scroll to the bottom of the <code>Conversation</code> tab, and click on the <code>Merge pull request</code> button, followed by the <code>Confirm merge</code> button. You should see a <code>Pull request successfully merged and closed</code> message after the PR is merged.</p>
-                  <img src="/2019/book/gitAndGithub/managePRs//2019/book/gitAndGithub/managePRs/images/mergePr.png" width="800">
+                  <img src="/2019/book/gitAndGithub/managePRs/images/mergePr.png" width="800">
                   <p></p>
                   <p><strong>4. Sync the local repo with the remote repo.</strong> Because of the merge you did on the GitHub, the <code>master</code> branch of your fork is now ahead of your local repo by one commit. To sync the local repo with the remote repo, pull the <code>master</code> branch to the local repo.</p>
                   <pre><code class="hljs">git checkout master
@@ -1082,7 +1082,7 @@ git pull origin master
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Fri, 05 Apr 2019 09:24:50 GMT</small></div>
     </footer>
   </div>
 </body>

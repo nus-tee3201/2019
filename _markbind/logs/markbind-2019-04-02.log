@@ -44,3 +44,10 @@
 2019-04-02T04:57:33.929Z - info: Site data built
 2019-04-02T05:06:13.141Z - info: Website generation started at 1:06:08 PM
 2019-04-02T05:06:17.618Z - info: Building assets...
+2019-04-02T05:06:22.160Z - info: Assets built
+2019-04-02T05:06:22.160Z - info: Generating pages...
+2019-04-02T05:07:59.017Z - info: Pages built
+2019-04-02T05:08:19.474Z - info: Website generation complete! Total build time: 131.269s
+2019-04-02T05:08:19.474Z - info: Build success!
+2019-04-02T05:08:19.483Z - info: Site data built
+2019-04-02T05:10:11.752Z - info: Deployed!

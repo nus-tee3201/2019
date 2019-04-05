@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.0">
+  <meta name="generator" content="MarkBind 2.1.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter [Printable] : Software Design Patterns</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -122,7 +122,7 @@
                   <p>Make the constructor of the singleton class <code>private</code>, <span class="dimmed"> because a <code>public</code> constructor will allow others to instantiate the class at will</span>. Provide a <code>public</code> class-level method to access the <em>single instance</em>.</p>
                   <tip-box>
                     <p>Example:</p>
-                    <img src="/2019/book/designPatterns/singleton/what//2019/book/designPatterns/singleton/what/images/singleton.png" height="130">
+                    <img src="/2019/book/designPatterns/singleton/what/images/singleton.png" height="130">
                     <p></p>
                   </tip-box>
                 </div>
@@ -204,7 +204,7 @@
                   <p>Components need to access functionality deep inside other components.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
-                    <img src="/2019/book/designPatterns/facade/what//2019/book/designPatterns/facade/what/images/textBook.png" height="120">
+                    <img src="/2019/book/designPatterns/facade/what/images/textBook.png" height="120">
                     <p></p>
                   </tip-box>
                   <p><strong>Problem</strong></p>
@@ -213,7 +213,7 @@
                   <p>Include a <tooltip content="a French word that means 'front of a building'" class="algolia-no-index">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
-                    <img src="/2019/book/designPatterns/facade/what//2019/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
+                    <img src="/2019/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
                     <p></p>
                   </tip-box>
                 </div>
@@ -241,11 +241,11 @@
                   <p>Let us examine an example application of the pattern first:</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code> object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
-                    <img src="/2019/book/designPatterns/command/what//2019/book/designPatterns/command/what/images/commandCreator.png" height="150">
+                    <img src="/2019/book/designPatterns/command/what/images/commandCreator.png" height="150">
                     <p></p>
                   </tip-box>
                   <p>The general form of the solution is as follows.</p>
-                  <img src="/2019/book/designPatterns/command/what//2019/book/designPatterns/command/what/images/clientInvoker.png" height="200">
+                  <img src="/2019/book/designPatterns/command/what/images/clientInvoker.png" height="200">
                   <p></p>
                   <p>The <code>&lt;&lt;Client&gt;&gt;</code> creates a <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object, and passes it to the <code>&lt;&lt;Invoker&gt;&gt;</code>. The <code>&lt;&lt;Invoker&gt;&gt;</code> object treats all commands as a general <code>&lt;&lt;Command&gt;&gt;</code> type. <code>&lt;&lt;Invoker&gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object may have to be linked to any <code>&lt;&lt;Receiver&gt;&gt;</code> of the command (<tooltip content="the object the command will operate on, in case different commands operate on different objects" class="algolia-no-index">?</tooltip>) before it is passed to the <code>&lt;&lt;Invoker&gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
                 </div>
@@ -276,11 +276,11 @@
                     <li><em>Model</em>: Stores and maintains data. Updates views if necessary.</li>
                   </ul>
                   <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
-                  <img src="/2019/book/designPatterns/modelViewController/what//2019/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
+                  <img src="/2019/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
                   <p></p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
-                    <img src="/2019/book/designPatterns/modelViewController/what//2019/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
+                    <img src="/2019/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
                     <p></p>
                     <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>. The <code>ref</code> frame indicates that the interactions within that frame have been extracted out to another separate sequence diagram.</p>
                   </tip-box>
@@ -306,7 +306,7 @@
                   <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Consider this scenario from the a student management system where the user is adding a new student to the system.</p>
-                    <img src="/2019/book/designPatterns/observer/what//2019/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
+                    <img src="/2019/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
                     <p></p>
                     <p>Now, assume the system has two additional views used in parallel by different users:</p>
                     <ul>
@@ -314,7 +314,7 @@
                       <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
                     </ul>
                     <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p>
-                    <img src="/2019/book/designPatterns/observer/what//2019/book/designPatterns/observer/what/images/studentListUI.png" height="180">
+                    <img src="/2019/book/designPatterns/observer/what/images/studentListUI.png" height="180">
                     <p></p>
                     <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type of problem addressed by the Observer pattern.</p>
                   </tip-box>
@@ -322,7 +322,7 @@
                   <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
                   <p><strong>Solution</strong></p>
                   <p>Force the communication through an interface known to both parties.</p>
-                  <img src="/2019/book/designPatterns/observer/what//2019/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
+                  <img src="/2019/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
                   <p></p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Here is the Observer pattern applied to the student management system.</p>
@@ -375,7 +375,7 @@ studentList.addUi(statusUi);
                     </ol>
                   </tip-box>
                   <p>Here is the generic description of the observer pattern:</p>
-                  <img src="/2019/book/designPatterns/observer/what//2019/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
+                  <img src="/2019/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
                   <p></p>
                   <ul>
                     <li><code>&lt;&lt;Observer&gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt;Observable&gt;&gt;</code>. Any number of <code>&lt;&lt;Observer&gt;&gt;</code> objects can observe (i.e. listen to changes of) the <code>&lt;&lt;Observable&gt;&gt;</code> object.</li>
@@ -394,7 +394,7 @@ studentList.addUi(statusUi);
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.0</a> at Tue, 02 Apr 2019 05:06:22 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Fri, 05 Apr 2019 09:24:50 GMT</small></div>
     </footer>
   </div>
 </body>
