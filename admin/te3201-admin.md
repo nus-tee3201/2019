@@ -331,7 +331,71 @@ Description of the function: appends the `Person` object `new_contact` to the `c
 # Exam
 <div class="indented">
 
-<include src="exams.md#main" />
+There is no midterm.
+
+The final exam has two parts: 
+* Part 1: MCQ questions (1 hour, 30 marks) 
+* Part 2: Essay questions (1 hour, 30 marks)
+
+Both papers will be given to you at the start but you need to **answer Part 1 first** (i.e. MCQ paper). It will be **collected 1 hour after the exam start time** (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
+
+<box type="success">
+
+You will be given a practice exam paper to familiarize yourself with the exam format.
+</box>
+
+## Final Exam: Part 1 (MCQ)
+
+**Question format:** Each MCQ question gives you a statement to evaluate. 
+
+<tip-box> 
+
+{{ icon_example }} An example statement
+
+>Testing is a Q&A activity
+
+</tip-box>
+
+The meaning of answer options are<br>
+**`A`**: `Agree`. If the question has multiple statements, ++agree with all of them++.<br>
+**`B`**: `Disagree`. If the question has multiple statements, ++disagree with at least one of them++<br>
+**`C`**, **`D`**, **`E`**: Not used
+
+**Number of questions: 50**
+
+**You will not be allowed to clarify doubts about questions (in Part 1)** by talking to invigilators. This is to be fair to all students as the the part 1 is fast-paced and each question has only two possible answers.
+* If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.
+* If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.
+
+**Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.
+
+Some questions have tags e.g., the question below has a tag  **`JAVA`**. These **tags provide additional context about the question**. In the example below, the tag indicates that the code given in the question is Java code.
+
+**There is no negative marking.** Therefore, you are recommended to answer all 50 questions. Even random answers are better than no answer.<br>
+  First 25 correct answers will earn 0.2 marks each. Each correct answer from that point will earn 1 mark each. If you answer all questions correctly, you get 30 marks i.e., `0.2x25 + 1.0x25`.
+
+**Bring the correct type of pencils** (i.e., B1) for marking the OCR form. If you use pens or the wrong type of pencil to mark the OCR form, the machine cannot read your answers.
+
+**You are recommended to fill up the OCR form as you go**, rather than wait to fill all answers in the OCR form at the end. However, only answers marked in the OCR form will be counted for grading.
+
+
+
+<img src="{{baseUrl}}/admin/images/contextTag.png" /><br>
+
+**The paper is open-book**: you may bring any printed or written materials to the exam in hard copy format. However, electronic devices (including smart watches) are not allowed.
+
+:bulb: **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%&nbsp;Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
+
+:bulb: **Write the answer in the exam paper as well** as marking it in the OCR form. %%&nbsp;Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.%%
+
+:bulb: We have tried to **avoid deliberately misleading/tricky questions**. If a question seems to take a very long time to figure out, you are probably over-thinking it.
+
+
+## Final Exam: Part 2 (Essay)
+
+Unlike in part 1, **you can ask invigilators for clarifications** if you found a question to be unclear in part 2.
+
+Yes, **you may use pencils** when answering part 2.
 
 </div>
 
