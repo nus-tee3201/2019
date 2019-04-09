@@ -1,0 +1,81 @@
+2019-04-09T04:15:10.967Z - info: Website generation started at 12:15:03 PM
+2019-04-09T04:15:16.831Z - info: Building assets...
+2019-04-09T04:15:21.281Z - info: Assets built
+2019-04-09T04:15:21.281Z - info: Generating pages...
+2019-04-09T04:17:11.588Z - info: Pages built
+2019-04-09T04:17:32.519Z - info: Website generation complete! Total build time: 148.949s
+2019-04-09T04:17:32.904Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-04-09T04:17:32.904Z - info: Press CTRL+C to stop ...
+2019-04-09T04:17:32.925Z - info: Site data built
+2019-04-09T04:19:55.751Z - info: [12:19:55 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:19:56.766Z - info: Rebuilding affected source files
+2019-04-09T04:19:56.768Z - info: Rebuilding 2 pages
+2019-04-09T04:19:57.702Z - info: Pages rebuilt
+2019-04-09T04:19:57.712Z - info: Site data built
+2019-04-09T04:21:49.007Z - info: [12:21:49 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:21:50.008Z - info: Rebuilding affected source files
+2019-04-09T04:21:50.010Z - info: Rebuilding 2 pages
+2019-04-09T04:21:50.950Z - info: Pages rebuilt
+2019-04-09T04:21:50.957Z - info: Site data built
+2019-04-09T04:22:23.062Z - info: [12:22:23 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:22:24.064Z - info: Rebuilding affected source files
+2019-04-09T04:22:24.067Z - info: Rebuilding 2 pages
+2019-04-09T04:22:25.105Z - info: Pages rebuilt
+2019-04-09T04:22:25.116Z - info: Site data built
+2019-04-09T04:22:35.166Z - info: [12:22:35 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:22:36.168Z - info: Rebuilding affected source files
+2019-04-09T04:22:36.169Z - info: Rebuilding 2 pages
+2019-04-09T04:22:36.926Z - info: Pages rebuilt
+2019-04-09T04:22:36.933Z - info: Site data built
+2019-04-09T04:23:37.637Z - info: [12:23:37 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:23:38.645Z - info: Rebuilding affected source files
+2019-04-09T04:23:38.647Z - info: Rebuilding 2 pages
+2019-04-09T04:23:39.670Z - info: Pages rebuilt
+2019-04-09T04:23:39.674Z - info: Site data built
+2019-04-09T04:24:12.648Z - info: [12:24:12 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:24:13.655Z - info: Rebuilding affected source files
+2019-04-09T04:24:13.657Z - info: Rebuilding 2 pages
+2019-04-09T04:24:14.434Z - info: Pages rebuilt
+2019-04-09T04:24:14.440Z - info: Site data built
+2019-04-09T04:24:53.375Z - info: [12:24:53 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:24:54.377Z - info: Rebuilding affected source files
+2019-04-09T04:24:54.378Z - info: Rebuilding 2 pages
+2019-04-09T04:24:55.269Z - info: Pages rebuilt
+2019-04-09T04:24:55.275Z - info: Site data built
+2019-04-09T04:29:23.947Z - info: [12:29:23 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:29:24.949Z - info: Rebuilding affected source files
+2019-04-09T04:29:24.951Z - info: Rebuilding 2 pages
+2019-04-09T04:29:25.726Z - info: Pages rebuilt
+2019-04-09T04:29:25.734Z - info: Site data built
+2019-04-09T04:29:39.324Z - info: [12:29:39 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:29:40.329Z - info: Rebuilding affected source files
+2019-04-09T04:29:40.330Z - info: Rebuilding 2 pages
+2019-04-09T04:29:40.955Z - info: Pages rebuilt
+2019-04-09T04:29:40.964Z - info: Site data built
+2019-04-09T04:30:02.025Z - info: [12:30:02 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:30:03.038Z - info: Rebuilding affected source files
+2019-04-09T04:30:03.040Z - info: Rebuilding 2 pages
+2019-04-09T04:30:03.868Z - info: Pages rebuilt
+2019-04-09T04:30:03.874Z - info: Site data built
+2019-04-09T04:32:18.349Z - info: [12:32:18 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:32:19.365Z - info: Rebuilding affected source files
+2019-04-09T04:32:19.369Z - info: Rebuilding 2 pages
+2019-04-09T04:32:20.109Z - info: Pages rebuilt
+2019-04-09T04:32:20.116Z - info: Site data built
+2019-04-09T04:32:40.109Z - info: [12:32:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:32:41.126Z - info: Rebuilding affected source files
+2019-04-09T04:32:41.128Z - info: Rebuilding 2 pages
+2019-04-09T04:32:41.994Z - info: Pages rebuilt
+2019-04-09T04:32:42.001Z - info: Site data built
+2019-04-09T04:33:01.653Z - info: [12:33:01 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:33:02.667Z - info: Rebuilding affected source files
+2019-04-09T04:33:02.669Z - info: Rebuilding 2 pages
+2019-04-09T04:33:03.427Z - info: Pages rebuilt
+2019-04-09T04:33:03.435Z - info: Site data built
+2019-04-09T04:33:27.752Z - info: [12:33:27 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\admin\te3201-admin.md
+2019-04-09T04:33:28.770Z - info: Rebuilding affected source files
+2019-04-09T04:33:28.771Z - info: Rebuilding 2 pages
+2019-04-09T04:33:29.585Z - info: Pages rebuilt
+2019-04-09T04:33:29.592Z - info: Site data built
+2019-04-09T05:06:19.238Z - info: Website generation started at 1:06:12 PM
+2019-04-09T05:06:24.345Z - info: Building assets...
