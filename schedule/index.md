@@ -345,11 +345,19 @@ head: scheduleHead.md
 
 {% macro show_week_schedule_body(week, path="") %}
 
+{% if week.num in ["13"] %}
+    {% set active_tab = "2" %}
+{% elseif week.num in ["12"] %}
+    {% set active_tab = "1" %}
+{% else %}
+    {% set active_tab = "0" %}
+{% endif %}
+
 # Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small>
 
 <include src="{{ path }}notices-{{ module | lower }}.md" optional />
 
-<tabs active="2">
+<tabs active="{{ active_tab }}">
   <tab header="{{ fas_code }} Programming Topics">
     <include src="{{ path }}../python-topics.md#week{{ week.num }}" />
   </tab>
