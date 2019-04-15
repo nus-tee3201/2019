@@ -34,3 +34,35 @@
 2019-04-15T03:11:41.896Z - info: Site data built
 2019-04-15T03:17:05.883Z - info: Website generation started at 11:16:59 AM
 2019-04-15T03:17:10.681Z - info: Building assets...
+2019-04-15T03:17:14.995Z - info: Assets built
+2019-04-15T03:17:14.995Z - info: Generating pages...
+2019-04-15T03:19:04.498Z - info: Pages built
+2019-04-15T03:19:22.883Z - info: Website generation complete! Total build time: 143.121s
+2019-04-15T03:19:22.883Z - info: Build success!
+2019-04-15T03:19:22.894Z - info: Site data built
+2019-04-15T03:20:51.252Z - info: Deployed!
+2019-04-15T06:14:55.767Z - info: Website generation started at 2:14:49 PM
+2019-04-15T06:15:00.943Z - info: Building assets...
+2019-04-15T06:15:05.230Z - info: Assets built
+2019-04-15T06:15:05.230Z - info: Generating pages...
+2019-04-15T06:16:55.733Z - info: Pages built
+2019-04-15T06:17:15.118Z - info: Website generation complete! Total build time: 145.743s
+2019-04-15T06:17:15.516Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-04-15T06:17:15.516Z - info: Press CTRL+C to stop ...
+2019-04-15T06:17:15.535Z - info: Site data built
+2019-04-15T06:28:35.995Z - info: [2:28:35 PM] Reload for file change: C:\repos\nus-te3201\te3201-2019-website\schedule\index.md
+2019-04-15T06:28:36.999Z - info: Rebuilding affected source files
+2019-04-15T06:28:37.001Z - info: Rebuilding 2 pages
+2019-04-15T06:28:37.388Z - info: Pages rebuilt
+2019-04-15T06:28:37.392Z - info: Site data built
+2019-04-15T06:28:56.409Z - info: Website generation started at 2:28:49 PM
+2019-04-15T06:29:01.312Z - info: Building assets...
+2019-04-15T06:29:05.536Z - info: Assets built
+2019-04-15T06:29:05.538Z - info: Generating pages...
+2019-04-15T06:30:58.774Z - info: Pages built
+2019-04-15T06:31:18.662Z - info: Website generation complete! Total build time: 148.806s
+2019-04-15T06:31:19.049Z - info: Serving "C:\repos\nus-te3201\te3201-2019-website\_site" at http://127.0.0.1:8080
+2019-04-15T06:31:19.049Z - info: Press CTRL+C to stop ...
+2019-04-15T06:31:19.086Z - info: Site data built
+2019-04-15T06:33:24.414Z - info: Website generation started at 2:33:18 PM
+2019-04-15T06:33:29.426Z - info: Building assets...
