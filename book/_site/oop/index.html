@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Object Oriented Programming</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -116,7 +116,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Java can be used to write procedural code</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>A) (a)(b)(c)(e)</p>
                                           <p>Explanation: While many languages support the OO paradigm, OO is not a language itself.</p>
                                           <p>B) Choose the correct statement</p>
@@ -134,7 +134,7 @@
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>True.</p>
                                           <p>Explanation: Procedural languages work at simple data structures (e.g., integers, arrays) and functions level. Because an object is an abstraction over data+related functions, OO works at a higher level.</p>
                                         </div>
@@ -345,7 +345,7 @@
                                           <li>Objects interact by sending messages.</li>
                                           <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
                                         </ol>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <blockquote>
                                             <p>[1] Object Oriented Programming (OOP) views the world as a network of interacting objects.</p>
                                           </blockquote>
@@ -501,10 +501,10 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
                                         </ul>
-                                        <div slot="hint">
+                                        <div slot="hint" class="algolia-no-index">
                                           <p>Don't confuse encapsulation with abstraction.</p>
                                         </div>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>Choose the correct statement</p>
                                           <p>(a)</p>
                                           <p>Explanation: The second statement should be: An object is an <strong>abstraction</strong> <s>encapsulation</s> because it lets ...</p>
@@ -547,7 +547,7 @@
                                 <li><strong>create the virtual world of object network, and</strong></li>
                                 <li><strong>provide it the inputs to produce the outcome we want.</strong></li>
                               </ol>
-                              <p><strong>A <mark><em>class</em></mark> contains instructions for creating a specific kind of objects</strong>. It turns out sometimes multiple objects have the same behavior because they are of the <em>same kind</em>. Instructions for creating a one kind (or ‘class’) of objects can be done once and that same instructions can be used to <tooltip content="i.e. create" class="algolia-no-index"><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
+                              <p><strong>A <mark><em>class</em></mark> contains instructions for creating a specific kind of objects</strong>. It turns out sometimes multiple objects have the same behavior because they are of the <em>same kind</em>. Instructions for creating a one kind (or ‘class’) of objects can be done once and that same instructions can be used to <tooltip content="i.e. create"><em>instantiate</em></tooltip> objects of that kind. We call such instructions a <em>Class</em>.</p>
                               <tip-box>
                                 <p><span class="fas fa-cube"></span> Classes and objects in an example scenario</p>
                                 <p>Consider the example of writing an OOP program to calculate the average age of Adam, Beth, Charlie, and Daisy.</p>
@@ -595,7 +595,7 @@
                                              
                                             A customer (name: John) gave a cheque to the Cashier (name: Peter) to pay for the LoTR and GoT books he bought.
                                           </tip-box>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <div class="table-responsive">
                                               <table class="markbind-table table table-bordered table-striped">
                                                 <thead>
@@ -653,7 +653,7 @@ Enter command: exit
 
 </code></pre>
                                           <p>What classes would you have in your code if you write your program based on the OOP paradigm?</p>
-                                          <div slot="hint">
+                                          <div slot="hint" class="algolia-no-index">
                                             <p>One class you can have is <code>Route</code></p>
                                           </div>
                                         </question>
@@ -710,7 +710,7 @@ Enter command: exit
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(c)</p>
                                           <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance level as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
                                         </div>
@@ -945,7 +945,7 @@ Enter command: exit
                               </tip-box>
                               <h5 id="implementing-dependencies">Implementing dependencies</h5>
                               <tip-box>
-                                <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a <tooltip content="temporary" class="algolia-no-index">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+                                <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
                                 <div class="alt-java">
                                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
@@ -1127,7 +1127,7 @@ Enter command: exit
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(a)(b)<s>(c)</s>(d)</p>
                                           <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would be suitable as an association class.</p>
                                         </div>
@@ -1212,7 +1212,7 @@ Enter command: exit
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code reuse can be one benefit of inheritance.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. A change to the superclass will not affect its subclasses.</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(a) (b) (c) (d)</p>
                                           <p>Explanation: (e) is incorrect. Because subclasses inherit behavior from the superclass, any changes to the superclass could affect subclasses.</p>
                                         </div>
@@ -1348,7 +1348,7 @@ Enter command: exit
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>d</p>
                                           <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
                                         </div>
@@ -1435,7 +1435,7 @@ Enter command: exit
                             <p></p>
                             <p></p>
                             <div>
-                              <p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of <tooltip content="Just the method signature without any implementation" class="algolia-no-index">method specifications</tooltip>. If a class <tooltip content="implements all methods specified in an interface" class="algolia-no-index">implements the interface</tooltip>, it means the class is able to support the behaviors specified by the said interface.</p>
+                              <p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of <tooltip content="Just the method signature without any implementation">method specifications</tooltip>. If a class <tooltip content="implements all methods specified in an interface">implements the interface</tooltip>, it means the class is able to support the behaviors specified by the said interface.</p>
                               <blockquote>
                                 <p>There are a number of situations in software engineering when it is important for disparate groups of programmers to agree to a &quot;contract&quot; that spells out how their software interacts. Each group should be able to write their code without any knowledge of how the other group's code is written. Generally speaking, interfaces are such contracts. <sub>--<a href="https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">Oracle Docs on Java</a><sub></sub></sub></p>
                               </blockquote>
@@ -1536,7 +1536,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                             <div>
                               <tip-box type="definition">
                                   <div>
-                                  <p><strong>Dynamic Binding</strong> (<tooltip content="There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document" class="algolia-no-index">aka late binding</tooltip>) : a mechanism where method calls in code are <tooltip content="deciding which method implementation to execure" class="algolia-no-index">resolved</tooltip> at <tooltip content="at the moment the method call is executed" class="algolia-no-index">runtime</tooltip>, rather than at compile time.</p>
+                                  <p><strong>Dynamic Binding</strong> (<tooltip content="There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document">aka late binding</tooltip>) : a mechanism where method calls in code are <tooltip content="deciding which method implementation to execure">resolved</tooltip> at <tooltip content="at the moment the method call is executed">runtime</tooltip>, rather than at compile time.</p>
                                 </div>
                               </tip-box>
                               <p><strong>
@@ -1668,7 +1668,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
                                                   </ul>
-                                                  <div slot="answer">
+                                                  <div slot="answer" class="algolia-no-index">
                                                     <p>d</p>
                                                     <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
                                                   </div>
@@ -1865,7 +1865,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="8bdf8" type="radio"> b. dynamic binding</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="8bdf8" type="radio"> c. operation overloading</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(c)</p>
                                           <p>Explanation: Operation overriding is the one that is related, not operation overloading.</p>
                                         </div>
@@ -1949,7 +1949,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> d. Abstraction strengthens encapsulation</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <ul radio-group="a056c" class="radio-list">
                                             <li class="radio-list-item"><label><input class="radio-list-input" checked name="a056c" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                                           </ul>
@@ -1977,7 +1977,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> d. Substitutability</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> e. Polymorphism</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <ul radio-group="30555" class="radio-list">
                                             <li class="radio-list-item"><label><input class="radio-list-input" checked name="30555" type="radio"> d. Substitutability</label></li>
                                           </ul>

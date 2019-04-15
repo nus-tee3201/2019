@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - C++ to Java: Miscellaneous Topics</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -99,7 +99,7 @@ Orange indicates medium priority
 Blue indicates medium priority
 Green indicates low priority
 </code></pre>
-                                    <div slot="hint">
+                                    <div slot="hint" class="algolia-no-index">
                                       <p>Use a <code>switch</code> statement to select between possible values for <code>Priority</code>.</p>
                                       <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
         <span class="hljs-keyword">switch</span> (p) {
@@ -158,9 +158,9 @@ Green indicates low priority
                         <box>
                           <p><span class="fas fa-cube"></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
                         </box>
-                        <p><strong>To use a public <tooltip content="types contained in the package" class="algolia-no-index">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+                        <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
                         <ol>
-                          <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`" class="algolia-no-index">fully qualified name</tooltip></strong> to refer to the member</li>
+                          <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
                           <li><strong>Import</strong> the package or the specific package member</li>
                         </ol>
                         <box>
@@ -326,16 +326,16 @@ Green indicates low priority
                                 <tr>
                                   <th>Modifier</th>
                                   <th>
-                                    <tooltip content="whether the class itself has access to the member defined by the access level" class="algolia-no-index">Class</tooltip>
+                                    <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
                                   </th>
                                   <th>
-                                    <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member" class="algolia-no-index">Package</tooltip>
+                                    <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
                                   </th>
                                   <th>
-                                    <tooltip content="whether subclasses of the class declared outside this package have access to the member" class="algolia-no-index">Subclass</tooltip>
+                                    <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
                                   </th>
                                   <th>
-                                    <tooltip content="whether all classes have access to the member" class="algolia-no-index">World</tooltip>
+                                    <tooltip content="whether all classes have access to the member">World</tooltip>
                                   </th>
                                 </tr>
                               </thead>

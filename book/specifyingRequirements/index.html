@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Specifying Requirements</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -191,7 +191,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They are written from the user/customer perspective</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are always written in some physical medium such as index cards or sticky notes</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <ul class="task-list">
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Reason: Despite the name, user stories are not related to 'stories' about the software.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b.</li>
@@ -206,13 +206,13 @@
                                       <question has-input="true">
                                         <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
                                         <p><code>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
-                                        <div slot="hint">
+                                        <div slot="hint" class="algolia-no-index">
                                           <p>Refer to the definition of a user story.</p>
                                           <span>
                                             <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
                                           </span>
                                         </div>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>This user story is not written from the perspective of the user/customer.</p>
                                         </div>
                                       </question>
@@ -221,14 +221,14 @@
                                   <div>
                                     <panel header="Q: Extract user stories from customer statement" class="algolia-no-index">
                                       <question has-input="true">
-                                        <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken" class="algolia-no-index">leave balance</popover></em>. What are the user stories you can extract from that statement?</p>
-                                        <div slot="hint">
+                                        <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken">leave balance</popover></em>. What are the user stories you can extract from that statement?</p>
+                                        <div slot="hint" class="algolia-no-index">
                                           <p>Remember to follow the correct format when writing user stories.</p>
                                           <div>
                                             <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
                                           </div>
                                         </div>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p><code>As an employee, I can view my leave balance, so that I can know how many leave days I have left.</code></p>
                                           <p><span class="dimmed">Note: the <code>{benefit}</code> part may vary as it is not specifically mentioned in the question.</span></p>
                                         </div>
@@ -337,7 +337,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. User stories describes past experiences users had with similar systems. These are helpful in developing the new system.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. User stories are not detailed enough to tell us exact details of the product.</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <ul class="task-list">
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b.</li>
@@ -368,11 +368,11 @@
                             <p></p>
                             <p></p>
                             <div>
-                              <p><strong>User stories capture user requirements in a way that is convenient for <popover content="i.e. which features to include in the product" class="algolia-no-index">scoping</popover>, <popover content="i.e. how much effort each feature will take" class="algolia-no-index">estimation</popover> and <popover content="i.e. when to deliver each feature" class="algolia-no-index">scheduling</popover>.</strong></p>
+                              <p><strong>User stories capture user requirements in a way that is convenient for <popover content="i.e. which features to include in the product">scoping</popover>, <popover content="i.e. how much effort each feature will take">estimation</popover> and <popover content="i.e. when to deliver each feature">scheduling</popover>.</strong></p>
                               <blockquote>
                                 <p>[User stories] strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written. <sub>[Mike Cohn, MountainGoat Software <a href="https://www.mountaingoatsoftware.com/agile/user-stories">🔗</a>]</sub></p>
                               </blockquote>
-                              <p><strong>User stories differ from <popover content="e.g. a description of the requirements written in prose" class="algolia-no-index">traditional requirements specifications</popover> mainly in the level of detail.</strong> User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description of the requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
+                              <p><strong>User stories differ from <popover content="e.g. a description of the requirements written in prose">traditional requirements specifications</popover> mainly in the level of detail.</strong> User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description of the requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
                               <p><strong>User stories can capture <trigger trigger="click" for="modal:userStoriesUsage-nfr">non-functional requirements</trigger> too</strong> because even NFRs must benefit some stakeholder.</p>
                               <modal large title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:userStoriesUsage-nfr" class="algolia-no-index">
                                   <div>
@@ -394,7 +394,7 @@
                                         <tip-box>
                                           <p><span class="fas fa-cube"></span> Some examples of non-functional requirement categories:</p>
                                           <ul>
-                                            <li>Data requirements e.g. size, <tooltip content="how often do data change" class="algolia-no-index">volatility</tooltip>, <tooltip content="saving data permanenetly" class="algolia-no-index">persistency</tooltip> etc.,</li>
+                                            <li>Data requirements e.g. size, <tooltip content="how often do data change">volatility</tooltip>, <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
                                             <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                                             <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                                           </ul>
@@ -434,7 +434,7 @@
                                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                                                   </ul>
-                                                  <div slot="answer">
+                                                  <div slot="answer" class="algolia-no-index">
                                                     <p>(a)(c)(d)(f)(g)</p>
                                                     <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is done, both of which are considered non-functional requirements.</p>
                                                   </div>
@@ -490,7 +490,7 @@
                                   </ul>
                                 </tip-box>
                               </div>
-                              <p>While use cases can be recorded on <tooltip content="e.g. index cards or sticky notes" class="algolia-no-index">physical paper</tooltip> in the initial stages, an online tool is more suitable for longer-term management of user stories, especially if the team is not <tooltip content="physically in the same location" class="algolia-no-index">co-located</tooltip>.</p>
+                              <p>While use cases can be recorded on <tooltip content="e.g. index cards or sticky notes">physical paper</tooltip> in the initial stages, an online tool is more suitable for longer-term management of user stories, especially if the team is not <tooltip content="physically in the same location">co-located</tooltip>.</p>
                               <span class="non-printable">
                                 <panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples" class="algolia-no-index">
                                   <div>
@@ -535,8 +535,8 @@
                               </span>
                               <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP" class="algolia-no-index">
                                 <span>
-                                  <popover id="pop:xp" title="eXtreme Programming (XP)" class="algolia-no-index">eXtreme Programming (XP)
-                                    <div slot="content">
+                                  <popover id="pop:xp" title="eXtreme Programming (XP)">eXtreme Programming (XP)
+                                    <div slot="content" class="algolia-no-index">
                                       <p><em>Extreme programming (XP)</em> is a software development methodology which is intended to improve software quality and responsiveness to changing customer requirements. As a type of agile software development, it advocates frequent &quot;releases&quot; in short development cycles, which is intended to improve productivity and introduce checkpoints at which new customer requirements can be adopted. [wikipedia, 2017.05.01]</p>
                                     </div>
                                   </popover>
@@ -585,9 +585,9 @@
                             <div>
                               <tip-box type="definition">
                                 <div>
-                                  <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <trigger for="pop:actor">actor</trigger>.[ 📖 : <popover effect="fade" placement="top" class="algolia-no-index">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span></popover>]</p>
-                                  <popover id="pop:actor" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="top" class="algolia-no-index">
-                                    <div slot="content">
+                                  <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <trigger for="pop:actor">actor</trigger>.[ 📖 : <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span></popover>]</p>
+                                  <popover id="pop:actor" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="top">
+                                    <div slot="content" class="algolia-no-index">
                                       <div>
                                         <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                                       </div>
@@ -599,7 +599,7 @@
                               <tip-box>
                                 <panel header="<span class='fas fa-cube'></span> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded>
                                   <ul>
-                                    <li>System: <popover effect="fade" placement="right" content="Automated Teller Machine" class="algolia-no-index">
+                                    <li>System: <popover effect="fade" placement="right" content="Automated Teller Machine">
                                         ATM </popover>
                                     </li>
                                     <li>Actor: Customer</li>
@@ -672,7 +672,7 @@
                               <tip-box>
                                 <p><span class="fas fa-cube"></span> Some example actors for a Learning Management System</p>
                                 <ul>
-                                  <li>Actors: Guest, Student, Staff, Admin, <tooltip content="an exam management system" class="algolia-no-index">ExamSys</tooltip>, <tooltip content="a library management system" class="algolia-no-index">LibSys</tooltip>.</li>
+                                  <li>Actors: Guest, Student, Staff, Admin, <tooltip content="an exam management system">ExamSys</tooltip>, <tooltip content="a library management system">LibSys</tooltip>.</li>
                                 </ul>
                               </tip-box>
                               <p><strong>A use case can involve multiple actors.</strong></p>
@@ -733,7 +733,7 @@
                                       <question has-input="false">
                                         <p>Consider a simple movie ticket vending machine application. Every week, the theatre staff will enter the weekly schedule as well as ticket price for each show. A customer sees the schedule and the ticket price displayed at the machine. There is a slot to insert money, a keypad to enter a code for a movie, a code for the show time, and the number of tickets. A display shows the customer's balance inside the machine. A customer may choose to cancel a transaction before pressing the “buy” button. Printed tickets can be collected from a slot at the bottom of the machine. The machine also displays messages such as &quot;Please enter more money”, “Request fewer tickets&quot; or &quot;SOLD OUT!”. Finally, a &quot;Return Change&quot; button allows the customer to get back his unspent money.</p>
                                         <p><strong>Draw a use case diagram for the above requirements.</strong></p>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <img src="/2019/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png" width="300">
                                           <p></p>
                                           <p>Note that most of the details in the description are better given as part of the use case description rather than as low-level use cases in the diagram.</p>
@@ -747,7 +747,7 @@
                                         <p>A software house wishes to automate its Quality Assurance division.</p>
                                         <p>The system is to be used by Testers, Programmers and System Administrators. Only an administrator can create new users and assign tasks to programmers. Any tester can create a bug report, as well as set the status of a bug report as ‘closed’. Only a programmer can set the state of a bug report to ‘fixed’, but a programmer cannot set the status of a bug report to ‘closed’. Each tester is assigned just one task at a time. A task involves testing of a particular component for a particular customer. Tester must document the bugs they find. Each bug is given a unique identifier. Other information recorded about the bug is component id, severity, date and time reported, programmer who is assigned to fix it, date fixed, date retested and date closed. The system keeps track of which bugs are assigned to which programmer at any given time. It should be able to generate reports on the number of bugs found, fixed and closed e.g. number of bugs per component and per customer; number of bugs found by a particular tester ; number of bugs awaiting to be fixed; number of bugs awaiting to be retested; number of bugs awaiting to be assigned to programmers etc.</p>
                                         <p><strong>Develop a use case diagram to capture their requirements given below.</strong></p>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <img src="/2019/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg" width="400">
                                           <p></p>
                                           <p><strong>Explanation</strong>: The given description contains information not relevant to use case modeling. Furthermore, the description is not enough to complete the use case diagram All these are realities of real projects. However, the process of trying to create this use case diagram prompts us to investigate issues such as:</p>
@@ -816,7 +816,7 @@
                                 <tip-box>
                                   <p><span class="fas fa-cube"></span> An example of how you can show a loop:</p>
                                   <p>Software System: Square game
-                                    Use case: <popover content="Each use case can be given a unique identification for easier cross reference." class="algolia-no-index"> UC02 </popover> - Play a Game
+                                    Use case: <popover content="Each use case can be given a unique identification for easier cross reference."> UC02 </popover> - Play a Game
                                     Actors: Player (multiple players)</p>
                                   <ol>
                                     <li>A Player starts the game.</li>
@@ -1008,7 +1008,7 @@
                                     <link rel="stylesheet" href="/2019/book/css/common.css">
                                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> EZ-Link top-up use case" class="algolia-no-index">
                                       <question has-input="true">
-                                        <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing <tooltip content="A type of a cash card topup machine" class="algolia-no-index">EZ-Link machine</tooltip> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
+                                        <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing <tooltip content="A type of a cash card topup machine">EZ-Link machine</tooltip> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
                                         <tip-box>
                                           <ul>
                                             <li>System: EZ-Link machine</li>
@@ -1016,7 +1016,7 @@
                                             <li>Actor: EZ-Link card user</li>
                                           </ul>
                                         </tip-box>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <tip-box>
                                             <div>
                                               <ul>
@@ -1121,7 +1121,7 @@
                                             <li>Actor: Student</li>
                                           </ul>
                                         </tip-box>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <tip-box>
                                             <div>
                                               <ul>
@@ -1207,7 +1207,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Extensions</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Inclusions</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(f)</p>
                                           <p>Explanation: Performance requirements are non-functional requirements. They are not captured in use cases.</p>
                                         </div>
@@ -1260,7 +1260,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. No post conditions are given.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. ‘Use case ends’ is duplicated.</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>None.</p>
                                           <p>Explanation: Catastrophic failures such as ‘system crash’ need not be included in a use case. A use case is not supposed to contain UI details. Post conditions are optional. It is not a problem to have multiple exit points for a use case.</p>
                                         </div>
@@ -1323,7 +1323,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Extensions encourage us to consider all situations a software product might face during its operations.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They encourage us to identify and optimize the typical scenario of usage over exceptional usage scenarios.</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(a) (b) (c) (d)</p>
                                         </div>
                                       </question>
@@ -1339,7 +1339,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Use cases are better than user stories.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Use cases can be expressed at different levels of abstraction.</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(a)(b)(d)</p>
                                           <p>Explanation: It is not correct to say one format is better than the other. It depends on the context.</p>
                                         </div>
@@ -1438,7 +1438,7 @@
                                         <tip-box>
                                           <p><span class="fas fa-cube"></span> Some examples of non-functional requirement categories:</p>
                                           <ul>
-                                            <li>Data requirements e.g. size, <tooltip content="how often do data change" class="algolia-no-index">volatility</tooltip>, <tooltip content="saving data permanenetly" class="algolia-no-index">persistency</tooltip> etc.,</li>
+                                            <li>Data requirements e.g. size, <tooltip content="how often do data change">volatility</tooltip>, <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
                                             <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                                             <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                                           </ul>
@@ -1478,7 +1478,7 @@
                                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                                                   </ul>
-                                                  <div slot="answer">
+                                                  <div slot="answer" class="algolia-no-index">
                                                     <p>(a)(c)(d)(f)(g)</p>
                                                     <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is done, both of which are considered non-functional requirements.</p>
                                                   </div>

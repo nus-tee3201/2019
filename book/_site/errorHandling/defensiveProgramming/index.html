@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Error Handling: Defensive Programming</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -138,7 +138,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                                   </ul>
                                   <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
                                   <p></p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Manager</span> </span>{
@@ -169,7 +169,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                                   <p>Implement the classes defensively with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the <code>Marriage</code> class handle setting/removal of reference.</p>
                                   <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
                                   <p></p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
     <span class="hljs-keyword">private</span> Man husband = <span class="hljs-keyword">null</span>;
     <span class="hljs-keyword">private</span> Woman wife = <span class="hljs-keyword">null</span>;
@@ -227,7 +227,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                                   <p>Give a suitable defensive implementation to the <code>Account</code> class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p>
                                   <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
                                   <p></p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     <span class="hljs-keyword">private</span> Guarantor myGuarantor; <span class="hljs-comment">// should not be public</span>
 
@@ -262,7 +262,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="ac03f" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="ac03f" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>False</p>
                                     <p>Explanation: While the design requires a City to be connected to exactly one Country, the code allows it to be connected to zero Country objects (by passing null to the setCountry() method).</p>
                                   </div>
@@ -441,7 +441,7 @@ jean.setBoyfriend(yong);
 </code></pre>
                                   <p>However, this is not very defensive. For example, a user of this class can pass a <code>null</code> to either of the methods, thus violating the multiplicity of the relationship.</p>
                                   <p>Implement the two classes using a more defensive approach. Take note of the bidirectional link which requires us to preserve referential integrity at all times.</p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>In this solution, we assume <code>Regions</code> can be created without <code>Players</code> (note that we cannot be 100% defensive all the time). The usage will be something like this:</p>
                                     <pre><code class="hljs java">Region r1 = <span class="hljs-keyword">new</span> Region();
 Player p1 = <span class="hljs-keyword">new</span> Player(r1);
@@ -533,7 +533,7 @@ r1.setPlayer(p2);
                                   <p>Implement this bidirectional association. Note that the <code>Bank</code> uses <code>accNumber</code> attribute to uniquely identify an <code>Account</code> object. Assume the <code>Bank</code> class is responsible for maintaining the links between objects.</p>
                                   <img src="/2019/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg" height="60">
                                   <p></p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>The code below contains a method in the <code>Bank</code> class to create an account; the bank field in the new account is thereby filled by the bank creating it.</p>
                                     <p>We assume that once an <code>Account</code> has been assigned to one <code>Bank</code>, it cannot be assigned to a different <code>Bank</code>. Once the <code>Account</code> is removed from the <code>Bank</code>, it will not be used any more (hence, no need to remove the link from <code>Account</code> to <code>Bank</code>).</p>
                                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -605,7 +605,7 @@ r1.setPlayer(p2);
                                   <p>(c) Show a defensive implementation of the <code>remove(Member m)</code> of the <code>Club</code> class given below.</p>
                                   <img src="/2019/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
                                   <p></p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(a) Yes. Each links is mutable and unidirectional. A simple reference variable is suitable to hold the link.</p>
                                     <p><code>Teacher</code> class can be made even more defensive by introducing a <code>resetFavoriteStudent()</code> method to unlink the current favorite student from a teacher. In that case, <code>setFavoriteStudent(Student)</code> method should not accept null. This approach is more defensive because it prevents a null value being passed to <code>setFavoriteStudent(Student)</code> by mistake and being interpreted as a request to de-link the current favorite student from the <code>Teacher</code> object.</p>
                                     <p>(b) First diagram has unidirectional links. Second has a bidirectional link. RI is only applicable to the second.</p>
@@ -634,7 +634,7 @@ r1.setPlayer(p2);
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="719bb" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="719bb" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>True</p>
                                     <p>Explanation: Bidirectional associations require two objects to link to each other. When one of these links is not consistent with the other, we have a referential integrity violation.</p>
                                   </div>
@@ -683,7 +683,7 @@ r1.setPlayer(p2);
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. can make the code less susceptible to misuse.</li>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. can require extra effort.</li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(a)(b)(c)(d)(e)</p>
                                     <p>Explanation: Defensive programming requires a more checks, possibly making the code longer, more complex, and possibly slower. Use it only when benefits outweigh costs, which is often.</p>
                                   </div>

@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Strings</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -74,7 +74,7 @@
     </header>
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
             <li class="mt-2"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
@@ -117,7 +117,7 @@
             <h1 id="strings">Strings<a class="fa fa-anchor" href="#strings"></a></h1>
             <div>
               <h3 id="string-literals">String Literals<a class="fa fa-anchor" href="#string-literals"></a></h3>
-              <p>A <tooltip content="a string value, not a variable" class="algolia-no-index">string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>. However, this will not work if the string has a <tooltip content="a character that has special meaning in Python" class="algolia-no-index">special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
+              <p>A <tooltip content="a string value, not a variable">string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>. However, this will not work if the string has a <tooltip content="a character that has special meaning in Python">special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
               <div id="strings-escape">
                 <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em> to include a special character in a string literal</strong> without interpreting it as a special character. Given below are some examples:</p>
                 <div class="table-responsive">
@@ -780,7 +780,7 @@ print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hl
                 </panel>
                 <p></p>
               </div>
-              <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called" class="algolia-no-index">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items" class="algolia-no-index">delimiter</tooltip>.</strong></p>
+              <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.</strong></p>
               <box>
                 <p><span class="fas fa-cube"></span> Examples of the <code>join()</code> method:</p>
                 <div>
@@ -803,7 +803,7 @@ one-to-one
                   </table>
                 </div>
               </box>
-              <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters" class="algolia-no-index">whitespaces</tooltip> in the string are used as delimiters.</p>
+              <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters">whitespaces</tooltip> in the string are used as delimiters.</p>
               <box>
                 <p><span class="fas fa-cube"></span> Some examples of using the <code>split()</code> method:</p>
                 <div>
@@ -1023,7 +1023,7 @@ pins(new).......:110
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top spacer-top viewport-height-90 scrollable slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#strings">Strings&#x200E;</a>
@@ -1054,7 +1054,7 @@ pins(new).......:110
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

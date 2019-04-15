@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Software Design Patterns</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -100,7 +100,7 @@
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> c. Architectural styles used in applications.</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> d. Some good design techniques proposed by the Gang of Four</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(b)</p>
                                         </div>
                                       </question>
@@ -146,7 +146,7 @@
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="2350f" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="2350f" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>False.</p>
                                           <p>Explanation: Anti-patterns are related to patterns, but they are not a ‘must have’ component of a pattern description.</p>
                                         </div>
@@ -208,7 +208,7 @@
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> c. we want a class with no more than one instance.</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> d. we want to hide internal structure of a component from its clients.</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(c)</p>
                                         </div>
                                       </question>
@@ -375,7 +375,7 @@
                                           <li>TeamLeader, TeamMember</li>
                                           <li>Magazine (E.g. ReadersDigest, PCWorld), MagazineIssue</li>
                                         </ol>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>One of the key things to keep in mind is that the <code>&lt;&lt; Abstraction &gt;&gt;</code> does not represent a real entity. Rather, it represents some information common to a set of objects. A single real entity is represented by an object of <code>&lt;&lt; Abstraction &gt;&gt;</code> type and <code>&lt;&lt; Occurrence &gt;&gt;</code> type.</p>
                                           <p>Before applying the pattern, some attributes have the same values for multiple objects. For example, w.r.t. the BookTitle-BookCopy example given in this handout, values of attributes such as <code>book_title</code>, <code>ISBN</code> are exactly the same for copies of the same book.</p>
                                           <p>After applying the pattern, the <code>Abstraction</code> and the <code>Occurrence</code> classes together represent one entity. It is like one class has been split into two. For example, a <code>BookTitle</code> object and a <code>BookCopy</code> object combines to represent an actual <code>Book</code>.</p>
@@ -399,7 +399,7 @@
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="56836" type="radio"> b. Teachers and their students</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="56836" type="radio"> c. Modules and exams/assignments given by those modules</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(a)</p>
                                           <p>Explanation:</p>
                                           <p>(a) Stagings of a drama are ‘occurrences’ of the drama. They have many attributes common (e.g., Drama name, producer, cast, etc.) but some attributes are different (e.g., venue, time).</p>
@@ -449,7 +449,7 @@
                               <p><strong>Problem</strong></p>
                               <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g. the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
                               <p><strong>Solution</strong></p>
-                              <p>Include a <tooltip content="a French word that means 'front of a building'" class="algolia-no-index">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+                              <p>Include a <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                               <tip-box>
                                 <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                                 <img src="/2019/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -469,7 +469,7 @@
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="d8720" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="d8720" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>True.</p>
                                           <p>Facade is clearly visible (Storage is the &lt;&lt; Facade &gt;&gt; class).</p>
                                         </div>
@@ -521,7 +521,7 @@
                               <p>The general form of the solution is as follows.</p>
                               <img src="/2019/book/designPatterns/command/what/images/clientInvoker.png" height="200">
                               <p></p>
-                              <p>The <code>&lt;&lt;Client&gt;&gt;</code> creates a <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object, and passes it to the <code>&lt;&lt;Invoker&gt;&gt;</code>. The <code>&lt;&lt;Invoker&gt;&gt;</code> object treats all commands as a general <code>&lt;&lt;Command&gt;&gt;</code> type. <code>&lt;&lt;Invoker&gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object may have to be linked to any <code>&lt;&lt;Receiver&gt;&gt;</code> of the command (<tooltip content="the object the command will operate on, in case different commands operate on different objects" class="algolia-no-index">?</tooltip>) before it is passed to the <code>&lt;&lt;Invoker&gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
+                              <p>The <code>&lt;&lt;Client&gt;&gt;</code> creates a <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object, and passes it to the <code>&lt;&lt;Invoker&gt;&gt;</code>. The <code>&lt;&lt;Invoker&gt;&gt;</code> object treats all commands as a general <code>&lt;&lt;Command&gt;&gt;</code> type. <code>&lt;&lt;Invoker&gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object may have to be linked to any <code>&lt;&lt;Receiver&gt;&gt;</code> of the command (<tooltip content="the object the command will operate on, in case different commands operate on different objects">?</tooltip>) before it is passed to the <code>&lt;&lt;Invoker&gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
                             </div>
                             <div></div>
                           </div>
@@ -693,7 +693,7 @@ studentList.addUi(statusUi);
                                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> polymorphism and Observer pattern." class="algolia-no-index">
                                       <question has-input="true">
                                         <p>Explain how polymorphism is used in the Observer pattern.</p>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <img src="/2019/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
                                           <p></p>
                                           <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type called <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on its actual type. That is, <code>update()</code> method shows polymorphic behavior.</p>
@@ -712,7 +712,7 @@ studentList.addUi(statusUi);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>True</p>
                                           <p>Explanation: Yes. For example, when applying the Observer pattern to an MVC structure, Views can get notified and update themselves about a change to the Model without the Model having to depend on the Views.</p>
                                         </div>

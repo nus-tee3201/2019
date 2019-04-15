@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Test Case Design: Introduction</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -49,9 +49,9 @@
                       <p></p>
                       <p></p>
                       <div>
-                        <p><strong>Except for trivial <tooltip content="Software Under Test" class="algolia-no-index">SUTs</tooltip>, <tooltip content="testing all possible cases" class="algolia-no-index">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
+                        <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
                         <tip-box>
-                          <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`" class="algolia-no-index">collection</tooltip>:</p>
+                          <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
                           <ul>
                             <li>Add an item to an empty collection.</li>
                             <li>Add an item when there is one item in the collection.</li>
@@ -78,7 +78,7 @@
                               <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                             </li>
                           </ul>
-                          <p><strong>For testing to be <tooltip content="Efficient and Effective" class="algolia-no-index">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                          <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                         </div>
                       </div>
                       <div>
@@ -99,7 +99,7 @@ Enter side 1:
                                   <pre><code class="hljs">34,34,34: Yes
 0, any valid, any valid: No
 </code></pre>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>In addition to obvious test cases such as</p>
                                     <ul>
                                       <li>sum of two sides == third,</li>
@@ -123,7 +123,7 @@ Enter side 1:
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Exhaustive testing in Minesweeper" class="algolia-no-index">
                                 <question has-input="true">
                                   <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>Consider this sequence of test cases:</p>
                                     <ul>
                                       <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
@@ -149,7 +149,7 @@ Enter side 1:
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(a)(b)(c)(d)(e)(f)</p>
                                   </div>
                                 </question>

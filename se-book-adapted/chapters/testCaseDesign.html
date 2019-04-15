@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : Test Case Design</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -49,8 +49,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -73,7 +73,7 @@
     </header>
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
             <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
@@ -193,9 +193,9 @@
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for deliberate test case design</span></span></span></span>
                 <p></p>
                 <div>
-                  <p><strong>Except for trivial <tooltip content="Software Under Test" class="algolia-no-index">SUTs</tooltip>, <tooltip content="testing all possible cases" class="algolia-no-index">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
+                  <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
                   <tip-box>
-                    <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`" class="algolia-no-index">collection</tooltip>:</p>
+                    <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
                     <ul>
                       <li>Add an item to an empty collection.</li>
                       <li>Add an item when there is one item in the collection.</li>
@@ -222,7 +222,7 @@
                         <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                       </li>
                     </ul>
-                    <p><strong>For testing to be <tooltip content="Efficient and Effective" class="algolia-no-index">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                    <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                   </div>
                 </div>
                 <div>
@@ -243,7 +243,7 @@ Enter side 1:
                             <pre><code class="hljs">34,34,34: Yes
 0, any valid, any valid: No
 </code></pre>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>In addition to obvious test cases such as</p>
                               <ul>
                                 <li>sum of two sides == third,</li>
@@ -267,7 +267,7 @@ Enter side 1:
                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Exhaustive testing in Minesweeper" class="algolia-no-index">
                           <question has-input="true">
                             <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>Consider this sequence of test cases:</p>
                               <ul>
                                 <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
@@ -293,7 +293,7 @@ Enter side 1:
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(a)(b)(c)(d)(e)(f)</p>
                             </div>
                           </question>
@@ -409,8 +409,8 @@ Enter side 1:
                       <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
                     </ul>
                   </tip-box>
-                  <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top" class="algolia-no-index">
-                      <div slot="content">
+                  <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
+                      <div slot="content" class="algolia-no-index">
                       <div>
                         <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                       </div>
@@ -507,7 +507,7 @@ Enter side 1:
                               <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> c. A string that is 40 characters long</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> d. null</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>A. (d)</p>
                               <p>Explanation: The description does not mention anything about the content of the string. Therefore, the method is unlikely to behave differently for strings consisting of numbers.</p>
                               <p>B. (a) or (c)</p>
@@ -615,7 +615,7 @@ Enter side 1:
                               <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> True</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> False</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>False</p>
                               <p>Explanation: It does not recommend testing <em>only</em> those values <em>on</em> the boundary. It merely suggests that values on and around a boundary are more likely to cause errors.</p>
                             </div>
@@ -743,7 +743,7 @@ Enter side 1:
                               <li>Only 'K', 'H', 'S', 'X' and 'Z' are valid</li>
                             </ul>
                             <p>Assume you are testing the operation isValidMatric(String matric):boolen. Identify equivalence partitions and boundary values for the matriculation number.</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>String length: (less than 7 characters), (7 characters), (more than 7 characters)</p>
                               <p>For those with 7 characters,</p>
                               <ul>
@@ -760,7 +760,7 @@ Enter side 1:
                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> isValidDate" class="algolia-no-index">
                           <question has-input="true">
                             <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in the format yyyy/mm/dd.</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p><strong>Initial partitions</strong>: [null] [10 characters long] [shorter than 10 characters] [longer than 10 characters]</p>
                               <p>For 10-character strings:</p>
                               <ul>
@@ -784,7 +784,7 @@ Enter side 1:
                               <li>Overview: This method dispatches the Resource r to the Task t. Since this can dispatch only one resource, it needs to be used multiple times should the task need multiple resources.</li>
                             </ul>
                             <p>Imagine you are designing test cases to test the method dispatch(Resource,Task). Taking into account equivalence partitions and boundary values, which different inputs will you combine to test the method?</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <table class="table">
                                 <tr>
                                   <th>Test input for r</th>
@@ -828,7 +828,7 @@ Enter side 1:
                               <li>Preconditions: t has room for b , b.getTable() != t</li>
                               <li>Postconditions: b.getTable() == t</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p><strong>Equivalence partitions</strong></p>
                               <ul>
                                 <li>
@@ -942,7 +942,7 @@ Enter side 1:
                             <p>(a) What are the equivalence partitions relevant to testing the add(Item) method?</p>
                             <p>(b) What are the boundary and non-boundary values you will use to test the add(Item) method?</p>
                             <p>(c) Design a set of test cases to test the add(Item) method by considering the equivalence partitions and boundary values from your answers to (a) and (b) above.</p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(a)</p>
                               <p>i: i != null, i == null
                                 list: contains(i)==true, contains(i)==false, count() &lt; 10, count() == 10
@@ -962,7 +962,7 @@ Enter side 1:
                             <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
                             <img src="/2019/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
                             <p></p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <img src="/2019/book/testCaseDesign/summary/exercises/images/manWomanPartitions.png" height="300">
                               <p></p>
                               <p>Partitioning ‘married’ as ‘to same woman’ and ‘to different woman’ seems redundant at first. Arguments for having it:</p>
@@ -984,7 +984,7 @@ Enter side 1:
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. black-box exploratory testing</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. black-box scripted testing</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <ul class="task-list">
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. white-box exploratory testing</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. gray-box beta testing</li>
@@ -1004,7 +1004,7 @@ Enter side 1:
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <ul class="task-list">
                                 <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
@@ -1023,7 +1023,7 @@ Enter side 1:
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top spacer-top viewport-height-90 scrollable slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#test-case-design">Test Case Design&#x200E;</a>
@@ -1054,7 +1054,7 @@ Enter side 1:
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

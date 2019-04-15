@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Principles</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -121,7 +121,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(a)</p>
                                     <p>Explanation: Please refer the handout for the definition of OCP.</p>
                                   </div>
@@ -246,7 +246,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>True.</p>
                                     <p>Explanation: If the subclass is more restrictive than the parent class, code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and LSP has been violated.</p>
                                   </div>
@@ -341,7 +341,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <ul class="task-list">
                                       <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
@@ -458,7 +458,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                                               <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
                                               <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                                             </ul>
-                                            <div slot="answer">
+                                            <div slot="answer" class="algolia-no-index">
                                               <p>(a)</p>
                                               <p>Explanation: Please refer the handout for the definition of OCP.</p>
                                             </div>
@@ -583,7 +583,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                               <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> True</label></li>
                                               <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> False</label></li>
                                             </ul>
-                                            <div slot="answer">
+                                            <div slot="answer" class="algolia-no-index">
                                               <p>True.</p>
                                               <p>Explanation: If the subclass is more restrictive than the parent class, code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and LSP has been violated.</p>
                                             </div>
@@ -678,7 +678,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
                                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
                                             </ul>
-                                            <div slot="answer">
+                                            <div slot="answer" class="algolia-no-index">
                                               <ul class="task-list">
                                                 <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
                                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
@@ -729,7 +729,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                             <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
                           </ul>
                         </tip-box>
-                        <p><strong>Applying <tooltip content="Separation of Concerns" class="algolia-no-index">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+                        <p><strong>Applying <tooltip content="Separation of Concerns">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the security is implemented.</p>
                         </tip-box>
@@ -798,7 +798,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                               <img src="/2019/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
                                               <p></p>
                                             </tip-box>
-                                            <div slot="answer">
+                                            <div slot="answer" class="algolia-no-index">
                                               <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code>A</code> is highly-coupled to the rest of the system while <code>B</code>, <code>C</code>, <code>D</code>, and <code>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code>A</code> of <em>x</em>. However, only <code>D</code> and <code>E</code> are standalone.</p>
                                             </div>
                                           </question>
@@ -808,7 +808,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> regressions and coupling." class="algolia-no-index">
                                           <question has-input="true">
                                             <p>Explain the link (if any) between regressions and coupling.</p>
-                                            <div slot="answer">
+                                            <div slot="answer" class="algolia-no-index">
                                               <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed"> e.g. when component <code>A</code> is modified, all components ‘coupled’ to component <code>A</code> risk ‘unintended behavioral changes’</span>.</p>
                                             </div>
                                           </question>
@@ -817,9 +817,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                       <div>
                                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coupling and testability" class="algolia-no-index">
                                           <question has-input="true">
-                                            <p>Discuss the relationship between coupling and <tooltip content="a measure of how easily a given component can be tested" class="algolia-no-index">testability</tooltip>.</p>
-                                            <div slot="answer">
-                                              <p>Coupling decreases testability because if the <tooltip content="Software Under Test" class="algolia-no-index">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                            <p>Discuss the relationship between coupling and <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                                            <div slot="answer" class="algolia-no-index">
+                                              <p>Coupling decreases testability because if the <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                                             </div>
                                           </question>
                                         </panel>
@@ -835,7 +835,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
                                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
                                             </ul>
-                                            <div slot="answer">
+                                            <div slot="answer" class="algolia-no-index">
                                               <p>(a)(b)(c)<s>(d)</s>(e)</p>
                                               <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
                                             </div>
@@ -887,7 +887,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software design should increase cohesion of its components.</li>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software design should follow single responsibility principle.</li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(a)(b)(c)</p>
                                     <p>Explanation: By making ‘user interaction’ GUI class’ sole responsibility, we increase its cohesion. This is also in line with separation of concerns (i.e., we separated the concern of user interaction) and single responsibility principle (GUI class has only one responsibility).</p>
                                   </div>
@@ -932,7 +932,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           <li>The object <code>O</code> itself</li>
                           <li>Objects passed as parameters of <code>m</code></li>
                           <li>Objects created/instantiated in <code>m</code> (directly or indirectly)</li>
-                          <li>Objects from the <tooltip content="objects that are held by instance variables of" class="algolia-no-index">direct association of</tooltip> <code>O</code></li>
+                          <li>Objects from the <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
                         </ul>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code> is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
@@ -954,7 +954,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Examples for LoD" class="algolia-no-index">
                                 <question has-input="true">
                                   <p>Explain the Law of Demeter using code examples. You are to make up your own code examples. Take Minesweeper as the basis for your code examples.</p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>Let us take the <code>Logic</code> class as an example. Assume that it has the following operation.</p>
                                     <p><code>setMinefield(Minefiled mf):void</code></p>
                                     <p>Consider the following that can happen inside this operation.</p>
@@ -981,7 +981,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>False</p>
                                     <p>Explanation: The line <code>g.doSomething()</code> does not violate LoD because it is OK to invoke methods of objects created within a method.</p>
                                   </div>
@@ -999,7 +999,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Principle of least knowledge.</li>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Coupling.</li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(b)</p>
                                     <p>Explanation: Law of Demeter, which aims to reduce coupling, is also known as ‘Don’t talk to strangers’ and ‘Principle of least knowledge’.</p>
                                   </div>
@@ -1099,7 +1099,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Brook’s Law vs school project" class="algolia-no-index">
                                 <question has-input="true">
                                   <p>Do the Brook’s Law apply to a school project? Justify.</p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>Yes. Adding a new student to a project team can result in a slow-down of the project for a short period. This is because the new member needs time to learn the project and existing members will have to spend time helping the new guy get up to speed. If the project is already behind schedule and near a deadline, this could delay the delivery even further.</p>
                                   </div>
                                 </question>
@@ -1115,7 +1115,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The bearing of a child takes nine months, no matter how many women are assigned.</li>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Adding more manpower to an already late project makes it even later.</li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(d)</p>
                                   </div>
                                 </question>
@@ -1161,7 +1161,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="9d6e7" type="radio"> d. Interface Segregation Principle.</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="9d6e7" type="radio"> e. Dependency Inversion Principle.</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <ul radio-group="68380" class="radio-list">
                                       <li class="radio-list-item"><label><input class="radio-list-input" checked name="68380" type="radio"> a. Separation of Concerns Principle.</label></li>
                                     </ul>

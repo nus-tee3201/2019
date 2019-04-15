@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Testing: Testing Types</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -150,11 +150,11 @@
                             <p></p>
                             <p></p>
                             <div>
-                              <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <tooltip content="code the unit depends on" class="algolia-no-index">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+                              <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                               <tip-box>
                                 <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
                               </tip-box>
-                              <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)" class="algolia-no-index">SUT</popover> from its dependencies</strong>.</p>
+                              <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
                               <tip-box type="definition">
                                 <div>
                                   <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
@@ -244,7 +244,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>True</p>
                                         </div>
                                       </question>
@@ -440,7 +440,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="f7c90" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="f7c90" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>True</p>
                                         </div>
                                       </question>
@@ -517,7 +517,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> implications of developers testing their own code" class="algolia-no-index">
                                       <question has-input="true">
                                         <p>Discuss pros and cons of developers testing their own code.</p>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>Pros:</p>
                                           <ul>
                                             <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
@@ -544,7 +544,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>False. The cost goes up over time.</p>
                                         </div>
                                       </question>
@@ -624,7 +624,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>A) False</p>
                                           <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
                                         </div>
@@ -642,7 +642,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(e)</p>
                                         </div>
                                       </question>
@@ -652,7 +652,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Explain the concept of exploratory testing using Minesweeper as an example." class="algolia-no-index">
                                       <question has-input="true">
                                         <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
                                         </div>
                                       </question>
@@ -702,7 +702,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> True</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> False</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>B) False</p>
                                           <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
                                         </div>
@@ -840,7 +840,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
                                           <p>Explanation:</p>
                                           <p>(b) is correct because system testing can aim to cover all specified behaviors and can even go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
@@ -895,7 +895,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> b. False</label></li>
                                           <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> c. Partially true</label></li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>c.</p>
                                           <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
                                         </div>

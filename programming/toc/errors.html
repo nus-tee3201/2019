@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Error Handling</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -74,7 +74,7 @@
     </header>
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
             <li class="mt-2"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
@@ -152,7 +152,7 @@ SyntaxError: invalid syntax
               <p>Some Python editors (e.g., <a href="http://REPL.it">REPL.it</a>) flag syntax errors even before you run the code.</p>
               <tip-box>
                 <p><span class="fas fa-cube"></span> Note how REPL Python editor points out the syntax error using a red ❌ in the <em>
-                    <tooltip content="the column on the extreme left of the editor" class="algolia-no-index">gutter</tooltip>
+                    <tooltip content="the column on the extreme left of the editor">gutter</tooltip>
                   </em> of the editor.</p>
                 <p><a href="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" alt class="img-fluid"></a></p>
               </tip-box>
@@ -161,7 +161,7 @@ SyntaxError: invalid syntax
             <div>
               <h3 id="handling-exceptions">Handling Exceptions<a class="fa fa-anchor" href="#handling-exceptions"></a></h3>
               <p><strong>Errors detected during execution are called <em>exceptions</em>.</strong> Even if the code is syntactically correct, it may cause an error during execution. Python <em>
-                  <tooltip content="_throw_ and _raise_  are two terms used to describe an exception being encountered" class="algolia-no-index">throws/raises</tooltip>
+                  <tooltip content="_throw_ and _raise_  are two terms used to describe an exception being encountered">throws/raises</tooltip>
                 </em> different types of exceptions; the type of exception used depends on the tye nature of the error.</p>
               <box>
                 <p><span class="fas fa-cube"></span> The code below raises an exception when it attempts to divide a number by <code>0</code>. The type of the exception raised is <code>ZeroDivisionError</code>, as mentioned in the last line of the error message.</p>
@@ -237,7 +237,7 @@ Calculation over!........
                 </div>
               </box>
               <p>When the code in a <code>try</code> clause raises an error, the program execution immediately moves to the code in the <code>except</code> clause, provided the exception that happened matches the exception the <code>except</code> clause is supposed to <em>
-                  <tooltip content="_Catch_ is term often used to describe a clause that respondes to a specific exception." class="algolia-no-index">catch</tooltip>
+                  <tooltip content="_Catch_ is term often used to describe a clause that respondes to a specific exception.">catch</tooltip>
                 </em>. After running the code in the <code>except</code> clause, the execution continues as normal.</p>
               <p>If the exception does not match the <code>except</code> clause, the program crashes.</p>
               <box>
@@ -746,7 +746,7 @@ Thank you for playing the FLEXIBLE WORD GAME
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top spacer-top viewport-height-90 scrollable slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#error-handling">Error Handling&#x200E;</a>
@@ -770,7 +770,7 @@ Thank you for playing the FLEXIBLE WORD GAME
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

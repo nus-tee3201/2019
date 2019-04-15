@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 5</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week4/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week6/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
           <h1 id="week-5-feb-18">Week 5 <small><small><span class="dimmed">[Feb 18]</span></small></small><a class="fa fa-anchor" href="#week-5-feb-18"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div>
                 <div id="week5-toc">
@@ -137,7 +137,7 @@ SyntaxError: invalid syntax
                   <p>Some Python editors (e.g., <a href="http://REPL.it">REPL.it</a>) flag syntax errors even before you run the code.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Note how REPL Python editor points out the syntax error using a red ❌ in the <em>
-                        <tooltip content="the column on the extreme left of the editor" class="algolia-no-index">gutter</tooltip>
+                        <tooltip content="the column on the extreme left of the editor">gutter</tooltip>
                       </em> of the editor.</p>
                     <p><a href="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2019/programming/errors-syntax/images/syntaxErrorInRepl.png" alt class="img-fluid"></a></p>
                   </tip-box>
@@ -146,7 +146,7 @@ SyntaxError: invalid syntax
                 <div>
                   <h3 id="handling-exceptions">Handling Exceptions<a class="fa fa-anchor" href="#handling-exceptions"></a></h3>
                   <p><strong>Errors detected during execution are called <em>exceptions</em>.</strong> Even if the code is syntactically correct, it may cause an error during execution. Python <em>
-                      <tooltip content="_throw_ and _raise_  are two terms used to describe an exception being encountered" class="algolia-no-index">throws/raises</tooltip>
+                      <tooltip content="_throw_ and _raise_  are two terms used to describe an exception being encountered">throws/raises</tooltip>
                     </em> different types of exceptions; the type of exception used depends on the tye nature of the error.</p>
                   <box>
                     <p><span class="fas fa-cube"></span> The code below raises an exception when it attempts to divide a number by <code>0</code>. The type of the exception raised is <code>ZeroDivisionError</code>, as mentioned in the last line of the error message.</p>
@@ -222,7 +222,7 @@ Calculation over!........
                     </div>
                   </box>
                   <p>When the code in a <code>try</code> clause raises an error, the program execution immediately moves to the code in the <code>except</code> clause, provided the exception that happened matches the exception the <code>except</code> clause is supposed to <em>
-                      <tooltip content="_Catch_ is term often used to describe a clause that respondes to a specific exception." class="algolia-no-index">catch</tooltip>
+                      <tooltip content="_Catch_ is term often used to describe a clause that respondes to a specific exception.">catch</tooltip>
                     </em>. After running the code in the <code>except</code> clause, the execution continues as normal.</p>
                   <p>If the exception does not match the <code>except</code> clause, the program crashes.</p>
                   <box>
@@ -730,7 +730,7 @@ Thank you for playing the FLEXIBLE WORD GAME
                 <h1 id="strings">Strings<a class="fa fa-anchor" href="#strings"></a></h1>
                 <div>
                   <h3 id="string-literals">String Literals<a class="fa fa-anchor" href="#string-literals"></a></h3>
-                  <p>A <tooltip content="a string value, not a variable" class="algolia-no-index">string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>. However, this will not work if the string has a <tooltip content="a character that has special meaning in Python" class="algolia-no-index">special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
+                  <p>A <tooltip content="a string value, not a variable">string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>. However, this will not work if the string has a <tooltip content="a character that has special meaning in Python">special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
                   <div id="strings-escape">
                     <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em> to include a special character in a string literal</strong> without interpreting it as a special character. Given below are some examples:</p>
                     <div class="table-responsive">
@@ -1393,7 +1393,7 @@ print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hl
                     </panel>
                     <p></p>
                   </div>
-                  <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called" class="algolia-no-index">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items" class="algolia-no-index">delimiter</tooltip>.</strong></p>
+                  <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.</strong></p>
                   <box>
                     <p><span class="fas fa-cube"></span> Examples of the <code>join()</code> method:</p>
                     <div>
@@ -1416,7 +1416,7 @@ one-to-one
                       </table>
                     </div>
                   </box>
-                  <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters" class="algolia-no-index">whitespaces</tooltip> in the string are used as delimiters.</p>
+                  <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any <tooltip content="space, tab, or newline characters">whitespaces</tooltip> in the string are used as delimiters.</p>
                   <box>
                     <p><span class="fas fa-cube"></span> Some examples of using the <code>split()</code> method:</p>
                     <div>
@@ -1722,7 +1722,7 @@ pins(new).......:110
                                 <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
                                 <div class="indented">
                                   <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
-                                  <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred" class="algolia-no-index"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
+                                  <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <tooltip content="the ordered list of methods that had been called to get to the method where the error occurred"><em>call stack</em></tooltip>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
                                   <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p>
                                 </div>
                                 <p>Advantages of exception handling in this way:</p>
@@ -1743,7 +1743,7 @@ pins(new).......:110
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a) (c)</p>
                                             <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
                                           </div>
@@ -2025,7 +2025,7 @@ more text
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

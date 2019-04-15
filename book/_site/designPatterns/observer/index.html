@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Software Design Patterns: Observer</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -140,7 +140,7 @@ studentList.addUi(statusUi);
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> polymorphism and Observer pattern." class="algolia-no-index">
                                 <question has-input="true">
                                   <p>Explain how polymorphism is used in the Observer pattern.</p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <img src="/2019/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
                                     <p></p>
                                     <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type called <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on its actual type. That is, <code>update()</code> method shows polymorphic behavior.</p>
@@ -159,7 +159,7 @@ studentList.addUi(statusUi);
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>True</p>
                                     <p>Explanation: Yes. For example, when applying the Observer pattern to an MVC structure, Views can get notified and update themselves about a change to the Model without the Model having to depend on the Views.</p>
                                   </div>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Test Case Design: Combining Test Inputs</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -249,7 +249,7 @@
                                 </tbody>
                               </table>
                             </div>
-                            <p>These values can generate <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),..." class="algolia-no-index">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+                            <p>These values can generate <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
                             <p>Next, let's consider p1 and p3.</p>
                             <div class="table-responsive">
                               <table class="markbind-table table table-bordered table-striped">
@@ -271,7 +271,7 @@
                                 </tbody>
                               </table>
                             </div>
-                            <p>These values can generate <tooltip content="(a,T)(a,F)(b,T)(b,F),..." class="algolia-no-index">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+                            <p>These values can generate <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
                             <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
                             <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
                           </panel>
@@ -715,7 +715,7 @@
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="a7d7f" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="a7d7f" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>False</p>
                                     <p>Explanation: These heuristics are, well, heuristics only. They will help you to make better decisions about test case design. However, they are speculative in nature (especially, when testing in black-box fashion) and cannot give you precise number of test cases.</p>
                                   </div>
@@ -1108,7 +1108,7 @@
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="1da4e" type="radio"> c. No more than one invalid test input should be in a given test case.</label></li>
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="1da4e" type="radio"> d. Each valid test input should appear at least once in a test case that doesn’t have any invalid inputs.</label></li>
                                     </ul>
-                                    <div slot="answer">
+                                    <div slot="answer" class="algolia-no-index">
                                       <p>(a) inputs.</p>
                                       <p>Explanation: If you test all invalid test inputs together, you will not know if each one of the invalid inputs are handled correctly by the SUT. This is because most SUTs return an error message upon encountering the first invalid input.</p>
                                     </div>

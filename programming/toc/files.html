@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Files</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -74,7 +74,7 @@
     </header>
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
             <li class="mt-2"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
@@ -157,7 +157,7 @@
                   </tab>
                 </tabs>
               </box>
-              <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the <tooltip content="A program has a _working directory_ at any time; it can change over time" class="algolia-no-index">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
+              <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
               <tip-box>
                 <p><span class="fas fa-cube"></span> This code shows how to print/change current working directory</p>
                 <div>
@@ -313,7 +313,7 @@ print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs
                   If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
               </box>
               <p>
-                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux" class="algolia-no-index">path separators</tooltip>.
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.
               </p>
               <box>
                 <p><span class="fas fa-cube"></span> contrasting hard-coding the separator vs using <code>os.path.join()</code>:</p>
@@ -451,7 +451,7 @@ third line
                     </tr>
                   </table>
                 </div>
-                <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it" class="algolia-no-index">in read mode</tooltip>.</p>
+                <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
               </tip-box>
               <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
               <tip-box>
@@ -928,7 +928,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top spacer-top viewport-height-90 scrollable slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#files">Files&#x200E;</a>
@@ -957,7 +957,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

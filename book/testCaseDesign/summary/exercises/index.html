@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Test Case Design: Summary: Exercises</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -74,7 +74,7 @@
                                 <li>Only 'K', 'H', 'S', 'X' and 'Z' are valid</li>
                               </ul>
                               <p>Assume you are testing the operation isValidMatric(String matric):boolen. Identify equivalence partitions and boundary values for the matriculation number.</p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>String length: (less than 7 characters), (7 characters), (more than 7 characters)</p>
                                 <p>For those with 7 characters,</p>
                                 <ul>
@@ -91,7 +91,7 @@
                           <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> isValidDate" class="algolia-no-index">
                             <question has-input="true">
                               <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in the format yyyy/mm/dd.</p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p><strong>Initial partitions</strong>: [null] [10 characters long] [shorter than 10 characters] [longer than 10 characters]</p>
                                 <p>For 10-character strings:</p>
                                 <ul>
@@ -115,7 +115,7 @@
                                 <li>Overview: This method dispatches the Resource r to the Task t. Since this can dispatch only one resource, it needs to be used multiple times should the task need multiple resources.</li>
                               </ul>
                               <p>Imagine you are designing test cases to test the method dispatch(Resource,Task). Taking into account equivalence partitions and boundary values, which different inputs will you combine to test the method?</p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <table class="table">
                                   <tr>
                                     <th>Test input for r</th>
@@ -159,7 +159,7 @@
                                 <li>Preconditions: t has room for b , b.getTable() != t</li>
                                 <li>Postconditions: b.getTable() == t</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p><strong>Equivalence partitions</strong></p>
                                 <ul>
                                   <li>
@@ -273,7 +273,7 @@
                               <p>(a) What are the equivalence partitions relevant to testing the add(Item) method?</p>
                               <p>(b) What are the boundary and non-boundary values you will use to test the add(Item) method?</p>
                               <p>(c) Design a set of test cases to test the add(Item) method by considering the equivalence partitions and boundary values from your answers to (a) and (b) above.</p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(a)</p>
                                 <p>i: i != null, i == null
                                   list: contains(i)==true, contains(i)==false, count() &lt; 10, count() == 10
@@ -293,7 +293,7 @@
                               <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
                               <img src="/2019/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
                               <p></p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <img src="/2019/book/testCaseDesign/summary/exercises/images/manWomanPartitions.png" height="300">
                                 <p></p>
                                 <p>Partitioning ‘married’ as ‘to same woman’ and ‘to different woman’ seems redundant at first. Arguments for having it:</p>
@@ -315,7 +315,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. black-box exploratory testing</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. black-box scripted testing</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <ul class="task-list">
                                   <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. white-box exploratory testing</li>
                                   <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. gray-box beta testing</li>
@@ -335,7 +335,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <ul class="task-list">
                                   <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
                                   <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>

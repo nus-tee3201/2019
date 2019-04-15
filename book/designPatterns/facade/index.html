@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Software Design Patterns: Facade</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -59,7 +59,7 @@
                         <p><strong>Problem</strong></p>
                         <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g. the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
                         <p><strong>Solution</strong></p>
-                        <p>Include a <tooltip content="a French word that means 'front of a building'" class="algolia-no-index">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+                        <p>Include a <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                           <img src="/2019/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -79,7 +79,7 @@
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="d8720" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="d8720" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>True.</p>
                                     <p>Facade is clearly visible (Storage is the &lt;&lt; Facade &gt;&gt; class).</p>
                                   </div>

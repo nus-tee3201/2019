@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 4</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week3/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week5/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
           <h1 id="week-4-feb-11">Week 4 <small><small><span class="dimmed">[Feb 11]</span></small></small><a class="fa fa-anchor" href="#week-4-feb-11"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div>
                 <div id="week4-toc">
@@ -602,7 +602,7 @@ print(letters)
                     <p></p>
                   </div>
                   <p><strong>You can use the <em>slice</em> notation <code>list_name[start_index:end_index]</code> to copy a <em>
-                        <tooltip content="a portion of a list" class="algolia-no-index">sublist</tooltip>
+                        <tooltip content="a portion of a list">sublist</tooltip>
                       </em> into a new list.</strong> If the <code>start_index</code> is omitted, it means 'from the beginning of the list'. If the <code>end_index</code> is omitted, it means 'till the end of the list'.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Some example of slicing to get a sub list:</p>
@@ -1376,7 +1376,7 @@ After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
                     <p></p>
                   </panel>
                   <p></p>
-                  <p>Note that <strong>some methods <tooltip content="changes the value(s) of the object" class="algolia-no-index">mutates</tooltip> the object while other methods don't</strong>.</p>
+                  <p>Note that <strong>some methods <tooltip content="changes the value(s) of the object">mutates</tooltip> the object while other methods don't</strong>.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the example below, <code>lower()</code> (a <em>non-mutating</em> method) returns a new string that is in lower case while the original string remains unchanged. However, <code>sort()</code> (a <em>mutating</em> method) changes the list object it is attached to (and does not return anything).</p>
                     <div>
@@ -1630,7 +1630,7 @@ Thank you for playing the WORD GAME
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Java can be used to write procedural code</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>A) (a)(b)(c)(e)</p>
                                             <p>Explanation: While many languages support the OO paradigm, OO is not a language itself.</p>
                                             <p>B) Choose the correct statement</p>
@@ -1648,7 +1648,7 @@ Thank you for playing the WORD GAME
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>True.</p>
                                             <p>Explanation: Procedural languages work at simple data structures (e.g., integers, arrays) and functions level. Because an object is an abstraction over data+related functions, OO works at a higher level.</p>
                                           </div>
@@ -1847,7 +1847,7 @@ Thank you for playing the WORD GAME
                                             <li>Objects interact by sending messages.</li>
                                             <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
                                           </ol>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <blockquote>
                                               <p>[1] Object Oriented Programming (OOP) views the world as a network of interacting objects.</p>
                                             </blockquote>
@@ -2001,10 +2001,10 @@ Thank you for playing the WORD GAME
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
                                           </ul>
-                                          <div slot="hint">
+                                          <div slot="hint" class="algolia-no-index">
                                             <p>Don't confuse encapsulation with abstraction.</p>
                                           </div>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>Choose the correct statement</p>
                                             <p>(a)</p>
                                             <p>Explanation: The second statement should be: An object is an <strong>abstraction</strong> <s>encapsulation</s> because it lets ...</p>
@@ -2139,7 +2139,7 @@ main()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

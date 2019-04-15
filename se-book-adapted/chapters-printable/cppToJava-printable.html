@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter [Printable] : C++ to Java</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -133,7 +133,7 @@
                   <p><code>System.out.println</code> displays results on the screen.</p>
                   <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> Some similarities:</p>
                   <ul>
-                    <li>Java programs are made up of class and method definitions, and <tooltip content="A _method_ is a named sequence of statements" class="algolia-no-index">methods</tooltip> are made up of <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
+                    <li>Java programs are made up of class and method definitions, and <tooltip content="A _method_ is a named sequence of statements">methods</tooltip> are made up of <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
                     <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
                     <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
                     <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -143,8 +143,8 @@
                     <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
                     <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
                   </ul>
-                  <popover id="pop:helloWorld-statement" title="Statements" placement="top" class="algolia-no-index">
-                      <div slot="content">
+                  <popover id="pop:helloWorld-statement" title="Statements" placement="top">
+                      <div slot="content" class="algolia-no-index">
                       <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                       <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
                     </div>
@@ -171,8 +171,8 @@
                     <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code>
                   </p>
                   <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
-                  <popover id="pop:compiling-errors" title="Compile-time errors" placement="top" class="algolia-no-index">
-                      <div slot="content">
+                  <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
+                      <div slot="content" class="algolia-no-index">
                       <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                       <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
                       <p></p>
@@ -201,7 +201,7 @@
                     <li><code>java</code> in the command above refers to the Java interpreter installed in your computer.</li>
                     <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
                   </ul>
-                  <p>When you run a Java program, you can encounter a <tooltip content="so-called because it does not appear until after the program has started running" class="algolia-no-index">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
+                  <p>When you run a Java program, you can encounter a <tooltip content="so-called because it does not appear until after the program has started running">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
                     <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
@@ -515,7 +515,7 @@ values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double
 </code></pre>
                     <p><small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></p>
                   </blockquote>
-                  <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> The <code>[]</code> operator selects elements from an array. Array elements <tooltip content="i.e., the index of the first element is 0, not 1" class="algolia-no-index">indices start from 0</tooltip>.</p>
+                  <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> The <code>[]</code> operator selects elements from an array. Array elements <tooltip content="i.e., the index of the first element is 0, not 1">indices start from 0</tooltip>.</p>
                   <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 
 System.out.println(<span class="hljs-string">"The first element is "</span> + counts[<span class="hljs-number">0</span>]);
@@ -899,8 +899,8 @@ Polly likes crackers
                     <p><strong>Before using a class in your code, you need to <code>import</code> the class.</strong> <code>import</code> statements appear at the top of the code.</p>
                     <box>
                       <p><span class="fas fa-cube"></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
-                      <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top" class="algolia-no-index">
-                          <div slot="content">
+                      <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
+                          <div slot="content" class="algolia-no-index">
                           <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units to the right and <code>y</code> units up from the origin.
                               </p>
                         </div>
@@ -948,7 +948,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y + <sp
                     <pre><code class="hljs">3, 4, 25
 </code></pre>
                   </box>
-                  <p><strong>You can <tooltip content="i.e., change/modify" class="algolia-no-index"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
+                  <p><strong>You can <tooltip content="i.e., change/modify"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
                   <box>
                     <p><span class="fas fa-cube"></span> This example changes the x value of the <code>Point</code> object to <code>5</code>.</p>
                     <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
@@ -1127,12 +1127,12 @@ spot = <span class="hljs-keyword">null</span>;
 }
 </code></pre>
                   </box>
-                  <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`" class="algolia-no-index">PascalCase</tooltip> format for class names</strong>.</p>
+                  <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
                   <p>The code should be in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
-                  <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables." class="algolia-no-index">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the hour, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside the <code>Time</code> class.</p>
+                  <p>When a class is <code>public</code> <span class="dimmed">(e.g., the <code>Time</code> class in the above example)</span> it can be used in other classes. But the <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> that are <code>private</code> <span class="dimmed">(e.g., the hour, <code>minute</code> and <code>second</code> attributes of the <code>Time</code> class)</span> can only be accessed from inside the <code>Time</code> class.</p>
                   <h5 id="constructos">Constructos</h5>
                   <div class="indented">
-                    <p>The syntax for <tooltip content="special methods that construct the object and initialize the instance variables" class="algolia-no-index">constructors</tooltip> is similar to that of other methods, except:</p>
+                    <p>The syntax for <tooltip content="special methods that construct the object and initialize the instance variables">constructors</tooltip> is similar to that of other methods, except:</p>
                     <ul>
                       <li>The name of the constructor is the same as the name of the class.</li>
                       <li>The keyword <code>static</code> is omitted.</li>
@@ -1387,7 +1387,7 @@ System.out.println(upperName);
 ALAN TURING
 </code></pre>
                     </box>
-                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip content="once created, cannot be modified" class="algolia-no-index"><em>immutable</em></tooltip></strong>. For example, when you invoke <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to <code>&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
+                    <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <tooltip content="once created, cannot be modified"><em>immutable</em></tooltip></strong>. For example, when you invoke <code>toUpperCase</code> on a string <code>&quot;abc&quot;</code>, you get a new string object <code>&quot;ABC&quot;</code> as the return value rather than the string <code>&quot;abc&quot;</code> being changed to <code>&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code>toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p>
                     <pre><code class="hljs java">String s = <span class="hljs-string">"Ada"</span>;
 s.toUpperCase(); <span class="hljs-comment">// no effect</span>
 s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
@@ -1745,7 +1745,7 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
                     </box>
                     <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code> and a method to set it.</p>
                     <h5 id="accessing-superclass-members">Accessing Superclass Members</h5>
-                    <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable" class="algolia-no-index">hidden field</tooltip> (although hiding fields is discouraged).</p>
+                    <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
                     <box>
                       <p><span class="fas fa-cube"></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
@@ -2381,7 +2381,7 @@ Spot: Woof
                       <p>The class of the exception object indicates the type of exception thrown. The exception object can contain further information about the error, including an error message.</p>
                     </li>
                   </ul>
-                  <p><strong>You can use the <code>throw</code> statement to throw an exception.</strong> The throw statement requires a <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class." class="algolia-no-index">throwable</tooltip> object as the argument.</p>
+                  <p><strong>You can use the <code>throw</code> statement to throw an exception.</strong> The throw statement requires a <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class.">throwable</tooltip> object as the argument.</p>
                   <box>
                     <p><span class="fas fa-cube"></span> Here's an example of a <code>throw</code> statement.</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
@@ -2862,9 +2862,9 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
                   <box>
                     <p><span class="fas fa-cube"></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
                   </box>
-                  <p><strong>To use a public <tooltip content="types contained in the package" class="algolia-no-index">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+                  <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
                   <ol>
-                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`" class="algolia-no-index">fully qualified name</tooltip></strong> to refer to the member</li>
+                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
                     <li><strong>Import</strong> the package or the specific package member</li>
                   </ol>
                   <box>
@@ -3110,16 +3110,16 @@ second line
                           <tr>
                             <th>Modifier</th>
                             <th>
-                              <tooltip content="whether the class itself has access to the member defined by the access level" class="algolia-no-index">Class</tooltip>
+                              <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member" class="algolia-no-index">Package</tooltip>
+                              <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether subclasses of the class declared outside this package have access to the member" class="algolia-no-index">Subclass</tooltip>
+                              <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
                             </th>
                             <th>
-                              <tooltip content="whether all classes have access to the member" class="algolia-no-index">World</tooltip>
+                              <tooltip content="whether all classes have access to the member">World</tooltip>
                             </th>
                           </tr>
                         </thead>
@@ -3317,7 +3317,7 @@ Integer x = (Integer)o;
                     </small></small></span></h4>
               <div class="indented-less">
                 <div>
-                  <p>In this practice project, you will create a small <code>TaskManager</code> program that can store a list of tasks. It is a <tooltip content="Command Line Interface i.e., no Graphical User Interface" class="algolia-no-index">CLI</tooltip> program. You will start with a very simple version (aka TaskManager Level 1) and grow its functionality in small steps.</p>
+                  <p>In this practice project, you will create a small <code>TaskManager</code> program that can store a list of tasks. It is a <tooltip content="Command Line Interface i.e., no Graphical User Interface">CLI</tooltip> program. You will start with a very simple version (aka TaskManager Level 1) and grow its functionality in small steps.</p>
                   <h4 id="taskmanager-level-1">TaskManager Level 1</h4>
                   <div>
                     <p>In this first version of the TaskManager, the task list is not saved to the disk <span class="dimmed">i.e., the task list does not persist between multiple runs of the program</span></p>
@@ -3539,8 +3539,8 @@ Invalid command format: add
                               </ol>
                               <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
                               <div>
-                                <popover id="pop:cli" placement="top" class="algolia-no-index">
-                                  <div slot="content">
+                                <popover id="pop:cli" placement="top">
+                                  <div slot="content" class="algolia-no-index">
                                     <div>
                                       <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
                                     </div>
@@ -3982,7 +3982,7 @@ ui.showToUser(taskListDescription);
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

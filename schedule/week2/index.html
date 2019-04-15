@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week1/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week3/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
           <h1 id="week-2-jan-21">Week 2 <small><small><span class="dimmed">[Jan 21]</span></small></small><a class="fa fa-anchor" href="#week-2-jan-21"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div>
                 <div id="week2-toc">
@@ -98,7 +98,7 @@
                 <h1 id="program-flow-control">Program Flow Control<a class="fa fa-anchor" href="#program-flow-control"></a></h1>
                 <div>
                   <h3 id="booleans">Booleans<a class="fa fa-anchor" href="#booleans"></a></h3>
-                  <p><strong>The <code>bool</code> data type is used to represent <tooltip content="i.e. true/false values" class="algolia-no-index"><em>boolean</em> values</tooltip></strong>. They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
+                  <p><strong>The <code>bool</code> data type is used to represent <tooltip content="i.e. true/false values"><em>boolean</em> values</tooltip></strong>. They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
                   <p>The <code>bool</code> data type can hold only two values <code>True</code> and <code>False</code> (case sensitive).</p>
                   <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>type(<span class="hljs-literal">True</span>)
 &lt;<span class="hljs-class"><span class="hljs-keyword">class</span> '<span class="hljs-title">bool</span>'&gt;
@@ -328,7 +328,7 @@ Done
                     </panel>
                     <p></p>
                   </div>
-                  <p><code>if</code> statements can be <tooltip content="one _if_ statement within another" class="algolia-no-index">nested</tooltip>, using deeper indentation.</p>
+                  <p><code>if</code> statements can be <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.</p>
                   <pre><code class="hljs python">age = <span class="hljs-number">13</span>
 gender = <span class="hljs-string">'F'</span>
 <span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">12</span>) <span class="hljs-keyword">and</span> (age &lt; <span class="hljs-number">20</span>):          
@@ -358,7 +358,7 @@ Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
                     <p></p>
                   </panel>
                   <p></p>
-                  <p>If a situation has only two <tooltip content="no more than one of them can be true at any time" class="algolia-no-index">mutually exclusive</tooltip> possibilities <span class="dimmed">e.g. if we assume the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
+                  <p>If a situation has only two <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities <span class="dimmed">e.g. if we assume the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
                   <p><span class="fas fa-cube"></span> In the example below, the entire <code>else</code> block will be skipped if the <code>if</code> condition is true.</p>
                   <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
     print(<span class="hljs-string">'Female'</span>)
@@ -934,8 +934,8 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
 <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>
 ...
 </code></pre>
-                        <popover id="pop:exerciseThreeDiceThrows-dice" title placement="top" class="algolia-no-index">
-                            <div slot="content">
+                        <popover id="pop:exerciseThreeDiceThrows-dice" title placement="top">
+                            <div slot="content" class="algolia-no-index">
                             <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br>
                               <sub>source: wikipedia</sub></p>
                             <p></p>
@@ -1355,7 +1355,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a) (b) (c) (e)</p>
                                             <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
                                           </div>
@@ -1366,7 +1366,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain usage of models in a class project" class="algolia-no-index">
                                         <question>
                                           <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
-                                          <div slot="hint">
+                                          <div slot="hint" class="algolia-no-index">
                                             <p>Can models be useful in evaluating the design quality of a software written by students?</p>
                                           </div>
                                         </question>
@@ -1458,7 +1458,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                                           </ul>
                                           <img src="/2019/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png" width="500">
                                           <p></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <ul>
                                               <li>i : 👍 Correct. The arrow-head type does not matter.</li>
                                               <li>ii : Incorrect. The start and end node notation is swapped.</li>
@@ -1516,7 +1516,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                                           <img src="/2019/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png" width="500">
                                           <img src="/2019/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png" width="500">
                                           <p></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <ul>
                                               <li>i : 👍 Correct. There can be more than two alternate paths.</li>
                                               <li>ii : 👍 Correct. An alternate path can divide into more branches.</li>
@@ -1547,10 +1547,10 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                               <p></p>
                               <p></p>
                               <div>
-                                <p><strong><em>Fork</em> nodes indicate the start of <tooltip content="parallel" class="algolia-no-index">concurrent</tooltip> flows of control.</strong></p>
+                                <p><strong><em>Fork</em> nodes indicate the start of <tooltip content="parallel">concurrent</tooltip> flows of control.</strong></p>
                                 <p><strong><em>Join</em> nodes indicate the end of parallel paths.</strong></p>
                                 <p>Both have the same notation: a bar.</p>
-                                <p>In a <tooltip content="paths within a matching fork-join pair" class="algolia-no-index">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
+                                <p>In a <tooltip content="paths within a matching fork-join pair">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
                                 <img src="/2019/book/uml/activityDiagrams/basicNotations/parallelPaths/images/notation.png" height="130">
                                 <tip-box>
                                   <p><span class="fas fa-cube"></span> In this activity diagram (from an online shop website) the actions <em>User browsers products</em> and <em>System records browsing data</em> happen in parallel. Both of them need to finish before the <em>log out</em> action can take place.</p>
@@ -1572,7 +1572,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
                                           </ul>
                                           <img src="/2019/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png" width="500">
                                           <p></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <ul>
                                               <li>i : 👍 Correct. There can be more than two parallel paths.</li>
                                               <li>ii : Incorrect. All parallel paths that started from a fork should end in the same join node.</li>
@@ -1691,7 +1691,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

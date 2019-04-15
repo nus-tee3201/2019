@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: GUIs</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -74,7 +74,7 @@
     </header>
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/2019/programming/toc/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
             <li class="mt-2"><a href="/2019/programming/toc/programs.html" class="site-nav__a">Python Programs</a></li>
@@ -119,7 +119,7 @@
                 <p>Writing <em>Graphical User Interfaces (GUIs)</em> is relatively more complicated than writing regular code. Here, we give a very small peek into GUI programming in Python.
                 </p>
               </box>
-              <p><strong>There are different frameworks that you can use to write Python graphical user interfaces (GUIs)</strong> <span class="dimmed">e.g., Tkinter, KIVY, PyQT, WxPython</span>. The one we'll be using here is Tkinter, which is a way to use the popular Tk GUI framework <tooltip content="Tk can be used via other languages too" class="algolia-no-index">via Python</tooltip>.</p>
+              <p><strong>There are different frameworks that you can use to write Python graphical user interfaces (GUIs)</strong> <span class="dimmed">e.g., Tkinter, KIVY, PyQT, WxPython</span>. The one we'll be using here is Tkinter, which is a way to use the popular Tk GUI framework <tooltip content="Tk can be used via other languages too">via Python</tooltip>.</p>
               <p><strong>Tkinter comes with the Python installation</strong>; you can start writing Tkinter GUIs right away without having to install anything extra.</p>
               <p>Here is the code for the simplest GUI:</p>
               <div>
@@ -147,7 +147,7 @@ window.mainloop()
                 </table>
               </div>
               <p></p>
-              <p><strong>A GUI typically contains <tooltip content="elements on a GUI such as buttons, labels, text boxes are called _widgets_" class="algolia-no-index"><em>widgets</em></tooltip>.</strong> The example GUI below not only has some widgets but also has some dynamic behavior i.e., clicking the button increments the displayed number by the amount in the text box.</p>
+              <p><strong>A GUI typically contains <tooltip content="elements on a GUI such as buttons, labels, text boxes are called _widgets_"><em>widgets</em></tooltip>.</strong> The example GUI below not only has some widgets but also has some dynamic behavior i.e., clicking the button increments the displayed number by the amount in the text box.</p>
               <div>
                 <div></div>
                 <div></div>
@@ -209,7 +209,7 @@ label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-numb
 </code></pre>
                   <ul>
                     <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_labels.php"><em>Label</em> widget</a></strong> to show the current total. Sets its value to <code>0</code>. Sets the font to <code>Arial Bold</code> and font size to <code>50</code>.</li>
-                    <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <tooltip content="i.e., where widgets are placed" class="algolia-no-index">layout</tooltip> of the GUI</a>. In this case we are using a <tooltip content="It places the widgets in a 2-dimensional table, which consists of a number of rows and columns. The position of a widget is defined by a row and a column number." class="algolia-no-index"><em>grid</em> approach</tooltip>. This statement places the label at <code>0,0</code> cell of the grid.<p></p>
+                    <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <tooltip content="i.e., where widgets are placed">layout</tooltip> of the GUI</a>. In this case we are using a <tooltip content="It places the widgets in a 2-dimensional table, which consists of a number of rows and columns. The position of a widget is defined by a row and a column number."><em>grid</em> approach</tooltip>. This statement places the label at <code>0,0</code> cell of the grid.<p></p>
                     </li>
                   </ul>
                 </li>
@@ -260,7 +260,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top spacer-top viewport-height-90 scrollable slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#guis">GUIs&#x200E;</a>
@@ -274,7 +274,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

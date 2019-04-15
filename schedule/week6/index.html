@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 6</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week5/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week7/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
           <h1 id="week-6-feb-25">Week 6 <small><small><span class="dimmed">[Feb 25]</span></small></small><a class="fa fa-anchor" href="#week-6-feb-25"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div>
                 <div id="week6-toc">
@@ -136,7 +136,7 @@
                       </tab>
                     </tabs>
                   </box>
-                  <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the <tooltip content="A program has a _working directory_ at any time; it can change over time" class="algolia-no-index">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
+                  <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> This code shows how to print/change current working directory</p>
                     <div>
@@ -292,7 +292,7 @@ print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs
                       If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
                   </box>
                   <p>
-                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux" class="algolia-no-index">path separators</tooltip>.
+                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.
                   </p>
                   <box>
                     <p><span class="fas fa-cube"></span> contrasting hard-coding the separator vs using <code>os.path.join()</code>:</p>
@@ -430,7 +430,7 @@ third line
                         </tr>
                       </table>
                     </div>
-                    <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it" class="algolia-no-index">in read mode</tooltip>.</p>
+                    <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
                   </tip-box>
                   <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
                   <tip-box>
@@ -992,7 +992,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
                         <h4 id="exercise-debug-a-project-in-pycharm">Exercise : Debug a Project in PyCharm</h4>
                         <ol>
                           <li>Open a project in PyCharm. Go to a project file containing Python code.</li>
-                          <li>To create a breakpoint at a statement, click on the <tooltip content="the area between the statement and the line number" class="algolia-no-index"><em>gutter</em></tooltip> next to the line. A red dot should appear to indicate that the breakpoint has been set. <span class="dimmed">You can remove the breakpoint by clicking on the red dot again.</span><br>
+                          <li>To create a breakpoint at a statement, click on the <tooltip content="the area between the statement and the line number"><em>gutter</em></tooltip> next to the line. A red dot should appear to indicate that the breakpoint has been set. <span class="dimmed">You can remove the breakpoint by clicking on the red dot again.</span><br>
                             <a href="/2019/programming/ide/images/addBreakPoint.png" target="_self"><img src="/2019/programming/ide/images/addBreakPoint.png" alt class="img-fluid"></a></li>
                           <li>To start debugging, choose <code>Debug</code> instead of <code>Run.</code><br>
                             <a href="/2019/programming/ide/images/startDebugging.png" target="_self"><img src="/2019/programming/ide/images/startDebugging.png" alt class="img-fluid"></a></li>
@@ -1086,7 +1086,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation <span class="dimmed">e.g., to generate the code required by simply specifying which component/structure you want to implement</span></li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension <span class="dimmed">i.e., ability add more functionality to the IDE using plugins</span></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>All.</p>
                                             <p>Explanation: While all of these features may not be present in some IDEs, most do have these features in some form or other.</p>
                                           </div>
@@ -1425,7 +1425,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> d. Choose a tool to draw UML diagrams.</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> e. Clarify submission requirements with the customer.</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(c)</p>
                                             <p>Explanation: ‘More testing’ is not well-defined. How much is ‘more’? ‘Test the delete functionality’ is a better-defined task.</p>
                                           </div>
@@ -1536,7 +1536,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="8ee7d" type="radio"> b. Chief programmer</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="8ee7d" type="radio"> c. Strict hierarchy</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)</p>
                                             <p>Explanation: Given that students are all peers and beginners, Egoless team structure seems most suitable for a school project. However, given school projects are low-stakes, short-lived, and small, even the other two team structures can be used for them.</p>
                                           </div>
@@ -1723,7 +1723,7 @@ add    read book
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

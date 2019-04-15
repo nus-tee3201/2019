@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Software Design Fundamentals: Cohesion</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -131,7 +131,7 @@
     }
 }
 </code></pre>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>Version 2 is less cohesive.</p>
                                     <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, we can improve the cohesion of both versions by removing the sendMessage functionality. Although sending message is related to emails, this class is supposed to represent an email message, not an email server.</p>
                                   </div>

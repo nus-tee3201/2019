@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Refactoring</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -202,7 +202,7 @@ send()
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>a, b, c, d</p>
                                     <p>Explanation:</p>
                                     <ul>
@@ -218,10 +218,10 @@ send()
                                 <question has-input="true">
                                   <p>Do you agree with the following statement? Justify your answer.</p>
                                   <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>There are two flaws in the given statement.</p>
                                   </div>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>DISAGREE.</p>
                                     <ol>
                                       <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
@@ -311,7 +311,7 @@ send()
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> a. are opposites of each other.</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> b. sounds like opposites but they are not.</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>a</p>
                                   </div>
                                 </question>

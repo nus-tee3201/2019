@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 11</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week10/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week12/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
           <h1 id="week-11-apr-1">Week 11 <small><small><span class="dimmed">[Apr 1]</span></small></small><a class="fa fa-anchor" href="#week-11-apr-1"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div>
                 <h1 id="guis">GUIs<a class="fa fa-anchor" href="#guis"></a></h1>
@@ -88,7 +88,7 @@
                     <p>Writing <em>Graphical User Interfaces (GUIs)</em> is relatively more complicated than writing regular code. Here, we give a very small peek into GUI programming in Python.
                     </p>
                   </box>
-                  <p><strong>There are different frameworks that you can use to write Python graphical user interfaces (GUIs)</strong> <span class="dimmed">e.g., Tkinter, KIVY, PyQT, WxPython</span>. The one we'll be using here is Tkinter, which is a way to use the popular Tk GUI framework <tooltip content="Tk can be used via other languages too" class="algolia-no-index">via Python</tooltip>.</p>
+                  <p><strong>There are different frameworks that you can use to write Python graphical user interfaces (GUIs)</strong> <span class="dimmed">e.g., Tkinter, KIVY, PyQT, WxPython</span>. The one we'll be using here is Tkinter, which is a way to use the popular Tk GUI framework <tooltip content="Tk can be used via other languages too">via Python</tooltip>.</p>
                   <p><strong>Tkinter comes with the Python installation</strong>; you can start writing Tkinter GUIs right away without having to install anything extra.</p>
                   <p>Here is the code for the simplest GUI:</p>
                   <div>
@@ -116,7 +116,7 @@ window.mainloop()
                     </table>
                   </div>
                   <p></p>
-                  <p><strong>A GUI typically contains <tooltip content="elements on a GUI such as buttons, labels, text boxes are called _widgets_" class="algolia-no-index"><em>widgets</em></tooltip>.</strong> The example GUI below not only has some widgets but also has some dynamic behavior i.e., clicking the button increments the displayed number by the amount in the text box.</p>
+                  <p><strong>A GUI typically contains <tooltip content="elements on a GUI such as buttons, labels, text boxes are called _widgets_"><em>widgets</em></tooltip>.</strong> The example GUI below not only has some widgets but also has some dynamic behavior i.e., clicking the button increments the displayed number by the amount in the text box.</p>
                   <div>
                     <div></div>
                     <div></div>
@@ -178,7 +178,7 @@ label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-numb
 </code></pre>
                       <ul>
                         <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_labels.php"><em>Label</em> widget</a></strong> to show the current total. Sets its value to <code>0</code>. Sets the font to <code>Arial Bold</code> and font size to <code>50</code>.</li>
-                        <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <tooltip content="i.e., where widgets are placed" class="algolia-no-index">layout</tooltip> of the GUI</a>. In this case we are using a <tooltip content="It places the widgets in a 2-dimensional table, which consists of a number of rows and columns. The position of a widget is defined by a row and a column number." class="algolia-no-index"><em>grid</em> approach</tooltip>. This statement places the label at <code>0,0</code> cell of the grid.<p></p>
+                        <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <tooltip content="i.e., where widgets are placed">layout</tooltip> of the GUI</a>. In this case we are using a <tooltip content="It places the widgets in a 2-dimensional table, which consists of a number of rows and columns. The position of a widget is defined by a row and a column number."><em>grid</em> approach</tooltip>. This statement places the label at <code>0,0</code> cell of the grid.<p></p>
                         </li>
                       </ul>
                     </li>
@@ -375,7 +375,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They may not be suitable for some type of projects.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. XP and Scrum are agile processes.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)(b)(c)(d)</p>
                                           </div>
                                         </question>
@@ -569,7 +569,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The Unified process is actually a process framework rather than a fixed process.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The Unified process can be iterative and incremental</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)<s>(b)</s>(c)(d)</p>
                                             <p>Explanation: Although UP was created by the same three amigos who created UML, the UP does not require UML.</p>
                                           </div>
@@ -632,7 +632,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                           <p>d) Customer satisfaction.</p>
                                           <p>e) Monitoring the project progress.</p>
                                           <p>f) Suitability for a school project</p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>a) Quality of the final product:</p>
                                             <ul>
                                               <li>Iterative: Frequent reworking can deteriorate the design. Frequent refactoring should be used to prevent this. Frequent customer feedback can help to improve the quality (i.e. quality as seen by the customer).</li>
@@ -680,7 +680,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                           <p>(a) Agile processes</p>
                                           <p>(b) Pair programming</p>
                                           <p>(c) Test-driven development</p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a) Arguments in favor of agile processes:</p>
                                             <ul>
                                               <li>More focus on customer satisfaction.</li>
@@ -736,7 +736,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="44ac6" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="44ac6" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>False</p>
                                             <p>Explanation: The sequential model and the waterfall model are the same thing. The second basic model is the iterative model.</p>
                                           </div>
@@ -754,7 +754,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The iterative model is always better than the sequential model.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Compared to the sequential model, the iterative model is better at adapting to changing requirements.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)(b)(c)<s>(d)</s>(e)</p>
                                             <p>Explanation: Both models have pros and cons. There is no definitive ‘better’ choice between the two. However, the iterative model works better in typical software projects than a purely sequential approach.</p>
                                           </div>
@@ -770,7 +770,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> b. The sequential process.</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> c. The risk is similar.</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(b)</p>
                                             <p>Explanation: An iterative process can meet a deadline better than a sequential process. If the last iteration got delayed, we can always deliver the previous version. However, this does not guarantee that all features promised at the beginning will be delivered on the deadline.</p>
                                           </div>
@@ -806,9 +806,9 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                               <p></p>
                               <p></p>
                               <div>
-                                <p><strong>Except for trivial <tooltip content="Software Under Test" class="algolia-no-index">SUTs</tooltip>, <tooltip content="testing all possible cases" class="algolia-no-index">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
+                                <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
                                 <tip-box>
-                                  <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`" class="algolia-no-index">collection</tooltip>:</p>
+                                  <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
                                   <ul>
                                     <li>Add an item to an empty collection.</li>
                                     <li>Add an item when there is one item in the collection.</li>
@@ -835,7 +835,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
                                       <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                                     </li>
                                   </ul>
-                                  <p><strong>For testing to be <tooltip content="Efficient and Effective" class="algolia-no-index">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                                  <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                                 </div>
                               </div>
                               <div>
@@ -856,7 +856,7 @@ Enter side 1:
                                           <pre><code class="hljs">34,34,34: Yes
 0, any valid, any valid: No
 </code></pre>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>In addition to obvious test cases such as</p>
                                             <ul>
                                               <li>sum of two sides == third,</li>
@@ -880,7 +880,7 @@ Enter side 1:
                                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Exhaustive testing in Minesweeper" class="algolia-no-index">
                                         <question has-input="true">
                                           <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>Consider this sequence of test cases:</p>
                                             <ul>
                                               <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
@@ -906,7 +906,7 @@ Enter side 1:
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)(b)(c)(d)(e)(f)</p>
                                           </div>
                                         </question>
@@ -967,7 +967,7 @@ Enter side 1:
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>A) False</p>
                                             <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
                                           </div>
@@ -985,7 +985,7 @@ Enter side 1:
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(e)</p>
                                           </div>
                                         </question>
@@ -995,7 +995,7 @@ Enter side 1:
                                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Explain the concept of exploratory testing using Minesweeper as an example." class="algolia-no-index">
                                         <question has-input="true">
                                           <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
                                           </div>
                                         </question>
@@ -1044,7 +1044,7 @@ Enter side 1:
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>B) False</p>
                                             <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
                                           </div>
@@ -1176,8 +1176,8 @@ Enter side 1:
                                     <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
                                   </ul>
                                 </tip-box>
-                                <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top" class="algolia-no-index">
-                                    <div slot="content">
+                                <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
+                                    <div slot="content" class="algolia-no-index">
                                     <div>
                                       <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                                     </div>
@@ -1274,7 +1274,7 @@ Enter side 1:
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> c. A string that is 40 characters long</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> d. null</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>A. (d)</p>
                                             <p>Explanation: The description does not mention anything about the content of the string. Therefore, the method is unlikely to behave differently for strings consisting of numbers.</p>
                                             <p>B. (a) or (c)</p>
@@ -1393,7 +1393,7 @@ Enter side 1:
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>False</p>
                                             <p>Explanation: It does not recommend testing <em>only</em> those values <em>on</em> the boundary. It merely suggests that values on and around a boundary are more likely to cause errors.</p>
                                           </div>
@@ -1654,7 +1654,7 @@ Enter side 1:
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>True</p>
                                             <p>Explanation: While using formal methods is more expensive than testing, it indeed can prove the correctness of a piece of software conclusively, in certain contexts. Getting such proof via testing requires exhaustive testing, which is not practical to do in most cases.</p>
                                           </div>
@@ -1804,7 +1804,7 @@ GUI(TaskManager()).start()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

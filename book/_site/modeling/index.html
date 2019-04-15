@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Modeling</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -233,7 +233,7 @@
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
                                         </ul>
-                                        <div slot="answer">
+                                        <div slot="answer" class="algolia-no-index">
                                           <p>(a) (b) (c) (e)</p>
                                           <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
                                         </div>
@@ -244,7 +244,7 @@
                                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain usage of models in a class project" class="algolia-no-index">
                                       <question>
                                         <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
-                                        <div slot="hint">
+                                        <div slot="hint" class="algolia-no-index">
                                           <p>Can models be useful in evaluating the design quality of a software written by students?</p>
                                         </div>
                                       </question>
@@ -409,7 +409,7 @@
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a) (b) (c) (d)</p>
                                             <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
                                           </div>
@@ -552,7 +552,7 @@
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Snake</code> head can be in more than one <code>SnakeHeadSquare</code></li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. The <code>Board</code> has exactly 5 <code>Snake</code>s.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p><s>(a)</s>(b)(c)(d)(e)</p>
                                             <p>Explanation:</p>
                                             <p>(a) does not match because a <code>Snake</code> may or may not belong to a <code>Board</code> (multiplicity is <code>0..1</code>)<br>
@@ -824,7 +824,7 @@
                               <blockquote>
                                 <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development. <sub>--<a href="http://www.software-engin.com/">Ian Sommerville, in the book <em>Software Engineering</em></a></sub></p>
                               </blockquote>
-                              <p>Class diagrams can also be used to model objects in the <tooltip content="the relevant information that needs to be examined to understand a problem" class="algolia-no-index">problem domain</tooltip> (i.e. to model how objects actually interact in the real world, before emulating them in the solution). <strong>Class diagrams are used to model the problem domain are called <em>conceptual class diagrams</em> or <em>OO domain models (OODMs)</em>.</strong></p>
+                              <p>Class diagrams can also be used to model objects in the <tooltip content="the relevant information that needs to be examined to understand a problem">problem domain</tooltip> (i.e. to model how objects actually interact in the real world, before emulating them in the solution). <strong>Class diagrams are used to model the problem domain are called <em>conceptual class diagrams</em> or <em>OO domain models (OODMs)</em>.</strong></p>
                               <tip-box>
                                 <p><span class="fas fa-cube"></span> OO domain model of a snakes and ladders game is given below.</p>
                                 <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the number of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a piece can automatically move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p>
@@ -852,7 +852,7 @@
                                           </ul>
                                           <img src="/2019/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png" height="50">
                                           <p></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)</p>
                                             <p>Explanation: The diagram shows navigability which is not shown in an OO domain model. Hence, it has to be a class diagram.</p>
                                           </div>
@@ -869,7 +869,7 @@
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> c. One shows more details than the other.</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)</p>
                                             <p>Explanation: Both are UML diagrams, and use the class diagram notation. While it is true that often a class diagram may have more classes and more details, the main difference is that the OO domain model describes the problem domain while the class diagram describes the solution.</p>
                                           </div>
@@ -1005,7 +1005,7 @@
                             <p></p>
                             <p></p>
                             <div>
-                              <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the <tooltip content="a connected sequence of steps" class="algolia-no-index"></tooltip>flow in which a process or a set of tasks is executed.
+                              <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.
                                 Understanding such workflows is important for the success of the software project.</p>
                               <tip-box>
                                 <p>Some examples in which a certain workflow is relevant to software project:</p>
@@ -1043,7 +1043,7 @@
                                           </ul>
                                           <img src="/2019/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
                                           <p></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(iv)</p>
                                             <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
                                           </div>
@@ -1233,7 +1233,7 @@
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(d)</p>
                                           </div>
                                         </question>
@@ -1245,7 +1245,7 @@
                                           <p>Explain the interactions depicted in this sequence diagram.</p>
                                           <img src="/2019/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
                                           <p></p>
-                                          <div slot="hint">
+                                          <div slot="hint" class="algolia-no-index">
                                             <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
                                           </div>
                                         </question>
@@ -1278,7 +1278,7 @@
 
 }
 </code></pre>
-                                          <div slot="hint">
+                                          <div slot="hint" class="algolia-no-index">
                                             <ul>
                                               <li>Show <code>new Quote().print();</code> as two method calls.</li>
                                               <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code>print()</code> method is called.</li>
@@ -1564,7 +1564,7 @@
                               </tip-box>
                               <p></p>
                               <tip-box>
-                                <p>💡 Note that <tooltip content="using sequence diagramsn" class="algolia-no-index">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
+                                <p>💡 Note that <tooltip content="using sequence diagramsn">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
                                 <div v-closeable alt="Tic-Tac-Toe Video" class="non-printable">
                                   <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
                                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -1666,7 +1666,7 @@
                                         </tip-box>
                                         <p></p>
                                         <tip-box>
-                                          <p>💡 Note that <tooltip content="using sequence diagramsn" class="algolia-no-index">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
+                                          <p>💡 Note that <tooltip content="using sequence diagramsn">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
                                           <div v-closeable alt="Tic-Tac-Toe Video" class="non-printable">
                                             <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
                                             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - C++ to Java: Objects</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -72,8 +72,8 @@
                           <p><strong>Before using a class in your code, you need to <code>import</code> the class.</strong> <code>import</code> statements appear at the top of the code.</p>
                           <box>
                             <p><span class="fas fa-cube"></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
-                            <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top" class="algolia-no-index">
-                                <div slot="content">
+                            <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
+                                <div slot="content" class="algolia-no-index">
                                 <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units to the right and <code>y</code> units up from the origin.
                                     </p>
                               </div>
@@ -127,7 +127,7 @@
                                     <p><span class="fas fa-arrow-down"></span></p>
                                     <pre><code class="hljs">java.awt.Rectangle[x=0,y=0,width=5,height=10]
 </code></pre>
-                                    <div slot="hint">
+                                    <div slot="hint" class="algolia-no-index">
                                       <ul>
                                         <li>Import the <code>java.awt.Rectangle</code> class</li>
                                         <li>This is how you create the required object <code>new Rectangle(0, 0, 5, 10)</code></li>
@@ -168,7 +168,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y + <sp
                           <pre><code class="hljs">3, 4, 25
 </code></pre>
                         </box>
-                        <p><strong>You can <tooltip content="i.e., change/modify" class="algolia-no-index"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
+                        <p><strong>You can <tooltip content="i.e., change/modify"><em>mutate</em></tooltip> an object by assigning a different values to its attributes.</strong></p>
                         <box>
                           <p><span class="fas fa-cube"></span> This example changes the x value of the <code>Point</code> object to <code>5</code>.</p>
                           <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
@@ -227,7 +227,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
 Area: 24
 java.awt.Rectangle[x=0,y=0,width=8,height=10]
 </code></pre>
-                                    <div slot="hint">
+                                    <div slot="hint" class="algolia-no-index">
                                       <ul>
                                         <li>Area can be calculated as <code>r.width * r.height</code></li>
                                         <li>Setting the size can be done as <code>r.setSize(8, 10)</code></li>
@@ -397,7 +397,7 @@ argument rectangle after method call: java.awt.Rectangle[x=0,y=0,width=5,height=
 returned point: java.awt.Point[x=2,y=3]
 null
 </code></pre>
-                                    <div slot="hint">
+                                    <div slot="hint" class="algolia-no-index">
                                       <p>Partial solution:</p>
                                       <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Point <span class="hljs-title">move</span><span class="hljs-params">(Point p, Rectangle r)</span></span>{
     <span class="hljs-keyword">if</span> (p == <span class="hljs-keyword">null</span> || r == <span class="hljs-keyword">null</span>){

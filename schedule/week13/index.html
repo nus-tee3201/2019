@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 13</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week12/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><br></p>
           <h1 id="week-13-apr-12">Week 13 <small><small><span class="dimmed">[Apr 12]</span></small></small><a class="fa fa-anchor" href="#week-13-apr-12"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div></div>
             </tab>
@@ -93,7 +93,129 @@
               </div>
             </tab>
             <tab header="<span class='fas fa-drafting-compass'></span> Project" class="algolia-no-index">
-              <div></div>
+              <div>
+                <div>
+                  <ul>
+                    <li><strong>Week 13</strong> (final submission):
+                      <ul>
+                        <li>Functionality: all functionality
+                          <ul>
+                            <li>Submission:
+                              <ul>
+                                <li>Zip up all source files, upload to IVLE as a single <code>.zip</code> file (not <code>.rar</code>). File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+                                <li>Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced later.</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>Documentation:
+                          <ul>
+                            <li>Include all content included in mid-term submission. <mark>Refine as per feedback given. Update to match the final product.</mark></li>
+                            <li>Add a <strong>class diagram</strong> to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you <em>propose</em> to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]</li>
+                            <li>Add an <strong>object diagram</strong> to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]</li>
+                            <li>Give a sample of <strong>test cases</strong> you would use to test the software.
+                              <ul>
+                                <li>
+                                  <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]
+                                </li>
+                                <li>Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]</li>
+                              </ul>
+                            </li>
+                            <li>Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <modal large title="Class diagram example" id="modal:finalSubmission-classDiagram" class="algolia-no-index">
+                    <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
+                    <img src="/2019/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600">
+                  </modal>
+                  <modal large title="Object diagram example" id="modal:finalSubmission-objectDiagram" class="algolia-no-index">
+                    <img src="/2019/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" height="120"></modal>
+                  <modal large id="modal:finalSubmission-systemTests" class="algolia-no-index">
+                    <h2 id="sample-system-tests">Sample System Tests<a class="fa fa-anchor" href="#sample-system-tests"></a></h2>
+                    <p><strong>Test case 1: Launch without prior data</strong></p>
+                    <ul>
+                      <li>Feature being tested : launch of app, without any prior data</li>
+                      <li>Set up:
+                        <ol>
+                          <li>Delete all files in the <code>/data/</code> folder.</li>
+                        </ol>
+                      </li>
+                      <li>Steps:
+                        <ol screenshot here>
+                          <li>Run the app using the command <code>python main.py</code></li>
+                          <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br></li>
+                        </ol>
+                      </li>
+                    </ul>
+                    <p><strong>Test case 2: Add first contact</strong></p>
+                    <ul screenshot here>
+                      <li>Feature being tested : adding of a contact when there are no prior data</li>
+                      <li>Set up:
+                        <ol>
+                          <li>Launch app without any prior data (similar to <code>Test case 1</code> above).</li>
+                        </ol>
+                      </li>
+                      <li>Steps:<div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Input</th>
+                                <th>Expected</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Enter command <code>add</code></td>
+                                <td>app shows error message and show the correct format of the <code>add</code> command</td>
+                              </tr>
+                              <tr>
+                                <td>Enter command<br> <code>add John Doe</code></td>
+                                <td>app shows list of contacts containing only one person<br></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                  </modal>
+                  <modal large id="modal:finalSubmission-unitTests" class="algolia-no-index">
+                    <h2 id="sample-unit-tests">Sample Unit Tests<a class="fa fa-anchor" href="#sample-unit-tests"></a></h2>
+                    <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
+                    <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th><code>current_contacts</code></th>
+                            <th><code>new_contact</code></th>
+                            <th>Expected <code>current_contacts</code></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><code>[]</code></td>
+                            <td><code>Person('John')</code></td>
+                            <td><code>[Person('John')]</code></td>
+                          </tr>
+                          <tr>
+                            <td><code>[Person('John')]</code></td>
+                            <td><code>Person('John')</code></td>
+                            <td><code>[Person('John')]</code></td>
+                          </tr>
+                          <tr>
+                            <td><code>[Person('John')]</code></td>
+                            <td><code>Person('Amy')</code></td>
+                            <td><code>[Person('John'), Person('Amy')]</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </modal>
+                </div>
+              </div>
             </tab>
           </tabs>
         </div>
@@ -101,7 +223,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

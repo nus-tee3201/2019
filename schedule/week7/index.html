@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 7</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week6/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week8/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
           <h1 id="week-7-mar-4">Week 7 <small><small><span class="dimmed">[Mar 4]</span></small></small><a class="fa fa-anchor" href="#week-7-mar-4"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div>
                 <div id="week7-toc">
@@ -1098,7 +1098,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> b. False</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> c. Partially true</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>c.</p>
                                             <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
                                           </div>
@@ -1235,8 +1235,8 @@ Invalid command format: add
                                 </ol>
                                 <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
                                 <div>
-                                  <popover id="pop:cli" placement="top" class="algolia-no-index">
-                                    <div slot="content">
+                                  <popover id="pop:cli" placement="top">
+                                    <div slot="content" class="algolia-no-index">
                                       <div>
                                         <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
                                       </div>
@@ -1301,7 +1301,7 @@ Invalid command format: add
                                 <p><strong><em>Early and frequent</em>: integrate early and evolve each part in parallel, in small steps, re-integrating frequently.</strong></p>
                                 <tip-box>
                                   <p><span class="fas fa-cube"></span> A <em>
-                                      <tooltip content="it compiles and runs but does not produce any useful output" class="algolia-no-index">walking skeleton</tooltip>
+                                      <tooltip content="it compiles and runs but does not produce any useful output">walking skeleton</tooltip>
                                     </em> can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
                                 </tip-box>
                                 <div v-closeable alt="slideshow: comparison" class="non-printable">
@@ -1343,7 +1343,7 @@ Invalid command format: add
                                         <question has-input="true">
                                           <p>Give two arguments in support and two arguments against the following statement.</p>
                                           <p><em>Because there is no external client, it is OK to use big bang integration for a school project.</em></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>Arguments for:</p>
                                             <ul>
                                               <li>It is relatively simple; even big-bang can succeed.</li>
@@ -1386,14 +1386,14 @@ Invalid command format: add
                                 <p></p>
                                 <p><strong>Based on the order in which components are integrated, incremental integration can be done in three ways.</strong></p>
                                 <p><strong><em>Top-down</em> integration: higher-level components are integrated before bringing in the lower-level components.</strong> One advantage of this approach is that higher-level problems can be discovered early. One disadvantage is that this requires the use of <trigger for="pop:topdown-stub">stubs</trigger> in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
-                                <popover id="pop:topdown-stub" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="top" class="algolia-no-index">
-                                    <div slot="content">
+                                <popover id="pop:topdown-stub" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="top">
+                                    <div slot="content" class="algolia-no-index">
                                     <div>
                                       <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
                                     </div>
                                   </div>
                                 </popover>
-                                <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Note that when integrating lower level components, <tooltip content="additional code written to provide inputs to a component via an API" class="algolia-no-index">drivers</tooltip> may be needed to test the integrated components <span class="dimmed"> because the UI may not be integrated yet</span>, just like top-down integration needs stubs.</p>
+                                <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Note that when integrating lower level components, <tooltip content="additional code written to provide inputs to a component via an API">drivers</tooltip> may be needed to test the integrated components <span class="dimmed"> because the UI may not be integrated yet</span>, just like top-down integration needs stubs.</p>
                                 <p><strong><em>Sandwich</em> integration: a mix of the top-down and the bottom-up approaches.</strong> The idea is to do both top-down and bottom-up so as to 'meet' in the middle.</p>
                                 <div v-closeable alt="slideshow: comparison">
                                   <p>Here is an animation that compares the three approaches:</p>
@@ -1416,7 +1416,7 @@ Invalid command format: add
                                           </ul>
                                           <img src="/2019/book/integration/approaches/topDownVsBottomUp/images/hospital.png" height="250">
                                           <p></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>There can be many acceptable answers to this question. But any good strategy should consider at least some of the below.</p>
                                             <ul>
                                               <li>Because <code>HospitalUI</code> will be developed early, it’s OK to integrate it early, using stubs, rather than wait for the rest of the system to finish. (i.e. a top-down integration is suitable for <code>HospitalUI</code>)</li>
@@ -1442,7 +1442,7 @@ Invalid command format: add
                                           <p>Note that dashed arrows show dependencies (e.g. A depend on B, C, D and therefore, higher-level than B, C and D).</p>
                                           <img src="/2019/book/integration/approaches/topDownVsBottomUp/images/abc.png" height="190">
                                           <p></p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>a) Diagram:</p>
                                             <img src="/2019/book/integration/approaches/topDownVsBottomUp/images/aAnswer.png" height="230">
                                             <p></p>
@@ -1492,8 +1492,8 @@ Invalid command format: add
                                 <p><strong>
                                     <trigger for="pop:production-code">Production code</trigger> needs to be of high quality
                                   </strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
-                                <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top" class="algolia-no-index">
-                                  <div slot="content">
+                                <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top">
+                                  <div slot="content" class="algolia-no-index">
                                     Code being used in an actual product with actual users
                                   </div>
                                 </popover>
@@ -1531,7 +1531,7 @@ Invalid command format: add
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>c</p>
                                           </div>
                                         </question>
@@ -1603,7 +1603,7 @@ Invalid command format: add
 }
 </code></pre>
                                             <p>In what ways the code violate the <em>basic</em> guidelines (i.e., those marked with one ⭐️) of the OSS-Generic Java Coding Standard given <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">here</a>?</p>
-                                            <div slot="hint">
+                                            <div slot="hint" class="algolia-no-index">
                                               <p>Here are three:</p>
                                               <ul>
                                                 <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
@@ -1966,7 +1966,7 @@ is_urgent = type_code == URGENT
                               <p></p>
                               <p></p>
                               <div>
-                                <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a <tooltip content="e.g., `PI`" class="algolia-no-index"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+                                <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
                                 <tip-box>
                                   <p><span class="fas fa-cube"></span> Example:</p>
                                   <div class="alt-java">
@@ -2548,7 +2548,7 @@ send()
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>a, b, c, d</p>
                                             <p>Explanation:</p>
                                             <ul>
@@ -2564,10 +2564,10 @@ send()
                                         <question has-input="true">
                                           <p>Do you agree with the following statement? Justify your answer.</p>
                                           <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
-                                          <div slot="hint">
+                                          <div slot="hint" class="algolia-no-index">
                                             <p>There are two flaws in the given statement.</p>
                                           </div>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>DISAGREE.</p>
                                             <ol>
                                               <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
@@ -2615,7 +2615,7 @@ send()
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> a. are opposites of each other.</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> b. sounds like opposites but they are not.</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>a</p>
                                           </div>
                                         </question>
@@ -2720,7 +2720,7 @@ D,return book,pending,Monday
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

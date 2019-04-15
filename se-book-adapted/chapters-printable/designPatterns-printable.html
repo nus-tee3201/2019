@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter [Printable] : Software Design Patterns</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -210,7 +210,7 @@
                   <p><strong>Problem</strong></p>
                   <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g. the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
                   <p><strong>Solution</strong></p>
-                  <p>Include a <tooltip content="a French word that means 'front of a building'" class="algolia-no-index">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+                  <p>Include a <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                     <img src="/2019/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -247,7 +247,7 @@
                   <p>The general form of the solution is as follows.</p>
                   <img src="/2019/book/designPatterns/command/what/images/clientInvoker.png" height="200">
                   <p></p>
-                  <p>The <code>&lt;&lt;Client&gt;&gt;</code> creates a <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object, and passes it to the <code>&lt;&lt;Invoker&gt;&gt;</code>. The <code>&lt;&lt;Invoker&gt;&gt;</code> object treats all commands as a general <code>&lt;&lt;Command&gt;&gt;</code> type. <code>&lt;&lt;Invoker&gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object may have to be linked to any <code>&lt;&lt;Receiver&gt;&gt;</code> of the command (<tooltip content="the object the command will operate on, in case different commands operate on different objects" class="algolia-no-index">?</tooltip>) before it is passed to the <code>&lt;&lt;Invoker&gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
+                  <p>The <code>&lt;&lt;Client&gt;&gt;</code> creates a <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object, and passes it to the <code>&lt;&lt;Invoker&gt;&gt;</code>. The <code>&lt;&lt;Invoker&gt;&gt;</code> object treats all commands as a general <code>&lt;&lt;Command&gt;&gt;</code> type. <code>&lt;&lt;Invoker&gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt;ConcreteCommand&gt;&gt;</code> object may have to be linked to any <code>&lt;&lt;Receiver&gt;&gt;</code> of the command (<tooltip content="the object the command will operate on, in case different commands operate on different objects">?</tooltip>) before it is passed to the <code>&lt;&lt;Invoker&gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@ studentList.addUi(statusUi);
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Error Handling: Defensive Programming: Enforcing Compulsory Associations</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
@@ -99,7 +99,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                               </ul>
                               <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
                               <p></p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Manager</span> </span>{
@@ -130,7 +130,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                               <p>Implement the classes defensively with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the <code>Marriage</code> class handle setting/removal of reference.</p>
                               <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
                               <p></p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
     <span class="hljs-keyword">private</span> Man husband = <span class="hljs-keyword">null</span>;
     <span class="hljs-keyword">private</span> Woman wife = <span class="hljs-keyword">null</span>;
@@ -188,7 +188,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                               <p>Give a suitable defensive implementation to the <code>Account</code> class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p>
                               <img src="/2019/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
                               <p></p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     <span class="hljs-keyword">private</span> Guarantor myGuarantor; <span class="hljs-comment">// should not be public</span>
 
@@ -223,7 +223,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="ac03f" type="radio"> True</label></li>
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="ac03f" type="radio"> False</label></li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>False</p>
                                 <p>Explanation: While the design requires a City to be connected to exactly one Country, the code allows it to be connected to zero Country objects (by passing null to the setCountry() method).</p>
                               </div>

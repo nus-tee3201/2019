@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : UML</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -49,8 +49,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -73,7 +73,7 @@
     </header>
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top site-nav-spacer viewport-height-90 scrollable slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/2019/se-book-adapted/index.html" class="site-nav__a">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
             <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
@@ -344,7 +344,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 5</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <ol>
                                   <li>Incorrect : <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
                                   <li>Incorrect : All attributes should be inside the same compartment.</li>
@@ -490,7 +490,7 @@
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="3d146" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="3d146" type="radio"> c. Depends on the programming language</label></li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(a)</p>
                                 <p>Explanation: The diagram indicates that <code>Unit</code> object should know about the <code>Item</code> object. In the implementation, the <code>Unit</code> object will hold a <code>Unit</code> object in one of its variables.</p>
                               </div>
@@ -649,7 +649,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(c)(d)</p>
                               </div>
                             </question>
@@ -814,7 +814,7 @@
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(b)</p>
                               </div>
                             </question>
@@ -1051,7 +1051,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                               </ul>
                               <img src="/2019/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png" width="500">
                               <p></p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <ul>
                                   <li>i : 👍 Correct. The arrow-head type does not matter.</li>
                                   <li>ii : Incorrect. The start and end node notation is swapped.</li>
@@ -1105,7 +1105,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                               <img src="/2019/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png" width="500">
                               <img src="/2019/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png" width="500">
                               <p></p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <ul>
                                   <li>i : 👍 Correct. There can be more than two alternate paths.</li>
                                   <li>ii : 👍 Correct. An alternate path can divide into more branches.</li>
@@ -1132,10 +1132,10 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                   <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret parallel paths in activity diagrams</span></span></span></span>
                   <p></p>
                   <div>
-                    <p><strong><em>Fork</em> nodes indicate the start of <tooltip content="parallel" class="algolia-no-index">concurrent</tooltip> flows of control.</strong></p>
+                    <p><strong><em>Fork</em> nodes indicate the start of <tooltip content="parallel">concurrent</tooltip> flows of control.</strong></p>
                     <p><strong><em>Join</em> nodes indicate the end of parallel paths.</strong></p>
                     <p>Both have the same notation: a bar.</p>
-                    <p>In a <tooltip content="paths within a matching fork-join pair" class="algolia-no-index">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
+                    <p>In a <tooltip content="paths within a matching fork-join pair">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
                     <img src="/2019/book/uml/activityDiagrams/basicNotations/parallelPaths/images/notation.png" height="130">
                     <tip-box>
                       <p><span class="fas fa-cube"></span> In this activity diagram (from an online shop website) the actions <em>User browsers products</em> and <em>System records browsing data</em> happen in parallel. Both of them need to finish before the <em>log out</em> action can take place.</p>
@@ -1157,7 +1157,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                               </ul>
                               <img src="/2019/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png" width="500">
                               <p></p>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <ul>
                                   <li>i : 👍 Correct. There can be more than two parallel paths.</li>
                                   <li>ii : Incorrect. All parallel paths that started from a fork should end in the same join node.</li>
@@ -1310,7 +1310,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(a) (b)</p>
                               <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
                             </div>
@@ -1326,7 +1326,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="sticky-top spacer-top viewport-height-90 scrollable slim-scroll">
+        <div class="position-sticky position-top spacer-top viewport-height-90 scrollable slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#uml">UML&#x200E;</a>
@@ -1381,7 +1381,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

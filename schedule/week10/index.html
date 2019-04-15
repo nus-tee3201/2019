@@ -15,7 +15,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Schedule: Week 10</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,8 @@
           <li><a href="/2019/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
           <li><a href="/2019/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
           <li><a href="/2019/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
-          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] </span></a></li>
+          <li><a href="/2019/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
+          <li><a href="/2019/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 12] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <dropdown text="Textbook" class="nav-link algolia-no-index">
           <li><a href="/2019/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
@@ -78,7 +78,7 @@
           <p><span style="float:left"><span><a href="/2019/schedule/week9/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous Week</a></span></span><span style="float:right"><span><a href="/2019/schedule/week11/">Next Week <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></span></span><br></p>
           <h1 id="week-10-mar-25">Week 10 <small><small><span class="dimmed">[Mar 25]</span></small></small><a class="fa fa-anchor" href="#week-10-mar-25"></a></h1>
           <div></div>
-          <tabs>
+          <tabs active="2">
             <tab header="<span class='fas fa-code'></span> Programming Topics">
               <div>
                 <div id="week10-toc">
@@ -95,7 +95,7 @@
                 <h1 id="object-oriented-programming">Object-Oriented Programming<a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
                 <div>
                   <h3 id="inheritance">Inheritance<a class="fa fa-anchor" href="#inheritance"></a></h3>
-                  <p><strong>You can make a class <tooltip content="define a new class based on an existing class" class="algolia-no-index">inherit</tooltip> from another class.</strong> If you do, it is as if the <tooltip content="the new class" class="algolia-no-index"><em>child class</em></tooltip> already has all the attributes and methods of the <tooltip content="the class that was inherited from" class="algolia-no-index"><em>parent class</em></tooltip>.</p>
+                  <p><strong>You can make a class <tooltip content="define a new class based on an existing class">inherit</tooltip> from another class.</strong> If you do, it is as if the <tooltip content="the new class"><em>child class</em></tooltip> already has all the attributes and methods of the <tooltip content="the class that was inherited from"><em>parent class</em></tooltip>.</p>
                   <p>Syntax:</p>
                   <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClassName)</span>:</span>
   <span class="hljs-comment"># statements of the class</span>
@@ -878,7 +878,7 @@ FAILED (failures=1)
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code reuse can be one benefit of inheritance.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. A change to the superclass will not affect its subclasses.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a) (b) (c) (d)</p>
                                             <p>Explanation: (e) is incorrect. Because subclasses inherit behavior from the superclass, any changes to the superclass could affect subclasses.</p>
                                           </div>
@@ -1103,7 +1103,7 @@ FAILED (failures=1)
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>d</p>
                                             <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
                                           </div>
@@ -1268,7 +1268,7 @@ FAILED (failures=1)
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(b)</p>
                                           </div>
                                         </question>
@@ -1298,7 +1298,7 @@ FAILED (failures=1)
                                 </tip-box>
                                 <h5 id="implementing-dependencies">Implementing dependencies</h5>
                                 <tip-box>
-                                  <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a <tooltip content="temporary" class="algolia-no-index">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+                                  <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
                                   <div class="alt-java">
                                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
@@ -1423,7 +1423,7 @@ FAILED (failures=1)
                                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> implications of developers testing their own code" class="algolia-no-index">
                                         <question has-input="true">
                                           <p>Discuss pros and cons of developers testing their own code.</p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>Pros:</p>
                                             <ul>
                                               <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
@@ -1450,7 +1450,7 @@ FAILED (failures=1)
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>False. The cost goes up over time.</p>
                                           </div>
                                         </question>
@@ -1743,7 +1743,7 @@ FAILED (failures=1)
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
                                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
                                             <p>Explanation:</p>
                                             <p>(b) is correct because system testing can aim to cover all specified behaviors and can even go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
@@ -1851,7 +1851,7 @@ FAILED (failures=1)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.1.1</a> at Tue, 09 Apr 2019 05:06:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.2.0</a> at Mon, 15 Apr 2019 03:17:14 GMT</small></div>
     </footer>
   </div>
 </body>

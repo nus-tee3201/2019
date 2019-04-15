@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.1.1">
+  <meta name="generator" content="MarkBind 2.2.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - C++ to Java: Getting Started</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -92,7 +92,7 @@
                         <p><code>System.out.println</code> displays results on the screen.</p>
                         <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span></span> Some similarities:</p>
                         <ul>
-                          <li>Java programs are made up of class and method definitions, and <tooltip content="A _method_ is a named sequence of statements" class="algolia-no-index">methods</tooltip> are made up of <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
+                          <li>Java programs are made up of class and method definitions, and <tooltip content="A _method_ is a named sequence of statements">methods</tooltip> are made up of <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
                           <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
                           <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
                           <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -102,8 +102,8 @@
                           <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
                           <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
                         </ul>
-                        <popover id="pop:helloWorld-statement" title="Statements" placement="top" class="algolia-no-index">
-                            <div slot="content">
+                        <popover id="pop:helloWorld-statement" title="Statements" placement="top">
+                            <div slot="content" class="algolia-no-index">
                             <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                             <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
                           </div>
@@ -139,8 +139,8 @@
                           <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code>
                         </p>
                         <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
-                        <popover id="pop:compiling-errors" title="Compile-time errors" placement="top" class="algolia-no-index">
-                            <div slot="content">
+                        <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
+                            <div slot="content" class="algolia-no-index">
                             <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                             <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
                             <p></p>
@@ -178,7 +178,7 @@
                           <li><code>java</code> in the command above refers to the Java interpreter installed in your computer.</li>
                           <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
                         </ul>
-                        <p>When you run a Java program, you can encounter a <tooltip content="so-called because it does not appear until after the program has started running" class="algolia-no-index">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
+                        <p>When you run a Java program, you can encounter a <tooltip content="so-called because it does not appear until after the program has started running">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains what happened and where.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
                           <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
