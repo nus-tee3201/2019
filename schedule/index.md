@@ -24,7 +24,7 @@ head: scheduleHead.md
 ] %}
 
 
-{% set current_weeks = ["12"] %}
+{% set current_weeks = ["13"] %}
 
 
 {% set all_outcomes = [
@@ -349,7 +349,7 @@ head: scheduleHead.md
 
 <include src="{{ path }}notices-{{ module | lower }}.md" optional />
 
-<tabs>
+<tabs active="2">
   <tab header="{{ fas_code }} Programming Topics">
     <include src="{{ path }}../python-topics.md#week{{ week.num }}" />
   </tab>

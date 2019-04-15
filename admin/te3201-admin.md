@@ -247,6 +247,8 @@ Normally, I would give my feedback for the midterm project document on week 9-10
 </div>
 </div>
 
+<div id="project-final-submission">
+
 * **Week 13** (final submission):
   * Functionality: all functionality
     * Submission:
@@ -271,7 +273,7 @@ Your actual class diagram is ==likely to be simpler== than this example:
 
 <modal large title="Object diagram example" id="modal:finalSubmission-objectDiagram">
 
-<img src="{{baseUrl}}/book/oopDesign/associations/basic/images/completeStructure.png" height="120" />
+<img src="{{baseUrl}}/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" height="120" />
 
 </modal>
 
@@ -315,6 +317,8 @@ Description of the function: appends the `Person` object `new_contact` to the `c
 `[Person('John')]` | `Person('Amy')` | `[Person('John'), Person('Amy')]`
 
 </modal>
+
+</div>
 
 {{ dotted_line }}
 
